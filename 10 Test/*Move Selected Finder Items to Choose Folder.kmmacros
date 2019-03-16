@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568122691.47241497</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Green</string>
+						<key>ActionName</key>
+						<string>~~~ ReleaseNotes for  VER: 1.1    2017-02-11 ~~~</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC73BQAAKwAAAAEA
+						AADvBQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgQXV0aG9yOiAgXCdhMFwnYTBc
+						J2EwXCdhMFwnYTBcJ2EwQEpNaWNo
+						YWVsVFhcClwKUFVSUE9TRTogIE1P
+						VkUgSXRlbXMgaW4gRmluZGVyIFNl
+						bGVjdGlvbiB0byBEZXN0aW5hdGlv
+						biBGb2xkZXIgQ2hvc2VuIGJ5IFVz
+						ZXJcClwKSE9XIFRvIFVTRTpcClwK
+						XCdhMFwnYTAxLiBTZWxlY3Qgb25l
+						IG9yIG1vcmUgaXRlbXMgKGZpbGVz
+						IGFuZC9vciBmb2xkZXJzKSBpbiB0
+						aGUgRmluZGVyXApcJ2EwXCdhMDIu
+						IFRyaWdnZXIgdGhpcyBNYWNyb1wK
+						XCdhMFwnYTAzLiBNT1ZFIHdpbGwg
+						YmUgQ0FOQ0VMRUQgaWYgdGhlIFVz
+						ZXIgY2FuY2VscyB0aGUgQ2hvb3Nl
+						IEZvbGRlciBzY3JpcHQsIE9SIGNs
+						aWNrcyBvbiAiU3RvcCIgaW4gdGhl
+						ICJDb25maXJtIE1vdmUiIGFsZXJ0
+						LlwKXApOb3RlIHRoYXQgdGhlIEFw
+						cCBmb2N1cyBzdGFydHMgb24gdGhl
+						IEZpbmRlciwgYW5kIHJlbWFpbnMg
+						dGhlIHNhbWUgYWZ0ZXIgdGhlIG1h
+						Y3JvIGNvbXBsZXRlcy5cClwKQkFT
+						RUQgT04gVEhJUyBVU0VSIFFVRVNU
+						SU9OOlwKXApDYW4gS00gZGlzcGxh
+						eSBhIHNldCBvZiBmb2xkZXJzLCBz
+						YXkgYWxsIGZvbGRlcnMgaW4gdGhl
+						IERvY3VtZW50cyBmb2xkZXIgb3Ig
+						YSBsaXN0IG9mIGZvbGRlcnMgKG9y
+						IGFsaWFzIG9mIGZvbGRlcnMpIEkg
+						Y3JlYXRlIGluIHRoZSBEb2N1bWVu
+						dHMgZm9sZGVyIChvciBzb21lIG90
+						aGVyIGZvbGRlcikgdGhhdCB3aGVu
+						IEkgY2xpY2sgb24gYSBmb2xkZXIg
+						d2l0aGluIHRoYXQgc2V0IG9mIGRp
+						c3BsYXllZCBmb2xkZXJzIHdpbGwg
+						bW92ZSBhIHByZXZpb3VzbHkgc2Vs
+						ZWN0ZWQgZmlsZSBpbiB0aGUgRmlu
+						ZGVyIHRvIHRoYXQgZm9sZGVyIGFu
+						ZCByZXR1cm4gbWUgYmFjayB0byB0
+						aGUgZm9sZGVyIEkgbWFkZSB0aGUg
+						ZmlsZSBzZWxlY3Rpb24gZnJvbT9c
+						ClwKUkVGOiAgU2ltcGxpZnlpbmcg
+						RmlsaW5nOiBNb3ZlIFNlbGVjdGVk
+						IEZpbmRlciBGaWxlIHRvIFwnOTNQ
+						aWNrLUEtRm9sZGVyXCc5NCBcClwn
+						YTBcJ2EwXCdhMFwnYTBcJ2EwXCdh
+						MFwnYTBcJ2EwXCdhMFwnYTBodHRw
+						czovL2ZvcnVtLmtleWJvYXJkbWFl
+						c3Ryby5jb20vdC9zaW1wbGlmeWlu
+						Zy1maWxpbmctbW92ZS1zZWxlY3Rl
+						ZC1maW5kZXItZmlsZS10by1waWNr
+						LWEtZm9sZGVyLzQ2MDcgXApcClJF
+						UVVJUkVTOiAgXAooMSkgIEtleWJv
+						YXJkIE1hZXN0cm8gVmVyIDcuMC4z
+						K1wKKDIpICBZb3NlbWl0ZSAoMTAu
+						MTAuNSkrXAp+fn5+fn5+fn5+fn5+
+						fn5+fn5+fn5+fn5+fn5+fn5+fn5+
+						fn5+fn5+fn5+fn5+fQEAAAAjAAAA
+						AQAAAAcAAABUWFQucnRmEAAAAIG4
+						IFy2AQAAAAAAAAAAAAA=
+						</data>
+						<key>Title</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Green</string>
+						<key>ActionName</key>
+						<string>~~~ MACRO SETUP ~~~</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC5oAgAAKwAAAAEA
+						AABgAgAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgQXNzaWduIGEgdHJpZ2dlciB0
+						byB0aGlzIG1hY3JvLlwKXApDb25m
+						aXJtIG9yIENoYW5nZSB0aGUgIlBh
+						cmVudEZvbGRlciIgdmFyaWFibGUg
+						c2V0IGluIHRoZSBBY3Rpb24gIlNF
+						VCBQQVJFTlQgRm9sZGVyLi4uIlwK
+						XCdhMFwnYTBcJzk1XCdhMFRoaXMg
+						aXMgdGhlIGZvbGRlciBmcm9tIHdo
+						aWNoIHlvdSB3aWxsIHNlbGVjdCB0
+						aGUgREVTVElOQVRJT04gZm9sZGVy
+						LlwKXCdhMFwnYTBcJzk1IEhvd2V2
+						ZXIsIG9uY2UgeW91IGFyZSBpbiB0
+						aGUgIkNob29zZSBGb2xkZXIiIGRp
+						YWxvZywgeW91IGNhbiBzd2l0Y2gg
+						dG8gYW55IGZvbGRlciBvbiB5b3Vy
+						IE1hY30BAAAAIwAAAAEAAAAHAAAA
+						VFhULnJ0ZhAAAACBuCBctgEAAAAA
+						AAAAAAAA
+						</data>
+						<key>Title</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Red</string>
+						<key>ActionName</key>
+						<string>~~~ WARNING!  This Macro is for Demo/Educational Purposes Only ~~~</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC71AgAAKwAAAAEA
+						AADtAgAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgXCdhMFwnYTBcJzk1XCdhMERl
+						bW9uc3RyYXRlIGhvdyB0byBhY2hp
+						ZXZlIHRoZSBhYm92ZSBzdGF0ZWQg
+						cHVycG9zZSBhbmQvb3IgYW5zd2Vy
+						IHRoZSBxdWVzdGlvbi4uXApcJ2Ew
+						XCdhMFwnOTUgVGhpcyBOT1QgYSBm
+						aW5pc2hlZCBtYWNybywgcmVhZHkg
+						Zm9yIHVzZSBpbiBhIHByb2R1Y3Rp
+						b24gZW52aXJvbm1lbnRcClwnYTBc
+						J2EwXCc5NSBJdCBoYXMgaGFkIFZF
+						UlkgbGltaXRlZCB0ZXN0aW5nLCBz
+						byBCRUZPUkUgWU9VUiBSVU4gdGhp
+						cyBtYWNybyxcClwnYTBcJ2EwXCdh
+						MFwnYTBcJ2EwcmV2aWV3IGl0IGNh
+						cmVmdWxseSwgYW5kIHVzZSBvbmx5
+						IHRlc3QgZGF0YSB1bnRpbGwgeW91
+						IGhhdmUgY29uZmlybWVkIGl0cyBi
+						ZWhhdmlvci5cClwnYTBcJ2EwXCc5
+						NSBJdCBpcyBhIHRlYWNoaW5nIGV4
+						YW1wbGUgdG8gc2hvdyB5b3UgaG93
+						IHRvIHVzZSB0aGlzIGNvbmNlcHQg
+						aW4geW91ciBvd24gbWFjcm9zLn0B
+						AAAAIwAAAAEAAAAHAAAAVFhULnJ0
+						ZhAAAACBuCBctgEAAAAAAAAAAAAA
+						</data>
+						<key>Title</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Magenta</string>
+						<key>ActionName</key>
+						<string>SET PARENT Folder to Choose Destination Folder From</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>~/Documents</string>
+						<key>Variable</key>
+						<string>MSF__ParentFolder</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ExpandTildeInPath</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Filter</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>MSF__ParentFolder</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>ActionName</key>
+						<string>SCRIPT:  Choose DESTINATION Folder</string>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>use AppleScript version "2.4" -- Yosemite (10.10) or later
+use scripting additions
+
+property ptyScriptName : "Choose Destination Folder"
+property ptyScriptVer : "1.1"
+property ptyScriptDate : "2017-02-11"
+property ptyScriptAuthor : "JMichaelTX"
+
+(*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+KM VARIABLES REQUIRED: (must be set before calling this script)
+	? ParentFolder	| text	|	Default folder for Choose Folder Dialog
+									Default: ~/Documents
+	
+KM VARIABLES SET: (by this script)
+	? &lt;none&gt;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+*)
+
+try
+	--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	tell application "Keyboard Maestro Engine" to set defaultFolderPath to getvariable "MSF__ParentFolder"
+	
+	if defaultFolderPath = "" then
+		set defaultFolderPath to path to documents folder as text
+	else
+		set defaultFolderPath to POSIX file defaultFolderPath
+	end if
+	set defaultFolderPath to defaultFolderPath as alias
+	set destinationFolder to "[CANCELED]"
+	
+	set frontApp to path to frontmost application as text
+	tell application frontApp
+		# POSIX Path of the folder you're interested in.
+		set destinationFolder to POSIX path of (choose folder with prompt ?
+			"Choose FOLDER to Move File To" default location defaultFolderPath)
+	end tell -- frontApp
+	
+	set returnResults to destinationFolder
+	
+	--~~~~~~~~~~~~~ END TRY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+on error errMsg number errNum
+	
+	if errNum = -128 then ## User Canceled
+		set returnResults to "[USER_CANCELED]" &amp; return &amp; return ?
+			&amp; "SCRIPT: " &amp; ptyScriptName &amp; "   Ver: " &amp; ptyScriptVer
+	else
+		set returnResults to "[ERROR]" &amp; return &amp; return ?
+			&amp; "SCRIPT: " &amp; ptyScriptName &amp; "   Ver: " &amp; ptyScriptVer &amp; return ?
+			&amp; "Error Number: " &amp; errNum &amp; return ?
+			&amp; errMsg
+	end if
+	
+	
+end try
+--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--- RETURN THE RESULTS TO THE KM EXECUTE SCRIPT ACTION ---
+return returnResults
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TimeOutPeriod</key>
+						<real>600</real>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>MSF__DestinationFolder</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Purple</string>
+						<key>ActionName</key>
+						<string>GRP:  Handle Script Error (Simple Ver)</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>ActionColor</key>
+								<string>Magenta</string>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Variable%MSF__DestinationFolder%</string>
+								<key>Variable</key>
+								<string>ScriptResults</string>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Handle Script Errors (Simplified Ver)</string>
+								<key>CaseEntries</key>
+								<array>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Green</string>
+												<key>ActionName</key>
+												<string>~~~ ERROR OCURRED ~~~</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Comment</string>
+												<key>StyledText</key>
+												<data>
+								cnRmZAAAAAAD
+								AAAAAgAAAAcA
+								AABUWFQucnRm
+								AQAAAC5uAAAA
+								KwAAAAEAAABm
+								AAAAe1xydGYx
+								XGFuc2lcYW5z
+								aWNwZzEyNTJc
+								Y29jb2FydGYx
+								NDA0XGNvY29h
+								c3VicnRmNDcw
+								CntcZm9udHRi
+								bH0Ke1xjb2xv
+								cnRibDtccmVk
+								MjU1XGdyZWVu
+								MjU1XGJsdWUy
+								NTU7fQp9AQAA
+								ACMAAAABAAAA
+								BwAAAFRYVC5y
+								dGYQAAAAcy6w
+								WbYBAAAAAAAA
+								AAAAAA==
+												</data>
+												<key>Title</key>
+												<string></string>
+											</dict>
+											<dict>
+												<key>DeviceID</key>
+												<string>SOUNDEFFECTS</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PlaySound</string>
+												<key>Path</key>
+												<string>/System/Library/Sounds/Glass.aiff</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+											<dict>
+												<key>ActionName</key>
+												<string>DISPLAY ERROR MESSAGE</string>
+												<key>Buttons</key>
+												<array>
+													<dict>
+														<key>Button</key>
+														<string>OK</string>
+														<key>Cancel</key>
+														<false/>
+													</dict>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PromptForUserInput</string>
+												<key>Prompt</key>
+												<string>MACRO CANCELED due to Script Error
+
+%Variable%ScriptResults%</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>Title</key>
+												<string>Macro: "%ExecutingMacro%"</string>
+												<key>Variables</key>
+												<array/>
+											</dict>
+											<dict>
+												<key>Action</key>
+												<string>CancelThisMacro</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Cancel</string>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Matches</string>
+										<key>TestValue</key>
+										<string>^\[ERROR\]|\[USER_CANCELED\]</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Green</string>
+												<key>ActionName</key>
+												<string>~~~ VALID RETURN ~~~</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Comment</string>
+												<key>StyledText</key>
+												<data>
+								cnRmZAAAAAAD
+								AAAAAgAAAAcA
+								AABUWFQucnRm
+								AQAAAC5uAAAA
+								KwAAAAEAAABm
+								AAAAe1xydGYx
+								XGFuc2lcYW5z
+								aWNwZzEyNTJc
+								Y29jb2FydGYx
+								NDA0XGNvY29h
+								c3VicnRmNDcw
+								CntcZm9udHRi
+								bH0Ke1xjb2xv
+								cnRibDtccmVk
+								MjU1XGdyZWVu
+								MjU1XGJsdWUy
+								NTU7fQp9AQAA
+								ACMAAAABAAAA
+								BwAAAFRYVC5y
+								dGYQAAAAcy6w
+								WbYBAAAAAAAA
+								AAAAAA==
+												</data>
+												<key>Title</key>
+												<string></string>
+											</dict>
+											<dict>
+												<key>IsActive</key>
+												<false/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Notification</string>
+												<key>SoundName</key>
+												<string></string>
+												<key>Subtitle</key>
+												<string>Script Results are VALID</string>
+												<key>Text</key>
+												<string></string>
+												<key>Title</key>
+												<string>%ExecutingMacro%</string>
+											</dict>
+											<dict>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>SetVariableToText</string>
+												<key>Text</key>
+												<string>%Delete%</string>
+												<key>Variable</key>
+												<string>ScriptResults</string>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Otherwise</string>
+										<key>TestValue</key>
+										<string></string>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>Switch</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>ScriptResults</string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>MSF__ResultsLog</string>
+					</dict>
+					<dict>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Hero.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Alert</string>
+						<key>SoundPath</key>
+						<string></string>
+						<key>Text</key>
+						<string>Click on "Continue", OR Press RETURN, if you want to MOVE all of the Items SELECTED in the FINDER to:
+
+%Variable%MSF__DestinationFolder%</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>Confirm MOVE of Finder Selection</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>MOVE Each Item in Finder Selection to Destination Folder</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>Destination</key>
+								<string>%Variable%MSF__DestinationFolder%</string>
+								<key>MacroActionType</key>
+								<string>File</string>
+								<key>NotifyOnFailure</key>
+								<false/>
+								<key>Operation</key>
+								<string>Move</string>
+								<key>Source</key>
+								<string>%Variable%MSF__FinderItem%</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%ActionResult%</string>
+								<key>Variable</key>
+								<string>MoveActionResult</string>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Red</string>
+								<key>ActionName</key>
+								<string>CHECK FOR ERROR IN LAST MOVE ACTION</string>
+								<key>Conditions</key>
+								<dict>
+									<key>ConditionList</key>
+									<array>
+										<dict>
+											<key>ConditionType</key>
+											<string>Text</string>
+											<key>Text</key>
+											<string>%MoveActionResult%</string>
+											<key>TextConditionType</key>
+											<string>IsNot</string>
+											<key>TextValue</key>
+											<string>OK</string>
+										</dict>
+									</array>
+									<key>ConditionListMatch</key>
+									<string>All</string>
+								</dict>
+								<key>ElseActions</key>
+								<array/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>IfThenElse</string>
+								<key>ThenActions</key>
+								<array>
+									<dict>
+										<key>DeviceID</key>
+										<string>SOUNDEFFECTS</string>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>PlaySound</string>
+										<key>Path</key>
+										<string>/System/Library/Sounds/Glass.aiff</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>Buttons</key>
+										<array>
+											<dict>
+												<key>Button</key>
+												<string>OK</string>
+												<key>Cancel</key>
+												<false/>
+											</dict>
+										</array>
+										<key>MacroActionType</key>
+										<string>PromptForUserInput</string>
+										<key>Prompt</key>
+										<string>This macro, %ExecutingThisMacro%, has encountered a ERROR, and therefore has been canceled.
+
+The attempt to move Finder Items to:
+%Variable%DestinationFolder%
+FAILED.
+
+ERROR MSG from KM:
+
+%Variable%MoveActionResult%</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>Title</key>
+										<string>~~~ ERROR in MOVE Action - Macro CANCELED ~~~</string>
+										<key>Variables</key>
+										<array/>
+									</dict>
+									<dict>
+										<key>Action</key>
+										<string>CancelThisMacro</string>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>Cancel</string>
+									</dict>
+								</array>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Variable%MSF__ResultsLog%
+%Variable%MSF__FinderItem%</string>
+								<key>Variable</key>
+								<string>MSF__ResultsLog</string>
+							</dict>
+						</array>
+						<key>Collections</key>
+						<dict>
+							<key>CollectionList</key>
+							<array>
+								<dict>
+									<key>CollectionType</key>
+									<string>FinderSelection</string>
+								</dict>
+							</array>
+						</dict>
+						<key>MacroActionType</key>
+						<string>For</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Variable</key>
+						<string>MSF__FinderItem</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>DisplayWindow</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC60AQAAKwAAAAEA
+						AACsAQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNDA0
+						XGNvY29hc3VicnRmNDcwCntcZm9u
+						dHRibFxmMFxmbmlsXGZjaGFyc2V0
+						MCBIZWx2ZXRpY2FOZXVlO30Ke1xj
+						b2xvcnRibDtccmVkMjU1XGdyZWVu
+						MjU1XGJsdWUyNTU7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI2IFxj
+						ZjAgfn5+IFJFU1VMVFMgT0YgTU9W
+						RSB+fn5cClwKVGhlIGZvbGxvd2lu
+						ZyBpdGVtcyBpbiB0aGUgRmluZGVy
+						IFNlbGVjdGlvbjpcCiVWYXJpYWJs
+						ZSVNU0ZfX1Jlc3VsdHNMb2clXApc
+						CkhBVkUgQkVFTiBNT1ZFRCBUTzpc
+						CiVWYXJpYWJsZSVNU0ZfX0Rlc3Rp
+						bmF0aW9uRm9sZGVyJX0BAAAAIwAA
+						AAEAAAAHAAAAVFhULnJ0ZhAAAAA8
+						U59YtgEAAAAAAAAAAAAA
+						</data>
+						<key>Text</key>
+						<string>~~~ RESULTS OF MOVE ~~~
+
+The following items in the Finder Selection:
+%Variable%MSF__ResultsLog%
+
+HAVE BEEN MOVED TO:
+%Variable%MSF__DestinationFolder%</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>CLEANUP (Delete) VARIABLES -- Macro Finished</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>ActionColor</key>
+								<string>Magenta</string>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>MSF__</string>
+								<key>Variable</key>
+								<string>KMVarPrefix</string>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Magenta</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string></string>
+								<key>Variable</key>
+								<string>KMVars_To_Delete</string>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Red</string>
+								<key>ActionName</key>
+								<string>SCRIPT:  DELETE All Variables with KMVarPrefix and in KMVars_To_Delete</string>
+								<key>DisplayKind</key>
+								<string>Window</string>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteAppleScript</string>
+								<key>NotifyOnFailure</key>
+								<false/>
+								<key>Path</key>
+								<string>/Users/Shared/Dropbox/SW/DEV/KM/Scripts/[KM] Delete Variables Used in Macro (AS).scpt</string>
+								<key>StopOnFailure</key>
+								<false/>
+								<key>Text</key>
+								<string>tell application "Keyboard Maestro Engine"
+	
+	--- DELETE ALL KM VARIABLES WITH THIS PREFIX ---
+	
+	set prefixStr to getvariable "KMVarPrefix"
+	
+	if (prefixStr ¡Ù "") then
+		set value of variables whose name starts with prefixStr to "%Delete%"
+		--display notification "All KM Variables with PREFIX = '" &amp; prefixStr &amp; ?
+		--	"' have been deleted." with title "Keyboard Maestro Script"
+	end if
+	
+	--- DELETE KM VARS IN THE VARIABLE "KMVars_To_Delete" ---
+	
+	set varsToDeleteList to paragraphs of (getvariable "KMVars_To_Delete")
+	
+	if (varsToDeleteList ¡Ù {}) then
+		
+		set varsToDeleteList to varsToDeleteList &amp; {"KMVars_To_Delete"}
+		
+		repeat with oVar in varsToDeleteList
+			setvariable (oVar as text) to "%Delete%"
+		end repeat
+		
+		--display notification "All KM Variables in 'KMVars_To_Delete' have been deleted." with title "Keyboard Maestro Script"
+		
+	end if
+	
+end tell
+</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>492468193.40265399</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>567341071.32615304</real>
+				<key>Name</key>
+				<string>Move Selected Finder Items to Choose Folder</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>F32C0009-D67C-45DD-959C-D18227D79D75</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>10 Test</string>
+		<key>ToggleMacroUID</key>
+		<string>21C9FAF5-4489-4CBD-8436-9C9F6E733D38</string>
+		<key>UID</key>
+		<string>DF9C421C-0294-4CC7-9C59-7CDEB233268E</string>
+	</dict>
+</array>
+</plist>

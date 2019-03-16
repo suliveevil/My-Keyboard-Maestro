@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075954.55435097</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>Paste</string>
+						<key>MacroActionType</key>
+						<string>ClipboardSwitcherMacroAction</string>
+						<key>Name</key>
+						<string>F23B28ED-B662-467B-B6D8-0BE2F13FAAF7</string>
+						<key>RedundandDisplayName</key>
+						<string>Clipboard7</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>567337212.57849097</real>
+				<key>ModificationDate</key>
+				<real>568172767.48181999</real>
+				<key>Name</key>
+				<string>CP-Paste7</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>9</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6144</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>CD0A2027-B2D8-44A3-8808-727EB95400F4</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3 Clipboard</string>
+		<key>ToggleMacroUID</key>
+		<string>A4A6BB12-CB9D-4A50-AC08-7BA821A36E8C</string>
+		<key>UID</key>
+		<string>BC2589DA-AFE6-4B0D-BD2E-78BEFA50053C</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568131643.75224102</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>0.0.0.0 account.jetbrains.com
+%|%</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>566302929.06852496</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>567046063.70906198</real>
+				<key>Name</key>
+				<string>Pycharm-hosts</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>!pyhost</string>
+					</dict>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>£¡pyhost</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>DD84F62C-970C-4584-AF2B-2B94A02451BF</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.1 Python</string>
+		<key>ToggleMacroUID</key>
+		<string>21129CF4-FE3E-4756-ACAA-DF0241A6F2CD</string>
+		<key>UID</key>
+		<string>C590A2B1-F5F6-4920-9411-9EDA9493B9EB</string>
+	</dict>
+</array>
+</plist>

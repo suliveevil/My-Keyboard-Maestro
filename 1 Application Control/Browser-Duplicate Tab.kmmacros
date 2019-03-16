@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075922.90598297</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC6eAgAAKwAAAAEA
+						AACWAgAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZuaWxcZmNoYXJzZXQx
+						MzQgLlBpbmdGYW5nU0MtUmVndWxh
+						cjtcZjFcZm5pbFxmY2hhcnNldDAg
+						SGVsdmV0aWNhTmV1ZTt9CntcY29s
+						b3J0Ymw7XHJlZDI1NVxncmVlbjI1
+						NVxibHVlMjU1O1xyZWQwXGdyZWVu
+						MFxibHVlMDt9CntcKlxleHBhbmRl
+						ZGNvbG9ydGJsOztcY3NzcmdiXGMw
+						XGMwXGMwXGNuYW1lIHRleHRDb2xv
+						cjt9ClxwYXJkXHR4NTYwXHR4MTEy
+						MFx0eDE2ODBcdHgyMjQwXHR4Mjgw
+						MFx0eDMzNjBcdHgzOTIwXHR4NDQ4
+						MFx0eDUwNDBcdHg1NjAwXHR4NjE2
+						MFx0eDY3MjBccGFyZGlybmF0dXJh
+						bFxwYXJ0aWdodGVuZmFjdG9yMAoK
+						XGYwXGZzMjYgXGNmMiBcJ2M5XCdl
+						OFwnZDZcJ2MzU2FmYXJpXCdkNFwn
+						ZGFcJ2IyXCdjYlwnYjVcJ2E1XCdj
+						MFwnYjhcJ2NmXCdkNFwnY2FcJ2Jl
+						XCdhMVwnYjBcJ2JmXCdhYVwnYjdc
+						J2EyXCdiMlwnY2JcJ2I1XCdhNVwn
+						YTFcJ2IxXApcJ2Q0XCdkYVwnYjJc
+						J2NiXCdiNVwnYTVcJ2MwXCdiOFwn
+						ZDZcJ2QwXCdkMVwnYTFcJ2Q0XCdm
+						MVwnYTFcJ2IwXCdkNFwnY2FcJ2Qw
+						XCdlZApcZjEgQXBwbGUKXGYwIFwn
+						Y2FcJ2MyXCdiY1wnZmVcJ2Q2XCdk
+						MFwnYjVcJ2M0ClxmMSBKYXZhU2Ny
+						aXB0ClxmMCBcJ2ExXCdiMX0BAAAA
+						IwAAAAEAAAAHAAAAVFhULnJ0ZhAA
+						AADyYy5ctgEAAAAAAAAAAAAA
+						</data>
+						<key>Title</key>
+						<string>Safari£¬Not Work with Chrome¡¢FireFox</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteJavaScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>var docURL = document.URL;
+var open_link = window.open('','_blank');
+open_link.location=docURL;
+window.open(document.URL);</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>WebBrowser</key>
+						<string>Front Browser</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568078166.74563396</real>
+				<key>ModificationDate</key>
+				<real>568820951.53063405</real>
+				<key>Name</key>
+				<string>Browser-Duplicate Tab</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>2</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4352</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>8B7CF075-C899-4EAE-8F8D-D8A0D9FF1099</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>1 Application Control</string>
+		<key>ToggleMacroUID</key>
+		<string>66F83F01-3E0E-40EB-B4F4-B43A41A7BB1B</string>
+		<key>UID</key>
+		<string>ED84731D-0CAC-4635-A617-B2A2EDCF265D</string>
+	</dict>
+</array>
+</plist>

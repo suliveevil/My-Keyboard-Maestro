@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568122691.47241497</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>DisplayLarge</string>
+						<key>IsActive</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>Has been triggered remotely.</string>
+					</dict>
+					<dict>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string>Enter the number of minutes</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>How Long?</string>
+						<key>Variables</key>
+						<array>
+							<dict>
+								<key>Default</key>
+								<string>10</string>
+								<key>Variable</key>
+								<string>Minutes</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>Asynchronously</key>
+						<true/>
+						<key>Floating</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>CustomPrompt</string>
+						<key>Text</key>
+						<string>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;Timer&lt;/title&gt;
+	&lt;style type="text/css"&gt;
+
+body {
+}
+h1 {
+ margin-top:0;
+ margin-bottom:0;
+}
+
+	&lt;/style&gt; 
+&lt;/head&gt;
+&lt;body style="background: #d4cbff" data-kmwindowid="Archive MD5 Tamper" data-kmwindow="SCREEN(Main,MidX) -940,SCREEN(Main,MidY)-800,120,55"&gt;
+
+	&lt;div onclick="javascript:window.close()"&gt;
+		&lt;h1 id="clock" style="text-align: center; vertical-align: middle;"&gt;Time&lt;/h1&gt;
+	&lt;/div&gt;
+
+&lt;script&gt;
+
+window.endTime = Date.parse(new Date()) + window.KeyboardMaestro.GetVariable( "Minutes" ) * 60000;
+
+SetClock();
+
+function KMInit() {
+	var timeinterval = setInterval(function(){
+		SetClock();
+		if( !SetClock() ){
+			clearInterval(timeinterval);
+window.close();
+window.KeyboardMaestro.Trigger( "Countdown Timer Display", "Trigger Value" );
+		}
+	  },1000);
+}
+
+function SetClock() {
+	var clock = document.getElementById("clock");
+	var t = window.endTime - Date.parse(new Date());
+	if ( t &lt; 0 ) {
+		t = 0;
+	}
+	var seconds = Math.floor( (t/1000) % 60 );
+	var minutes = Math.floor( (t/1000/60) % 60 );
+	clock.innerHTML = '' + minutes + ':' + ("0" + seconds).slice(-2);
+	return t &gt; 0; 
+
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TimeOutPeriod</key>
+						<real>356400</real>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>534265372.76451701</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568444933.29633498</real>
+				<key>Name</key>
+				<string>Countdown Timer-part1</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2560</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>A8563A5D-A919-4FE7-B161-EDE5CF5AA553</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>10 Test</string>
+		<key>ToggleMacroUID</key>
+		<string>21C9FAF5-4489-4CBD-8436-9C9F6E733D38</string>
+		<key>UID</key>
+		<string>DF9C421C-0294-4CC7-9C59-7CDEB233268E</string>
+	</dict>
+</array>
+</plist>

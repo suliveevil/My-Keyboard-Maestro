@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568433732.67700803</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Aqua</string>
+						<key>ActionName</key>
+						<string>A Macro by Christopher Stone &lt;scriptmeister@thestoneforge.com&gt;</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC47AgAAKwAAAAEA
+						AAAzAgAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgQXV0aG9yZWQgYnkgQ2hyaXN0
+						b3BoZXIgU3RvbmUgPHNjcmlwdG1l
+						aXN0ZXJAdGhlc3RvbmVmb3JnZS5j
+						b20+XAoyMDE2LzA1LzIxLyA0OjE1
+						IDogQ3JlYXRlZFwKMjAxNi8xMi8x
+						MyAwNDo0MSA6IE1vZGlmaWVkXApc
+						ClRoaXMgbWFjcm8gbGlzdHMgZXZl
+						cnkgd2luZG93IHZpc2JpYmxlIHRv
+						IFN5c3RlbSBFdmVudHMuXApcCkl0
+						IHRoZW4gZGlzcGxheXMgdGhpcyBp
+						bmZvcm1hdGlvbiBpbiBUZXh0RWRp
+						dCAob3IgYXRlcm5hdGl2ZWx5IEJC
+						RWRpdCBvciBUZXh0V3JhbmdsZXIp
+						Ln0BAAAAIwAAAAEAAAAHAAAAVFhU
+						LnJ0ZhAAAAC4vyBctgEAAAAAAAAA
+						AAAA
+						</data>
+						<key>Title</key>
+						<string>Window Discovery Tool ¡ú Windows System Events Can See v1.0</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>-------------------------------------------------------------------------------------------# Auth: Christopher Stone# dCre: 2016/12/13 04:45# dMod: 2016/12/13 05:17# Appl: System Events# Task: List every window of every application process.# Libs: None# Osax: None# Tags: @Applescript, @Script, @System_Events, @List, @Every, @Windows, @Application, @Process-------------------------------------------------------------------------------------------set _sep to "-------------------------------------------------------------------------------------------"set dataAccumulator to {}tell application "System Events"	set processList to every process		repeat with theProcess in processList		set winList to every window of theProcess				if length of winList &gt; 0 then			set end of dataAccumulator to _sep			set end of dataAccumulator to name of theProcess			set end of dataAccumulator to _sep						repeat with theWin in winList				set end of dataAccumulator to contents of theWin				set end of dataAccumulator to "?"			end repeat					end if			end repeat	end tellreturn dataAccumulator-------------------------------------------------------------------------------------------</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>winRecSEV</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Reformat Report</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseRegEx</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string>\n$1\n</string>
+								<key>Search</key>
+								<string>[ ,]*(?m)(-{40,})[ ,]*</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>winRecSEV</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseRegEx</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string>\n</string>
+								<key>Search</key>
+								<string>, ?, </string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>winRecSEV</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseRegEx</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string>\n</string>
+								<key>Search</key>
+								<string>, ?</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>winRecSEV</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseRegEx</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string></string>
+								<key>Search</key>
+								<string>of application process.*</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>winRecSEV</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseRegEx</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string></string>
+								<key>Search</key>
+								<string>\A\s+</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>winRecSEV</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseRegEx</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string>$0 ¡ú </string>
+								<key>Search</key>
+								<string>(?m)window</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>winRecSEV</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>-------------------------------------------------------------------------------------------
+
+Windows Visible to System Events
+   %ICUDateTime%yyyy/MM/DD hh:mm%
+
+%Variable%winRecSEV%</string>
+								<key>Variable</key>
+								<string>winRecSEV</string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Display Report</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>ActionName</key>
+								<string>Display Report in TextEdit</string>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteShellScript</string>
+								<key>NotifyOnFailure</key>
+								<false/>
+								<key>Path</key>
+								<string></string>
+								<key>Source</key>
+								<string>Nothing</string>
+								<key>StopOnFailure</key>
+								<false/>
+								<key>Text</key>
+								<string>echo "$KMVAR_winRecSEV" | open -f;</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Display Report in BBEdit</string>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>IsActive</key>
+								<false/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteShellScript</string>
+								<key>NotifyOnFailure</key>
+								<false/>
+								<key>Path</key>
+								<string></string>
+								<key>Source</key>
+								<string>Nothing</string>
+								<key>StopOnFailure</key>
+								<false/>
+								<key>Text</key>
+								<string># Requires BBEdit's command-line tools to be installed.
+echo "$KMVAR_winRecSEV" | bbedit</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Display Report in TextWrangler</string>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>IsActive</key>
+								<false/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteShellScript</string>
+								<key>NotifyOnFailure</key>
+								<false/>
+								<key>Path</key>
+								<string></string>
+								<key>Source</key>
+								<string>Nothing</string>
+								<key>StopOnFailure</key>
+								<false/>
+								<key>Text</key>
+								<string># Requires TextWrangler's command-line tools to be installed.
+echo "$KMVAR_winRecSEV" | edit</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Variable Housekeeping</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%Delete%</string>
+						<key>Variable</key>
+						<string>winRecSEV</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>503314346.70404601</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568435838.642694</real>
+				<key>Name</key>
+				<string>Window Discovery Tool ¡ú Windows System Events Can See v1.0</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>122</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>984C9B8A-49C2-449C-AF07-610A39F931D5</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>0 System Tools</string>
+		<key>ToggleMacroUID</key>
+		<string>1292D260-0A4C-4D08-BBC1-20DEF8F31BBD</string>
+		<key>UID</key>
+		<string>7736958F-1AC0-4A04-9C07-CC1BC5FB38BA</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>567141722.40163505</real>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array/>
+				<key>CreationDate</key>
+				<real>567151430.44017899</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>567151472.75194895</real>
+				<key>Name</key>
+				<string>LockScreen</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>1BBC2250-FAAC-4867-9ABC-5758DF93A97D</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>0 KeyBinding-Mouse-Trackpad</string>
+		<key>ToggleMacroUID</key>
+		<string>5A4C15A8-642A-4C07-892E-88E9830D3815</string>
+		<key>UID</key>
+		<string>26DD20DA-600E-456D-A63A-4A9F58AEA1C1</string>
+	</dict>
+</array>
+</plist>

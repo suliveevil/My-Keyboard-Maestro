@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>OnceWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>CreationDate</key>
+		<real>505095836.058227</real>
+		<key>IsActive</key>
+		<false/>
+		<key>KeyCode</key>
+		<integer>3</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Menu</string>
+									<key>MenuConditionSelectionType</key>
+									<string>Is</string>
+									<key>MenuConditionType</key>
+									<string>IsNotEnabled</string>
+									<key>MenuModifiers</key>
+									<integer>256</integer>
+									<key>MenuShortcut</key>
+									<string>C</string>
+									<key>MenuTitle</key>
+									<string>Copy</string>
+								</dict>
+								<dict>
+									<key>Application</key>
+									<dict>
+										<key>BundleIdentifier</key>
+										<string>com.adobe.InDesign</string>
+										<key>Name</key>
+										<string>Adobe InDesign CS5</string>
+									</dict>
+									<key>ApplicationConditionType</key>
+									<string>NotActive</string>
+									<key>ConditionType</key>
+									<string>Application</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>KeyCode</key>
+								<integer>0</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>256</integer>
+								<key>ReleaseAll</key>
+								<false/>
+								<key>TargetApplication</key>
+								<dict/>
+								<key>TargetingType</key>
+								<string>Front</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Copy</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ClipboardSwitcherMacroAction</string>
+						<key>Name</key>
+						<string>A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66</string>
+						<key>RedundandDisplayName</key>
+						<string>myTextTemp</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>RemoveStyles</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Filter</string>
+						<key>NamedClipboardName</key>
+						<string>A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66</string>
+						<key>RedundandDisplayName</key>
+						<string>myTextTemp</string>
+						<key>Source</key>
+						<string>NamedClipboard</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%NamedClipboard%myTextTemp%</string>
+						<key>Variable</key>
+						<string>LocalText</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>#!/usr/bin/perl
+
+use Lingua::EN::Fathom;
+
+$selection = $ENV{KMVAR_LocalText};
+
+my $text = Lingua::EN::Fathom-&gt;new();
+$text-&gt;analyse_block($selection,1);
+
+$num_words = $text-&gt;num_words;
+$num_sentences = $text-&gt;num_sentences;
+$num_paragraphs = $text-&gt;num_paragraphs;
+$words_per_sentence = sprintf("%2.2f",$text-&gt;words_per_sentence);
+$sentences_per_paragraph = sprintf("%2.2f",$num_sentences/$num_paragraphs);
+
+$fog = sprintf("%2.2f",$text-&gt;fog);
+$flesch = sprintf("%2.2f",$text-&gt;flesch);
+$kincaid = sprintf("%2.2f",$text-&gt;kincaid);
+$complex = sprintf("%2.2f",$text-&gt;percent_complex_words);
+
+$num_words = commify($num_words);
+$num_sentences = commify($num_sentences);
+$num_paragraphs = commify($num_paragraphs);
+
+$fog_score = "6th Grade_8th Grade_HS Soph_HS Senior_College Soph_College Senior_College Grad";
+if ($fog &lt; 6.1) {
+	$fog_score =~ s/(6th Grade)(_.+?)/&lt;b&gt;$1&lt;\/b&gt;$2/;
+} elsif ($fog &lt; 8.0) {
+	$fog_score =~ s/(.+?_)(8th Grade)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($fog &lt; 10.0) {
+	$fog_score =~ s/(.+?_)(HS Soph)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($fog &lt; 12.0) {
+	$fog_score =~ s/(.+?_)(HS Senior)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($fog &lt; 14.0) {
+	$fog_score =~ s/(.+?_)(College Soph)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($fog &lt; 16.0) {
+	$fog_score =~ s/(.+?_)(College Senior)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} else {
+	$fog_score =~ s/(.+?_)(College Grad)$/$1&lt;b&gt;$2&lt;\/b&gt;/;
+}
+$fog_score =~ s/&lt;b&gt;/&lt;span&gt;&amp;nbsp;/;
+$fog_score =~ s/&lt;\/b&gt;/&amp;nbsp;&lt;\/span&gt;/;
+$fog_score =~ s/\_/&lt;br&gt;/g;
+
+$flesch_score = "Very Easy_Easy_Fairly Easy_Plain English_Fairly Difficult_Difficult_Very Difficult";
+if ($flesch &lt; 30.1) {
+	$flesch_score =~ s/(.+?_)(Very Difficult)/$1&lt;b&gt;$2&lt;\/b&gt;/;
+} elsif ($flesch &lt; 50.1) {
+	$flesch_score =~ s/(.+?_)(Difficult)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($flesch &lt; 60.1) {
+	$flesch_score =~ s/(.+?_)(Fairly Difficult)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($flesch &lt; 70.1) {
+	$flesch_score =~ s/(.+?_)(Plain English)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($flesch &lt; 80.1) {
+	$flesch_score =~ s/(.+?_)(Fairly Easy)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($flesch &lt; 90.1) {
+	$flesch_score =~ s/(.+?_)(Easy)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} else {
+	$flesch_score =~ s/(Very Easy)(_.+?)/&lt;b&gt;$1&lt;\/b&gt;$2/;
+}
+$flesch_score =~ s/&lt;b&gt;/&lt;span&gt;&amp;nbsp;/;
+$flesch_score =~ s/&lt;\/b&gt;/&amp;nbsp;&lt;\/span&gt;/;
+$flesch_score =~ s/\_/&lt;br&gt;/g;
+  
+$kincaid_score = "5th Grade_6th Grade_7th Grade_9th Grade_12th Grade_College_College Grad";
+if ($kincaid &lt; 6.0) {
+	$kincaid_score =~ s/(5th Grade)(_.+?)/&lt;b&gt;$1&lt;\/b&gt;$2/;
+} elsif ($kincaid &lt; 6.0) {
+	$kincaid_score =~ s/(.+?_)(6th Grade)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($kincaid &lt; 7.0) {
+	$kincaid_score =~ s/(.+?_)(7th Grade)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($kincaid &lt; 9.0) {
+	$kincaid_score =~ s/(.+?_)(9th Grade)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($kincaid &lt; 12.0) {
+	$kincaid_score =~ s/(.+?_)(12th Grade)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} elsif ($kincaid &lt; 16.0) {
+	$kincaid_score =~ s/(.+?_)(College)(_.+?)/$1&lt;b&gt;$2&lt;\/b&gt;$3/;
+} else {
+	$kincaid_score =~ s/(.+?_)(College Grad)/$1&lt;b&gt;$2&lt;\/b&gt;/;
+}
+$kincaid_score =~ s/&lt;b&gt;/&lt;span&gt;&amp;nbsp;/;
+$kincaid_score =~ s/&lt;\/b&gt;/&amp;nbsp;&lt;\/span&gt;/;
+$kincaid_score =~ s/\_/&lt;br&gt;/g;
+
+print &lt;&lt; "EOT";
+&lt;p&gt;This selection includes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;$num_words&lt;/b&gt; words, &lt;b&gt;$complex%&lt;/b&gt; of which are complex&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;$num_sentences&lt;/b&gt; sentences averaging &lt;b&gt;$words_per_sentence&lt;/b&gt; words&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;$num_paragraphs&lt;/b&gt; paragraphs averaging &lt;b&gt;$sentences_per_paragraph&lt;/b&gt; sentences&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table border=0 cellpadding=6 cellspacing=0 width=100%&gt;
+&lt;tr&gt;
+	&lt;th style="background-color:#36aac2; color:white; text-align:left;" &gt;FOG&lt;/th&gt;
+	&lt;th style="background-color:#36aac2; color:white; text-align:left;"&gt;FLESCH&lt;/th&gt;
+	&lt;th style="background-color:#36aac2; color:white; text-align:left;"&gt;KINCAID&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;b&gt;$fog&lt;/b&gt;&lt;br&gt;Grade Level&lt;/td&gt;
+&lt;td&gt;&lt;b&gt;$flesch&lt;/b&gt;&lt;br&gt;0 to 100&lt;/td&gt;
+&lt;td&gt;&lt;b&gt;$kincaid&lt;/b&gt;&lt;br&gt;Grade Level&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=3&gt;&lt;hr&gt;&lt;/td&gt;
+&lt;tr valign="top"&gt;
+&lt;td&gt;$fog_score&lt;/td&gt;
+&lt;td&gt;$flesch_score&lt;/td&gt;
+&lt;td&gt;$kincaid_score&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+EOT
+
+sub commify {
+	my $citations = reverse $_[0];
+	$citations =~ s/(\d\d\d)(?=\d)(?!\d*\.)/$1,/g;
+	return scalar reverse $citations;
+}
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>LocalText</string>
+					</dict>
+					<dict>
+						<key>Floating</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>CustomPrompt</string>
+						<key>Resizable</key>
+						<true/>
+						<key>Text</key>
+						<string>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;L I T E R A R Y &amp;nbsp T O O L B O X&lt;/title&gt;
+	&lt;style type="text/css"&gt;
+body{background-color:black;font:.80em "Lucida Grande",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:73%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}ul{margin-bottom:20px;}span {background-color: #36aac2;color:white}
+	&lt;/style&gt; 
+&lt;/head&gt;
+&lt;body data-kmwindow="SCREEN(Main,Left,46%),SCREEN(Main,Top,20%),380,400"&gt;
+&lt;div id="title"&gt;
+	&lt;b&gt;READABILITY SCORES&lt;/b&gt;
+&lt;/div&gt;
+&lt;div id="text"&gt;
+&lt;script&gt;
+	document.write(window.KeyboardMaestro.GetVariable('LocalText'))
+&lt;/script&gt;
+&lt;/div&gt;&lt;script&gt;
+function KMInit() {
+	document.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>562550815.10258806</real>
+				<key>ModificationDate</key>
+				<real>565401428.96080506</real>
+				<key>Name</key>
+				<string>31)Readability Scores</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>15</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>C6139221-215E-41E4-8995-662EAD649781</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>256</integer>
+		<key>Name</key>
+		<string>Literary Toolbox</string>
+		<key>PaletteUnderMouse</key>
+		<true/>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.AccessibilityInspector</string>
+					<key>Name</key>
+					<string>Accessibility Inspector</string>
+					<key>NewFile</key>
+					<string>/Applications/Xcode.app/Contents/Applications/Accessibility Inspector.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.googlecode.iterm2</string>
+					<key>Name</key>
+					<string>iTerm</string>
+					<key>NewFile</key>
+					<string>/Applications/iTerm.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.macromates.TextMate</string>
+					<key>Name</key>
+					<string>TextMate</string>
+					<key>NewFile</key>
+					<string>/Applications/TextMate.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.TextEdit</string>
+					<key>Name</key>
+					<string>TextEdit</string>
+					<key>NewFile</key>
+					<string>/Applications/TextEdit.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.finder</string>
+					<key>Name</key>
+					<string>Finder</string>
+					<key>NewFile</key>
+					<string>/System/Library/CoreServices/Finder.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.Safari</string>
+					<key>Name</key>
+					<string>Safari</string>
+					<key>NewFile</key>
+					<string>/Applications/Safari.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.finder</string>
+					<key>Name</key>
+					<string>Finder</string>
+					<key>NewFile</key>
+					<string>/System/Library/CoreServices/Finder.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Theme</key>
+		<dict>
+			<key>Opacity</key>
+			<integer>76</integer>
+			<key>Size</key>
+			<integer>18</integer>
+			<key>UseDefaultInstead</key>
+			<false/>
+			<key>UseTrigger</key>
+			<true/>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>1FA6611F-2018-40E0-944D-3DD5C2BBE9E2</string>
+		<key>UID</key>
+		<string>26CD1402-3E14-44C6-9A46-EC7166F24262</string>
+	</dict>
+</array>
+</plist>

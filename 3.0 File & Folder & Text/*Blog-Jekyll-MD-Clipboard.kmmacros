@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568481555.45812798</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>---
+layout: post
+title: %|%
+categories: [cate1, cate2]
+description: some word here
+keywords: keyword1, keyword2
+---
+
+text</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568924198.54350698</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568928371.56586301</real>
+				<key>Name</key>
+				<string>Blog-Jekyll-MD-Clipboard</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>blo;</string>
+					</dict>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>blo£»</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>13228058-7EDF-4127-BB4B-E700ECCC4D1C</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.0 File &amp; Folder &amp; Text</string>
+		<key>ToggleMacroUID</key>
+		<string>6CE0A1AA-E144-4647-AB99-26402B1352A4</string>
+		<key>UID</key>
+		<string>27215D41-2AC6-46EC-8F7F-54ECB332C656</string>
+	</dict>
+</array>
+</plist>

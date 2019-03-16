@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568481555.45812798</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Green</string>
+						<key>ActionName</key>
+						<string>~~~ ReleaseNotes for  VER: 2.0    2016-09-10 ~~~</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC6XBQAAKwAAAAEA
+						AACPBQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgQXV0aG9yLkBKTWljaGFlbFRY
+						XApcClBVUlBPU0U6ICBTZXQgdGhl
+						IENyZWF0aW9uIGFuZC9vciBNb2Rp
+						ZmljYXRpb24gRGF0ZSBvZiBTZWxl
+						Y3RlZCBGaWxlXApcCkhPVyBUTyBV
+						U0U6XApcCjEuIFNlbGVjdCBhIEZp
+						bGUgaW4gdGhlIEZpbmRlclwKMi4g
+						UnVuIHRoaXMgbWFjcm9cClwKVEFH
+						UzogIEBEYXRlcywgQEZpbmRlciwg
+						QEZpbGVzLCBAQVNPYmpDLCBAY2Nz
+						dG9uZSwgQFNoYW5lU3RhbmxleVwK
+						XApBQ1RJT04gQ09MT1IgQ09ERVNc
+						ClwnYTBcJ2EwXCc5NVwnYTBUbyBm
+						YWNpbGl0YXRlIHRoZSByZWFkaW5n
+						LCBjdXN0b21pemluZywgYW5kIG1h
+						aW50ZW5hbmNlIG9mIHRoaXMgbWFj
+						cm8sXApcJ2EwXCdhMFwnYTBcJ2Ew
+						XCdhMFwnYTBrZXkgQWN0aW9ucyBh
+						cmUgY29sb3JlZCBhcyBmb2xsb3dz
+						OlwKXCdhMFwnYTBcJzk1XCdhMEdS
+						RUVOXCdhMFwnYTBcJ2EwXCdhMFwn
+						YTAgLS0gS2V5IENvbW1lbnRzIGRl
+						c2lnbmVkIHRvIGhpZ2hsaWdodCBt
+						YWluIHNlY3Rpb25zIG9mIG1hY3Jv
+						XApcJ2EwXCdhMFwnOTVcJ2EwTUFH
+						RU5UQSAtLSBBY3Rpb25zIGRlc2ln
+						bmVkIHRvIGJlIGN1c3RvbWl6ZWQg
+						YnkgdXNlclwKXCdhMFwnYTBcJzk1
+						XCdhMFlFTExPV1wnYTBcJ2EwXCdh
+						MC0tIFByaW1hcnkgQWN0aW9ucyAo
+						dXN1YWxseSB0aGUgbWFpbiBwdXJw
+						b3NlIG9mIHRoZSBtYWNybylcClwn
+						YTBcJ2EwXCc5NVwnYTBPUkFOR0Vc
+						J2EwXCdhMC0tIEFjdGlvbnMgdGhh
+						dCBwZXJtYW5lbnRseSBkZXN0cm95
+						IFZhcmlibGVzIG9yIENsaXBib2Fy
+						ZHNcClwKIyMjI1JFUVVJUkVTOiAg
+						XApcCjEuICBLZXlib2FyZCBNYWVz
+						dHJvIFZlciA3LjIuMStcCjIuICAq
+						Km1hYyBPUyBFbCBDYXBpdGFuICgx
+						MC4xMSkrKipcClwKfn5+fn5+fn5+
+						fn5+fn5+fn5+fn5+fn5+fn5+fn5+
+						fn5+fn5+fn5+fn5+fn5+fn5+flwK
+						QnkgZG93bmxvYWRpbmcgb3IgaW5z
+						dGFsbGluZyB0aGlzIHNvZnR3YXJl
+						LCB5b3UgYWdyZWUgdG8gdGhlIHRl
+						cm1zIG9mIHVzYWdlIGluIHRoZSBi
+						ZWxvdyBBY3Rpb24gbGFiZWxlZCAi
+						TGljZW5zZSBhbmQgVXNhZ2UgQWdy
+						ZWVtZW50Ii4gIERvIG5vdCBpbnN0
+						YWxsIG9yIHVzZSBpZiB5b3UgZG8g
+						bm90IGFncmVlLlwKfn5+fn5+fn5+
+						fn5+fn5+fn5+fn5+fn5+fn5+fn5+
+						fn5+fn5+fn5+fn5+fn5+fn5+flwK
+						fQEAAAAjAAAAAQAAAAcAAABUWFQu
+						cnRmEAAAAEbsfly2AQAAAAAAAAAA
+						AAA=
+						</data>
+						<key>Title</key>
+						<string>[DATE] Change Creation and/or Modification Date of Selected Finder Item</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Green</string>
+						<key>ActionName</key>
+						<string>~~~ CHANGE LOG ~~~</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC4VBAAAKwAAAAEA
+						AAANBAAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgXCc5NlwnOTZcJzk2XCc5Nlwn
+						OTZcJzk2XCc5NlwnOTZcJzk2XCc5
+						NlwnOTZcJzk2XCc5NlwnOTZcJzk2
+						XCc5NlwnOTZcJzk2XCc5NlwnOTZc
+						Jzk2XCc5NlwnOTZcJzk2XCc5Nlwn
+						OTZcJzk2XCc5NlwnOTZcJzk2XCc5
+						NlwnOTZcJzk2XCc5NlwnOTZcJzk2
+						XCc5NlwnOTZcJzk2XApWRVJcJ2Ew
+						XCdhMFwnYTBcJ2EwXCdhMERBVEVc
+						ClwnOTZcJzk2XCc5NlwnOTZcJzk2
+						XCc5NlwnOTZcJzk2XCc5NlwnOTZc
+						Jzk2XCc5NlwnOTZcJzk2XCc5Nlwn
+						OTZcJzk2XCc5NlwnOTZcJzk2XCc5
+						NlwnOTZcJzk2XCc5NlwnOTZcJzk2
+						XCc5NlwnOTZcJzk2XCc5NlwnOTZc
+						Jzk2XCc5NlwnOTZcJzk2XCc5Nlwn
+						OTZcJzk2XCc5NlwKMi4wXCdhMFwn
+						YTBcJ2EwXCdhMFwnYTBcJ2EwXCdh
+						MDIwMTYtMDktMTBcClwnYTBcJ2Ew
+						XCc5NVwnYTBBZGRlZCBzdXBwb3J0
+						IGZvciBZb3NlbWl0ZVwKXCdhMFwn
+						YTBcJzk1XCdhMEFkZGVkIGNoZWNr
+						IGZvciBub24tc3VwcG9ydGVkIG1h
+						Y09TJ3NcClwnYTBcJ2EwXCc5NVwn
+						YTBBZGRlZCBzdXBwb3J0IGZvciBJ
+						U08gLyBJbnRlcm5hdGlvbmFsIERh
+						dGUgZm9ybWF0XApcJ2EwXCdhMFwn
+						OTUgQWRkZWQgc3VwcG9ydCBmb3Ig
+						Rm9sZGVyc1wKXCdhMFwnYTBcJzk1
+						XCdhMENoYW5nZWQgTWFjcm8gTmFt
+						ZSB0byBpbmRpY2F0ZSBzdXBwb3J0
+						IGZvciBhbGwgRmluZGVyIEl0ZW1z
+						XApcCjEuMFwnYTBcJ2EwXCdhMFwn
+						YTBcJ2EwXCdhMFwnYTAyMDE2LTA5
+						LTA4XApcJ2EwXCdhMFwnOTUgT3Jp
+						Z2luYWwgdmVyc2lvbn0BAAAAIwAA
+						AAEAAAAHAAAAVFhULnJ0ZhAAAABG
+						7H5ctgEAAAAAAAAAAAAA
+						</data>
+						<key>Title</key>
+						<string>~~~ CHANGE LOG ~~~</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Green</string>
+						<key>ActionName</key>
+						<string>License and Usage Agreement -- Read Before Using</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC4SBwAAKwAAAAEA
+						AAAKBwAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgfn5+fn5+fn5+fn5+fn5+fn5+
+						fn5+fn5+fn5+fn5+fn5+fn5+fn5+
+						fn5+fn5+fn5+flwKQnkgZG93bmxv
+						YWRpbmcgb3IgaW5zdGFsbGluZyB0
+						aGlzIHNvZnR3YXJlLCB5b3UgYWdy
+						ZWUgdG8gdGhlIGZvbGxvd2luZyBz
+						dGF0ZW1lbnRzLiAgRE8gTk9UIElO
+						U1RBTEwgT1IgVVNFIElGIFlPVSBE
+						TyBOT1QgQUdSRUUuXAp+fn5+fn5+
+						fn5+fn5+fn5+fn5+fn5+fn5+fn5+
+						fn5+fn5+fn5+fn5+fn5+fn5+fn5+
+						XApcCkRFRklOSVRJT04gT0YgVEVS
+						TVM6XAoiU29mdHdhcmUiIHJlZmVy
+						cyB0byBhbnkgYW5kIGFsbCBkYXRh
+						IGFuZCBjb21wdXRlciBzb2Z0d2Fy
+						ZSByZWxhdGVkIHRvIHRoaXMgS2V5
+						Ym9hcmQgTWFlc3RybyBNYWNybywg
+						aW5jbHVkaW5nLCBidXQgbm90IGxp
+						bWl0ZWQgdG86IGluc3RydWN0aW9u
+						cywgbWFjcm9zLCBhY3Rpb25zLCBw
+						bHVnaW5zLCBzY3JpcHRzLCBhbmQg
+						cmVzb3VyY2VzIC4gIEl0IGluY2x1
+						ZGVzIGV2ZXJ5dGhpbmcgaW4gdGhl
+						IGRvd25sb2FkIGZpbGUocykuXApc
+						ClBFUk1JU1NJT04gVE8gVVNFIEZP
+						UiBGUkVFOlwKUGVybWlzc2lvbiBp
+						cyBoZXJlYnkgZ3JhbnRlZCB0byBh
+						bnlvbmUgdG8gdXNlLCBjb3B5LCBh
+						bmQvb3IgbW9kaWZ5IHRoZSBzb2Z0
+						d2FyZSwgd2l0aG91dCBhbnkgY2hh
+						cmdlLiAgVGhlIHNvZnR3YXJlIG1h
+						eSBiZSByZWRpc3RyaWJ1dGVkIHBy
+						b3ZpZGVkIHRoYXQ6ICAoMSkgSXQg
+						aXMgb2ZmZXJlZCBmcmVlIG9mIGNo
+						YXJnZSB0byBvdGhlcnM7ICAoMikg
+						IFRoZSBmb2xsb3dpbmcgYXJlIGlu
+						Y2x1ZGVkIGluIGFuZCBhcHBlYXIg
+						aW4gYWxsIGNvcGllczogKGEpIFRo
+						ZSBhYm92ZSBjb3B5cmlnaHQgbm90
+						aWNlOyAgKGIpIFRoaXMgTGljZW5z
+						ZSBpbiBpdHMgZW50aXJldHk7IGFu
+						ZCAoYykgQXR0cmlidXRpb24gaXMg
+						Z2l2ZW4gdG8gdGhlIG9yaWdpbmFs
+						IGF1dGhvciBuYW1lZCBpbiB0aGUg
+						YWJvdmUgUmVsZWFzZU5vdGVzLlwK
+						XApOTyBXQVJSQU5UWTpcClRoZSBz
+						b2Z0d2FyZSBpcyBwcm92aWRlZCAi
+						YXMgaXMiIGFuZCB0aGUgYXV0aG9y
+						IGRpc2NsYWltcyBhbGwgd2FycmFu
+						dGllcyB3aXRoIHJlZ2FyZCB0byB0
+						aGlzIHNvZnR3YXJlIGluY2x1ZGlu
+						ZyBhbGwgaW1wbGllZCB3YXJyYW50
+						aWVzIG9mIG1lcmNoYW50YWJpbGl0
+						eSBhbmQvb3IgZml0bmVzcyBmb3Ig
+						YSBwYXJ0aWN1bGFyIHB1cnBvc2Uu
+						IFwKXApOTyBJTkRFTU5JVFk6XApJ
+						biBubyBldmVudCBzaGFsbCB0aGUg
+						YXV0aG9yIG9yIENvcHlyaWdodCBo
+						b2xkZXIgYmUgbGlhYmxlIGZvciBh
+						bnkgc3BlY2lhbCwgZGlyZWN0LCBp
+						bmRpcmVjdCwgb3IgY29uc2VxdWVu
+						dGlhbCBkYW1hZ2VzIG9yIGFueSBk
+						YW1hZ2VzIHdoYXRzb2V2ZXIgcmVz
+						dWx0aW5nIGZyb20gbG9zcyBvZiB1
+						c2UsIGRhdGEgb3IgcHJvZml0cywg
+						d2hldGhlciBpbiBhbiBhY3Rpb24g
+						b2YgY29udHJhY3QsIG5lZ2xpZ2Vu
+						Y2Ugb3Igb3RoZXIgdG9ydGlvdXMg
+						YWN0aW9uLCBhcmlzaW5nIG91dCBv
+						ZiBvciBpbiBjb25uZWN0aW9uIHdp
+						dGggdGhlIHVzZSBvciBwZXJmb3Jt
+						YW5jZSBvZiB0aGlzIHNvZnR3YXJl
+						Ln0BAAAAIwAAAAEAAAAHAAAAVFhU
+						LnJ0ZhAAAABG7H5ctgEAAAAAAAAA
+						AAAA
+						</data>
+						<key>Title</key>
+						<string>Copyright (c) 2016, JMichaelTX</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Orange</string>
+						<key>ActionName</key>
+						<string>SET Default Values if EMPTY</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>FCD__DateToChange</string>
+									<key>VariableConditionType</key>
+									<string>IsEmpty</string>
+									<key>VariableValue</key>
+									<string>value</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>Creation</string>
+								<key>Variable</key>
+								<string>FCD__DateToChange</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%ICUDateTime%yyyy-MM-dd%</string>
+								<key>Variable</key>
+								<string>FCD__NewDate</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>ActionName</key>
+						<string>SCRIPT:  Get File Name and Dates</string>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>use AppleScript version "2.4" -- Yosemite (10.10) or lateruse scripting additionstell application "Finder"	set fileList to selection	set oFile to item 1 of fileList	set fileName to name of oFile		--- GET DATES IN ISO/INTERN'L DATE FORMAT ---		set creDateStr to text 1 thru 10 of ((creation date of oFile) ?		as ?class isot? as string)	set modDateStr to text 1 thru 10 of ((modification date of oFile) ?		as ?class isot? as string)	end tellset returnResults to "Item Name: " &amp; tab &amp; tab &amp; tab &amp; fileName ?	&amp; return &amp; "Creation Date: " &amp; tab &amp; tab &amp; creDateStr ?	&amp; return &amp; "Modification Date: " &amp; tab &amp; modDateStrreturn returnResults</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>ScriptResults</string>
+					</dict>
+					<dict>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string>FINDER ITEM TO BE CHANGED:
+
+%Variable%ScriptResults%
+.
+NEW Date can be in ISO format (YYYY-MM-DD) or any format acceptable to AppleScript, like "MMM d, YYYY".</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TimeOutPeriod</key>
+						<real>300</real>
+						<key>Title</key>
+						<string>Change Dates of Selected Item in Finder</string>
+						<key>Variables</key>
+						<array>
+							<dict>
+								<key>Default</key>
+								<string>%Variable%FCD__DateToChange%|Creation|Modification|Both</string>
+								<key>Variable</key>
+								<string>FCD__DateToChange</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string>%Variable%FCD__NewDate%</string>
+								<key>Variable</key>
+								<string>FCD__NewDate</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>ActionName</key>
+						<string>SCRIPT:  Set Date(s) of Selected File</string>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string>/Users/Shared/Dropbox/SW/DEV/KM/Scripts/[DATE] Change Creation and Modification Date of Finder File [KM] (AS).scpt</string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>use AppleScript version "2.4" -- Yosemite (10.10)+
+use framework "Foundation"
+use scripting additions
+
+property ptyScriptName : "Set Finder Item Dates"
+property ptyScriptVer : "2.0"
+property ptyScriptDate : "2016-09-10"
+property ptyScriptAuthor : "JMichaelTX"
+
+(*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PURPOSE:  Set the Creation and/or Modification Date of Selected Finder Item
+				(can be either file or folder)
+
+RETURNS:
+
+  IF SUCCESSFUL:
+	? "OK" on line 1
+	? Finder Item Name on line 3
+	? Date info on lines 5 &amp; 6
+	
+  IF ERROR:
+  	? "[ERROR]" on line 1
+  	? Error details on remaining lines
+
+KM VARIABLES REQUIRED: (must be set before calling this script)
+
+	? FCD__DateToChange -- MUST be one of these: "Creation", "Modification", "Both"
+	? FCD__NewDate -- Date string convertable by AppleScript, like "Sep 9, 2016"
+	
+KM VARIABLES SET: (by this script)
+	? NONE
+	
+REQUIRES:
+
+	? masOS Yosemite (10.10)+
+	? Keyboard Maestro 7.2.1
+	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~	
+*)
+set returnResults to "TBD"
+
+try
+	--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	if (not my checkReqdASVer("2.4")) then
+		error "This script requires macOS Yosemite (10.10)+"
+	end if
+	
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	#	Select Item in Finder, then run this script
+	#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	tell application "Keyboard Maestro Engine"
+		set dateToChangeStr to getvariable "FCD__DateToChange"
+		set newDateStr to getvariable "FCD__NewDate"
+	end tell
+	
+	--- FOR TESTING ---
+	(*	
+	--- SET TO ONE OF THESE:  "Creation", "Modification", "Both" ---
+	set dateToChangeStr to "Both"
+	
+	set newDateStr to "Sep 1, 2010"
+	*)
+	
+	
+	tell application "Finder" to set itemList to selection as alias list
+	if length of itemList = 0 then error "No files were selected in the Finder!"
+	
+	set itemPosixPath to POSIX path of (item 1 of itemList)
+	
+	set returnResults to "OK" &amp; return &amp; my changeDate(itemPosixPath, dateToChangeStr, newDateStr)
+	
+	
+	--~~~~~~~~~~~~~ END TRY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+on error errMsg number errNum
+	
+	if errNum = -128 then ## User Canceled
+		set returnResults to "[USER_CANCELED]" &amp; return &amp; return ?
+			&amp; "SCRIPT: " &amp; ptyScriptName &amp; "   Ver: " &amp; ptyScriptVer
+	else
+		set returnResults to "[ERROR]" &amp; return &amp; return ?
+			&amp; "SCRIPT: " &amp; ptyScriptName &amp; "   Ver: " &amp; ptyScriptVer &amp; return ?
+			&amp; "Error Number: " &amp; errNum &amp; return ?
+			&amp; errMsg
+	end if
+	
+	
+end try
+--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--- RETURN THE RESULTS TO THE KM EXECUTE SCRIPT ACTION ---
+return returnResults
+
+--~~~~~~~~~~~~~~~~~~~~ END OF MAIN SCRIPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#	HANDLERS FOR THIS SCRIPT
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+on changeDate(pPOSIXpath, pDateToChange, pNewDate)
+	--¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+	-- VER: 2.0		2016-09-10
+	(*
+	PURPOSE:  Change Creation and/or Modification Date(s) of Finder Item
+	RETURNS:	String -- Summary of Changes that were made
+	
+	# Auth: Christopher Stone (@ccstone) &amp; @ShaneStanley
+	# ModBy: @JMichaelTX (minor mods)
+	# dMod: 2016-09-09
+	# Tags: @Core, @Date, @Files, @Finder, @Applescript, @Script
+	
+	REQUIRES:
+		? macOS Mavericks (10.9)+
+		
+	MODS BY @JMichaelTX:
+		? Added handler to convert AppleScript Date to NSDate
+		? Moved Finder commands to main script
+		? Added Conversion of string date in ISO format to AS Date
+		? Added return of results summary
+		
+	REFERENCES:
+		? @ShaneStanley, 2016-06-27, ASUL, Can a Creation Date be Modified with ASObjC?
+			http://lists.apple.com/archives/applescript-users/2016/Jun/msg00209.html
+			
+	You would think that since creation-date is NSURLCreationDateKey that modification-date would be NSURLModificationDateKey, but it's not.
+	
+	I had to search this reference:
+	https://developer.apple.com/reference/foundation/urlresourcekey
+	*)
+	---------------------------------------------------------------------------------
+	
+	
+	if class of pNewDate ¡Ù "date" then
+		set pNewDate to my convertToDate(pNewDate)
+	end if
+	
+	set newDateISO to text 1 thru 10 of (pNewDate as ?class isot? as string)
+	
+	
+	--- CONVERT AppleScript DATE TO NSDATE FOR USE WITH macOS before El Capitan (10.11) ---
+	set pNewDate to convertASDateToNSDate(pNewDate)
+	set theURL to current application's |NSURL|'s fileURLWithPath:pPOSIXpath
+	
+	if ((pDateToChange = "Creation") or (pDateToChange = "Both")) then
+		
+		#-----------------
+		# Creation Date
+		#-----------------
+		
+		set {theResult, theError} to theURL's setResourceValue:pNewDate forKey:(current application's NSURLCreationDateKey) |error|:(reference)
+		
+		if theResult as boolean is false then
+			error (theError's localizedDescription() as text)
+		end if
+		
+	end if
+	
+	if ((pDateToChange = "Modification") or (pDateToChange = "Both")) then
+		
+		#----------------------
+		# Modification Date
+		#----------------------
+		
+		set {theResult, theError} to theURL's setResourceValue:pNewDate forKey:(current application's NSURLContentModificationDateKey) |error|:(reference)
+		
+		if theResult as boolean is false then error (theError's localizedDescription() as text)
+		
+	end if
+	
+	set itemName to my getItemName(pPOSIXpath)
+	
+	set resultsStr to "Finder Item: " &amp; return &amp; itemName ?
+		&amp; return &amp; "Date(s) Chanaged: " &amp; return &amp; pDateToChange &amp; return &amp; newDateISO
+	
+	display notification "New Date: " &amp; newDateISO ?
+		with title pDateToChange &amp; " Date(s) Changed For:" subtitle itemName
+	
+	
+	return resultsStr
+	
+end changeDate
+-------------------------------------------------------------------------------------------
+
+on convertToDate(pDate)
+	
+	--==========================================
+	--	CONVERT TO DATE OBJECT
+	--==========================================
+	
+	-- MUST NOT BE IN ANY APP WHEN USING THE date FUNCTION --
+	
+	if (class of pDate = "date") then
+		set dateAsDate to pDate
+		
+	else
+		
+		try -- Try Standard U.S. date format --
+			set dateAsDate to date (pDate)
+		on error --- Try International Date format (YYYY-MM-DD)
+			set dateAsDate to my convertISOtoDate(pDate)
+		end try
+		
+	end if
+	
+	return dateAsDate
+	
+end convertToDate
+
+to convertISOtoDate(pDateStr)
+	
+	--- pDateStr MUST be in the format of YYYY&lt;delim&gt;MM&lt;delim&gt;DD
+	---	  where &lt;delim&gt; can be any character
+	---		like 2016-01-05
+	
+	set resultDate to the current date
+	
+	set the year of resultDate to (text 1 thru 4 of pDateStr)
+	set the month of resultDate to (text 6 thru 7 of pDateStr)
+	set the day of resultDate to (text 9 thru 10 of pDateStr)
+	set the time of resultDate to 0
+	
+	if (length of pDateStr) &gt; 10 then
+		set the hours of resultDate to (text 12 thru 13 of pDateStr)
+		set the minutes of resultDate to (text 15 thru 16 of pDateStr)
+		
+		if (length of pDateStr) &gt; 16 then
+			set the seconds of resultDate to (text 18 thru 19 of pDateStr)
+		end if
+	end if
+	
+	return resultDate
+	
+end convertISOtoDate
+
+--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+on checkReqdASVer(pVerReqdStr)
+	-----------------------------------------------------------------
+	
+	considering numeric strings
+		-- Use of "considering numeric strings" allows for the comparison
+		--  of strings like "1.10.3" vs "1.9" and return that "1.10.3" is larger.
+		--  Applescript's version returns a text value
+		
+		if AppleScript's version &lt; pVerReqdStr then
+			set verOK to false
+			--error "This script requires macOS El Capitan (10.11)+"
+		else
+			set verOK to true
+		end if
+	end considering
+	
+	return verOK
+	
+end checkReqdASVer
+
+--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+on convertASDateToNSDate(pASDate)
+	--¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+	-- VER: 1.1		2016-09-10
+	(*
+	PURPOSE:  Convert Standard AppleScript Date to NSDate (ASObjC)
+	
+	REQUIRES:
+		? use framework "Foundation"
+		? macOS Mavericks (10.9)+
+
+	
+	NOTE:		This is needed ONLY in macOS prior to El Capitan (10.11)
+				It should work with both Yosemite (10.10) and Mavericks (10.9)
+				
+	AUTHOR:	Adapted by @JMichaelTX from original by @ccstone &amp; @ShaneStanley
+	--¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+	*)
+	local newNSDate, theYear, theMonth, theDay, theSeconds, theCalendar
+	
+	set {theYear, theMonth, theDay, theSeconds} to pASDate's {year, month, day, time}
+	
+	if theYear &lt; 0 then
+		set theYear to -theYear
+		set theEra to 0
+	else
+		set theEra to 1
+	end if
+	
+	set theCalendar to current application's NSCalendar's currentCalendar()
+	set newNSDate to theCalendar's dateWithEra:theEra |year|:theYear |month|:(theMonth as integer) ?
+		|day|:theDay hour:0 minute:0 |second|:theSeconds nanosecond:0
+	
+	return newNSDate
+	
+end convertASDateToNSDate
+
+--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+on getItemName(pPOSIXpath)
+	--¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª¡ª
+	-- VER: 1.0		2016-09-10
+	
+	
+	set AppleScript's text item delimiters to "/"
+	set pathList to text items of pPOSIXpath
+	
+	repeat with oItem in (reverse of pathList)
+		if (text of oItem ¡Ù "") then
+			set itemName to text of oItem
+			exit repeat
+		end if
+	end repeat
+	
+	return itemName
+	
+end getItemName</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>ScriptResults</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Orange</string>
+						<key>ActionName</key>
+						<string>~~~ Handle Script Errors ~~~</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>ActionColor</key>
+								<string>Yellow</string>
+								<key>ActionName</key>
+								<string>Handle Script Errors (Simplified Ver)</string>
+								<key>CaseEntries</key>
+								<array>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Green</string>
+												<key>ActionName</key>
+												<string>~~~ ERROR OCURRED ~~~</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Comment</string>
+												<key>StyledText</key>
+												<data>
+								cnRmZAAAAAAD
+								AAAAAgAAAAcA
+								AABUWFQucnRm
+								AQAAAC5uAAAA
+								KwAAAAEAAABm
+								AAAAe1xydGYx
+								XGFuc2lcYW5z
+								aWNwZzEyNTJc
+								Y29jb2FydGYx
+								NDA0XGNvY29h
+								c3VicnRmNDcw
+								CntcZm9udHRi
+								bH0Ke1xjb2xv
+								cnRibDtccmVk
+								MjU1XGdyZWVu
+								MjU1XGJsdWUy
+								NTU7fQp9AQAA
+								ACMAAAABAAAA
+								BwAAAFRYVC5y
+								dGYQAAAAcy6w
+								WbYBAAAAAAAA
+								AAAAAA==
+												</data>
+												<key>Title</key>
+												<string></string>
+											</dict>
+											<dict>
+												<key>DeviceID</key>
+												<string>SOUNDEFFECTS</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PlaySound</string>
+												<key>Path</key>
+												<string>/System/Library/Sounds/Glass.aiff</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+											<dict>
+												<key>ActionName</key>
+												<string>DISPLAY ERROR MESSAGE</string>
+												<key>Buttons</key>
+												<array>
+													<dict>
+														<key>Button</key>
+														<string>OK</string>
+														<key>Cancel</key>
+														<false/>
+													</dict>
+												</array>
+												<key>MacroActionType</key>
+												<string>PromptForUserInput</string>
+												<key>Prompt</key>
+												<string>MACRO CANCELED due to Script Error
+
+%Variable%ScriptResults%</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>Title</key>
+												<string>Macro: "%ExecutingMacro%"</string>
+												<key>Variables</key>
+												<array/>
+											</dict>
+											<dict>
+												<key>Action</key>
+												<string>CancelThisMacro</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Cancel</string>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Matches</string>
+										<key>TestValue</key>
+										<string>^\[ERROR\]</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Green</string>
+												<key>ActionName</key>
+												<string>~~~ VALID RETURN ~~~</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Comment</string>
+												<key>StyledText</key>
+												<data>
+								cnRmZAAAAAAD
+								AAAAAgAAAAcA
+								AABUWFQucnRm
+								AQAAAC5uAAAA
+								KwAAAAEAAABm
+								AAAAe1xydGYx
+								XGFuc2lcYW5z
+								aWNwZzEyNTJc
+								Y29jb2FydGYx
+								NDA0XGNvY29h
+								c3VicnRmNDcw
+								CntcZm9udHRi
+								bH0Ke1xjb2xv
+								cnRibDtccmVk
+								MjU1XGdyZWVu
+								MjU1XGJsdWUy
+								NTU7fQp9AQAA
+								ACMAAAABAAAA
+								BwAAAFRYVC5y
+								dGYQAAAAcy6w
+								WbYBAAAAAAAA
+								AAAAAA==
+												</data>
+												<key>Title</key>
+												<string></string>
+											</dict>
+											<dict>
+												<key>IsActive</key>
+												<false/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Notification</string>
+												<key>SoundName</key>
+												<string></string>
+												<key>Subtitle</key>
+												<string>Script Results are VALID</string>
+												<key>Text</key>
+												<string></string>
+												<key>Title</key>
+												<string>%ExecutingMacro%</string>
+											</dict>
+											<dict>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>SetVariableToText</string>
+												<key>Text</key>
+												<string>%Delete%</string>
+												<key>Variable</key>
+												<string>ScriptResults</string>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Otherwise</string>
+										<key>TestValue</key>
+										<string></string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Switch</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>ScriptResults</string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Orange</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%Delete%</string>
+						<key>Variable</key>
+						<string>ScriptResults</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>495144225.230537</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/Applications/Calendar.app</string>
+				<key>ModificationDate</key>
+				<real>573514727.06762803</real>
+				<key>Name</key>
+				<string>Change Creation and/or Modification Date of Selected Finder Item</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>122</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>2F2B1ED9-DCBC-4685-969E-ADC44B012138</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.0 File &amp; Folder &amp; Text</string>
+		<key>ToggleMacroUID</key>
+		<string>6CE0A1AA-E144-4647-AB99-26402B1352A4</string>
+		<key>UID</key>
+		<string>27215D41-2AC6-46EC-8F7F-54ECB332C656</string>
+	</dict>
+</array>
+</plist>

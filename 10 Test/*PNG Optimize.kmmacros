@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568122691.47241497</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC4LAgAAKwAAAAEA
+						AAADAgAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgVG9tIEZsb2VyZW4gPGVjZGx0
+						ZkBtYWMuY29tPiwgaHR0cDovL2Rm
+						bGVjdC5uZXRcClwKMS4wLjFcCkhU
+						TUwgcHJvbXB0IHVwZGF0ZWQgZm9y
+						IG1hY09TIFNpZXJyYS5cClNwb3Rs
+						aWdodCBjb21tZW50IG5vdyBnZXRz
+						IHdyaXR0ZW4gYWxzbyB3aGVuIGFk
+						dnBuZyBpcyBkaXNhYmxlZC5cCkNo
+						YW5nZWQgc29tZSBkZWZhdWx0czog
+						U3BlZWQgLT4gMSwgRGl0aGVyIC0+
+						IDEsIGFkdnBuZyAtPiA3en0BAAAA
+						IwAAAAEAAAAHAAAAVFhULnJ0ZhAA
+						AAC0vCBctgEAAAAAAAAAAAAA
+						</data>
+						<key>Title</key>
+						<string>Ver 1.0.1 (87svx0)</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Reset</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string></string>
+								<key>Variable</key>
+								<string>pqOptions</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string></string>
+								<key>Variable</key>
+								<string>pqScriptOut</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string></string>
+								<key>Variable</key>
+								<string>pqDeflateOut</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>?</string>
+								<key>Variable</key>
+								<string>pqDeflateResult</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string></string>
+								<key>Variable</key>
+								<string>HTML Result Button</string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Set defaults</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>pqQuality</string>
+									<key>VariableConditionType</key>
+									<string>DoesNotExist</string>
+									<key>VariableValue</key>
+									<string>value</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>60-90</string>
+								<key>Variable</key>
+								<string>pqQuality</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>1</string>
+								<key>Variable</key>
+								<string>pqDither</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>1</string>
+								<key>Variable</key>
+								<string>pqSpeed</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>1</string>
+								<key>Variable</key>
+								<string>pqSkip</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>0</string>
+								<key>Variable</key>
+								<string>pqOverwrite</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>standard</string>
+								<key>Variable</key>
+								<string>pqSuffix</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>1</string>
+								<key>Variable</key>
+								<string>pqVerbose</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>1</string>
+								<key>Variable</key>
+								<string>pqWriteComment</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>3</string>
+								<key>Variable</key>
+								<string>pqAdvpng</string>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>0</string>
+								<key>Variable</key>
+								<string>pqImageoptim</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Orange</string>
+						<key>Floating</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>CustomPrompt</string>
+						<key>Text</key>
+						<string>&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8" /&gt;
+	&lt;title&gt;Optimize PNG&lt;/title&gt;
+	&lt;style media="screen" type="text/css"&gt;		
+		body {
+			font-family: -apple-system, 'Helvetica Neue', 'Lucida Grande';
+			background: #E6E6E6;
+		}
+		
+		table, th, td {
+			font-size: small;
+			border-collapse: collapse;
+			padding: 2px;
+			text-align: left;
+			vertical-align: middle;	
+		}
+		
+		th {
+			font-size: larger;
+			font-weight: 600;
+			padding: 0 0 10 0;
+		}
+		
+		.last-sub-row {
+			border-bottom: 1px solid;
+		}
+		
+		.button {
+			float: right;
+		}
+
+		.button-default {
+			font-weight: 700;
+		}
+
+	&lt;/style&gt;
+	&lt;script type="text/javascript"&gt;
+		function KMInit() {
+			document.getElementById("pqQuality").value = window.KeyboardMaestro.GetVariable("pqQuality");
+			document.getElementById("pqDither").value = window.KeyboardMaestro.GetVariable("pqDither");
+			document.getElementById("pqSpeed").value = window.KeyboardMaestro.GetVariable("pqSpeed");
+			document.getElementById("pqSkip").checked = +window.KeyboardMaestro.GetVariable("pqSkip"); // Checkbox
+			document.getElementById("pqOverwrite").checked = +window.KeyboardMaestro.GetVariable("pqOverwrite"); // Checkbox
+			document.getElementById("pqSuffix").value = window.KeyboardMaestro.GetVariable("pqSuffix");
+			document.getElementById("pqVerbose").checked = +window.KeyboardMaestro.GetVariable("pqVerbose"); // Checkbox
+			document.getElementById("pqWriteComment").checked = +window.KeyboardMaestro.GetVariable("pqWriteComment"); // Checkbox
+			document.getElementById("pqAdvpng").value = window.KeyboardMaestro.GetVariable("pqAdvpng");
+			document.getElementById("pqImageoptim").checked = +window.KeyboardMaestro.GetVariable("pqImageoptim"); // Checkbox
+		}
+		
+		function submitWindow(result) {
+			window.KeyboardMaestro.SetVariable("pqQuality", document.getElementById("pqQuality").value);
+			window.KeyboardMaestro.SetVariable("pqDither", document.getElementById("pqDither").value);
+			window.KeyboardMaestro.SetVariable("pqSpeed", document.getElementById("pqSpeed").value);
+			window.KeyboardMaestro.SetVariable("pqSkip", document.getElementById("pqSkip").checked == true ? "1" : "0"); // Checkbox
+			window.KeyboardMaestro.SetVariable("pqOverwrite", document.getElementById("pqOverwrite").checked == true ? "1" : "0"); // Checkbox
+			window.KeyboardMaestro.SetVariable("pqSuffix", document.getElementById("pqSuffix").value);
+			window.KeyboardMaestro.SetVariable("pqVerbose", document.getElementById("pqVerbose").checked == true ? "1" : "0"); // Checkbox
+			window.KeyboardMaestro.SetVariable("pqWriteComment", document.getElementById("pqWriteComment").checked == true ? "1" : "0"); // Checkbox
+			window.KeyboardMaestro.SetVariable("pqAdvpng", document.getElementById("pqAdvpng").value);
+			window.KeyboardMaestro.SetVariable("pqImageoptim", document.getElementById("pqImageoptim").checked == true ? "1" : "0"); // Checkbox
+			window.KeyboardMaestro.Submit(result);
+		}
+		
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body data-kmwindow="SCREEN(Main,Left,80%),SCREEN(Main,Top,10%),340,320"&gt;
+&lt;form&gt;
+	&lt;table id="pngquant-settings" class="settings"&gt;
+		&lt;thead class="last-sub-row"&gt;
+			&lt;th colspan="2"&gt;Optimize PNG&lt;/th&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td class="label"&gt;Quality [%]:&lt;/td&gt;
+				&lt;td&gt; 
+				&lt;input id="pqQuality" placeholder="60-90" type="text" size="6" tabindex="1" autofocus title="Visual quality range in percent of the quality of the original image. If the minimum value can not be achieved the process will be skipped."&gt; &lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td class="label"&gt;Dither:&lt;/td&gt;
+				&lt;td&gt; 
+				&lt;select id="pqDither" title="Use a low dithering value or 0 for screenshot-like images. Use a higher value or 1 for halftone (photo-like) images, or for screenshots with window shadow. Dithering always increases file size."&gt;
+					&lt;option value="0"&gt;&amp;#x2008;0&lt;/option&gt;
+					&lt;option disabled&gt;&amp;#x2500;&lt;/option&gt;
+					&lt;option value=".1"&gt;.1&lt;/option&gt;
+					&lt;option value=".2"&gt;.2&lt;/option&gt;
+					&lt;option value=".3"&gt;.3&lt;/option&gt;
+					&lt;option value=".4"&gt;.4&lt;/option&gt;
+					&lt;option value=".5"&gt;.5&lt;/option&gt;
+					&lt;option value=".6"&gt;.6&lt;/option&gt;
+					&lt;option value=".7"&gt;.7&lt;/option&gt;
+					&lt;option value=".8"&gt;.8&lt;/option&gt;
+					&lt;option value=".9"&gt;.9&lt;/option&gt;
+					&lt;option disabled&gt;&amp;#x2500;&lt;/option&gt;
+					&lt;option value="1"&gt;&amp;#x2008;1&lt;/option&gt;
+				&lt;/select&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr class="last-sub-row"&gt;
+				&lt;td class="label"&gt;Speed:&lt;/td&gt;
+				&lt;td&gt; 
+				&lt;select id="pqSpeed" title="1 is slowest and gives best results. Recommended: 1&amp;ndash;3. Speed 11 disables dithering and lowers compression level."&gt;
+					&lt;option value="1"&gt;&amp;#x2007;1&lt;/option&gt;
+					&lt;option value="2"&gt;&amp;#x2007;2&lt;/option&gt;
+					&lt;option value="3"&gt;&amp;#x2007;3&lt;/option&gt;
+					&lt;option value="4"&gt;&amp;#x2007;4&lt;/option&gt;
+					&lt;option value="5"&gt;&amp;#x2007;5&lt;/option&gt;
+					&lt;option value="6"&gt;&amp;#x2007;6&lt;/option&gt;
+					&lt;option value="7"&gt;&amp;#x2007;7&lt;/option&gt;
+					&lt;option value="8"&gt;&amp;#x2007;8&lt;/option&gt;
+					&lt;option value="9"&gt;&amp;#x2007;9&lt;/option&gt;
+					&lt;option value="10"&gt;10&lt;/option&gt;
+					&lt;option disabled&gt;&amp;#x2500;&lt;/option&gt;
+					&lt;option value="11"&gt;11&lt;/option&gt;
+				&lt;/select&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td class="label"&gt;Skip if larger:&lt;/td&gt;
+				&lt;td&gt; 
+				&lt;input id="pqSkip" type="checkbox" title="The output file will be skipped if it is not significantly smaller than the original."&gt; &lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td class="label"&gt;Overwrite existing file:&lt;/td&gt;
+				&lt;td&gt; 
+				&lt;input id="pqOverwrite" type="checkbox" title="Allows pngquant to overwrite any existing output file with the same name, or the original file if selected in the File Naming option."&gt; &lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td class="label"&gt;File naming:&lt;/td&gt;
+				&lt;td&gt; 
+				&lt;select id="pqSuffix" title="The standard suffix is .or8 (or .fs8 with dithering). A unique suffix is useful if you¡¯re going to test various settings on the same image."&gt;
+					&lt;option value="standard"&gt;Standard suffix&lt;/option&gt;
+					&lt;option value="unique"&gt;Unique suffix&lt;/option&gt;
+					&lt;option disabled&gt;&amp;#x2500;&amp;#x2500;&amp;#x2500;&amp;#x2500;&amp;#x2500;&amp;#x2500;&amp;#x2500;&amp;#x2500;&amp;#x2500;&lt;/option&gt;
+					&lt;option value="overwrite"&gt;Overwrite original file&lt;/option&gt;
+				&lt;/select&gt;
+				&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td class="label"&gt;Verbose:&lt;/td&gt;
+				&lt;td&gt; 
+				&lt;input id="pqVerbose" type="checkbox" title="Opens a window with the detailed results."&gt; &lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr class="last-sub-row"&gt;
+				&lt;td class="label"&gt;Write comment:&lt;/td&gt;
+				&lt;td&gt; 
+				&lt;input id="pqWriteComment" type="checkbox" title="Writes the settings and the effectivly achieved quantization, number of colors and compression as a Finder comment to the file."&gt; &lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+		&lt;tr class="last-sub-row"&gt;
+			&lt;td class="label"&gt;Deflate with &lt;i&gt;advpng&lt;/i&gt;&amp;#x200A;:&lt;/td&gt;
+			&lt;td&gt; 
+			&lt;select id="pqAdvpng" title="The type of deflate library advpng should use. zlib is fastest but won&amp;rsquo;t improve compression much. Recommended: Extra."&gt;
+				&lt;optgroup label="Deflate"&gt; 
+				&lt;option value="1"&gt;Fast (zlib)&lt;/option&gt;
+				&lt;option value="2"&gt;Normal (7z)&lt;/option&gt;
+				&lt;option value="3"&gt;Extra (7z)&lt;/option&gt;
+				&lt;option value="4"&gt;Insane (zopfli)&lt;/option&gt;
+				&lt;/optgroup&gt; &lt;optgroup label="Other"&gt; 
+				&lt;option value="None"&gt;Do not use advpng&lt;/option&gt;
+				&lt;option value="0"&gt;Uncompress&lt;/option&gt;
+				&lt;/optgroup&gt; 
+			&lt;/select&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td class="label"&gt;Hand over to &lt;i&gt;ImageOptim&lt;/i&gt;&amp;#x200A;:&lt;/td&gt;
+			&lt;td&gt; 
+			&lt;input id="pqImageoptim" type="checkbox" title="File will be opened in ImageOptim for further processing. Don¡¯t forget to setup ImageOptim *before* selecting this."&gt; &lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/table&gt;
+	&lt;div class="button"&gt;
+		&lt;button id="Cancel" type="button" onclick="window.KeyboardMaestro.Cancel('Cancel')"&gt;Cancel&lt;/button&gt;
+		&lt;button class="button-default" id="OK" type="submit" onclick="submitWindow('OK')"&gt;OK&lt;/button&gt; 
+	&lt;/div&gt;
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>HTML Result Button</string>
+									<key>VariableConditionType</key>
+									<string>DoesNotContain</string>
+									<key>VariableValue</key>
+									<string>OK</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>CancelThisMacro</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>Cancel</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Orange</string>
+						<key>ActionName</key>
+						<string>Compose command line</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>--quality=%Variable%pqQuality% --floyd=%Variable%pqDither% --speed %Variable%pqSpeed%</string>
+								<key>Variable</key>
+								<string>pqOptions</string>
+							</dict>
+							<dict>
+								<key>CaseEntries</key>
+								<array>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>MacroActionType</key>
+												<string>SetVariableToText</string>
+												<key>Text</key>
+												<string>%Variable%pqOptions% --skip-if-larger</string>
+												<key>Variable</key>
+												<string>pqOptions</string>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>1</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Switch</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>pqSkip</string>
+							</dict>
+							<dict>
+								<key>CaseEntries</key>
+								<array>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>MacroActionType</key>
+												<string>SetVariableToText</string>
+												<key>Text</key>
+												<string>%Variable%pqOptions% --force</string>
+												<key>Variable</key>
+												<string>pqOptions</string>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>1</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Switch</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>pqOverwrite</string>
+							</dict>
+							<dict>
+								<key>CaseEntries</key>
+								<array>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>MacroActionType</key>
+												<string>SetVariableToText</string>
+												<key>Text</key>
+												<string>%Variable%pqOptions% --ext=.png</string>
+												<key>Variable</key>
+												<string>pqOptions</string>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Contains</string>
+										<key>TestValue</key>
+										<string>overwrite</string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Switch</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>pqSuffix</string>
+							</dict>
+							<dict>
+								<key>Conditions</key>
+								<dict>
+									<key>ConditionList</key>
+									<array>
+										<dict>
+											<key>ConditionType</key>
+											<string>Variable</string>
+											<key>Variable</key>
+											<string>pqVerbose</string>
+											<key>VariableConditionType</key>
+											<string>Is</string>
+											<key>VariableValue</key>
+											<string>1</string>
+										</dict>
+										<dict>
+											<key>ConditionType</key>
+											<string>Variable</string>
+											<key>Variable</key>
+											<string>pqWriteComment</string>
+											<key>VariableConditionType</key>
+											<string>Is</string>
+											<key>VariableValue</key>
+											<string>1</string>
+										</dict>
+										<dict>
+											<key>ConditionType</key>
+											<string>Variable</string>
+											<key>Variable</key>
+											<string>pqImageoptim</string>
+											<key>VariableConditionType</key>
+											<string>Is</string>
+											<key>VariableValue</key>
+											<string>1</string>
+										</dict>
+										<dict>
+											<key>ConditionType</key>
+											<string>Variable</string>
+											<key>Variable</key>
+											<string>pqAdvpng</string>
+											<key>VariableConditionType</key>
+											<string>DoesNotContain</string>
+											<key>VariableValue</key>
+											<string>None</string>
+										</dict>
+									</array>
+									<key>ConditionListMatch</key>
+									<string>Any</string>
+								</dict>
+								<key>ElseActionListDisclosed</key>
+								<false/>
+								<key>ElseActions</key>
+								<array/>
+								<key>MacroActionType</key>
+								<string>IfThenElse</string>
+								<key>ThenActions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>%Variable%pqOptions% -v</string>
+										<key>Variable</key>
+										<string>pqOptions</string>
+									</dict>
+								</array>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Aqua</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>Attribute</key>
+								<string>Extension</string>
+								<key>MacroActionType</key>
+								<string>GetFileAttribute</string>
+								<key>Path</key>
+								<string>%Variable%pqFile%</string>
+								<key>Variable</key>
+								<string>pqFileExt</string>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Teal</string>
+								<key>Conditions</key>
+								<dict>
+									<key>ConditionList</key>
+									<array>
+										<dict>
+											<key>ConditionType</key>
+											<string>Variable</string>
+											<key>Variable</key>
+											<string>pqFileExt</string>
+											<key>VariableConditionType</key>
+											<string>Matches</string>
+											<key>VariableValue</key>
+											<string>png|tif|bmp|gif</string>
+										</dict>
+									</array>
+									<key>ConditionListMatch</key>
+									<string>All</string>
+								</dict>
+								<key>ElseActionListDisclosed</key>
+								<false/>
+								<key>ElseActions</key>
+								<array/>
+								<key>MacroActionType</key>
+								<string>IfThenElse</string>
+								<key>ThenActions</key>
+								<array>
+									<dict>
+										<key>CaseEntries</key>
+										<array>
+											<dict>
+												<key>Actions</key>
+												<array>
+													<dict>
+														<key>MacroActionType</key>
+														<string>SetVariableToText</string>
+														<key>Text</key>
+														<string>%Variable%pqOptions% --ext=-%Calculate%TRUNC(SECONDS())%.png</string>
+														<key>Variable</key>
+														<string>pqOptions</string>
+													</dict>
+												</array>
+												<key>ConditionType</key>
+												<string>Contains</string>
+												<key>TestValue</key>
+												<string>unique</string>
+											</dict>
+										</array>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>Switch</string>
+										<key>Source</key>
+										<string>Variable</string>
+										<key>Variable</key>
+										<string>pqSuffix</string>
+									</dict>
+									<dict>
+										<key>ActionColor</key>
+										<string>Red</string>
+										<key>ActionNotes</key>
+										<string>--force --ext=.png</string>
+										<key>DisplayKind</key>
+										<string>Variable</string>
+										<key>IncludeStdErr</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>ExecuteShellScript</string>
+										<key>NotifyOnFailure</key>
+										<false/>
+										<key>Path</key>
+										<string></string>
+										<key>Source</key>
+										<string>Nothing</string>
+										<key>StopOnFailure</key>
+										<false/>
+										<key>Text</key>
+										<string>pngquant $KMVAR_pqOptions -- "$KMVAR_pqFile"</string>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+										<key>TrimResults</key>
+										<true/>
+										<key>TrimResultsNew</key>
+										<true/>
+										<key>UseText</key>
+										<true/>
+										<key>Variable</key>
+										<string>pqScriptOut</string>
+									</dict>
+									<dict>
+										<key>CaseEntries</key>
+										<array>
+											<dict>
+												<key>Actions</key>
+												<array>
+													<dict>
+														<key>MacroActionType</key>
+														<string>Alert</string>
+														<key>SoundPath</key>
+														<string></string>
+														<key>Text</key>
+														<string>%Variable%pqScriptOut%
+
+The macro will be canceled.</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>Title</key>
+														<string>Error!</string>
+													</dict>
+													<dict>
+														<key>Action</key>
+														<string>CancelThisMacro</string>
+														<key>MacroActionType</key>
+														<string>Cancel</string>
+													</dict>
+												</array>
+												<key>ConditionType</key>
+												<string>Matches</string>
+												<key>TestValue</key>
+												<string>should|There were errors</string>
+											</dict>
+										</array>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>Switch</string>
+										<key>Source</key>
+										<string>Variable</string>
+										<key>Variable</key>
+										<string>pqScriptOut</string>
+									</dict>
+									<dict>
+										<key>Conditions</key>
+										<dict>
+											<key>ConditionList</key>
+											<array>
+												<dict>
+													<key>ConditionType</key>
+													<string>Variable</string>
+													<key>Variable</key>
+													<string>pqVerbose</string>
+													<key>VariableConditionType</key>
+													<string>Is</string>
+													<key>VariableValue</key>
+													<string>1</string>
+												</dict>
+												<dict>
+													<key>ConditionType</key>
+													<string>Variable</string>
+													<key>Variable</key>
+													<string>pqAdvpng</string>
+													<key>VariableConditionType</key>
+													<string>Contains</string>
+													<key>VariableValue</key>
+													<string>None</string>
+												</dict>
+											</array>
+											<key>ConditionListMatch</key>
+											<string>All</string>
+										</dict>
+										<key>ElseActionListDisclosed</key>
+										<false/>
+										<key>ElseActions</key>
+										<array/>
+										<key>IsDisclosed</key>
+										<false/>
+										<key>MacroActionType</key>
+										<string>IfThenElse</string>
+										<key>ThenActions</key>
+										<array>
+											<dict>
+												<key>Action</key>
+												<string>DisplayWindow</string>
+												<key>MacroActionType</key>
+												<string>InsertText</string>
+												<key>StyledText</key>
+												<data>
+								cnRmZAAAAAAD
+								AAAAAgAAAAcA
+								AABUWFQucnRm
+								AQAAAC6YAQAA
+								KwAAAAEAAACQ
+								AQAAe1xydGYx
+								XGFuc2lcYW5z
+								aWNwZzEyNTJc
+								Y29jb2FydGYx
+								NTA0CntcZm9u
+								dHRibFxmMFxm
+								bmlsXGZjaGFy
+								c2V0MCBIZWx2
+								ZXRpY2FOZXVl
+								O30Ke1xjb2xv
+								cnRibDtccmVk
+								MjU1XGdyZWVu
+								MjU1XGJsdWUy
+								NTU7fQp7XCpc
+								ZXhwYW5kZWRj
+								b2xvcnRibDtc
+								Y3NncmF5XGMx
+								MDAwMDA7fQpc
+								cGFyZFx0eDU2
+								MFx0eDExMjBc
+								dHgxNjgwXHR4
+								MjI0MFx0eDI4
+								MDBcdHgzMzYw
+								XHR4MzkyMFx0
+								eDQ0ODBcdHg1
+								MDQwXHR4NTYw
+								MFx0eDYxNjBc
+								dHg2NzIwXHBh
+								cmRpcm5hdHVy
+								YWxccGFydGln
+								aHRlbmZhY3Rv
+								cjAKClxmMFxm
+								czI2IFxjZjAg
+								PT09PT09PT09
+								PVwKUE5HUVVB
+								TlRcCj09PT09
+								PT09PT1cClxc
+								blVzZWQgb3B0
+								aW9uczpcClxc
+								biVWYXJpYWJs
+								ZSVwcU9wdGlv
+								bnMlXApcXG5c
+								XG4lVmFyaWFi
+								bGUlcHFTY3Jp
+								cHRPdXQlfQEA
+								AAAjAAAAAQAA
+								AAcAAABUWFQu
+								cnRmEAAAAJTv
+								7Fe2AQAAAAAA
+								AAAAAAA=
+												</data>
+												<key>Text</key>
+												<string>==========
+PNGQUANT
+==========
+\nUsed options:
+\n%Variable%pqOptions%
+\n\n%Variable%pqScriptOut%</string>
+											</dict>
+										</array>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+									<dict>
+										<key>ActionColor</key>
+										<string>Yellow</string>
+										<key>Conditions</key>
+										<dict>
+											<key>ConditionList</key>
+											<array>
+												<dict>
+													<key>ConditionType</key>
+													<string>Variable</string>
+													<key>Variable</key>
+													<string>pqScriptOut</string>
+													<key>VariableConditionType</key>
+													<string>Contains</string>
+													<key>VariableValue</key>
+													<string>Skipped</string>
+												</dict>
+											</array>
+											<key>ConditionListMatch</key>
+											<string>All</string>
+										</dict>
+										<key>ElseActions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Purple</string>
+												<key>Conditions</key>
+												<dict>
+													<key>ConditionList</key>
+													<array>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>pqWriteComment</string>
+															<key>VariableConditionType</key>
+															<string>Is</string>
+															<key>VariableValue</key>
+															<string>1</string>
+														</dict>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>pqImageoptim</string>
+															<key>VariableConditionType</key>
+															<string>Is</string>
+															<key>VariableValue</key>
+															<string>1</string>
+														</dict>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>pqAdvpng</string>
+															<key>VariableConditionType</key>
+															<string>DoesNotContain</string>
+															<key>VariableValue</key>
+															<string>None</string>
+														</dict>
+													</array>
+													<key>ConditionListMatch</key>
+													<string>Any</string>
+												</dict>
+												<key>ElseActionListDisclosed</key>
+												<false/>
+												<key>ElseActions</key>
+												<array/>
+												<key>MacroActionType</key>
+												<string>IfThenElse</string>
+												<key>ThenActions</key>
+												<array>
+													<dict>
+														<key>Attribute</key>
+														<string>Parent</string>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>GetFileAttribute</string>
+														<key>Path</key>
+														<string>%Variable%pqFile%</string>
+														<key>Variable</key>
+														<string>pqPath</string>
+													</dict>
+													<dict>
+														<key>Action</key>
+														<string>CaseSensitiveRegEx</string>
+														<key>Captures</key>
+														<array>
+															<string></string>
+															<string>pqFileOut</string>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>SearchRegEx</string>
+														<key>Search</key>
+														<string>(?m)-color image as (.*?)$</string>
+														<key>Source</key>
+														<string>Variable</string>
+														<key>Variable</key>
+														<string>pqScriptOut</string>
+													</dict>
+													<dict>
+														<key>Conditions</key>
+														<dict>
+															<key>ConditionList</key>
+															<array>
+																<dict>
+																	<key>ConditionType</key>
+																	<string>Variable</string>
+																	<key>Variable</key>
+																	<string>pqAdvpng</string>
+																	<key>VariableConditionType</key>
+																	<string>DoesNotContain</string>
+																	<key>VariableValue</key>
+																	<string>None</string>
+																</dict>
+															</array>
+															<key>ConditionListMatch</key>
+															<string>All</string>
+														</dict>
+														<key>ElseActionListDisclosed</key>
+														<false/>
+														<key>ElseActions</key>
+														<array/>
+														<key>MacroActionType</key>
+														<string>IfThenElse</string>
+														<key>ThenActions</key>
+														<array>
+															<dict>
+																<key>ActionColor</key>
+																<string>Red</string>
+																<key>ActionNotes</key>
+																<string>--force --ext=.png</string>
+																<key>DisplayKind</key>
+																<string>Variable</string>
+																<key>IncludeStdErr</key>
+																<true/>
+																<key>MacroActionType</key>
+																<string>ExecuteShellScript</string>
+																<key>NotifyOnFailure</key>
+																<false/>
+																<key>Path</key>
+																<string></string>
+																<key>Source</key>
+																<string>Nothing</string>
+																<key>StopOnFailure</key>
+																<false/>
+																<key>Text</key>
+																<string>advpng -z$KMVAR_pqAdvpng "$KMVAR_pqPath"/"$KMVAR_pqFileOut"</string>
+																<key>TimeOutAbortsMacro</key>
+																<true/>
+																<key>TrimResults</key>
+																<true/>
+																<key>TrimResultsNew</key>
+																<true/>
+																<key>UseText</key>
+																<true/>
+																<key>Variable</key>
+																<string>pqDeflateOut</string>
+															</dict>
+															<dict>
+																<key>Conditions</key>
+																<dict>
+																	<key>ConditionList</key>
+																	<array>
+																		<dict>
+																			<key>ConditionType</key>
+																			<string>Variable</string>
+																			<key>Variable</key>
+																			<string>pqVerbose</string>
+																			<key>VariableConditionType</key>
+																			<string>Is</string>
+																			<key>VariableValue</key>
+																			<string>1</string>
+																		</dict>
+																	</array>
+																	<key>ConditionListMatch</key>
+																	<string>All</string>
+																</dict>
+																<key>ElseActionListDisclosed</key>
+																<false/>
+																<key>ElseActions</key>
+																<array/>
+																<key>IsDisclosed</key>
+																<false/>
+																<key>MacroActionType</key>
+																<string>IfThenElse</string>
+																<key>ThenActions</key>
+																<array>
+																	<dict>
+																		<key>Action</key>
+																		<string>DisplayWindow</string>
+																		<key>MacroActionType</key>
+																		<string>InsertText</string>
+																		<key>StyledText</key>
+																		<data>
+								cnRmZAAAAAAD
+								AAAAAgAAAAcA
+								AABUWFQucnRm
+								AQAAAC7SAQAA
+								KwAAAAEAAADK
+								AQAAe1xydGYx
+								XGFuc2lcYW5z
+								aWNwZzEyNTJc
+								Y29jb2FydGYx
+								NTA0CntcZm9u
+								dHRibFxmMFxm
+								bmlsXGZjaGFy
+								c2V0MCBIZWx2
+								ZXRpY2FOZXVl
+								O30Ke1xjb2xv
+								cnRibDtccmVk
+								MjU1XGdyZWVu
+								MjU1XGJsdWUy
+								NTU7fQp7XCpc
+								ZXhwYW5kZWRj
+								b2xvcnRibDtc
+								Y3NncmF5XGMx
+								MDAwMDA7fQpc
+								cGFyZFx0eDU2
+								MFx0eDExMjBc
+								dHgxNjgwXHR4
+								MjI0MFx0eDI4
+								MDBcdHgzMzYw
+								XHR4MzkyMFx0
+								eDQ0ODBcdHg1
+								MDQwXHR4NTYw
+								MFx0eDYxNjBc
+								dHg2NzIwXHBh
+								cmRpcm5hdHVy
+								YWxccGFydGln
+								aHRlbmZhY3Rv
+								cjAKClxmMFxm
+								czI2IFxjZjAg
+								PT09PT09PT09
+								PVwKUE5HUVVB
+								TlRcCj09PT09
+								PT09PT1cClxc
+								blVzZWQgb3B0
+								aW9uczpcClxc
+								biVWYXJpYWJs
+								ZSVwcU9wdGlv
+								bnMlXApcXG5c
+								XG4lVmFyaWFi
+								bGUlcHFTY3Jp
+								cHRPdXQlXFxu
+								XFxuXAo9PT09
+								PT1cCkFEVlBO
+								R1wKPT09PT09
+								XApcXG4lVmFy
+								aWFibGUlcHFE
+								ZWZsYXRlT3V0
+								JX0BAAAAIwAA
+								AAEAAAAHAAAA
+								VFhULnJ0ZhAA
+								AACU7+xXtgEA
+								AAAAAAAAAAAA
+																		</data>
+																		<key>Text</key>
+																		<string>==========
+PNGQUANT
+==========
+\nUsed options:
+\n%Variable%pqOptions%
+\n\n%Variable%pqScriptOut%\n\n
+======
+ADVPNG
+======
+\n%Variable%pqDeflateOut%</string>
+																	</dict>
+																</array>
+																<key>TimeOutAbortsMacro</key>
+																<true/>
+															</dict>
+														</array>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+													</dict>
+													<dict>
+														<key>CaseEntries</key>
+														<array>
+															<dict>
+																<key>Actions</key>
+																<array>
+																	<dict>
+																		<key>Action</key>
+																		<string>CaseSensitiveRegEx</string>
+																		<key>Captures</key>
+																		<array>
+																			<string></string>
+																			<string>pqColorsPrev</string>
+																			<string>pqQualityOut</string>
+																			<string>pqColorsOut</string>
+																		</array>
+																		<key>MacroActionType</key>
+																		<string>SearchRegEx</string>
+																		<key>Search</key>
+																		<string>(?ms)(\d*) colors found.*?(MSE.*\)).*?writing (\d{1,3})</string>
+																		<key>Source</key>
+																		<string>Variable</string>
+																		<key>Variable</key>
+																		<string>pqScriptOut</string>
+																	</dict>
+																	<dict>
+																		<key>Action</key>
+																		<string>CaseSensitiveRegEx</string>
+																		<key>Captures</key>
+																		<array>
+																			<string>pqDeflateResult</string>
+																		</array>
+																		<key>MacroActionType</key>
+																		<string>SearchRegEx</string>
+																		<key>NotifyOnFailure</key>
+																		<false/>
+																		<key>Search</key>
+																		<string>\d*%</string>
+																		<key>Source</key>
+																		<string>Variable</string>
+																		<key>StopOnFailure</key>
+																		<false/>
+																		<key>Variable</key>
+																		<string>pqDeflateOut</string>
+																	</dict>
+																	<dict>
+																		<key>Attribute</key>
+																		<string>Comment</string>
+																		<key>MacroActionType</key>
+																		<string>SetFileAttribute</string>
+																		<key>Path</key>
+																		<string>%Variable%pqPath%/%Variable%pqFileOut%</string>
+																		<key>Text</key>
+																		<string>q%Variable%pqQuality%, d%Variable%pqDither%, s%Variable%pqSpeed%; %Variable%pqColorsPrev% -&gt; %Variable%pqColorsOut% colors, %Variable%pqQualityOut% ¡ª z%Variable%pqAdvpng%; %Variable%pqDeflateResult%</string>
+																	</dict>
+																</array>
+																<key>ConditionType</key>
+																<string>Is</string>
+																<key>TestValue</key>
+																<string>1</string>
+															</dict>
+														</array>
+														<key>MacroActionType</key>
+														<string>Switch</string>
+														<key>Source</key>
+														<string>Variable</string>
+														<key>Variable</key>
+														<string>pqWriteComment</string>
+													</dict>
+													<dict>
+														<key>CaseEntries</key>
+														<array>
+															<dict>
+																<key>Actions</key>
+																<array>
+																	<dict>
+																		<key>ActionColor</key>
+																		<string>Red</string>
+																		<key>ActionNotes</key>
+																		<string>--force --ext=.png</string>
+																		<key>DisplayKind</key>
+																		<string>Window</string>
+																		<key>IncludeStdErr</key>
+																		<true/>
+																		<key>MacroActionType</key>
+																		<string>ExecuteShellScript</string>
+																		<key>NotifyOnFailure</key>
+																		<false/>
+																		<key>Path</key>
+																		<string></string>
+																		<key>Source</key>
+																		<string>Nothing</string>
+																		<key>StopOnFailure</key>
+																		<false/>
+																		<key>Text</key>
+																		<string>open -b net.pornel.ImageOptim "$KMVAR_pqPath"/"$KMVAR_pqFileOut"</string>
+																		<key>TimeOutAbortsMacro</key>
+																		<true/>
+																		<key>TrimResults</key>
+																		<true/>
+																		<key>TrimResultsNew</key>
+																		<true/>
+																		<key>UseText</key>
+																		<true/>
+																	</dict>
+																</array>
+																<key>ConditionType</key>
+																<string>Is</string>
+																<key>TestValue</key>
+																<string>1</string>
+															</dict>
+														</array>
+														<key>MacroActionType</key>
+														<string>Switch</string>
+														<key>Source</key>
+														<string>Variable</string>
+														<key>Variable</key>
+														<string>pqImageoptim</string>
+													</dict>
+												</array>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>MacroActionType</key>
+										<string>IfThenElse</string>
+										<key>ThenActions</key>
+										<array>
+											<dict>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>Alert</string>
+												<key>SoundPath</key>
+												<string></string>
+												<key>Text</key>
+												<string>Pngquant has skipped the file ¡°%Variable%pqFile%¡± becauseÿ
+
+? the output was not significantly smaller than the original file, orÿ
+? the desired minimum quality could not be achieved.
+
+Lower the minimum value of your quality setting or/and uncheck ¡°Skip if larger¡±.
+
+Click Continue to continue with the remaining files.</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>Title</key>
+												<string>File Skipped</string>
+											</dict>
+										</array>
+										<key>TimeOutAbortsMacro</key>
+										<true/>
+									</dict>
+								</array>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+						</array>
+						<key>Collections</key>
+						<dict>
+							<key>CollectionList</key>
+							<array>
+								<dict>
+									<key>CollectionType</key>
+									<string>FinderSelection</string>
+								</dict>
+							</array>
+						</dict>
+						<key>MacroActionType</key>
+						<string>For</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Variable</key>
+						<string>pqFile</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>480676539.43762201</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568271140.99822199</real>
+				<key>Name</key>
+				<string>PNG Optimize</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>MacroPalette</string>
+					</dict>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>19</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>512</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>B38760ED-2BEE-4E1E-A19E-E46B76918A8E</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>10 Test</string>
+		<key>ToggleMacroUID</key>
+		<string>21C9FAF5-4489-4CBD-8436-9C9F6E733D38</string>
+		<key>UID</key>
+		<string>DF9C421C-0294-4CC7-9C59-7CDEB233268E</string>
+	</dict>
+</array>
+</plist>

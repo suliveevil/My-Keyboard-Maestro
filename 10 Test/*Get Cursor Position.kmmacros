@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568122691.47241497</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>DisplayWindow</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC57AwAAKwAAAAEA
+						AABzAwAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZuaWxcZmNoYXJzZXQw
+						IEhlbHZldGljYU5ldWU7XGYxXGZu
+						aWxcZmNoYXJzZXQxMzQgLlBpbmdG
+						YW5nU0MtUmVndWxhcjt9CntcY29s
+						b3J0Ymw7XHJlZDI1NVxncmVlbjI1
+						NVxibHVlMjU1O1xyZWQwXGdyZWVu
+						MFxibHVlMDt9CntcKlxleHBhbmRl
+						ZGNvbG9ydGJsOztcY3NzcmdiXGMw
+						XGMwXGMwXGNuYW1lIHRleHRDb2xv
+						cjt9ClxwYXJkXHR4NTYwXHR4MTEy
+						MFx0eDE2ODBcdHgyMjQwXHR4Mjgw
+						MFx0eDMzNjBcdHgzOTIwXHR4NDQ4
+						MFx0eDUwNDBcdHg1NjAwXHR4NjE2
+						MFx0eDY3MjBccGFyZGlybmF0dXJh
+						bFxwYXJ0aWdodGVuZmFjdG9yMAoK
+						XGYwXGZzMjYgXGNmMiBDdXJzb3Ig
+						cG9zaXRpb24gcmVsYXRpdmUgdG86
+						XApcClNjcmVlbjogXHVjMFx1ODU5
+						NCAgJUNhbGN1bGF0ZSVNT1VTRVgK
+						XGYxICgpClxmMCAlIC8gXHVjMFx1
+						ODU5NSAgJUNhbGN1bGF0ZSVNT1VT
+						RVkKXGYxICgpClxmMCAlXApXaW5k
+						b3c6IFx1YzBcdTg1OTQgICVDYWxj
+						dWxhdGUlTU9VU0VYClxmMSAoKQpc
+						ZjAgLVdJTkRPVwpcZjEgKApcZjAg
+						MQpcZjEgLApcZjAgTGVmdApcZjEg
+						KQpcZjAgJSAvIFx1YzBcdTg1OTUg
+						ICVDYWxjdWxhdGUlTU9VU0VZClxm
+						MSAoKQpcZjAgLVdJTkRPVwpcZjEg
+						KApcZjAgMQpcZjEgLApcZjAgVG9w
+						ClxmMSApClxmMCAlIC8gXHVjMFx1
+						ODU5MiAgJUNhbGN1bGF0ZSVXSU5E
+						T1cKXGYxICgKXGYwIDEKXGYxICwK
+						XGYwIFJpZ2h0ClxmMSApClxmMCAt
+						TU9VU0VYClxmMSAoKQpcZjAgJSAv
+						IFx1YzBcdTg1OTMgICVDYWxjdWxh
+						dGUlV0lORE9XClxmMSAoClxmMCAx
+						ClxmMSAsClxmMCBCb3R0b20KXGYx
+						ICkKXGYwIC1NT1VTRVkKXGYxICgp
+						ClxmMCAlfQEAAAAjAAAAAQAAAAcA
+						AABUWFQucnRmEAAAAHq0IFy2AQAA
+						AAAAAAAAAAA=
+						</data>
+						<key>Text</key>
+						<string>Cursor position relative to:
+
+Screen: ¡ú %Calculate%MOUSEX()% / ¡ý %Calculate%MOUSEY()%
+Window: ¡ú %Calculate%MOUSEX()-WINDOW(1,Left)% / ¡ý %Calculate%MOUSEY()-WINDOW(1,Top)% / ¡û %Calculate%WINDOW(1,Right)-MOUSEX()% / ¡ü %Calculate%WINDOW(1,Bottom)-MOUSEY()%</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>567339582.68908703</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>567412301.13893104</real>
+				<key>Name</key>
+				<string>Get Cursor Position</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>35</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6400</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>022737F8-A208-4CED-852C-81635507CD4C</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>10 Test</string>
+		<key>ToggleMacroUID</key>
+		<string>21C9FAF5-4489-4CBD-8436-9C9F6E733D38</string>
+		<key>UID</key>
+		<string>DF9C421C-0294-4CC7-9C59-7CDEB233268E</string>
+	</dict>
+</array>
+</plist>

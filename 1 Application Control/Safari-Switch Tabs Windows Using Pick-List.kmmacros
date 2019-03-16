@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075922.90598297</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>------------------------------------------------------------# Auth: Christopher Stone &lt;scriptmeister@thestoneforge.com&gt;# dCre: 2010/10/16 00:42# dMod: 2013/05/30 18:25# Appl: Safari# Task: Display a list of tab names and also a count of both documents &amp; tabs.#     : Select a tab name to bring it to the front.#     : Adjusted to deal properly with duplicate tab names on 2013-05-30.# Libs: Only stock OSX components used.# Osax: None # Tags: @Applescript, @Safari, @Choose, @Display, @Tabs, @Windows-------------------------------------------------------------try		set sep to "-----"		tell application "Safari"				if (count of document) − 1 then			set frontWindoc to document of front window		else			error "No pages are open in Safari"		end if				tell (every window where its document is not missing value)			set docCount to count			set currentTabIndex to index of current tab			set tabCount to count of tabs			set tabNames to name of tabs		end tell				if docCount &lt; 10 then set docCount to "0" &amp; docCount		set hdrText to "Window Count: " &amp; docCount &amp; return &amp; "      Tab Count: " &amp; tabCount				# Add tab-index to tab names to deal with duplicate names.		set ndx to 0		repeat with i in tabNames			repeat with n from 1 to (length of i)				if n &lt; 10 then					set _num to "0" &amp; n				else					set _num to n				end if				tell (a reference to item n of i) to set its contents to its contents &amp; " ， [" &amp; _num &amp; "]"			end repeat		end repeat				# Mark Current Tabs of each document window with '[?]'		# tabNames is a list of lists.		set ndx to 0		repeat with i in tabNames			set ndx to ndx + 1			tell (a reference to i's item (item ndx of currentTabIndex)) to set its contents to (its contents) &amp; " ?"			if ndx = 1 then				set currentTabName to result			end if			set end of i to sep		end repeat		tabNames		set beginning of item 1 of tabNames to sep		set AppleScript's text item delimiters to return		set tabNames to paragraphs of (tabNames as text)				tell application "Safari" to set _tab to choose from list tabNames with title "?? Safari Tab Names ??" with prompt hdrText ?			default items {currentTabName} with empty selection allowed				if _tab = false then return				set _tab to item 1 of _tab # De-listify.		set AppleScript's text item delimiters to " ， "		set tabName to text item 1 of _tab		set AppleScript's text item delimiters to {"[", "]"}		set tabIndex to (text item 2 of _tab) as integer				tell windows			set tabID to tabs whose name contains tabName and index is tabIndex		end tell				repeat with i in tabID			try				set tabID to item 1 of i				exit repeat			end try		end repeat				try			tabID as number		on error eStr			set AppleScript's text item delimiters to " of "			repeat with i in (text items of eStr)				if i contains "window id" then					set winOfTabID to run script ((contents of i) &amp; " of application \"Safari\"")					exit repeat				end if			end repeat		end try				set winOfTabIdDoc to winOfTabID's document		if current tab of winOfTabID 』 tabID then set current tab of winOfTabID to tabID				if winOfTabIdDoc 』 frontWindoc then			set newDoc to make new document			set index of winOfTabID to 1			close newDoc		end if			end tell	on error e number n	set e to e &amp; return &amp; return &amp; "Num: " &amp; n	tell application "Safari" to set dDlg to display dialog e with title "ERROR!" buttons {"Cancel", "Copy", "OK"} default button "OK"	if button returned of dDlg = "Copy" then set the clipboard to eend try</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>464036526.46834099</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>573271566.57172894</real>
+				<key>Name</key>
+				<string>Safari-Switch Tabs Windows Using Pick-List</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>122</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>2D9DF3D5-34B6-447F-B0EC-6E748472B67C</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>1 Application Control</string>
+		<key>ToggleMacroUID</key>
+		<string>66F83F01-3E0E-40EB-B4F4-B43A41A7BB1B</string>
+		<key>UID</key>
+		<string>ED84731D-0CAC-4635-A617-B2A2EDCF265D</string>
+	</dict>
+</array>
+</plist>

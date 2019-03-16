@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>566950173.77217698</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>(* PROPERTIES *)
+property LF : (ASCII character 10)
+property LF1 : (ASCII character 32) &amp; (ASCII character 32) &amp; (ASCII character 10)
+property tid : AppleScript's text item delimiters
+
+
+(* THE SCRIPT *)
+tell application "Skim"
+	
+	--get info for all notes
+	set allNotes to every note of document 1
+	set allNotes_types to every type of notes of document 1
+	set allNotes_text to text of every note of document 1
+	set allNotes_pages to index of every page of every note of document 1
+	
+	--get info for all notes except top 3
+	set selNotes to items 4 through -1 of allNotes
+	set selNotes_types to items 4 through -1 of allNotes_types
+	set selNotes_text to items 4 through -1 of allNotes_text
+	set selNotes_pages to items 4 through -1 of allNotes_pages
+	
+	--get info from those top 3 notes
+	set Markdownlink to (get text of note 2 of page 1 of document 1) as string
+	set pdfTitle to (get extended text of note 1 of page 1 of document 1) as string
+	set PDFLink to (get text of note 1 of page 1 of document 1) as string
+	set number_of_Note3 to (get text of note 3 of page 1 of document 1) as string
+	
+	--prepare Headers for all of the various note types
+	set notesText_text to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;The ToC&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	set notesText_anchor to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;Comments&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	set notesText_highlight to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;Highlights&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	set notesText_underline to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;Underlines&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	set notesText_strikethru to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;Strike-Throughs&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF
+	
+	
+	(* THE MEAT-N-POTATOES OF THE SCRIPT *)
+	repeat with i from 1 to count of selNotes_types
+		
+		--prepare Skim page # and actual page #
+		set notePage to item i of selNotes_pages
+		set theRealPage to notePage + number_of_Note3 as string
+		
+		--collect Text Notes
+		if item i of selNotes_types is text note then
+			set noteText to item i of selNotes_text
+			set notesText_text to notesText_text &amp; "&lt;p&gt;" &amp; noteText &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;" &amp; "p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+			
+			--collect Anchor Notes	
+		else if item i of selNotes_types is anchored note then
+			set titleText to item i of selNotes_text
+			set noteText to extended text of item i of selNotes
+			set notesText_anchor to notesText_anchor &amp; "&lt;p&gt;&lt;strong&gt;" &amp; titleText &amp; ":&lt;/strong&gt; " &amp; noteText &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+			
+			--collect Underline Notes	
+		else if item i of selNotes_types is underline note then
+			set noteText to item i of selNotes_text
+			set notesText_underline to notesText_underline &amp; "&lt;p&gt;\"" &amp; noteText &amp; "\"" &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;" &amp; "p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+			
+			--collect Strike-Thru Notes	
+		else if item i of selNotes_types is strike out note then
+			set noteText to item i of selNotes_text
+			set notesText_strikethru to notesText_strikethru &amp; "&lt;p&gt;\"" &amp; noteText &amp; "\"" &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;" &amp; "p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+			
+			--collect Highlight Notes	
+		else if item i of selNotes_types is highlight note then
+			set theColor to color of item i of selNotes
+			set titleText to my color2text(theColor)
+			set noteText to item i of selNotes_text
+			
+			set notesText_highlight to notesText_highlight &amp; "&lt;p&gt;&lt;strong&gt;" &amp; titleText &amp; ":&lt;/strong&gt; " &amp; LF1 &amp; "\"" &amp; noteText &amp; "\"" &amp; " (&lt;a href=\"" &amp; PDFLink &amp; notePage &amp; "\"&gt;p." &amp; theRealPage &amp; "&lt;/a&gt;)" &amp; LF &amp; LF
+		end if
+	end repeat
+	
+	--extract only the "Summary" highlight notes
+	set theSummary to {}
+	set theParas to paragraphs of notesText_highlight
+	repeat with i from 1 to count of theParas
+		if item i of theParas contains "&lt;p&gt;&lt;strong&gt;ref:" then
+			set theTitle to item i of theParas
+			set theText to item (i + 1) of theParas
+			set theSumm to theTitle &amp; LF &amp; theText &amp; LF &amp; LF
+			copy theSumm to the end of theSummary
+		end if
+	end repeat
+	
+	--remove "Summary" highlight notes from collection of highlight notes
+	if (not (theSummary is {})) then
+		set SumText to theSummary as string
+		set SumList to paragraphs of SumText
+		set empty to {""}
+		set FinalSum to my cleanmyList(SumList, empty)
+		
+		set HighList to paragraphs of notesText_highlight
+		set finalHighlights to my cleanmyList(HighList, FinalSum)
+		set AppleScript's text item delimiters to LF
+		set notesText_highlight to (finalHighlights as string)
+		set theSummary to "&lt;hr /&gt;" &amp; LF &amp; LF &amp; "&lt;h2&gt;References&lt;/h2&gt;" &amp; LF1 &amp; LF &amp; LF &amp; SumText
+	end if
+	--ALWAYS RETURN TEXT ITEM DELIMITERS TO NORMAL
+	set AppleScript's text item delimiters to tid
+	
+	--remove any note sections that are empty
+	set FinalList to my textCheck(notesText_text, notesText_anchor, notesText_highlight, notesText_underline, notesText_strikethru, theSummary)
+	
+	--prepare the final collection of notes, with MetaData
+	set FinalText to FinalList
+	
+	--create new Evernote note
+	tell application "Evernote"
+		
+		--create new "notes" tag if necessary
+		if (not (tag named "notes" exists)) then
+			set theTag to make tag with properties {name:"notes"}
+		else
+			set theTag to tag "notes"
+		end if
+		
+		--create new "__" notebook if necessary
+		if (not (notebook named "__" exists)) then
+			make notebook with properties {name:"__"}
+		end if
+		
+		set theTitle to "Notes: " &amp; pdfTitle
+		set newNote to create note title theTitle with html FinalText notebook "__"
+		assign theTag to newNote
+	end tell
+	
+end tell
+
+
+
+
+
+
+
+
+
+(* HANDLERS *)
+
+--convert highlights into text values
+on color2text(noteColor)
+	set colorText to {}
+	
+	if noteColor is {65535, 65531, 2689, 65535} then
+		set end of colorText to "n"
+	else if noteColor is {49560, 60542, 23241, 65535} then
+		set end of colorText to "grp"
+	else if noteColor is {38537, 46063, 61931, 65535} then
+		set end of colorText to "pt"
+	else if noteColor is {59898, 37357, 50126, 65535} then
+		set end of colorText to "attn"
+	else if noteColor is {59859, 51605, 65183, 65535} then
+		set end of colorText to "ref"
+	end if
+	
+	return colorText
+end color2text
+
+
+--generate random link IDs
+on randomize(theVal)
+	set theAlphabet to {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}
+	set randomLetter to random number from 1 to 26
+	set randomLetter to item randomLetter of theAlphabet
+	set theNum1 to random number from 1 to 9
+	set theNum2 to random number from 1 to 9
+	set LinkID to theVal &amp; theNum1 &amp; theNum2 &amp; randomLetter
+	return LinkID
+end randomize
+
+--remove any empty note sections
+on textCheck(notesText_text, notesText_anchor, notesText_highlight, notesText_underline, notesText_strikethru, theSummary)
+	
+	if notesText_text is "&lt;hr /&gt;
+
+&lt;h2&gt;The ToC&lt;/h2&gt;  
+
+
+" then
+		set notesText_text to ""
+	else
+		set notesText_text to notesText_text &amp; LF &amp; LF
+	end if
+	
+	if notesText_anchor is "&lt;hr /&gt;
+
+&lt;h2&gt;Comments&lt;/h2&gt;  
+
+
+" then
+		set notesText_anchor to ""
+	else
+		set notesText_anchor to notesText_anchor &amp; LF &amp; LF
+	end if
+	
+	if notesText_highlight is "&lt;hr /&gt;
+
+&lt;h2&gt;Highlights&lt;/h2&gt;  
+
+
+" then
+		set notesText_highlight to ""
+	else
+		set notesText_highlight to notesText_highlight &amp; LF &amp; LF
+	end if
+	
+	if notesText_underline is "&lt;hr /&gt;
+
+&lt;h2&gt;Underlines&lt;/h2&gt;  
+
+
+" then
+		set notesText_underline to ""
+	else
+		set notesText_underline to notesText_underline &amp; LF &amp; LF
+	end if
+	
+	if notesText_strikethru is "&lt;hr /&gt;
+
+&lt;h2&gt;Strike-Throughs&lt;/h2&gt;  
+
+
+" then
+		set notesText_strikethru to ""
+	else
+		set notesText_strikethru to notesText_strikethru &amp; LF &amp; LF
+	end if
+	
+	if theSummary is {} then
+		set theSummary to ""
+	else
+		set theSummary to theSummary &amp; LF &amp; LF
+	end if
+	
+	return notesText_text &amp; theSummary &amp; notesText_anchor &amp; notesText_highlight &amp; notesText_underline &amp; notesText_strikethru
+end textCheck
+
+--remove items from a list
+on cleanmyList(theList, itemsToDelete)
+	set cleanList to {}
+	repeat with i from 1 to count theList
+		if {theList's item i} is not in itemsToDelete then set cleanList's end to theList's item i
+	end repeat
+	return cleanList
+end cleanmyList
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>566900688.27413094</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>567315120.97532594</real>
+				<key>Name</key>
+				<string>key.SK.as.exp.EN</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>14</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>A8C0BF6E-C261-4595-97CF-F0E35C52CD29</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app-Skim</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>3F637B88-A9AB-4068-828C-4608B07FF02C</string>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+</array>
+</plist>

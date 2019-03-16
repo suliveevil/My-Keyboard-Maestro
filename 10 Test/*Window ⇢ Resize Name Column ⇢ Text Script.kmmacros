@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568122691.47241497</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Aqua</string>
+						<key>ActionName</key>
+						<string>Macro Notes</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC5IBQAAKwAAAAEA
+						AABABQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNTA0
+						XGNvY29hc3VicnRmODMwCntcZm9u
+						dHRibFxmMFxmc3dpc3NcZmNoYXJz
+						ZXQwIEhlbHZldGljYTt9CntcY29s
+						b3J0Ymw7XHJlZDI1NVxncmVlbjI1
+						NVxibHVlMjU1O30Ke1wqXGV4cGFu
+						ZGVkY29sb3J0Ymw7O30KXHBhcmRc
+						dHg1NjBcdHgxMTIwXHR4MTY4MFx0
+						eDIyNDBcdHgyODAwXHR4MzM2MFx0
+						eDM5MjBcdHg0NDgwXHR4NTA0MFx0
+						eDU2MDBcdHg2MTYwXHR4NjcyMFxw
+						YXJkaXJuYXR1cmFsXHBhcnRpZ2h0
+						ZW5mYWN0b3IwCgpcZjBcZnMyNCBc
+						Y2YwIFwnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wKQXV0
+						aG9yCTogIENocmlzdG9waGVyIFN0
+						b25lIDxzY3JpcHRtZWlzdGVyQHRo
+						ZXN0b25lZm9yZ2UuY29tPlwKQ3Jl
+						YXRlZAk6ICAyMDE0LzEwLzA1IDEx
+						OjEwXApNb2RpZmllZAk6ICAyMDE3
+						LzAzLzAyIDA5OjUwXApUYWdzCQk6
+						ICBAY2NzdG9uZSwgQEtNRm9ydW0s
+						IEBGaW5kZXIsIEBSZXNpemUsIEBO
+						YW1lLCBAQ29sdW1uXApcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjd9AQAAACMAAAABAAAABwAA
+						AFRYVC5ydGYQAAAAvHgZXLYBAAAA
+						AAAAAAAAAA==
+						</data>
+						<key>Title</key>
+						<string>Window ? Resize Name Column ? Text Script</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string>~/Documents/Application Support Files/Keyboard Maestro User Files/AppleScript Support/Finder/Window ? Resize Name Column.scpt</string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>----------------------------------------------------------------# Auth: Christopher Stone &lt;scriptmeister@thestoneforge.com&gt;# dCre: 2014/10/05 11:02# dMod: 2017/03/02 09:44# Appl: Finder &amp; System Events &amp; Keyboard Maestro# Task: Expand/Contract Name Column in List-View to fit# Libs: GLb# Osax: None# Tags: @Applescript, @Script, @Finder, @System_Events, @Expand, @Name, @Column# Test: OSX 10.10.5----------------------------------------------------------------try		tell application "Finder"				set frontmost to true				if current view of front window ¡Ù list view ?			then error "View of front Finder window is not list view!"	end tell		tell application "System Events"		set quit delay to 0				tell application "System Events"			tell application process "Finder"				tell (first window whose subrole is "AXStandardWindow")					tell static text 2 of scroll area 1 of splitter group 1 of splitter group 1						set {x, Y} to position												set x to x - 10						set Y to Y + 5											end tell				end tell							end tell					end tell			end tell		tell application "Keyboard Maestro Engine"		setvariable "X" to x		setvariable "Y" to Y	end tell	on error e number n	set e to e &amp; return &amp; return &amp; "Num: " &amp; n	if n ¡Ù -128 then		tell application (path to frontmost application as text) to button returned of ?			(display dialog e with title "ERROR!" buttons {"Copy Error Message", "Cancel", "OK"} ?				default button "OK" giving up after 30)		if ddButton = "Copy" then set the clipboard to e	end ifend try----------------------------------------------------------------</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>MoveAndClick</string>
+						<key>Button</key>
+						<integer>0</integer>
+						<key>ClickCount</key>
+						<integer>2</integer>
+						<key>DisplayMatches</key>
+						<false/>
+						<key>DragHorizontalPosition</key>
+						<string>0</string>
+						<key>DragVerticalPosition</key>
+						<string>0</string>
+						<key>Fuzz</key>
+						<integer>15</integer>
+						<key>HorizontalPositionExpression</key>
+						<string>X</string>
+						<key>MacroActionType</key>
+						<string>MouseMoveAndClick</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>MouseDrag</key>
+						<string>None</string>
+						<key>Relative</key>
+						<string>Absolute</string>
+						<key>RelativeCorner</key>
+						<string>TopLeft</string>
+						<key>RestoreMouseLocation</key>
+						<false/>
+						<key>VerticalPositionExpression</key>
+						<string>Y</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>566865726.70237803</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>567563317.366871</real>
+				<key>Name</key>
+				<string>Window ? Resize Name Column ? Text Script</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>15</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2048</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>79E9082F-48F1-4F14-AE3E-5FD94132CD5D</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>10 Test</string>
+		<key>ToggleMacroUID</key>
+		<string>21C9FAF5-4489-4CBD-8436-9C9F6E733D38</string>
+		<key>UID</key>
+		<string>DF9C421C-0294-4CC7-9C59-7CDEB233268E</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075922.90598297</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>on run	try		tell application "Finder"			set currFolder to POSIX path of (folder of the front window as string)		end tell	on error		set currFolder to (path to home folder as string)	end try			tell application "Terminal"		if it is running then			set itermisrunning to true		else			set itermisrunning to false		end if		activate -- ŒƒµµΩ‚ ÕBrings an application to the front, and opens it if it is on the local computer and not already running.		if itermisrunning = true then			tell application "System Events" to keystroke "t" using command down		end if		do script ("cd " &amp; "'" &amp; currFolder &amp; "'") in front window	end tell	end run</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>569984804.84508598</real>
+				<key>ModificationDate</key>
+				<real>569984844.29350305</real>
+				<key>Name</key>
+				<string>Finder-Terminal</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>fft</string>
+					</dict>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>ftt</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>6E5D9566-D231-4EE2-9B27-364C93272F3B</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>1 Application Control</string>
+		<key>ToggleMacroUID</key>
+		<string>66F83F01-3E0E-40EB-B4F4-B43A41A7BB1B</string>
+		<key>UID</key>
+		<string>ED84731D-0CAC-4635-A617-B2A2EDCF265D</string>
+	</dict>
+</array>
+</plist>

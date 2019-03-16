@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568122691.47241497</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%TriggerValue%</string>
+						<key>Variable</key>
+						<string>OCR_file_path</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>Notification</string>
+						<key>SoundName</key>
+						<string></string>
+						<key>Subtitle</key>
+						<string></string>
+						<key>Text</key>
+						<string>Start OCR...</string>
+						<key>Title</key>
+						<string>%ExecutingMacro%</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>#!/bin/bash
+
+imgFile=$KMVAR_OCR_file_path
+
+FileType=$(file -b -I "$imgFile")
+
+if [[ $FileType = image* ]]; then
+    # 预处理并识别文字
+   # sed 是为了转义识别结果中的英文双引号，会引起错误
+    CONTENTS=$(/usr/local/bin/convert "$imgFile" -magnify -alpha remove - | /usr/local/bin/tesseract -c language_model_penalty_non_dict_word=0.8 stdin stdout -l eng+chi_sim  | sed "s/\"/\\\\\"/g" )
+
+    # 将识别结果设置为图片的注释
+    cmd1="set theComment to \"$CONTENTS\""
+    cmd2="tell application \"Finder\" to set comment of (POSIX file \"$imgFile\" as alias) to theComment"
+    /usr/bin/osascript -e "$cmd1" -e "$cmd2"
+fi</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>521522967.209149</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568288556.43776703</real>
+				<key>Name</key>
+				<string>OCR Process</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>Interest</key>
+						<dict>
+							<key>Observe</key>
+							<string>Add</string>
+							<key>ObserveWhen</key>
+							<string>WaitCompletion</string>
+							<key>Path</key>
+							<string>~/Desktop</string>
+							<key>UID2</key>
+							<string>4C1D1006-D0A4-474A-9668-9E7281874DC6</string>
+						</dict>
+						<key>MacroTriggerType</key>
+						<string>Folder</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>20D2D347-AAC1-4C5C-915C-523699FD28C5</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>10 Test</string>
+		<key>ToggleMacroUID</key>
+		<string>21C9FAF5-4489-4CBD-8436-9C9F6E733D38</string>
+		<key>UID</key>
+		<string>DF9C421C-0294-4CC7-9C59-7CDEB233268E</string>
+	</dict>
+</array>
+</plist>

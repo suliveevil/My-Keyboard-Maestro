@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568131860.18294704</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>&lt;div class="mermaid"&gt;
+    %|%
+&lt;/div&gt;</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>569963086.68092096</real>
+				<key>ModificationDate</key>
+				<real>569963150.13085306</real>
+				<key>Name</key>
+				<string>MD-HTML-mermaid</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>hmmd</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>413F7C43-1BA9-4905-AE51-056CAE551997</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.2 Markdown</string>
+		<key>ToggleMacroUID</key>
+		<string>BBF022AD-8D2E-4F46-B387-1FA08A4726CE</string>
+		<key>UID</key>
+		<string>CF264727-7D23-469A-9001-7DD523D2BEF1</string>
+	</dict>
+</array>
+</plist>

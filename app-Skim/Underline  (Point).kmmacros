@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>566950173.77217698</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Notes</string>
+							<string>New Underline</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>566900688.27413094</real>
+				<key>ModificationDate</key>
+				<real>424407159.04288</real>
+				<key>Name</key>
+				<string>Underline  (Point)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>35</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>FA1337DC-3D8D-4D67-871D-41B644B32EA4</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app-Skim</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>3F637B88-A9AB-4068-828C-4608B07FF02C</string>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+</array>
+</plist>

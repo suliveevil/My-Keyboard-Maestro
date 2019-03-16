@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568131860.18294704</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Destination</key>
+						<string></string>
+						<key>MacroActionType</key>
+						<string>File</string>
+						<key>Operation</key>
+						<string>Duplicate</string>
+						<key>Source</key>
+						<string>~/template.md</string>
+					</dict>
+					<dict>
+						<key>Destination</key>
+						<string>/allmyfiles/gitFiles/suliveevil.github.io/_posts</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>File</string>
+						<key>Operation</key>
+						<string>Copy</string>
+						<key>Source</key>
+						<string>~/template.md</string>
+					</dict>
+					<dict>
+						<key>Destination</key>
+						<string></string>
+						<key>MacroActionType</key>
+						<string>File</string>
+						<key>Operation</key>
+						<string>Reveal</string>
+						<key>Source</key>
+						<string>/allmyfiles/gitFiles/suliveevil.github.io/_posts/template.md</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568924198.54350698</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>569050846.10499895</real>
+				<key>Name</key>
+				<string>Blog-Contents Input-Jekyll</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>blo;</string>
+					</dict>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>blo£»</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>BFB36C87-609B-41F3-B04C-0BD551CE760B</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.2 Markdown</string>
+		<key>ToggleMacroUID</key>
+		<string>BBF022AD-8D2E-4F46-B387-1FA08A4726CE</string>
+		<key>UID</key>
+		<string>CF264727-7D23-469A-9001-7DD523D2BEF1</string>
+	</dict>
+</array>
+</plist>

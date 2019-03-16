@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568122691.47241497</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC6lBAAAKwAAAAEA
+						AACdBAAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgTmFtZTogTWFjcm8gUmVwb3Np
+						dG9yeSBKU09OIFBhc3RlclwKVmVy
+						c2lvbjogMC4xLjdcClVwZGF0ZWQ6
+						IDIwMTcvMDEvMTkgMTc6MjMgUFNU
+						XApCeTogRGFuIFRob21hc1wKXApQ
+						VVJQT1NFOlwKXApUYWtlcyBhIE1h
+						Y3JvIFJlcG9zaXRvcnkgSlNPTiBz
+						dHJpbmcgdGhhdCdzIG9uIHRoZSBj
+						bGlwYm9hcmQsIGFuZCBwYXN0ZXMg
+						aXQgaW50byBLZXlib2FyZCBNYWVz
+						dHJvIGFzIGEgTWFjcm8gb3IgR3Jv
+						dXAuXApcClVTQUdFOlwKXApPcGVu
+						IGEgTWFjcm8gUmVwb3NpdG9yeSBK
+						U09OIGZpbGUgaW4gYSB0ZXh0IGVk
+						aXRvciwgdGhlbiBjb3B5IHRoZSB0
+						ZXh0IHRvIHRoZSBjbGlwYm9hcmQu
+						XApcCklmIHlvdSdyZSBwYXN0aW5n
+						IGEgTWFjcm8sIHRoZW4gc2VsZWN0
+						IHRoZSBHcm91cCB5b3Ugd2FudCB0
+						byBwYXN0ZSB0aGUgbWFjcm8gaW50
+						bywgdGhlbiBydW4gdGhpcyBtYWNy
+						by5cClwKSWYgeW91J3JlIHBhc3Rp
+						bmcgYSBHcm91cCwgdGhlbiBpdCBk
+						b2Vzbid0IG1hdHRlciB3aGF0J3Mg
+						c2VsZWN0ZWQgLSBqdXN0IHJ1biB0
+						aGlzIG1hY3JvLlwKXApWRVJTSU9O
+						IEhJU1RPUlk6XAowLjEuNyAtIEZp
+						eGVkICJjb21wYXJlIiBpc3N1ZSB3
+						aXRoIENyZWF0aW9uRGF0ZSB2YWx1
+						ZXMgb2YgMC4gUGxlYXNlIFdhaXQg
+						ZGlhbG9nIHJlc3BlY3RzIEVudGVy
+						IGtleS5cCjAuMS4zLTYgLSBNYXRj
+						aCB2ZXJzaW9uIG51bWJlciBvZiBV
+						cGRhdGVyLlwKMC4xLjIgLSBEdXJp
+						bmcgY29tcGFyZSwgZml4ZWQgYnVn
+						IHdpdGggbmVnYXRpdmUgbnVtYmVy
+						cy5cCjAuMS4xIC0gQnVnIGZpeGVz
+						OlwKCVx1YzBcdTk2NzkgIER1cmlu
+						ZyBQbGlzdCBjb21wYXJlLCAiTlNT
+						dXBlclNjcmlwdCIgaXMgdHlwZSAi
+						aW50ZWdlciIsIG5vdCAicmVhbCIu
+						XAowLjEuMCAtIEluaXRpYWwgQmV0
+						YSB2ZXJzaW9uLn0BAAAAIwAAAAEA
+						AAAHAAAAVFhULnJ0ZhAAAADCAy9c
+						tgEAAAAAAAAAAAAA
+						</data>
+						<key>Title</key>
+						<string>Macro Repository JSON Paster v0.1.7</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC4KBAAAKwAAAAEA
+						AAACBAAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgQ29weXJpZ2h0IChjKSAyMDE3
+						IERhbmllbCBUaG9tYXNcClwKUGVy
+						bWlzc2lvbiB0byB1c2UsIGNvcHks
+						IG1vZGlmeSwgYW5kL29yIGRpc3Ry
+						aWJ1dGUgdGhpcyBzb2Z0d2FyZSBm
+						b3IgYW55IHB1cnBvc2Ugd2l0aCBv
+						ciB3aXRob3V0IGZlZSBpcyBoZXJl
+						YnkgZ3JhbnRlZCwgcHJvdmlkZWQg
+						dGhhdCB0aGUgYWJvdmUgY29weXJp
+						Z2h0IG5vdGljZSBhbmQgdGhpcyBw
+						ZXJtaXNzaW9uIG5vdGljZSBhcHBl
+						YXIgaW4gYWxsIGNvcGllcy5cClwK
+						VEhFIFNPRlRXQVJFIElTIFBST1ZJ
+						REVEICJBUyBJUyIgQU5EIFRIRSBB
+						VVRIT1IgRElTQ0xBSU1TIEFMTCBX
+						QVJSQU5USUVTIFdJVEggUkVHQVJE
+						IFRPIFRISVMgU09GVFdBUkUgSU5D
+						TFVESU5HIEFMTCBJTVBMSUVEIFdB
+						UlJBTlRJRVMgT0YgTUVSQ0hBTlRB
+						QklMSVRZIEFORCBGSVRORVNTLiBJ
+						TiBOTyBFVkVOVCBTSEFMTCBUSEUg
+						QVVUSE9SIEJFIExJQUJMRSBGT1Ig
+						QU5ZIFNQRUNJQUwsIERJUkVDVCwg
+						SU5ESVJFQ1QsIE9SIENPTlNFUVVF
+						TlRJQUwgREFNQUdFUyBPUiBBTlkg
+						REFNQUdFUyBXSEFUU09FVkVSIFJF
+						U1VMVElORyBGUk9NIExPU1MgT0Yg
+						VVNFLCBEQVRBIE9SIFBST0ZJVFMs
+						IFdIRVRIRVIgSU4gQU4gQUNUSU9O
+						IE9GIENPTlRSQUNULCBORUdMSUdF
+						TkNFIE9SIE9USEVSIFRPUlRJT1VT
+						IEFDVElPTiwgQVJJU0lORyBPVVQg
+						T0YgT1IgSU4gQ09OTkVDVElPTiBX
+						SVRIIFRIRSBVU0UgT1IgUEVSRk9S
+						TUFOQ0UgT0YgVEhJUyBTT0ZUV0FS
+						RS59AQAAACMAAAABAAAABwAAAFRY
+						VC5ydGYQAAAAwgMvXLYBAAAAAAAA
+						AAAAAA==
+						</data>
+						<key>Title</key>
+						<string>License Agreement / Disclaimer</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%CurrentClipboard%</string>
+						<key>Variable</key>
+						<string>macrep_json</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteJavaScriptForAutomation</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>(function(inDesignMode) {
+	'use strict';
+
+	ObjC.import('AppKit');
+
+	var KMEngine = (function() {
+		var _engineApp;
+
+		return {
+			getEngineAppName: function() {
+				return "Keyboard Maestro Engine";
+			},
+
+			getEngineApp: function() {
+				if (!_engineApp)
+					_engineApp = Application(this.getEngineAppName());
+				return _engineApp;
+			},
+
+			getVariable: function(name, required) {
+				var result = this.getEngineApp().getvariable(name);
+				if (!result &amp;&amp; required)
+					throw Error("Variable '" + name + "' is empty");
+				return result;
+			},
+
+			setVariable: function(name, value) {
+				this.getEngineApp().setvariable(name, {
+					to: value
+				});
+			},
+		};
+	})();
+
+	var PlistUtils = (function() {
+		var _currentApp;
+		var _dataNodeToken = "41E4D515-C065-4C24-9859-EA2479C52CC9";
+
+		var _kmObjectType_action = "action";
+		var _kmObjectType_group = "group";
+		var _kmObjectType_macro = "macro";
+
+		var _kmActionsXmlClipboardStringType = "com.stairways.keyboardmaestro.actionarray";
+		var _kmGroupsXmlClipboardStringType = "com.stairways.keyboardmaestro.macrogroupsarray";
+		var _kmMacrosXmlClipboardStringType = "com.stairways.keyboardmaestro.macrosarray";
+
+		var _kmClipboardStringTypes = {}
+		_kmClipboardStringTypes[_kmObjectType_action] = _kmActionsXmlClipboardStringType;
+		_kmClipboardStringTypes[_kmObjectType_group] = _kmGroupsXmlClipboardStringType;
+		_kmClipboardStringTypes[_kmObjectType_macro] = _kmMacrosXmlClipboardStringType;
+
+		function _cleanupXmlAfterDeserialization(xml) {
+			var result = xml.replace(/&lt;real&gt;(-?\d+)(\.0)?&lt;\/real&gt;/g, "&lt;integer&gt;$1&lt;/integer&gt;");
+			var result = result.replace(/(&lt;key&gt;CreationDate&lt;\/key&gt;[\W]*&lt;)(integer&gt;)(\d+)(&lt;\/integer&gt;)/g, "$1real&gt;$3.0&lt;/real&gt;");
+			var result = result.replace(/(&lt;key&gt;TimeOutPeriod&lt;\/key&gt;[\W]*&lt;)(integer)(&gt;\d+&lt;\/)(integer)(&gt;)/g, "$1real$3real$5");
+			var result = result.replace(/(&lt;key&gt;NSSuperScript&lt;\/key&gt;[\W]*&lt;)(real)(&gt;-?\d+&lt;\/)(real)(&gt;)/g, "$1integer$3integer$5");
+			return result;
+		}
+
+		function _deserializeFromXmlString(xml) {
+			var nsError = $();
+			var result = ObjC.deepUnwrap(
+				$.NSPropertyListSerialization.propertyListWithDataOptionsFormatError(
+					$(xml).dataUsingEncoding($.NSUTF8StringEncoding), 0, 0, nsError));
+			if (!result)
+				throw Error("Could not convert string to plist. Error: " + _getErrorMessage(nsError));
+			return result;
+		}
+
+		function _deTokenizeXmlDataNodes(xml) {
+			var regex = new RegExp("(&lt;string&gt;[\\W]*" + _dataNodeToken + ")", "g");
+			var result = xml.replace(regex, "&lt;data&gt;");
+
+			regex = new RegExp(_dataNodeToken + "[\\W]*&lt;\\/string&gt;", "g");
+			return result.replace(regex, "&lt;/data&gt;");
+		}
+
+		function _getAppSupportFolderName() {
+			if (!_currentApp) {
+				_currentApp = Application.currentApplication();
+				_currentApp.includeStandardAdditions = true;
+			}
+			return _currentApp.pathTo('application support', { from: 'user domain' });
+		}
+
+		function _clipboardContainsType(type) {
+			return _getClipboardTypes().indexOf(type) &gt;= 0;
+		}
+
+		function _getClipboardStringForType(type, throwIfNotFound) {
+			if (_clipboardContainsType(type))
+				return ObjC.unwrap(
+					$.NSPasteboard.generalPasteboard
+					.stringForType(type));
+			if (throwIfNotFound)
+				throw Error("No clipboard data for specified type");
+			return "";
+		}
+
+		function _getClipboardTypes() {
+			var items = $.NSPasteboard.generalPasteboard.pasteboardItems;
+			if (items.count === 0)
+				return [];
+			return ObjC.deepUnwrap(items.js[0].types);
+		}
+
+		function _getErrorMessage(nsError, defaultErrorMessage) {
+			try {
+				return $(nsError.localizedDescription).js;
+			} catch (e) {
+				return defaultErrorMessage || "Unknown Error";
+			}
+		}
+
+		function _getKMClipboardStringTypeForObjectType(objectType) {
+			var result = _kmClipboardStringTypes[objectType];
+			if (!result)
+				throw Error("'" + objectType + "' is not a valid KM Object Type");
+			return result;
+		}
+
+		function _getKMPlistXmlObjectType(xml) {
+			if (xml.indexOf("&lt;key&gt;AddToMacroPalette&lt;/key&gt;") &gt; 0)
+				return _kmObjectType_group;
+			if (xml.indexOf("&lt;key&gt;Triggers&lt;/key&gt;") &gt; 0)
+				return _kmObjectType_macro;
+			return _kmObjectType_action;
+		}
+
+		function _reOrderJsonProperties(json) {
+
+			function moveActionPropertyToTop(jsonArray, propertyName) {
+
+				function findProperty(startingIndex) {
+					for (var i = startingIndex; i &lt; jsonArray.length; i++) {
+						var line = jsonArray[i];
+						var regex = new RegExp('^([\\t]+)"' + propertyName + '":');
+						var match = line.match(regex);
+						if (match) {
+							return {
+								index: i,
+								leadingTabs: match[1]
+							};
+						}
+					}
+					return null;
+				}
+
+				function findActionStartIndex(startingIndex, leadingTabs) {
+					var startingLineRegex = new RegExp("^(" + leadingTabs.substring(0, leadingTabs.length - 1) + "[^\\t])");
+					for (var i = startingIndex - 1; i &gt;= 0; i--) {
+						var line = jsonArray[i];
+						var match = line.match(startingLineRegex);
+						if (match) {
+							if (!match[1].endsWith("{"))
+								return -1;
+							return i + 1;
+						}
+					}
+					return -1;
+				}
+
+				function moveProperty(fromIndex, toIndex) {
+					var endsWithComma = jsonArray[fromIndex].endsWith(",");
+					if (!endsWithComma)
+						jsonArray[fromIndex] = jsonArray[fromIndex] + ",";
+					jsonArray.splice(toIndex, 0, jsonArray.splice(fromIndex, 1)[0]);
+
+					// If we moved the last property of the action, then the new last
+					// property line probably needs to have its trailing comma removed.
+					if (!endsWithComma) {
+						var line = jsonArray[fromIndex];
+						if (line.endsWith(","))
+							jsonArray[fromIndex] = line.substring(0, line.length - 1);
+					}
+				}
+
+				// moveActionPropertyToTop()
+				var i = 0;
+				while (i &lt; jsonArray.length) {
+					var propertyLineInfo = findProperty(i);
+					if (!propertyLineInfo)
+						return;
+					var actionStartIndex = findActionStartIndex(propertyLineInfo.index, propertyLineInfo.leadingTabs);
+					if (actionStartIndex &gt;= 0 &amp;&amp; actionStartIndex &lt; propertyLineInfo.index)
+						moveProperty(propertyLineInfo.index, actionStartIndex);
+
+					i = propertyLineInfo.index + 1;
+				}
+			} // moveActionPropertyToTop()
+
+			// _reOrderJsonProperties()
+			if (json.indexOf("\t") &lt; 0)
+				throw Error("ReOrderJsonProperties expects the JSON parameter to be stringified with tabs");
+			var jsonArray = json.split("\n");
+
+			// NOTE: These are backwards - the one we want top-most is last in the array.
+			["ActionName", "Title", "MacroActionType"].forEach(function(propertyName) {
+				moveActionPropertyToTop(jsonArray, propertyName);
+			});
+			return jsonArray.join("\n");
+		} // _reOrderJsonProperties()
+
+		function _serializeToXmlString(plist) {
+			var data = $.NSPropertyListSerialization.dataWithPropertyListFormatOptionsError(
+				$(plist), $.NSPropertyListXMLFormat_v1_0, 0, null);
+			var nsstring = $.NSString.alloc.initWithDataEncoding(data, $.NSUTF8StringEncoding);
+			var result = $(nsstring).js;
+			return result;
+		}
+
+		function _setClipboardStringForType(str, type) {
+			var clipboard = $.NSPasteboard.generalPasteboard;
+			/*jshint -W030 */
+			clipboard.clearContents;
+			/*jshint +W030 */
+			clipboard.setStringForType($(str), $(type));
+		}
+
+		function _tokenizeXmlDataNodes(xml) {
+			return xml.replace(/(&lt;data&gt;)([\W]*)([^&lt;]*)(&lt;\/data&gt;)/g,
+				"&lt;string&gt;$2" + _dataNodeToken + "$2$3" + _dataNodeToken + "$2&lt;/string&gt;");
+		}
+
+		return {
+			KMObjectType_action: _kmObjectType_action,
+			KMObjectType_group: _kmObjectType_group,
+			KMObjectType_macro: _kmObjectType_macro,
+
+			comparePlistToXmlString: function(plist, origXml, failOptions) {
+				var testXml = this.serializeToXmlString(plist);
+				if (testXml === origXml)
+					return;
+
+				var savedToFile = false;
+				var savedOrigFilePath = null;
+				var savedTestFilePath = null;
+				var defaultFailOptions = this.getComparePlistFailDefaultOptions();
+				if (!failOptions)
+					failOptions = defaultFailOptions;
+
+				if (failOptions &amp;&amp; failOptions.saveFiles) {
+
+					var saveFolderPath = failOptions.saveFolderPath || defaultFailOptions.saveFolderPath;
+					if (saveFolderPath.substring(saveFolderPath.length-1) !== "/")
+						saveFolderPath += "/";
+
+					savedOrigFilePath = saveFolderPath + (failOptions.saveOrigFileName || defaultFailOptions.saveOrigFileName);
+					savedTestFilePath = saveFolderPath + (failOptions.saveTestFileName || defaultFailOptions.saveTestFileName);
+					try {
+						this.writeTextFile(origXml, savedOrigFilePath);
+						this.writeTextFile(testXml, savedTestFilePath);
+						savedToFile = true;
+					} catch (e) {
+					}
+				}
+
+				var errorMessage = failOptions &amp;&amp; failOptions.errorMessage ? failOptions.errorMessage : defaultFailOptions.errorMessage;
+				if (savedToFile)
+					errorMessage = errorMessage +
+						"\nSaved original XML to: '" + savedOrigFilePath + "'" +
+						"\nSaved test XML to: '" + savedTestFilePath + "'";
+				throw Error(errorMessage);
+			},
+
+			convertJsonStringToXmlString: function(json) {
+				var plist = JSON.parse(json);
+				return this.serializeToXmlString(plist);
+			},
+
+			convertXmlStringToJsonString: function(xml) {
+				var plist = this.deserializeFromXmlString(xml);
+				return JSON.stringify(plist, null, "\t");
+			},
+
+			convertXmlStringToJsonStringAndValidate: function(xml, failOptions) {
+				var json = this.convertXmlStringToJsonString(xml);
+				var plist = JSON.parse(json);
+				this.comparePlistToXmlString(plist, xml, failOptions || this.getCompareJsonFailDefaultOptions());
+				return json;
+			},
+
+			createEmptyGroupAction: function(actionName) {
+				return _deserializeFromXmlString(
+					"&lt;plist version='1.0'&gt; \n" +
+					"&lt;dict&gt; \n" +
+					"	&lt;key&gt;" + (actionName || "") + "&lt;/key&gt; \n" +
+					"	&lt;string&gt;Installer&lt;/string&gt; \n" +
+					"	&lt;key&gt;Actions&lt;/key&gt; \n" +
+					"	&lt;array/&gt; \n" +
+					"	&lt;key&gt;MacroActionType&lt;/key&gt; \n" +
+					"	&lt;string&gt;Group&lt;/string&gt; \n" +
+					"	&lt;key&gt;TimeOutAbortsMacro&lt;/key&gt; \n" +
+					"	&lt;true/&gt; \n" +
+					"&lt;/dict&gt; \n" +
+					"&lt;/plist&gt;");
+			},
+
+			deserializeFromXmlFile: function(path) {
+				return this.deserializeFromXmlString(this.readTextFile(path));
+			},
+
+			deserializeFromXmlFileAndValidate: function(path, failOptions) {
+				return this.deserializeFromXmlStringAndValidate(this.readTextFile(path), failOptions);
+			},
+
+			deserializeFromXmlString: function(xml) {
+				var result = _tokenizeXmlDataNodes(xml);
+				return _deserializeFromXmlString(result);
+			},
+
+			deserializeFromXmlStringAndValidate: function(xml, failOptions) {
+				var result = this.deserializeFromXmlString(xml);
+				this.comparePlistToXmlString(result, xml, failOptions);
+				return result;
+			},
+
+			deserializeKMAllMacrosSourceFile: function() {
+				var xml = this.readKMAllMacrosSourceFileAsXml();
+				return this.deserializeFromXmlString(xml);
+			},
+
+			deserializeKMAllMacrosSourceFileAndValidate: function(failOptions) {
+				var xml = this.readKMAllMacrosSourceFileAsXml();
+				return this.deserializeFromXmlStringAndValidate(xml, failOptions);
+			},
+
+			getCompareJsonFailDefaultOptions: function() {
+				return {
+					errorMessage: "Plist-to-JSON Conversion Error: Converted JSON back to XML, does not match Original XML.",
+					saveFiles: true,
+					saveFolderPath: "/tmp/",
+					saveOrigFileName: "PlistUtils_CompareFailure_Original.plist",
+					saveTestFileName: "PlistUtils_CompareFailure_Test.plist"
+				};
+			},
+
+			getComparePlistFailDefaultOptions: function() {
+				return {
+					errorMessage: "Plist Conversion Error: Converted Plist does not match Original XML.",
+					saveFiles: true,
+					saveFolderPath: "/tmp/",
+					saveOrigFileName: "PlistUtils_CompareFailure_Original.plist",
+					saveTestFileName: "PlistUtils_CompareFailure_Test.plist"
+				};
+			},
+
+			getInitialCommentFromMacro: function(macro) {
+				var results = [];
+				if (!macro.Actions || macro.Actions.length === 0)
+					return null;
+
+				var action = macro.Actions[0];
+				if (action.MacroActionType !== "Comment")
+					return null;
+
+				return {
+					name: action.ActionName || action.Title || "",
+					title: action.Title || "",
+					text: action.Text || ""
+				};
+			},
+
+			getKMActionsXmlFromClipboard(throwIfNotFound) {
+				return _getClipboardStringForType(_kmActionsXmlClipboardStringType, throwIfNotFound);
+			},
+
+			getKMClipboardStringTypeForObjectType: function(objectType) {
+				var result = _kmClipboardStringTypes[objectType];
+				if (!result)
+					throw Error("'" + objectType + "' is not a valid KM Object Type");
+				return result;
+			},
+
+			getKMGroupsXmlFromClipboard(throwIfNotFound) {
+				return _getClipboardStringForType(_kmGroupsXmlClipboardStringType, throwIfNotFound);
+			},
+
+			getKMMacrosXmlFromClipboard(throwIfNotFound) {
+				return _getClipboardStringForType(_kmMacrosXmlClipboardStringType, throwIfNotFound);
+			},
+
+			getKMPlistXmlObjectType: function(xml) {
+				return _getKMPlistXmlObjectType(xml);
+			},
+
+			// File must contain one macro only, or exception is thrown.
+			getMacroFromKMMacrosFile: function(path) {
+				var plist = this.deserializeFromXmlFile(path);
+				if (!plist)
+					throw Error("Could not read file '" + path + "'");
+				if (plist.length === 0)
+					throw Error("No macros were found in '" + path + "'");
+				if (plist.length &gt; 1)
+					throw Error("Multiple macros were found in '" + path + "'");
+				var group = plist[0];
+
+				if (!group.Macros || group.Macros.count === 0)
+					throw Error("No macros were found in '" + path + "'");
+				if (group.Macros.length &gt; 1)
+					throw Error("Multiple macros were found in '" + path + "'");
+				return group.Macros[0];
+			},
+
+			readKMAllMacrosSourceFileAsXml: function() {
+				var path = _getAppSupportFolderName() + "/Keyboard Maestro/Keyboard Maestro Macros.plist";
+
+				var nsError = $();
+				var fileData = $.NSData.dataWithContentsOfFileOptionsError(
+					$(path).stringByStandardizingPath, 0, nsError);
+				if (!fileData)
+					throw Error(_getErrorMessage(nsError));
+
+				nsError = $();
+				var plistData = $.NSPropertyListSerialization.propertyListWithDataOptionsFormatError(
+					fileData, $.NSPropertyListImmutable, 0, nsError);
+				if (!plistData)
+					throw Error(_getErrorMessage(nsError));
+
+				nsError = $();
+				var xmlData = $.NSPropertyListSerialization.dataWithPropertyListFormatOptionsError(
+					plistData, $.NSPropertyListXMLFormat_v1_0, 0, nsError);
+				if (!xmlData)
+					throw Error(_getErrorMessage(nsError));
+
+				return $($.NSString.alloc.initWithDataEncoding(xmlData, $.NSUTF8StringEncoding)).js;
+			},
+
+			readTextFile: function(path) {
+				var error;
+				var str = ObjC.unwrap(
+					$.NSString.stringWithContentsOfFileEncodingError(
+						$(path).stringByStandardizingPath,
+						$.NSUTF8StringEncoding,
+						error
+					)
+				);
+				if (error)
+					throw Error('Could not read file "' + path + '"');
+				return str;
+			},
+
+			reOrderJsonProperties: function(json) {
+				return _reOrderJsonProperties(json);
+			},
+
+			serializeToXmlFile: function(obj, path) {
+				var str = serializeToXmlString(obj);
+				writeTextFile(str, path);
+			},
+
+			serializeToXmlString: function(obj) {
+				var str = _serializeToXmlString(obj);
+				str = _cleanupXmlAfterDeserialization(str);
+				return _deTokenizeXmlDataNodes(str);
+			},
+
+			setClipboardToKMPlistXml: function(xml) {
+				var objectType = _getKMPlistXmlObjectType(xml);
+				var clipboardStringType = _getKMClipboardStringTypeForObjectType(objectType);
+				_setClipboardStringForType(xml, clipboardStringType);
+				return objectType;
+			},
+
+			writeTextFile: function(text, path) {
+				var str = $.NSString.alloc.initWithUTF8String(text);
+				var result = str.writeToFileAtomicallyEncodingError(
+					$(path).stringByStandardizingPath,
+					true,
+					$.NSUTF8StringEncoding,
+					null);
+				if (!result)
+					throw Error("Could not write file '" + path + "'");
+			}
+		};
+	})();
+
+	function execute() {
+		var jsonString = KMEngine.getVariable("macrep_json", true);
+		var obj;
+		try {
+			obj = JSON.parse(jsonString);
+		} catch (e) {
+			throw Error("String does not appear to be a valid JSON string");
+		}
+		if (!Array.isArray(obj))
+			obj = [obj];
+		var plistString = PlistUtils.serializeToXmlString(obj);
+		var objectType = PlistUtils.setClipboardToKMPlistXml(plistString);
+		KMEngine.setVariable("macrep_objectType", objectType);
+		return "OK";
+	}
+
+	if (inDesignMode) {
+        return execute();
+    } else {
+        try {
+            return execute();
+        } catch (e) {
+            return "Error: " + e.message;
+        }
+    }
+})(false);
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>macrep_result</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>Abort if error</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>macrep_result</string>
+									<key>VariableConditionType</key>
+									<string>IsNot</string>
+									<key>VariableValue</key>
+									<string>OK</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>DeviceID</key>
+								<string>SOUNDEFFECTS</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PlaySound</string>
+								<key>Path</key>
+								<string>/System/Library/Sounds/Basso.aiff</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Prompt error with cancel: 'An error has occurred'</string>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Macro "%ExecutingThisMacro%" has encountered an error: %Variable%macrep_result%</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>%ExecutingMacro%</string>
+								<key>Variables</key>
+								<array/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Magenta</string>
+						<key>ActionName</key>
+						<string>Verify that the correct part of the editor is focused</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>ActionName</key>
+								<string>Set 'macrep_objectType' to the currently-focused editor list, if any</string>
+								<key>DisplayKind</key>
+								<string>Variable</string>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteAppleScript</string>
+								<key>NotifyOnFailure</key>
+								<false/>
+								<key>Path</key>
+								<string></string>
+								<key>StopOnFailure</key>
+								<false/>
+								<key>Text</key>
+								<string>activate application "Keyboard Maestro"tell application "System Events"	tell process "Keyboard Maestro"		if focused of scroll area 1 of splitter group 1 of group 1 of window "Keyboard Maestro Editor" is true then return "grouplist"		if focused of scroll area 2 of splitter group 1 of group 1 of window "Keyboard Maestro Editor" is true then return "macrolist"		if focused of scroll area 3 of splitter group 1 of group 1 of window "Keyboard Maestro Editor" is true then return "actionlist"		return ""	end tellend tell</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+								<key>Variable</key>
+								<string>macrep_KMFocusedList</string>
+							</dict>
+							<dict>
+								<key>CaseEntries</key>
+								<array>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Yellow</string>
+												<key>ActionName</key>
+												<string>Make sure the Groups List is focused</string>
+												<key>Conditions</key>
+												<dict>
+													<key>ConditionList</key>
+													<array>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>macrep_KMFocusedList</string>
+															<key>VariableConditionType</key>
+															<string>IsNot</string>
+															<key>VariableValue</key>
+															<string>grouplist</string>
+														</dict>
+													</array>
+													<key>ConditionListMatch</key>
+													<string>All</string>
+												</dict>
+												<key>ElseActionListDisclosed</key>
+												<false/>
+												<key>ElseActions</key>
+												<array/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>IfThenElse</string>
+												<key>ThenActions</key>
+												<array>
+													<dict>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>DeletePastClipboard</string>
+														<key>PastExpression</key>
+														<string>0</string>
+													</dict>
+													<dict>
+														<key>ActionName</key>
+														<string>You must click in the "Groups" list before pasting groups into the editor.</string>
+														<key>Buttons</key>
+														<array>
+															<dict>
+																<key>Button</key>
+																<string>OK</string>
+																<key>Cancel</key>
+																<true/>
+															</dict>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>PromptForUserInput</string>
+														<key>Prompt</key>
+														<string>You must click in the "Groups" list before pasting groups into the editor.</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>Title</key>
+														<string>%ExecutingThisMacro%</string>
+														<key>Variables</key>
+														<array/>
+													</dict>
+												</array>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>group</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Yellow</string>
+												<key>ActionName</key>
+												<string>Make sure the Macros List is focused</string>
+												<key>Conditions</key>
+												<dict>
+													<key>ConditionList</key>
+													<array>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>macrep_KMFocusedList</string>
+															<key>VariableConditionType</key>
+															<string>IsNot</string>
+															<key>VariableValue</key>
+															<string>macrolist</string>
+														</dict>
+													</array>
+													<key>ConditionListMatch</key>
+													<string>All</string>
+												</dict>
+												<key>ElseActionListDisclosed</key>
+												<false/>
+												<key>ElseActions</key>
+												<array/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>IfThenElse</string>
+												<key>ThenActions</key>
+												<array>
+													<dict>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>DeletePastClipboard</string>
+														<key>PastExpression</key>
+														<string>0</string>
+													</dict>
+													<dict>
+														<key>ActionName</key>
+														<string>You must click in the "Macros" list before pasting macros into the editor.</string>
+														<key>Buttons</key>
+														<array>
+															<dict>
+																<key>Button</key>
+																<string>OK</string>
+																<key>Cancel</key>
+																<true/>
+															</dict>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>PromptForUserInput</string>
+														<key>Prompt</key>
+														<string>You must click in the "Macros" list before pasting macros into the editor.</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>Title</key>
+														<string>%ExecutingThisMacro%</string>
+														<key>Variables</key>
+														<array/>
+													</dict>
+												</array>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>macro</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Yellow</string>
+												<key>ActionName</key>
+												<string>Make sure the Actions List is focused</string>
+												<key>Conditions</key>
+												<dict>
+													<key>ConditionList</key>
+													<array>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>macrep_KMFocusedList</string>
+															<key>VariableConditionType</key>
+															<string>IsNot</string>
+															<key>VariableValue</key>
+															<string>actionlist</string>
+														</dict>
+													</array>
+													<key>ConditionListMatch</key>
+													<string>All</string>
+												</dict>
+												<key>ElseActionListDisclosed</key>
+												<false/>
+												<key>ElseActions</key>
+												<array/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>IfThenElse</string>
+												<key>ThenActions</key>
+												<array>
+													<dict>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>DeletePastClipboard</string>
+														<key>PastExpression</key>
+														<string>0</string>
+													</dict>
+													<dict>
+														<key>ActionName</key>
+														<string>You must click inside a Macro before pasting actions into the editor.</string>
+														<key>Buttons</key>
+														<array>
+															<dict>
+																<key>Button</key>
+																<string>OK</string>
+																<key>Cancel</key>
+																<true/>
+															</dict>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>PromptForUserInput</string>
+														<key>Prompt</key>
+														<string>You must click inside a Macro before pasting actions into the editor.</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>Title</key>
+														<string>%ExecutingThisMacro%</string>
+														<key>Variables</key>
+														<array/>
+													</dict>
+												</array>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>action</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Red</string>
+												<key>DeviceID</key>
+												<string>SOUNDEFFECTS</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PlaySound</string>
+												<key>Path</key>
+												<string>/System/Library/Sounds/Basso.aiff</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+											<dict>
+												<key>ActionColor</key>
+												<string>Red</string>
+												<key>ActionName</key>
+												<string>Prompt error with cancel 'Unexpected ObjectType'</string>
+												<key>Buttons</key>
+												<array>
+													<dict>
+														<key>Button</key>
+														<string>OK</string>
+														<key>Cancel</key>
+														<true/>
+													</dict>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PromptForUserInput</string>
+												<key>Prompt</key>
+												<string>Unexpected ObjectType '%Variable%macrep_objectType%'.</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>Title</key>
+												<string>%ExecutingThisMacro%</string>
+												<key>Variables</key>
+												<array/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Otherwise</string>
+										<key>TestValue</key>
+										<string></string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Switch</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>macrep_objectType</string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Paste</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>CutCopyPaste</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>.5</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>Cleanup Variables</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_json</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_KMFocusedList</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_objectType</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_result</string>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>506042882.96038502</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>573879023.89670599</real>
+				<key>Name</key>
+				<string>[KM] Macro Repository JSON Paster</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>89382FD6-9DB2-4F31-A986-55CAC2E66CDA</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>10 Test</string>
+		<key>ToggleMacroUID</key>
+		<string>21C9FAF5-4489-4CBD-8436-9C9F6E733D38</string>
+		<key>UID</key>
+		<string>DF9C421C-0294-4CC7-9C59-7CDEB233268E</string>
+	</dict>
+</array>
+</plist>

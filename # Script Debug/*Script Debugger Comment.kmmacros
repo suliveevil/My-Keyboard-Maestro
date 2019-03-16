@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>573289588.12988305</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>Edit</string>
+							<string>Comment</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.latenightsw.ScriptDebugger7</string>
+							<key>Name</key>
+							<string>Script Debugger</string>
+							<key>NewFile</key>
+							<string>/Applications/Script Debugger.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>573480841.53376198</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>573481427.822047</real>
+				<key>Name</key>
+				<string>Script Debugger Comment</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>44</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>2A83AEA8-CB18-4CF5-A373-2D785FE7F036</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string># Script Debug</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.apple.ScriptEditor2</string>
+					<key>Name</key>
+					<string>Script Editor</string>
+					<key>NewFile</key>
+					<string>/Applications/Utilities/Script Editor.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.latenightsw.ScriptDebugger7</string>
+					<key>Name</key>
+					<string>Script Debugger</string>
+					<key>NewFile</key>
+					<string>/Applications/Script Debugger.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.red-sweater.fastscripts</string>
+					<key>Name</key>
+					<string>FastScripts</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>1E9F28FA-38A1-4C72-8F94-4D04D3511589</string>
+		<key>UID</key>
+		<string>EE7EBCAE-CD19-465D-8EDD-DF86B3B96F66</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075922.90598297</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>Application</key>
+									<dict>
+										<key>BundleIdentifier</key>
+										<string>com.github.GitHubClient</string>
+										<key>Name</key>
+										<string>GitHub Desktop</string>
+										<key>NewFile</key>
+										<string>/Applications/GitHub Desktop.app</string>
+									</dict>
+									<key>ApplicationConditionType</key>
+									<string>Active</string>
+									<key>ConditionType</key>
+									<string>Application</string>
+								</dict>
+								<dict>
+									<key>Application</key>
+									<dict>
+										<key>BundleIdentifier</key>
+										<string>com.github.GitHubClient</string>
+										<key>Name</key>
+										<string>GitHub Desktop</string>
+										<key>NewFile</key>
+										<string>/Applications/GitHub Desktop.app</string>
+									</dict>
+									<key>ConditionType</key>
+									<string>FrontWindow</string>
+									<key>FrontWindowConditionType</key>
+									<string>Exists</string>
+									<key>IsFrontApplication</key>
+									<false/>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>Any</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>KeyboardLayoutID</key>
+								<string>com.apple.keylayout.ABC</string>
+								<key>KeyboardLayoutName</key>
+								<string>ABC</string>
+								<key>MacroActionType</key>
+								<string>SetKeyboardLayout</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>567203137.78042197</real>
+				<key>CustomIconData</key>
+				<string>KMEP-GenericApplication-/Applications/GitHub Desktop.app</string>
+				<key>ModificationDate</key>
+				<real>568130798.13501</real>
+				<key>Name</key>
+				<string>Input-EN-GitHubDesktop</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>Application</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.github.GitHubClient</string>
+							<key>Name</key>
+							<string>GitHub Desktop</string>
+							<key>NewFile</key>
+							<string>/Applications/GitHub Desktop.app</string>
+						</dict>
+						<key>FireType2</key>
+						<string>Activate</string>
+						<key>MacroTriggerType</key>
+						<string>Application</string>
+						<key>RepeatTime</key>
+						<integer>60</integer>
+						<key>Target</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>2CA932C2-70CA-4989-A4F5-ADDC898C2943</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>1 Application Control</string>
+		<key>ToggleMacroUID</key>
+		<string>66F83F01-3E0E-40EB-B4F4-B43A41A7BB1B</string>
+		<key>UID</key>
+		<string>ED84731D-0CAC-4635-A617-B2A2EDCF265D</string>
+	</dict>
+</array>
+</plist>

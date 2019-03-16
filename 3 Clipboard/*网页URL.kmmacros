@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075954.55435097</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>%FrontBrowserURL%%|%</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>566302929.06852496</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568015943.37673604</real>
+				<key>Name</key>
+				<string>ÍøÒ³URL</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>!url</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>646D9C24-04B6-4FC3-A688-BC532D35E712</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3 Clipboard</string>
+		<key>ToggleMacroUID</key>
+		<string>A4A6BB12-CB9D-4A50-AC08-7BA821A36E8C</string>
+		<key>UID</key>
+		<string>BC2589DA-AFE6-4B0D-BD2E-78BEFA50053C</string>
+	</dict>
+</array>
+</plist>

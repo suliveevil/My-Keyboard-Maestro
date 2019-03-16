@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>ActiveAndAlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<true/>
+		<key>AddToStatusMenu</key>
+		<true/>
+		<key>CreationDate</key>
+		<real>566899002.67870903</real>
+		<key>IsActive</key>
+		<false/>
+		<key>KeyCode</key>
+		<integer>53</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>7</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Pasting</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>#!/usr/bin/env ruby
+# encoding: utf-8
+# Markdown Service Tools v 2.11
+
+if RUBY_VERSION.to_f &gt; 1.9
+	Encoding.default_external = Encoding::UTF_8
+	Encoding.default_internal = Encoding::UTF_8
+	input = IO.popen('pbpaste', 'r+').read.force_encoding('utf-8')
+else
+	input = IO.popen('pbpaste', 'r+').read
+end
+
+#  Since any Ruby version before 1.9 doesn't much care for Unicode,
+#  patch in a new String#utf8_length method that returns the correct length
+#  for UTF-8 strings.
+UNICODE_COMPETENT = ((RUBY_VERSION)[0..2].to_f &gt; 1.8)
+
+unless UNICODE_COMPETENT # lower than 1.9
+  class String
+    def utf8_length
+      i = 0
+      i = self.scan(/(.)/).length
+      i
+    end
+  end
+else # 1.9 and above
+  class String
+    alias_method :utf8_length, :length
+  end
+end
+
+input.split("\n").each {|line|
+  if line =~ /\A(?: {2,4}|\t)(.*)/
+    puts $1
+  else
+    puts line
+  end
+}
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<false/>
+						<key>TrimResultsNew</key>
+						<false/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>457084305.76405799</real>
+				<key>CustomIconData</key>
+				<string>KMEC=Rounded=KMCOLOR:0,0,0,255=¡û=86=0=0=0=KMCOLOR:255,255,255,255</string>
+				<key>ModificationDate</key>
+				<real>413328865.23411798</real>
+				<key>Name</key>
+				<string>23)Outdent Text</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>33</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>F4A85BDA-6823-4CBD-A596-42B20EBAFB46</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>markdown-Zettt</string>
+		<key>PaletteUnderMouse</key>
+		<true/>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>abnerworks.Typora</string>
+					<key>Name</key>
+					<string>Typora</string>
+					<key>NewFile</key>
+					<string>/Applications/Typora.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.coteditor.CotEditor</string>
+					<key>Name</key>
+					<string>CotEditor</string>
+					<key>NewFile</key>
+					<string>/Applications/CotEditor.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.macromates.TextMate</string>
+					<key>Name</key>
+					<string>TextMate</string>
+					<key>NewFile</key>
+					<string>/Applications/TextMate.app</string>
+				</dict>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.uranusjr.macdown</string>
+					<key>Name</key>
+					<string>MacDown</string>
+					<key>NewFile</key>
+					<string>/Applications/MacDown.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>C68A4F52-2E13-45EC-B3B1-C7EAEC897F08</string>
+		<key>UID</key>
+		<string>2B375011-1032-430D-9C2C-5F92D611DD42</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>WithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<true/>
+		<key>CreationDate</key>
+		<real>492987710.89306802</real>
+		<key>CustomIconData</key>
+		<string>KMEP-TypedStringTrigger</string>
+		<key>IsActive</key>
+		<false/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+						<key>Text</key>
+						<string>?</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>492987750.61501902</real>
+				<key>ModificationDate</key>
+				<real>492991061.080975</real>
+				<key>Name</key>
+				<string>64)  ?  Forward Delete</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>3AC5579C-7A66-4030-9827-CC6E34D2BFFD</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>Special Characters</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
+		<key>Theme</key>
+		<dict>
+			<key>Columns</key>
+			<integer>3</integer>
+			<key>Theme</key>
+			<string>Evening</string>
+			<key>UseDefaultInstead</key>
+			<false/>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>2804430E-3DF5-4FAA-B03B-4CF81341B799</string>
+		<key>UID</key>
+		<string>BE1BE4B6-47D2-4F4B-9A54-0DAAC5FDBF29</string>
+	</dict>
+</array>
+</plist>

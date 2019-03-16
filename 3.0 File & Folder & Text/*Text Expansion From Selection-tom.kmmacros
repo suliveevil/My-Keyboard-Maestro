@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568481555.45812798</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC7HAQAAKwAAAAEA
+						AAC/AQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNTA0
+						XGNvY29hc3VicnRmODMwCntcZm9u
+						dHRibFxmMFxmbmlsXGZjaGFyc2V0
+						MCBIZWx2ZXRpY2FOZXVlO30Ke1xj
+						b2xvcnRibDtccmVkMjU1XGdyZWVu
+						MjU1XGJsdWUyNTU7XHJlZDBcZ3Jl
+						ZW4wXGJsdWUwO30Ke1wqXGV4cGFu
+						ZGVkY29sb3J0Ymw7O1xjc2dyYXlc
+						YzA7fQpccGFyZFx0eDU2MFx0eDEx
+						MjBcdHgxNjgwXHR4MjI0MFx0eDI4
+						MDBcdHgzMzYwXHR4MzkyMFx0eDQ0
+						ODBcdHg1MDQwXHR4NTYwMFx0eDYx
+						NjBcdHg2NzIwXHBhcmRpcm5hdHVy
+						YWxccGFydGlnaHRlbmZhY3RvcjAK
+						ClxmMFxmczI2IFxjZjIgS004IG9u
+						bHkuXApcCkZvciBvbGRlciBLTSB2
+						ZXJzaW9ucyBzZWUgaHR0cHM6Ly9m
+						b3J1bS5rZXlib2FyZG1hZXN0cm8u
+						Y29tL3QvY3JlYXRlLXRleHQtZXhw
+						YW5zaW9uLWZyb20tc2VsZWN0aW9u
+						LW1hY3JvLzMzMjl9AQAAACMAAAAB
+						AAAABwAAAFRYVC5ydGYQAAAAlWrB
+						WbYBAAAAAAAAAAAAAA==
+						</data>
+						<key>Title</key>
+						<string>Info</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>;</string>
+						<key>Variable</key>
+						<string>nteDefaultPrefix</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Copy</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>CutCopyPaste</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%SystemClipboard%</string>
+						<key>Variable</key>
+						<string>nteExpansion</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Some filtering of the macro name and expansion display</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseRegEx</string>
+								<key>Destination</key>
+								<string>Variable</string>
+								<key>DestinationVariable</key>
+								<string>nteExpansionDisplay</string>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string>?</string>
+								<key>Search</key>
+								<string>\R</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>nteExpansion</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseRegEx</string>
+								<key>MacroActionType</key>
+								<string>SearchReplace</string>
+								<key>Replace</key>
+								<string> </string>
+								<key>Search</key>
+								<string>\t</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>nteExpansionDisplay</string>
+							</dict>
+							<dict>
+								<key>Delete</key>
+								<false/>
+								<key>First</key>
+								<string>1000</string>
+								<key>MacroActionType</key>
+								<string>Substring</string>
+								<key>Second</key>
+								<string>4</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>StringRangeType</key>
+								<string>To</string>
+								<key>Variable</key>
+								<string>nteExpansionDisplay</string>
+							</dict>
+							<dict>
+								<key>Delete</key>
+								<false/>
+								<key>Destination</key>
+								<string>Variable</string>
+								<key>DestinationVariable</key>
+								<string>nteMacroName</string>
+								<key>First</key>
+								<string>60</string>
+								<key>MacroActionType</key>
+								<string>Substring</string>
+								<key>Second</key>
+								<string>4</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>StringRangeType</key>
+								<string>To</string>
+								<key>Variable</key>
+								<string>nteExpansionDisplay</string>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>EncodeHTMLEntities</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Filter</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>nteExpansion</string>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>nte__Match after any character</string>
+									<key>VariableConditionType</key>
+									<string>StartsWith</string>
+									<key>VariableValue</key>
+									<string>1</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>0|1</string>
+								<key>Variable</key>
+								<string>nte__Match after any character</string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>1|0</string>
+								<key>Variable</key>
+								<string>nte__Match after any character</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string>%Variable% nteExpansionDisplay%\n\nPlease enter the abbreviation trigger:</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>New Text Expansion:</string>
+						<key>Variables</key>
+						<array>
+							<dict>
+								<key>Default</key>
+								<string>%Variable%nteDefaultPrefix%</string>
+								<key>Variable</key>
+								<string>nte__Abbreviation</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string>Case sensitive|Case insensitive|Case affects expansion|Regular expression</string>
+								<key>Variable</key>
+								<string>nte__Behavior</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string>|%Variable%nte__Match after any character%</string>
+								<key>Variable</key>
+								<string>nte__Match after any character</string>
+							</dict>
+							<dict>
+								<key>Default</key>
+								<string>0|1</string>
+								<key>Variable</key>
+								<string>nte__Insert by pasting</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>CaseEntries</key>
+						<array>
+							<dict>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>ByPasting</string>
+										<key>Variable</key>
+										<string>nteType</string>
+									</dict>
+								</array>
+								<key>ConditionType</key>
+								<string>Is</string>
+								<key>TestValue</key>
+								<string>1</string>
+							</dict>
+							<dict>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>ByTyping</string>
+										<key>Variable</key>
+										<string>nteType</string>
+									</dict>
+								</array>
+								<key>ConditionType</key>
+								<string>Otherwise</string>
+								<key>TestValue</key>
+								<string></string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Switch</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>nte__Insert by pasting</string>
+					</dict>
+					<dict>
+						<key>CaseEntries</key>
+						<array>
+							<dict>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>false</string>
+										<key>Variable</key>
+										<string>nteWordBreak</string>
+									</dict>
+								</array>
+								<key>ConditionType</key>
+								<string>Is</string>
+								<key>TestValue</key>
+								<string>1</string>
+							</dict>
+							<dict>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>true</string>
+										<key>Variable</key>
+										<string>nteWordBreak</string>
+									</dict>
+								</array>
+								<key>ConditionType</key>
+								<string>Otherwise</string>
+								<key>TestValue</key>
+								<string></string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Switch</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>nte__Match after any character</string>
+					</dict>
+					<dict>
+						<key>CaseEntries</key>
+						<array>
+							<dict>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>Ignore</string>
+										<key>Variable</key>
+										<string>nteCase</string>
+									</dict>
+								</array>
+								<key>ConditionType</key>
+								<string>Is</string>
+								<key>TestValue</key>
+								<string>Case insensitive</string>
+							</dict>
+							<dict>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>Remember</string>
+										<key>Variable</key>
+										<string>nteCase</string>
+									</dict>
+								</array>
+								<key>ConditionType</key>
+								<string>Is</string>
+								<key>TestValue</key>
+								<string>Case affects expansion</string>
+							</dict>
+							<dict>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>Match</string>
+										<key>Variable</key>
+										<string>nteCase</string>
+									</dict>
+								</array>
+								<key>ConditionType</key>
+								<string>Is</string>
+								<key>TestValue</key>
+								<string>Regular expression</string>
+							</dict>
+							<dict>
+								<key>Actions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string></string>
+										<key>Variable</key>
+										<string>nteCase</string>
+									</dict>
+								</array>
+								<key>ConditionType</key>
+								<string>Otherwise</string>
+								<key>TestValue</key>
+								<string></string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Switch</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>nte__Behavior</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%ExecutingMacroGroupUUID%</string>
+						<key>Variable</key>
+						<string>nteMacroGroupID</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%RandomUUID%</string>
+						<key>Variable</key>
+						<string>nteMacroID</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>property XMLOpening : "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;
+&lt;!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"&gt;
+&lt;plist version=\"1.0\"&gt;
+&lt;dict&gt;"
+
+property XMLClosing : "&lt;/dict&gt;
+&lt;/plist&gt;
+"
+
+tell application "Keyboard Maestro Engine"
+	set groupID to getvariable "nteMacroGroupID"
+	set macroName to getvariable "nteMacroName"
+	set macroID to getvariable "nteMacroID"
+	set theExpansion to getvariable "nteExpansion"
+	set theAbbreviation to getvariable "nte__Abbreviation"
+	set theType to getvariable "nteType"
+	set wordBreak to getvariable "nteWordBreak"
+	set theCase to getvariable "nteCase"
+end tell
+
+set theAction to XMLOpening &amp; "
+	&lt;key&gt;Action&lt;/key&gt;
+	&lt;string&gt;" &amp; theType &amp; "&lt;/string&gt;
+	&lt;key&gt;MacroActionType&lt;/key&gt;
+	&lt;string&gt;InsertText&lt;/string&gt;
+	&lt;key&gt;TargetApplication&lt;/key&gt;
+	&lt;dict/&gt;
+	&lt;key&gt;TargetingType&lt;/key&gt;
+	&lt;string&gt;Front&lt;/string&gt;
+	&lt;key&gt;Text&lt;/key&gt;
+	&lt;string&gt;" &amp; theExpansion &amp; "&lt;/string&gt;
+" &amp; XMLClosing
+
+set theTrigger to XMLOpening &amp; "
+	&lt;key&gt;Case&lt;/key&gt;
+	&lt;string&gt;" &amp; theCase &amp; "&lt;/string&gt;
+	&lt;key&gt;MacroTriggerType&lt;/key&gt;
+	&lt;string&gt;TypedString&lt;/string&gt;
+	&lt;key&gt;OnlyAfterWordBreak&lt;/key&gt;
+	&lt;" &amp; wordBreak &amp; "/&gt;
+	&lt;key&gt;SimulateDeletes&lt;/key&gt;
+	&lt;true/&gt;
+	&lt;key&gt;TypedString&lt;/key&gt;
+	&lt;string&gt;" &amp; theAbbreviation &amp; "&lt;/string&gt;
+" &amp; XMLClosing
+
+tell application "Keyboard Maestro"
+	tell macro group id groupID
+		make new macro with properties {id:macroID, name:macroName}
+	end tell
+	tell macro id macroID
+		make new action with properties {xml:theAction}
+		make new trigger with properties {xml:theTrigger}
+	end tell
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>527517737.94168699</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>573419227.09516597</real>
+				<key>Name</key>
+				<string>Text Expansion From Selection-tom</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>17</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4608</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>F30A8497-EBE6-4736-9FEE-C22A08AFF430</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.0 File &amp; Folder &amp; Text</string>
+		<key>ToggleMacroUID</key>
+		<string>6CE0A1AA-E144-4647-AB99-26402B1352A4</string>
+		<key>UID</key>
+		<string>27215D41-2AC6-46EC-8F7F-54ECB332C656</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075935.80634999</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>use AppleScript version "2.4" -- Yosemite (10.10) or lateruse scripting additions-- 隐藏其他apptell application "System Events" to key code 4 using {option down, command down}-- 隐藏桌面图标do shell script "chflags -h hidden ~/Desktop/*"-- 自动隐藏和显示菜单栏tell application "System Preferences" to reveal the ?	anchor named "main" of ?	pane id "com.apple.preference.general"tell application "System Events" to tell ?	process "System Preferences" to tell ?	window "通用" to tell ?	checkbox "自动隐藏和显示菜单栏" to ?	perform action "AXPress"quit application "System Preferences"-- 开始录屏tell application "QuickTime Player" to activate (start (new screen recording))tell application "System Events"	if application "QuickTime Player" is not (activate) then		-- 显示桌面图标		do shell script "chflags -h nohidden ~/Desktop/*"		-- 自动隐藏和显示菜单栏		tell application "System Preferences" to reveal the ?			anchor named "main" of ?			pane id "com.apple.preference.general"		tell application "System Events" to tell ?			process "System Preferences" to tell ?			window "通用" to tell ?			checkbox "自动隐藏和显示菜单栏" to ?			perform action "AXPress"		quit application "System Preferences"	else		return	end ifend tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568536326.93558097</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568559951.28424299</real>
+				<key>Name</key>
+				<string>AutoRecordScreen</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>1</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>2048</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>9535A4E9-960A-453C-A9AB-FB5726B5C87E</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>2 System Enhancement</string>
+		<key>ToggleMacroUID</key>
+		<string>0E83BBFC-383F-4C48-87AC-A27C3B7A7904</string>
+		<key>UID</key>
+		<string>99D81B85-02F7-4F19-BFE5-F39B51C752F5</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>566950173.77217698</real>
+		<key>CustomIconData</key>
+		<string>KMEP-GenericApplication-/Applications/Skim.app</string>
+		<key>IsActive</key>
+		<false/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%PastClipboard%2%</string>
+						<key>Variable</key>
+						<string>pb2</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%PastClipboard%1%</string>
+						<key>Variable</key>
+						<string>pb1</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%CurrentClipboard%</string>
+						<key>Variable</key>
+						<string>pb</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Capitalize</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Filter</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>pb2</string>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>pb1</string>
+									<key>VariableConditionType</key>
+									<string>Matches</string>
+									<key>VariableValue</key>
+									<string>\d{4}</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+									</dict>
+									<dict>
+										<key>Button</key>
+										<string>Cancel</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Year</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string></string>
+								<key>Variables</key>
+								<array>
+									<dict>
+										<key>Default</key>
+										<string>200</string>
+										<key>Variable</key>
+										<string>pb1</string>
+									</dict>
+								</array>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array/>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>TitleCase</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Filter</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>pb</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>JustDisplay</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetClipboardToText</string>
+						<key>Text</key>
+						<string>%Variable%pb2% - %Variable%pb1% - %Variable%pb%</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>File</string>
+							<string>Save As...</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>9</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>36</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>(* GENERATE 3 INITIAL SKIM NOTES WITH LINKING INFO (CUSTOM URL VERSION)
+
+-- created by Stephen Margheim
+-- 13 July 2013
+-- open source
+
+REQUIRED PROGRAMS:
+	-- Skim
+
+This script requires setting up the custom URL handler described [here](http://hackademic.postach.io/page/create-a-custom-url-scheme-for-free). 
+
+It will insert 3 notes at the top of your current PDF. Simply open the PDF in Skim and run the app/script. The 3 generated notes contain linking information used in the Export Skim Notes script. 
+* Note 1 includes the custom URL and the pdf's title. 
+* Note 2 includes a Markdown formatted link
+* Note 3 includes a field to be filled depending on the relation of the printed page numbers and the Skim-based page numbers.
+
+*)
+
+tell application "Skim"
+	set theFile to file of document 1 as string
+	set theHome to path to home folder as string
+	set theFilePath to my replaceString(theFile, theHome, "")
+	
+	set pdfPath to my encode_text(theFilePath, true, false)
+	set pdfPath to my replaceString(pdfPath, ":", "/")
+	
+	set customurl to "customurl://com.hackademic.AppleScript.URL_Handler?action=1$" &amp; pdfPath &amp; "#"
+	
+	set PdfName to name of document 1
+	
+	set docPath to path of front document
+	set notesPath to text 1 thru -5 of docPath &amp; " (notes).skim"
+	
+	--save the document and its notes as-is
+	save front document
+	save front document in notesPath
+	
+	delete notes of front document
+	
+	--create the three opening notes
+	tell page 1 of document 1
+		make note with properties {type:anchored note, bounds:{523, 760, 540, 760}, text:customurl, extended text:PdfName}
+		delay 0.1
+		make note with properties {type:anchored note, bounds:{523, 780, 540, 780}, text:"[" &amp; PdfName &amp; "](" &amp; customurl}
+		delay 0.1
+		make note with properties {type:anchored note, bounds:{523, 760, 540, 760}, text:"0", extended text:"[change to appropriate number: (1) IF skim p# = printed p# --&gt; 0 (2) IF skim p# &gt; printed p# --&gt; pr# - sk# (3) IF random printed p# --&gt; ra# - 1 (if also FrontPage, ra# - 2)]"}
+	end tell
+	
+	--return any previously existing notes
+	read notes front document from notesPath without replacing
+	
+end tell
+
+
+(* SUB-ROUTINES *)
+
+on encode_text(this_text, encode_URL_A, encode_URL_B)
+	set the standard_characters to "abcdefghijklmnopqrstuvwxyz0123456789"
+	set the URL_A_chars to "$+!'/?;&amp;@=#%&gt;&lt;{}[]\"~`^\\|*"
+	set the URL_B_chars to ".-_:"
+	set the acceptable_characters to the standard_characters
+	if encode_URL_A is false then set the acceptable_characters to the acceptable_characters &amp; the URL_A_chars
+	if encode_URL_B is false then set the acceptable_characters to the acceptable_characters &amp; the URL_B_chars
+	set the encoded_text to ""
+	repeat with this_char in this_text
+		if this_char is in the acceptable_characters then
+			set the encoded_text to (the encoded_text &amp; this_char)
+		else
+			set the encoded_text to (the encoded_text &amp; encode_char(this_char)) as string
+		end if
+	end repeat
+	return the encoded_text
+end encode_text
+
+
+on encode_char(this_char)
+	set the ASCII_num to (the ASCII number this_char)
+	set the hex_list to {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"}
+	set x to item ((ASCII_num div 16) + 1) of the hex_list
+	set y to item ((ASCII_num mod 16) + 1) of the hex_list
+	return ("%" &amp; x &amp; y) as string
+end encode_char
+
+on replaceString(theText, oldString, newString)
+	-- ljr (http://applescript.bratis-lover.net/library/string/)
+	local ASTID, theText, oldString, newString, lst
+	set ASTID to AppleScript's text item delimiters
+	try
+		considering case
+			set AppleScript's text item delimiters to oldString
+			set lst to every text item of theText
+			set AppleScript's text item delimiters to newString
+			set theText to lst as string
+		end considering
+		set AppleScript's text item delimiters to ASTID
+		return theText
+	on error eMsg number eNum
+		set AppleScript's text item delimiters to ASTID
+		error "Can't replaceString: " &amp; eMsg number eNum
+	end try
+end replaceString
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string>PDF</string>
+							<string>Automatically Resize</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>566900688.27413297</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>567315125.29345703</real>
+				<key>Name</key>
+				<string>key.SK.as.link</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>1</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6656</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>7733402A-8D64-4F5C-8DF1-75F0FC98B535</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>app-Skim</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>net.sourceforge.skim-app.skim</string>
+					<key>Name</key>
+					<string>Skim</string>
+					<key>NewFile</key>
+					<string>/Applications/Skim.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>3F637B88-A9AB-4068-828C-4608B07FF02C</string>
+		<key>UID</key>
+		<string>252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA</string>
+	</dict>
+</array>
+</plist>

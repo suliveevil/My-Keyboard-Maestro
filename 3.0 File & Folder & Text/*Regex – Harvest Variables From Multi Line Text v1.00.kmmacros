@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568481555.45812798</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Aqua</string>
+						<key>ActionName</key>
+						<string>Macro Notes</string>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC5hBQAAKwAAAAEA
+						AABZBQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNTA0
+						XGNvY29hc3VicnRmODMwCntcZm9u
+						dHRibFxmMFxmc3dpc3NcZmNoYXJz
+						ZXQwIEhlbHZldGljYTt9CntcY29s
+						b3J0Ymw7XHJlZDI1NVxncmVlbjI1
+						NVxibHVlMjU1O30Ke1wqXGV4cGFu
+						ZGVkY29sb3J0Ymw7O30KXHBhcmRc
+						dHg1NjBcdHgxMTIwXHR4MTY4MFx0
+						eDIyNDBcdHgyODAwXHR4MzM2MFx0
+						eDM5MjBcdHg0NDgwXHR4NTA0MFx0
+						eDU2MDBcdHg2MTYwXHR4NjcyMFxw
+						YXJkaXJuYXR1cmFsXHBhcnRpZ2h0
+						ZW5mYWN0b3IwCgpcZjBcZnMyNCBc
+						Y2YwIFwnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wKQXV0
+						aG9yCTogIENocmlzdG9waGVyIFN0
+						b25lIDxzY3JpcHRtZWlzdGVyQHRo
+						ZXN0b25lZm9yZ2UuY29tPlwKQ3Jl
+						YXRlZAk6ICAyMDE5LzAxLzA2IDE4
+						OjA1XApNb2RpZmllZAk6ICAyMDE5
+						LzAxLzA2IDE4OjA1XApUYWdzCQk6
+						ICBAY2NzdG9uZSwgQEtNRm9ydW0s
+						IEBUcm95LCBAUmVnZXgsIEBIYXJ2
+						ZXN0LCBAVmFyaWFibGVzLCBATXVs
+						dGksIEBMaW5lLCBAVGV4dFwKXCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3fQEAAAAjAAAAAQAA
+						AAcAAABUWFQucnRmEAAAAAyYMly2
+						AQAAAAAAAAAAAAA=
+						</data>
+						<key>Title</key>
+						<string>Regex ? Harvest Variables From Multi Line Text v1.00</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>Live Help | Log Out
+Muffetta's Domestic Assistants
+Home	 Lead Center	 Opportunities	 Reviews	 My Profile	 Articles &amp; Tools	 Account
+Active Leads  Closed Leads My Appointments Reports Services Offered Coverage Area Manage Lead Flow Sync My Schedule
+Active Leads (28) Print Leads | Export Leads
+Filter Sort by Newest - Oldest Status Leads   Search
+Blasco, Matt
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1052 Norwalk, CT 12/30/2018
+Raughter, Lidia
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1050 Goshen, NY 12/30/2018
+Avella, Tiffany
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1047 New Hampton, NY 12/30/2018
+Hoff, Kathy
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1045 Middletown, NY 12/30/2018
+Tirc, Beth
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1043 Stony Point, NY 12/30/2018
+Glab, Marilyn
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1042 Nanuet , NY 12/29/2018
+Linsky, Ann
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1039 Florida, NY 12/28/2018
+Hazzard, Iesha
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1038 Middletown, NY 12/28/2018
+Perrino, Judith A
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1036 Middletown, NY 12/27/2018
+Van Pamelen, Lauren
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1034 Warwick, NY 12/27/2018
+M, Naomi
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1033 Monsey, NY 12/27/2018
+jones, daryl
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1032 new rochelle, NY 12/27/2018
+Blumberg, Dave
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1030 Monroe, NY 12/26/2018
+Neuman, Idy
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1027 New hempstead, NY 12/26/2018
+selfridge, alice
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1026 montgomery, NY 12/25/2018
+Biradavolu, Lakshmi
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1025 Spring Valley, NY 12/25/2018
+Gillick, Frank
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1023 Pelham, NY 12/24/2018
+McVeigh, Yulia
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1020 White Plains, NY 12/23/2018
+name, name
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1018 Pomona, NY 12/23/2018
+name, name
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1017 Pomona, NY 12/22/2018
+name, name
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1014 White Plains, NY 12/22/2018
+name, name
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1012 Pearl River, NY 12/22/2018
+name, name
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1010 West Nyack, NY 12/21/2018
+name, name
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1007 EASTON, CT 12/21/2018
+name, name
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1006 Bridgeport, CT 12/20/2018
+name, name
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1004 Mamaroneck, NY FREE 3/6/2018
+name, name
+Clean House Interior (Maid Service)
+(929) 295-4774 ext. 1003 White Plains, NY FREE 2/21/2018
+name, name
+One Time Interior House Cleaning
+(929) 295-4774 ext. 1001 Dobbs Ferry, NY FREE 2/4/2018
+Expand
+Set Status
+Avella, Tiffany
+
+Daytime
+(929) 295-4774 ext. 1047
+
+Cell
+(929) 295-4774 ext. 1048
+
+
+tiffany.avella817@gmail.com
+
+Messages
+
+Rate this lead
+Print this lead
+Maple Ave 
+New Hampton, NY 10958
+
+Map
+
+DetailsEmailNotes &amp; RemindersHistory
+Clean House Interior (Maid Service)
+
+Job #: 131584913
+Additional HomeAdvisor Pros Matched: 2
+Service Description
+
+Consumer Comments:
+In need of kitchen, bathrooms, living room and dining rooms cleaned. Just the upstairs which include 3 bedrooms, 2 baths, living room, dining room, kitchen, steps and landing
+
+What kind of location is this?:
+Home/Residence
+
+Cleaning Type Needed:
+Recurring Service
+
+Request Stage:
+Planning &amp; Budgeting
+
+Desired Completion Date:
+1 - 2 weeks</string>
+						<key>Variable</key>
+						<string>initialData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Main Data from initialData</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>scrapeData</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>(?s)Expand\nSet Status\n(.+)</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>initialData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Name_Last and Name_First</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>Name_Last</string>
+							<string>Name_First</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>([^,]+)\h*,\h*([^,]+)</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Phone_Daytime and Phone_Ext_Daytime</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>Phone_Daytime</string>
+							<string>Phone_Ext_Daytime</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>(?m)^Daytime\n(\(\d+\)\h\d{3}-\d{4})(?:[^\d\v]+(\d+))?</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Phone_Cell and Phone_Ext_Cell</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>Phone_Cell</string>
+							<string>Phone_Ext_Cell</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>(?m)^Cell\n(\(\d+\)\h\d{3}-\d{4})(?:[^\d\v]+(\d+))?</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Client Email Address</string>
+						<key>Captures</key>
+						<array>
+							<string>Client_Email</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>\b[A-Z0-9.%+-]+@[A-Z0-9.-]+.[A-Z]{2,}\b</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Address_Street, Address_City, Address_State, and Address_Zip</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>Address_Street</string>
+							<string>Address_City</string>
+							<string>Address_State</string>
+							<string>Address_Zip</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>(?m)Print this lead\n(.+)\n([^,]+),\h+([A-Z]{2})\h+(\d{5})</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Consumer_Comments</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>Detail_Consumer_Comments</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>Consumer Comments:\s+(\S.+)</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Location</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>Detail_Location</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>What kind of location is this\?:\s+(\S.+)</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Cleaning_Type</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>Detail_Cleaning_Type</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>Cleaning Type Needed:\s+(\S.+)</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Stage</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>Detail_Stage</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>Request Stage:\s+(\S.+)</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>IgnoreCaseRegEx</string>
+						<key>ActionName</key>
+						<string>Extract -- Completion_Date</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>Detail_Completion_Date</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>Desired Completion Date:\n(.+)</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>scrapeData</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Delete Variables -- Housekeeping</string>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsActive</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>set varNamesToDelete to items 1 thru -2 of {?	"initialData", ?	"scrapeData", ?	"Address_City", ?	"Address_State", ?	"Address_Street", ?	"Address_Zip", ?	"Client_Email", ?	"Detail_Cleaning_Type", ?	"Detail_Completion_Date", ?	"Detail_Consumer_Comments", ?	"Detail_Location", ?	"Detail_Stage", ?	"Name_First", ?	"Name_Last", ?	"Phone_Daytime", ?	"Phone_Ext_Daytime", ?	""}tell application "Keyboard Maestro Engine"	repeat with varName in varNamesToDelete		try			setvariable varName to "%Delete%"		end try	end repeatend tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568507562.52275002</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568533741.47071898</real>
+				<key>Name</key>
+				<string>Regex ? Harvest Variables From Multi Line Text v1.00</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>122</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>01AB7D13-A12D-48D2-BCEB-519F7981D486</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.0 File &amp; Folder &amp; Text</string>
+		<key>ToggleMacroUID</key>
+		<string>6CE0A1AA-E144-4647-AB99-26402B1352A4</string>
+		<key>UID</key>
+		<string>27215D41-2AC6-46EC-8F7F-54ECB332C656</string>
+	</dict>
+</array>
+</plist>

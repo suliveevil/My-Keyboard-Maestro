@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568433732.67700803</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>use sys : application "System Events"
+
+-- Use the following delay to choose an application window
+-- and highlight some text.  Then ensure that the window remains
+-- in focus until the script terminates.
+-- delay 5
+
+set P to the first process whose frontmost is true
+set _W to a reference to the first window of P
+
+set _U to a reference to ?
+	(UI elements of P whose ?
+		name of attributes contains "AXSelectedText" and ?
+		value of attribute "AXSelectedText" is not "" and ?
+		class of value of attribute "AXSelectedText" is not class)
+
+tell sys to if (count _U) ¡Ù 0 then ?
+	return the value of ?
+		attribute "AXSelectedText" of ?
+		_U's contents's first item
+
+set _U to a reference to UI elements of _W
+
+tell sys to repeat while (_U exists)
+	tell (a reference to ?
+		(_U whose ?
+			name of attributes contains "AXSelectedText" and ?
+			value of attribute "AXSelectedText" is not "" and ?
+			class of value of attribute "AXSelectedText" is not class)) ?
+		to if (count) ¡Ù 0 then return the value of ?
+		attribute "AXSelectedText" of its contents's first item
+	
+	set _U to a reference to (UI elements of _U)
+end repeat
+
+"No selection found."</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>572975377.13315201</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>572975566.30916297</real>
+				<key>Name</key>
+				<string>SelectedText</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>1</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4608</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>DDA25C2A-7A3B-46D2-8D09-6A92C8A2C755</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>0 System Tools</string>
+		<key>ToggleMacroUID</key>
+		<string>1292D260-0A4C-4D08-BBC1-20DEF8F31BBD</string>
+		<key>UID</key>
+		<string>7736958F-1AC0-4A04-9C07-CC1BC5FB38BA</string>
+	</dict>
+</array>
+</plist>

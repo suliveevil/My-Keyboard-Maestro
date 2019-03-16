@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568131860.18294704</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>ByPasting</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>&lt;details&gt; &lt;summary&gt; Screenshots &lt;/summary&gt; &lt;p float="left"&gt;  &lt;bt&gt;&lt;img src='%FrontBrowserURL%' /&gt;  &lt;/p&gt;&lt;/details&gt; 
+%|%</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>566256048.83196104</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>567475379.62820005</real>
+				<key>Name</key>
+				<string>MD-GitHubͼԴ</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>@pic</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>FE8B6F42-BF49-4333-8780-AB14C6A529D7</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.2 Markdown</string>
+		<key>ToggleMacroUID</key>
+		<string>BBF022AD-8D2E-4F46-B387-1FA08A4726CE</string>
+		<key>UID</key>
+		<string>CF264727-7D23-469A-9001-7DD523D2BEF1</string>
+	</dict>
+</array>
+</plist>

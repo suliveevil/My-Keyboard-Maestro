@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568122691.47241497</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC47AgAAKwAAAAEA
+						AAAzAgAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZuaWxcZmNoYXJzZXQx
+						MzQgLlBpbmdGYW5nU0MtUmVndWxh
+						cjtcZjFcZm5pbFxmY2hhcnNldDAg
+						SGVsdmV0aWNhTmV1ZTt9CntcY29s
+						b3J0Ymw7XHJlZDI1NVxncmVlbjI1
+						NVxibHVlMjU1O1xyZWQwXGdyZWVu
+						MFxibHVlMDt9CntcKlxleHBhbmRl
+						ZGNvbG9ydGJsOztcY3NzcmdiXGMw
+						XGMwXGMwXGNuYW1lIHRleHRDb2xv
+						cjt9ClxwYXJkXHR4NTYwXHR4MTEy
+						MFx0eDE2ODBcdHgyMjQwXHR4Mjgw
+						MFx0eDMzNjBcdHgzOTIwXHR4NDQ4
+						MFx0eDUwNDBcdHg1NjAwXHR4NjE2
+						MFx0eDY3MjBccGFyZGlybmF0dXJh
+						bFxwYXJ0aWdodGVuZmFjdG9yMAoK
+						XGYwXGZzMjYgXGNmMiBbClxmMSBN
+						YWMKXGYwIFwnYzlcJ2U4XCdkNlwn
+						YzNcJ2JmXCdlY1wnYmRcJ2RkXCdi
+						Y1wnZmNcJ2M3XCdkMFwnYmJcJ2Ji
+						XCdkMlwnZjRcJ2M2XCdiNVwnY2Fc
+						J2U0XCdjOFwnZWJcJ2M5XCdlOFwn
+						YjFcJ2I4XSgKXGYxIGh0dHBzOi8v
+						d3d3LmppYW5zaHUuY29tL3AvYmEx
+						ZTZmNDQxODQ5ClxmMCApClxmMSBc
+						Cn0BAAAAIwAAAAEAAAAHAAAAVFhU
+						LnJ0ZhAAAADNMiBctgEAAAAAAAAA
+						AAAA
+						</data>
+						<key>Title</key>
+						<string>Switch Sound Output</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Briefly</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>tell application "System Preferences"
+    activate
+    set current pane to pane "com.apple.preference.sound"
+end tell
+tell application "System Events"
+    tell application process "œµÕ≥∆´∫√…Ë÷√"
+        tell tab group of window "…˘“Ù"
+            
+            click radio button " ‰≥ˆ"
+            
+            if (selected of row 1 of table 1 of scroll area 1) then
+                set selected of row 2 of table 1 of scroll area 1 to true
+                set deviceselected to "Õ‚÷√“ÙœÏ"
+            else if (selected of row 2 of table 1 of scroll area 1) then
+                set selected of row 3 of table 1 of scroll area 1 to true
+                set deviceselected to "LGœ‘ æ∆˜"
+            else
+                set selected of row 1 of table 1 of scroll area 1 to true
+                set deviceselected to "MACƒ⁄÷√—Ô…˘∆˜"
+            end if
+        end tell
+    end tell
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>567306135.30921102</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>567306862.40670002</real>
+				<key>Name</key>
+				<string>SoundInputSwitch</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>ExecuteType</key>
+						<string>Login</string>
+						<key>MacroTriggerType</key>
+						<string>Time</string>
+						<key>Repeat</key>
+						<false/>
+						<key>RepeatTime</key>
+						<integer>60</integer>
+						<key>TimeFinishHour</key>
+						<integer>17</integer>
+						<key>TimeFinishMinutes</key>
+						<integer>30</integer>
+						<key>TimeHour</key>
+						<integer>8</integer>
+						<key>TimeMinutes</key>
+						<integer>30</integer>
+						<key>WhichDays</key>
+						<integer>127</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>EFD49398-CAA7-44B3-A01F-FA16E9B8A001</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>10 Test</string>
+		<key>ToggleMacroUID</key>
+		<string>21C9FAF5-4489-4CBD-8436-9C9F6E733D38</string>
+		<key>UID</key>
+		<string>DF9C421C-0294-4CC7-9C59-7CDEB233268E</string>
+	</dict>
+</array>
+</plist>

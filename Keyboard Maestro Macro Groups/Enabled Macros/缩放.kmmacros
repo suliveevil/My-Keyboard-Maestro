@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075935.80634999</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>KeyCode</key>
+						<integer>28</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>2304</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568711571.93513894</real>
+				<key>ModificationDate</key>
+				<real>573438532.89498198</real>
+				<key>Name</key>
+				<string>Ëõ·Å</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>Case</key>
+						<string>Ignore</string>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>bbbbb</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>69F7B8B6-5B7F-4310-9EA4-DCA27BE8C3A2</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>2 System Enhancement</string>
+		<key>ToggleMacroUID</key>
+		<string>0E83BBFC-383F-4C48-87AC-A27C3B7A7904</string>
+		<key>UID</key>
+		<string>99D81B85-02F7-4F19-BFE5-F39B51C752F5</string>
+	</dict>
+</array>
+</plist>

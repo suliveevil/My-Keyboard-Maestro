@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568790984.50053</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Green</string>
+						<key>ActionName</key>
+						<string>~~~ ReleaseNotes for  VER: 1.1    2019-02-18 ~~~</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC44DAAAKwAAAAEA
+						AAAwDAAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNTA0
+						XGNvY29hc3VicnRmODMwCntcZm9u
+						dHRibFxmMFxmbmlsXGZjaGFyc2V0
+						MCBWZXJkYW5hO1xmMVxmc3dpc3Nc
+						ZmNoYXJzZXQwIEhlbHZldGljYTt9
+						CntcY29sb3J0Ymw7XHJlZDI1NVxn
+						cmVlbjI1NVxibHVlMjU1O1xyZWQy
+						MjBcZ3JlZW44XGJsdWU2O1xyZWQy
+						NVxncmVlbjI1XGJsdWUyNTtccmVk
+						MjQyXGdyZWVuMTcwXGJsdWUyNDM7
+						Cn0Ke1wqXGV4cGFuZGVkY29sb3J0
+						Ymw7O1xjc2dlbmVyaWNyZ2JcYzg2
+						MzI5XGMzMTI1XGMyMzQ0O1xjc2dl
+						bmVyaWNyZ2JcYzk3NjZcYzk3NjZc
+						Yzk3NjY7XGNzZ2VuZXJpY3JnYlxj
+						OTQ4NTVcYzY2NjM1XGM5NTIzNTsK
+						fQpccGFyZFx0eDU2MFx0eDExMjBc
+						dHgxNjgwXHR4MjI0MFx0eDI4MDBc
+						dHgzMzYwXHR4MzkyMFx0eDQ0ODBc
+						dHg1MDQwXHR4NTYwMFx0eDYxNjBc
+						dHg2NzIwXHBhcmRpcm5hdHVyYWxc
+						cGFydGlnaHRlbmZhY3RvcjAKClxm
+						MFxmczI4IFxjZjAgQXV0aG9yLkBK
+						TWljaGFlbFRYXApcCioqClxiIFBV
+						UlBPU0UKXGIwIDoqKlwKXAoqICoq
+						ClxiIEV4dHJhY3QgRXZlbnQgRGF0
+						YSBmcm9tIFRleHQ7IENhbGMgRGF5
+						cyBEaWZmLCBSZWZvcm1hdCBSZXN1
+						bHRzClxiMCAqKlwKXAoqKgpcYiBS
+						RVFVSVJFUwpcYjAgOioqXApcCjEu
+						ICoqS00gOC4yKyoqXAoyLiAqKm1h
+						Y09TIDEwLjExLjYgKEVsIENhcGl0
+						YW4pKipcClwKKioKXGIgXGNmMiBO
+						T1RJQ0U6IFRoaXMgbWFjcm8vc2Ny
+						aXB0IGlzIGp1c3QgYW4gX0V4YW1w
+						bGVfClxiMCBcY2YwICoqXApcCiog
+						SXQgaGFzIGhhZCB2ZXJ5IGxpbWl0
+						ZWQgdGVzdGluZy5cCiogWW91IG5l
+						ZWQgdG8gdGVzdCBmdXJ0aGVyIGJl
+						Zm9yZSB1c2luZyBpbiBhIHByb2R1
+						Y3Rpb24gZW52aXJvbm1lbnQuXAoq
+						IEl0IGRvZXMgbm90IGhhdmUgZXh0
+						ZW5zaXZlIGVycm9yIGNoZWNraW5n
+						L2hhbmRsaW5nLlwKKiBJdCBtYXkg
+						bm90IGJlIGNvbXBsZXRlLiAgSXQg
+						aXMgcHJvdmlkZWQgYXMgYW4gZXhh
+						bXBsZSB0byBzaG93IHlvdSBvbmUg
+						YXBwcm9hY2ggdG8gc29sdmluZyBh
+						IHByb2JsZW0uXApcCioqClxiIFxj
+						ZjMgSG93IFRvIFVzZSoqXApcClxw
+						YXJkXHR4NTYwXHR4MTEyMFx0eDE2
+						ODBcdHgyMjQwXHR4MjgwMFx0eDMz
+						NjBcdHgzOTIwXHR4NDQ4MFx0eDUw
+						NDBcdHg1NjAwXHR4NjE2MFx0eDY3
+						MjBccGFyZGlybmF0dXJhbFxwYXJ0
+						aWdodGVuZmFjdG9yMAoKXGIwIFxj
+						ZjMgMS4gVHJpZ2dlciB0aGlzIG1h
+						Y3JvIHRvIHJ1biB1c2luZyBleGFt
+						cGxlIGRhdGFcCiAgICAgT1JcCjEu
+						IENoYW5nZSBTZXR1cCB0byBDb3B5
+						IFNlbGVjdGlvbiAoc2VlIGJlbG93
+						KVwKMi4gU2VsZWN0IEV2ZW50IERh
+						dGFcCjMuIFRyaWdnZXIgdGhpcyBt
+						YWNyb1wKXApccGFyZFx0eDU2MFx0
+						eDExMjBcdHgxNjgwXHR4MjI0MFx0
+						eDI4MDBcdHgzMzYwXHR4MzkyMFx0
+						eDQ0ODBcdHg1MDQwXHR4NTYwMFx0
+						eDYxNjBcdHg2NzIwXHBhcmRpcm5h
+						dHVyYWxccGFydGlnaHRlbmZhY3Rv
+						cjAKXGNmMCBcCioqClxiIE1BQ1JP
+						IFNFVFVQClxiMCAqKlwKXAoqICoq
+						Q2FyZWZ1bGx5IHJldmlldyB0aGUg
+						UmVsZWFzZSBOb3RlcyBhbmQgdGhl
+						IE1hY3JvIEFjdGlvbnMqKlwKICAq
+						IE1ha2Ugc3VyZSB5b3UgdW5kZXJz
+						dGFuZCB3aGF0IHRoZSBNYWNybyB3
+						aWxsIGRvLiAgXAogICogWW91IGFy
+						ZSByZXNwb25zaWJsZSBmb3IgcnVu
+						bmluZyB0aGUgTWFjcm8sIG5vdCBt
+						ZS4gIApcZjFcZnMyNCA/PwpcZjBc
+						ZnMyOCBcCi5cCjEuIEFzc2lnbiBh
+						IFRyaWdnZXIgdG8gdGhpcyBtYXJv
+						Li5cCjIuIE1vdmUgdGhpcyBtYWNy
+						byB0byBhIE1hY3JvIEdyb3VwIHRo
+						YXQgaXMgb25seSBBY3RpdmUgd2hl
+						biB5b3UgbmVlZCB0aGlzIE1hY3Jv
+						LlwKMy4gRU5BQkxFIHRoaXMgTWFj
+						cm8uXAouXAoqICoqClxiIFxjZjIg
+						UkVWSUVXL0NIQU5HRSBUSEUgRk9M
+						TE9XSU5HIE1BQ1JPIEFDVElPTlMK
+						XGIwIFxjZjAgOioqXAooYWxsIHNo
+						b3duIGluIHRoZSBtYWdlbnRhIGNv
+						bG9yKVwKICAqIFNldCBCZWxvdyB0
+						byBZb3VyIFNvdXJjZSBFdmVudCBE
+						YXRhIChESVNBQkxFIHRvIFVzZSBT
+						ZWxlY3Rpb24pXAogICAqIE9SXAog
+						ICAqIEVuYWJsZSBHUlAgdG8gQ29w
+						eSBzZWxlY3Rpb25cCiAgICogRGlz
+						YWJsZSBTZXQgTG9jYWxfX1NvdXJj
+						ZVN0ciBBY3Rpb25cClwKVEFHUzog
+						QFJlZ0V4IEBKYXZhU2NyaXB0IEBK
+						WEEgQERhdGVNYXRoXApcClVTRVIg
+						U0VUVElOR1M6XApcCipcJ2EwQW55
+						IEFjdGlvbiBpbiBfXGNmNCBtYWdl
+						bnRhIGNvbG9yXGNmMCBfIGlzIGRl
+						c2lnbmVkIHRvIGJlIGNoYW5nZWQg
+						YnkgZW5kLXVzZXJcClwKQUNUSU9O
+						IENPTE9SIENPREVTXApcCipcJ2Ew
+						VG8gZmFjaWxpdGF0ZSB0aGUgcmVh
+						ZGluZywgY3VzdG9taXppbmcsIGFu
+						ZCBtYWludGVuYW5jZSBvZiB0aGlz
+						IG1hY3JvLFwKXCdhMFwnYTBcJ2Ew
+						XCdhMFwnYTBcJ2Ewa2V5IEFjdGlv
+						bnMgYXJlIGNvbG9yZWQgYXMgZm9s
+						bG93czpcCipcJ2EwR1JFRU5cJ2Ew
+						XCdhMFwnYTAtLSBLZXkgQ29tbWVu
+						dHMgZGVzaWduZWQgdG8gaGlnaGxp
+						Z2h0IG1haW4gc2VjdGlvbnMgb2Yg
+						bWFjcm9cCipcJ2EwTUFHRU5UQSAt
+						LSBBY3Rpb25zIGRlc2lnbmVkIHRv
+						IGJlIGN1c3RvbWl6ZWQgYnkgdXNl
+						clwKKlwnYTBZRUxMT1dcJ2EwXCdh
+						MC0tIFByaW1hcnkgQWN0aW9ucyAo
+						dXN1YWxseSB0aGUgbWFpbiBwdXJw
+						b3NlIG9mIHRoZSBtYWNybylcCipc
+						J2EwT1JBTkdFXCdhMFwnYTAtLSBB
+						Y3Rpb25zIHRoYXQgcGVybWFuZW50
+						bHkgZGVzdHJveSBWYXJpYWJsZXMg
+						b3IgQ2xpcGJvYXJkcyxcCk9SIElG
+						L1RIRU4gYW5kIFBBVVNFIEFjdGlv
+						bnNcClwKXAoqKgpcYiBcY2YyIFVT
+						RSBBVCBZT1VSIE9XTiBSSVNLClxi
+						MCBcY2YwICoqXApcCiogV2hpbGUg
+						SSBoYXZlIGdpdmVuIHRoaXMgbGlt
+						aXRlZCB0ZXN0aW5nLCBhbmQgdG8g
+						dGhlIGJlc3Qgb2YgbXkga25vd2xl
+						ZGdlIHdpbGwgZG8gbm8gaGFybSwg
+						SSBjYW5ub3QgZ3VhcmFudGVlIGl0
+						LlwKKiBJZiB5b3UgaGF2ZSBhbnkg
+						ZG91YnRzIG9yIHF1ZXN0aW9uczpc
+						CiAgKiAqKkFzayBmaXJzdCoqXAog
+						ICogVHVybiBvbiB0aGUgS00gRGVi
+						dWdnZXIgZnJvbSB0aGUgS00gU3Rh
+						dHVzIE1lbnUsIGFuZCBzdGVwIHRo
+						cm91Z2ggdGhlIG1hY3JvLCBtYWtp
+						bmcgc3VyZSB5b3UgdW5kZXJzdGFu
+						ZCB3aGF0IGl0IGlzIGRvaW5nIHdp
+						dGggZWFjaCBBY3Rpb24uXAp9AQAA
+						ACMAAAABAAAABwAAAFRYVC5ydGYQ
+						AAAAM1VrXLYBAAAAAAAAAAAAAA==
+						</data>
+						<key>Title</key>
+						<string>Extract Event Data from Text; Calc Days Diff, Reformat Results  [Example]</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Green</string>
+						<key>ActionName</key>
+						<string>~~~ Source Data Format ~~~</string>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC5MAgAAKwAAAAEA
+						AABEAgAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNTA0
+						XGNvY29hc3VicnRmODMwCntcZm9u
+						dHRibFxmMFxmbmlsXGZjaGFyc2V0
+						MCBIZWx2ZXRpY2FOZXVlO1xmMVxm
+						bmlsXGZjaGFyc2V0MCAuQXBwbGVD
+						b2xvckVtb2ppVUk7fQp7XGNvbG9y
+						dGJsO1xyZWQyNTVcZ3JlZW4yNTVc
+						Ymx1ZTI1NTtccmVkMFxncmVlbjBc
+						Ymx1ZTA7fQp7XCpcZXhwYW5kZWRj
+						b2xvcnRibDs7XGNzc3JnYlxjMFxj
+						MFxjMDt9ClxwYXJkXHR4NTYwXHR4
+						MTEyMFx0eDE2ODBcdHgyMjQwXHR4
+						MjgwMFx0eDMzNjBcdHgzOTIwXHR4
+						NDQ4MFx0eDUwNDBcdHg1NjAwXHR4
+						NjE2MFx0eDY3MjBccGFyZGlybmF0
+						dXJhbFxwYXJ0aWdodGVuZmFjdG9y
+						MAoKXGYwXGZzMjYgXGNmMiBUdWUs
+						IEZlYiAyNjpcCi0tLS0tLS0tLS0t
+						LS0tLS0tLS0tLS0tLVwKXCc5NSAK
+						XGYxIFx1YzBcdTk5ODkgClxmMCAg
+						VkEgU2xlZXAgQWRqdXN0bWVudFwK
+						ICAgIDE6MDAgUE0gLSAyOjAwIFBN
+						XApcCiBGcmksIE1hciAwMTpcCi0t
+						LS0tLS0tLS0tLS0tLS0tLS0tLS0t
+						LVwKXCc5NSAKXGYxIFx1YzBcdTk5
+						ODkgClxmMCAgVkEgUFRcCiAgICAy
+						OjAwIFBNIC0gMzowMCBQTVwKfQEA
+						AAAjAAAAAQAAAAcAAABUWFQucnRm
+						EAAAAF9Ra1y2AQAAAAAAAAAAAAA=
+						</data>
+						<key>Title</key>
+						<string>Each Event must be 5 lines in the below format (2 Events Shown)</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Purple</string>
+						<key>ActionName</key>
+						<string>GRP: Enable This to Get Data from Selection</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>Copy</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>CutCopyPaste</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%SystemClipboard%</string>
+								<key>Variable</key>
+								<string>Local__SourceStr</string>
+							</dict>
+						</array>
+						<key>IsActive</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Magenta</string>
+						<key>ActionName</key>
+						<string>Set Below to Your Source Event Data (DISABLE to Use Selection)</string>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>Tue, Feb 12:
+------------------------
+? ? TEST for Past Event
+    1:00 PM - 2:00 PM
+
+Tue, Feb 26:
+------------------------
+? ? VA Sleep Adjustment
+    1:00 PM - 2:00 PM
+
+ Fri, Mar 01:
+------------------------
+? ? VA PT
+    2:00 PM - 3:00 PM
+
+ Thu, Mar 07:
+------------------------
+? ? Pendleton VA
+    1:00 PM - 2:00 PM
+
+ Mon, Mar 18:
+------------------------
+? ? VA OT
+    2:00 PM - 3:00 PM
+
+ Mon, Apr 08:
+------------------------
+? ? VA Dr. follow up
+    2:20 PM - 3:20 PM</string>
+						<key>Variable</key>
+						<string>Local__SourceStr</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>IgnoreCaseRegEx</string>
+								<key>ActionName</key>
+								<string>RegEx: Extract Date and Event Description</string>
+								<key>Captures</key>
+								<array>
+									<string></string>
+									<string>Local__Date</string>
+									<string>Local__Event</string>
+								</array>
+								<key>MacroActionType</key>
+								<string>SearchRegEx</string>
+								<key>Search</key>
+								<string>^\h*(\w.+):\n.+\n(.+)</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>Local__EventGroup</string>
+							</dict>
+							<dict>
+								<key>ActionColor</key>
+								<string>Teal</string>
+								<key>ActionName</key>
+								<string>SCRIPT:  Calc Days Diff from Today  (JXA)</string>
+								<key>DisplayKind</key>
+								<string>Variable</string>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteJavaScriptForAutomation</string>
+								<key>NotifyOnFailure</key>
+								<false/>
+								<key>Path</key>
+								<string>/Users/Shared/Dropbox/SW/DEV/KM/Scripts/Get Date Difference from Month Day String (JS).scpt</string>
+								<key>StopOnFailure</key>
+								<false/>
+								<key>Text</key>
+								<string>'use strict';
+(function myMain() {			// this will auto-run when script is executed
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PURPOSE:	Get Date Difference (in days)
+VER:			2.0		2019-02-18
+AUTHOR:		@JMichaelTX
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+
+var app = Application.currentApplication()
+app.includeStandardAdditions = true
+
+var kmInst = app.systemAttribute("KMINSTANCE");
+var kmeApp = Application("Keyboard Maestro Engine")
+
+//--- Get Date String from KM ---
+var dateSource = kmeApp.getvariable("Local__Date",  {instance: kmInst});
+//==&gt;'Fri, Mar 01'
+
+//--- Get First Capture Group ---
+var monthDayStr = dateSource.match(/^\w+, (.+)/)[1];
+//==&gt;"Mar 01"
+
+var daysDiff = LPad(getDateDiff(monthDayStr),'0',2);
+
+return daysDiff;
+
+ function getDateDiff(pMonthDay){
+
+		var yearStr = (new Date()).getFullYear().toString();
+		//--- Append Current Year to Date String ---
+    var dateUnix = Date.parse(pMonthDay + ", " + yearStr);
+		var dt2 = new Date(dateUnix);
+		var dt1 = new Date()	// today
+		
+		var dateDiff = Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
+		return dateDiff;
+ }
+
+function LPad(pNum, pPadChar, pLength) {
+	var signNum = (pNum &lt; 0) ? '-' : '';
+	var numStr = Math.abs(pNum).toString();
+	while (numStr.length &lt; pLength) {
+		numStr = pPadChar + numStr;
+	}
+			
+	return signNum + numStr;
+
+}
+
+}	// END of function myMain()
+)();	// autorun
+</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+								<key>Variable</key>
+								<string>Local__DaysDiff</string>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>IF:  Set "Until" or "Since"</string>
+								<key>Conditions</key>
+								<dict>
+									<key>ConditionList</key>
+									<array>
+										<dict>
+											<key>ConditionType</key>
+											<string>Variable</string>
+											<key>Variable</key>
+											<string>Local__DaysDiff</string>
+											<key>VariableConditionType</key>
+											<string>LessThan</string>
+											<key>VariableValue</key>
+											<string>0</string>
+										</dict>
+									</array>
+									<key>ConditionListMatch</key>
+									<string>All</string>
+								</dict>
+								<key>ElseActions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>until	</string>
+										<key>Variable</key>
+										<string>Local__UntilSince</string>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>IfThenElse</string>
+								<key>ThenActions</key>
+								<array>
+									<dict>
+										<key>MacroActionType</key>
+										<string>SetVariableToText</string>
+										<key>Text</key>
+										<string>since</string>
+										<key>Variable</key>
+										<string>Local__UntilSince</string>
+									</dict>
+								</array>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Variable%Local__Results%%Variable%Local__DaysDiff% days %Variable%Local__UntilSince%	%Variable%Local__Event% - %Variable%Local__Date%
+</string>
+								<key>Variable</key>
+								<string>Local__Results</string>
+							</dict>
+						</array>
+						<key>Collections</key>
+						<dict>
+							<key>CollectionList</key>
+							<array>
+								<dict>
+									<key>CollectionType</key>
+									<string>SubstringsIn</string>
+									<key>ResultType</key>
+									<string>String</string>
+									<key>Search</key>
+									<string>(?m)^\h*(\w.+):\n.+\n(.+)</string>
+									<key>SearchKind</key>
+									<string>Match</string>
+									<key>Source</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>Local__SourceStr</string>
+								</dict>
+							</array>
+						</dict>
+						<key>MacroActionType</key>
+						<string>For</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Variable</key>
+						<string>Local__EventGroup</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>DisplayWindow</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC5IAQAAKwAAAAEA
+						AABAAQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNTA0
+						XGNvY29hc3VicnRmODMwCntcZm9u
+						dHRibFxmMFxmbmlsXGZjaGFyc2V0
+						MCBIZWx2ZXRpY2FOZXVlO30Ke1xj
+						b2xvcnRibDtccmVkMjU1XGdyZWVu
+						MjU1XGJsdWUyNTU7fQp7XCpcZXhw
+						YW5kZWRjb2xvcnRibDs7fQpccGFy
+						ZFx0eDU2MFx0eDExMjBcdHgxNjgw
+						XHR4MjI0MFx0eDI4MDBcdHgzMzYw
+						XHR4MzkyMFx0eDQ0ODBcdHg1MDQw
+						XHR4NTYwMFx0eDYxNjBcdHg2NzIw
+						XHBhcmRpcm5hdHVyYWxccGFydGln
+						aHRlbmZhY3RvcjAKClxmMFxmczI2
+						IFxjZjAgJVZhcmlhYmxlJUxvY2Fs
+						X19SZXN1bHRzJX0BAAAAIwAAAAEA
+						AAAHAAAAVFhULnJ0ZhAAAABRYr1a
+						tgEAAAAAAAAAAAAA
+						</data>
+						<key>Text</key>
+						<string>%Variable%Local__Results%</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>572154327.41150296</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>572232992.12278295</real>
+				<key>Name</key>
+				<string>Extract Event Data from Text; Calc Days Diff, Reformat Results  [Example]</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>619714B0-764E-4F2B-AF28-AC8E6BA1736A</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>0 Tools</string>
+		<key>ToggleMacroUID</key>
+		<string>57FD303D-266A-4686-AF2F-574BF49AA8DF</string>
+		<key>UID</key>
+		<string>C905C4FC-7163-4427-AEBA-D90C55D4B4A0</string>
+	</dict>
+</array>
+</plist>

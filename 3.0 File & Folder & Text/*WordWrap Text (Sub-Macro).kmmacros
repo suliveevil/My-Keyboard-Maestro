@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568481555.45812798</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC57AwAAKwAAAAEA
+						AABzAwAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgTmFtZTogV29yZFdyYXAgVGV4
+						dCAoU3ViLU1hY3JvKVwKVmVyc2lv
+						bjogMS4wXApVcGRhdGVkOiAyMDE3
+						LzAxLzA5IDE0OjE5IFBTVFwKQnk6
+						IERhbiBUaG9tYXNcClwKUFVSUE9T
+						RTpcClwKVGhpcyB3aWxsIHdvcmQt
+						d3JhcCB0aGUgc3VwcGxpZWQgdGV4
+						dCB0byBhIG1heGltdW0gbnVtYmVy
+						IG9mIGNoYXJhY3RlcnMgcGVyIGxp
+						bmUuIFRoaXMgaXMgcmVhbGx5IG9u
+						bHkgdXNlZnVsIGlmIHlvdSdyZSB1
+						c2luZyBhIGZpeGVkLXdpZHRoIGZv
+						bnQgZm9yIHRoZSByZXN1bHQsIGxp
+						a2UgaW4gYSB0ZXh0IGVkaXRvci5c
+						ClwKVVNBR0U6XApcCkV4ZWN1dGUg
+						dGhpcyBtYWNybyB1c2luZyAid2l0
+						aCBwYXJhbWV0ZXIiLCBwYXNzaW5n
+						IGEgcGFyYW1ldGVyIGZvcm1hdHRl
+						ZCBsaWtlIHRoaXM6XApcCnRleHR8
+						d2lkdGh8dmFybmFtZVwKXAp0ZXh0
+						OgkJCVRoZSB0ZXh0IHRvIGJlIHdy
+						YXBwZWQuXAp3aWR0aDoJCVRoZSBt
+						YXhpbXVtIHdpZHRoIGJlZm9yZSB3
+						cmFwcGluZy5cCnZhcm5hbWU6CQlU
+						aGUgbmFtZSBvZiB0aGUgdmFyaWFi
+						bGUgdG8gcmVjaWV2ZSB0aGUgcmVz
+						dWx0LlwKXApWRVJTSU9OIEhJU1RP
+						Ulk6XAoxLjAgLSBJbml0aWFsIHZl
+						cnNpb24ufQEAAAAjAAAAAQAAAAcA
+						AABUWFQucnRmEAAAAOXvLly2AQAA
+						AAAAAAAAAAA=
+						</data>
+						<key>Title</key>
+						<string>WordWrap Text (Sub-Macro) v1.0</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC6MAwAAKwAAAAEA
+						AACEAwAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgUGVybWlzc2lvbiB0byB1c2Us
+						IGNvcHksIG1vZGlmeSwgYW5kL29y
+						IGRpc3RyaWJ1dGUgdGhpcyBzb2Z0
+						d2FyZSBmb3IgYW55IHB1cnBvc2Ug
+						d2l0aCBvciB3aXRob3V0IGZlZSBp
+						cyBoZXJlYnkgZ3JhbnRlZC5cClwK
+						VEhFIFNPRlRXQVJFIElTIFBST1ZJ
+						REVEICJBUyBJUyIgQU5EIFRIRSBB
+						VVRIT1IgRElTQ0xBSU1TIEFMTCBX
+						QVJSQU5USUVTIFdJVEggUkVHQVJE
+						IFRPIFRISVMgU09GVFdBUkUgSU5D
+						TFVESU5HIEFMTCBJTVBMSUVEIFdB
+						UlJBTlRJRVMgT0YgTUVSQ0hBTlRB
+						QklMSVRZIEFORCBGSVRORVNTLiBJ
+						TiBOTyBFVkVOVCBTSEFMTCBUSEUg
+						QVVUSE9SIEJFIExJQUJMRSBGT1Ig
+						QU5ZIFNQRUNJQUwsIERJUkVDVCwg
+						SU5ESVJFQ1QsIE9SIENPTlNFUVVF
+						TlRJQUwgREFNQUdFUyBPUiBBTlkg
+						REFNQUdFUyBXSEFUU09FVkVSIFJF
+						U1VMVElORyBGUk9NIExPU1MgT0Yg
+						VVNFLCBEQVRBIE9SIFBST0ZJVFMs
+						IFdIRVRIRVIgSU4gQU4gQUNUSU9O
+						IE9GIENPTlRSQUNULCBORUdMSUdF
+						TkNFIE9SIE9USEVSIFRPUlRJT1VT
+						IEFDVElPTiwgQVJJU0lORyBPVVQg
+						T0YgT1IgSU4gQ09OTkVDVElPTiBX
+						SVRIIFRIRSBVU0UgT1IgUEVSRk9S
+						TUFOQ0UgT0YgVEhJUyBTT0ZUV0FS
+						RS59AQAAACMAAAABAAAABwAAAFRY
+						VC5ydGYQAAAA5e8uXLYBAAAAAAAA
+						AAAAAA==
+						</data>
+						<key>Title</key>
+						<string>License Agreement / Disclaimer</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%TriggerValue%</string>
+						<key>Variable</key>
+						<string>wordWrap_triggerValue</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>CaseSensitiveRegEx</string>
+						<key>ActionName</key>
+						<string>Parse %TriggerValue&amp;</string>
+						<key>Captures</key>
+						<array>
+							<string></string>
+							<string>wordWrap_text</string>
+							<string>wordWrap_width</string>
+							<string>wordWrap_resultVarName</string>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchRegEx</string>
+						<key>Search</key>
+						<string>^([^\|]*)?\|?([^\|]*)?\|?([\w\W]*)?</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>wordWrap_triggerValue</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>wordWrap_width</string>
+									<key>VariableConditionType</key>
+									<string>IsEmpty</string>
+									<key>VariableValue</key>
+									<string>value</string>
+								</dict>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>wordWrap_resultVarName</string>
+									<key>VariableConditionType</key>
+									<string>IsEmpty</string>
+									<key>VariableValue</key>
+									<string>value</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>Any</string>
+						</dict>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>DeviceID</key>
+								<string>SOUNDEFFECTS</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PlaySound</string>
+								<key>Path</key>
+								<string>/System/Library/Sounds/Basso.aiff</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Prompt error with cancel 'Parameter required'</string>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Macro '%ExecutingThisMacro%' must be executed using "with parameter".
+The parameter must be in this format:
+
+text|width|varname
+
+text:			The text to be wrapped.
+width:		The maximum width before wrapping.
+varname:		The name of the variable to recieve the result.</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>%ExecutingMacro%</string>
+								<key>Variables</key>
+								<array/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteJavaScriptForAutomation</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>(function(inDesignMode, designModeParams) {
+	'use strict';
+
+	var _kme = Application("Keyboard Maestro Engine");
+
+	function getKMVariable(name, required) {
+		var result;
+		if (inDesignMode &amp;&amp; designModeParams) {
+			result = designModeParams[name];
+			if (result === undefined)
+			throw Error("DesignModeParam '" + name + "' is not defined");
+		} else {
+			result = _kme.getvariable(name);
+		}
+		if (required &amp;&amp; !result)
+			throw Error("Variable '" + name + "' is required");
+		return result;
+	}
+
+	function wordWrap(str, width, cut) {
+		if (!str || width &lt;= 0) {
+			return [str];
+		}
+		cut = cut || false;
+
+		var regex = new RegExp('.{1,' + width + '}(\\s|$)' + (cut ? '|.{' + width + '}|.+$' : '|\\S+?(\\s|$)'), 'g');
+		var matches = str.match(regex);
+		if (!matches)
+			return str;
+		return matches.join("\n");
+	}
+
+	function execute() {
+		return wordWrap(getKMVariable("wordWrap_text"), parseInt(getKMVariable("wordWrap_width")));
+	}
+
+	if (inDesignMode) {
+        return execute();
+    } else {
+        try {
+            return execute();
+        } catch (e) {
+            return "Error: " + e.message;
+        }
+    }
+})(false);</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>wordWrap_result</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>Abort if error</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>wordWrap_result</string>
+									<key>VariableConditionType</key>
+									<string>Matches</string>
+									<key>VariableValue</key>
+									<string>^Error:</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>DeviceID</key>
+								<string>SOUNDEFFECTS</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PlaySound</string>
+								<key>Path</key>
+								<string>/System/Library/Sounds/Basso.aiff</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Prompt error with cancel: 'An error has occurred'</string>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Macro "%ExecutingThisMacro%" has encountered an error: %Variable%wordWrap_result%</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>%ExecutingMacro%</string>
+								<key>Variables</key>
+								<array/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%Variable%wordWrap_result%</string>
+						<key>Variable</key>
+						<string>%Variable%wordWrap_resultVarName%</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>Cleanup Variables</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>wordWrap_result</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>wordWrap_resultVarName</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>wordWrap_triggerValue</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>wordWrap_width</string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>505692302.08850503</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>570383274.89228201</real>
+				<key>Name</key>
+				<string>WordWrap Text (Sub-Macro)</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>84C271A1-416C-43A6-A98F-C01530CF91D9</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.0 File &amp; Folder &amp; Text</string>
+		<key>ToggleMacroUID</key>
+		<string>6CE0A1AA-E144-4647-AB99-26402B1352A4</string>
+		<key>UID</key>
+		<string>27215D41-2AC6-46EC-8F7F-54ECB332C656</string>
+	</dict>
+</array>
+</plist>

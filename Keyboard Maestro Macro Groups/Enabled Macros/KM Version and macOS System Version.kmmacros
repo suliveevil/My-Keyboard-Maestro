@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568481555.45812798</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Aqua</string>
+						<key>ActionName</key>
+						<string>Return Keyboard Maestro Version and macOS System Version</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC4aBQAAKwAAAAEA
+						AAASBQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNTA0
+						XGNvY29hc3VicnRmODMwCntcZm9u
+						dHRibFxmMFxmc3dpc3NcZmNoYXJz
+						ZXQwIEhlbHZldGljYTt9CntcY29s
+						b3J0Ymw7XHJlZDI1NVxncmVlbjI1
+						NVxibHVlMjU1O30Ke1wqXGV4cGFu
+						ZGVkY29sb3J0Ymw7O30KXHBhcmRc
+						dHg1NjBcdHgxMTIwXHR4MTY4MFx0
+						eDIyNDBcdHgyODAwXHR4MzM2MFx0
+						eDM5MjBcdHg0NDgwXHR4NTA0MFx0
+						eDU2MDBcdHg2MTYwXHR4NjcyMFxw
+						YXJkaXJuYXR1cmFsXHBhcnRpZ2h0
+						ZW5mYWN0b3IwCgpcZjBcZnMyNCBc
+						Y2YwIFwnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wKQXV0
+						aG9yCTogIENocmlzdG9waGVyIFN0
+						b25lIDxzY3JpcHRtZWlzdGVyQHRo
+						ZXN0b25lZm9yZ2UuY29tPlwKQ3Jl
+						YXRlZAk6ICAyMDE4LzA0LzEwIDAz
+						OjA4XApNb2RpZmllZAk6ICAyMDE4
+						LzA0LzEwIDAzOjIzXApWZXJzaW9u
+						CTogIDEuMDBcClwnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N1wnYjdcJ2I3XCdiN1wnYjdcJ2I3
+						XCdiN1wnYjdcJ2I3XCdiN1wnYjdc
+						J2I3XCdiN1wnYjdcJ2I3XCdiN1wn
+						YjdcJ2I3XCdiN1wnYjdcJ2I3XCdi
+						N30BAAAAIwAAAAEAAAAHAAAAVFhU
+						LnJ0ZhAAAAAmdcxatgEAAAAAAAAA
+						AAAA
+						</data>
+						<key>Title</key>
+						<string>Return Keyboard Maestro Version and macOS System Version</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Pasting</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>----------------------------------------------------------------# Auth: Christopher Stone# dCre: 2018/04/10 03:00# dMod: 2018/04/10 03:22# Appl: AppleScriptObjC# Task: Return Keyboard Maestro Version and macOS System Version# Libs: None# Osax: None# Tags: @Applescript, @Script, @ASObjC, @Paste, @Keyboard_Maestro, @MacOS, @System, @Versions----------------------------------------------------------------use AppleScript version "2.4"use framework "Foundation"use scripting additions----------------------------------------------------------------set appBundleID to "com.stairways.keyboardmaestro.editor"set theURL to current application's NSWorkspace's sharedWorkspace()'s URLForApplicationWithBundleIdentifier:appBundleIDset appInfoPlist to ((theURL as text) &amp; "Contents:Info.plist")set AppleScript's text item delimiters to " "set sysVerStr to current application's NSProcessInfo's processInfo()'s operatingSystemVersionString()set sysVerStr to text item 2 of (sysVerStr as text)set appInfoPlist to POSIX path of appInfoPlistset theDict to current application's NSDictionary's dictionaryWithContentsOfFile:appInfoPlistset verStr to ("Keyboard Maestro " &amp; (theDict's valueForKeyPath:"CFBundleShortVersionString") as text) &amp; ?	" on macOS " &amp; (system version of (get system info))return verStr----------------------------------------------------------------</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>545040472.90325105</real>
+				<key>ModificationDate</key>
+				<real>570383527.05308795</real>
+				<key>Name</key>
+				<string>KM Version and macOS System Version</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>Case</key>
+						<string>Match</string>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>kmv;</string>
+					</dict>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>kmv£»</string>
+					</dict>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>!kmv</string>
+					</dict>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>£¡kmv</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>1C806B69-6A23-43CB-8CE4-D3FF20084968</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.0 File &amp; Folder &amp; Text</string>
+		<key>ToggleMacroUID</key>
+		<string>6CE0A1AA-E144-4647-AB99-26402B1352A4</string>
+		<key>UID</key>
+		<string>27215D41-2AC6-46EC-8F7F-54ECB332C656</string>
+	</dict>
+</array>
+</plist>

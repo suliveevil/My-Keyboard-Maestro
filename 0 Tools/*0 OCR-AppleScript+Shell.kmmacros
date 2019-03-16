@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568790984.50053</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Clipboard</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string></string>
+						<key>Source</key>
+						<string>Nothing</string>
+						<key>Text</key>
+						<string>export PATH=/usr/local/bin/:$PATH
+
+screencapture -i /tmp/ocr_snapshot.png
+
+tesseract /tmp/ocr_snapshot.png stdout -l chi_sim+chi_sim_vert+chi_tra+chi_tra_vert+eng+osd 2&gt;&amp;1
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>CaseSensitiveRegEx</string>
+						<key>Destination</key>
+						<string>Clipboard</string>
+						<key>IsActive</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SearchReplace</string>
+						<key>Replace</key>
+						<string> </string>
+						<key>Search</key>
+						<string>\W</string>
+						<key>Source</key>
+						<string>Clipboard</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>CaseSensitiveRegEx</string>
+						<key>ActionName</key>
+						<string>Remove SpecialCharacters Front of Letters</string>
+						<key>MacroActionType</key>
+						<string>SearchReplace</string>
+						<key>Replace</key>
+						<string></string>
+						<key>Search</key>
+						<string>^([^[a-zA-Z].]*)[a-zA-Z]</string>
+						<key>Source</key>
+						<string>Clipboard</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>Notification</string>
+						<key>SoundName</key>
+						<string></string>
+						<key>Subtitle</key>
+						<string></string>
+						<key>Text</key>
+						<string>%SystemClipboard%</string>
+						<key>Title</key>
+						<string>%ExecutingMacro%</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568752918.61832905</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568831920.48801303</real>
+				<key>Name</key>
+				<string>0 OCR-AppleScript+Shell</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>ooo</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>D646D2FB-5081-4C5B-91C5-3E53FE61A28F</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>0 Tools</string>
+		<key>ToggleMacroUID</key>
+		<string>57FD303D-266A-4686-AF2F-574BF49AA8DF</string>
+		<key>UID</key>
+		<string>C905C4FC-7163-4427-AEBA-D90C55D4B4A0</string>
+	</dict>
+</array>
+</plist>

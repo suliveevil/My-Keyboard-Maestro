@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>567048234.37165701</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>MacroActionType</key>
+						<string>Notification</string>
+						<key>SoundName</key>
+						<string></string>
+						<key>Subtitle</key>
+						<string>Time to Sleep</string>
+						<key>Text</key>
+						<string>...zzZ</string>
+						<key>Title</key>
+						<string>%ExecutingMacro%</string>
+					</dict>
+					<dict>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>0.2</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>DeviceID</key>
+						<string>SOUNDEFFECTS</string>
+						<key>MacroActionType</key>
+						<string>PlaySound</string>
+						<key>Path</key>
+						<string>/System/Library/Sounds/Glass.aiff</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Volume</key>
+						<integer>50</integer>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>567048947.72609997</real>
+				<key>ModificationDate</key>
+				<real>572278929.09046304</real>
+				<key>Name</key>
+				<string>Time to Sleep</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>ExecuteType</key>
+						<string>Time</string>
+						<key>MacroTriggerType</key>
+						<string>Time</string>
+						<key>Repeat</key>
+						<false/>
+						<key>RepeatTime</key>
+						<integer>60</integer>
+						<key>TimeFinishHour</key>
+						<integer>17</integer>
+						<key>TimeFinishMinutes</key>
+						<integer>30</integer>
+						<key>TimeHour</key>
+						<integer>22</integer>
+						<key>TimeMinutes</key>
+						<integer>20</integer>
+						<key>WhichDays</key>
+						<integer>127</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>40099401-9230-4524-9F08-C01876F54C70</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>9 Periodic Work</string>
+		<key>ToggleMacroUID</key>
+		<string>5959B143-89B3-453A-BD27-B6F9B6C5D89D</string>
+		<key>UID</key>
+		<string>82F7E31A-11B1-422F-9354-302768D8CFD2</string>
+	</dict>
+</array>
+</plist>

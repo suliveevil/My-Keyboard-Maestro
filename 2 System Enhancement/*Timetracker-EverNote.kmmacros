@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075935.80634999</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC5uAAAAKwAAAAEA
+						AABmAAAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNDA0
+						XGNvY29hc3VicnRmNDcwCntcZm9u
+						dHRibH0Ke1xjb2xvcnRibDtccmVk
+						MjU1XGdyZWVuMjU1XGJsdWUyNTU7
+						fQp9AQAAACMAAAABAAAABwAAAFRY
+						VC5ydGYQAAAAcy6wWbYBAAAAAAAA
+						AAAAAA==
+						</data>
+						<key>Title</key>
+						<string>Timetracker-JMichaelTX</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>SET VARIABLE TT__Log to Log Data</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%ICUDateTime%EEE, hh:mm  -  dd MMM yyyy% | %Application%1% | %TriggerValue%</string>
+						<key>Variable</key>
+						<string>TT__Log</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>DisplayWindow</string>
+						<key>ActionName</key>
+						<string>Enable for Debug:  Display Log Entry</string>
+						<key>IsActive</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC48AQAAKwAAAAEA
+						AAA0AQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzEyNTJcY29jb2FydGYxNDA0
+						XGNvY29hc3VicnRmNDYwCntcZm9u
+						dHRibFxmMFxmbmlsXGZjaGFyc2V0
+						MCBIZWx2ZXRpY2FOZXVlO30Ke1xj
+						b2xvcnRibDtccmVkMjU1XGdyZWVu
+						MjU1XGJsdWUyNTU7XHJlZDBcZ3Jl
+						ZW4wXGJsdWUwO30KXHBhcmRcdHg1
+						NjBcdHgxMTIwXHR4MTY4MFx0eDIy
+						NDBcdHgyODAwXHR4MzM2MFx0eDM5
+						MjBcdHg0NDgwXHR4NTA0MFx0eDU2
+						MDBcdHg2MTYwXHR4NjcyMFxwYXJk
+						aXJuYXR1cmFsXHBhcnRpZ2h0ZW5m
+						YWN0b3IwCgpcZjBcZnMyNiBcY2Yy
+						ICVWYXJpYWJsZSVUVF9fTG9nJX0B
+						AAAAIwAAAAEAAAAHAAAAVFhULnJ0
+						ZhAAAAB3jsRXtgEAAAAAAAAAAAAA
+						</data>
+						<key>Text</key>
+						<string>%Variable%TT__Log%</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Teal</string>
+						<key>ActionName</key>
+						<string>SCRIPT: Append Log Entry to Evernote Note</string>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string>/Users/Shared/Dropbox/SW/DEV/KM/Scripts/[EN] Append Evernote Note with TimeTracker Info (AS).scpt</string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>use AppleScript version "2.4" -- Yosemite (10.10) or later
+use scripting additions
+
+### SCRIPT SETUP ###
+-- Change the next 2 variables as needed
+
+set nbName to "Journal" -- Evernote Notebook
+set titleStr to "TimeLog" -- Evernote Note Title
+
+--- GET LOG ENTRY FROM Keyboard Maestro VARIABLE ---
+tell application "Keyboard Maestro Engine" to ?
+	set logStr to getvariable "TT__Log"
+
+--- CONVERT TO HTML TO HAVE PROPER LINE SPACING ---
+set logHTML to "&lt;div&gt;" &amp; logStr &amp; "&lt;/div&gt;"
+
+tell application "Evernote"
+	
+	set noteList to find notes "notebook:\"" &amp; nbName &amp; "\" intitle:\"" &amp; titleStr &amp; "\""
+	
+	if ((count of noteList) &gt; 0) then
+		
+		--- APPEND LOG ENTRY ---
+		
+		set oNote to item 1 of noteList
+		append oNote html logHTML
+		
+	else
+		--- CREATE NEW NOTE WITH LOG ENTRY ---
+		
+		create note with html logHTML title titleStr notebook nbName
+		
+	end if
+	
+	synchronize
+end tell</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>494188564.42140299</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>568614464.15197098</real>
+				<key>Name</key>
+				<string>Timetracker-EverNote</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>ChangeType</key>
+						<string>FocussedWindowTitleChanges</string>
+						<key>MacroTriggerType</key>
+						<string>FocussedWindow</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>E94A716A-0A31-4977-A4C7-01271FAAC03B</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>2 System Enhancement</string>
+		<key>ToggleMacroUID</key>
+		<string>0E83BBFC-383F-4C48-87AC-A27C3B7A7904</string>
+		<key>UID</key>
+		<string>99D81B85-02F7-4F19-BFE5-F39B51C752F5</string>
+	</dict>
+</array>
+</plist>

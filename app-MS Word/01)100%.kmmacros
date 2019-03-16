@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>AlwaysWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>CreationDate</key>
+		<real>566319300.925372</real>
+		<key>DisplayToggle</key>
+		<false/>
+		<key>IsActive</key>
+		<false/>
+		<key>KeyCode</key>
+		<integer>32767</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>MacroActionType</key>
+						<string>SelectMenuItem</string>
+						<key>Menu</key>
+						<array>
+							<string> ”Õº</string>
+							<string>Àı∑≈</string>
+							<string>100%</string>
+						</array>
+						<key>TargetApplication</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.microsoft.Word</string>
+							<key>Name</key>
+							<string>Microsoft Word</string>
+							<key>NewFile</key>
+							<string>/Applications/Microsoft Word.app</string>
+						</dict>
+						<key>TargetingType</key>
+						<string>Specific</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>566319396.77207005</real>
+				<key>ModificationDate</key>
+				<real>566319485.751737</real>
+				<key>Name</key>
+				<string>01)100%</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>64E085D9-BD71-4178-B89F-882E6EB338CD</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>0</integer>
+		<key>Name</key>
+		<string>app-MS Word</string>
+		<key>PaletteUnderMouse</key>
+		<false/>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.microsoft.Word</string>
+					<key>Name</key>
+					<string>Microsoft Word</string>
+					<key>NewFile</key>
+					<string>/Applications/Microsoft Word.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>122BD625-94BF-424E-AB73-86A8C422ED7A</string>
+		<key>UID</key>
+		<string>4BA109C0-721C-405C-B450-21BEB71A374C</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568481555.45812798</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>Action</key>
+						<string>Copy</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>CutCopyPaste</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%CurrentClipboard%</string>
+						<key>Variable</key>
+						<string>Text</string>
+					</dict>
+					<dict>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string>What trigger text would you like to use for your new macro?</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>Text Expansion Trigger</string>
+						<key>Variables</key>
+						<array>
+							<dict>
+								<key>Default</key>
+								<string>trigger</string>
+								<key>Variable</key>
+								<string>Trigger</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>EncodeHTMLEntities</string>
+						<key>Destination</key>
+						<string>Variable</string>
+						<key>DestinationVariable</key>
+						<string>Text Encoded</string>
+						<key>MacroActionType</key>
+						<string>Filter</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>Text</string>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>EncodeHTMLEntities</string>
+						<key>Destination</key>
+						<string>Variable</string>
+						<key>DestinationVariable</key>
+						<string>Trigger Encoded</string>
+						<key>MacroActionType</key>
+						<string>Filter</string>
+						<key>Source</key>
+						<string>Variable</string>
+						<key>Variable</key>
+						<string>Trigger</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Window</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>tell application "Keyboard Maestro Engine"	set t to value of variable "Trigger"	set tenc to value of variable "Trigger Encoded"	set venc to value of variable "Text Encoded"end tellset txml to "&lt;dict&gt;
+						&lt;key&gt;MacroTriggerType&lt;/key&gt;
+						&lt;string&gt;TypedString&lt;/string&gt;
+						&lt;key&gt;SimulateDeletes&lt;/key&gt;
+						&lt;true/&gt;
+						&lt;key&gt;TypedString&lt;/key&gt;
+						&lt;string&gt;" &amp; tenc &amp; "&lt;/string&gt;
+					&lt;/dict&gt;"set axml to "&lt;dict&gt;
+						&lt;key&gt;Action&lt;/key&gt;
+						&lt;string&gt;ByTyping&lt;/string&gt;
+						&lt;key&gt;MacroActionType&lt;/key&gt;
+						&lt;string&gt;InsertText&lt;/string&gt;
+						&lt;key&gt;Text&lt;/key&gt;
+						&lt;string&gt;" &amp; venc &amp; "&lt;/string&gt;
+					&lt;/dict&gt;"tell application "Keyboard Maestro"	tell macro group "Text Expansions"		set m to make new macro with properties {name:t}		tell m to make new trigger with properties {xml:txml}		tell m to make new action with properties {xml:axml}	end tellend tell""</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>481779021.08263898</real>
+				<key>ModificationDate</key>
+				<real>573419430.46642697</real>
+				<key>Name</key>
+				<string>Text Expansion From Selection-perter</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>17</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4608</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>40AA9017-8990-4FA5-9193-EEA554EE0D2B</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.0 File &amp; Folder &amp; Text</string>
+		<key>ToggleMacroUID</key>
+		<string>6CE0A1AA-E144-4647-AB99-26402B1352A4</string>
+		<key>UID</key>
+		<string>27215D41-2AC6-46EC-8F7F-54ECB332C656</string>
+	</dict>
+</array>
+</plist>
