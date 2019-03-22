@@ -1,0 +1,24 @@
+{
+	"UID": "29247558-75D7-4209-9B4B-307020456EA4",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n```\n%|%\n```"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"ModificationDate": 573224666.567047,
+	"Triggers": [
+		{
+			"TypedString": "···",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Code-Local"
+}

@@ -1,0 +1,58 @@
+{
+	"UID": "79950413-A62F-44FA-9955-7C9800AFD389",
+	"Actions": [
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "+1s",
+			"Prompt": "-现在那么早，你们就说支持董先生，会不会给人一种感觉——就是[动词1]呀——是[动词2]董先生呀？",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "动词1",
+					"Default": "[动词1]"
+				},
+				{
+					"Variable": "动词2",
+					"Default": "[动词2]"
+				},
+				{
+					"Variable": "地名",
+					"Default": "[地名]"
+				},
+				{
+					"Variable": "法案名1",
+					"Default": "[法案名1]"
+				},
+				{
+					"Variable": "法案名2",
+					"Default": "[法案名2]"
+				}
+			]
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "-现在那么早，你们就说支持董先生，会不会给人一种感觉——就是%Variable%动词1%呀——是%Variable%动词2%董先生呀？\n-没有，没有任何这个意思！还是按照%Variable%地名%的、按照%Variable%法案名1%、按照%Variable%法案名2%——去产生……"
+		}
+	],
+	"CreationDate": 566895717.931818,
+	"IsActive": false,
+	"ModificationDate": 568015776.264453,
+	"Triggers": [
+		{
+			"TypedString": "+1s",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "+1s"
+}

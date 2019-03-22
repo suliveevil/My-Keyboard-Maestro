@@ -1,0 +1,16 @@
+{
+	"UID": "3AC5579C-7A66-4030-9827-CC6E34D2BFFD",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⌦"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991061.080975,
+	"Triggers": [],
+	"Name": "64)  ⌦  Forward Delete"
+}

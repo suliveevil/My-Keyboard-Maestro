@@ -1,0 +1,22 @@
+{
+	"UID": "CA12DBBC-53EA-4737-BA38-42EBFE843FB2",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "open -a /Applications/Pages.app --args -AppleLanguages '(en)'",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568478517.002412,
+	"IsActive": false,
+	"ModificationDate": 568524624.647424,
+	"Triggers": [],
+	"Name": "App Open with Language"
+}

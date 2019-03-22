@@ -1,0 +1,26 @@
+{
+	"UID": "FA1337DC-3D8D-4D67-871D-41B644B32EA4",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Notes",
+				"New Underline"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		}
+	],
+	"CreationDate": 566900688.274131,
+	"ModificationDate": 424407159.04288,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 35,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Underline  (Point)"
+}

@@ -1,0 +1,75 @@
+{
+	"UID": "D736D4AF-E2BE-4815-AD05-9F56737EDA8D",
+	"Actions": [
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "100",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "41",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 3,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "insert"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "1",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 2,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "60",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "220",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		}
+	],
+	"CreationDate": 566900680.592727,
+	"IsActive": false,
+	"ModificationDate": 423371904.120855,
+	"Triggers": [
+		{
+			"TypedString": "II",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": false
+		}
+	],
+	"Name": "insert"
+}

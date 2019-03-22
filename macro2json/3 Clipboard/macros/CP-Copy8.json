@@ -1,0 +1,23 @@
+{
+	"UID": "B51FCAC9-9C62-4ECA-ABE5-9551293D0FEA",
+	"Actions": [
+		{
+			"MacroActionType": "ClipboardSwitcherMacroAction",
+			"Action": "Copy",
+			"RedundandDisplayName": "Clipboard8",
+			"TimeOutAbortsMacro": true,
+			"Name": "88A8FCD1-12E0-4C9F-A747-4F4F7BD16F6C"
+		}
+	],
+	"CreationDate": 567337212.578491,
+	"ModificationDate": 568172742.209273,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 8,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "CP-Copy8"
+}

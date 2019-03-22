@@ -1,0 +1,28 @@
+{
+	"UID": "A81EC748-1CBD-48EF-BF9E-56848C89FD56",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "open /allmyfiles/gitFiles/",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567071968.311578,
+	"ModificationDate": 569418240.863481,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "gitFiles"
+}

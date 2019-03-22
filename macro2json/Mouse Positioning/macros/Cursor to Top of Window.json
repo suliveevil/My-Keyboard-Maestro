@@ -1,0 +1,63 @@
+{
+	"UID": "F03D9813-1F86-46EA-BA2F-DC6DF78C231F",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Crude…",
+			"ActionName": "Crude…",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6UAQAAKwAAAAEAAACM\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgYW5kIG5v\n\t\t\t\t\t\t\tdCBndWFyYW50ZWVkIHRv\n\t\t\t\t\t\t\tIHdvcmsgY29ycmVjdGx5\n\t\t\t\t\t\t\tIG9yIGV2ZW4gdG8gZG8g\n\t\t\t\t\t\t\tYW55dGhpbmcgaW4gYSBw\n\t\t\t\t\t\t\tYXJ0aWN1bGFyIHdpbmRv\n\t\t\t\t\t\t\tdy9zaXR1YXRpb24vYXBw\n\t\t\t\t\t\t\tbGljYXRpb259AQAAACMA\n\t\t\t\t\t\t\tAAABAAAABwAAAFRYVC5y\n\t\t\t\t\t\t\tdGYQAAAAM7s2XLYBAAAA\n\t\t\t\t\t\t\tAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "Problems may be caused by clicking…",
+			"ActionName": "Problems may be caused by clicking…",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5GAQAAKwAAAAEAAAA+\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgc29tZXRo\n\t\t\t\t\t\t\taW5nIHVuaW50ZW50aW9u\n\t\t\t\t\t\t\tYWxseS59AQAAACMAAAAB\n\t\t\t\t\t\t\tAAAABwAAAFRYVC5ydGYQ\n\t\t\t\t\t\t\tAAAAM7s2XLYBAAAAAAAA\n\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 2,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "160",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "24",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "The double click is because…",
+			"ActionName": "The double click is because…",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6mAQAAKwAAAAEAAACe\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgc29tZSBh\n\t\t\t\t\t\t\tcHBsaWNhdGlvbnMgZG9u\n\t\t\t\t\t\t\tJ3QgbW92ZSB0aGUgY3Vy\n\t\t\t\t\t\t\tc29yIHdpdGggYSBzaW5n\n\t\t\t\t\t\t\tbGUgY2xpY2ssIHN1Y2gg\n\t\t\t\t\t\t\tYXMgU2FmYXJpIHZpZXdp\n\t\t\t\t\t\t\tbmcgYW4gb3JkaW5hcnkg\n\t\t\t\t\t\t\td2ViIHBhZ2UgKG5vIGZv\n\t\t\t\t\t\t\tcm1zLCBldGMuKS59AQAA\n\t\t\t\t\t\t\tACMAAAABAAAABwAAAFRY\n\t\t\t\t\t\t\tVC5ydGYQAAAAM7s2XLYB\n\t\t\t\t\t\t\tAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "Dealing with vertical offset:",
+			"ActionName": "Dealing with vertical offset:",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4ZAgAAKwAAAAEAAAAR\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgTmVlZCB0\n\t\t\t\t\t\t\tbyAocG9zc2libHkpIHNr\n\t\t\t\t\t\t\taXAgc29tZSwgYnV0IHBy\n\t\t\t\t\t\t\tb2JhYmx5IG5ldmVyIGFs\n\t\t\t\t\t\t\tbCwgb2YgdGhlIGZvbGxv\n\t\t\t\t\t\t\td2luZyAoc29tZSBvZiB3\n\t\t\t\t\t\t\taGljaCBtYXkgYmUgb3B0\n\t\t\t\t\t\t\taW9uYWxseSBoaWRkZW4v\n\t\t\t\t\t\t\tc2hvd24pLCBzbyAxNjAg\n\t\t\t\t\t\t\taXMgYSBoZXVyc3RpYyBj\n\t\t\t\t\t\t\tb21wcm9taXNlOlwKCVwn\n\t\t\t\t\t\t\tOTUgdGl0bGUgYmFyXAoJ\n\t\t\t\t\t\t\tXCc5NSB0b29sYmFyXAoJ\n\t\t\t\t\t\t\tXCc5NSBmYXZvcml0ZXMg\n\t\t\t\t\t\t\tYmFyXAoJXCc5NSBydWxl\n\t\t\t\t\t\t\tclwKCVwnOTUgc2VhcmNo\n\t\t\t\t\t\t\tIGZpZWxkfQEAAAAjAAAA\n\t\t\t\t\t\t\tAQAAAAcAAABUWFQucnRm\n\t\t\t\t\t\t\tEAAAADO7Nly2AQAAAAAA\n\t\t\t\t\t\t\tAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		}
+	],
+	"CreationDate": 498690210.390166,
+	"ModificationDate": 499824339.966782,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 115,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Cursor to Top of Window",
+	"CustomIconData": "KMEP-DebuggerStepOut"
+}

@@ -1,0 +1,29 @@
+{
+	"UID": "50C91672-F036-49CC-8FFD-D2F6A4D28ECF",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "%|%\n[mw_shl_code=applescript,true]\n%SystemClipboard%\n[/mw_shl_code]\n"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568454253.698239,
+	"ModificationDate": 568524705.015722,
+	"Triggers": [
+		{
+			"TypedString": "babc;",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "babc；",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "BAB论坛-AppleScript"
+}

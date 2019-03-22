@@ -1,0 +1,172 @@
+{
+	"UID": "7733402A-8D64-4F5C-8DF1-75F0FC98B535",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "pb2",
+			"Text": "%PastClipboard%2%"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "pb1",
+			"Text": "%PastClipboard%1%"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "pb",
+			"Text": "%CurrentClipboard%"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "Capitalize",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "pb2"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "",
+					"Prompt": "Year",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "OK"
+						},
+						{
+							"Button": "Cancel",
+							"Cancel": true
+						}
+					],
+					"Variables": [
+						{
+							"Variable": "pb1",
+							"Default": "200"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "pb1",
+						"VariableConditionType": "Matches",
+						"VariableValue": "\\d{4}",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": []
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "TitleCase",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "pb"
+		},
+		{
+			"MacroActionType": "SetClipboardToText",
+			"IsDisclosed": false,
+			"Text": "%Variable%pb2% - %Variable%pb1% - %Variable%pb%",
+			"JustDisplay": false
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"File",
+				"Save As..."
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 9,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 36,
+			"Modifiers": 0
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "(* GENERATE 3 INITIAL SKIM NOTES WITH LINKING INFO (CUSTOM URL VERSION)\n\n-- created by Stephen Margheim\n-- 13 July 2013\n-- open source\n\nREQUIRED PROGRAMS:\n\t-- Skim\n\nThis script requires setting up the custom URL handler described [here](http://hackademic.postach.io/page/create-a-custom-url-scheme-for-free). \n\nIt will insert 3 notes at the top of your current PDF. Simply open the PDF in Skim and run the app/script. The 3 generated notes contain linking information used in the Export Skim Notes script. \n* Note 1 includes the custom URL and the pdf's title. \n* Note 2 includes a Markdown formatted link\n* Note 3 includes a field to be filled depending on the relation of the printed page numbers and the Skim-based page numbers.\n\n*)\n\ntell application \"Skim\"\n\tset theFile to file of document 1 as string\n\tset theHome to path to home folder as string\n\tset theFilePath to my replaceString(theFile, theHome, \"\")\n\t\n\tset pdfPath to my encode_text(theFilePath, true, false)\n\tset pdfPath to my replaceString(pdfPath, \":\", \"/\")\n\t\n\tset customurl to \"customurl://com.hackademic.AppleScript.URL_Handler?action=1$\" & pdfPath & \"#\"\n\t\n\tset PdfName to name of document 1\n\t\n\tset docPath to path of front document\n\tset notesPath to text 1 thru -5 of docPath & \" (notes).skim\"\n\t\n\t--save the document and its notes as-is\n\tsave front document\n\tsave front document in notesPath\n\t\n\tdelete notes of front document\n\t\n\t--create the three opening notes\n\ttell page 1 of document 1\n\t\tmake note with properties {type:anchored note, bounds:{523, 760, 540, 760}, text:customurl, extended text:PdfName}\n\t\tdelay 0.1\n\t\tmake note with properties {type:anchored note, bounds:{523, 780, 540, 780}, text:\"[\" & PdfName & \"](\" & customurl}\n\t\tdelay 0.1\n\t\tmake note with properties {type:anchored note, bounds:{523, 760, 540, 760}, text:\"0\", extended text:\"[change to appropriate number: (1) IF skim p# = printed p# --> 0 (2) IF skim p# > printed p# --> pr# - sk# (3) IF random printed p# --> ra# - 1 (if also FrontPage, ra# - 2)]\"}\n\tend tell\n\t\n\t--return any previously existing notes\n\tread notes front document from notesPath without replacing\n\t\nend tell\n\n\n(* SUB-ROUTINES *)\n\non encode_text(this_text, encode_URL_A, encode_URL_B)\n\tset the standard_characters to \"abcdefghijklmnopqrstuvwxyz0123456789\"\n\tset the URL_A_chars to \"$+!'/?;&@=#%><{}[]\\\"~`^\\\\|*\"\n\tset the URL_B_chars to \".-_:\"\n\tset the acceptable_characters to the standard_characters\n\tif encode_URL_A is false then set the acceptable_characters to the acceptable_characters & the URL_A_chars\n\tif encode_URL_B is false then set the acceptable_characters to the acceptable_characters & the URL_B_chars\n\tset the encoded_text to \"\"\n\trepeat with this_char in this_text\n\t\tif this_char is in the acceptable_characters then\n\t\t\tset the encoded_text to (the encoded_text & this_char)\n\t\telse\n\t\t\tset the encoded_text to (the encoded_text & encode_char(this_char)) as string\n\t\tend if\n\tend repeat\n\treturn the encoded_text\nend encode_text\n\n\non encode_char(this_char)\n\tset the ASCII_num to (the ASCII number this_char)\n\tset the hex_list to {\"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"A\", \"B\", \"C\", \"D\", \"E\", \"F\"}\n\tset x to item ((ASCII_num div 16) + 1) of the hex_list\n\tset y to item ((ASCII_num mod 16) + 1) of the hex_list\n\treturn (\"%\" & x & y) as string\nend encode_char\n\non replaceString(theText, oldString, newString)\n\t-- ljr (http://applescript.bratis-lover.net/library/string/)\n\tlocal ASTID, theText, oldString, newString, lst\n\tset ASTID to AppleScript's text item delimiters\n\ttry\n\t\tconsidering case\n\t\t\tset AppleScript's text item delimiters to oldString\n\t\t\tset lst to every text item of theText\n\t\t\tset AppleScript's text item delimiters to newString\n\t\t\tset theText to lst as string\n\t\tend considering\n\t\tset AppleScript's text item delimiters to ASTID\n\t\treturn theText\n\ton error eMsg number eNum\n\t\tset AppleScript's text item delimiters to ASTID\n\t\terror \"Can't replaceString: \" & eMsg number eNum\n\tend try\nend replaceString\n",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"PDF",
+				"Automatically Resize"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		}
+	],
+	"CreationDate": 566900688.274133,
+	"IsActive": false,
+	"ModificationDate": 567315125.293457,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 6656,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "key.SK.as.link"
+}

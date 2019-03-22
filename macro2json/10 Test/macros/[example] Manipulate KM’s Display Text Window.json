@@ -1,0 +1,36 @@
+{
+	"UID": "1C516A29-F8FA-43B3-AA0D-9C8B57CD6A46",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayWindow",
+			"Text": "Gallia est omnis divisa in partes tres, quarum unam incolunt Belgae, aliam Aquitani, tertiam qui ipsorum lingua Celtae, nostra Galli appellantur. Hi omnes lingua, institutis, legibus inter se differunt. Gallos ab Aquitanis Garumna flumen, a Belgis Matrona et Sequana dividit. Horum omnium fortissimi sunt Belgae, propterea quod a cultu atque humanitate provinciae longissime absunt, minimeque ad eos mercatores saepe commeant atque ea quae ad effeminandos animos pertinent important, proximique sunt Germanis, qui trans Rhenum incolunt, quibuscum continenter bellum gerunt. Qua de causa Helvetii quoque reliquos Gallos virtute praecedunt, quod fere cotidianis proeliis cum Germanis contendunt, cum aut suis finibus eos prohibent aut ipsi in eorum finibus bellum gerunt.\n\nhttp://www.sacred-texts.com/cla/jcsr/dbg1.htm",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4bBAAAKwAAAAEAAAAT\n\t\t\t\t\t\t\tBAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODIwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBTRlVJVGV4\n\t\t\t\t\t\t\tdC1SZWd1bGFyO30Ke1xj\n\t\t\t\t\t\t\tb2xvcnRibDtccmVkMjU1\n\t\t\t\t\t\t\tXGdyZWVuMjU1XGJsdWUy\n\t\t\t\t\t\t\tNTU7fQp7XCpcZXhwYW5k\n\t\t\t\t\t\t\tZWRjb2xvcnRibDs7fQpc\n\t\t\t\t\t\t\tZGVmdGFiNzIwClxwYXJk\n\t\t\t\t\t\t\tXHBhcmRlZnRhYjcyMFxw\n\t\t\t\t\t\t\tYXJ0aWdodGVuZmFjdG9y\n\t\t\t\t\t\t\tMAoKXGYwXGZzMjQgXGNm\n\t\t\t\t\t\t\tMCBHYWxsaWEgZXN0IG9t\n\t\t\t\t\t\t\tbmlzIGRpdmlzYSBpbiBw\n\t\t\t\t\t\t\tYXJ0ZXMgdHJlcywgcXVh\n\t\t\t\t\t\t\tcnVtIHVuYW0gaW5jb2x1\n\t\t\t\t\t\t\tbnQgQmVsZ2FlLCBhbGlh\n\t\t\t\t\t\t\tbSBBcXVpdGFuaSwgdGVy\n\t\t\t\t\t\t\tdGlhbSBxdWkgaXBzb3J1\n\t\t\t\t\t\t\tbSBsaW5ndWEgQ2VsdGFl\n\t\t\t\t\t\t\tLCBub3N0cmEgR2FsbGkg\n\t\t\t\t\t\t\tYXBwZWxsYW50dXIuIEhp\n\t\t\t\t\t\t\tIG9tbmVzIGxpbmd1YSwg\n\t\t\t\t\t\t\taW5zdGl0dXRpcywgbGVn\n\t\t\t\t\t\t\taWJ1cyBpbnRlciBzZSBk\n\t\t\t\t\t\t\taWZmZXJ1bnQuIEdhbGxv\n\t\t\t\t\t\t\tcyBhYiBBcXVpdGFuaXMg\n\t\t\t\t\t\t\tR2FydW1uYSBmbHVtZW4s\n\t\t\t\t\t\t\tIGEgQmVsZ2lzIE1hdHJv\n\t\t\t\t\t\t\tbmEgZXQgU2VxdWFuYSBk\n\t\t\t\t\t\t\taXZpZGl0LiBIb3J1bSBv\n\t\t\t\t\t\t\tbW5pdW0gZm9ydGlzc2lt\n\t\t\t\t\t\t\taSBzdW50IEJlbGdhZSwg\n\t\t\t\t\t\t\tcHJvcHRlcmVhIHF1b2Qg\n\t\t\t\t\t\t\tYSBjdWx0dSBhdHF1ZSBo\n\t\t\t\t\t\t\tdW1hbml0YXRlIHByb3Zp\n\t\t\t\t\t\t\tbmNpYWUgbG9uZ2lzc2lt\n\t\t\t\t\t\t\tZSBhYnN1bnQsIG1pbmlt\n\t\t\t\t\t\t\tZXF1ZSBhZCBlb3MgbWVy\n\t\t\t\t\t\t\tY2F0b3JlcyBzYWVwZSBj\n\t\t\t\t\t\t\tb21tZWFudCBhdHF1ZSBl\n\t\t\t\t\t\t\tYSBxdWFlIGFkIGVmZmVt\n\t\t\t\t\t\t\taW5hbmRvcyBhbmltb3Mg\n\t\t\t\t\t\t\tcGVydGluZW50IGltcG9y\n\t\t\t\t\t\t\tdGFudCwgcHJveGltaXF1\n\t\t\t\t\t\t\tZSBzdW50IEdlcm1hbmlz\n\t\t\t\t\t\t\tLCBxdWkgdHJhbnMgUmhl\n\t\t\t\t\t\t\tbnVtIGluY29sdW50LCBx\n\t\t\t\t\t\t\tdWlidXNjdW0gY29udGlu\n\t\t\t\t\t\t\tZW50ZXIgYmVsbHVtIGdl\n\t\t\t\t\t\t\tcnVudC4gUXVhIGRlIGNh\n\t\t\t\t\t\t\tdXNhIEhlbHZldGlpIHF1\n\t\t\t\t\t\t\tb3F1ZSByZWxpcXVvcyBH\n\t\t\t\t\t\t\tYWxsb3MgdmlydHV0ZSBw\n\t\t\t\t\t\t\tcmFlY2VkdW50LCBxdW9k\n\t\t\t\t\t\t\tIGZlcmUgY290aWRpYW5p\n\t\t\t\t\t\t\tcyBwcm9lbGlpcyBjdW0g\n\t\t\t\t\t\t\tR2VybWFuaXMgY29udGVu\n\t\t\t\t\t\t\tZHVudCwgY3VtIGF1dCBz\n\t\t\t\t\t\t\tdWlzIGZpbmlidXMgZW9z\n\t\t\t\t\t\t\tIHByb2hpYmVudCBhdXQg\n\t\t\t\t\t\t\taXBzaSBpbiBlb3J1bSBm\n\t\t\t\t\t\t\taW5pYnVzIGJlbGx1bSBn\n\t\t\t\t\t\t\tZXJ1bnQuXApcCmh0dHA6\n\t\t\t\t\t\t\tLy93d3cuc2FjcmVkLXRl\n\t\t\t\t\t\t\teHRzLmNvbS9jbGEvamNz\n\t\t\t\t\t\t\tci9kYmcxLmh0bX0BAAAA\n\t\t\t\t\t\t\tIwAAAAEAAAAHAAAAVFhU\n\t\t\t\t\t\t\tLnJ0ZhAAAACiZQtZtgEA\n\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "# tell application \"Keyboard Maestro Engine\" to activate # Only needed when another app is frontmost\rtell application \"System Events\"\r\ttell application process \"Keyboard Maestro Engine\"\r\t\ttell window \"Keyboard Maestro - Display Text\"\r\t\t\tset position to {20, 45}\r\t\t\tset size to {500, 309}\r\t\t\ttell button \"OK\" to set focused to true\r\t\tend tell\r\tend tell\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 515592172.352071,
+	"IsActive": false,
+	"ModificationDate": 567343025.714568,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 122,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "[example] Manipulate KM’s Display Text Window"
+}

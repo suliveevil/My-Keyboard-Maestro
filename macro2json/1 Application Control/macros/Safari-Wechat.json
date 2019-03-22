@@ -1,0 +1,41 @@
+{
+	"UID": "70EF738C-A7AB-4133-A3AD-C904ADF95186",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteAppleScript",
+					"NotifyOnFailure": false,
+					"TrimResults": true,
+					"TimeOutAbortsMacro": true,
+					"Text": "tell application \"System Events\"\n    tell process \"Safari\"\n        set frontmost to true\n        # 选择 文件→共享→发送到微信\n        click menu item \"发送到微信\" of menu of menu item \"共享\" of menu \"文件\" of menu bar 1\n    end tell\nend tell",
+					"Path": "",
+					"TrimResultsNew": true,
+					"StopOnFailure": false,
+					"IncludeStdErr": false,
+					"DisplayKind": "None",
+					"UseText": true
+				}
+			]
+		}
+	],
+	"CreationDate": 567375331.104022,
+	"IsActive": false,
+	"ModificationDate": 568130258.678975,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 48,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Safari-Wechat"
+}

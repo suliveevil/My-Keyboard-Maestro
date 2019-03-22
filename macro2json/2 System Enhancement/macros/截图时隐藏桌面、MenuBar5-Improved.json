@@ -1,0 +1,29 @@
+{
+	"UID": "DA3830F3-6EED-4B06-A977-62A85D5A8C10",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "use AppleScript version \"2.4\" -- Yosemite (10.10) or later\ruse scripting additions\r\r-- 截图增强v1.1.2\r-- 默认用户初始状态：显示桌面图标、显示菜单栏、自动隐藏程序坞（Dock）\r-- The Script will hide your Desktop and MenuBar\r-- It assume you set MenuBar **Not AutoHide** and the **Dock AutoHide** already.\r-- update: 添加注释（序号）\r\r-- 1. 隐藏其他所有app(Hide all other apps)\r-- tell application \"System Events\"\r-- keystroke (key code UInt16(4) using {option down, command down})\r-- end tell\r\r-- 2. 隐藏桌面图标(Hide Desktop Icon)\rdo shell script \"chflags -h hidden ~/Desktop/*\"\r\r-- 3. 自动隐藏和显示菜单栏(Toggle AutoHide MenuBar)\rtell application \"System Preferences\" to reveal the ¬\r\tanchor named \"main\" of ¬\r\tpane id \"com.apple.preference.general\"\rtell application \"System Events\" to tell ¬\r\tprocess \"System Preferences\" to tell ¬\r\twindow \"通用\" to tell ¬\r\tcheckbox \"自动隐藏和显示菜单栏\" to ¬\r\tperform action \"AXPress\"\rdelay 0.2\r\r-- 4. 调用系统快捷键 Shift + Command + 3截取全屏，下述1、2可以混用，请自由发挥\r-- use System Keyboard Shotcut：Shift + Command + 3\r-- 4.1 想区域截图请把key code 20 改为21（对应键盘上的4）或22（对应键盘上的5）\r-- Area screenshot: change key code 20 to 21（on Device it is 4） or 22（on Device it is 5）\r-- 4.2 想把截图截取到剪贴板，请在花括号内增加【control down,】\r-- Capture Screenshot to Clipboard，add 【control down,】 in curly braces\r\rtell application \"System Events\"\r\tkeystroke (key code 22 using {shift down, command down})\rend tell\r\r-- 延迟10秒，可自行更改(delay 10 seconds，you can change that at your wish)\rdelay 10\r\r-- 5. 显示桌面图标(Show Desktop Icon)\r-- Show Desktop Icon\rdo shell script \"chflags -h nohidden ~/Desktop/*\"\r\r-- 6. 自动隐藏和显示菜单栏(Toggle AutoHide MenuBar)\rtell application \"System Preferences\" to reveal the ¬\r\tanchor named \"main\" of ¬\r\tpane id \"com.apple.preference.general\"\rtell application \"System Events\" to tell ¬\r\tprocess \"System Preferences\" to tell ¬\r\twindow \"通用\" to tell ¬\r\tcheckbox \"自动隐藏和显示菜单栏\" to ¬\r\tperform action \"AXPress\"\rquit application \"System Preferences\"\r",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567419408.499704,
+	"ModificationDate": 574958681.64751,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 23,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "截图时隐藏桌面、MenuBar5-Improved"
+}

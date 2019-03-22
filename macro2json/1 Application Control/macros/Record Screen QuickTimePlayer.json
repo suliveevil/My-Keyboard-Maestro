@@ -1,0 +1,30 @@
+{
+	"UID": "993623B2-DA30-45FA-9822-78C2177181F7",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "activate application \"QuickTime Player\"\rtell application \"System Events\"\r\ttell process \"QuickTime Player\"\r\t\tset frontmost to true\r\t\t-- 选择菜单栏上的文件「菜单」中的「新建屏幕录制」\r\t\tclick menu item \"新建屏幕录制\" of menu \"文件\" of menu bar 1\r\t\t-- 等待「屏幕录制」窗口出现\r\t\trepeat until exists window \"屏幕录制\"\r\t\tend repeat\r\t\t-- 按下空格键\r\t\ttell application \"System Events\" to keystroke \" \"\r\tend tell\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567213637.131878,
+	"IsActive": false,
+	"ModificationDate": 573868909.419962,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 45,
+			"Modifiers": 4352,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Record Screen QuickTimePlayer"
+}

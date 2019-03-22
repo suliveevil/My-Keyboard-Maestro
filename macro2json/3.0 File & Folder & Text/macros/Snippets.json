@@ -1,0 +1,26 @@
+{
+	"UID": "24F8C4C1-81C4-4D13-839A-4F6C76F1C858",
+	"Actions": [
+		{
+			"MacroActionType": "Open1File",
+			"IsDefaultApplication": false,
+			"Path": "/allmyfiles/gitFiles/Snippets/",
+			"Application": {
+				"NewFile": "/System/Library/CoreServices/Finder.app",
+				"BundleIdentifier": "com.apple.finder",
+				"Name": "Finder"
+			}
+		}
+	],
+	"CreationDate": 567071968.311578,
+	"ModificationDate": 570476875.413335,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Snippets"
+}

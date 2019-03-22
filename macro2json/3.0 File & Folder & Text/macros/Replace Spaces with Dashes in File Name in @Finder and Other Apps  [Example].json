@@ -1,0 +1,156 @@
+{
+	"UID": "920F1748-E1AE-41B2-BDDC-E2B0AE59DE04",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Replace Spaces with Dashes in File Name in @Finder and Other Apps  [Example]",
+			"ActionName": "~~~ ReleaseNotes for  VER: 2.0    2019-03-02 ~~~",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4UDAAAKwAAAAEAAAAM\n\t\t\t\t\t\t\tDAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBWZXJkYW5h\n\t\t\t\t\t\t\tO1xmMVxmc3dpc3NcZmNo\n\t\t\t\t\t\t\tYXJzZXQwIEhlbHZldGlj\n\t\t\t\t\t\t\tYTt9CntcY29sb3J0Ymw7\n\t\t\t\t\t\t\tXHJlZDI1NVxncmVlbjI1\n\t\t\t\t\t\t\tNVxibHVlMjU1O1xyZWQy\n\t\t\t\t\t\t\tNVxncmVlbjI1XGJsdWUy\n\t\t\t\t\t\t\tNTtccmVkMjIwXGdyZWVu\n\t\t\t\t\t\t\tOFxibHVlNjtccmVkMjQy\n\t\t\t\t\t\t\tXGdyZWVuMTcwXGJsdWUy\n\t\t\t\t\t\t\tNDM7Cn0Ke1wqXGV4cGFu\n\t\t\t\t\t\t\tZGVkY29sb3J0Ymw7O1xj\n\t\t\t\t\t\t\tc2dlbmVyaWNyZ2JcYzk3\n\t\t\t\t\t\t\tNjZcYzk3NjZcYzk3NjY7\n\t\t\t\t\t\t\tXGNzZ2VuZXJpY3JnYlxj\n\t\t\t\t\t\t\tODYzMjlcYzMxMjVcYzIz\n\t\t\t\t\t\t\tNDQ7XGNzZ2VuZXJpY3Jn\n\t\t\t\t\t\t\tYlxjOTQ4NTVcYzY2NjM1\n\t\t\t\t\t\t\tXGM5NTIzNTsKfQpccGFy\n\t\t\t\t\t\t\tZFx0eDU2MFx0eDExMjBc\n\t\t\t\t\t\t\tdHgxNjgwXHR4MjI0MFx0\n\t\t\t\t\t\t\teDI4MDBcdHgzMzYwXHR4\n\t\t\t\t\t\t\tMzkyMFx0eDQ0ODBcdHg1\n\t\t\t\t\t\t\tMDQwXHR4NTYwMFx0eDYx\n\t\t\t\t\t\t\tNjBcdHg2NzIwXHBhcmRp\n\t\t\t\t\t\t\tcm5hdHVyYWxccGFydGln\n\t\t\t\t\t\t\taHRlbmZhY3RvcjAKClxm\n\t\t\t\t\t\t\tMFxmczI4IFxjZjAgQXV0\n\t\t\t\t\t\t\taG9yLkBKTWljaGFlbFRY\n\t\t\t\t\t\t\tXApcCioqClxiIFBVUlBP\n\t\t\t\t\t\t\tU0UKXGIwIDoqKlwKXAoq\n\t\t\t\t\t\t\tICoqClxiIFJlcGxhY2Ug\n\t\t\t\t\t\t\tQWxsIFNwYWNlcyBpbiBG\n\t\t\t\t\t\t\taWxlL0ZvbGRlciBOQU1F\n\t\t\t\t\t\t\tIHdpdGggRGFzaGVzClxi\n\t\t\t\t\t\t\tMCAqKlwKICAgKiBEZXNp\n\t\t\t\t\t\t\tZ25lZCB0byB3b3JrIHdp\n\t\t\t\t\t\t\tdGggRmluZGVyLCBQYXRo\n\t\t\t\t\t\t\tIEZpbmRlciAoUEYpLCBh\n\t\t\t\t\t\t\tbmQgRm9ya0xpZnRcCiAg\n\t\t\t\t\t\t\tICogQnV0IFByb3ZpZGVz\n\t\t\t\t\t\t\tIG9wdGlvbiBmb3Igb3Ro\n\t\t\t\t\t\t\tZXIgYXBwc1wKXAoqKgpc\n\t\t\t\t\t\t\tYiBSRVFVSVJFUwpcYjAg\n\t\t\t\t\t\t\tOioqXApcCjEuICoqS00g\n\t\t\t\t\t\t\tOC4yKyoqXAoyLiAqKm1h\n\t\t\t\t\t\t\tY09TIDEwLjExLjYgKEVs\n\t\t\t\t\t\t\tIENhcGl0YW4pKipcClwK\n\t\t\t\t\t\t\tKioKXGIgXGNmMiBIb3cg\n\t\t\t\t\t\t\tVG8gVXNlKipcClwKXHBh\n\t\t\t\t\t\t\tcmRcdHg1NjBcdHgxMTIw\n\t\t\t\t\t\t\tXHR4MTY4MFx0eDIyNDBc\n\t\t\t\t\t\t\tdHgyODAwXHR4MzM2MFx0\n\t\t\t\t\t\t\teDM5MjBcdHg0NDgwXHR4\n\t\t\t\t\t\t\tNTA0MFx0eDU2MDBcdHg2\n\t\t\t\t\t\t\tMTYwXHR4NjcyMFxwYXJk\n\t\t\t\t\t\t\taXJuYXR1cmFsXHBhcnRp\n\t\t\t\t\t\t\tZ2h0ZW5mYWN0b3IwCgpc\n\t\t\t\t\t\t\tYjAgXGNmMiAxLiBTZWxl\n\t\t\t\t\t\t\tY3QgYSBGaWxlIG9yIEZv\n\t\t\t\t\t\t\tbGRlciBpbiBGaW5kZXIs\n\t\t\t\t\t\t\tIFBhdGggRmluZGVyLCBv\n\t\t\t\t\t\t\tciBGb3JrTGlmdFwKICAg\n\t\t\t\t\t\t\tKiBPUiwgc2VsZWN0IHRl\n\t\t\t\t\t\t\teHQgb2YgRmlsZS9Gb2xk\n\t\t\t\t\t\t\tZXIgTkFNRSBpbiBhbnkg\n\t\t\t\t\t\t\tb3RoZXIgQXBwXAoyLiBU\n\t\t\t\t\t\t\tcmlnZ2VyIHRoaXMgbWFj\n\t\t\t\t\t\t\tcm8uXAogICAqIEl0IHdp\n\t\t\t\t\t\t\tbGwgdGhlbiB0ZXN0IGZv\n\t\t\t\t\t\t\tciBzdXBwb3J0ZWQgYXBw\n\t\t\t\t\t\t\tLCBhbmQgbWFrZXMgdGhl\n\t\t\t\t\t\t\tIGNoYW5nZXNcCiAgICog\n\t\t\t\t\t\t\tSUYgT3RoZXIgQXBwLCB0\n\t\t\t\t\t\t\taGVuIGFuIEFsZXJ0IHdp\n\t\t\t\t\t\t\tbGwgYmUgc2hvd24gYWxs\n\t\t\t\t\t\t\tb3dpbmcgdXNlciB0byBz\n\t\t\t\t\t\t\tZWxlY3QgdGhlIFRleHQg\n\t\t\t\t\t\t\tdG8gYmUgY2hhbmdlZC5c\n\t\t\t\t\t\t\tClxwYXJkXHR4NTYwXHR4\n\t\t\t\t\t\t\tMTEyMFx0eDE2ODBcdHgy\n\t\t\t\t\t\t\tMjQwXHR4MjgwMFx0eDMz\n\t\t\t\t\t\t\tNjBcdHgzOTIwXHR4NDQ4\n\t\t\t\t\t\t\tMFx0eDUwNDBcdHg1NjAw\n\t\t\t\t\t\t\tXHR4NjE2MFx0eDY3MjBc\n\t\t\t\t\t\t\tcGFyZGlybmF0dXJhbFxw\n\t\t\t\t\t\t\tYXJ0aWdodGVuZmFjdG9y\n\t\t\t\t\t\t\tMApcY2YwIFwKKioKXGIg\n\t\t\t\t\t\t\tTUFDUk8gU0VUVVAKXGIw\n\t\t\t\t\t\t\tICoqXApcCiogKipDYXJl\n\t\t\t\t\t\t\tZnVsbHkgcmV2aWV3IHRo\n\t\t\t\t\t\t\tZSBSZWxlYXNlIE5vdGVz\n\t\t\t\t\t\t\tIGFuZCB0aGUgTWFjcm8g\n\t\t\t\t\t\t\tQWN0aW9ucyoqXAogICog\n\t\t\t\t\t\t\tTWFrZSBzdXJlIHlvdSB1\n\t\t\t\t\t\t\tbmRlcnN0YW5kIHdoYXQg\n\t\t\t\t\t\t\tdGhlIE1hY3JvIHdpbGwg\n\t\t\t\t\t\t\tZG8uICBcCiAgKiBZb3Ug\n\t\t\t\t\t\t\tYXJlIHJlc3BvbnNpYmxl\n\t\t\t\t\t\t\tIGZvciBydW5uaW5nIHRo\n\t\t\t\t\t\t\tZSBNYWNybywgbm90IG1l\n\t\t\t\t\t\t\tLiAgClxmMVxmczI0ID8/\n\t\t\t\t\t\t\tClxmMFxmczI4IFwKLlwK\n\t\t\t\t\t\t\tMS4gQXNzaWduIGEgVHJp\n\t\t\t\t\t\t\tZ2dlciB0byB0aGlzIG1h\n\t\t\t\t\t\t\tcm8uLlwKMi4gTW92ZSB0\n\t\t\t\t\t\t\taGlzIG1hY3JvIHRvIGEg\n\t\t\t\t\t\t\tTWFjcm8gR3JvdXAgdGhh\n\t\t\t\t\t\t\tdCBpcyBvbmx5IEFjdGl2\n\t\t\t\t\t\t\tZSB3aGVuIHlvdSBuZWVk\n\t\t\t\t\t\t\tIHRoaXMgTWFjcm8uXAog\n\t\t\t\t\t\t\tICAqIE1vc3QgbGlrZWx5\n\t\t\t\t\t\t\tIHRoaXMgd2lsbCBiZSBh\n\t\t\t\t\t\t\tIE1HIGZvciBGaW5kZXIs\n\t\t\t\t\t\t\tIFBhdGggRmluZGVyLCBh\n\t\t\t\t\t\t\tbmQvb3IgRm9ya0xpZnRc\n\t\t\t\t\t\t\tCiAgICogSWYgeW91IHdh\n\t\t\t\t\t\t\tbnQgaXQgdG8gd29yayB3\n\t\t\t\t\t\t\taXRoIGFueSBhcHAsIHRo\n\t\t\t\t\t\t\tZW4gcHV0IGluIGEgR2xv\n\t\t\t\t\t\t\tYmFsIE1HXAozLiBFTkFC\n\t\t\t\t\t\t\tTEUgdGhpcyBNYWNyby5c\n\t\t\t\t\t\t\tCi5cCiogKioKXGIgXGNm\n\t\t\t\t\t\t\tMyBSRVZJRVcvQ0hBTkdF\n\t\t\t\t\t\t\tIFRIRSBGT0xMT1dJTkcg\n\t\t\t\t\t\t\tTUFDUk8gQUNUSU9OUwpc\n\t\t\t\t\t\t\tYjAgXGNmMCA6KipcCihh\n\t\t\t\t\t\t\tbGwgc2hvd24gaW4gdGhl\n\t\t\t\t\t\t\tIG1hZ2VudGEgY29sb3Ip\n\t\t\t\t\t\t\tXAogICogU1dJVENIOiAg\n\t\t\t\t\t\t\tQmFzZWQgb24gRnJvbnRN\n\t\t\t\t\t\t\tb3N0IEFwcCBOQU1FXApc\n\t\t\t\t\t\t\tClRBR1M6IEBGaW5kZXIg\n\t\t\t\t\t\t\tQFBhdGhGaW5kZXIgQEZv\n\t\t\t\t\t\t\tcmtMaWZ0IEBGaWxlcyBA\n\t\t\t\t\t\t\tRm9sZGVycyBAUmVuYW1l\n\t\t\t\t\t\t\tXApcClVTRVIgU0VUVElO\n\t\t\t\t\t\t\tR1M6XApcCipcJ2EwQW55\n\t\t\t\t\t\t\tIEFjdGlvbiBpbiBfXGNm\n\t\t\t\t\t\t\tNCBtYWdlbnRhIGNvbG9y\n\t\t\t\t\t\t\tXGNmMCBfIGlzIGRlc2ln\n\t\t\t\t\t\t\tbmVkIHRvIGJlIGNoYW5n\n\t\t\t\t\t\t\tZWQgYnkgZW5kLXVzZXJc\n\t\t\t\t\t\t\tClwKQUNUSU9OIENPTE9S\n\t\t\t\t\t\t\tIENPREVTXApcCipcJ2Ew\n\t\t\t\t\t\t\tVG8gZmFjaWxpdGF0ZSB0\n\t\t\t\t\t\t\taGUgcmVhZGluZywgY3Vz\n\t\t\t\t\t\t\tdG9taXppbmcsIGFuZCBt\n\t\t\t\t\t\t\tYWludGVuYW5jZSBvZiB0\n\t\t\t\t\t\t\taGlzIG1hY3JvLFwKXCdh\n\t\t\t\t\t\t\tMFwnYTBcJ2EwXCdhMFwn\n\t\t\t\t\t\t\tYTBcJ2Ewa2V5IEFjdGlv\n\t\t\t\t\t\t\tbnMgYXJlIGNvbG9yZWQg\n\t\t\t\t\t\t\tYXMgZm9sbG93czpcCipc\n\t\t\t\t\t\t\tJ2EwR1JFRU5cJ2EwXCdh\n\t\t\t\t\t\t\tMFwnYTAtLSBLZXkgQ29t\n\t\t\t\t\t\t\tbWVudHMgZGVzaWduZWQg\n\t\t\t\t\t\t\tdG8gaGlnaGxpZ2h0IG1h\n\t\t\t\t\t\t\taW4gc2VjdGlvbnMgb2Yg\n\t\t\t\t\t\t\tbWFjcm9cCipcJ2EwTUFH\n\t\t\t\t\t\t\tRU5UQSAtLSBBY3Rpb25z\n\t\t\t\t\t\t\tIGRlc2lnbmVkIHRvIGJl\n\t\t\t\t\t\t\tIGN1c3RvbWl6ZWQgYnkg\n\t\t\t\t\t\t\tdXNlclwKKlwnYTBZRUxM\n\t\t\t\t\t\t\tT1dcJ2EwXCdhMC0tIFBy\n\t\t\t\t\t\t\taW1hcnkgQWN0aW9ucyAo\n\t\t\t\t\t\t\tdXN1YWxseSB0aGUgbWFp\n\t\t\t\t\t\t\tbiBwdXJwb3NlIG9mIHRo\n\t\t\t\t\t\t\tZSBtYWNybylcCipcJ2Ew\n\t\t\t\t\t\t\tT1JBTkdFXCdhMFwnYTAt\n\t\t\t\t\t\t\tLSBBY3Rpb25zIHRoYXQg\n\t\t\t\t\t\t\tcGVybWFuZW50bHkgZGVz\n\t\t\t\t\t\t\tdHJveSBWYXJpYWJsZXMg\n\t\t\t\t\t\t\tb3IgQ2xpcGJvYXJkcyxc\n\t\t\t\t\t\t\tCk9SIElGL1RIRU4gYW5k\n\t\t\t\t\t\t\tIFBBVVNFIEFjdGlvbnNc\n\t\t\t\t\t\t\tClwKXAoqKgpcYiBcY2Yz\n\t\t\t\t\t\t\tIFVTRSBBVCBZT1VSIE9X\n\t\t\t\t\t\t\tTiBSSVNLClxiMCBcY2Yw\n\t\t\t\t\t\t\tICoqXApcCiogV2hpbGUg\n\t\t\t\t\t\t\tSSBoYXZlIGdpdmVuIHRo\n\t\t\t\t\t\t\taXMgbGltaXRlZCB0ZXN0\n\t\t\t\t\t\t\taW5nLCBhbmQgdG8gdGhl\n\t\t\t\t\t\t\tIGJlc3Qgb2YgbXkga25v\n\t\t\t\t\t\t\td2xlZGdlIHdpbGwgZG8g\n\t\t\t\t\t\t\tbm8gaGFybSwgSSBjYW5u\n\t\t\t\t\t\t\tb3QgZ3VhcmFudGVlIGl0\n\t\t\t\t\t\t\tLlwKKiBJZiB5b3UgaGF2\n\t\t\t\t\t\t\tZSBhbnkgZG91YnRzIG9y\n\t\t\t\t\t\t\tIHF1ZXN0aW9uczpcCiAg\n\t\t\t\t\t\t\tKiAqKkFzayBmaXJzdCoq\n\t\t\t\t\t\t\tXAogICogVHVybiBvbiB0\n\t\t\t\t\t\t\taGUgS00gRGVidWdnZXIg\n\t\t\t\t\t\t\tZnJvbSB0aGUgS00gU3Rh\n\t\t\t\t\t\t\tdHVzIE1lbnUsIGFuZCBz\n\t\t\t\t\t\t\tdGVwIHRocm91Z2ggdGhl\n\t\t\t\t\t\t\tIG1hY3JvLCBtYWtpbmcg\n\t\t\t\t\t\t\tc3VyZSB5b3UgdW5kZXJz\n\t\t\t\t\t\t\tdGFuZCB3aGF0IGl0IGlz\n\t\t\t\t\t\t\tIGRvaW5nIHdpdGggZWFj\n\t\t\t\t\t\t\taCBBY3Rpb24uXAp9AQAA\n\t\t\t\t\t\t\tACMAAAABAAAABwAAAFRY\n\t\t\t\t\t\t\tVC5ydGYQAAAA+fx6XLYB\n\t\t\t\t\t\t\tAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Switch",
+			"ActionName": "SWITCH:  Based on FrontMost App NAME",
+			"Source": "Text",
+			"ActionColor": "Magenta",
+			"IsDisclosed": false,
+			"Text": "%Application%1%",
+			"CaseEntries": [
+				{
+					"TestValue": "访达",
+					"Actions": [
+						{
+							"MacroActionType": "SelectMenuItem",
+							"Menu": [
+								"文件",
+								"重新命名"
+							],
+							"TargetApplication": {
+								"NewFile": "/System/Library/CoreServices/Finder.app",
+								"BundleIdentifier": "com.apple.finder",
+								"Name": "Finder"
+							},
+							"TargetingType": "Specific"
+						}
+					],
+					"ConditionType": "Is"
+				},
+				{
+					"TestValue": "ForkLift",
+					"Actions": [
+						{
+							"MacroActionType": "SelectMenuItem",
+							"Menu": [
+								"Commands",
+								"Rename"
+							],
+							"TargetApplication": {
+								"NewFile": "/Applications/Setapp/ForkLift.app",
+								"BundleIdentifier": "com.binarynights.forklift-setapp",
+								"Name": "ForkLift"
+							},
+							"TargetingType": "Specific"
+						}
+					],
+					"ConditionType": "Is"
+				},
+				{
+					"TestValue": "ADD_OTHER_APP_NAMES_HERE",
+					"Actions": [],
+					"ConditionType": "Is"
+				},
+				{
+					"TestValue": "",
+					"Actions": [
+						{
+							"MacroActionType": "Alert",
+							"Title": "%ExecutingMacro%",
+							"ActionColor": "Orange",
+							"TimeOutAbortsMacro": true,
+							"Text": "This Macro is designed to work with Finder, Path Finder, and ForkLift.\nThe FrontMost app is %Application%1%\n\nTo use with this App, you must first select the text of the File (or Folder) Name, but NOT the extension, and then click on the \"Continue\" button.\n\nOtherwise, click \"Stop\" to CANCEL this Macro",
+							"SoundPath": "/System/Library/Sounds/Glass.aiff"
+						},
+						{
+							"MacroActionType": "SetVariableToText",
+							"IsDisclosed": false,
+							"Variable": "Local__OtherAppFrontMost",
+							"Text": "YES"
+						}
+					],
+					"ConditionType": "Otherwise"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Pause",
+			"ActionName": "PAUSE:  0.15 sec to Ensure App has Time to Select Text of File Name",
+			"Time": "0.15",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"ActionName": "Replace All Spaces with Dash",
+			"Action": "IgnoreCaseRegEx",
+			"Search": " ",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Source": "Clipboard",
+			"Replace": "-"
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Paste",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "IF:  Other App is FrontMost, do NOT Type RETURN",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "Local__OtherAppFrontMost",
+						"VariableConditionType": "IsNot",
+						"VariableValue": "YES",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 36,
+					"Modifiers": 0
+				}
+			]
+		}
+	],
+	"CreationDate": 573255126.424798,
+	"IsActive": false,
+	"ModificationDate": 574825414.637364,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 122,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Replace Spaces with Dashes in File Name in @Finder and Other Apps  [Example]"
+}

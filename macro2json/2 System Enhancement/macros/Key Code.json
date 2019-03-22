@@ -1,0 +1,23 @@
+{
+	"UID": "A2569073-5317-4161-927E-9CC46ABC4B73",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteJavaScriptForAutomation",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "///使用方法\nfunc DCPostCommandAndKey(keyCode:CGKeyCode){\n        \n        let src = CGEventSourceCreate(CGEventSourceStateID.HIDSystemState)\n\n        let keyDown = CGEventCreateKeyboardEvent(src, keyCode, true)\n        let keyUp = CGEventCreateKeyboardEvent(src, keyCode, false)\n        let loc = CGEventTapLocation.CGHIDEventTap\n        CGEventPost(loc, keyDown)\n        CGEventPost(loc, keyUp)\n}",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568512063.877783,
+	"IsActive": false,
+	"ModificationDate": 568512088.833657,
+	"Triggers": [],
+	"Name": "Key Code"
+}

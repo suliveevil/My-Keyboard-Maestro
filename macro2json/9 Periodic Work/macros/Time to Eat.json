@@ -1,0 +1,96 @@
+{
+	"UID": "984FE9A1-4B8A-4B20-BB17-D58B2487873B",
+	"Actions": [
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "yummy",
+			"Subtitle": "Time to Eat Something",
+			"SoundName": ""
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.2",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "PlaySound",
+			"Volume": 50,
+			"TimeOutAbortsMacro": true,
+			"Path": "/System/Library/Sounds/Glass.aiff",
+			"DeviceID": "SOUNDEFFECTS"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "30",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 567048947.7261,
+	"ModificationDate": 574910543.505531,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 50,
+			"RepeatTime": 60,
+			"TimeHour": 6,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Time",
+			"MacroTriggerType": "Time"
+		},
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 10,
+			"RepeatTime": 60,
+			"TimeHour": 12,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Time",
+			"MacroTriggerType": "Time"
+		},
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 25,
+			"RepeatTime": 60,
+			"TimeHour": 18,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Time",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "Time to Eat"
+}

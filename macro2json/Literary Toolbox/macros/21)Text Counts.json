@@ -1,0 +1,101 @@
+{
+	"UID": "595B51F0-330C-46C9-8B97-D7D3E494946C",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsNotEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Is",
+						"MenuTitle": "Copy"
+					},
+					{
+						"ApplicationConditionType": "NotActive",
+						"ConditionType": "Application",
+						"Application": {
+							"BundleIdentifier": "com.adobe.InDesign",
+							"Name": "Adobe InDesign CS5"
+						}
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 0,
+					"Modifiers": 256
+				}
+			]
+		},
+		{
+			"MacroActionType": "ClipboardSwitcherMacroAction",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"RedundandDisplayName": "myTextTemp",
+			"TimeOutAbortsMacro": true,
+			"Name": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "RemoveStyles",
+			"Source": "NamedClipboard",
+			"IsDisclosed": false,
+			"NamedClipboardName": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66",
+			"RedundandDisplayName": "myTextTemp"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "LocalText",
+			"Text": "%NamedClipboard%myTextTemp%"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"Variable": "LocalText",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "#!/usr/bin/perl\n\nuse Lingua::EN::Fathom;\n\n$selection = $ENV{KMVAR_LocalText};\n\nmy $text = Lingua::EN::Fathom->new();\n$text->analyse_block($selection,1);\n\n$num_chars = $text->num_chars;\n$num_words = $text->num_words;\n$num_sentences = $text->num_sentences;\n$num_paragraphs = $text->num_paragraphs;\n\n$num_chars = commify($num_chars);\n$num_words = commify($num_words);\n$num_sentences = commify($num_sentences);\n$num_paragraphs = commify($num_paragraphs);\n\nprint \"<table border=0 cellpadding=3 cellspacing=0 width=80% align=\\\"center\\\">\\n\";\nprint \"<tr><td align=\\\"right\\\"><b>$num_chars</b></td><td>Characters</td></tr>\\n\";\nprint \"<tr><td colspan=\\\"2\\\"><hr></td></tr>\";\nprint \"<tr><td align=\\\"right\\\"><b>$num_words</b></td><td>Words</td></tr>\\n\";\nprintf(\"<tr><td align=\\\"right\\\"><b>%3.2f</b></td><td>Syllables per Word</td></tr>\\n\", $text->syllables_per_word);\nprintf(\"<tr><td align=\\\"right\\\"><b>%2.2f%</b></td><td>Complex Words</td></tr>\\n\", $text->percent_complex_words);\nprint \"<tr><td colspan=\\\"2\\\"><hr></td></tr>\";\nprintf \"<tr><td align=\\\"right\\\"><b>$num_sentences</b></td><td>Sentences</td></tr>\\n\";\nprintf(\"<tr><td align=\\\"right\\\"><b>%3.2f</b></td><td>Words per Sentence</td></tr>\\n\", $text->words_per_sentence);\nprint \"<tr><td colspan=\\\"2\\\"><hr></td></tr>\";\nprint \"<tr><td align=\\\"right\\\"><b>$num_paragraphs</b></td><td>Paragraphs</td></tr>\\n\";\nprintf(\"<tr><td align=\\\"right\\\"><b>%3.2f</b></td><td>Sentences per Paragraph</td></tr>\\n\", $text->num_sentences/$text->num_paragraphs);\nprint \"</table>\\n\";\n\nsub commify {\n\tmy $citations = reverse $_[0];\n\t$citations =~ s/(\\d\\d\\d)(?=\\d)(?!\\d*\\.)/$1,/g;\n\treturn scalar reverse $citations;\n}\n",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "CustomPrompt",
+			"IsDisclosed": false,
+			"Resizable": true,
+			"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>L I T E R A R Y &nbsp T O O L B O X</title>\n\t<style type=\"text/css\">\nbody{background-color:black;font:.80em \"Lucida Grande\",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:66%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}span {background-color: #36aac2;color:white}\n\t</style> \n</head>\n<body data-kmwindow=\"SCREEN(Main,Left,46%),SCREEN(Main,Top,20%),380,310\">\n<div id=\"title\">\n\t<b>TEXT COUNTS</b>\n</div>\n<div id=\"text\">\n<script>\n\tdocument.write(window.KeyboardMaestro.GetVariable('LocalText'))\n</script>\n</div><script>\nfunction KMInit() {\n\tdocument.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');\n}\n</script>\n</body>\n</html>\n",
+			"TimeOutAbortsMacro": true,
+			"Floating": true,
+			"UseText": true
+		}
+	],
+	"CreationDate": 562976920.254392,
+	"ModificationDate": 565401408.868787,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 7,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "21)Text Counts"
+}

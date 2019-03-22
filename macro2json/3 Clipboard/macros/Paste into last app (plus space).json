@@ -1,0 +1,52 @@
+{
+	"UID": "FCCB2CF9-8935-4CB4-8C14-F5BF19DAC004",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 8,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "SwitchToLastApplication",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 9,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"IsDisclosed": false,
+			"Text": " "
+		},
+		{
+			"MacroActionType": "SwitchToLastApplication",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 566900676.561096,
+	"IsActive": false,
+	"ModificationDate": 567379982.886922,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 34,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Paste into last app (plus space) ",
+	"CustomIconData": "KMEP-ClipboardAction"
+}

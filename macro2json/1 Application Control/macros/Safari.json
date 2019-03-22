@@ -1,0 +1,28 @@
+{
+	"UID": "45E8F35A-6126-4BB3-A827-D2AF35E0FD0A",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			}
+		}
+	],
+	"CreationDate": 568078166.745634,
+	"ModificationDate": 574939298.730636,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 19,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Safari"
+}

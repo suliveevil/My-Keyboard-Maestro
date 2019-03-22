@@ -1,0 +1,29 @@
+{
+	"UID": "2739D667-8D1F-4A47-BCC9-152DDFB1F5CB",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "系统自带功能",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7KAQAAKwAAAAEAAADC\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZuaWxcZmNo\n\t\t\t\t\t\t\tYXJzZXQxMzQgLlBpbmdG\n\t\t\t\t\t\t\tYW5nU0MtUmVndWxhcjt9\n\t\t\t\t\t\t\tCntcY29sb3J0Ymw7XHJl\n\t\t\t\t\t\t\tZDI1NVxncmVlbjI1NVxi\n\t\t\t\t\t\t\tbHVlMjU1O1xyZWQwXGdy\n\t\t\t\t\t\t\tZWVuMFxibHVlMDt9Cntc\n\t\t\t\t\t\t\tKlxleHBhbmRlZGNvbG9y\n\t\t\t\t\t\t\tdGJsOztcY3NzcmdiXGMw\n\t\t\t\t\t\t\tXGMwXGMwXGNuYW1lIHRl\n\t\t\t\t\t\t\teHRDb2xvcjt9ClxwYXJk\n\t\t\t\t\t\t\tXHR4NTYwXHR4MTEyMFx0\n\t\t\t\t\t\t\teDE2ODBcdHgyMjQwXHR4\n\t\t\t\t\t\t\tMjgwMFx0eDMzNjBcdHgz\n\t\t\t\t\t\t\tOTIwXHR4NDQ4MFx0eDUw\n\t\t\t\t\t\t\tNDBcdHg1NjAwXHR4NjE2\n\t\t\t\t\t\t\tMFx0eDY3MjBccGFyZGly\n\t\t\t\t\t\t\tbmF0dXJhbFxwYXJ0aWdo\n\t\t\t\t\t\t\tdGVuZmFjdG9yMAoKXGYw\n\t\t\t\t\t\t\tXGZzMjYgXGNmMiBcJ2Ix\n\t\t\t\t\t\t\tXCdiZVwnYmRcJ2M1XCdi\n\t\t\t\t\t\t\tMVwnYmVcJ2Q2XCdiYlwn\n\t\t\t\t\t\t\tY2FcJ2M3XCdjMVwnZWRc\n\t\t\t\t\t\t\tJ2QyXCdiYlwnZDZcJ2Q2\n\t\t\t\t\t\t\tXCdjYVwnYjVcJ2NmXCdk\n\t\t\t\t\t\t\tNlwnYjdcJ2JkXCdjYVwn\n\t\t\t\t\t\t\tYmR9AQAAACMAAAABAAAA\n\t\t\t\t\t\t\tBwAAAFRYVC5ydGYQAAAA\n\t\t\t\t\t\t\tT54wXLYBAAAAAAAAAAAA\n\t\t\t\t\t\t\tAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Text": "current_value=$(defaults read com.apple.finder AppleShowAllFiles)\n\nif [ $current_value = \"TRUE\" ]\n\nthen\n\n    defaults write com.apple.finder AppleShowAllFiles FALSE\n\nelse\n\n    defaults write com.apple.finder AppleShowAllFiles TRUE\n\nfi\n\n    killall Finder",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568382777.510866,
+	"IsActive": false,
+	"ModificationDate": 568382971.644965,
+	"Triggers": [],
+	"Name": "ToggleFileHideShow"
+}

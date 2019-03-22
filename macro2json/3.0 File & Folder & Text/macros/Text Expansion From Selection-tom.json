@@ -1,0 +1,291 @@
+{
+	"UID": "F30A8497-EBE6-4736-9FEE-C22A08AFF430",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Info",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7HAQAAKwAAAAEAAAC/\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBIZWx2ZXRp\n\t\t\t\t\t\t\tY2FOZXVlO30Ke1xjb2xv\n\t\t\t\t\t\t\tcnRibDtccmVkMjU1XGdy\n\t\t\t\t\t\t\tZWVuMjU1XGJsdWUyNTU7\n\t\t\t\t\t\t\tXHJlZDBcZ3JlZW4wXGJs\n\t\t\t\t\t\t\tdWUwO30Ke1wqXGV4cGFu\n\t\t\t\t\t\t\tZGVkY29sb3J0Ymw7O1xj\n\t\t\t\t\t\t\tc2dyYXlcYzA7fQpccGFy\n\t\t\t\t\t\t\tZFx0eDU2MFx0eDExMjBc\n\t\t\t\t\t\t\tdHgxNjgwXHR4MjI0MFx0\n\t\t\t\t\t\t\teDI4MDBcdHgzMzYwXHR4\n\t\t\t\t\t\t\tMzkyMFx0eDQ0ODBcdHg1\n\t\t\t\t\t\t\tMDQwXHR4NTYwMFx0eDYx\n\t\t\t\t\t\t\tNjBcdHg2NzIwXHBhcmRp\n\t\t\t\t\t\t\tcm5hdHVyYWxccGFydGln\n\t\t\t\t\t\t\taHRlbmZhY3RvcjAKClxm\n\t\t\t\t\t\t\tMFxmczI2IFxjZjIgS004\n\t\t\t\t\t\t\tIG9ubHkuXApcCkZvciBv\n\t\t\t\t\t\t\tbGRlciBLTSB2ZXJzaW9u\n\t\t\t\t\t\t\tcyBzZWUgaHR0cHM6Ly9m\n\t\t\t\t\t\t\tb3J1bS5rZXlib2FyZG1h\n\t\t\t\t\t\t\tZXN0cm8uY29tL3QvY3Jl\n\t\t\t\t\t\t\tYXRlLXRleHQtZXhwYW5z\n\t\t\t\t\t\t\taW9uLWZyb20tc2VsZWN0\n\t\t\t\t\t\t\taW9uLW1hY3JvLzMzMjl9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAlWrB\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "nteDefaultPrefix",
+			"Text": ";"
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "nteExpansion",
+			"Text": "%SystemClipboard%"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Some filtering of the macro name and expansion display",
+			"Actions": [
+				{
+					"MacroActionType": "SearchReplace",
+					"Action": "IgnoreCaseRegEx",
+					"Search": "\\R",
+					"Source": "Variable",
+					"Destination": "Variable",
+					"Variable": "nteExpansion",
+					"Replace": "⏎",
+					"DestinationVariable": "nteExpansionDisplay"
+				},
+				{
+					"MacroActionType": "SearchReplace",
+					"Action": "IgnoreCaseRegEx",
+					"Search": "\\t",
+					"Source": "Variable",
+					"Variable": "nteExpansionDisplay",
+					"Replace": " "
+				},
+				{
+					"MacroActionType": "Substring",
+					"Delete": false,
+					"Second": "4",
+					"First": "1000",
+					"Source": "Variable",
+					"StringRangeType": "To",
+					"Variable": "nteExpansionDisplay"
+				},
+				{
+					"MacroActionType": "Substring",
+					"Delete": false,
+					"Second": "4",
+					"First": "60",
+					"Destination": "Variable",
+					"Source": "Variable",
+					"StringRangeType": "To",
+					"Variable": "nteExpansionDisplay",
+					"DestinationVariable": "nteMacroName"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "EncodeHTMLEntities",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "nteExpansion"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "nte__Match after any character",
+					"Text": "0|1"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "nte__Match after any character",
+						"VariableConditionType": "StartsWith",
+						"VariableValue": "1",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "nte__Match after any character",
+					"Text": "1|0"
+				}
+			]
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "New Text Expansion:",
+			"Prompt": "%Variable% nteExpansionDisplay%\\n\\nPlease enter the abbreviation trigger:",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "nte__Abbreviation",
+					"Default": "%Variable%nteDefaultPrefix%"
+				},
+				{
+					"Variable": "nte__Behavior",
+					"Default": "Case sensitive|Case insensitive|Case affects expansion|Regular expression"
+				},
+				{
+					"Variable": "nte__Match after any character",
+					"Default": "|%Variable%nte__Match after any character%"
+				},
+				{
+					"Variable": "nte__Insert by pasting",
+					"Default": "0|1"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Switch",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "nte__Insert by pasting",
+			"CaseEntries": [
+				{
+					"TestValue": "1",
+					"Actions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "nteType",
+							"Text": "ByPasting"
+						}
+					],
+					"ConditionType": "Is"
+				},
+				{
+					"TestValue": "",
+					"Actions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "nteType",
+							"Text": "ByTyping"
+						}
+					],
+					"ConditionType": "Otherwise"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Switch",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "nte__Match after any character",
+			"CaseEntries": [
+				{
+					"TestValue": "1",
+					"Actions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "nteWordBreak",
+							"Text": "false"
+						}
+					],
+					"ConditionType": "Is"
+				},
+				{
+					"TestValue": "",
+					"Actions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "nteWordBreak",
+							"Text": "true"
+						}
+					],
+					"ConditionType": "Otherwise"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Switch",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "nte__Behavior",
+			"CaseEntries": [
+				{
+					"TestValue": "Case insensitive",
+					"Actions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "nteCase",
+							"Text": "Ignore"
+						}
+					],
+					"ConditionType": "Is"
+				},
+				{
+					"TestValue": "Case affects expansion",
+					"Actions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "nteCase",
+							"Text": "Remember"
+						}
+					],
+					"ConditionType": "Is"
+				},
+				{
+					"TestValue": "Regular expression",
+					"Actions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "nteCase",
+							"Text": "Match"
+						}
+					],
+					"ConditionType": "Is"
+				},
+				{
+					"TestValue": "",
+					"Actions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "nteCase",
+							"Text": ""
+						}
+					],
+					"ConditionType": "Otherwise"
+				}
+			]
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "nteMacroGroupID",
+			"Text": "%ExecutingMacroGroupUUID%"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "nteMacroID",
+			"Text": "%RandomUUID%"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "property XMLOpening : \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\n<!DOCTYPE plist PUBLIC \\\"-//Apple//DTD PLIST 1.0//EN\\\" \\\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\\\">\n<plist version=\\\"1.0\\\">\n<dict>\"\n\nproperty XMLClosing : \"</dict>\n</plist>\n\"\n\ntell application \"Keyboard Maestro Engine\"\n\tset groupID to getvariable \"nteMacroGroupID\"\n\tset macroName to getvariable \"nteMacroName\"\n\tset macroID to getvariable \"nteMacroID\"\n\tset theExpansion to getvariable \"nteExpansion\"\n\tset theAbbreviation to getvariable \"nte__Abbreviation\"\n\tset theType to getvariable \"nteType\"\n\tset wordBreak to getvariable \"nteWordBreak\"\n\tset theCase to getvariable \"nteCase\"\nend tell\n\nset theAction to XMLOpening & \"\n\t<key>Action</key>\n\t<string>\" & theType & \"</string>\n\t<key>MacroActionType</key>\n\t<string>InsertText</string>\n\t<key>TargetApplication</key>\n\t<dict/>\n\t<key>TargetingType</key>\n\t<string>Front</string>\n\t<key>Text</key>\n\t<string>\" & theExpansion & \"</string>\n\" & XMLClosing\n\nset theTrigger to XMLOpening & \"\n\t<key>Case</key>\n\t<string>\" & theCase & \"</string>\n\t<key>MacroTriggerType</key>\n\t<string>TypedString</string>\n\t<key>OnlyAfterWordBreak</key>\n\t<\" & wordBreak & \"/>\n\t<key>SimulateDeletes</key>\n\t<true/>\n\t<key>TypedString</key>\n\t<string>\" & theAbbreviation & \"</string>\n\" & XMLClosing\n\ntell application \"Keyboard Maestro\"\n\ttell macro group id groupID\n\t\tmake new macro with properties {id:macroID, name:macroName}\n\tend tell\n\ttell macro id macroID\n\t\tmake new action with properties {xml:theAction}\n\t\tmake new trigger with properties {xml:theTrigger}\n\tend tell\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 527517737.941687,
+	"IsActive": false,
+	"ModificationDate": 573419227.095166,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 17,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Text Expansion From Selection-tom"
+}

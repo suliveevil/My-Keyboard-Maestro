@@ -1,0 +1,54 @@
+{
+	"UID": "A8563A5D-A919-4FE7-B161-EDE5CF5AA553",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayLarge",
+			"Text": "Has been triggered remotely.",
+			"IsActive": false
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "How Long?",
+			"Prompt": "Enter the number of minutes",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "Minutes",
+					"Default": "10"
+				}
+			]
+		},
+		{
+			"MacroActionType": "CustomPrompt",
+			"TimeOutAbortsMacro": true,
+			"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>Timer</title>\n\t<style type=\"text/css\">\n\nbody {\n}\nh1 {\n margin-top:0;\n margin-bottom:0;\n}\n\n\t</style> \n</head>\n<body style=\"background: #d4cbff\" data-kmwindowid=\"Archive MD5 Tamper\" data-kmwindow=\"SCREEN(Main,MidX) -940,SCREEN(Main,MidY)-800,120,55\">\n\n\t<div onclick=\"javascript:window.close()\">\n\t\t<h1 id=\"clock\" style=\"text-align: center; vertical-align: middle;\">Time</h1>\n\t</div>\n\n<script>\n\nwindow.endTime = Date.parse(new Date()) + window.KeyboardMaestro.GetVariable( \"Minutes\" ) * 60000;\n\nSetClock();\n\nfunction KMInit() {\n\tvar timeinterval = setInterval(function(){\n\t\tSetClock();\n\t\tif( !SetClock() ){\n\t\t\tclearInterval(timeinterval);\nwindow.close();\nwindow.KeyboardMaestro.Trigger( \"Countdown Timer Display\", \"Trigger Value\" );\n\t\t}\n\t  },1000);\n}\n\nfunction SetClock() {\n\tvar clock = document.getElementById(\"clock\");\n\tvar t = window.endTime - Date.parse(new Date());\n\tif ( t < 0 ) {\n\t\tt = 0;\n\t}\n\tvar seconds = Math.floor( (t/1000) % 60 );\n\tvar minutes = Math.floor( (t/1000/60) % 60 );\n\tclock.innerHTML = '' + minutes + ':' + (\"0\" + seconds).slice(-2);\n\treturn t > 0; \n\n}\n</script>\n</body>\n</html>",
+			"TimeOutPeriod": 356400,
+			"Floating": true,
+			"Asynchronously": true,
+			"UseText": true
+		}
+	],
+	"CreationDate": 534265372.764517,
+	"IsActive": false,
+	"ModificationDate": 568444933.296335,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 8,
+			"Modifiers": 2560,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Countdown Timer-part1"
+}

@@ -1,0 +1,51 @@
+{
+	"UID": "EC5B4A19-F210-4A63-8467-AC86CC7D602D",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Hide",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uAAAAKwAAAAEAAABm\n\t\t\t\t\t\t\tAAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibH0Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAcy6w\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "defaults write NSGlobalDomain _HIHideMenuBar -bool true;killall Finder",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "Show",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uAAAAKwAAAAEAAABm\n\t\t\t\t\t\t\tAAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibH0Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAcy6w\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "defaults write NSGlobalDomain _HIHideMenuBar -bool false;killall Finder",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567419408.499704,
+	"IsActive": false,
+	"ModificationDate": 567573880.462096,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 4,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "MenuBar"
+}

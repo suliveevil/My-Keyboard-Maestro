@@ -1,0 +1,88 @@
+{
+	"UID": "6373CDE9-8EEE-466F-A365-F172D8A6EFDD",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "WordWrap Text (Prompt) v1.0",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC42AgAAKwAAAAEAAAAu\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgTmFtZTog\n\t\t\t\t\t\t\tV29yZFdyYXAgVGV4dCAo\n\t\t\t\t\t\t\tUHJvbXB0KVwKVmVyc2lv\n\t\t\t\t\t\t\tbjogMS4wXApVcGRhdGVk\n\t\t\t\t\t\t\tOiAyMDE3LzAxLzA5IDE0\n\t\t\t\t\t\t\tOjE5IFBTVFwKQnk6IERh\n\t\t\t\t\t\t\tbiBUaG9tYXNcClwKUFVS\n\t\t\t\t\t\t\tUE9TRTpcClwKUHJvbXB0\n\t\t\t\t\t\t\tcyB5b3UgZm9yIHZhbHVl\n\t\t\t\t\t\t\tcywgdGhlbiBleGVjdXRl\n\t\t\t\t\t\t\tcyB0aGUgbWFjcm8gIldv\n\t\t\t\t\t\t\tcmRXcmFwIFRleHQgKFN1\n\t\t\t\t\t\t\tYi1NYWNybykgd2l0aCB0\n\t\t\t\t\t\t\taGVzZSB2YWx1ZXMsIGFu\n\t\t\t\t\t\t\tZCByZXR1cm5zIHRoZSBy\n\t\t\t\t\t\t\tZXN1bHQuXApcClZFUlNJ\n\t\t\t\t\t\t\tT04gSElTVE9SWTpcCjEu\n\t\t\t\t\t\t\tMCAtIEluaXRpYWwgdmVy\n\t\t\t\t\t\t\tc2lvbi59AQAAACMAAAAB\n\t\t\t\t\t\t\tAAAABwAAAFRYVC5ydGYQ\n\t\t\t\t\t\t\tAAAA5e8uXLYBAAAAAAAA\n\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "License Agreement / Disclaimer",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6MAwAAKwAAAAEAAACE\n\t\t\t\t\t\t\tAwAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgUGVybWlz\n\t\t\t\t\t\t\tc2lvbiB0byB1c2UsIGNv\n\t\t\t\t\t\t\tcHksIG1vZGlmeSwgYW5k\n\t\t\t\t\t\t\tL29yIGRpc3RyaWJ1dGUg\n\t\t\t\t\t\t\tdGhpcyBzb2Z0d2FyZSBm\n\t\t\t\t\t\t\tb3IgYW55IHB1cnBvc2Ug\n\t\t\t\t\t\t\td2l0aCBvciB3aXRob3V0\n\t\t\t\t\t\t\tIGZlZSBpcyBoZXJlYnkg\n\t\t\t\t\t\t\tZ3JhbnRlZC5cClwKVEhF\n\t\t\t\t\t\t\tIFNPRlRXQVJFIElTIFBS\n\t\t\t\t\t\t\tT1ZJREVEICJBUyBJUyIg\n\t\t\t\t\t\t\tQU5EIFRIRSBBVVRIT1Ig\n\t\t\t\t\t\t\tRElTQ0xBSU1TIEFMTCBX\n\t\t\t\t\t\t\tQVJSQU5USUVTIFdJVEgg\n\t\t\t\t\t\t\tUkVHQVJEIFRPIFRISVMg\n\t\t\t\t\t\t\tU09GVFdBUkUgSU5DTFVE\n\t\t\t\t\t\t\tSU5HIEFMTCBJTVBMSUVE\n\t\t\t\t\t\t\tIFdBUlJBTlRJRVMgT0Yg\n\t\t\t\t\t\t\tTUVSQ0hBTlRBQklMSVRZ\n\t\t\t\t\t\t\tIEFORCBGSVRORVNTLiBJ\n\t\t\t\t\t\t\tTiBOTyBFVkVOVCBTSEFM\n\t\t\t\t\t\t\tTCBUSEUgQVVUSE9SIEJF\n\t\t\t\t\t\t\tIExJQUJMRSBGT1IgQU5Z\n\t\t\t\t\t\t\tIFNQRUNJQUwsIERJUkVD\n\t\t\t\t\t\t\tVCwgSU5ESVJFQ1QsIE9S\n\t\t\t\t\t\t\tIENPTlNFUVVFTlRJQUwg\n\t\t\t\t\t\t\tREFNQUdFUyBPUiBBTlkg\n\t\t\t\t\t\t\tREFNQUdFUyBXSEFUU09F\n\t\t\t\t\t\t\tVkVSIFJFU1VMVElORyBG\n\t\t\t\t\t\t\tUk9NIExPU1MgT0YgVVNF\n\t\t\t\t\t\t\tLCBEQVRBIE9SIFBST0ZJ\n\t\t\t\t\t\t\tVFMsIFdIRVRIRVIgSU4g\n\t\t\t\t\t\t\tQU4gQUNUSU9OIE9GIENP\n\t\t\t\t\t\t\tTlRSQUNULCBORUdMSUdF\n\t\t\t\t\t\t\tTkNFIE9SIE9USEVSIFRP\n\t\t\t\t\t\t\tUlRJT1VTIEFDVElPTiwg\n\t\t\t\t\t\t\tQVJJU0lORyBPVVQgT0Yg\n\t\t\t\t\t\t\tT1IgSU4gQ09OTkVDVElP\n\t\t\t\t\t\t\tTiBXSVRIIFRIRSBVU0Ug\n\t\t\t\t\t\t\tT1IgUEVSRk9STUFOQ0Ug\n\t\t\t\t\t\t\tT0YgVEhJUyBTT0ZUV0FS\n\t\t\t\t\t\t\tRS59AQAAACMAAAABAAAA\n\t\t\t\t\t\t\tBwAAAFRYVC5ydGYQAAAA\n\t\t\t\t\t\t\t5e8uXLYBAAAAAAAAAAAA\n\t\t\t\t\t\t\tAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "%ExecutingMacro%",
+			"Prompt": "You can paste multi-line text into \"Text\". You'll only see the first line in the Text box, or it might even be blank, but it will work anyway.",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "wwp__Text",
+					"Default": "%Variable%wwp__Text%"
+				},
+				{
+					"Variable": "wwp__Width",
+					"Default": "%Variable%wwp__Width%"
+				}
+			]
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "84C271A1-416C-43A6-A98F-C01530CF91D9",
+			"TimeOutAbortsMacro": true,
+			"Parameter": "%Variable%wwp__Text%|%Variable%wwp__Width%|wwpResult",
+			"UseParameter": true,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayWindow",
+			"Text": "%Variable%wwpResult%",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4vAQAAKwAAAAEAAAAn\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbW9kZXJu\n\t\t\t\t\t\t\tXGZjaGFyc2V0MCBDb3Vy\n\t\t\t\t\t\t\taWVyTmV3UFNNVDt9Cntc\n\t\t\t\t\t\t\tY29sb3J0Ymw7XHJlZDI1\n\t\t\t\t\t\t\tNVxncmVlbjI1NVxibHVl\n\t\t\t\t\t\t\tMjU1O30KXHBhcmRcdHg1\n\t\t\t\t\t\t\tNjBcdHgxMTIwXHR4MTY4\n\t\t\t\t\t\t\tMFx0eDIyNDBcdHgyODAw\n\t\t\t\t\t\t\tXHR4MzM2MFx0eDM5MjBc\n\t\t\t\t\t\t\tdHg0NDgwXHR4NTA0MFx0\n\t\t\t\t\t\t\teDU2MDBcdHg2MTYwXHR4\n\t\t\t\t\t\t\tNjcyMFxwYXJkaXJuYXR1\n\t\t\t\t\t\t\tcmFsXHBhcnRpZ2h0ZW5m\n\t\t\t\t\t\t\tYWN0b3IwCgpcZjBcZnMy\n\t\t\t\t\t\t\tNiBcY2YwICVWYXJpYWJs\n\t\t\t\t\t\t\tZSV3d3BSZXN1bHQlfQEA\n\t\t\t\t\t\t\tAAAjAAAAAQAAAAcAAABU\n\t\t\t\t\t\t\tWFQucnRmEAAAAB8UdFi2\n\t\t\t\t\t\t\tAQAAAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "wwp__Text",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "wwp__Width",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "wwpResult",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 505692945.860793,
+	"IsActive": false,
+	"ModificationDate": 505695119.779066,
+	"Triggers": [],
+	"Name": "WordWrap Text (Prompt)"
+}

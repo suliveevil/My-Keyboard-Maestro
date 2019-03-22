@@ -1,0 +1,66 @@
+{
+	"UID": "AD475C35-2CA4-4AAB-868C-F197A0321D8F",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "openSafariWindowFrom",
+			"Text": "%CurrentApplication%"
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "FA8925FE-1C20-467D-9803-CD14EA6112E5",
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "UseVariable",
+			"Action": "SetMouse",
+			"Variable": "openSafariWindowFrom"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "0",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "0",
+			"Relative": "Window",
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "openSafariWindow",
+			"Text": "true"
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			}
+		}
+	],
+	"CreationDate": 567338977.991898,
+	"IsActive": false,
+	"ModificationDate": 567339352.898722,
+	"Triggers": [],
+	"Name": "Open in Safari (global)"
+}

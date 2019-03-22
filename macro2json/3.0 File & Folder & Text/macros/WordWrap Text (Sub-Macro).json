@@ -1,0 +1,191 @@
+{
+	"UID": "84C271A1-416C-43A6-A98F-C01530CF91D9",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "WordWrap Text (Sub-Macro) v1.0",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC57AwAAKwAAAAEAAABz\n\t\t\t\t\t\t\tAwAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgTmFtZTog\n\t\t\t\t\t\t\tV29yZFdyYXAgVGV4dCAo\n\t\t\t\t\t\t\tU3ViLU1hY3JvKVwKVmVy\n\t\t\t\t\t\t\tc2lvbjogMS4wXApVcGRh\n\t\t\t\t\t\t\tdGVkOiAyMDE3LzAxLzA5\n\t\t\t\t\t\t\tIDE0OjE5IFBTVFwKQnk6\n\t\t\t\t\t\t\tIERhbiBUaG9tYXNcClwK\n\t\t\t\t\t\t\tUFVSUE9TRTpcClwKVGhp\n\t\t\t\t\t\t\tcyB3aWxsIHdvcmQtd3Jh\n\t\t\t\t\t\t\tcCB0aGUgc3VwcGxpZWQg\n\t\t\t\t\t\t\tdGV4dCB0byBhIG1heGlt\n\t\t\t\t\t\t\tdW0gbnVtYmVyIG9mIGNo\n\t\t\t\t\t\t\tYXJhY3RlcnMgcGVyIGxp\n\t\t\t\t\t\t\tbmUuIFRoaXMgaXMgcmVh\n\t\t\t\t\t\t\tbGx5IG9ubHkgdXNlZnVs\n\t\t\t\t\t\t\tIGlmIHlvdSdyZSB1c2lu\n\t\t\t\t\t\t\tZyBhIGZpeGVkLXdpZHRo\n\t\t\t\t\t\t\tIGZvbnQgZm9yIHRoZSBy\n\t\t\t\t\t\t\tZXN1bHQsIGxpa2UgaW4g\n\t\t\t\t\t\t\tYSB0ZXh0IGVkaXRvci5c\n\t\t\t\t\t\t\tClwKVVNBR0U6XApcCkV4\n\t\t\t\t\t\t\tZWN1dGUgdGhpcyBtYWNy\n\t\t\t\t\t\t\tbyB1c2luZyAid2l0aCBw\n\t\t\t\t\t\t\tYXJhbWV0ZXIiLCBwYXNz\n\t\t\t\t\t\t\taW5nIGEgcGFyYW1ldGVy\n\t\t\t\t\t\t\tIGZvcm1hdHRlZCBsaWtl\n\t\t\t\t\t\t\tIHRoaXM6XApcCnRleHR8\n\t\t\t\t\t\t\td2lkdGh8dmFybmFtZVwK\n\t\t\t\t\t\t\tXAp0ZXh0OgkJCVRoZSB0\n\t\t\t\t\t\t\tZXh0IHRvIGJlIHdyYXBw\n\t\t\t\t\t\t\tZWQuXAp3aWR0aDoJCVRo\n\t\t\t\t\t\t\tZSBtYXhpbXVtIHdpZHRo\n\t\t\t\t\t\t\tIGJlZm9yZSB3cmFwcGlu\n\t\t\t\t\t\t\tZy5cCnZhcm5hbWU6CQlU\n\t\t\t\t\t\t\taGUgbmFtZSBvZiB0aGUg\n\t\t\t\t\t\t\tdmFyaWFibGUgdG8gcmVj\n\t\t\t\t\t\t\taWV2ZSB0aGUgcmVzdWx0\n\t\t\t\t\t\t\tLlwKXApWRVJTSU9OIEhJ\n\t\t\t\t\t\t\tU1RPUlk6XAoxLjAgLSBJ\n\t\t\t\t\t\t\tbml0aWFsIHZlcnNpb24u\n\t\t\t\t\t\t\tfQEAAAAjAAAAAQAAAAcA\n\t\t\t\t\t\t\tAABUWFQucnRmEAAAAOXv\n\t\t\t\t\t\t\tLly2AQAAAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "License Agreement / Disclaimer",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6MAwAAKwAAAAEAAACE\n\t\t\t\t\t\t\tAwAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgUGVybWlz\n\t\t\t\t\t\t\tc2lvbiB0byB1c2UsIGNv\n\t\t\t\t\t\t\tcHksIG1vZGlmeSwgYW5k\n\t\t\t\t\t\t\tL29yIGRpc3RyaWJ1dGUg\n\t\t\t\t\t\t\tdGhpcyBzb2Z0d2FyZSBm\n\t\t\t\t\t\t\tb3IgYW55IHB1cnBvc2Ug\n\t\t\t\t\t\t\td2l0aCBvciB3aXRob3V0\n\t\t\t\t\t\t\tIGZlZSBpcyBoZXJlYnkg\n\t\t\t\t\t\t\tZ3JhbnRlZC5cClwKVEhF\n\t\t\t\t\t\t\tIFNPRlRXQVJFIElTIFBS\n\t\t\t\t\t\t\tT1ZJREVEICJBUyBJUyIg\n\t\t\t\t\t\t\tQU5EIFRIRSBBVVRIT1Ig\n\t\t\t\t\t\t\tRElTQ0xBSU1TIEFMTCBX\n\t\t\t\t\t\t\tQVJSQU5USUVTIFdJVEgg\n\t\t\t\t\t\t\tUkVHQVJEIFRPIFRISVMg\n\t\t\t\t\t\t\tU09GVFdBUkUgSU5DTFVE\n\t\t\t\t\t\t\tSU5HIEFMTCBJTVBMSUVE\n\t\t\t\t\t\t\tIFdBUlJBTlRJRVMgT0Yg\n\t\t\t\t\t\t\tTUVSQ0hBTlRBQklMSVRZ\n\t\t\t\t\t\t\tIEFORCBGSVRORVNTLiBJ\n\t\t\t\t\t\t\tTiBOTyBFVkVOVCBTSEFM\n\t\t\t\t\t\t\tTCBUSEUgQVVUSE9SIEJF\n\t\t\t\t\t\t\tIExJQUJMRSBGT1IgQU5Z\n\t\t\t\t\t\t\tIFNQRUNJQUwsIERJUkVD\n\t\t\t\t\t\t\tVCwgSU5ESVJFQ1QsIE9S\n\t\t\t\t\t\t\tIENPTlNFUVVFTlRJQUwg\n\t\t\t\t\t\t\tREFNQUdFUyBPUiBBTlkg\n\t\t\t\t\t\t\tREFNQUdFUyBXSEFUU09F\n\t\t\t\t\t\t\tVkVSIFJFU1VMVElORyBG\n\t\t\t\t\t\t\tUk9NIExPU1MgT0YgVVNF\n\t\t\t\t\t\t\tLCBEQVRBIE9SIFBST0ZJ\n\t\t\t\t\t\t\tVFMsIFdIRVRIRVIgSU4g\n\t\t\t\t\t\t\tQU4gQUNUSU9OIE9GIENP\n\t\t\t\t\t\t\tTlRSQUNULCBORUdMSUdF\n\t\t\t\t\t\t\tTkNFIE9SIE9USEVSIFRP\n\t\t\t\t\t\t\tUlRJT1VTIEFDVElPTiwg\n\t\t\t\t\t\t\tQVJJU0lORyBPVVQgT0Yg\n\t\t\t\t\t\t\tT1IgSU4gQ09OTkVDVElP\n\t\t\t\t\t\t\tTiBXSVRIIFRIRSBVU0Ug\n\t\t\t\t\t\t\tT1IgUEVSRk9STUFOQ0Ug\n\t\t\t\t\t\t\tT0YgVEhJUyBTT0ZUV0FS\n\t\t\t\t\t\t\tRS59AQAAACMAAAABAAAA\n\t\t\t\t\t\t\tBwAAAFRYVC5ydGYQAAAA\n\t\t\t\t\t\t\t5e8uXLYBAAAAAAAAAAAA\n\t\t\t\t\t\t\tAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "wordWrap_triggerValue",
+			"Text": "%TriggerValue%"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Parse %TriggerValue&",
+			"Action": "CaseSensitiveRegEx",
+			"Search": "^([^\\|]*)?\\|?([^\\|]*)?\\|?([\\w\\W]*)?",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"wordWrap_text",
+				"wordWrap_width",
+				"wordWrap_resultVarName"
+			],
+			"Source": "Variable",
+			"Variable": "wordWrap_triggerValue"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "wordWrap_width",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					},
+					{
+						"Variable": "wordWrap_resultVarName",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "PlaySound",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Path": "/System/Library/Sounds/Basso.aiff",
+					"DeviceID": "SOUNDEFFECTS"
+				},
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "%ExecutingMacro%",
+					"ActionName": "Prompt error with cancel 'Parameter required'",
+					"Prompt": "Macro '%ExecutingThisMacro%' must be executed using \"with parameter\".\nThe parameter must be in this format:\n\ntext|width|varname\n\ntext:\t\t\tThe text to be wrapped.\nwidth:\t\tThe maximum width before wrapping.\nvarname:\t\tThe name of the variable to recieve the result.",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "OK",
+							"Cancel": true
+						}
+					],
+					"Variables": []
+				}
+			]
+		},
+		{
+			"MacroActionType": "ExecuteJavaScriptForAutomation",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "wordWrap_result",
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "(function(inDesignMode, designModeParams) {\n\t'use strict';\n\n\tvar _kme = Application(\"Keyboard Maestro Engine\");\n\n\tfunction getKMVariable(name, required) {\n\t\tvar result;\n\t\tif (inDesignMode && designModeParams) {\n\t\t\tresult = designModeParams[name];\n\t\t\tif (result === undefined)\n\t\t\tthrow Error(\"DesignModeParam '\" + name + \"' is not defined\");\n\t\t} else {\n\t\t\tresult = _kme.getvariable(name);\n\t\t}\n\t\tif (required && !result)\n\t\t\tthrow Error(\"Variable '\" + name + \"' is required\");\n\t\treturn result;\n\t}\n\n\tfunction wordWrap(str, width, cut) {\n\t\tif (!str || width <= 0) {\n\t\t\treturn [str];\n\t\t}\n\t\tcut = cut || false;\n\n\t\tvar regex = new RegExp('.{1,' + width + '}(\\\\s|$)' + (cut ? '|.{' + width + '}|.+$' : '|\\\\S+?(\\\\s|$)'), 'g');\n\t\tvar matches = str.match(regex);\n\t\tif (!matches)\n\t\t\treturn str;\n\t\treturn matches.join(\"\\n\");\n\t}\n\n\tfunction execute() {\n\t\treturn wordWrap(getKMVariable(\"wordWrap_text\"), parseInt(getKMVariable(\"wordWrap_width\")));\n\t}\n\n\tif (inDesignMode) {\n        return execute();\n    } else {\n        try {\n            return execute();\n        } catch (e) {\n            return \"Error: \" + e.message;\n        }\n    }\n})(false);",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Abort if error",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "wordWrap_result",
+						"VariableConditionType": "Matches",
+						"VariableValue": "^Error:",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "PlaySound",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Path": "/System/Library/Sounds/Basso.aiff",
+					"DeviceID": "SOUNDEFFECTS"
+				},
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "%ExecutingMacro%",
+					"ActionName": "Prompt error with cancel: 'An error has occurred'",
+					"Prompt": "Macro \"%ExecutingThisMacro%\" has encountered an error: %Variable%wordWrap_result%",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "OK",
+							"Cancel": true
+						}
+					],
+					"Variables": []
+				}
+			]
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "%Variable%wordWrap_resultVarName%",
+			"Text": "%Variable%wordWrap_result%"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "wordWrap_result",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "wordWrap_resultVarName",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "wordWrap_triggerValue",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "wordWrap_width",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 505692302.088505,
+	"IsActive": false,
+	"ModificationDate": 570383274.892282,
+	"Triggers": [],
+	"Name": "WordWrap Text (Sub-Macro)"
+}

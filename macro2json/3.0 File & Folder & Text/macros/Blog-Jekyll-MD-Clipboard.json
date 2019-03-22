@@ -1,0 +1,30 @@
+{
+	"UID": "13228058-7EDF-4127-BB4B-E700ECCC4D1C",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "---\nlayout: post\ntitle: %|%\ncategories: [cate1, cate2]\ndescription: some word here\nkeywords: keyword1, keyword2\n---\n\ntext"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568924198.543507,
+	"IsActive": false,
+	"ModificationDate": 568928371.565863,
+	"Triggers": [
+		{
+			"TypedString": "blo;",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "blo；",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Blog-Jekyll-MD-Clipboard"
+}

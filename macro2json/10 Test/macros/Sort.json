@@ -1,0 +1,34 @@
+{
+	"UID": "F3134569-12FF-408C-A608-11FD95586E92",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "use AppleScript version \"2.4\" -- Yosemite (10.10) or later\ruse scripting additions\r\r-- ListHandlers\n\nset Clipboard to listSort\r\ron listSort(L)\r\treturn quicksort(L, 1, count L)\rend listSort\r\ron quicksort(L, leftIndex, rightIndex)\r\tif L = {} then return L\r\t\r\tset lHold to leftIndex\r\tset rHold to rightIndex\r\t\r\tset pivot to item leftIndex of L\r\t\r\trepeat while leftIndex < rightIndex\r\t\trepeat while item rightIndex of L ≥ pivot and leftIndex < rightIndex\r\t\t\tset rightIndex to rightIndex - 1\r\t\tend repeat\r\t\t\r\t\tif leftIndex is not equal to rightIndex then\r\t\t\tset item leftIndex of L to item rightIndex of L\r\t\t\tset leftIndex to leftIndex + 1\r\t\tend if\r\t\t\r\t\trepeat while item leftIndex of L ≤ pivot and leftIndex < rightIndex\r\t\t\tset leftIndex to leftIndex + 1\r\t\tend repeat\r\t\t\r\t\tif leftIndex is not equal to rightIndex then\r\t\t\tset item rightIndex of L to item leftIndex of L\r\t\t\tset rightIndex to rightIndex - 1\r\t\tend if\r\tend repeat\r\t\r\tset item leftIndex of L to pivot\r\tset oldLeft to leftIndex\r\tset leftIndex to lHold\r\tset rightIndex to rHold\r\t\r\tif leftIndex < oldLeft then\r\t\tquicksort(L, oldLeft + 1, rightIndex)\r\tend if\r\t\r\treturn L\rend quicksort",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568336535.590939,
+	"IsActive": false,
+	"ModificationDate": 568336711.362607,
+	"Triggers": [
+		{
+			"TypedString": "!sort",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！sort",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Sort"
+}

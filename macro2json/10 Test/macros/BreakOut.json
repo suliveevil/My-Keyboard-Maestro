@@ -1,0 +1,59 @@
+{
+	"UID": "2929D588-35EC-43DC-8819-4B6BEE0EB5C1",
+	"Actions": [
+		{
+			"MacroActionType": "Pause",
+			"Time": "1800",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "BreakOut",
+			"Text": "你已经工作半小时了。",
+			"Subtitle": "休息5分钟吧",
+			"SoundName": ""
+		},
+		{
+			"MacroActionType": "SystemAction",
+			"IsDisclosed": false,
+			"SystemAction": "ActivateScreenSaver"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "300",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SystemAction",
+			"IsDisclosed": false,
+			"SystemAction": "StopScreenSaver"
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "Time to Work",
+			"Text": "Fight!",
+			"Subtitle": "为祖国健康工作五十年",
+			"SoundName": ""
+		}
+	],
+	"CreationDate": 567048243.908098,
+	"IsActive": false,
+	"ModificationDate": 567838650.079516,
+	"Triggers": [
+		{
+			"MacroTriggerType": "Wake"
+		},
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 30,
+			"RepeatTime": 60,
+			"TimeHour": 8,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Login",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "BreakOut"
+}

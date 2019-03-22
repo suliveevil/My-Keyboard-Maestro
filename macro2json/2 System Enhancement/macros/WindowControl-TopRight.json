@@ -1,0 +1,54 @@
+{
+	"UID": "76053952-22C3-4E79-BEDD-8EE9A1D55E7E",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"FrontWindowConditionType": "IsFullScreen",
+						"ConditionType": "FrontWindow",
+						"IsFrontApplication": true
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 3,
+					"Modifiers": 4352
+				}
+			]
+		},
+		{
+			"MacroActionType": "ManipulateWindow",
+			"Action": "MoveAndResize",
+			"WindowIndexExpression": "2",
+			"HorizontalExpression": "SCREENVISIBLE(Main,MidX)",
+			"Targeting": "FrontWindow",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"VerticalExpression": "SCREENVISIBLE(Main,Top)",
+			"HeightExpression": "SCREENVISIBLE(Main,Height)*50%",
+			"WidthExpression": "SCREENVISIBLE(Main,Width)*50%",
+			"WindowName": ""
+		}
+	],
+	"CreationDate": 567379166.658613,
+	"ModificationDate": 567569591.569636,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 124,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "WindowControl-TopRight"
+}

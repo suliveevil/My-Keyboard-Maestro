@@ -1,0 +1,30 @@
+{
+	"UID": "BBD87087-0341-474B-B112-C6A10C89BE9D",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Text": "open /Users/$(whoami)/allmyfiles/",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567071968.311578,
+	"IsActive": false,
+	"ModificationDate": 568329112.80199,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Launch-FinderFolder-allmyFiles"
+}

@@ -1,0 +1,40 @@
+{
+	"UID": "BFB36C87-609B-41F3-B04C-0BD551CE760B",
+	"Actions": [
+		{
+			"MacroActionType": "File",
+			"Source": "~/template.md",
+			"Destination": "",
+			"Operation": "Duplicate"
+		},
+		{
+			"MacroActionType": "File",
+			"Source": "~/template.md",
+			"IsDisclosed": false,
+			"Destination": "/allmyfiles/gitFiles/suliveevil.github.io/_posts",
+			"Operation": "Copy"
+		},
+		{
+			"MacroActionType": "File",
+			"Source": "/allmyfiles/gitFiles/suliveevil.github.io/_posts/template.md",
+			"Destination": "",
+			"Operation": "Reveal"
+		}
+	],
+	"CreationDate": 568924198.543507,
+	"IsActive": false,
+	"ModificationDate": 569050846.104999,
+	"Triggers": [
+		{
+			"TypedString": "blo;",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "blo；",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Blog-Contents Input-Jekyll"
+}

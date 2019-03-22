@@ -1,0 +1,30 @@
+{
+	"UID": "B71A6A8D-61F4-4074-88D2-160A4C5236DE",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "-javaagent:/Applications/Pycharm.app/Contents/bin/JetbrainsCrack-3.4-release-enc.jar\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"IsActive": false,
+	"ModificationDate": 567046059.230927,
+	"Triggers": [
+		{
+			"TypedString": "!jet",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！jet",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Pycharm-crack-jar"
+}

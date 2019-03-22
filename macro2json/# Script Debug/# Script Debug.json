@@ -1,0 +1,29 @@
+{
+	"AddToMacroPalette": false,
+	"AddToStatusMenu": false,
+	"CreationDate": 573289588.129883,
+	"Modifiers": 0,
+	"PaletteUnderMouse": true,
+	"Name": "# Script Debug",
+	"UID": "EE7EBCAE-CD19-465D-8EDD-DF86B3B96F66",
+	"Targeting": {
+		"Targeting": "Included",
+		"TargetingApps": [
+			{
+				"NewFile": "/Applications/Utilities/Script Editor.app",
+				"BundleIdentifier": "com.apple.ScriptEditor2",
+				"Name": "Script Editor"
+			},
+			{
+				"NewFile": "/Applications/Script Debugger.app",
+				"BundleIdentifier": "com.latenightsw.ScriptDebugger7",
+				"Name": "Script Debugger"
+			}
+		]
+	},
+	"Macros": [],
+	"ToggleMacroUID": "1E9F28FA-38A1-4C72-8F94-4D04D3511589",
+	"Activate": "Normal",
+	"KeyCode": 32767,
+	"DisplayToggle": false
+}

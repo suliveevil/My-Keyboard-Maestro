@@ -1,0 +1,41 @@
+{
+	"UID": "FC56A5A7-AD6F-4C4F-952B-249F487AB89B",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Typora.app",
+				"BundleIdentifier": "abnerworks.Typora",
+				"Name": "Typora"
+			}
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.25",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "# title\n\n[TOC]\n\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568293334.209424,
+	"ModificationDate": 568293618.617101,
+	"Triggers": [
+		{
+			"TypedString": "mmm",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Create Markdown File"
+}

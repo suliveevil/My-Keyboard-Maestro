@@ -1,0 +1,30 @@
+{
+	"UID": "63B30E6A-E7F9-496A-B6B6-64904B37ACF1",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "--http://www.organognosi.com\ntell application \"Skim\"\n\tset colorMessage to \"\"\n\tset pageNotes to notes of current page of document 1\n\trepeat with pageNote in pageNotes\n\t\tset noteColor to color of pageNote\n\t\tset noteColorText to \"\"\n\t\trepeat with codeColor in noteColor\n\t\t\tset noteColorText to noteColorText & codeColor & \" \"\n\t\tend repeat\n\t\tset noteText to text of pageNote\n\t\tset lengthNoteText to length of noteText\n\t\tif lengthNoteText > 10 then\n\t\t\tset noteText to characters 1 thru 10 of noteText as text\n\t\telse\n\t\t\tset noteText to noteText\n\t\tend if\n\t\tset colorMessage to colorMessage & \"The color code of the note \\\"\" & noteText & \"...\\\" is \" & noteColorText & return & return\n\tend repeat\n\tdisplay dialog colorMessage\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 566900688.274137,
+	"IsActive": false,
+	"ModificationDate": 423237458.383822,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 8,
+			"Modifiers": 6656,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Get Skim RGBAlpha Colour Code"
+}

@@ -1,0 +1,61 @@
+{
+	"UID": "78776723-FEF8-4740-8D8A-4085E65EB680",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Edit",
+				"Copy"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Edit",
+				"Find",
+				"Find..."
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Edit",
+				"Paste"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		}
+	],
+	"CreationDate": 566900638.71764,
+	"IsActive": false,
+	"ModificationDate": 568015760.752823,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "_Find",
+	"CustomIconData": "KMEP-HotKeyBadge"
+}

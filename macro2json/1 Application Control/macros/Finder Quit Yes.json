@@ -1,0 +1,21 @@
+{
+	"UID": "F67A42BA-5B7C-48DB-8FBB-EB02FAC3A75E",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "defaults write com.apple.finder QuitMenuItem -bool YES && killall Finder",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568568885.773962,
+	"ModificationDate": 568568964.944494,
+	"Triggers": [],
+	"Name": "Finder Quit Yes"
+}

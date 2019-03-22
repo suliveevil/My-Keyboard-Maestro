@@ -1,0 +1,22 @@
+{
+	"UID": "4122A75C-85E3-469F-B623-946DA3CAA2E2",
+	"Actions": [
+		{
+			"MacroActionType": "PlugIn",
+			"PlugInFolderName": "km-gettextcontent",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Variable": "VarName",
+			"PlugInParameters": {
+				"Content Separator": "\n"
+			},
+			"TrimResultsNew": true,
+			"IncludeStdErr": true,
+			"DisplayKind": "Variable"
+		}
+	],
+	"CreationDate": 567562223.32302,
+	"IsActive": false,
+	"ModificationDate": 567562345.235633,
+	"Triggers": []
+}

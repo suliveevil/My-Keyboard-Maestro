@@ -1,0 +1,29 @@
+{
+	"UID": "D4D3F94C-2DA6-42ED-908D-BEF28C5EE7D0",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\r\ttell application \"System Events\"\r\t\tentire contents -- 获取所有 UI 元素\r\tend tell\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568434851.622861,
+	"ModificationDate": 574827686.306438,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 115,
+			"Modifiers": 512,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Windows-Entire Contents"
+}

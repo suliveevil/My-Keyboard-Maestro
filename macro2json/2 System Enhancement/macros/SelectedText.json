@@ -1,0 +1,30 @@
+{
+	"UID": "DDA25C2A-7A3B-46D2-8D09-6A92C8A2C755",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "use sys : application \"System Events\"\n\n-- Use the following delay to choose an application window\n-- and highlight some text.  Then ensure that the window remains\n-- in focus until the script terminates.\n-- delay 5\n\nset P to the first process whose frontmost is true\nset _W to a reference to the first window of P\n\nset _U to a reference to ¬\n\t(UI elements of P whose ¬\n\t\tname of attributes contains \"AXSelectedText\" and ¬\n\t\tvalue of attribute \"AXSelectedText\" is not \"\" and ¬\n\t\tclass of value of attribute \"AXSelectedText\" is not class)\n\ntell sys to if (count _U) ≠ 0 then ¬\n\treturn the value of ¬\n\t\tattribute \"AXSelectedText\" of ¬\n\t\t_U's contents's first item\n\nset _U to a reference to UI elements of _W\n\ntell sys to repeat while (_U exists)\n\ttell (a reference to ¬\n\t\t(_U whose ¬\n\t\t\tname of attributes contains \"AXSelectedText\" and ¬\n\t\t\tvalue of attribute \"AXSelectedText\" is not \"\" and ¬\n\t\t\tclass of value of attribute \"AXSelectedText\" is not class)) ¬\n\t\tto if (count) ≠ 0 then return the value of ¬\n\t\tattribute \"AXSelectedText\" of its contents's first item\n\t\n\tset _U to a reference to (UI elements of _U)\nend repeat\n\n\"No selection found.\"",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 572975377.133152,
+	"IsActive": false,
+	"ModificationDate": 572975566.309163,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "SelectedText"
+}

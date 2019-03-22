@@ -1,0 +1,70 @@
+{
+	"UID": "432E48ED-029A-47F9-9DF0-399B46C5F4E1",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Example 2: ID=Name (Dictionary)",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6EAQAAKwAAAAEAAAB8\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgU2hvd3Mg\n\t\t\t\t\t\t\taG93IHRvIHVzZSB0aGUg\n\t\t\t\t\t\t\tb3B0aW9uIGRhdGFUeXBl\n\t\t\t\t\t\t\tOmRpY3QgdG8gZGlzcGxh\n\t\t\t\t\t\t\teSBvbmUgdmFsdWUsIHdo\n\t\t\t\t\t\t\taWxlIHJldHVybmluZyBh\n\t\t\t\t\t\t\tbm90aGVyLn0BAAAAIwAA\n\t\t\t\t\t\t\tAAEAAAAHAAAAVFhULnJ0\n\t\t\t\t\t\t\tZhAAAADIf3tctgEAAAAA\n\t\t\t\t\t\t\tAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspOptions",
+			"Text": "title: Example 2: ID=Name (Dictionary)\nplaceholder: Select an item\ndataType: dict\nhelpMacroUUID: 3CA6319D-758A-4F86-AEE2-A8A1C075EAB0"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspData",
+			"Text": "1=Alan Ramirez\n12=Amanda Arnold\n16=Amy Reyes\n20=Andrew Carter\n15=Denise George\n9=Douglas Perez\n4=Ernest Nelson\n17=Eugene Jones\n3=Janet Fernandez\n2=Joyce Fisher\n11=Kathleen Meyer\n14=Kimberly Spencer\n7=Marilyn Hunt\n5=Melissa Hamilton\n8=Phillip Stone\n18=Phyllis Alvarez\n13=Rebecca Gibson\n10=Robin Mitchell\n19=Tammy Coleman\n6=Terry Hansen"
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "0BC9A4AD-D089-4160-B5E5-ECF032644797",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "%ExecutingMacro%",
+			"ActionName": "Show the results",
+			"Prompt": "sspResult: \"%Variable%sspResult%\"\nsspResultButton: \"%Variable%sspResultButton%\"\n",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK",
+					"Cancel": false
+				}
+			],
+			"Variables": []
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResult",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResultButton",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 492160082.763348,
+	"ModificationDate": 492816300.325118,
+	"Triggers": [],
+	"Name": "π Example 2: ID=Name (Dictionary)"
+}

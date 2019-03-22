@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 567337871.285728,
+	"AddToStatusMenu": false,
+	"Name": "RocketINK",
+	"PaletteUnderMouse": false,
+	"UID": "8EF11992-825A-46A5-82C4-97BBAB9356C2",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "773725F1-492F-40FD-9520-F872842D15F7",
+	"Activate": "Normal",
+	"IsActive": false,
+	"KeyCode": 32767
+}

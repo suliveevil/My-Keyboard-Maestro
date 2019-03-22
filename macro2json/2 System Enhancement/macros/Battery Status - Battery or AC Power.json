@@ -1,0 +1,165 @@
+{
+	"UID": "F4DBE864-C8EB-4026-87FF-A7BC97CD0B57",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Get Battery Status",
+			"ActionName": "Macro Notes",
+			"ActionColor": "Aqua",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uBwAAKwAAAAEAAABm\n\t\t\t\t\t\t\tBwAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNjcxXGNvY29h\n\t\t\t\t\t\t\tc3VicnRmMjAwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmc3dpc3Nc\n\t\t\t\t\t\t\tZmNoYXJzZXQwIEhlbHZl\n\t\t\t\t\t\t\tdGljYTt9CntcY29sb3J0\n\t\t\t\t\t\t\tYmw7XHJlZDI1NVxncmVl\n\t\t\t\t\t\t\tbjI1NVxibHVlMjU1O30K\n\t\t\t\t\t\t\te1wqXGV4cGFuZGVkY29s\n\t\t\t\t\t\t\tb3J0Ymw7O30KXHBhcmRc\n\t\t\t\t\t\t\tdHg1NjBcdHgxMTIwXHR4\n\t\t\t\t\t\t\tMTY4MFx0eDIyNDBcdHgy\n\t\t\t\t\t\t\tODAwXHR4MzM2MFx0eDM5\n\t\t\t\t\t\t\tMjBcdHg0NDgwXHR4NTA0\n\t\t\t\t\t\t\tMFx0eDU2MDBcdHg2MTYw\n\t\t\t\t\t\t\tXHR4NjcyMFxwYXJkaXJu\n\t\t\t\t\t\t\tYXR1cmFsXHBhcnRpZ2h0\n\t\t\t\t\t\t\tZW5mYWN0b3IwCgpcZjBc\n\t\t\t\t\t\t\tZnMyNCBcY2YwIFwnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wKQXV0aG9y\n\t\t\t\t\t\t\tCTogIENocmlzdG9waGVy\n\t\t\t\t\t\t\tIFN0b25lIDxzY3JpcHRt\n\t\t\t\t\t\t\tZWlzdGVyQHRoZXN0b25l\n\t\t\t\t\t\t\tZm9yZ2UuY29tPlwKQ3Jl\n\t\t\t\t\t\t\tYXRlZAk6ICAyMDE5LzAx\n\t\t\t\t\t\t\tLzA4IDE1OjQ5XApNb2Rp\n\t\t\t\t\t\t\tZmllZAk6ICAyMDE5LzAx\n\t\t\t\t\t\t\tLzA4IDE1OjQ5XApUYWdz\n\t\t\t\t\t\t\tCQk6ICBAY2NzdG9uZSwg\n\t\t\t\t\t\t\tQEtNRm9ydW0sIEBHZXQs\n\t\t\t\t\t\t\tIEBCYXR0ZXJ5LCBAU3Rh\n\t\t\t\t\t\t\tdHVzXApcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcCkF1dGhvcgk6ICBH\n\t\t\t\t\t\t\tZXJyaXQgS3J1aWplciA8\n\t\t\t\t\t\t\tZ2Vycml0QGtydWlqZXIu\n\t\t\t\t\t\t\tbmV0PlwKTW9kaWZpZWQJ\n\t\t\t\t\t\t\tOiAgMjAxOS8wMS8wOCAx\n\t\t\t\t\t\t\tNTo0OVwKQ29tYmllZCB3\n\t\t\t\t\t\t\taXRoIEFDIFBvd2VyIHRv\n\t\t\t\t\t\t\tIHJlbW92ZSBBQyBQb3dl\n\t\t\t\t\t\t\tciBjYWJsZVwKXCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3fQEAAAAjAAAA\n\t\t\t\t\t\t\tAQAAAAcAAABUWFQucnRm\n\t\t\t\t\t\t\tEAAAAAT+NVy2AQAAAAAA\n\t\t\t\t\t\t\tAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"ActionName": "Ask for results on battery",
+			"TrimResults": true,
+			"Source": "Nothing",
+			"Variable": "batteryStatusText",
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"Text": "pmset -g ps"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "\\d+(?=%)",
+			"Source": "Variable",
+			"Captures": [
+				"batteryStatus"
+			],
+			"Variable": "batteryStatusText"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Check if runs on battery or AC Power",
+			"ElseActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "If battery => 95%",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "batteryStatus",
+								"VariableConditionType": "GreaterThanOrEqual",
+								"VariableValue": "100",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "PlugIn",
+							"PlugInFolderName": "Pushover Notifications",
+							"IsDisclosed": false,
+							"TimeOutAbortsMacro": true,
+							"PlugInParameters": {
+								"URL Title": "",
+								"Priority": "Normal",
+								"Notification Sound": "Pushover",
+								"Title": "Batterij status",
+								"Notification Message": "AC Power kabel verwijderen van MacBook Air",
+								"URL": ""
+							},
+							"TrimResultsNew": true,
+							"IncludeStdErr": true,
+							"DisplayKind": "None"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "batteryStatusText",
+						"VariableConditionType": "DoesNotContain",
+						"VariableValue": "Now drawing from 'AC Power'",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "If battery <+ 15%",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "batteryStatus",
+								"VariableConditionType": "LessThanOrEqual",
+								"VariableValue": "15",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "PlugIn",
+							"PlugInFolderName": "Pushover Notifications",
+							"TimeOutAbortsMacro": true,
+							"PlugInParameters": {
+								"URL Title": "",
+								"Priority": "Normal",
+								"Notification Sound": "Pushover",
+								"Title": "Batterij status",
+								"Notification Message": "Batterij MacBook Air moet worden opgeladen !",
+								"URL": ""
+							},
+							"TrimResultsNew": true,
+							"IncludeStdErr": true,
+							"DisplayKind": "None"
+						}
+					]
+				}
+			]
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Variable Housekeeping",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "batteryStatusText",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "batteryStatus",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 568675434.126265,
+	"IsActive": false,
+	"ModificationDate": 569236516.576782,
+	"Triggers": [
+		{
+			"Repeat": true,
+			"TimeFinishHour": 23,
+			"TimeMinutes": 30,
+			"RepeatTime": 900,
+			"TimeHour": 7,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "While",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "Battery Status - Battery or AC Power"
+}

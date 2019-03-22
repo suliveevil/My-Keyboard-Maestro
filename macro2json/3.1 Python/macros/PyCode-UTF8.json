@@ -1,0 +1,24 @@
+{
+	"UID": "08552539-DEFA-4D16-9AAC-AAC55AFF48E5",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "# -*- encoding:utf-8\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"ModificationDate": 568133248.792409,
+	"Triggers": [
+		{
+			"TypedString": "!utf8",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "PyCode-UTF8"
+}

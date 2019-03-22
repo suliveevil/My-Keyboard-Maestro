@@ -1,0 +1,23 @@
+{
+	"UID": "4EE2F9AE-CE3E-4812-AFBB-8172F6CEA9F8",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"accessibility inspector\" to appear",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568434191.000457,
+	"IsActive": false,
+	"ModificationDate": 568434757.630664,
+	"Triggers": [],
+	"Name": "Accessibility Inspector"
+}

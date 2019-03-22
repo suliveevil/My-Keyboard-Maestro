@@ -1,0 +1,15 @@
+{
+	"UID": "8459DCEC-3291-40F7-843B-0AA811F872BE",
+	"Actions": [],
+	"CreationDate": 567201418.349443,
+	"IsActive": false,
+	"ModificationDate": 567221921.518042,
+	"Triggers": [
+		{
+			"TypedString": "hidembar",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "HideMenuBar"
+}

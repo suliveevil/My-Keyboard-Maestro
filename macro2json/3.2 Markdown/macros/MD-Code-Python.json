@@ -1,0 +1,24 @@
+{
+	"UID": "0B99404E-B590-4FF6-B353-990D298356BA",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n```python\n%SystemClipboard%\n```\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568122443.362611,
+	"ModificationDate": 568122585.668235,
+	"Triggers": [
+		{
+			"TypedString": "codd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Code-Python"
+}

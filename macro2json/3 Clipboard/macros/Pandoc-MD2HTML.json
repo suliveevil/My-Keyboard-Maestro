@@ -1,0 +1,25 @@
+{
+	"UID": "BD43C8F2-716C-46BC-A21F-D870824A1D18",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "pandoc -f html -t markdown -o output.md input.html"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"IsActive": false,
+	"ModificationDate": 568016163.782716,
+	"Triggers": [
+		{
+			"TypedString": "md2h",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Pandoc-MD2HTML"
+}

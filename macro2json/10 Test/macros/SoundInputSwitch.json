@@ -1,0 +1,40 @@
+{
+	"UID": "EFD49398-CAA7-44B3-A01F-FA16E9B8A001",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Switch Sound Output",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC47AgAAKwAAAAEAAAAz\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZuaWxcZmNo\n\t\t\t\t\t\t\tYXJzZXQxMzQgLlBpbmdG\n\t\t\t\t\t\t\tYW5nU0MtUmVndWxhcjtc\n\t\t\t\t\t\t\tZjFcZm5pbFxmY2hhcnNl\n\t\t\t\t\t\t\tdDAgSGVsdmV0aWNhTmV1\n\t\t\t\t\t\t\tZTt9CntcY29sb3J0Ymw7\n\t\t\t\t\t\t\tXHJlZDI1NVxncmVlbjI1\n\t\t\t\t\t\t\tNVxibHVlMjU1O1xyZWQw\n\t\t\t\t\t\t\tXGdyZWVuMFxibHVlMDt9\n\t\t\t\t\t\t\tCntcKlxleHBhbmRlZGNv\n\t\t\t\t\t\t\tbG9ydGJsOztcY3Nzcmdi\n\t\t\t\t\t\t\tXGMwXGMwXGMwXGNuYW1l\n\t\t\t\t\t\t\tIHRleHRDb2xvcjt9Clxw\n\t\t\t\t\t\t\tYXJkXHR4NTYwXHR4MTEy\n\t\t\t\t\t\t\tMFx0eDE2ODBcdHgyMjQw\n\t\t\t\t\t\t\tXHR4MjgwMFx0eDMzNjBc\n\t\t\t\t\t\t\tdHgzOTIwXHR4NDQ4MFx0\n\t\t\t\t\t\t\teDUwNDBcdHg1NjAwXHR4\n\t\t\t\t\t\t\tNjE2MFx0eDY3MjBccGFy\n\t\t\t\t\t\t\tZGlybmF0dXJhbFxwYXJ0\n\t\t\t\t\t\t\taWdodGVuZmFjdG9yMAoK\n\t\t\t\t\t\t\tXGYwXGZzMjYgXGNmMiBb\n\t\t\t\t\t\t\tClxmMSBNYWMKXGYwIFwn\n\t\t\t\t\t\t\tYzlcJ2U4XCdkNlwnYzNc\n\t\t\t\t\t\t\tJ2JmXCdlY1wnYmRcJ2Rk\n\t\t\t\t\t\t\tXCdiY1wnZmNcJ2M3XCdk\n\t\t\t\t\t\t\tMFwnYmJcJ2JiXCdkMlwn\n\t\t\t\t\t\t\tZjRcJ2M2XCdiNVwnY2Fc\n\t\t\t\t\t\t\tJ2U0XCdjOFwnZWJcJ2M5\n\t\t\t\t\t\t\tXCdlOFwnYjFcJ2I4XSgK\n\t\t\t\t\t\t\tXGYxIGh0dHBzOi8vd3d3\n\t\t\t\t\t\t\tLmppYW5zaHUuY29tL3Av\n\t\t\t\t\t\t\tYmExZTZmNDQxODQ5Clxm\n\t\t\t\t\t\t\tMCApClxmMSBcCn0BAAAA\n\t\t\t\t\t\t\tIwAAAAEAAAAHAAAAVFhU\n\t\t\t\t\t\t\tLnJ0ZhAAAADNMiBctgEA\n\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Preferences\"\n    activate\n    set current pane to pane \"com.apple.preference.sound\"\nend tell\ntell application \"System Events\"\n    tell application process \"系统偏好设置\"\n        tell tab group of window \"声音\"\n            \n            click radio button \"输出\"\n            \n            if (selected of row 1 of table 1 of scroll area 1) then\n                set selected of row 2 of table 1 of scroll area 1 to true\n                set deviceselected to \"外置音响\"\n            else if (selected of row 2 of table 1 of scroll area 1) then\n                set selected of row 3 of table 1 of scroll area 1 to true\n                set deviceselected to \"LG显示器\"\n            else\n                set selected of row 1 of table 1 of scroll area 1 to true\n                set deviceselected to \"MAC内置扬声器\"\n            end if\n        end tell\n    end tell\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "Briefly",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567306135.309211,
+	"IsActive": false,
+	"ModificationDate": 567306862.4067,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 30,
+			"RepeatTime": 60,
+			"TimeHour": 8,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Login",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "SoundInputSwitch"
+}

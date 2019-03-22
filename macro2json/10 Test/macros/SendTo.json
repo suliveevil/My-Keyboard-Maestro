@@ -1,0 +1,63 @@
+{
+	"UID": "7027494C-37D3-4776-839C-AD2083C10AD8",
+	"Actions": [
+		{
+			"MacroActionType": "For",
+			"Variable": "SendTo",
+			"Collections": {
+				"CollectionList": [
+					{
+						"CollectionType": "FinderSelection"
+					}
+				]
+			},
+			"Actions": [
+				{
+					"MacroActionType": "SafariControl",
+					"Command": "NewTab",
+					"TimeOutAbortsMacro": true,
+					"WebBrowser": "Safari",
+					"Argument": "%Variable%SendTo%"
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 36,
+					"Modifiers": 0
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 567207884.110483,
+	"IsActive": false,
+	"ModificationDate": 567482950.132623,
+	"Triggers": [
+		{
+			"TapCount": 3,
+			"FireType": "Tapped",
+			"KeyCode": 48,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"ElementCookie": 105,
+			"FireType": "Pressed",
+			"ElementDeviceUsage": 6,
+			"ElementUsage": 57,
+			"ElementDeviceUsagePage": 1,
+			"Modifiers": 0,
+			"UseModifiers": true,
+			"ElementVendorID": 5824,
+			"ElementName": "Karabiner VirtualHIDKeyboard Caps Lock",
+			"ElementProductID": 10203,
+			"ElementShortName": "#57",
+			"ElementValue": 1,
+			"MacroTriggerType": "HID",
+			"ElementUsagePage": 7
+		}
+	],
+	"Name": "SendTo"
+}

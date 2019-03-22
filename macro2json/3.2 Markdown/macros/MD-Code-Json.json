@@ -1,0 +1,24 @@
+{
+	"UID": "390E333C-505A-4DA3-8EC9-A853E4347F3D",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n```json\n%SystemClipboard%\n```\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568122443.362611,
+	"ModificationDate": 568988276.030385,
+	"Triggers": [
+		{
+			"TypedString": "codd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Code-Json"
+}

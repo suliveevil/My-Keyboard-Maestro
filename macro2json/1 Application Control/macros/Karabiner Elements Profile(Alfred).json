@@ -1,0 +1,52 @@
+{
+	"UID": "260E87A9-CACD-4A1D-836B-647032CF1E03",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 49,
+			"Modifiers": 2048
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "kep %|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566973926.324979,
+	"ModificationDate": 568917223.562167,
+	"Triggers": [
+		{
+			"TypedString": "!kep",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！kep",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": ",kep",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "，kep",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Karabiner Elements Profile(Alfred)"
+}

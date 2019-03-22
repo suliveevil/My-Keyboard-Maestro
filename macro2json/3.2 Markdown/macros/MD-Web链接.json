@@ -1,0 +1,27 @@
+{
+	"UID": "A1C9E7E5-F14F-481E-B248-6B4AA640DF17",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "[%FrontBrowserTitle%](%FrontBrowserURL%)\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566256048.831961,
+	"IsActive": false,
+	"ModificationDate": 574950197.995669,
+	"Triggers": [
+		{
+			"DiacriticalsMatter": false,
+			"Case": "Ignore",
+			"TypedString": "lj=",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Web链接"
+}

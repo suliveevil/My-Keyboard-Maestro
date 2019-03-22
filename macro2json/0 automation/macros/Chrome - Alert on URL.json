@@ -1,0 +1,52 @@
+{
+	"UID": "FB7305FD-1F1F-4FEE-866F-E4EC4C01BE1D",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Google Chrome -- Alert on URL",
+			"ActionName": "Macro Notes",
+			"ActionColor": "Aqua",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC50BQAAKwAAAAEAAABs\n\t\t\t\t\t\t\tBQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmc3dpc3Nc\n\t\t\t\t\t\t\tZmNoYXJzZXQwIEhlbHZl\n\t\t\t\t\t\t\tdGljYTt9CntcY29sb3J0\n\t\t\t\t\t\t\tYmw7XHJlZDI1NVxncmVl\n\t\t\t\t\t\t\tbjI1NVxibHVlMjU1O30K\n\t\t\t\t\t\t\te1wqXGV4cGFuZGVkY29s\n\t\t\t\t\t\t\tb3J0Ymw7O30KXHBhcmRc\n\t\t\t\t\t\t\tdHg1NjBcdHgxMTIwXHR4\n\t\t\t\t\t\t\tMTY4MFx0eDIyNDBcdHgy\n\t\t\t\t\t\t\tODAwXHR4MzM2MFx0eDM5\n\t\t\t\t\t\t\tMjBcdHg0NDgwXHR4NTA0\n\t\t\t\t\t\t\tMFx0eDU2MDBcdHg2MTYw\n\t\t\t\t\t\t\tXHR4NjcyMFxwYXJkaXJu\n\t\t\t\t\t\t\tYXR1cmFsXHBhcnRpZ2h0\n\t\t\t\t\t\t\tZW5mYWN0b3IwCgpcZjBc\n\t\t\t\t\t\t\tZnMyNCBcY2YwIFwnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wKQXV0aG9y\n\t\t\t\t\t\t\tCTogIENocmlzdG9waGVy\n\t\t\t\t\t\t\tIFN0b25lIDxzY3JpcHRt\n\t\t\t\t\t\t\tZWlzdGVyQHRoZXN0b25l\n\t\t\t\t\t\t\tZm9yZ2UuY29tPlwKQ3Jl\n\t\t\t\t\t\t\tYXRlZAk6ICAyMDE5LzAx\n\t\t\t\t\t\t\tLzI2IDExOjM0XApNb2Rp\n\t\t\t\t\t\t\tZmllZAk6ICAyMDE5LzAx\n\t\t\t\t\t\t\tLzI2IDExOjM0XApUYWdz\n\t\t\t\t\t\t\tCQk6ICBAY2NzdG9uZSwg\n\t\t\t\t\t\t\tQEtNRm9ydW1cClVSTHMJ\n\t\t\t\t\t\t\tOiAgaHR0cHM6Ly9mb3J1\n\t\t\t\t\t\t\tbS5rZXlib2FyZG1hZXN0\n\t\t\t\t\t\t\tcm8uY29tL3QvdXNlLXZp\n\t\t\t\t\t\t\tc2l0aW5nLWEtdXJsLWFz\n\t\t\t\t\t\t\tLWEtdHJpZ2dlci9cClwn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN30BAAAA\n\t\t\t\t\t\t\tIwAAAAEAAAAHAAAAVFhU\n\t\t\t\t\t\t\tLnJ0ZhAAAABmmkxctgEA\n\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "frontWindowURL",
+			"Text": "%ChromeURL%"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "frontWindowURL",
+						"VariableConditionType": "StartsWith",
+						"VariableValue": "https://www.boardsbeyond.com",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "Notification",
+					"Title": "%ExecutingMacro%",
+					"Text": "Boards and Beyond is Present!",
+					"Subtitle": "",
+					"SoundName": "Tink"
+				}
+			]
+		}
+	],
+	"CreationDate": 570216602.650956,
+	"ModificationDate": 570230055.084972,
+	"Triggers": [
+		{
+			"MacroTriggerType": "FocussedWindow",
+			"ChangeType": "FocussedWindowTitleChanges"
+		}
+	],
+	"Name": "Chrome - Alert on URL"
+}

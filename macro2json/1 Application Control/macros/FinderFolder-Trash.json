@@ -1,0 +1,29 @@
+{
+	"UID": "60C4371F-6D05-42F5-85CF-9D3C92F75411",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"Finder\"\r\topen trash\r\tactivate\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 566893868.015919,
+	"ModificationDate": 568820906.875071,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 50,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "FinderFolder-Trash"
+}

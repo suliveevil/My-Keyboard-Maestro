@@ -1,0 +1,41 @@
+{
+	"UID": "8A6E176B-BF37-40A1-82E3-06699FC69C12",
+	"Actions": [
+		{
+			"MacroActionType": "SetClipboardToText",
+			"IsDisclosed": false,
+			"Text": "```applescript\n%SystemClipboard%\n```\n%|%",
+			"IsActive": false,
+			"JustDisplay": false
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"IsActive": false,
+			"TargetingType": "Front",
+			"KeyCode": 9,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n```applescript\n%SystemClipboard%\n```\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568122443.362611,
+	"ModificationDate": 573283027.581151,
+	"Triggers": [
+		{
+			"TypedString": "codd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Code-AppleScript"
+}

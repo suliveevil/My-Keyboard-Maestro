@@ -1,0 +1,20 @@
+{
+	"UID": "D295696B-E6B7-4A61-90BA-5B3F74CCD660",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"IsActive": false,
+	"ModificationDate": 567475394.086228,
+	"Triggers": [
+		{
+			"TypedString": "!daiding",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	]
+}

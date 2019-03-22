@@ -1,0 +1,140 @@
+{
+	"UID": "B3CCC976-275A-46F8-982A-2F5D6D3D938E",
+	"Actions": [
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Concordance",
+			"Prompt": "Please enter the case-insensitive word or phrase to search.",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "Search",
+					"Default": ""
+				}
+			]
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "Result Button",
+						"VariableConditionType": "Contains",
+						"VariableValue": "OK",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"MenuConditionType": "IsNotEnabled",
+								"MenuModifiers": 256,
+								"ConditionType": "Menu",
+								"MenuShortcut": "C",
+								"MenuConditionSelectionType": "Is",
+								"MenuTitle": "Copy"
+							},
+							{
+								"ApplicationConditionType": "NotActive",
+								"ConditionType": "Application",
+								"Application": {
+									"BundleIdentifier": "com.adobe.InDesign",
+									"Name": "Adobe InDesign CS5"
+								}
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ElseActionListDisclosed": false,
+					"ThenActions": [
+						{
+							"MacroActionType": "SimulateKeystroke",
+							"ReleaseAll": false,
+							"TargetApplication": {},
+							"TargetingType": "Front",
+							"KeyCode": 0,
+							"Modifiers": 256
+						}
+					]
+				},
+				{
+					"MacroActionType": "ClipboardSwitcherMacroAction",
+					"Action": "Copy",
+					"IsDisclosed": false,
+					"RedundandDisplayName": "myTextTemp",
+					"TimeOutAbortsMacro": true,
+					"Name": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66"
+				},
+				{
+					"MacroActionType": "Filter",
+					"Action": "RemoveStyles",
+					"Source": "NamedClipboard",
+					"IsDisclosed": false,
+					"NamedClipboardName": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66",
+					"RedundandDisplayName": "myTextTemp"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "LocalText",
+					"Text": "%NamedClipboard%myTextTemp%"
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"Variable": "LocalText",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "~/Documents/my Tools/Perl Scripts/KM-Textcavator.new.pl",
+					"DisplayKind": "Variable",
+					"IsDisclosed": false,
+					"Text": "#!/usr/bin/perl\n\nuse POSIX qw{strftime};\n\nmy $selection = $ENV{KMVAR_LocalText};\nmy $regex = $ENV{KMVAR_Search};\nmy $citations_detail = \"\";\nmy $highlight = \"white\";\nmy $hits = 0;\nmy $match = \"\";\nmy $citations_detail = \"\";\n\nopen my $src, '<', \\$selection;\nwhile (<$src>) {\n\tif (/$regex/gi) {\n\t\t$match = $_;\n\t\t$hits += $match =~ s/(.*?)($regex)(.*?)/$1<span style=\"color:${highlight};\">&nbsp;$2&nbsp;<\\/span>$3/gi;\n\t}\n\tif ($match ne $last_match) {\n\t\t$citations_detail .= \"<p style=\\\"margin-left:12px;\\\">\" . $match . \"<\\/p>\";\n\t}\n\t$last_match = $match;\n}\nclose $src;\n\n\t# report matches\nif ($hits) {\n\tcommify($hits);\n\t$citations .= \"<p>Selection contains \";\n\t$citations .= \"<strong>$hits</strong> instance\";\n\tif ($hits > 1) {\n\t\t$citations .= \"s\";\n\t}\n\t$citations .= \":</p>\" . $citations_detail;\n}\n\nmy $runtime = strftime(\"\\%M:\\%S\", gmtime(time - $^T));\n\nif (length($citations) < 5) {\n\t$citations .= \"<p>Nothing to report.</p>\\n\";\n}\n\n\t# save the results to sandwich around the citations\nmy $results_text .= <<EOF;\n<p>\n<b style=\"color: ${highlight};\">Results</b>: <strong><span style=\"color:${highlight};\">&nbsp;${regex}&nbsp;</span></strong> was found a total of <strong>${hits}</strong> times. Elapsed time: $runtime (mm:ss).</p>\n<hr>\nEOF\n\n\t# sandwich the citations within the results\n$citations = $results_text . $citations;\n\nprint $citations;\n\nsub commify {\n\tmy $citations = reverse $_[0];\n\t$citations =~ s/(\\d\\d\\d)(?=\\d)(?!\\d*\\.)/$1,/g;\n\treturn scalar reverse $citations;\n}\n",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "CustomPrompt",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>L I T E R A R Y &nbsp T O O L B O X</title>\n\t<style type=\"text/css\">\nbody{background-color:black;font:.80em \"Lucida Grande\",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:66%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}span {background-color: #36aac2;color:white}table{border:0;width:600px;padding-bottom:15px;border-spacing:9px;align=center}div.row{clear:both;width:100%;margin:0 10p 0 10p}\n\t</style> \n</head>\n<body  data-kmwindow=\"550,600\">\n<div id=\"title\">\n\t<b>C O N C O R D A N C E</b>\n</div>\n<div id=\"text\">\n\t<script>\ndocument.write(window.KeyboardMaestro.GetVariable('LocalText'))\n\t</script>\n</div>\n</body>\n</html>\n",
+					"Floating": true,
+					"UseText": true
+				}
+			]
+		}
+	],
+	"CreationDate": 563739621.038163,
+	"ModificationDate": 565401205.512302,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 8,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "46)Concordance"
+}

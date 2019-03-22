@@ -1,0 +1,63 @@
+{
+	"UID": "FA8925FE-1C20-467D-9803-CD14EA6112E5",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			}
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 45,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "ManipulateWindow",
+			"Action": "MoveWindowTo",
+			"WindowIndexExpression": "2",
+			"HorizontalExpression": "6",
+			"Targeting": "FrontWindow",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"VerticalExpression": "48",
+			"HeightExpression": "300",
+			"WidthExpression": "300",
+			"WindowName": ""
+		},
+		{
+			"MacroActionType": "ManipulateWindow",
+			"Action": "ResizeWindowBy",
+			"WindowIndexExpression": "2",
+			"HorizontalExpression": "1268",
+			"Targeting": "FrontWindow",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"VerticalExpression": "77",
+			"HeightExpression": "300",
+			"WidthExpression": "300",
+			"WindowName": ""
+		}
+	],
+	"CreationDate": 567338977.991898,
+	"IsActive": false,
+	"ModificationDate": 567339495.328381,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Open New Safari Window"
+}

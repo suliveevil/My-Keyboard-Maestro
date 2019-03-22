@@ -1,0 +1,63 @@
+{
+	"UID": "A9383B26-0285-497E-9D4E-ACD079D7EB35",
+	"Actions": [
+		{
+			"MacroActionType": "Semaphore",
+			"TimeOutAbortsMacro": true,
+			"SemaphoreName": "speedtest",
+			"SemaphoreAction": "Lock"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayBriefly",
+			"Text": "Results will appear here when completed—anywhere from a few seconds to a minute."
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Briefly",
+			"Text": "#!/usr/local/bin/python3\n# coding: utf-8\nimport subprocess;\nimport string;\n \n# Run the speedtest, capture the output\n# Edit this path to match the location of your speedtest\nSpeedNums = subprocess.check_output([\"/usr/local/bin/speedtest\", \"--simple\"])\n\n# Do my string replacements\nSpeedNums = string.replace(SpeedNums, '\\n', ' ')\nSpeedNums = string.replace(SpeedNums, 'Ping:', '🔹')\nSpeedNums = string.replace(SpeedNums, 's Upload:', 's 🔺')\nSpeedNums = string.replace(SpeedNums, 'ms Download:', 'ms 🔻')\n \nprint SpeedNums;\n",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "Semaphore",
+			"SemaphoreName": "speedtest",
+			"SemaphoreAction": "Unlock"
+		}
+	],
+	"CreationDate": 511131029.229811,
+	"IsActive": false,
+	"ModificationDate": 567137116.623212,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"Repeat": true,
+			"TimeFinishHour": 23,
+			"TimeMinutes": 1,
+			"RepeatTime": 5400,
+			"TimeHour": 0,
+			"TimeFinishMinutes": 59,
+			"WhichDays": 127,
+			"ExecuteType": "While",
+			"MacroTriggerType": "Time"
+		},
+		{
+			"TypedString": "speedcheck",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Internet Speedtest (special)"
+}

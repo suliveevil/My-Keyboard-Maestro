@@ -1,0 +1,54 @@
+{
+	"UID": "588C61A6-7B8B-4587-96FD-94EE8000CCB6",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 12,
+					"Modifiers": 256
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ApplicationConditionType": "Active",
+						"ConditionType": "Application",
+						"Application": {
+							"NewFile": "/System/Library/CoreServices/Finder.app",
+							"BundleIdentifier": "com.apple.finder",
+							"Name": "访达"
+						}
+					},
+					{
+						"ApplicationConditionType": "Active",
+						"ConditionType": "Application",
+						"Application": {
+							"NewFile": "/Applications/Safari.app",
+							"BundleIdentifier": "com.apple.Safari",
+							"Name": "Safari"
+						}
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": []
+		}
+	],
+	"CreationDate": 566957069.897931,
+	"ModificationDate": 573230579.707008,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 12,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "⌘Q拦截器"
+}

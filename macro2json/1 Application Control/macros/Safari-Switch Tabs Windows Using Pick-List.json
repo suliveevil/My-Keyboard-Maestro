@@ -1,0 +1,30 @@
+{
+	"UID": "2D9DF3D5-34B6-447F-B0EC-6E748472B67C",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "------------------------------------------------------------\r# Auth: Christopher Stone <scriptmeister@thestoneforge.com>\r# dCre: 2010/10/16 00:42\r# dMod: 2013/05/30 18:25\r# Appl: Safari\r# Task: Display a list of tab names and also a count of both documents & tabs.\r#     : Select a tab name to bring it to the front.\r#     : Adjusted to deal properly with duplicate tab names on 2013-05-30.\r# Libs: Only stock OSX components used.\r# Osax: None \r# Tags: @Applescript, @Safari, @Choose, @Display, @Tabs, @Windows\r-------------------------------------------------------------\r\rtry\r\t\r\tset sep to \"-----\"\r\t\r\ttell application \"Safari\"\r\t\t\r\t\tif (count of document) ≥ 1 then\r\t\t\tset frontWindoc to document of front window\r\t\telse\r\t\t\terror \"No pages are open in Safari\"\r\t\tend if\r\t\t\r\t\ttell (every window where its document is not missing value)\r\t\t\tset docCount to count\r\t\t\tset currentTabIndex to index of current tab\r\t\t\tset tabCount to count of tabs\r\t\t\tset tabNames to name of tabs\r\t\tend tell\r\t\t\r\t\tif docCount < 10 then set docCount to \"0\" & docCount\r\t\tset hdrText to \"Window Count: \" & docCount & return & \"      Tab Count: \" & tabCount\r\t\t\r\t\t# Add tab-index to tab names to deal with duplicate names.\r\t\tset ndx to 0\r\t\trepeat with i in tabNames\r\t\t\trepeat with n from 1 to (length of i)\r\t\t\t\tif n < 10 then\r\t\t\t\t\tset _num to \"0\" & n\r\t\t\t\telse\r\t\t\t\t\tset _num to n\r\t\t\t\tend if\r\t\t\t\ttell (a reference to item n of i) to set its contents to its contents & \" · [\" & _num & \"]\"\r\t\t\tend repeat\r\t\tend repeat\r\t\t\r\t\t# Mark Current Tabs of each document window with '[✓]'\r\t\t# tabNames is a list of lists.\r\t\tset ndx to 0\r\t\trepeat with i in tabNames\r\t\t\tset ndx to ndx + 1\r\t\t\ttell (a reference to i's item (item ndx of currentTabIndex)) to set its contents to (its contents) & \" ✓\"\r\t\t\tif ndx = 1 then\r\t\t\t\tset currentTabName to result\r\t\t\tend if\r\t\t\tset end of i to sep\r\t\tend repeat\r\t\ttabNames\r\t\tset beginning of item 1 of tabNames to sep\r\t\tset AppleScript's text item delimiters to return\r\t\tset tabNames to paragraphs of (tabNames as text)\r\t\t\r\t\ttell application \"Safari\" to set _tab to choose from list tabNames with title \"•• Safari Tab Names ••\" with prompt hdrText ¬\r\t\t\tdefault items {currentTabName} with empty selection allowed\r\t\t\r\t\tif _tab = false then return\r\t\t\r\t\tset _tab to item 1 of _tab # De-listify.\r\t\tset AppleScript's text item delimiters to \" · \"\r\t\tset tabName to text item 1 of _tab\r\t\tset AppleScript's text item delimiters to {\"[\", \"]\"}\r\t\tset tabIndex to (text item 2 of _tab) as integer\r\t\t\r\t\ttell windows\r\t\t\tset tabID to tabs whose name contains tabName and index is tabIndex\r\t\tend tell\r\t\t\r\t\trepeat with i in tabID\r\t\t\ttry\r\t\t\t\tset tabID to item 1 of i\r\t\t\t\texit repeat\r\t\t\tend try\r\t\tend repeat\r\t\t\r\t\ttry\r\t\t\ttabID as number\r\t\ton error eStr\r\t\t\tset AppleScript's text item delimiters to \" of \"\r\t\t\trepeat with i in (text items of eStr)\r\t\t\t\tif i contains \"window id\" then\r\t\t\t\t\tset winOfTabID to run script ((contents of i) & \" of application \\\"Safari\\\"\")\r\t\t\t\t\texit repeat\r\t\t\t\tend if\r\t\t\tend repeat\r\t\tend try\r\t\t\r\t\tset winOfTabIdDoc to winOfTabID's document\r\t\tif current tab of winOfTabID ≠ tabID then set current tab of winOfTabID to tabID\r\t\t\r\t\tif winOfTabIdDoc ≠ frontWindoc then\r\t\t\tset newDoc to make new document\r\t\t\tset index of winOfTabID to 1\r\t\t\tclose newDoc\r\t\tend if\r\t\t\r\tend tell\r\t\ron error e number n\r\tset e to e & return & return & \"Num: \" & n\r\ttell application \"Safari\" to set dDlg to display dialog e with title \"ERROR!\" buttons {\"Cancel\", \"Copy\", \"OK\"} default button \"OK\"\r\tif button returned of dDlg = \"Copy\" then set the clipboard to e\rend try\r",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 464036526.468341,
+	"IsActive": false,
+	"ModificationDate": 573271566.571729,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 122,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Safari-Switch Tabs Windows Using Pick-List"
+}

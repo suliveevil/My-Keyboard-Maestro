@@ -1,0 +1,43 @@
+{
+	"UID": "B80EFFB2-AEC8-4767-9EA8-7D407CD563DE",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			}
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 17,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "%Trigger%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 567217985.277762,
+	"IsActive": false,
+	"ModificationDate": 568016217.291983,
+	"Triggers": [
+		{
+			"MacroTriggerType": "DraggedFile"
+		}
+	],
+	"Name": "Safari-Drag&drop"
+}

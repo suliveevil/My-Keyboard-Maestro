@@ -1,0 +1,24 @@
+{
+	"UID": "1D2EBFED-E3AB-43F8-A194-C813184F0CE4",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n```mysql\n%SystemClipboard%\n```\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568122443.362611,
+	"ModificationDate": 568374644.365767,
+	"Triggers": [
+		{
+			"TypedString": "codd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Code-MySQL"
+}

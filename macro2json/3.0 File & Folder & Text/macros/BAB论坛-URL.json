@@ -1,0 +1,29 @@
+{
+	"UID": "3CD701E5-6E7D-411B-9FB6-1FC6129F6201",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "[url=%FrontBrowserURL%]%FrontBrowserTitle%[/url]\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568454253.698239,
+	"ModificationDate": 568466018.328,
+	"Triggers": [
+		{
+			"TypedString": "!url",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！url",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "BAB论坛-URL"
+}

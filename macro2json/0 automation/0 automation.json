@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"AddToStatusMenu": false,
+	"CreationDate": 569948928.302408,
+	"Modifiers": 0,
+	"PaletteUnderMouse": false,
+	"Name": "0 automation",
+	"UID": "13669EDE-B4E7-485C-9F1D-DD21DDB34A2E",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "8470928F-AF73-4FA6-86A4-8C5081B396C4",
+	"Activate": "Normal",
+	"KeyCode": 32767,
+	"DisplayToggle": false
+}

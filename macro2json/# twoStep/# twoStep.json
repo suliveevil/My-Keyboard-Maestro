@@ -1,0 +1,24 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 512,
+	"CreationDate": 574811702.500101,
+	"AddToStatusMenu": false,
+	"Name": "# twoStep",
+	"PaletteUnderMouse": true,
+	"UID": "2C315236-481D-4B3E-B8AF-0A8594318FD5",
+	"Theme": {
+		"Opacity": 57,
+		"Size": 17,
+		"UseDefaultInstead": false,
+		"UseTrigger": true
+	},
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "FEA6A359-2514-4ABC-989F-4023F4F16FD4",
+	"Activate": "ActiveAndWithPalette",
+	"IsActive": false,
+	"KeyCode": 116
+}

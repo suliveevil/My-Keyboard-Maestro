@@ -1,0 +1,16 @@
+{
+	"UID": "A859DD41-01B3-4E80-BA0E-28E25D69440C",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "→"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991048.138517,
+	"Triggers": [],
+	"Name": "16)  →    Right Arrow"
+}

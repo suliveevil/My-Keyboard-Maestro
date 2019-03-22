@@ -1,0 +1,70 @@
+{
+	"UID": "705A81B4-04C7-4027-ABB9-F293D6B08DAD",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Example 1: Simple list of Strings",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5tAQAAKwAAAAEAAABl\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgUnVuIHRo\n\t\t\t\t\t\t\taXMgbWFjcm8sIGFuZCBj\n\t\t\t\t\t\t\tbGljayB0aGUgIkhlbHAi\n\t\t\t\t\t\t\tIGJ1dHRvbiBmb3IgbW9y\n\t\t\t\t\t\t\tZSBpbmZvcm1hdGlvbi59\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAyH97\n\t\t\t\t\t\t\tXLYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspOptions",
+			"Text": "title: Example 1: Simple list of Strings\nplaceholder: Select an item\ndataType: strings\n\n--FYI, Help buttons are optional.\nhelpMacroUUID: 3715C61B-D9A1-4C99-944C-71C622E574C9"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspData",
+			"Text": "Alice Banks\nCarlos Boyd\nCatherine Nguyen\nCatherine Parker\nElizabeth Lee\nHarold Carroll\nHarry Diaz\nHoward Lane\nLawrence Russell\nLinda Medina\nLinda Pierce\nLois Meyer\nPatricia Wheeler\nPatrick Mcdonald\nRonald Franklin\nSamuel Robertson\nSusan Butler\nTeresa Mcdonald\nTheresa Gomez\nThomas Ross"
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "0BC9A4AD-D089-4160-B5E5-ECF032644797",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "%ExecutingMacro%",
+			"ActionName": "Show the results",
+			"Prompt": "sspResult: \"%Variable%sspResult%\"\nsspResultButton: \"%Variable%sspResultButton%\"\n",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK",
+					"Cancel": false
+				}
+			],
+			"Variables": []
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResult",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResultButton",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 492039557.790913,
+	"ModificationDate": 492816287.792465,
+	"Triggers": [],
+	"Name": "π Example 1: Simple list of Strings"
+}

@@ -1,0 +1,29 @@
+{
+	"UID": "962E0CE5-F070-42CC-92E1-5E95E2022DB9",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "open /allmyfiles/gitFiles/Snippets",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567071968.311578,
+	"IsActive": false,
+	"ModificationDate": 574958572.479774,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Snippets-shell"
+}

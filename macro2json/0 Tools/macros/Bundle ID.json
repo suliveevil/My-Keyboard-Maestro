@@ -1,0 +1,23 @@
+{
+	"UID": "88BDBE58-FBA3-4A04-8AB3-C929DCEC7521",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "osascript -e 'id of app \"印象笔记\"'\nosascript -e 'id of app \"SomeApp\"'\nmdls -name kMDItemCFBundleIdentifier -r SomeApp.app",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 573087794.437576,
+	"IsActive": false,
+	"ModificationDate": 573087825.795073,
+	"Triggers": [],
+	"Name": "Bundle ID"
+}

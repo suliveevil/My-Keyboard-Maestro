@@ -1,0 +1,68 @@
+{
+	"UID": "EEE35EA2-E94D-4FE5-948D-1FF6F95FAE5E",
+	"Actions": [
+		{
+			"MacroActionType": "Cancel",
+			"Action": "CancelAllOtherMacros"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "Volume",
+			"Text": "%SystemVolume%"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayWindow",
+			"Text": "The timer is done!",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5fAQAAKwAAAAEAAABX\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTYxXGNvY29h\n\t\t\t\t\t\t\tc3VicnRmMjAwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBIZWx2ZXRp\n\t\t\t\t\t\t\tY2FOZXVlO30Ke1xjb2xv\n\t\t\t\t\t\t\tcnRibDtccmVkMjU1XGdy\n\t\t\t\t\t\t\tZWVuMjU1XGJsdWUyNTU7\n\t\t\t\t\t\t\tXHJlZDBcZ3JlZW4wXGJs\n\t\t\t\t\t\t\tdWUwO30Ke1wqXGV4cGFu\n\t\t\t\t\t\t\tZGVkY29sb3J0Ymw7O1xj\n\t\t\t\t\t\t\tc2dyYXlcYzA7fQpccGFy\n\t\t\t\t\t\t\tZFx0eDU2MFx0eDExMjBc\n\t\t\t\t\t\t\tdHgxNjgwXHR4MjI0MFx0\n\t\t\t\t\t\t\teDI4MDBcdHgzMzYwXHR4\n\t\t\t\t\t\t\tMzkyMFx0eDQ0ODBcdHg1\n\t\t\t\t\t\t\tMDQwXHR4NTYwMFx0eDYx\n\t\t\t\t\t\t\tNjBcdHg2NzIwXHBhcmRp\n\t\t\t\t\t\t\tcm5hdHVyYWxccGFydGln\n\t\t\t\t\t\t\taHRlbmZhY3RvcjAKClxm\n\t\t\t\t\t\t\tMFxmczI2IFxjZjIgVGhl\n\t\t\t\t\t\t\tIHRpbWVyIGlzIGRvbmUh\n\t\t\t\t\t\t\tfQEAAAAjAAAAAQAAAAcA\n\t\t\t\t\t\t\tAABUWFQucnRmEAAAADQX\n\t\t\t\t\t\t\tglq2AQAAAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "PlugIn",
+			"PlugInFolderName": "Manipulate a Display Text Window",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"PlugInParameters": {
+				"Size": "2200, 1200",
+				"Position": "20, 45",
+				"Make window active": "1"
+			},
+			"TrimResultsNew": true,
+			"IncludeStdErr": true,
+			"DisplayKind": "None"
+		},
+		{
+			"MacroActionType": "SystemVolume",
+			"Volume": 65
+		},
+		{
+			"MacroActionType": "PlaySound",
+			"TimeOutAbortsMacro": true,
+			"Path": "/System/Library/Sounds/Hero.aiff",
+			"DeviceID": "SOUNDEFFECTS"
+		},
+		{
+			"MacroActionType": "PlaySound",
+			"TimeOutAbortsMacro": true,
+			"Path": "~/Library/Sounds/MailButler.aif",
+			"DeviceID": "SOUNDEFFECTS"
+		},
+		{
+			"MacroActionType": "PlaySound",
+			"TimeOutAbortsMacro": true,
+			"Path": "/System/Library/Sounds/Submarine.aiff",
+			"DeviceID": "SOUNDEFFECTS"
+		},
+		{
+			"MacroActionType": "UseVariable",
+			"Action": "SetSystemVolume",
+			"Variable": "Volume"
+		}
+	],
+	"CreationDate": 540136850.929404,
+	"IsActive": false,
+	"ModificationDate": 568444939.853425,
+	"Triggers": [],
+	"Name": "Countdown Timer-part2-Display"
+}

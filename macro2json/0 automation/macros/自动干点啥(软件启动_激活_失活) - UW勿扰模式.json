@@ -1,0 +1,179 @@
+{
+	"UID": "E453E358-9ECF-49B7-99D6-55492DD00ACA",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "BAB 用户 鬼盗噼里拍 分享",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uAAAAKwAAAAEAAABm\n\t\t\t\t\t\t\tAAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibH0Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAcy6w\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Enable DND if it is disabled",
+			"ActionColor": "Green",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"TimeOutPeriod": 10,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ScriptConditionType": "ReturnsSuccess",
+						"ScriptResult": "",
+						"ScriptConditionSourceType": "ShellScriptText",
+						"ScriptTerminationStatus": 1,
+						"ScriptText": "[[ $(/usr/bin/defaults -currentHost read ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb) -eq 0 ]]",
+						"Path": "",
+						"ConditionType": "Script"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"ApplicationConditionType": "Active",
+								"ConditionType": "Application",
+								"Application": {
+									"Name": "java"
+								}
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "SimulateKeystroke",
+							"ReleaseAll": false,
+							"TargetApplication": {},
+							"TargetingType": "Front",
+							"KeyCode": 25,
+							"Modifiers": 4352
+						}
+					]
+				}
+			]
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Are any of these applications running?",
+			"ActionColor": "Orange",
+			"ElseActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "Disable DND if it is enabled",
+					"ActionColor": "Magenta",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"ScriptConditionType": "ReturnsError",
+								"ScriptResult": "",
+								"ScriptConditionSourceType": "ShellScriptText",
+								"ScriptTerminationStatus": 1,
+								"ScriptText": "[[ $(/usr/bin/defaults -currentHost read ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb) -eq 0 ]]",
+								"Path": "",
+								"ConditionType": "Script"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "SimulateKeystroke",
+							"ReleaseAll": false,
+							"TargetApplication": {},
+							"TargetingType": "Front",
+							"KeyCode": 25,
+							"Modifiers": 4352
+						},
+						{
+							"MacroActionType": "ExecuteAppleScript",
+							"ActionName": "Toggle Do Not Disturb",
+							"TrimResults": true,
+							"StopOnFailure": false,
+							"IncludeStdErr": false,
+							"UseText": true,
+							"TrimResultsNew": true,
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "None",
+							"IsActive": false,
+							"Text": "      tell application \"System Events\" to tell process \"SystemUIServer\"\n        key down option\n        click menu bar item 1 of menu bar 1\n        key up option\n      end tell",
+							"NotifyOnFailure": false
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"IsActive": false,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ApplicationConditionType": "Running",
+						"ConditionType": "Application",
+						"Application": {
+							"Name": "java"
+						}
+					},
+					{
+						"ApplicationConditionType": "Running",
+						"ConditionType": "Application",
+						"Application": {
+							"Name": "java"
+						}
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "Enable DND if it is disabled",
+					"ActionColor": "Green",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"ScriptConditionType": "ReturnsSuccess",
+								"ScriptResult": "",
+								"ScriptConditionSourceType": "ShellScriptText",
+								"ScriptTerminationStatus": 1,
+								"ScriptText": "[[ $(/usr/bin/defaults -currentHost read ~/Library/Preferences/ByHost/com.apple.notificationcenterui doNotDisturb) -eq 0 ]]",
+								"Path": "",
+								"ConditionType": "Script"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "SimulateKeystroke",
+							"ReleaseAll": false,
+							"TargetApplication": {},
+							"TargetingType": "Front",
+							"KeyCode": 25,
+							"Modifiers": 4352
+						}
+					]
+				}
+			]
+		}
+	],
+	"CreationDate": 570717796.63633,
+	"IsActive": false,
+	"ModificationDate": 574933490.165778,
+	"Triggers": [
+		{
+			"MacroTriggerType": "FocussedWindow",
+			"ChangeType": "FocussedWindowTitleChanges"
+		}
+	],
+	"Name": "自动干点啥(软件启动/激活/失活) - UW勿扰模式"
+}

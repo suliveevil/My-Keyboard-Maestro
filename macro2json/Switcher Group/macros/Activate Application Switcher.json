@@ -1,0 +1,37 @@
+{
+	"UID": "1CBCA7B4-EFFC-4FCF-A8BA-119338380A8A",
+	"Actions": [
+		{
+			"MacroActionType": "ProgramSwitcher",
+			"HideOthers": false,
+			"SortOrder": "SortByUse",
+			"Blue": 128,
+			"IncludedApplications": [],
+			"SwitcherUnderMouse": false,
+			"Green": 128,
+			"IconSize": 64,
+			"IsDisclosed": false,
+			"MouseRollover": true,
+			"Red": 0,
+			"Alpha": 50,
+			"WindowType": "IconGrid"
+		}
+	],
+	"CreationDate": 568066131.00187,
+	"IsActive": false,
+	"ModificationDate": 574605409.82466,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 48,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 48,
+			"Modifiers": 768,
+			"MacroTriggerType": "HotKey"
+		}
+	]
+}

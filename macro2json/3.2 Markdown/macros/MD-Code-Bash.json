@@ -1,0 +1,24 @@
+{
+	"UID": "9E839E23-D04C-4859-864E-ECC139D07248",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n```bash\n%SystemClipboard%\n```\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568122443.362611,
+	"ModificationDate": 568122568.073017,
+	"Triggers": [
+		{
+			"TypedString": "codd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Code-Bash"
+}

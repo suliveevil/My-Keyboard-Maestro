@@ -1,0 +1,23 @@
+{
+	"UID": "58EB16F5-F935-42DC-99E4-C7C37DD71D47",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"Keyboard Maestro\" to reload\ntell application \"Keyboard Maestro Engine\" to reload",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568562097.556454,
+	"IsActive": false,
+	"ModificationDate": 574742850.009807,
+	"Triggers": [],
+	"Name": "KM Reload"
+}

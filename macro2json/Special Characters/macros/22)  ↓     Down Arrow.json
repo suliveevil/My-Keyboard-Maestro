@@ -1,0 +1,16 @@
+{
+	"UID": "F44D7717-E224-4AA8-9707-ADF41DA5E8B8",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "↓"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991049.744519,
+	"Triggers": [],
+	"Name": "22)  ↓     Down Arrow"
+}

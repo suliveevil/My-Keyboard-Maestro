@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"AddToStatusMenu": false,
+	"CreationDate": 568075922.905983,
+	"Modifiers": 0,
+	"PaletteUnderMouse": false,
+	"Name": "1 Application Control",
+	"UID": "ED84731D-0CAC-4635-A617-B2A2EDCF265D",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "66F83F01-3E0E-40EB-B4F4-B43A41A7BB1B",
+	"Activate": "Normal",
+	"KeyCode": 32767,
+	"DisplayToggle": false
+}

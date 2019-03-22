@@ -1,0 +1,96 @@
+{
+	"UID": "3CF548DB-F893-4556-8B92-C21C8B7588A6",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "pb2",
+			"Text": "%PastClipboard%2%"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "pb1",
+			"Text": "%PastClipboard%1%"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "pb",
+			"Text": "%CurrentClipboard%"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "Capitalize",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "pb2"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "",
+					"Prompt": "Year",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "OK"
+						},
+						{
+							"Button": "Cancel",
+							"Cancel": true
+						}
+					],
+					"Variables": [
+						{
+							"Variable": "pb1",
+							"Default": "200"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "pb1",
+						"VariableConditionType": "Matches",
+						"VariableValue": "\\d{4}",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": []
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "Capitalize",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "pb"
+		},
+		{
+			"MacroActionType": "SetClipboardToText",
+			"IsDisclosed": false,
+			"Text": "%Variable%pb2% - %Variable%pb1% - %Variable%pb%",
+			"JustDisplay": false
+		}
+	],
+	"CreationDate": 566900688.274136,
+	"IsActive": false,
+	"ModificationDate": 427479179.967938,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 15,
+			"Modifiers": 6656,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "key.SK.rename"
+}

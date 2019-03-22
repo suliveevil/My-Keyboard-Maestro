@@ -1,0 +1,23 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 459061285.50324,
+	"AddToStatusMenu": false,
+	"Name": "Keyboard Maestro",
+	"PaletteUnderMouse": false,
+	"UID": "2C05B241-1E91-44F4-A48C-A10A6708A04F",
+	"Targeting": {
+		"Targeting": "Included",
+		"TargetingApps": [
+			{
+				"NewFile": "/Applications/Keyboard Maestro.app",
+				"BundleIdentifier": "com.stairways.keyboardmaestro.editor",
+				"Name": "Keyboard Maestro"
+			}
+		]
+	},
+	"Macros": [],
+	"ToggleMacroUID": "8B0D742C-0E8B-4925-8547-B21EE67D3D66",
+	"Activate": "Normal",
+	"KeyCode": 32767
+}

@@ -1,0 +1,30 @@
+{
+	"UID": "CC0E4B5F-C5C7-4BC4-8272-3BA816036824",
+	"Actions": [
+		{
+			"MacroActionType": "ApplicationLauncher",
+			"HideOthers": false,
+			"Blue": 128,
+			"IncludedApplications": [],
+			"SwitcherUnderMouse": false,
+			"ApplicationMask": 15,
+			"ExcludedApplications": [],
+			"Green": 128,
+			"Red": 0,
+			"IsDisclosed": false,
+			"Alpha": 70,
+			"ExcludeRunning": false
+		}
+	],
+	"CreationDate": 568066130.993022,
+	"IsActive": false,
+	"ModificationDate": 574605407.927697,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 48,
+			"Modifiers": 4352,
+			"MacroTriggerType": "HotKey"
+		}
+	]
+}

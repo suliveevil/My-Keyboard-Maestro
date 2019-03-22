@@ -1,0 +1,25 @@
+{
+	"UID": "C2E2E6EE-ABC6-4A30-8A6B-F4E973749E58",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "<details>\n    <summary> text </summary> \n    <p float=\"left\">\n        <a href=\"%FrontBrowserURL%\">%FrontBrowserTitle%</a><br>\n        <img src=\"%FrontBrowserURL%\"  alt=\"%FrontBrowserTitle%\" /><br>\n    </p>\n</details> \n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566256048.831961,
+	"IsActive": false,
+	"ModificationDate": 567475235.016484,
+	"Triggers": [
+		{
+			"TypedString": "@tf",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD文字折叠"
+}

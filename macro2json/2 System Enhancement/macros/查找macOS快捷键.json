@@ -1,0 +1,86 @@
+{
+	"UID": "FCED326C-3151-4799-B63E-6EDCB67CEC66",
+	"Actions": [
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "请输入要找的快捷键",
+			"Prompt": "Please enter the details for these variables.",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "keykey",
+					"Default": ""
+				}
+			]
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": false,
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			},
+			"URL": "https://support.apple.com/zh-cn/HT201236"
+		},
+		{
+			"MacroActionType": "SafariControl",
+			"Command": "WaitForComplete",
+			"TimeOutAbortsMacro": true,
+			"WebBrowser": "Safari",
+			"Argument": "1"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 3,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "%Variable%keykey%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566980863.654744,
+	"ModificationDate": 568131099.062193,
+	"Triggers": [
+		{
+			"TypedString": "!kjj",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！kjj",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": ";kjj",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "；kjj",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "查找macOS快捷键"
+}

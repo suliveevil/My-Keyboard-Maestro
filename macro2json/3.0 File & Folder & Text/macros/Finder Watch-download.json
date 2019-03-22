@@ -1,0 +1,27 @@
+{
+	"UID": "A6B679C4-6B02-499D-AED9-8D4369B2907E",
+	"Actions": [
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "Need to Manage",
+			"Subtitle": "File Change",
+			"SoundName": ""
+		}
+	],
+	"CreationDate": 568475443.893579,
+	"IsActive": false,
+	"ModificationDate": 568582228.561396,
+	"Triggers": [
+		{
+			"Interest": {
+				"UID2": "A4A779B5-283B-4411-9DC4-43DF320CB4D1",
+				"Observe": "Add",
+				"ObserveWhen": "IgnorePartial",
+				"Path": "/allmyfiles/download"
+			},
+			"MacroTriggerType": "Folder"
+		}
+	],
+	"Name": "Finder Watch-download"
+}

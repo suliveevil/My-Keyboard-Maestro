@@ -1,0 +1,28 @@
+{
+	"UID": "6012767B-EBD7-4B3E-BCF6-A2B3F65B26D7",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Utilities/Terminal.app",
+				"BundleIdentifier": "com.apple.Terminal",
+				"Name": "Terminal"
+			}
+		}
+	],
+	"CreationDate": 568078166.745634,
+	"ModificationDate": 574796447.173713,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 18,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Terminal"
+}

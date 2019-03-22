@@ -1,0 +1,14 @@
+{
+	"UID": "C267D78E-6BF0-4FE2-8FE6-C76F5C69A14A",
+	"Actions": [],
+	"CreationDate": 574812051.01561,
+	"ModificationDate": 574812074.947543,
+	"Triggers": [
+		{
+			"TypedString": "H J K L",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Vim"
+}

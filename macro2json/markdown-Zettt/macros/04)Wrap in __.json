@@ -1,0 +1,223 @@
+{
+	"UID": "3A4CE7C9-0E5A-49CE-B61B-99D9AE229D2D",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Make sure Double Quotes Style preference is set",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uAAAAKwAAAAEAAABm\n\t\t\t\t\t\t\tAAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibH0Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAcy6w\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "MMD__Double Quotes Style",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "true",
+						"ConditionType": "Variable"
+					},
+					{
+						"Variable": "MMD__Double Quotes Style",
+						"VariableConditionType": "Is",
+						"VariableValue": "%Delete%",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteMacro",
+					"MacroUID": "07A6B611-DD28-4EFB-AC20-0976EE0E8B59",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"UseParameter": false,
+					"Asynchronously": false
+				}
+			]
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "Check for text selection",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uAAAAKwAAAAEAAABm\n\t\t\t\t\t\t\tAAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibH0Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAcy6w\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "2FA80014-C9C2-45AE-BE4A-CA56E27EF8C0",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "MMD__Cut Menu Item",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "InsertText",
+					"Action": "ByPasting",
+					"IsDisclosed": false,
+					"Text": "\""
+				},
+				{
+					"MacroActionType": "ExecuteMacro",
+					"MacroUID": "EF4F2B9D-C58B-493B-88F4-F52714BD67FB",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"UseParameter": false,
+					"Asynchronously": false
+				},
+				{
+					"MacroActionType": "InsertText",
+					"Action": "ByPasting",
+					"IsDisclosed": false,
+					"Text": "\""
+				},
+				{
+					"MacroActionType": "DeletePastClipboard",
+					"IsDisclosed": false,
+					"PastExpression": "0"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "MMD__Cut Menu Item",
+						"VariableConditionType": "Is",
+						"VariableValue": "true",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "MMD__Cut Menu Item",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"IsDisclosed": false,
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 7,
+					"Modifiers": 256
+				},
+				{
+					"MacroActionType": "Pause",
+					"Time": "0.1",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ElseActions": [
+						{
+							"MacroActionType": "IfThenElse",
+							"ElseActions": [],
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionList": [
+									{
+										"Variable": "MMD__Double Quotes Style",
+										"VariableConditionType": "Is",
+										"VariableValue": "smart",
+										"ConditionType": "Variable"
+									}
+								],
+								"ConditionListMatch": "All"
+							},
+							"ThenActions": [
+								{
+									"MacroActionType": "PlugIn",
+									"PlugInFolderName": "Wrap Text",
+									"IsDisclosed": false,
+									"TimeOutAbortsMacro": true,
+									"PlugInParameters": {
+										"Animal": "Wombat",
+										"WrapEnd": "”",
+										"Wrapper": "**",
+										"Text": "%CurrentClipboard%",
+										"WrapStart": "“"
+									},
+									"TrimResultsNew": true,
+									"IncludeStdErr": true,
+									"DisplayKind": "Pasting"
+								}
+							]
+						}
+					],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "MMD__Double Quotes Style",
+								"VariableConditionType": "Is",
+								"VariableValue": "straight",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "PlugIn",
+							"PlugInFolderName": "Wrap Text",
+							"IsDisclosed": false,
+							"TimeOutAbortsMacro": true,
+							"PlugInParameters": {
+								"Animal": "Wombat",
+								"WrapEnd": "\"",
+								"Wrapper": "**",
+								"Text": "%CurrentClipboard%",
+								"WrapStart": "\""
+							},
+							"TrimResultsNew": true,
+							"IncludeStdErr": true,
+							"DisplayKind": "Pasting"
+						}
+					]
+				},
+				{
+					"MacroActionType": "DeletePastClipboard",
+					"IsDisclosed": false,
+					"PastExpression": "0"
+				},
+				{
+					"MacroActionType": "DeletePastClipboard",
+					"IsDisclosed": false,
+					"PastExpression": "0"
+				}
+			]
+		}
+	],
+	"CreationDate": 457084305.764058,
+	"ModificationDate": 430958560.318093,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 39,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"MacroTriggerType": "StatusMenu"
+		}
+	],
+	"Name": "04)Wrap in \"\"",
+	"CustomIconData": "\n\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\tTU0AKgAACG6AACBQOCQUDwMXwMLQMrwMKwMU\n\t\t\t\t\tQMEwMJwMBwWMRmNRuOR2PR+QSGRSOSRh+wN2\n\t\t\t\t\twN7wNsQN1wNUwN1QNowN8yEAwMGwMFQMaQqB\n\t\t\t\t\tkyKQMRQMEQMJQMBSWmU2nU+oVGPv6Bu6BviB\n\t\t\t\t\tt6UQNaTKBsyBvaBvOBv+MzuBFKBhyBluBhGd\n\t\t\t\t\tRaBgSBzmBRepXm9Xu+X2ByeBWaBPy/2OBu+B\n\t\t\t\t\tqWBuSBq7DQKDwK4QIxQMPwMrQMHUq/Z3PZ/Q\n\t\t\t\t\taGqQJ5QNVQNwwNPYeBjaBheBomBhnNZzQ7fc\n\t\t\t\t\tbndSXRgDSwJzwM7wN00GgQJC8cAUvd83nc/o\n\t\t\t\t\tQLezOBHuvQJRwMFwMjdro9/weHQvWBrqB+SB\n\t\t\t\t\tLijQMb+vxe/4fGmViBMmrwNwXKBbS7/L/P/A\n\t\t\t\t\tCCsAADgoFAbioE5gAKTBMAwdB7xN6qzpIGwi\n\t\t\t\t\tMLxCEMw078BoIwUNxBEL5Q/EUSxM58SRPFUV\n\t\t\t\t\ts/FMWRfGCoxdGMaRqkMZxtHMdILHEdx9G0ex\n\t\t\t\t\t/IUXyC+QAqWAgEgeAAByaAAIgag4BgEux/xc\n\t\t\t\t\tAMqqofx9vIfsvAAdp3y6f0ioIuwBomAUnAmC\n\t\t\t\t\tSdyapaLrMuwARnLCTn9L56Hcq0vJOe0LTLAF\n\t\t\t\t\tAvEAgFLgDAeDMAAMAy2g+C0GAAAoBzIn83ql\n\t\t\t\t\tKWfx9HoAB6G0rp0HO4I8EgWwAHUd1OI+Aaeg\n\t\t\t\t\tECwfUkC4MAAPg9CzRYKs2DICJOAi7Q6ACTou\n\t\t\t\t\tdgAHmdZ0AAVZBkCAB0HQl5fHSsx62BDVBvCA\n\t\t\t\t\toGAoAAPCQPAAA5cIAEaM72guCCjgAfkLIIAi\n\t\t\t\t\t6H8fLSnmahTgAcl7gAMQ+tOcx1t+jwCAY5YN\n\t\t\t\t\tiVRYNrYSJGDJcAMAgAAN14AFfQMgrCWGAB4n\n\t\t\t\t\tQxhQjiNV7HJZBYnIsx53ZEFrvAA4H1mFwwkk\n\t\t\t\t\tAAP5iABHi6FlFggyMrIxLAAXgeIAHwa7FHDo\n\t\t\t\t\tgACWNZOgAcZ0HgkADYcAwVjCAAO5kVJJC7mA\n\t\t\t\t\tMyXJazQVFKqSwsmMtSVI3CmAGiHGABMmok54\n\t\t\t\t\tJvEWUO+BAIVmGAxkvmGZEiLwVAAC4Hsijp/n\n\t\t\t\t\t1n57GtoeiiSNJNAAcRz6aj4D6gFdFaqy5Xks\n\t\t\t\t\ttwPgxJeBQajTe04eR0NSVA3CdtJw7WS5opOd\n\t\t\t\t\t+4xDubogRlYABgMGX5iy5IjChNz8GjlNZ+en\n\t\t\t\t\tE9W1Il8bpXIpAAuHAGEvL5kVpOc4DUlsm5aN\n\t\t\t\t\t9HjHTAAUvU9XtZNdeAG4RL2jodtu4v93vgxe\n\t\t\t\t\tBnCp8NYvj6I1ImeWcfmo/56TARvTMuK0Tz13\n\t\t\t\t\tsm2Iy91sgABSPibUAATb5n0NyQ0+x3D7m9u9\n\t\t\t\t\tfi4B+ZHniP2cU/l/b/SPP/AHAFqj1ICswewk\n\t\t\t\t\t+BBGIFPfga6qB8EW3uyZPBV24MIMO8AAJGDb\n\t\t\t\t\twX6M/Hm/dor+nHP8clCV6EKHMAAgJAaFzoYE\n\t\t\t\t\tkDU5AuGb44IQShwht9Rz4LQ8ffBp+TwnuP1i\n\t\t\t\t\tLCEAESHmRLI7CaJ0KopPaQVDCKz3jUxZhrFx\n\t\t\t\t\t9MOn2xjh/EGDpHYPxpeRGuEcbiORwgFFCFYH\n\t\t\t\t\t4Wx0e5HeLEDnWRbhvH1DMYYevwjLEOEEh42R\n\t\t\t\t\tKedE2RsUYWQHipHYgUV4ZSWbXDZ88XVrR+gv\n\t\t\t\t\tICIEn4PRoiNCKJMJI3ymhTAOR8kYXkFhjHmW\n\t\t\t\t\tEmJZyaQhJyXEgozOil5GqUcwJFzCifKiSEqn\n\t\t\t\t\ttuikpK+Gkl5ZQTdnLaMUGZAy6kJNWUUiZSwA\n\t\t\t\t\tlPMWb0dZkThmVOOWMfIKSbh3J2MkHJpwJnc/\n\t\t\t\t\tiREv5FEbkZMOR0c5jkEmTAyZc5ZaIZi+c6aE\n\t\t\t\t\t6pc0ClBIag016EkaoXNuekU5vxVlbHiiU+pm\n\t\t\t\t\tTmhzP6P9GppUdl7QeNs8YTzzodKue9KZK0so\n\t\t\t\t\tpM5B8YXdUad/RwjzhYiDWFNO8TLj5sUKeg9K\n\t\t\t\t\thgrnrSpAAw6niHjDQLfCE91Y4gAPlkzP2Z7d\n\t\t\t\t\tncN5o035wDgiPuFNKPobhp6DBFDGJWqBiHJu\n\t\t\t\t\tVUUB5mQsnNswc8AAiZAk5kYQ+St0rpw3BLrC\n\t\t\t\t\tAB1zsKKoQouc1lRsAVBcEWtwDwHgACKCy39w\n\t\t\t\t\tJBwAs6IKzyuAAB9DdFe48cVYgohuE40ppjTk\n\t\t\t\t\tlgGBQF5cFnQACmEYQ0D1gwEl2ntRAwNih0Vi\n\t\t\t\t\tFYHYhtrzGCfGs28fVQkHABAOwIBYLQkoLAmR\n\t\t\t\t\tUMwSQWoLAWAZiQ+x9gATmAEAoBWej8JWPYcI\n\t\t\t\t\twEwDtJSJQVIygADvHkSskBkQDguqyBIioYA1\n\t\t\t\t\tBIABd1gQFr2JMsOWUk4/x+EzHpfQAAuRKigT\n\t\t\t\t\tAO5po0m42TsohsApEwCghPaA4B6Swqg+IiA8\n\t\t\t\t\tBN7ACXmvQXW9bPR+lYHsOUsA8cdLJF4NVYo9\n\t\t\t\t\tbpvOKIAABmJgABKC0D0AGJyegVwWAPBpgcHj\n\t\t\t\t\t8JePbHYwxSqmHiPJTg3yB3nuog8uwBijgCzN\n\t\t\t\t\tkQA97MzE5tKlcnKVjRj9umpYqg8x7E3tMSS8\n\t\t\t\t\tiRylgLAYQfMxS0qWGI2YIf6WlLAAHyPQ8ili\n\t\t\t\t\tzZBRVZVIek1BaU0sjDSWl9NHg0zpvTxztO6f\n\t\t\t\t\t1EbjUOo9TGe1LqfVRe9U6r1cVDVur9ZEl1jr\n\t\t\t\t\tPWxIGTH61vrspy1QAIIpOgyk+vNiSTIEhNnp\n\t\t\t\t\t+NdH8SZsXZxGkBoFWCQM9RAl0gAPbtbZ+2yC\n\t\t\t\t\tH0AAfYgW3jskCO2QI7u5NubpPQAA8xAt1lCI\n\t\t\t\t\tEQs5Byri7p1WdMgZ1iBHUAAa4gRsCBGyP2bW\n\t\t\t\t\tre9tNG9X/tI4ZAtgODe0ZUgRlyBGZIEZvgvB\n\t\t\t\t\tkdcINMag1RrCMFoAAWogRbCBFuMkXE/pAi6a\n\t\t\t\t\tE5Txg+KA0PrsQGWQgVenwGLMaY+0/KAAE9IE\n\t\t\t\t\tT/eJxiBEVIEUXbRAthb15cblCR9yBFaIESkg\n\t\t\t\t\tRXd9lfLDzpa7gyE9BIEQ0gRDyBERIFYXA+uu\n\t\t\t\t\tlnNQH1IAF/AAEtIES8gRMeqkCJqQKyZAQAAP\n\t\t\t\t\tAQAAAwAAAAEAQAAAAQEAAwAAAAEAQAAAAQIA\n\t\t\t\t\tAwAAAAQAAAkoAQMAAwAAAAEABQAAAQYAAwAA\n\t\t\t\t\tAAEAAgAAAREABAAAAAEAAAAIARIAAwAAAAEA\n\t\t\t\t\tAQAAARUAAwAAAAEABAAAARYAAwAAAAEAQAAA\n\t\t\t\t\tARcABAAAAAEAAAhmARwAAwAAAAEAAQAAAT0A\n\t\t\t\t\tAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAA\n\t\t\t\t\tAAQAAAkwh3MABwAAB6gAAAk4AAATCAAIAAgA\n\t\t\t\t\tCAAIAAEAAQABAAEAAAeoYXBwbAIgAABtbnRy\n\t\t\t\t\tUkdCIFhZWiAH2QACABkACwAaAAthY3NwQVBQ\n\t\t\t\t\tTAAAAABhcHBsAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t9tYAAQAAAADTLWFwcGwAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAtkZXNjAAABCAAAAG9kc2NtAAAB\n\t\t\t\t\teAAABWxjcHJ0AAAG5AAAADh3dHB0AAAHHAAA\n\t\t\t\t\tABRyWFlaAAAHMAAAABRnWFlaAAAHRAAAABRi\n\t\t\t\t\tWFlaAAAHWAAAABRyVFJDAAAHbAAAAA5jaGFk\n\t\t\t\t\tAAAHfAAAACxiVFJDAAAHbAAAAA5nVFJDAAAH\n\t\t\t\t\tbAAAAA5kZXNjAAAAAAAAABRHZW5lcmljIFJH\n\t\t\t\t\tQiBQcm9maWxlAAAAAAAAAAAAAAAUR2VuZXJp\n\t\t\t\t\tYyBSR0IgUHJvZmlsZQAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAbWx1YwAAAAAAAAAeAAAADHNr\n\t\t\t\t\tU0sAAAAoAAABeGhySFIAAAAoAAABoGNhRVMA\n\t\t\t\t\tAAAkAAAByHB0QlIAAAAmAAAB7HVrVUEAAAAq\n\t\t\t\t\tAAACEmZyRlUAAAAoAAACPHpoVFcAAAAWAAAC\n\t\t\t\t\tZGl0SVQAAAAoAAACem5iTk8AAAAmAAAComtv\n\t\t\t\t\tS1IAAAAWAAACyGNzQ1oAAAAiAAAC3mhlSUwA\n\t\t\t\t\tAAAeAAADAGRlREUAAAAsAAADHmh1SFUAAAAo\n\t\t\t\t\tAAADSnN2U0UAAAAmAAAConpoQ04AAAAWAAAD\n\t\t\t\t\tcmphSlAAAAAaAAADiHJvUk8AAAAkAAADomVs\n\t\t\t\t\tR1IAAAAiAAADxnB0UE8AAAAmAAAD6G5sTkwA\n\t\t\t\t\tAAAoAAAEDmVzRVMAAAAmAAAD6HRoVEgAAAAk\n\t\t\t\t\tAAAENnRyVFIAAAAiAAAEWmZpRkkAAAAoAAAE\n\t\t\t\t\tfHBsUEwAAAAsAAAEpHJ1UlUAAAAiAAAE0GFy\n\t\t\t\t\tRUcAAAAmAAAE8mVuVVMAAAAmAAAFGGRhREsA\n\t\t\t\t\tAAAuAAAFPgBWAWEAZQBvAGIAZQBjAG4A/QAg\n\t\t\t\t\tAFIARwBCACAAcAByAG8AZgBpAGwARwBlAG4A\n\t\t\t\t\tZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBv\n\t\t\t\t\tAGYAaQBsAFAAZQByAGYAaQBsACAAUgBHAEIA\n\t\t\t\t\tIABnAGUAbgDoAHIAaQBjAFAAZQByAGYAaQBs\n\t\t\t\t\tACAAUgBHAEIAIABHAGUAbgDpAHIAaQBjAG8E\n\t\t\t\t\tFwQwBDMEMAQ7BEwEPQQ4BDkAIAQ/BEAEPgRE\n\t\t\t\t\tBDAEOQQ7ACAAUgBHAEIAUAByAG8AZgBpAGwA\n\t\t\t\t\tIABnAOkAbgDpAHIAaQBxAHUAZQAgAFIAVgBC\n\t\t\t\t\tkBp1KAAgAFIARwBCACCCcl9pY8+P8ABQAHIA\n\t\t\t\t\tbwBmAGkAbABvACAAUgBHAEIAIABnAGUAbgBl\n\t\t\t\t\tAHIAaQBjAG8ARwBlAG4AZQByAGkAcwBrACAA\n\t\t\t\t\tUgBHAEIALQBwAHIAbwBmAGkAbMd8vBgAIABS\n\t\t\t\t\tAEcAQgAg1QS4XNMMx3wATwBiAGUAYwBuAP0A\n\t\t\t\t\tIABSAEcAQgAgAHAAcgBvAGYAaQBsBeQF6AXV\n\t\t\t\t\tBeQF2QXcACAAUgBHAEIAIAXbBdwF3AXZAEEA\n\t\t\t\t\tbABsAGcAZQBtAGUAaQBuAGUAcwAgAFIARwBC\n\t\t\t\t\tAC0AUAByAG8AZgBpAGwAwQBsAHQAYQBsAOEA\n\t\t\t\t\tbgBvAHMAIABSAEcAQgAgAHAAcgBvAGYAaQBs\n\t\t\t\t\tZm6QGgAgAFIARwBCACBjz4/wZYdO9k4AgiwA\n\t\t\t\t\tIABSAEcAQgAgMNcw7TDVMKEwpDDrAFAAcgBv\n\t\t\t\t\tAGYAaQBsACAAUgBHAEIAIABnAGUAbgBlAHIA\n\t\t\t\t\taQBjA5MDtQO9A7kDugPMACADwAPBA78DxgOv\n\t\t\t\t\tA7sAIABSAEcAQgBQAGUAcgBmAGkAbAAgAFIA\n\t\t\t\t\tRwBCACAAZwBlAG4A6QByAGkAYwBvAEEAbABn\n\t\t\t\t\tAGUAbQBlAGUAbgAgAFIARwBCAC0AcAByAG8A\n\t\t\t\t\tZgBpAGUAbA5CDhsOIw5EDh8OJQ5MACAAUgBH\n\t\t\t\t\tAEIAIA4XDjEOSA4nDkQOGwBHAGUAbgBlAGwA\n\t\t\t\t\tIABSAEcAQgAgAFAAcgBvAGYAaQBsAGkAWQBs\n\t\t\t\t\tAGUAaQBuAGUAbgAgAFIARwBCAC0AcAByAG8A\n\t\t\t\t\tZgBpAGkAbABpAFUAbgBpAHcAZQByAHMAYQBs\n\t\t\t\t\tAG4AeQAgAHAAcgBvAGYAaQBsACAAUgBHAEIE\n\t\t\t\t\tHgQxBEkEOAQ5ACAEPwRABD4ERAQ4BDsETAAg\n\t\t\t\t\tAFIARwBCBkUGRAZBACAGKgY5BjEGSgZBACAA\n\t\t\t\t\tUgBHAEIAIAYnBkQGOQYnBkUARwBlAG4AZQBy\n\t\t\t\t\tAGkAYwAgAFIARwBCACAAUAByAG8AZgBpAGwA\n\t\t\t\t\tZQBHAGUAbgBlAHIAZQBsACAAUgBHAEIALQBi\n\t\t\t\t\tAGUAcwBrAHIAaQB2AGUAbABzAGV0ZXh0AAAA\n\t\t\t\t\tAENvcHlyaWdodCAyMDA3IEFwcGxlIEluYy4s\n\t\t\t\t\tIGFsbCByaWdodHMgcmVzZXJ2ZWQuAFhZWiAA\n\t\t\t\t\tAAAAAADzUgABAAAAARbPWFlaIAAAAAAAAHRN\n\t\t\t\t\tAAA97gAAA9BYWVogAAAAAAAAWnUAAKxzAAAX\n\t\t\t\t\tNFhZWiAAAAAAAAAoGgAAFZ8AALg2Y3VydgAA\n\t\t\t\t\tAAAAAAABAc0AAHNmMzIAAAAAAAEMQgAABd7/\n\t\t\t\t\t//MmAAAHkgAA/ZH///ui///9owAAA9wAAMBs\n\t\t\t\t\tgAAgUDggAHsDOsDGkDDMFh0PiERiUTikVhzn\n\t\t\t\t\tgbMgaLgbDiZ7gaCgYCi0lk0nlEpgj+gZ+gaF\n\t\t\t\t\tgcHgTAkcqm03nE5AEsgRAgaygZNnVDolFiqz\n\t\t\t\t\tgbmhlGplNo0YgT/p1TqlFqVVrFZlFXrVdr0Q\n\t\t\t\t\trlfsVfsNjs1YstEEhbTYAXaJJMCfb7gQFAoA\n\t\t\t\t\tdzFjgzK6RiICD5dty6QwAEwGfgAxMCAgBcYA\n\t\t\t\t\tQJBH4ATjftNMy86ICEY4AX57HERerKQ4ABg3\n\t\t\t\t\tPURAw7wrpYh5AAQiLwACNHwUAB0Yb9tFOIB9\n\t\t\t\t\tYWeQUyh7v0gACWoiIDFuFc7S2AV2YAQ23AB7\n\t\t\t\t\t3e9pu/4K/4cR42l5OpiHM53QAHSiG06u47G8\n\t\t\t\t\tquZnPc4XEh3h5HK8vNAHP6Lpva67svi3zgPq\n\t\t\t\t\t8DjvG5b+P89MAOs97tKY+jvPsgr8QU/bzv+9\n\t\t\t\t\tbqQhAaqPknEKO+iEMP0h7zP69D1Ie9kPvhEM\n\t\t\t\t\tCu7EriwTFCHRVBsWodF73RAqcRJuzbOs+0KI\n\t\t\t\t\tH0aBHgAA4Yjk1TWAAd7XgABSIns2ofAc3MgK\n\t\t\t\t\tdISbAKGIpsgLodyYfB8AAAIEAQAB4GwWAAEE\n\t\t\t\t\tTTgokGQADeQwuAAD82oKf58nCABSDyvxnq1L\n\t\t\t\t\t6z0UnNE0XRyU0bR9JItSNJ0siNK0vTSCUzTd\n\t\t\t\t\tNqUgSG09UaCqgACgIEoVSVWACkIE4iaIEklW\n\t\t\t\t\tUkngAJ8hyQIEkVZVosVbJcgSYIk4iEoEhdQ1\n\t\t\t\t\t8nVTI0gSOIEjyBoCAA8BAAADAAAAAQAgAAAB\n\t\t\t\t\tAQADAAAAAQAgAAABAgADAAAABAAAE8IBAwAD\n\t\t\t\t\tAAAAAQAFAAABBgADAAAAAQACAAABEQAEAAAA\n\t\t\t\t\tAQAAEOABEgADAAAAAQABAAABFQADAAAAAQAE\n\t\t\t\t\tAAABFgADAAAAAQAgAAABFwAEAAAAAQAAAigB\n\t\t\t\t\tHAADAAAAAQABAAABPQADAAAAAQACAAABUgAD\n\t\t\t\t\tAAAAAQABAAABUwADAAAABAAAE8qHcwAHAAAH\n\t\t\t\t\tqAAAE9IAABziAAgACAAIAAgAAQABAAEAAQAA\n\t\t\t\t\tB6hhcHBsAiAAAG1udHJSR0IgWFlaIAfZAAIA\n\t\t\t\t\tGQALABoAC2Fjc3BBUFBMAAAAAGFwcGwAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBw\n\t\t\t\t\tbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MA\n\t\t\t\t\tAAEIAAAAb2RzY20AAAF4AAAFbGNwcnQAAAbk\n\t\t\t\t\tAAAAOHd0cHQAAAccAAAAFHJYWVoAAAcwAAAA\n\t\t\t\t\tFGdYWVoAAAdEAAAAFGJYWVoAAAdYAAAAFHJU\n\t\t\t\t\tUkMAAAdsAAAADmNoYWQAAAd8AAAALGJUUkMA\n\t\t\t\t\tAAdsAAAADmdUUkMAAAdsAAAADmRlc2MAAAAA\n\t\t\t\t\tAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAA\n\t\t\t\t\tAAAAAAAAABRHZW5lcmljIFJHQiBQcm9maWxl\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVj\n\t\t\t\t\tAAAAAAAAAB4AAAAMc2tTSwAAACgAAAF4aHJI\n\t\t\t\t\tUgAAACgAAAGgY2FFUwAAACQAAAHIcHRCUgAA\n\t\t\t\t\tACYAAAHsdWtVQQAAACoAAAISZnJGVQAAACgA\n\t\t\t\t\tAAI8emhUVwAAABYAAAJkaXRJVAAAACgAAAJ6\n\t\t\t\t\tbmJOTwAAACYAAAKia29LUgAAABYAAALIY3ND\n\t\t\t\t\tWgAAACIAAALeaGVJTAAAAB4AAAMAZGVERQAA\n\t\t\t\t\tACwAAAMeaHVIVQAAACgAAANKc3ZTRQAAACYA\n\t\t\t\t\tAAKiemhDTgAAABYAAANyamFKUAAAABoAAAOI\n\t\t\t\t\tcm9STwAAACQAAAOiZWxHUgAAACIAAAPGcHRQ\n\t\t\t\t\tTwAAACYAAAPobmxOTAAAACgAAAQOZXNFUwAA\n\t\t\t\t\tACYAAAPodGhUSAAAACQAAAQ2dHJUUgAAACIA\n\t\t\t\t\tAARaZmlGSQAAACgAAAR8cGxQTAAAACwAAASk\n\t\t\t\t\tcnVSVQAAACIAAATQYXJFRwAAACYAAATyZW5V\n\t\t\t\t\tUwAAACYAAAUYZGFESwAAAC4AAAU+AFYBYQBl\n\t\t\t\t\tAG8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIA\n\t\t\t\t\tbwBmAGkAbABHAGUAbgBlAHIAaQENAGsAaQAg\n\t\t\t\t\tAFIARwBCACAAcAByAG8AZgBpAGwAUABlAHIA\n\t\t\t\t\tZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgAcgBp\n\t\t\t\t\tAGMAUABlAHIAZgBpAGwAIABSAEcAQgAgAEcA\n\t\t\t\t\tZQBuAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9\n\t\t\t\t\tBDgEOQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcA\n\t\t\t\t\tQgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBp\n\t\t\t\t\tAHEAdQBlACAAUgBWAEKQGnUoACAAUgBHAEIA\n\t\t\t\t\tIIJyX2ljz4/wAFAAcgBvAGYAaQBsAG8AIABS\n\t\t\t\t\tAEcAQgAgAGcAZQBuAGUAcgBpAGMAbwBHAGUA\n\t\t\t\t\tbgBlAHIAaQBzAGsAIABSAEcAQgAtAHAAcgBv\n\t\t\t\t\tAGYAaQBsx3y8GAAgAFIARwBCACDVBLhc0wzH\n\t\t\t\t\tfABPAGIAZQBjAG4A/QAgAFIARwBCACAAcABy\n\t\t\t\t\tAG8AZgBpAGwF5AXoBdUF5AXZBdwAIABSAEcA\n\t\t\t\t\tQgAgBdsF3AXcBdkAQQBsAGwAZwBlAG0AZQBp\n\t\t\t\t\tAG4AZQBzACAAUgBHAEIALQBQAHIAbwBmAGkA\n\t\t\t\t\tbADBAGwAdABhAGwA4QBuAG8AcwAgAFIARwBC\n\t\t\t\t\tACAAcAByAG8AZgBpAGxmbpAaACAAUgBHAEIA\n\t\t\t\t\tIGPPj/Blh072TgCCLAAgAFIARwBCACAw1zDt\n\t\t\t\t\tMNUwoTCkMOsAUAByAG8AZgBpAGwAIABSAEcA\n\t\t\t\t\tQgAgAGcAZQBuAGUAcgBpAGMDkwO1A70DuQO6\n\t\t\t\t\tA8wAIAPAA8EDvwPGA68DuwAgAFIARwBCAFAA\n\t\t\t\t\tZQByAGYAaQBsACAAUgBHAEIAIABnAGUAbgDp\n\t\t\t\t\tAHIAaQBjAG8AQQBsAGcAZQBtAGUAZQBuACAA\n\t\t\t\t\tUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4j\n\t\t\t\t\tDkQOHw4lDkwAIABSAEcAQgAgDhcOMQ5IDicO\n\t\t\t\t\tRA4bAEcAZQBuAGUAbAAgAFIARwBCACAAUABy\n\t\t\t\t\tAG8AZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAA\n\t\t\t\t\tUgBHAEIALQBwAHIAbwBmAGkAaQBsAGkAVQBu\n\t\t\t\t\tAGkAdwBlAHIAcwBhAGwAbgB5ACAAcAByAG8A\n\t\t\t\t\tZgBpAGwAIABSAEcAQgQeBDEESQQ4BDkAIAQ/\n\t\t\t\t\tBEAEPgREBDgEOwRMACAAUgBHAEIGRQZEBkEA\n\t\t\t\t\tIAYqBjkGMQZKBkEAIABSAEcAQgAgBicGRAY5\n\t\t\t\t\tBicGRQBHAGUAbgBlAHIAaQBjACAAUgBHAEIA\n\t\t\t\t\tIABQAHIAbwBmAGkAbABlAEcAZQBuAGUAcgBl\n\t\t\t\t\tAGwAIABSAEcAQgAtAGIAZQBzAGsAcgBpAHYA\n\t\t\t\t\tZQBsAHMAZXRleHQAAAAAQ29weXJpZ2h0IDIw\n\t\t\t\t\tMDcgQXBwbGUgSW5jLiwgYWxsIHJpZ2h0cyBy\n\t\t\t\t\tZXNlcnZlZC4AWFlaIAAAAAAAAPNSAAEAAAAB\n\t\t\t\t\tFs9YWVogAAAAAAAAdE0AAD3uAAAD0FhZWiAA\n\t\t\t\t\tAAAAAABadQAArHMAABc0WFlaIAAAAAAAACga\n\t\t\t\t\tAAAVnwAAuDZjdXJ2AAAAAAAAAAEBzQAAc2Yz\n\t\t\t\t\tMgAAAAAAAQxCAAAF3v//8yYAAAeSAAD9kf//\n\t\t\t\t\t+6L///2jAAAD3AAAwGyAACBAKBAA5wU9QUIQ\n\t\t\t\t\tWGQ2HQ+IQ54QVDQVGwU6wVEQWCRGPR+QQx/Q\n\t\t\t\t\tU8QV4wUHSGVSuQvKCv+WTGZSCYSEAgABzmCy\n\t\t\t\t\tN+v2RwycgOXgCez+ZTWPBMQjAAKNSJ4AAZ0s\n\t\t\t\t\toAFAtGiBBQaABVKlMAAIPFrgAvFwwABuO5+y\n\t\t\t\t\tykRENCwgABsNNfgAAuNjgANigdQINEkAOJtr\n\t\t\t\t\tYAA+xAAXioXABpOZ+WyQBkVj7GNBggABOJhA\n\t\t\t\t\tAQi0fwIMke0NhcAAIu9pAAYi8ZgBqOfHyu2x\n\t\t\t\t\tDJZRqNLLgFwsMACAWZQABkkAButpb6Z3NQAD\n\t\t\t\t\tAXDHXbDIR8LioeABns5gVHNAARDAhaAiABtN\n\t\t\t\t\tbShB2NMADQZDXXOnYyrZw8BAsHgAViYSAACP\n\t\t\t\t\tx6ABpmsbKBAG+oVhYEycH2/psmqbAAHqfz4o\n\t\t\t\t\t9CKZwomMJwrDCQJOgSUwzDyHpcgSMoEjaBw/\n\t\t\t\t\tDCjJLEyBIOgSEoEhcTpAiaBIqgRGoCAADwEA\n\t\t\t\t\tAAMAAAABABAAAAEBAAMAAAABABAAAAECAAMA\n\t\t\t\t\tAAAEAAAdnAEDAAMAAAABAAUAAAEGAAMAAAAB\n\t\t\t\t\tAAIAAAERAAQAAAABAAAbegESAAMAAAABAAEA\n\t\t\t\t\tAAEVAAMAAAABAAQAAAEWAAMAAAABABAAAAEX\n\t\t\t\t\tAAQAAAABAAABaAEcAAMAAAABAAEAAAE9AAMA\n\t\t\t\t\tAAABAAIAAAFSAAMAAAABAAEAAAFTAAMAAAAE\n\t\t\t\t\tAAAdpIdzAAcAAAeoAAAdrAAAAAAACAAIAAgA\n\t\t\t\t\tCAABAAEAAQABAAAHqGFwcGwCIAAAbW50clJH\n\t\t\t\t\tQiBYWVogB9kAAgAZAAsAGgALYWNzcEFQUEwA\n\t\t\t\t\tAAAAYXBwbAAAAAAAAAAAAAAAAAAAAAAAAPbW\n\t\t\t\t\tAAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAALZGVzYwAAAQgAAABvZHNjbQAAAXgA\n\t\t\t\t\tAAVsY3BydAAABuQAAAA4d3RwdAAABxwAAAAU\n\t\t\t\t\tclhZWgAABzAAAAAUZ1hZWgAAB0QAAAAUYlhZ\n\t\t\t\t\tWgAAB1gAAAAUclRSQwAAB2wAAAAOY2hhZAAA\n\t\t\t\t\tB3wAAAAsYlRSQwAAB2wAAAAOZ1RSQwAAB2wA\n\t\t\t\t\tAAAOZGVzYwAAAAAAAAAUR2VuZXJpYyBSR0Ig\n\t\t\t\t\tUHJvZmlsZQAAAAAAAAAAAAAAFEdlbmVyaWMg\n\t\t\t\t\tUkdCIFByb2ZpbGUAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAG1sdWMAAAAAAAAAHgAAAAxza1NL\n\t\t\t\t\tAAAAKAAAAXhockhSAAAAKAAAAaBjYUVTAAAA\n\t\t\t\t\tJAAAAchwdEJSAAAAJgAAAex1a1VBAAAAKgAA\n\t\t\t\t\tAhJmckZVAAAAKAAAAjx6aFRXAAAAFgAAAmRp\n\t\t\t\t\tdElUAAAAKAAAAnpuYk5PAAAAJgAAAqJrb0tS\n\t\t\t\t\tAAAAFgAAAshjc0NaAAAAIgAAAt5oZUlMAAAA\n\t\t\t\t\tHgAAAwBkZURFAAAALAAAAx5odUhVAAAAKAAA\n\t\t\t\t\tA0pzdlNFAAAAJgAAAqJ6aENOAAAAFgAAA3Jq\n\t\t\t\t\tYUpQAAAAGgAAA4hyb1JPAAAAJAAAA6JlbEdS\n\t\t\t\t\tAAAAIgAAA8ZwdFBPAAAAJgAAA+hubE5MAAAA\n\t\t\t\t\tKAAABA5lc0VTAAAAJgAAA+h0aFRIAAAAJAAA\n\t\t\t\t\tBDZ0clRSAAAAIgAABFpmaUZJAAAAKAAABHxw\n\t\t\t\t\tbFBMAAAALAAABKRydVJVAAAAIgAABNBhckVH\n\t\t\t\t\tAAAAJgAABPJlblVTAAAAJgAABRhkYURLAAAA\n\t\t\t\t\tLgAABT4AVgFhAGUAbwBiAGUAYwBuAP0AIABS\n\t\t\t\t\tAEcAQgAgAHAAcgBvAGYAaQBsAEcAZQBuAGUA\n\t\t\t\t\tcgBpAQ0AawBpACAAUgBHAEIAIABwAHIAbwBm\n\t\t\t\t\tAGkAbABQAGUAcgBmAGkAbAAgAFIARwBCACAA\n\t\t\t\t\tZwBlAG4A6AByAGkAYwBQAGUAcgBmAGkAbAAg\n\t\t\t\t\tAFIARwBCACAARwBlAG4A6QByAGkAYwBvBBcE\n\t\t\t\t\tMAQzBDAEOwRMBD0EOAQ5ACAEPwRABD4ERAQw\n\t\t\t\t\tBDkEOwAgAFIARwBCAFAAcgBvAGYAaQBsACAA\n\t\t\t\t\tZwDpAG4A6QByAGkAcQB1AGUAIABSAFYAQpAa\n\t\t\t\t\tdSgAIABSAEcAQgAggnJfaWPPj/AAUAByAG8A\n\t\t\t\t\tZgBpAGwAbwAgAFIARwBCACAAZwBlAG4AZQBy\n\t\t\t\t\tAGkAYwBvAEcAZQBuAGUAcgBpAHMAawAgAFIA\n\t\t\t\t\tRwBCAC0AcAByAG8AZgBpAGzHfLwYACAAUgBH\n\t\t\t\t\tAEIAINUEuFzTDMd8AE8AYgBlAGMAbgD9ACAA\n\t\t\t\t\tUgBHAEIAIABwAHIAbwBmAGkAbAXkBegF1QXk\n\t\t\t\t\tBdkF3AAgAFIARwBCACAF2wXcBdwF2QBBAGwA\n\t\t\t\t\tbABnAGUAbQBlAGkAbgBlAHMAIABSAEcAQgAt\n\t\t\t\t\tAFAAcgBvAGYAaQBsAMEAbAB0AGEAbADhAG4A\n\t\t\t\t\tbwBzACAAUgBHAEIAIABwAHIAbwBmAGkAbGZu\n\t\t\t\t\tkBoAIABSAEcAQgAgY8+P8GWHTvZOAIIsACAA\n\t\t\t\t\tUgBHAEIAIDDXMO0w1TChMKQw6wBQAHIAbwBm\n\t\t\t\t\tAGkAbAAgAFIARwBCACAAZwBlAG4AZQByAGkA\n\t\t\t\t\tYwOTA7UDvQO5A7oDzAAgA8ADwQO/A8YDrwO7\n\t\t\t\t\tACAAUgBHAEIAUABlAHIAZgBpAGwAIABSAEcA\n\t\t\t\t\tQgAgAGcAZQBuAOkAcgBpAGMAbwBBAGwAZwBl\n\t\t\t\t\tAG0AZQBlAG4AIABSAEcAQgAtAHAAcgBvAGYA\n\t\t\t\t\taQBlAGwOQg4bDiMORA4fDiUOTAAgAFIARwBC\n\t\t\t\t\tACAOFw4xDkgOJw5EDhsARwBlAG4AZQBsACAA\n\t\t\t\t\tUgBHAEIAIABQAHIAbwBmAGkAbABpAFkAbABl\n\t\t\t\t\tAGkAbgBlAG4AIABSAEcAQgAtAHAAcgBvAGYA\n\t\t\t\t\taQBpAGwAaQBVAG4AaQB3AGUAcgBzAGEAbABu\n\t\t\t\t\tAHkAIABwAHIAbwBmAGkAbAAgAFIARwBCBB4E\n\t\t\t\t\tMQRJBDgEOQAgBD8EQAQ+BEQEOAQ7BEwAIABS\n\t\t\t\t\tAEcAQgZFBkQGQQAgBioGOQYxBkoGQQAgAFIA\n\t\t\t\t\tRwBCACAGJwZEBjkGJwZFAEcAZQBuAGUAcgBp\n\t\t\t\t\tAGMAIABSAEcAQgAgAFAAcgBvAGYAaQBsAGUA\n\t\t\t\t\tRwBlAG4AZQByAGUAbAAgAFIARwBCAC0AYgBl\n\t\t\t\t\tAHMAawByAGkAdgBlAGwAcwBldGV4dAAAAABD\n\t\t\t\t\tb3B5cmlnaHQgMjAwNyBBcHBsZSBJbmMuLCBh\n\t\t\t\t\tbGwgcmlnaHRzIHJlc2VydmVkLgBYWVogAAAA\n\t\t\t\t\tAAAA81IAAQAAAAEWz1hZWiAAAAAAAAB0TQAA\n\t\t\t\t\tPe4AAAPQWFlaIAAAAAAAAFp1AACscwAAFzRY\n\t\t\t\t\tWVogAAAAAAAAKBoAABWfAAC4NmN1cnYAAAAA\n\t\t\t\t\tAAAAAQHNAABzZjMyAAAAAAABDEIAAAXe///z\n\t\t\t\t\tJgAAB5IAAP2R///7ov///aMAAAPcAADAbA==\n\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t"
+}

@@ -1,0 +1,16 @@
+{
+	"UID": "2CC037FE-5ECD-4B98-A2AA-C7366E045B0C",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇧"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492990896.296645,
+	"Triggers": [],
+	"Name": "01)  ⇧   Shift"
+}

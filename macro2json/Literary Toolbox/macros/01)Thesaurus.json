@@ -1,0 +1,82 @@
+{
+	"UID": "AC538F91-A47C-4C50-A3A0-67C6B813B5A5",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "InsertText",
+					"Action": "DisplayBriefly",
+					"IsDisclosed": false,
+					"Text": "Select a word…"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Is",
+						"MenuTitle": "Copy"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "CutCopyPaste",
+					"Action": "Copy",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "SC_Word",
+					"Text": "%CurrentClipboard%"
+				},
+				{
+					"MacroActionType": "ActivateApplication",
+					"ReopenWindows": false,
+					"AllWindows": true,
+					"IsDisclosed": false,
+					"AlreadyActivatedActionType": "Normal",
+					"TimeOutAbortsMacro": true,
+					"Application": {
+						"BundleIdentifier": "com.nisus.NisusThesaurus",
+						"Name": "Nisus Thesaurus"
+					}
+				},
+				{
+					"MacroActionType": "CutCopyPaste",
+					"Action": "Paste",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"IsDisclosed": false,
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 36,
+					"Modifiers": 0
+				}
+			]
+		}
+	],
+	"CreationDate": 562525062.108662,
+	"ModificationDate": 565400924.533437,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 17,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "01)Thesaurus"
+}

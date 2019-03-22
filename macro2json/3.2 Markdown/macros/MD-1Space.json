@@ -1,0 +1,29 @@
+{
+	"UID": "B42F5D85-9B66-4270-9BA2-E1C3439D16EE",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "&#160;%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568076086.684111,
+	"ModificationDate": 570192010.599252,
+	"Triggers": [
+		{
+			"TypedString": "osp",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "1sp",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-1Space"
+}

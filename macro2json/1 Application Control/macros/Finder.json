@@ -1,0 +1,28 @@
+{
+	"UID": "7E40849C-4217-4582-AAEC-F46A2C2CA35F",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/System/Library/CoreServices/Finder.app",
+				"BundleIdentifier": "com.apple.finder",
+				"Name": "访达"
+			}
+		}
+	],
+	"CreationDate": 568078166.745634,
+	"ModificationDate": 574809493.401225,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 18,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Finder"
+}

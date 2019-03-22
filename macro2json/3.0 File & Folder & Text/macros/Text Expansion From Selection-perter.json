@@ -1,0 +1,80 @@
+{
+	"UID": "40AA9017-8990-4FA5-9193-EEA554EE0D2B",
+	"Actions": [
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "Text",
+			"Text": "%CurrentClipboard%"
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Text Expansion Trigger",
+			"Prompt": "What trigger text would you like to use for your new macro?",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "Trigger",
+					"Default": "trigger"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "EncodeHTMLEntities",
+			"Source": "Variable",
+			"Variable": "Text",
+			"Destination": "Variable",
+			"DestinationVariable": "Text Encoded"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "EncodeHTMLEntities",
+			"Source": "Variable",
+			"Variable": "Trigger",
+			"Destination": "Variable",
+			"DestinationVariable": "Trigger Encoded"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"IsDisclosed": false,
+			"Text": "tell application \"Keyboard Maestro Engine\"\r\tset t to value of variable \"Trigger\"\r\tset tenc to value of variable \"Trigger Encoded\"\r\tset venc to value of variable \"Text Encoded\"\rend tell\r\rset txml to \"<dict>\n\t\t\t\t\t\t<key>MacroTriggerType</key>\n\t\t\t\t\t\t<string>TypedString</string>\n\t\t\t\t\t\t<key>SimulateDeletes</key>\n\t\t\t\t\t\t<true/>\n\t\t\t\t\t\t<key>TypedString</key>\n\t\t\t\t\t\t<string>\" & tenc & \"</string>\n\t\t\t\t\t</dict>\"\r\rset axml to \"<dict>\n\t\t\t\t\t\t<key>Action</key>\n\t\t\t\t\t\t<string>ByTyping</string>\n\t\t\t\t\t\t<key>MacroActionType</key>\n\t\t\t\t\t\t<string>InsertText</string>\n\t\t\t\t\t\t<key>Text</key>\n\t\t\t\t\t\t<string>\" & venc & \"</string>\n\t\t\t\t\t</dict>\"\r\rtell application \"Keyboard Maestro\"\r\ttell macro group \"Text Expansions\"\r\t\tset m to make new macro with properties {name:t}\r\t\ttell m to make new trigger with properties {xml:txml}\r\t\ttell m to make new action with properties {xml:axml}\r\tend tell\rend tell\r\"\"",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 481779021.082639,
+	"ModificationDate": 573419430.466427,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 17,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Text Expansion From Selection-perter"
+}

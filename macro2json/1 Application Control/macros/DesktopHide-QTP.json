@@ -1,0 +1,68 @@
+{
+	"UID": "D411F4A3-A976-461E-9FE6-301C2F4CFB95",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"Source": "Nothing",
+					"TrimResults": true,
+					"TimeOutAbortsMacro": true,
+					"Text": "defaults write com.apple.finder CreateDesktop -bool true; killall Finder",
+					"Path": "",
+					"TrimResultsNew": true,
+					"IncludeStdErr": false,
+					"DisplayKind": "None",
+					"UseText": true
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ApplicationConditionType": "Active",
+						"ConditionType": "Application",
+						"Application": {
+							"NewFile": "/Applications/QuickTime Player.app",
+							"BundleIdentifier": "com.apple.QuickTimePlayerX",
+							"Name": "QuickTime Player"
+						}
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"Source": "Nothing",
+					"TrimResults": true,
+					"TimeOutAbortsMacro": true,
+					"Text": "defaults write com.apple.finder CreateDesktop -bool FALSE; killall Finder",
+					"Path": "",
+					"TrimResultsNew": true,
+					"IncludeStdErr": false,
+					"DisplayKind": "None",
+					"UseText": true
+				}
+			]
+		}
+	],
+	"CreationDate": 567221267.616968,
+	"IsActive": false,
+	"ModificationDate": 567744716.387196,
+	"Triggers": [
+		{
+			"MacroTriggerType": "Application",
+			"Target": "Specific",
+			"RepeatTime": 60,
+			"Application": {
+				"NewFile": "/Applications/QuickTime Player.app",
+				"BundleIdentifier": "com.apple.QuickTimePlayerX",
+				"Name": "QuickTime Player"
+			},
+			"FireType2": "Activate"
+		}
+	],
+	"Name": "DesktopHide-QTP"
+}

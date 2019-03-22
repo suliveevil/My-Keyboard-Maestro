@@ -1,0 +1,76 @@
+{
+	"UID": "EE5996E6-FCB8-481B-BEA8-E33673EAFF88",
+	"Actions": [
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"IsDisclosed": false,
+			"Text": "water is life",
+			"Subtitle": "Time to Drink",
+			"SoundName": ""
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.2",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "PlaySound",
+			"Volume": 50,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Path": "/System/Library/Sounds/Glass.aiff",
+			"DeviceID": "SOUNDEFFECTS"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "30",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 567048947.7261,
+	"ModificationDate": 574910533.618183,
+	"Triggers": [
+		{
+			"Repeat": true,
+			"TimeFinishHour": 22,
+			"TimeMinutes": 35,
+			"RepeatTime": 1800,
+			"TimeHour": 6,
+			"TimeFinishMinutes": 35,
+			"WhichDays": 127,
+			"ExecuteType": "While",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "Time to Drink"
+}

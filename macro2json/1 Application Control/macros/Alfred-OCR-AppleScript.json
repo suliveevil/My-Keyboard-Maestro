@@ -1,0 +1,28 @@
+{
+	"UID": "AF1E2226-3A90-43F0-BB4F-9910D7BBA0E7",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\r\ttell application \"Alfred 3\"\r\t\tactivate\r\t\trun trigger \"ocrf\" in workflow \"com.suliveevil.ocrf\" with argument \"\"\r\tend tell\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568229992.588976,
+	"ModificationDate": 568831973.447699,
+	"Triggers": [
+		{
+			"TypedString": "ooo",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Alfred-OCR-AppleScript"
+}

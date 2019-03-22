@@ -1,0 +1,24 @@
+{
+	"UID": "994A38C0-C003-4FEF-BABB-22543AF43DF3",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "==>"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"ModificationDate": 570316655.687316,
+	"Triggers": [
+		{
+			"TypedString": "jjt",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "arrow-LL"
+}

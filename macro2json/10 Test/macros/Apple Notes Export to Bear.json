@@ -1,0 +1,391 @@
+{
+	"UID": "178F233F-79A2-4651-A6D8-5E995DE51D58",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Read Me! Export to Bear",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC52BAAAKwAAAAEAAABu\n\t\t\t\t\t\t\tBAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTYxXGNvY29h\n\t\t\t\t\t\t\tc3VicnRmMjAwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBIZWx2ZXRp\n\t\t\t\t\t\t\tY2FOZXVlO1xmMVxmbmls\n\t\t\t\t\t\t\tXGZjaGFyc2V0MCBMdWNp\n\t\t\t\t\t\t\tZGFHcmFuZGU7fQp7XGNv\n\t\t\t\t\t\t\tbG9ydGJsO1xyZWQyNTVc\n\t\t\t\t\t\t\tZ3JlZW4yNTVcYmx1ZTI1\n\t\t\t\t\t\t\tNTtccmVkMFxncmVlbjBc\n\t\t\t\t\t\t\tYmx1ZTA7fQp7XCpcZXhw\n\t\t\t\t\t\t\tYW5kZWRjb2xvcnRibDs7\n\t\t\t\t\t\t\tXGNzZ3JheVxjMDt9Clxw\n\t\t\t\t\t\t\tYXJkXHR4NTYwXHR4MTEy\n\t\t\t\t\t\t\tMFx0eDE2ODBcdHgyMjQw\n\t\t\t\t\t\t\tXHR4MjgwMFx0eDMzNjBc\n\t\t\t\t\t\t\tdHgzOTIwXHR4NDQ4MFx0\n\t\t\t\t\t\t\teDUwNDBcdHg1NjAwXHR4\n\t\t\t\t\t\t\tNjE2MFx0eDY3MjBccGFy\n\t\t\t\t\t\t\tZGlybmF0dXJhbFxwYXJ0\n\t\t\t\t\t\t\taWdodGVuZmFjdG9yMAoK\n\t\t\t\t\t\t\tXGYwXGZzMjYgXGNmMiB2\n\t\t\t\t\t\t\tLiAxLjAuMVwKSW5jbHVk\n\t\t\t\t\t\t\tZXMgVGl0bGUsIGhlYWRp\n\t\t\t\t\t\t\tbmdzLCBsaW5rcywgZm9y\n\t\t\t\t\t\t\tbWF0LCBsaXN0cywgaW1h\n\t\t\t\t\t\t\tZ2VzLCBhbmQgZXZlbiBm\n\t\t\t\t\t\t\taWxlcy4gXApcCjEuIENs\n\t\t\t\t\t\t\tb3NlIGFsbCBvdGhlciBh\n\t\t\t\t\t\t\tcHBzIGJlZm9yZSBydW5u\n\t\t\t\t\t\t\taW5nIHRoaXMgbWFjcm9c\n\t\t\t\t\t\t\tCjIuIE9wZW4gTm90ZXMg\n\t\t\t\t\t\t\tYW5kIHNlbGVjdCBhIGZv\n\t\t\t\t\t\t\tbGRlciAob3IgYWxsIG5v\n\t\t\t\t\t\t\tdGVzIGZvciBvbmUgdGFn\n\t\t\t\t\t\t\tLCBvbmUtc3RvcCBleHBv\n\t\t\t\t\t\t\tcnQpXAozLiBSdW4gdGhp\n\t\t\t\t\t\t\tcyBtYWNybyBmcm9tIEtl\n\t\t\t\t\t\t\teWJvYXJkIE1hZXN0cm8g\n\t\t\t\t\t\t\tc3RhdHVzIG1lbnVcCjQu\n\t\t\t\t\t\t\tIFNldCBCZWFyIHRhZyBh\n\t\t\t\t\t\t\tdCBwcm9tcHQgd2l0aCBm\n\t\t\t\t\t\t\tb2xkZXIgbmFtZSBvciB3\n\t\t\t\t\t\t\taGF0ZXZlci4gXApcClJl\n\t\t\t\t\t\t\tcGVhdCBmb3IgZWFjaCBv\n\t\t\t\t\t\t\tZiBOb3Rlc1wnOTIgZm9s\n\t\t\t\t\t\t\tZGVzIHlvdSBsaWtlIHRv\n\t\t\t\t\t\t\tIGV4cG9ydC9pbXBvcnQg\n\t\t\t\t\t\t\tdG8gQmVhci5cCk1hY3Jv\n\t\t\t\t\t\t\tIGNhbiBiZSBpbnRlcnJ1\n\t\t\t\t\t\t\tcHRlZCBieSBob2xkaW5n\n\t\t\t\t\t\t\tIGRvd24gdGhlIApcZjEg\n\t\t\t\t\t\t\tXHVjMFx1ODk4NCAKXGYw\n\t\t\t\t\t\t\tICBrZXkgZm9yIHR3byBz\n\t\t\t\t\t\t\tZWNvbmRzIG9yIHNvLlwK\n\t\t\t\t\t\t\tXApJc3N1ZXMhXAotIEl0\n\t\t\t\t\t\t\tIHVzZXMgY29weS9wYXN0\n\t\t\t\t\t\t\tZSBhcyByaWNoIHRleHQg\n\t\t\t\t\t\t\tYW5kIHdpbGwgdGFrZSBp\n\t\t\t\t\t\t\tdFwnOTJzIHRpbWUuIFwK\n\t\t\t\t\t\t\tLSBDbG9zZSBvdGhlciBh\n\t\t\t\t\t\t\tcHBzIGFuZCBkbyBub3Qg\n\t\t\t\t\t\t\tdXNlIE1hYyB3aGlsZSB0\n\t\t\t\t\t\t\taGlzIG1hY3JvIGlzIHJ1\n\t\t\t\t\t\t\tbm5pbmcuXAotIE5vdGVz\n\t\t\t\t\t\t\tXCc5MiBtb25vc3BhY2Vk\n\t\t\t\t\t\t\tIHN0eWxlIHdpbGwgZm9y\n\t\t\t\t\t\t\tIHNvbWUgcmVhc29uIGJl\n\t\t\t\t\t\t\tY29tZSBIMyBpbiBCZWFy\n\t\t\t\t\t\t\tXAotIE51bWJlcmVkIGxp\n\t\t\t\t\t\t\tc3RzIHN0YXJ0cyBhdCAw\n\t\t\t\t\t\t\tLiBhbmQgbmVlZCB0byBi\n\t\t\t\t\t\t\tZSBjaGFuZ2VkIHRvIDEu\n\t\t\t\t\t\t\tIG1hbnVhbGx5XAp9AQAA\n\t\t\t\t\t\t\tACMAAAABAAAABwAAAFRY\n\t\t\t\t\t\t\tVC5ydGYQAAAAC9qEWrYB\n\t\t\t\t\t\t\tAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": true,
+			"TimeOutAbortsMacro": true,
+			"URL": "bear://x-callback-url/search?term="
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Notes.app",
+				"BundleIdentifier": "com.apple.Notes",
+				"Name": "Notes"
+			}
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Tag for Bear import. Break by holding down the ⌘ key ",
+			"Prompt": "Enter Bear tag for this folder (or to whatever you like)\n(Change default tag below, or add a nested tag)\n(Use a # also at the end of tag if it contains spaces!)\nCan take long time! (Aproximate speed: 20 to 60 notes/miunute)",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "Tag",
+					"Default": "#apple notes#"
+				}
+			]
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 38,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "{stop}"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 36,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 125,
+			"Modifiers": 2304
+		},
+		{
+			"MacroActionType": "Until",
+			"Actions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 36,
+					"Modifiers": 256
+				},
+				{
+					"MacroActionType": "Pause",
+					"Time": ".1",
+					"TimeOutAbortsMacro": true,
+					"IsActive": false
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 0,
+					"Modifiers": 256
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 8,
+					"Modifiers": 256
+				},
+				{
+					"MacroActionType": "Pause",
+					"Time": ".1",
+					"TimeOutAbortsMacro": true,
+					"IsActive": false
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 36,
+					"Modifiers": 256
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 126,
+					"Modifiers": 256
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"ClipboardText": "{stop}",
+								"ClipboardConditionType": "Is",
+								"ConditionType": "Clipboard"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "SimulateKeystroke",
+							"ReleaseAll": false,
+							"TargetApplication": {},
+							"TargetingType": "Front",
+							"KeyCode": 51,
+							"Modifiers": 0
+						},
+						{
+							"MacroActionType": "Cancel",
+							"Action": "BreakFromLoop"
+						}
+					]
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"ModifiersUp": 0,
+								"ModifiersDown": 256,
+								"ConditionType": "Modifiers"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ElseActionListDisclosed": false,
+					"ThenActions": [
+						{
+							"MacroActionType": "Alert",
+							"Title": "Keyboard Maestro Alert",
+							"TimeOutAbortsMacro": true,
+							"Text": "You interrupted macro with the ⌘ key!\n\nDelete any \"{stop}\" note (created by macro) before running it again!",
+							"TimeOutPeriod": 15,
+							"SoundPath": "/System/Library/Sounds/Submarine.aiff"
+						}
+					]
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"ClipboardText": "%Variable%LastClipboard%",
+								"ClipboardConditionType": "Contains",
+								"ConditionType": "Clipboard"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "Alert",
+							"Title": "Duplicate note copy!",
+							"TimeOutAbortsMacro": true,
+							"Text": "This seems to be last (top) note in this folder.\nWould you like to continue execution or stop now?",
+							"SoundPath": "/System/Library/Sounds/Submarine.aiff"
+						}
+					]
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "LastClipboard",
+					"Text": "%SystemClipboard%"
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"IsDisclosed": false,
+					"ElseActions": [
+						{
+							"MacroActionType": "ActivateApplication",
+							"ReopenWindows": true,
+							"AllWindows": false,
+							"AlreadyActivatedActionType": "Normal",
+							"TimeOutAbortsMacro": true,
+							"Application": {
+								"NewFile": "/Applications/Bear.app",
+								"BundleIdentifier": "net.shinyfrog.bear",
+								"Name": "Bear"
+							}
+						}
+					],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"ApplicationConditionType": "NotRunning",
+								"ConditionType": "Application",
+								"Application": {
+									"NewFile": "/Applications/Bear.app",
+									"BundleIdentifier": "net.shinyfrog.bear",
+									"Name": "Bear"
+								}
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "ActivateApplication",
+							"ReopenWindows": true,
+							"AllWindows": false,
+							"AlreadyActivatedActionType": "Normal",
+							"TimeOutAbortsMacro": true,
+							"Application": {
+								"NewFile": "/Applications/Bear.app",
+								"BundleIdentifier": "net.shinyfrog.bear",
+								"Name": "Bear"
+							}
+						},
+						{
+							"MacroActionType": "Pause",
+							"Time": "2",
+							"TimeOutAbortsMacro": true
+						}
+					]
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 38,
+					"Modifiers": 256
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 51,
+					"Modifiers": 0
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 51,
+					"Modifiers": 0
+				},
+				{
+					"MacroActionType": "Pause",
+					"Time": ".1",
+					"TimeOutAbortsMacro": true,
+					"IsActive": false
+				},
+				{
+					"MacroActionType": "SelectMenuItem",
+					"Menu": [
+						"Edit",
+						"Paste From",
+						"Rich Text"
+					],
+					"TargetApplication": {
+						"NewFile": "/Applications/Bear.app",
+						"BundleIdentifier": "net.shinyfrog.bear",
+						"Name": "Bear"
+					},
+					"TargetingType": "Specific"
+				},
+				{
+					"MacroActionType": "Pause",
+					"Time": ".1",
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 36,
+					"Modifiers": 0
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 36,
+					"Modifiers": 0
+				},
+				{
+					"MacroActionType": "InsertText",
+					"Action": "ByTyping",
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"Text": "%Variable%Tag%"
+				},
+				{
+					"MacroActionType": "ActivateApplication",
+					"ReopenWindows": false,
+					"AllWindows": true,
+					"AlreadyActivatedActionType": "Normal",
+					"TimeOutAbortsMacro": true,
+					"Application": {
+						"NewFile": "/Applications/Notes.app",
+						"BundleIdentifier": "com.apple.Notes",
+						"Name": "Notes"
+					}
+				},
+				{
+					"MacroActionType": "Pause",
+					"Time": ".1",
+					"TimeOutAbortsMacro": true,
+					"IsActive": false
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ClipboardText": "{stop}",
+						"ClipboardConditionType": "Is",
+						"ConditionType": "Clipboard"
+					}
+				],
+				"ConditionListMatch": "All"
+			}
+		}
+	],
+	"CreationDate": 540264481.577958,
+	"IsActive": false,
+	"ModificationDate": 540349067.259159,
+	"Triggers": [
+		{
+			"MacroTriggerType": "StatusMenu"
+		}
+	],
+	"Name": "Apple Notes Export to Bear",
+	"CustomIconData": "KMEP-GenericApplication-/Applications/Bear.app"
+}

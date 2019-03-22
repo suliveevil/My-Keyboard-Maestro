@@ -1,0 +1,41 @@
+{
+	"UID": "C77B2FCE-F93F-41AB-9CC1-134ED843F22D",
+	"Actions": [
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Clipboard",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "awk '{ print length, $0 }' | sort -n -s | cut -d\" \" -f2-",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Clipboard",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Paste",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 555599127.454802,
+	"IsActive": false,
+	"ModificationDate": 567592923.806051,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 9,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Copy, sort by length and paste"
+}

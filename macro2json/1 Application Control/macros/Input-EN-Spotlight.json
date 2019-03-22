@@ -1,0 +1,27 @@
+{
+	"UID": "42061682-A8B6-4FC4-B6BA-AD0DF72C0CE6",
+	"Actions": [
+		{
+			"MacroActionType": "SetKeyboardLayout",
+			"KeyboardLayoutName": "ABC",
+			"KeyboardLayoutID": "com.apple.keylayout.ABC"
+		}
+	],
+	"CreationDate": 567203137.780422,
+	"IsActive": false,
+	"ModificationDate": 568130787.962556,
+	"Triggers": [
+		{
+			"MacroTriggerType": "Application",
+			"Target": "Specific",
+			"RepeatTime": 60,
+			"Application": {
+				"NewFile": "/System/Library/CoreServices/Spotlight.app",
+				"BundleIdentifier": "com.apple.Spotlight",
+				"Name": "Spotlight"
+			},
+			"FireType2": "Activate"
+		}
+	],
+	"Name": "Input-EN-Spotlight"
+}

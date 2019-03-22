@@ -1,0 +1,101 @@
+{
+	"UID": "C6139221-215E-41E4-8995-662EAD649781",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsNotEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Is",
+						"MenuTitle": "Copy"
+					},
+					{
+						"ApplicationConditionType": "NotActive",
+						"ConditionType": "Application",
+						"Application": {
+							"BundleIdentifier": "com.adobe.InDesign",
+							"Name": "Adobe InDesign CS5"
+						}
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"IsDisclosed": false,
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 0,
+					"Modifiers": 256
+				}
+			]
+		},
+		{
+			"MacroActionType": "ClipboardSwitcherMacroAction",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"RedundandDisplayName": "myTextTemp",
+			"TimeOutAbortsMacro": true,
+			"Name": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "RemoveStyles",
+			"Source": "NamedClipboard",
+			"IsDisclosed": false,
+			"NamedClipboardName": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66",
+			"RedundandDisplayName": "myTextTemp"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "LocalText",
+			"Text": "%NamedClipboard%myTextTemp%"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"Variable": "LocalText",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "#!/usr/bin/perl\n\nuse Lingua::EN::Fathom;\n\n$selection = $ENV{KMVAR_LocalText};\n\nmy $text = Lingua::EN::Fathom->new();\n$text->analyse_block($selection,1);\n\n$num_words = $text->num_words;\n$num_sentences = $text->num_sentences;\n$num_paragraphs = $text->num_paragraphs;\n$words_per_sentence = sprintf(\"%2.2f\",$text->words_per_sentence);\n$sentences_per_paragraph = sprintf(\"%2.2f\",$num_sentences/$num_paragraphs);\n\n$fog = sprintf(\"%2.2f\",$text->fog);\n$flesch = sprintf(\"%2.2f\",$text->flesch);\n$kincaid = sprintf(\"%2.2f\",$text->kincaid);\n$complex = sprintf(\"%2.2f\",$text->percent_complex_words);\n\n$num_words = commify($num_words);\n$num_sentences = commify($num_sentences);\n$num_paragraphs = commify($num_paragraphs);\n\n$fog_score = \"6th Grade_8th Grade_HS Soph_HS Senior_College Soph_College Senior_College Grad\";\nif ($fog < 6.1) {\n\t$fog_score =~ s/(6th Grade)(_.+?)/<b>$1<\\/b>$2/;\n} elsif ($fog < 8.0) {\n\t$fog_score =~ s/(.+?_)(8th Grade)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($fog < 10.0) {\n\t$fog_score =~ s/(.+?_)(HS Soph)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($fog < 12.0) {\n\t$fog_score =~ s/(.+?_)(HS Senior)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($fog < 14.0) {\n\t$fog_score =~ s/(.+?_)(College Soph)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($fog < 16.0) {\n\t$fog_score =~ s/(.+?_)(College Senior)(_.+?)/$1<b>$2<\\/b>$3/;\n} else {\n\t$fog_score =~ s/(.+?_)(College Grad)$/$1<b>$2<\\/b>/;\n}\n$fog_score =~ s/<b>/<span>&nbsp;/;\n$fog_score =~ s/<\\/b>/&nbsp;<\\/span>/;\n$fog_score =~ s/\\_/<br>/g;\n\n$flesch_score = \"Very Easy_Easy_Fairly Easy_Plain English_Fairly Difficult_Difficult_Very Difficult\";\nif ($flesch < 30.1) {\n\t$flesch_score =~ s/(.+?_)(Very Difficult)/$1<b>$2<\\/b>/;\n} elsif ($flesch < 50.1) {\n\t$flesch_score =~ s/(.+?_)(Difficult)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($flesch < 60.1) {\n\t$flesch_score =~ s/(.+?_)(Fairly Difficult)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($flesch < 70.1) {\n\t$flesch_score =~ s/(.+?_)(Plain English)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($flesch < 80.1) {\n\t$flesch_score =~ s/(.+?_)(Fairly Easy)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($flesch < 90.1) {\n\t$flesch_score =~ s/(.+?_)(Easy)(_.+?)/$1<b>$2<\\/b>$3/;\n} else {\n\t$flesch_score =~ s/(Very Easy)(_.+?)/<b>$1<\\/b>$2/;\n}\n$flesch_score =~ s/<b>/<span>&nbsp;/;\n$flesch_score =~ s/<\\/b>/&nbsp;<\\/span>/;\n$flesch_score =~ s/\\_/<br>/g;\n  \n$kincaid_score = \"5th Grade_6th Grade_7th Grade_9th Grade_12th Grade_College_College Grad\";\nif ($kincaid < 6.0) {\n\t$kincaid_score =~ s/(5th Grade)(_.+?)/<b>$1<\\/b>$2/;\n} elsif ($kincaid < 6.0) {\n\t$kincaid_score =~ s/(.+?_)(6th Grade)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($kincaid < 7.0) {\n\t$kincaid_score =~ s/(.+?_)(7th Grade)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($kincaid < 9.0) {\n\t$kincaid_score =~ s/(.+?_)(9th Grade)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($kincaid < 12.0) {\n\t$kincaid_score =~ s/(.+?_)(12th Grade)(_.+?)/$1<b>$2<\\/b>$3/;\n} elsif ($kincaid < 16.0) {\n\t$kincaid_score =~ s/(.+?_)(College)(_.+?)/$1<b>$2<\\/b>$3/;\n} else {\n\t$kincaid_score =~ s/(.+?_)(College Grad)/$1<b>$2<\\/b>/;\n}\n$kincaid_score =~ s/<b>/<span>&nbsp;/;\n$kincaid_score =~ s/<\\/b>/&nbsp;<\\/span>/;\n$kincaid_score =~ s/\\_/<br>/g;\n\nprint << \"EOT\";\n<p>This selection includes:</p>\n<ul>\n<li><b>$num_words</b> words, <b>$complex%</b> of which are complex</li>\n<li><b>$num_sentences</b> sentences averaging <b>$words_per_sentence</b> words</li>\n<li><b>$num_paragraphs</b> paragraphs averaging <b>$sentences_per_paragraph</b> sentences</li>\n</ul>\n<table border=0 cellpadding=6 cellspacing=0 width=100%>\n<tr>\n\t<th style=\"background-color:#36aac2; color:white; text-align:left;\" >FOG</th>\n\t<th style=\"background-color:#36aac2; color:white; text-align:left;\">FLESCH</th>\n\t<th style=\"background-color:#36aac2; color:white; text-align:left;\">KINCAID</th>\n</tr>\n<tr>\n<td><b>$fog</b><br>Grade Level</td>\n<td><b>$flesch</b><br>0 to 100</td>\n<td><b>$kincaid</b><br>Grade Level</td>\n</tr>\n<tr>\n<td colspan=3><hr></td>\n<tr valign=\"top\">\n<td>$fog_score</td>\n<td>$flesch_score</td>\n<td>$kincaid_score</td>\n</tr>\n</table>\nEOT\n\nsub commify {\n\tmy $citations = reverse $_[0];\n\t$citations =~ s/(\\d\\d\\d)(?=\\d)(?!\\d*\\.)/$1,/g;\n\treturn scalar reverse $citations;\n}\n",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "CustomPrompt",
+			"IsDisclosed": false,
+			"Resizable": true,
+			"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>L I T E R A R Y &nbsp T O O L B O X</title>\n\t<style type=\"text/css\">\nbody{background-color:black;font:.80em \"Lucida Grande\",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:73%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}ul{margin-bottom:20px;}span {background-color: #36aac2;color:white}\n\t</style> \n</head>\n<body data-kmwindow=\"SCREEN(Main,Left,46%),SCREEN(Main,Top,20%),380,400\">\n<div id=\"title\">\n\t<b>READABILITY SCORES</b>\n</div>\n<div id=\"text\">\n<script>\n\tdocument.write(window.KeyboardMaestro.GetVariable('LocalText'))\n</script>\n</div><script>\nfunction KMInit() {\n\tdocument.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');\n}\n</script>\n</body>\n</html>\n",
+			"TimeOutAbortsMacro": true,
+			"Floating": true,
+			"UseText": true
+		}
+	],
+	"CreationDate": 562550815.102588,
+	"ModificationDate": 565401428.960805,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 15,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "31)Readability Scores"
+}

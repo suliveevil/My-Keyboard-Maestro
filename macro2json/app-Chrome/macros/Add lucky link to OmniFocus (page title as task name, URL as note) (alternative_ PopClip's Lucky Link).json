@@ -1,0 +1,145 @@
+{
+	"UID": "C25FE2AC-8662-4360-91CF-73CC126B51EC",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Edit",
+				"Copy"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"File",
+				"New Tab"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "l %CurrentClipboard%\n"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "1.5",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"IsDisclosed": false,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"BundleIdentifier": "com.omnigroup.OmniFocus2",
+				"Name": "OmniFocus"
+			}
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "171",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "32",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "84",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "111",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"File",
+				"New Action"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"IsDisclosed": false,
+			"Text": "%ChromeTitle%"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 39,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"IsDisclosed": false,
+			"Text": "%ChromeURL%"
+		},
+		{
+			"MacroActionType": "SwitchToLastApplication",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"File",
+				"Close Tab"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		}
+	],
+	"CreationDate": 566900638.717639,
+	"ModificationDate": 420811528.626106,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 9,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Add lucky link to OmniFocus (page title as task name, URL as note) (alternative: PopClip's Lucky Link)",
+	"CustomIconData": "KMEP-GenericApplication-/Applications/OmniFocus.app"
+}

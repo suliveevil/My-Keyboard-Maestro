@@ -1,0 +1,24 @@
+{
+	"UID": "87F96CE9-2ECD-4116-BB60-C613AA9A784E",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n<div class=\"mermaid\">\ngraph TD;\n    A[%|%]-->B[];\n    A-->C[];\n    B-->D[];\n    C-->D;\n</div>\n\n"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568122443.362611,
+	"ModificationDate": 573224702.272619,
+	"Triggers": [
+		{
+			"TypedString": "codd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Code-mermaid-Flowchart"
+}

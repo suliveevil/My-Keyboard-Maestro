@@ -1,0 +1,43 @@
+{
+	"UID": "C0721FFC-CBB8-4D18-AB23-AADDB55C392F",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteJavaScript",
+			"ActionName": "Get Google search results on page",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"WebBrowser": "Safari",
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Clipboard",
+			"Text": "var x = document.querySelectorAll('.g .rc .r a'); \nvar myArray = []; \nfor (i = 0; i < x.length; i++) {\n\tmyArray.push(x[i].href)\n}\nmyArray\n\n\n\n",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "Split String into Array and create tabs in background",
+			"TimeOutPeriod": 10,
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"Text": "set urlList to the clipboard\r\rset urlArray to my theSplit(urlList, \",\")\r\ron theSplit(theString, theDelimiter)\r\tset oldDelimiters to AppleScript's text item delimiters\r\t-- set delimiters to delimiter to be used\r\tset AppleScript's text item delimiters to theDelimiter\r\t-- create the array\r\tset theArray to every text item of theString\r\t-- restore the old setting\r\tset AppleScript's text item delimiters to oldDelimiters\r\t-- return the result\r\treturn theArray\rend theSplit\r\rrepeat with i from 1 to number of items in urlArray\r\tset x to item i of urlArray\r\ttell application \"Safari\"\r\t\ttell front window\r\t\t\tmake new tab at end of tabs with properties {URL:x}\r\t\tend tell\r\tend tell\rend repeat\r",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 493081914.789585,
+	"ModificationDate": 493082782.233213,
+	"Triggers": [
+		{
+			"MacroTriggerType": "StatusMenu"
+		}
+	],
+	"Name": "Open Google links in new tabs"
+}

@@ -1,0 +1,23 @@
+{
+	"UID": "7FE2A492-B22C-4D65-B2FE-24427993ACCD",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\n\tset _app to the name of every process whose frontmost is true\nend tell\n\ntell application named _app to quit\ndelay 2 -- Props to Dr. Drang\ntell application named _app to activate\n\n-- optionally, if the apps you want to terminate don't respond well to `quit`\n-- do shell script \"killall \\\"\" & _app & \"\\\" && open -a \\\"\" & _app & \"\\\"\"",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568333281.028882,
+	"IsActive": false,
+	"ModificationDate": 568562586.978492,
+	"Triggers": [],
+	"Name": "Apps-Restart"
+}

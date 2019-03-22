@@ -1,0 +1,145 @@
+{
+	"UID": "619714B0-764E-4F2B-AF28-AC8E6BA1736A",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Extract Event Data from Text; Calc Days Diff, Reformat Results  [Example]",
+			"ActionName": "~~~ ReleaseNotes for  VER: 1.1    2019-02-18 ~~~",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC44DAAAKwAAAAEAAAAw\n\t\t\t\t\t\t\tDAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBWZXJkYW5h\n\t\t\t\t\t\t\tO1xmMVxmc3dpc3NcZmNo\n\t\t\t\t\t\t\tYXJzZXQwIEhlbHZldGlj\n\t\t\t\t\t\t\tYTt9CntcY29sb3J0Ymw7\n\t\t\t\t\t\t\tXHJlZDI1NVxncmVlbjI1\n\t\t\t\t\t\t\tNVxibHVlMjU1O1xyZWQy\n\t\t\t\t\t\t\tMjBcZ3JlZW44XGJsdWU2\n\t\t\t\t\t\t\tO1xyZWQyNVxncmVlbjI1\n\t\t\t\t\t\t\tXGJsdWUyNTtccmVkMjQy\n\t\t\t\t\t\t\tXGdyZWVuMTcwXGJsdWUy\n\t\t\t\t\t\t\tNDM7Cn0Ke1wqXGV4cGFu\n\t\t\t\t\t\t\tZGVkY29sb3J0Ymw7O1xj\n\t\t\t\t\t\t\tc2dlbmVyaWNyZ2JcYzg2\n\t\t\t\t\t\t\tMzI5XGMzMTI1XGMyMzQ0\n\t\t\t\t\t\t\tO1xjc2dlbmVyaWNyZ2Jc\n\t\t\t\t\t\t\tYzk3NjZcYzk3NjZcYzk3\n\t\t\t\t\t\t\tNjY7XGNzZ2VuZXJpY3Jn\n\t\t\t\t\t\t\tYlxjOTQ4NTVcYzY2NjM1\n\t\t\t\t\t\t\tXGM5NTIzNTsKfQpccGFy\n\t\t\t\t\t\t\tZFx0eDU2MFx0eDExMjBc\n\t\t\t\t\t\t\tdHgxNjgwXHR4MjI0MFx0\n\t\t\t\t\t\t\teDI4MDBcdHgzMzYwXHR4\n\t\t\t\t\t\t\tMzkyMFx0eDQ0ODBcdHg1\n\t\t\t\t\t\t\tMDQwXHR4NTYwMFx0eDYx\n\t\t\t\t\t\t\tNjBcdHg2NzIwXHBhcmRp\n\t\t\t\t\t\t\tcm5hdHVyYWxccGFydGln\n\t\t\t\t\t\t\taHRlbmZhY3RvcjAKClxm\n\t\t\t\t\t\t\tMFxmczI4IFxjZjAgQXV0\n\t\t\t\t\t\t\taG9yLkBKTWljaGFlbFRY\n\t\t\t\t\t\t\tXApcCioqClxiIFBVUlBP\n\t\t\t\t\t\t\tU0UKXGIwIDoqKlwKXAoq\n\t\t\t\t\t\t\tICoqClxiIEV4dHJhY3Qg\n\t\t\t\t\t\t\tRXZlbnQgRGF0YSBmcm9t\n\t\t\t\t\t\t\tIFRleHQ7IENhbGMgRGF5\n\t\t\t\t\t\t\tcyBEaWZmLCBSZWZvcm1h\n\t\t\t\t\t\t\tdCBSZXN1bHRzClxiMCAq\n\t\t\t\t\t\t\tKlwKXAoqKgpcYiBSRVFV\n\t\t\t\t\t\t\tSVJFUwpcYjAgOioqXApc\n\t\t\t\t\t\t\tCjEuICoqS00gOC4yKyoq\n\t\t\t\t\t\t\tXAoyLiAqKm1hY09TIDEw\n\t\t\t\t\t\t\tLjExLjYgKEVsIENhcGl0\n\t\t\t\t\t\t\tYW4pKipcClwKKioKXGIg\n\t\t\t\t\t\t\tXGNmMiBOT1RJQ0U6IFRo\n\t\t\t\t\t\t\taXMgbWFjcm8vc2NyaXB0\n\t\t\t\t\t\t\tIGlzIGp1c3QgYW4gX0V4\n\t\t\t\t\t\t\tYW1wbGVfClxiMCBcY2Yw\n\t\t\t\t\t\t\tICoqXApcCiogSXQgaGFz\n\t\t\t\t\t\t\tIGhhZCB2ZXJ5IGxpbWl0\n\t\t\t\t\t\t\tZWQgdGVzdGluZy5cCiog\n\t\t\t\t\t\t\tWW91IG5lZWQgdG8gdGVz\n\t\t\t\t\t\t\tdCBmdXJ0aGVyIGJlZm9y\n\t\t\t\t\t\t\tZSB1c2luZyBpbiBhIHBy\n\t\t\t\t\t\t\tb2R1Y3Rpb24gZW52aXJv\n\t\t\t\t\t\t\tbm1lbnQuXAoqIEl0IGRv\n\t\t\t\t\t\t\tZXMgbm90IGhhdmUgZXh0\n\t\t\t\t\t\t\tZW5zaXZlIGVycm9yIGNo\n\t\t\t\t\t\t\tZWNraW5nL2hhbmRsaW5n\n\t\t\t\t\t\t\tLlwKKiBJdCBtYXkgbm90\n\t\t\t\t\t\t\tIGJlIGNvbXBsZXRlLiAg\n\t\t\t\t\t\t\tSXQgaXMgcHJvdmlkZWQg\n\t\t\t\t\t\t\tYXMgYW4gZXhhbXBsZSB0\n\t\t\t\t\t\t\tbyBzaG93IHlvdSBvbmUg\n\t\t\t\t\t\t\tYXBwcm9hY2ggdG8gc29s\n\t\t\t\t\t\t\tdmluZyBhIHByb2JsZW0u\n\t\t\t\t\t\t\tXApcCioqClxiIFxjZjMg\n\t\t\t\t\t\t\tSG93IFRvIFVzZSoqXApc\n\t\t\t\t\t\t\tClxwYXJkXHR4NTYwXHR4\n\t\t\t\t\t\t\tMTEyMFx0eDE2ODBcdHgy\n\t\t\t\t\t\t\tMjQwXHR4MjgwMFx0eDMz\n\t\t\t\t\t\t\tNjBcdHgzOTIwXHR4NDQ4\n\t\t\t\t\t\t\tMFx0eDUwNDBcdHg1NjAw\n\t\t\t\t\t\t\tXHR4NjE2MFx0eDY3MjBc\n\t\t\t\t\t\t\tcGFyZGlybmF0dXJhbFxw\n\t\t\t\t\t\t\tYXJ0aWdodGVuZmFjdG9y\n\t\t\t\t\t\t\tMAoKXGIwIFxjZjMgMS4g\n\t\t\t\t\t\t\tVHJpZ2dlciB0aGlzIG1h\n\t\t\t\t\t\t\tY3JvIHRvIHJ1biB1c2lu\n\t\t\t\t\t\t\tZyBleGFtcGxlIGRhdGFc\n\t\t\t\t\t\t\tCiAgICAgT1JcCjEuIENo\n\t\t\t\t\t\t\tYW5nZSBTZXR1cCB0byBD\n\t\t\t\t\t\t\tb3B5IFNlbGVjdGlvbiAo\n\t\t\t\t\t\t\tc2VlIGJlbG93KVwKMi4g\n\t\t\t\t\t\t\tU2VsZWN0IEV2ZW50IERh\n\t\t\t\t\t\t\tdGFcCjMuIFRyaWdnZXIg\n\t\t\t\t\t\t\tdGhpcyBtYWNyb1wKXApc\n\t\t\t\t\t\t\tcGFyZFx0eDU2MFx0eDEx\n\t\t\t\t\t\t\tMjBcdHgxNjgwXHR4MjI0\n\t\t\t\t\t\t\tMFx0eDI4MDBcdHgzMzYw\n\t\t\t\t\t\t\tXHR4MzkyMFx0eDQ0ODBc\n\t\t\t\t\t\t\tdHg1MDQwXHR4NTYwMFx0\n\t\t\t\t\t\t\teDYxNjBcdHg2NzIwXHBh\n\t\t\t\t\t\t\tcmRpcm5hdHVyYWxccGFy\n\t\t\t\t\t\t\tdGlnaHRlbmZhY3RvcjAK\n\t\t\t\t\t\t\tXGNmMCBcCioqClxiIE1B\n\t\t\t\t\t\t\tQ1JPIFNFVFVQClxiMCAq\n\t\t\t\t\t\t\tKlwKXAoqICoqQ2FyZWZ1\n\t\t\t\t\t\t\tbGx5IHJldmlldyB0aGUg\n\t\t\t\t\t\t\tUmVsZWFzZSBOb3RlcyBh\n\t\t\t\t\t\t\tbmQgdGhlIE1hY3JvIEFj\n\t\t\t\t\t\t\tdGlvbnMqKlwKICAqIE1h\n\t\t\t\t\t\t\ta2Ugc3VyZSB5b3UgdW5k\n\t\t\t\t\t\t\tZXJzdGFuZCB3aGF0IHRo\n\t\t\t\t\t\t\tZSBNYWNybyB3aWxsIGRv\n\t\t\t\t\t\t\tLiAgXAogICogWW91IGFy\n\t\t\t\t\t\t\tZSByZXNwb25zaWJsZSBm\n\t\t\t\t\t\t\tb3IgcnVubmluZyB0aGUg\n\t\t\t\t\t\t\tTWFjcm8sIG5vdCBtZS4g\n\t\t\t\t\t\t\tIApcZjFcZnMyNCA/Pwpc\n\t\t\t\t\t\t\tZjBcZnMyOCBcCi5cCjEu\n\t\t\t\t\t\t\tIEFzc2lnbiBhIFRyaWdn\n\t\t\t\t\t\t\tZXIgdG8gdGhpcyBtYXJv\n\t\t\t\t\t\t\tLi5cCjIuIE1vdmUgdGhp\n\t\t\t\t\t\t\tcyBtYWNybyB0byBhIE1h\n\t\t\t\t\t\t\tY3JvIEdyb3VwIHRoYXQg\n\t\t\t\t\t\t\taXMgb25seSBBY3RpdmUg\n\t\t\t\t\t\t\td2hlbiB5b3UgbmVlZCB0\n\t\t\t\t\t\t\taGlzIE1hY3JvLlwKMy4g\n\t\t\t\t\t\t\tRU5BQkxFIHRoaXMgTWFj\n\t\t\t\t\t\t\tcm8uXAouXAoqICoqClxi\n\t\t\t\t\t\t\tIFxjZjIgUkVWSUVXL0NI\n\t\t\t\t\t\t\tQU5HRSBUSEUgRk9MTE9X\n\t\t\t\t\t\t\tSU5HIE1BQ1JPIEFDVElP\n\t\t\t\t\t\t\tTlMKXGIwIFxjZjAgOioq\n\t\t\t\t\t\t\tXAooYWxsIHNob3duIGlu\n\t\t\t\t\t\t\tIHRoZSBtYWdlbnRhIGNv\n\t\t\t\t\t\t\tbG9yKVwKICAqIFNldCBC\n\t\t\t\t\t\t\tZWxvdyB0byBZb3VyIFNv\n\t\t\t\t\t\t\tdXJjZSBFdmVudCBEYXRh\n\t\t\t\t\t\t\tIChESVNBQkxFIHRvIFVz\n\t\t\t\t\t\t\tZSBTZWxlY3Rpb24pXAog\n\t\t\t\t\t\t\tICAqIE9SXAogICAqIEVu\n\t\t\t\t\t\t\tYWJsZSBHUlAgdG8gQ29w\n\t\t\t\t\t\t\teSBzZWxlY3Rpb25cCiAg\n\t\t\t\t\t\t\tICogRGlzYWJsZSBTZXQg\n\t\t\t\t\t\t\tTG9jYWxfX1NvdXJjZVN0\n\t\t\t\t\t\t\tciBBY3Rpb25cClwKVEFH\n\t\t\t\t\t\t\tUzogQFJlZ0V4IEBKYXZh\n\t\t\t\t\t\t\tU2NyaXB0IEBKWEEgQERh\n\t\t\t\t\t\t\tdGVNYXRoXApcClVTRVIg\n\t\t\t\t\t\t\tU0VUVElOR1M6XApcCipc\n\t\t\t\t\t\t\tJ2EwQW55IEFjdGlvbiBp\n\t\t\t\t\t\t\tbiBfXGNmNCBtYWdlbnRh\n\t\t\t\t\t\t\tIGNvbG9yXGNmMCBfIGlz\n\t\t\t\t\t\t\tIGRlc2lnbmVkIHRvIGJl\n\t\t\t\t\t\t\tIGNoYW5nZWQgYnkgZW5k\n\t\t\t\t\t\t\tLXVzZXJcClwKQUNUSU9O\n\t\t\t\t\t\t\tIENPTE9SIENPREVTXApc\n\t\t\t\t\t\t\tCipcJ2EwVG8gZmFjaWxp\n\t\t\t\t\t\t\tdGF0ZSB0aGUgcmVhZGlu\n\t\t\t\t\t\t\tZywgY3VzdG9taXppbmcs\n\t\t\t\t\t\t\tIGFuZCBtYWludGVuYW5j\n\t\t\t\t\t\t\tZSBvZiB0aGlzIG1hY3Jv\n\t\t\t\t\t\t\tLFwKXCdhMFwnYTBcJ2Ew\n\t\t\t\t\t\t\tXCdhMFwnYTBcJ2Ewa2V5\n\t\t\t\t\t\t\tIEFjdGlvbnMgYXJlIGNv\n\t\t\t\t\t\t\tbG9yZWQgYXMgZm9sbG93\n\t\t\t\t\t\t\tczpcCipcJ2EwR1JFRU5c\n\t\t\t\t\t\t\tJ2EwXCdhMFwnYTAtLSBL\n\t\t\t\t\t\t\tZXkgQ29tbWVudHMgZGVz\n\t\t\t\t\t\t\taWduZWQgdG8gaGlnaGxp\n\t\t\t\t\t\t\tZ2h0IG1haW4gc2VjdGlv\n\t\t\t\t\t\t\tbnMgb2YgbWFjcm9cCipc\n\t\t\t\t\t\t\tJ2EwTUFHRU5UQSAtLSBB\n\t\t\t\t\t\t\tY3Rpb25zIGRlc2lnbmVk\n\t\t\t\t\t\t\tIHRvIGJlIGN1c3RvbWl6\n\t\t\t\t\t\t\tZWQgYnkgdXNlclwKKlwn\n\t\t\t\t\t\t\tYTBZRUxMT1dcJ2EwXCdh\n\t\t\t\t\t\t\tMC0tIFByaW1hcnkgQWN0\n\t\t\t\t\t\t\taW9ucyAodXN1YWxseSB0\n\t\t\t\t\t\t\taGUgbWFpbiBwdXJwb3Nl\n\t\t\t\t\t\t\tIG9mIHRoZSBtYWNybylc\n\t\t\t\t\t\t\tCipcJ2EwT1JBTkdFXCdh\n\t\t\t\t\t\t\tMFwnYTAtLSBBY3Rpb25z\n\t\t\t\t\t\t\tIHRoYXQgcGVybWFuZW50\n\t\t\t\t\t\t\tbHkgZGVzdHJveSBWYXJp\n\t\t\t\t\t\t\tYWJsZXMgb3IgQ2xpcGJv\n\t\t\t\t\t\t\tYXJkcyxcCk9SIElGL1RI\n\t\t\t\t\t\t\tRU4gYW5kIFBBVVNFIEFj\n\t\t\t\t\t\t\tdGlvbnNcClwKXAoqKgpc\n\t\t\t\t\t\t\tYiBcY2YyIFVTRSBBVCBZ\n\t\t\t\t\t\t\tT1VSIE9XTiBSSVNLClxi\n\t\t\t\t\t\t\tMCBcY2YwICoqXApcCiog\n\t\t\t\t\t\t\tV2hpbGUgSSBoYXZlIGdp\n\t\t\t\t\t\t\tdmVuIHRoaXMgbGltaXRl\n\t\t\t\t\t\t\tZCB0ZXN0aW5nLCBhbmQg\n\t\t\t\t\t\t\tdG8gdGhlIGJlc3Qgb2Yg\n\t\t\t\t\t\t\tbXkga25vd2xlZGdlIHdp\n\t\t\t\t\t\t\tbGwgZG8gbm8gaGFybSwg\n\t\t\t\t\t\t\tSSBjYW5ub3QgZ3VhcmFu\n\t\t\t\t\t\t\tdGVlIGl0LlwKKiBJZiB5\n\t\t\t\t\t\t\tb3UgaGF2ZSBhbnkgZG91\n\t\t\t\t\t\t\tYnRzIG9yIHF1ZXN0aW9u\n\t\t\t\t\t\t\tczpcCiAgKiAqKkFzayBm\n\t\t\t\t\t\t\taXJzdCoqXAogICogVHVy\n\t\t\t\t\t\t\tbiBvbiB0aGUgS00gRGVi\n\t\t\t\t\t\t\tdWdnZXIgZnJvbSB0aGUg\n\t\t\t\t\t\t\tS00gU3RhdHVzIE1lbnUs\n\t\t\t\t\t\t\tIGFuZCBzdGVwIHRocm91\n\t\t\t\t\t\t\tZ2ggdGhlIG1hY3JvLCBt\n\t\t\t\t\t\t\tYWtpbmcgc3VyZSB5b3Ug\n\t\t\t\t\t\t\tdW5kZXJzdGFuZCB3aGF0\n\t\t\t\t\t\t\tIGl0IGlzIGRvaW5nIHdp\n\t\t\t\t\t\t\tdGggZWFjaCBBY3Rpb24u\n\t\t\t\t\t\t\tXAp9AQAAACMAAAABAAAA\n\t\t\t\t\t\t\tBwAAAFRYVC5ydGYQAAAA\n\t\t\t\t\t\t\tM1VrXLYBAAAAAAAAAAAA\n\t\t\t\t\t\t\tAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "Each Event must be 5 lines in the below format (2 Events Shown)",
+			"ActionName": "~~~ Source Data Format ~~~",
+			"ActionColor": "Green",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5MAgAAKwAAAAEAAABE\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBIZWx2ZXRp\n\t\t\t\t\t\t\tY2FOZXVlO1xmMVxmbmls\n\t\t\t\t\t\t\tXGZjaGFyc2V0MCAuQXBw\n\t\t\t\t\t\t\tbGVDb2xvckVtb2ppVUk7\n\t\t\t\t\t\t\tfQp7XGNvbG9ydGJsO1xy\n\t\t\t\t\t\t\tZWQyNTVcZ3JlZW4yNTVc\n\t\t\t\t\t\t\tYmx1ZTI1NTtccmVkMFxn\n\t\t\t\t\t\t\tcmVlbjBcYmx1ZTA7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7XGNzc3JnYlxj\n\t\t\t\t\t\t\tMFxjMFxjMDt9ClxwYXJk\n\t\t\t\t\t\t\tXHR4NTYwXHR4MTEyMFx0\n\t\t\t\t\t\t\teDE2ODBcdHgyMjQwXHR4\n\t\t\t\t\t\t\tMjgwMFx0eDMzNjBcdHgz\n\t\t\t\t\t\t\tOTIwXHR4NDQ4MFx0eDUw\n\t\t\t\t\t\t\tNDBcdHg1NjAwXHR4NjE2\n\t\t\t\t\t\t\tMFx0eDY3MjBccGFyZGly\n\t\t\t\t\t\t\tbmF0dXJhbFxwYXJ0aWdo\n\t\t\t\t\t\t\tdGVuZmFjdG9yMAoKXGYw\n\t\t\t\t\t\t\tXGZzMjYgXGNmMiBUdWUs\n\t\t\t\t\t\t\tIEZlYiAyNjpcCi0tLS0t\n\t\t\t\t\t\t\tLS0tLS0tLS0tLS0tLS0t\n\t\t\t\t\t\t\tLS0tLVwKXCc5NSAKXGYx\n\t\t\t\t\t\t\tIFx1YzBcdTk5ODkgClxm\n\t\t\t\t\t\t\tMCAgVkEgU2xlZXAgQWRq\n\t\t\t\t\t\t\tdXN0bWVudFwKICAgIDE6\n\t\t\t\t\t\t\tMDAgUE0gLSAyOjAwIFBN\n\t\t\t\t\t\t\tXApcCiBGcmksIE1hciAw\n\t\t\t\t\t\t\tMTpcCi0tLS0tLS0tLS0t\n\t\t\t\t\t\t\tLS0tLS0tLS0tLS0tLVwK\n\t\t\t\t\t\t\tXCc5NSAKXGYxIFx1YzBc\n\t\t\t\t\t\t\tdTk5ODkgClxmMCAgVkEg\n\t\t\t\t\t\t\tUFRcCiAgICAyOjAwIFBN\n\t\t\t\t\t\t\tIC0gMzowMCBQTVwKfQEA\n\t\t\t\t\t\t\tAAAjAAAAAQAAAAcAAABU\n\t\t\t\t\t\t\tWFQucnRmEAAAAF9Ra1y2\n\t\t\t\t\t\t\tAQAAAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "GRP: Enable This to Get Data from Selection",
+			"ActionColor": "Purple",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "CutCopyPaste",
+					"Action": "Copy",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "Local__SourceStr",
+					"Text": "%SystemClipboard%"
+				}
+			],
+			"IsActive": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionName": "Set Below to Your Source Event Data (DISABLE to Use Selection)",
+			"ActionColor": "Magenta",
+			"Variable": "Local__SourceStr",
+			"Text": "Tue, Feb 12:\n------------------------\n• ✅ TEST for Past Event\n    1:00 PM - 2:00 PM\n\nTue, Feb 26:\n------------------------\n• ✅ VA Sleep Adjustment\n    1:00 PM - 2:00 PM\n\n Fri, Mar 01:\n------------------------\n• ✅ VA PT\n    2:00 PM - 3:00 PM\n\n Thu, Mar 07:\n------------------------\n• ✅ Pendleton VA\n    1:00 PM - 2:00 PM\n\n Mon, Mar 18:\n------------------------\n• ✅ VA OT\n    2:00 PM - 3:00 PM\n\n Mon, Apr 08:\n------------------------\n• ✅ VA Dr. follow up\n    2:20 PM - 3:20 PM"
+		},
+		{
+			"MacroActionType": "For",
+			"ActionColor": "Yellow",
+			"Collections": {
+				"CollectionList": [
+					{
+						"Search": "(?m)^\\h*(\\w.+):\\n.+\\n(.+)",
+						"Source": "Variable",
+						"CollectionType": "SubstringsIn",
+						"SearchKind": "Match",
+						"Variable": "Local__SourceStr",
+						"ResultType": "String"
+					}
+				]
+			},
+			"Actions": [
+				{
+					"MacroActionType": "SearchRegEx",
+					"ActionName": "RegEx: Extract Date and Event Description",
+					"Action": "IgnoreCaseRegEx",
+					"Search": "^\\h*(\\w.+):\\n.+\\n(.+)",
+					"Source": "Variable",
+					"Captures": [
+						"",
+						"Local__Date",
+						"Local__Event"
+					],
+					"Variable": "Local__EventGroup"
+				},
+				{
+					"MacroActionType": "ExecuteJavaScriptForAutomation",
+					"ActionName": "SCRIPT:  Calc Days Diff from Today  (JXA)",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Variable": "Local__DaysDiff",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"ActionColor": "Teal",
+					"TimeOutAbortsMacro": true,
+					"Path": "/Users/Shared/Dropbox/SW/DEV/KM/Scripts/Get Date Difference from Month Day String (JS).scpt",
+					"DisplayKind": "Variable",
+					"IsDisclosed": false,
+					"Text": "'use strict';\n(function myMain() {\t\t\t// this will auto-run when script is executed\n\n/*\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nPURPOSE:\tGet Date Difference (in days)\nVER:\t\t\t2.0\t\t2019-02-18\nAUTHOR:\t\t@JMichaelTX\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n*/\n\nvar app = Application.currentApplication()\napp.includeStandardAdditions = true\n\nvar kmInst = app.systemAttribute(\"KMINSTANCE\");\nvar kmeApp = Application(\"Keyboard Maestro Engine\")\n\n//--- Get Date String from KM ---\nvar dateSource = kmeApp.getvariable(\"Local__Date\",  {instance: kmInst});\n//==>'Fri, Mar 01'\n\n//--- Get First Capture Group ---\nvar monthDayStr = dateSource.match(/^\\w+, (.+)/)[1];\n//==>\"Mar 01\"\n\nvar daysDiff = LPad(getDateDiff(monthDayStr),'0',2);\n\nreturn daysDiff;\n\n function getDateDiff(pMonthDay){\n\n\t\tvar yearStr = (new Date()).getFullYear().toString();\n\t\t//--- Append Current Year to Date String ---\n    var dateUnix = Date.parse(pMonthDay + \", \" + yearStr);\n\t\tvar dt2 = new Date(dateUnix);\n\t\tvar dt1 = new Date()\t// today\n\t\t\n\t\tvar dateDiff = Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));\n\t\treturn dateDiff;\n }\n\nfunction LPad(pNum, pPadChar, pLength) {\n\tvar signNum = (pNum < 0) ? '-' : '';\n\tvar numStr = Math.abs(pNum).toString();\n\twhile (numStr.length < pLength) {\n\t\tnumStr = pPadChar + numStr;\n\t}\n\t\t\t\n\treturn signNum + numStr;\n\n}\n\n}\t// END of function myMain()\n)();\t// autorun\n",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "IF:  Set \"Until\" or \"Since\"",
+					"IsDisclosed": false,
+					"ElseActions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "Local__UntilSince",
+							"Text": "until\t"
+						}
+					],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "Local__DaysDiff",
+								"VariableConditionType": "LessThan",
+								"VariableValue": "0",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "Local__UntilSince",
+							"Text": "since"
+						}
+					]
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "Local__Results",
+					"Text": "%Variable%Local__Results%%Variable%Local__DaysDiff% days %Variable%Local__UntilSince%\t%Variable%Local__Event% - %Variable%Local__Date%\n"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Variable": "Local__EventGroup"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayWindow",
+			"Text": "%Variable%Local__Results%",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5IAQAAKwAAAAEAAABA\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBIZWx2ZXRp\n\t\t\t\t\t\t\tY2FOZXVlO30Ke1xjb2xv\n\t\t\t\t\t\t\tcnRibDtccmVkMjU1XGdy\n\t\t\t\t\t\t\tZWVuMjU1XGJsdWUyNTU7\n\t\t\t\t\t\t\tfQp7XCpcZXhwYW5kZWRj\n\t\t\t\t\t\t\tb2xvcnRibDs7fQpccGFy\n\t\t\t\t\t\t\tZFx0eDU2MFx0eDExMjBc\n\t\t\t\t\t\t\tdHgxNjgwXHR4MjI0MFx0\n\t\t\t\t\t\t\teDI4MDBcdHgzMzYwXHR4\n\t\t\t\t\t\t\tMzkyMFx0eDQ0ODBcdHg1\n\t\t\t\t\t\t\tMDQwXHR4NTYwMFx0eDYx\n\t\t\t\t\t\t\tNjBcdHg2NzIwXHBhcmRp\n\t\t\t\t\t\t\tcm5hdHVyYWxccGFydGln\n\t\t\t\t\t\t\taHRlbmZhY3RvcjAKClxm\n\t\t\t\t\t\t\tMFxmczI2IFxjZjAgJVZh\n\t\t\t\t\t\t\tcmlhYmxlJUxvY2FsX19S\n\t\t\t\t\t\t\tZXN1bHRzJX0BAAAAIwAA\n\t\t\t\t\t\t\tAAEAAAAHAAAAVFhULnJ0\n\t\t\t\t\t\t\tZhAAAABRYr1atgEAAAAA\n\t\t\t\t\t\t\tAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		}
+	],
+	"CreationDate": 572154327.411503,
+	"IsActive": false,
+	"ModificationDate": 572232992.122783,
+	"Triggers": [],
+	"Name": "Extract Event Data from Text; Calc Days Diff, Reformat Results  [Example]"
+}

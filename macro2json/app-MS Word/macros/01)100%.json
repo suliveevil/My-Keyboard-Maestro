@@ -1,0 +1,23 @@
+{
+	"UID": "64E085D9-BD71-4178-B89F-882E6EB338CD",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"视图",
+				"缩放",
+				"100%"
+			],
+			"TargetApplication": {
+				"NewFile": "/Applications/Microsoft Word.app",
+				"BundleIdentifier": "com.microsoft.Word",
+				"Name": "Microsoft Word"
+			},
+			"TargetingType": "Specific"
+		}
+	],
+	"CreationDate": 566319396.77207,
+	"ModificationDate": 566319485.751737,
+	"Triggers": [],
+	"Name": "01)100%"
+}

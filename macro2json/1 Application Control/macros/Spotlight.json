@@ -1,0 +1,30 @@
+{
+	"UID": "53C468F1-F46B-4DA6-ADCB-A320236FFD3E",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"Spotlight\" to appear",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567076418.91215,
+	"IsActive": false,
+	"ModificationDate": 567943999.969137,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 49,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Spotlight"
+}

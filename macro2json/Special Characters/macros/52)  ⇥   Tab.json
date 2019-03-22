@@ -1,0 +1,16 @@
+{
+	"UID": "24AE2BC3-B5BF-439F-8C9F-8C9D90D842FE",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇥"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991176.805034,
+	"Triggers": [],
+	"Name": "52)  ⇥   Tab"
+}

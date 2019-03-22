@@ -1,0 +1,25 @@
+{
+	"UID": "361463A5-0CF4-4AD9-A89B-E2E93906B6AE",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "9426F92A-49CA-470B-AB21-7EAD6E8212C9",
+			"TimeOutAbortsMacro": true,
+			"Parameter": "%Calculate%SCREEN(Internal, Right) - MP Margins Internal[3], SCREEN(Internal, Top) + MP Margins Internal[2]%",
+			"UseParameter": true,
+			"Asynchronously": false
+		}
+	],
+	"CreationDate": 483413207.436535,
+	"ModificationDate": 499745558.711041,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 92,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Mouse to Internal Top Right",
+	"CustomIconData": "KMEC=Rounded=KMCOLOR:255,255,255,255=┓=128=30=34=0=KMCOLOR:0,0,0,255"
+}

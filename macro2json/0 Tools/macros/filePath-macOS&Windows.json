@@ -1,0 +1,40 @@
+{
+	"UID": "764A52DF-B86A-436F-949E-B902FF4FEA75",
+	"Actions": [
+		{
+			"MacroActionType": "SearchRegEx",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "/Volumes/(.*)",
+			"Source": "Clipboard",
+			"Captures": [
+				"",
+				"Path"
+			]
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseString",
+			"Search": "/",
+			"Source": "Variable",
+			"Destination": "Variable",
+			"Variable": "Path",
+			"Replace": "\\",
+			"DestinationVariable": "WindowsPath"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "<<smb://SERVER_Name/%Variable%Path%>>\n<<\\\\ SERVER_Name\\%Variable%WindowsPath%>>"
+		}
+	],
+	"CreationDate": 573365112.037354,
+	"ModificationDate": 573365168.930348,
+	"Triggers": [
+		{
+			"TypedString": "mwpath",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "filePath-macOS&Windows"
+}

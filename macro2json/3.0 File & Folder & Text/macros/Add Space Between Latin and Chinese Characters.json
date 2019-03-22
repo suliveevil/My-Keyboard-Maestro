@@ -1,0 +1,44 @@
+{
+	"UID": "FF7059DF-A069-4E4A-93B3-90C2BAEF0BAE",
+	"Actions": [
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Cut",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "(\\p{Han})([a-z0-9.?!])",
+			"IsDisclosed": false,
+			"Source": "Clipboard",
+			"Replace": "$1 $2"
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "([a-z0-9.?!])(\\p{Han})",
+			"IsDisclosed": false,
+			"Source": "Clipboard",
+			"Replace": "$1 $2"
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Paste",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 545959315.37046,
+	"ModificationDate": 573416910.614163,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Add Space Between Latin and Chinese Characters"
+}

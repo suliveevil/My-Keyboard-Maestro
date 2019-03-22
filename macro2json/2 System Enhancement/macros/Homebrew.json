@@ -1,0 +1,52 @@
+{
+	"UID": "E35484D5-70EF-4CC3-B79C-7B8B5631E957",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "InsertText",
+					"Action": "ByPasting",
+					"Text": "brew cask install %|%"
+				},
+				{
+					"MacroActionType": "DeletePastClipboard",
+					"PastExpression": "0"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ConditionType": "ActionResult",
+						"ActionResultConditionType": "IsNotOK",
+						"ActionResultText": "OK"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "InsertText",
+					"Action": "ByPasting",
+					"Text": "brew install %|%"
+				},
+				{
+					"MacroActionType": "DeletePastClipboard",
+					"PastExpression": "0"
+				}
+			]
+		}
+	],
+	"CreationDate": 566972164.254001,
+	"IsActive": false,
+	"ModificationDate": 567046197.348411,
+	"Triggers": [
+		{
+			"TypedString": "!brew",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Homebrew"
+}

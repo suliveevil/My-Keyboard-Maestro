@@ -1,0 +1,36 @@
+{
+	"UID": "8B7CF075-C899-4EAE-8F8D-D8A0D9FF1099",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Safari，Not Work with Chrome、FireFox",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6eAgAAKwAAAAEAAACW\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZuaWxcZmNo\n\t\t\t\t\t\t\tYXJzZXQxMzQgLlBpbmdG\n\t\t\t\t\t\t\tYW5nU0MtUmVndWxhcjtc\n\t\t\t\t\t\t\tZjFcZm5pbFxmY2hhcnNl\n\t\t\t\t\t\t\tdDAgSGVsdmV0aWNhTmV1\n\t\t\t\t\t\t\tZTt9CntcY29sb3J0Ymw7\n\t\t\t\t\t\t\tXHJlZDI1NVxncmVlbjI1\n\t\t\t\t\t\t\tNVxibHVlMjU1O1xyZWQw\n\t\t\t\t\t\t\tXGdyZWVuMFxibHVlMDt9\n\t\t\t\t\t\t\tCntcKlxleHBhbmRlZGNv\n\t\t\t\t\t\t\tbG9ydGJsOztcY3Nzcmdi\n\t\t\t\t\t\t\tXGMwXGMwXGMwXGNuYW1l\n\t\t\t\t\t\t\tIHRleHRDb2xvcjt9Clxw\n\t\t\t\t\t\t\tYXJkXHR4NTYwXHR4MTEy\n\t\t\t\t\t\t\tMFx0eDE2ODBcdHgyMjQw\n\t\t\t\t\t\t\tXHR4MjgwMFx0eDMzNjBc\n\t\t\t\t\t\t\tdHgzOTIwXHR4NDQ4MFx0\n\t\t\t\t\t\t\teDUwNDBcdHg1NjAwXHR4\n\t\t\t\t\t\t\tNjE2MFx0eDY3MjBccGFy\n\t\t\t\t\t\t\tZGlybmF0dXJhbFxwYXJ0\n\t\t\t\t\t\t\taWdodGVuZmFjdG9yMAoK\n\t\t\t\t\t\t\tXGYwXGZzMjYgXGNmMiBc\n\t\t\t\t\t\t\tJ2M5XCdlOFwnZDZcJ2Mz\n\t\t\t\t\t\t\tU2FmYXJpXCdkNFwnZGFc\n\t\t\t\t\t\t\tJ2IyXCdjYlwnYjVcJ2E1\n\t\t\t\t\t\t\tXCdjMFwnYjhcJ2NmXCdk\n\t\t\t\t\t\t\tNFwnY2FcJ2JlXCdhMVwn\n\t\t\t\t\t\t\tYjBcJ2JmXCdhYVwnYjdc\n\t\t\t\t\t\t\tJ2EyXCdiMlwnY2JcJ2I1\n\t\t\t\t\t\t\tXCdhNVwnYTFcJ2IxXApc\n\t\t\t\t\t\t\tJ2Q0XCdkYVwnYjJcJ2Ni\n\t\t\t\t\t\t\tXCdiNVwnYTVcJ2MwXCdi\n\t\t\t\t\t\t\tOFwnZDZcJ2QwXCdkMVwn\n\t\t\t\t\t\t\tYTFcJ2Q0XCdmMVwnYTFc\n\t\t\t\t\t\t\tJ2IwXCdkNFwnY2FcJ2Qw\n\t\t\t\t\t\t\tXCdlZApcZjEgQXBwbGUK\n\t\t\t\t\t\t\tXGYwIFwnY2FcJ2MyXCdi\n\t\t\t\t\t\t\tY1wnZmVcJ2Q2XCdkMFwn\n\t\t\t\t\t\t\tYjVcJ2M0ClxmMSBKYXZh\n\t\t\t\t\t\t\tU2NyaXB0ClxmMCBcJ2Ex\n\t\t\t\t\t\t\tXCdiMX0BAAAAIwAAAAEA\n\t\t\t\t\t\t\tAAAHAAAAVFhULnJ0ZhAA\n\t\t\t\t\t\t\tAADyYy5ctgEAAAAAAAAA\n\t\t\t\t\t\t\tAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteJavaScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"WebBrowser": "Front Browser",
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"Text": "var docURL = document.URL;\nvar open_link = window.open('','_blank');\nopen_link.location=docURL;\nwindow.open(document.URL);",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 568078166.745634,
+	"ModificationDate": 568820951.530634,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 2,
+			"Modifiers": 4352,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Browser-Duplicate Tab"
+}

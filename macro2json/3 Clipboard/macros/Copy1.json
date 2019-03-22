@@ -1,0 +1,64 @@
+{
+	"UID": "D2C6A00B-F6F6-49CF-ADF5-5722A67AA610",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"ClipboardText": "",
+								"ClipboardConditionType": "HasText",
+								"ClipboardSourceNamedClipboardRedundantDisplayName": "Clipboard2",
+								"ConditionType": "Clipboard",
+								"ClipboardSourceNamedClipboardUID": "5E6FDED4-2552-4DD9-9166-2810919DB4BF",
+								"ClipboardSourceUseNamedClipboard": true
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": []
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ClipboardText": "",
+						"ClipboardConditionType": "DoesNotHaveText",
+						"ClipboardSourceNamedClipboardRedundantDisplayName": "Clipboard1",
+						"ConditionType": "Clipboard",
+						"ClipboardSourceNamedClipboardUID": "CA045974-6EB1-47C2-9493-31A766BFC678",
+						"ClipboardSourceUseNamedClipboard": true
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ClipboardSwitcherMacroAction",
+					"Action": "Copy",
+					"RedundandDisplayName": "Clipboard1",
+					"TimeOutAbortsMacro": true,
+					"Name": "CA045974-6EB1-47C2-9493-31A766BFC678"
+				}
+			]
+		}
+	],
+	"CreationDate": 567337212.578491,
+	"IsActive": false,
+	"ModificationDate": 568132921.83917,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 8,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Copy1"
+}

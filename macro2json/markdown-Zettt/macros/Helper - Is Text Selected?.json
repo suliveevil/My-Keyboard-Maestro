@@ -1,0 +1,43 @@
+{
+	"UID": "2FA80014-C9C2-45AE-BE4A-CA56E27EF8C0",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "MMD__Cut Menu Item",
+					"Text": "false"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Shortcut",
+						"MenuTitle": "Copy"
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "MMD__Cut Menu Item",
+					"Text": "true"
+				}
+			]
+		}
+	],
+	"CreationDate": 457084305.764058,
+	"ModificationDate": 397816519.038126,
+	"Triggers": [],
+	"Name": "Helper - Is Text Selected?",
+	"CustomIconData": "KMEC=Rounded=KMCOLOR:64,128,0,255=🙏=86=0=0=1=KMCOLOR:255,255,255,255"
+}

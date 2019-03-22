@@ -1,0 +1,143 @@
+{
+	"UID": "DE3828DD-C1B9-4597-9FBB-6358E698D28B",
+	"Actions": [
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Lorem Ipsum",
+			"Prompt": "",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "Paragraphs",
+					"Default": "5"
+				}
+			]
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "LocalPlaceholderText",
+			"Text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut massa rhoncus, consequat justo vitae, tempor quam. Vestibulum ut elit tristique, interdum neque vitae, sagittis dolor. Duis odio dui, convallis id justo consectetur, laoreet pretium urna. Nunc porta lectus nec nisi condimentum, eu posuere dui semper. Praesent tincidunt tincidunt purus. Integer posuere iaculis dignissim. Sed mattis ligula libero, eu molestie dui pulvinar id. Duis condimentum tellus mi, sit amet bibendum lectus egestas id. Praesent venenatis arcu maximus diam tincidunt mollis."
+		},
+		{
+			"MacroActionType": "For",
+			"Variable": "Index",
+			"Collections": {
+				"CollectionList": [
+					{
+						"Upwards": true,
+						"CollectionType": "Range",
+						"StartExpression": "2",
+						"EndExpression": "Paragraphs"
+					}
+				]
+			},
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"UseFormat": false,
+					"Variable": "IndexMod",
+					"Text": "Index MOD 5"
+				},
+				{
+					"MacroActionType": "Switch",
+					"Source": "Variable",
+					"Variable": "IndexMod",
+					"CaseEntries": [
+						{
+							"TestValue": "1",
+							"Actions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "LocalPlaceholderText",
+									"Text": "%Variable%LocalPlaceholderText%\r\rLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut massa rhoncus, consequat justo vitae, tempor quam. Vestibulum ut elit tristique, interdum neque vitae, sagittis dolor. Duis odio dui, convallis id justo consectetur, laoreet pretium urna. Nunc porta lectus nec nisi condimentum, eu posuere dui semper. Praesent tincidunt tincidunt purus. Integer posuere iaculis dignissim. Sed mattis ligula libero, eu molestie dui pulvinar id. Duis condimentum tellus mi, sit amet bibendum lectus egestas id. Praesent venenatis arcu maximus diam tincidunt mollis."
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "2",
+							"Actions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "LocalPlaceholderText",
+									"Text": "%Variable%LocalPlaceholderText%\r\rEtiam eleifend tortor vitae semper aliquet. Etiam condimentum quis neque sit amet rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non lectus sit amet urna facilisis lacinia. Nunc libero nisi, efficitur id blandit sit amet, lobortis commodo tortor. Vestibulum gravida facilisis faucibus. Quisque quis ex nibh. Morbi in tempus lectus, eget faucibus nulla. Pellentesque ante nunc, viverra ac imperdiet vel, ornare et quam."
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "3",
+							"Actions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "LocalPlaceholderText",
+									"Text": "%Variable%LocalPlaceholderText%\r\rDonec pretium convallis augue in auctor. Aenean egestas imperdiet bibendum. Maecenas ullamcorper orci a pulvinar consequat. Pellentesque fringilla nibh sed velit eleifend, nec bibendum augue blandit. Nullam pharetra, dui ac pellentesque mollis, urna diam cursus leo, eget pretium urna mi in erat. Sed ultrices arcu nec risus ullamcorper, sit amet tempus ante lacinia. Pellentesque malesuada felis nec varius pharetra. Nullam vel mollis enim. Nulla facilisi. Nunc consectetur erat quam, eu venenatis sem facilisis eget. Praesent eget tristique felis, a porta orci. Fusce faucibus mattis odio ut cursus."
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "4",
+							"Actions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "LocalPlaceholderText",
+									"Text": "%Variable%LocalPlaceholderText%\r\rProin id hendrerit nisi. Praesent diam augue, sagittis nec dolor ac, interdum iaculis massa. Quisque facilisis metus quis euismod varius. Fusce convallis massa et leo dictum interdum. Nunc in sem et ante ultrices aliquet. Sed at velit ante. Donec non metus sollicitudin, condimentum odio sit amet, sodales velit. Maecenas vitae tortor vel sapien mollis efficitur. Nam sed ornare mauris. Fusce varius, sapien eget tempus imperdiet, tellus ipsum fringilla arcu, vitae bibendum orci elit a libero. Integer ac tellus id nisi elementum maximus a et odio. Pellentesque dignissim diam eu lacus interdum rutrum."
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "5",
+							"Actions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "LocalPlaceholderText",
+									"Text": "%Variable%LocalPlaceholderText%\r\rPellentesque in maximus turpis. Maecenas ac dictum dolor. Donec a aliquam sapien. Mauris fringilla enim vel libero porttitor semper. Suspendisse ut lectus sollicitudin, hendrerit nisi et, ullamcorper magna. Vestibulum ultrices viverra velit nec aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque malesuada erat vitae lectus consequat placerat. Pellentesque ullamcorper hendrerit dapibus."
+								}
+							],
+							"ConditionType": "Is"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetClipboardToText",
+			"Text": "%Variable%LocalPlaceholderText%",
+			"JustDisplay": false
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "Placeholder text ready to paste",
+			"Subtitle": "",
+			"SoundName": ""
+		}
+	],
+	"CreationDate": 558600900.773378,
+	"ModificationDate": 574604991.072153,
+	"Triggers": [
+		{
+			"TypedString": "sjwb;",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "sjwb；",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "随机文本 Lorem Ipsum Text Generator"
+}

@@ -1,0 +1,81 @@
+{
+	"UID": "0A28A393-4794-48F2-B9A2-A47317A2146F",
+	"Actions": [
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "请输入要找的书名",
+			"Prompt": "Please enter the details for these variables.",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "booksearch",
+					"Default": "BookName"
+				}
+			]
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": false,
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			},
+			"URL": "http://book4you.org/s/?q=%Variable%booksearch%"
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": false,
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			},
+			"URL": "http://gen.lib.rus.ec/search.php?req=%Variable%booksearch%"
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": false,
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			},
+			"URL": "https://torrentz2.eu/search?f=%Variable%booksearch%"
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": true,
+			"TimeOutAbortsMacro": true,
+			"URL": "http://www.allitebooks.com/?s=%Variable%booksearch%"
+		}
+	],
+	"CreationDate": 566980456.015985,
+	"IsActive": false,
+	"ModificationDate": 568241540.201292,
+	"Triggers": [
+		{
+			"TypedString": "!book",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！book",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Search-Book"
+}

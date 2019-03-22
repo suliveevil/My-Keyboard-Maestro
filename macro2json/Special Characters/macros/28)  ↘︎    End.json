@@ -1,0 +1,16 @@
+{
+	"UID": "17A819D4-09AC-4E9C-94C5-C71AB47AF818",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "↘︎"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991051.351447,
+	"Triggers": [],
+	"Name": "28)  ↘︎    End"
+}

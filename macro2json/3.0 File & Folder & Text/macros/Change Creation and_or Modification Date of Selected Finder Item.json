@@ -1,0 +1,228 @@
+{
+	"UID": "2F2B1ED9-DCBC-4685-969E-ADC44B012138",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "[DATE] Change Creation and/or Modification Date of Selected Finder Item",
+			"ActionName": "~~~ ReleaseNotes for  VER: 2.0    2016-09-10 ~~~",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6XBQAAKwAAAAEAAACP\n\t\t\t\t\t\t\tBQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgQXV0aG9y\n\t\t\t\t\t\t\tLkBKTWljaGFlbFRYXApc\n\t\t\t\t\t\t\tClBVUlBPU0U6ICBTZXQg\n\t\t\t\t\t\t\tdGhlIENyZWF0aW9uIGFu\n\t\t\t\t\t\t\tZC9vciBNb2RpZmljYXRp\n\t\t\t\t\t\t\tb24gRGF0ZSBvZiBTZWxl\n\t\t\t\t\t\t\tY3RlZCBGaWxlXApcCkhP\n\t\t\t\t\t\t\tVyBUTyBVU0U6XApcCjEu\n\t\t\t\t\t\t\tIFNlbGVjdCBhIEZpbGUg\n\t\t\t\t\t\t\taW4gdGhlIEZpbmRlclwK\n\t\t\t\t\t\t\tMi4gUnVuIHRoaXMgbWFj\n\t\t\t\t\t\t\tcm9cClwKVEFHUzogIEBE\n\t\t\t\t\t\t\tYXRlcywgQEZpbmRlciwg\n\t\t\t\t\t\t\tQEZpbGVzLCBAQVNPYmpD\n\t\t\t\t\t\t\tLCBAY2NzdG9uZSwgQFNo\n\t\t\t\t\t\t\tYW5lU3RhbmxleVwKXApB\n\t\t\t\t\t\t\tQ1RJT04gQ09MT1IgQ09E\n\t\t\t\t\t\t\tRVNcClwnYTBcJ2EwXCc5\n\t\t\t\t\t\t\tNVwnYTBUbyBmYWNpbGl0\n\t\t\t\t\t\t\tYXRlIHRoZSByZWFkaW5n\n\t\t\t\t\t\t\tLCBjdXN0b21pemluZywg\n\t\t\t\t\t\t\tYW5kIG1haW50ZW5hbmNl\n\t\t\t\t\t\t\tIG9mIHRoaXMgbWFjcm8s\n\t\t\t\t\t\t\tXApcJ2EwXCdhMFwnYTBc\n\t\t\t\t\t\t\tJ2EwXCdhMFwnYTBrZXkg\n\t\t\t\t\t\t\tQWN0aW9ucyBhcmUgY29s\n\t\t\t\t\t\t\tb3JlZCBhcyBmb2xsb3dz\n\t\t\t\t\t\t\tOlwKXCdhMFwnYTBcJzk1\n\t\t\t\t\t\t\tXCdhMEdSRUVOXCdhMFwn\n\t\t\t\t\t\t\tYTBcJ2EwXCdhMFwnYTAg\n\t\t\t\t\t\t\tLS0gS2V5IENvbW1lbnRz\n\t\t\t\t\t\t\tIGRlc2lnbmVkIHRvIGhp\n\t\t\t\t\t\t\tZ2hsaWdodCBtYWluIHNl\n\t\t\t\t\t\t\tY3Rpb25zIG9mIG1hY3Jv\n\t\t\t\t\t\t\tXApcJ2EwXCdhMFwnOTVc\n\t\t\t\t\t\t\tJ2EwTUFHRU5UQSAtLSBB\n\t\t\t\t\t\t\tY3Rpb25zIGRlc2lnbmVk\n\t\t\t\t\t\t\tIHRvIGJlIGN1c3RvbWl6\n\t\t\t\t\t\t\tZWQgYnkgdXNlclwKXCdh\n\t\t\t\t\t\t\tMFwnYTBcJzk1XCdhMFlF\n\t\t\t\t\t\t\tTExPV1wnYTBcJ2EwXCdh\n\t\t\t\t\t\t\tMC0tIFByaW1hcnkgQWN0\n\t\t\t\t\t\t\taW9ucyAodXN1YWxseSB0\n\t\t\t\t\t\t\taGUgbWFpbiBwdXJwb3Nl\n\t\t\t\t\t\t\tIG9mIHRoZSBtYWNybylc\n\t\t\t\t\t\t\tClwnYTBcJ2EwXCc5NVwn\n\t\t\t\t\t\t\tYTBPUkFOR0VcJ2EwXCdh\n\t\t\t\t\t\t\tMC0tIEFjdGlvbnMgdGhh\n\t\t\t\t\t\t\tdCBwZXJtYW5lbnRseSBk\n\t\t\t\t\t\t\tZXN0cm95IFZhcmlibGVz\n\t\t\t\t\t\t\tIG9yIENsaXBib2FyZHNc\n\t\t\t\t\t\t\tClwKIyMjI1JFUVVJUkVT\n\t\t\t\t\t\t\tOiAgXApcCjEuICBLZXli\n\t\t\t\t\t\t\tb2FyZCBNYWVzdHJvIFZl\n\t\t\t\t\t\t\tciA3LjIuMStcCjIuICAq\n\t\t\t\t\t\t\tKm1hYyBPUyBFbCBDYXBp\n\t\t\t\t\t\t\tdGFuICgxMC4xMSkrKipc\n\t\t\t\t\t\t\tClwKfn5+fn5+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+flwKQnkgZG93\n\t\t\t\t\t\t\tbmxvYWRpbmcgb3IgaW5z\n\t\t\t\t\t\t\tdGFsbGluZyB0aGlzIHNv\n\t\t\t\t\t\t\tZnR3YXJlLCB5b3UgYWdy\n\t\t\t\t\t\t\tZWUgdG8gdGhlIHRlcm1z\n\t\t\t\t\t\t\tIG9mIHVzYWdlIGluIHRo\n\t\t\t\t\t\t\tZSBiZWxvdyBBY3Rpb24g\n\t\t\t\t\t\t\tbGFiZWxlZCAiTGljZW5z\n\t\t\t\t\t\t\tZSBhbmQgVXNhZ2UgQWdy\n\t\t\t\t\t\t\tZWVtZW50Ii4gIERvIG5v\n\t\t\t\t\t\t\tdCBpbnN0YWxsIG9yIHVz\n\t\t\t\t\t\t\tZSBpZiB5b3UgZG8gbm90\n\t\t\t\t\t\t\tIGFncmVlLlwKfn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+flwK\n\t\t\t\t\t\t\tfQEAAAAjAAAAAQAAAAcA\n\t\t\t\t\t\t\tAABUWFQucnRmEAAAAEbs\n\t\t\t\t\t\t\tfly2AQAAAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "~~~ CHANGE LOG ~~~",
+			"ActionName": "~~~ CHANGE LOG ~~~",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4VBAAAKwAAAAEAAAAN\n\t\t\t\t\t\t\tBAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgXCc5Nlwn\n\t\t\t\t\t\t\tOTZcJzk2XCc5NlwnOTZc\n\t\t\t\t\t\t\tJzk2XCc5NlwnOTZcJzk2\n\t\t\t\t\t\t\tXCc5NlwnOTZcJzk2XCc5\n\t\t\t\t\t\t\tNlwnOTZcJzk2XCc5Nlwn\n\t\t\t\t\t\t\tOTZcJzk2XCc5NlwnOTZc\n\t\t\t\t\t\t\tJzk2XCc5NlwnOTZcJzk2\n\t\t\t\t\t\t\tXCc5NlwnOTZcJzk2XCc5\n\t\t\t\t\t\t\tNlwnOTZcJzk2XCc5Nlwn\n\t\t\t\t\t\t\tOTZcJzk2XCc5NlwnOTZc\n\t\t\t\t\t\t\tJzk2XCc5NlwnOTZcJzk2\n\t\t\t\t\t\t\tXApWRVJcJ2EwXCdhMFwn\n\t\t\t\t\t\t\tYTBcJ2EwXCdhMERBVEVc\n\t\t\t\t\t\t\tClwnOTZcJzk2XCc5Nlwn\n\t\t\t\t\t\t\tOTZcJzk2XCc5NlwnOTZc\n\t\t\t\t\t\t\tJzk2XCc5NlwnOTZcJzk2\n\t\t\t\t\t\t\tXCc5NlwnOTZcJzk2XCc5\n\t\t\t\t\t\t\tNlwnOTZcJzk2XCc5Nlwn\n\t\t\t\t\t\t\tOTZcJzk2XCc5NlwnOTZc\n\t\t\t\t\t\t\tJzk2XCc5NlwnOTZcJzk2\n\t\t\t\t\t\t\tXCc5NlwnOTZcJzk2XCc5\n\t\t\t\t\t\t\tNlwnOTZcJzk2XCc5Nlwn\n\t\t\t\t\t\t\tOTZcJzk2XCc5NlwnOTZc\n\t\t\t\t\t\t\tJzk2XCc5NlwKMi4wXCdh\n\t\t\t\t\t\t\tMFwnYTBcJ2EwXCdhMFwn\n\t\t\t\t\t\t\tYTBcJ2EwXCdhMDIwMTYt\n\t\t\t\t\t\t\tMDktMTBcClwnYTBcJ2Ew\n\t\t\t\t\t\t\tXCc5NVwnYTBBZGRlZCBz\n\t\t\t\t\t\t\tdXBwb3J0IGZvciBZb3Nl\n\t\t\t\t\t\t\tbWl0ZVwKXCdhMFwnYTBc\n\t\t\t\t\t\t\tJzk1XCdhMEFkZGVkIGNo\n\t\t\t\t\t\t\tZWNrIGZvciBub24tc3Vw\n\t\t\t\t\t\t\tcG9ydGVkIG1hY09TJ3Nc\n\t\t\t\t\t\t\tClwnYTBcJ2EwXCc5NVwn\n\t\t\t\t\t\t\tYTBBZGRlZCBzdXBwb3J0\n\t\t\t\t\t\t\tIGZvciBJU08gLyBJbnRl\n\t\t\t\t\t\t\tcm5hdGlvbmFsIERhdGUg\n\t\t\t\t\t\t\tZm9ybWF0XApcJ2EwXCdh\n\t\t\t\t\t\t\tMFwnOTUgQWRkZWQgc3Vw\n\t\t\t\t\t\t\tcG9ydCBmb3IgRm9sZGVy\n\t\t\t\t\t\t\tc1wKXCdhMFwnYTBcJzk1\n\t\t\t\t\t\t\tXCdhMENoYW5nZWQgTWFj\n\t\t\t\t\t\t\tcm8gTmFtZSB0byBpbmRp\n\t\t\t\t\t\t\tY2F0ZSBzdXBwb3J0IGZv\n\t\t\t\t\t\t\tciBhbGwgRmluZGVyIEl0\n\t\t\t\t\t\t\tZW1zXApcCjEuMFwnYTBc\n\t\t\t\t\t\t\tJ2EwXCdhMFwnYTBcJ2Ew\n\t\t\t\t\t\t\tXCdhMFwnYTAyMDE2LTA5\n\t\t\t\t\t\t\tLTA4XApcJ2EwXCdhMFwn\n\t\t\t\t\t\t\tOTUgT3JpZ2luYWwgdmVy\n\t\t\t\t\t\t\tc2lvbn0BAAAAIwAAAAEA\n\t\t\t\t\t\t\tAAAHAAAAVFhULnJ0ZhAA\n\t\t\t\t\t\t\tAABG7H5ctgEAAAAAAAAA\n\t\t\t\t\t\t\tAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "Copyright (c) 2016, JMichaelTX",
+			"ActionName": "License and Usage Agreement -- Read Before Using",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4SBwAAKwAAAAEAAAAK\n\t\t\t\t\t\t\tBwAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgfn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+flwK\n\t\t\t\t\t\t\tQnkgZG93bmxvYWRpbmcg\n\t\t\t\t\t\t\tb3IgaW5zdGFsbGluZyB0\n\t\t\t\t\t\t\taGlzIHNvZnR3YXJlLCB5\n\t\t\t\t\t\t\tb3UgYWdyZWUgdG8gdGhl\n\t\t\t\t\t\t\tIGZvbGxvd2luZyBzdGF0\n\t\t\t\t\t\t\tZW1lbnRzLiAgRE8gTk9U\n\t\t\t\t\t\t\tIElOU1RBTEwgT1IgVVNF\n\t\t\t\t\t\t\tIElGIFlPVSBETyBOT1Qg\n\t\t\t\t\t\t\tQUdSRUUuXAp+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+fn5+\n\t\t\t\t\t\t\tfn5+fn5+fn5+fn5+XApc\n\t\t\t\t\t\t\tCkRFRklOSVRJT04gT0Yg\n\t\t\t\t\t\t\tVEVSTVM6XAoiU29mdHdh\n\t\t\t\t\t\t\tcmUiIHJlZmVycyB0byBh\n\t\t\t\t\t\t\tbnkgYW5kIGFsbCBkYXRh\n\t\t\t\t\t\t\tIGFuZCBjb21wdXRlciBz\n\t\t\t\t\t\t\tb2Z0d2FyZSByZWxhdGVk\n\t\t\t\t\t\t\tIHRvIHRoaXMgS2V5Ym9h\n\t\t\t\t\t\t\tcmQgTWFlc3RybyBNYWNy\n\t\t\t\t\t\t\tbywgaW5jbHVkaW5nLCBi\n\t\t\t\t\t\t\tdXQgbm90IGxpbWl0ZWQg\n\t\t\t\t\t\t\tdG86IGluc3RydWN0aW9u\n\t\t\t\t\t\t\tcywgbWFjcm9zLCBhY3Rp\n\t\t\t\t\t\t\tb25zLCBwbHVnaW5zLCBz\n\t\t\t\t\t\t\tY3JpcHRzLCBhbmQgcmVz\n\t\t\t\t\t\t\tb3VyY2VzIC4gIEl0IGlu\n\t\t\t\t\t\t\tY2x1ZGVzIGV2ZXJ5dGhp\n\t\t\t\t\t\t\tbmcgaW4gdGhlIGRvd25s\n\t\t\t\t\t\t\tb2FkIGZpbGUocykuXApc\n\t\t\t\t\t\t\tClBFUk1JU1NJT04gVE8g\n\t\t\t\t\t\t\tVVNFIEZPUiBGUkVFOlwK\n\t\t\t\t\t\t\tUGVybWlzc2lvbiBpcyBo\n\t\t\t\t\t\t\tZXJlYnkgZ3JhbnRlZCB0\n\t\t\t\t\t\t\tbyBhbnlvbmUgdG8gdXNl\n\t\t\t\t\t\t\tLCBjb3B5LCBhbmQvb3Ig\n\t\t\t\t\t\t\tbW9kaWZ5IHRoZSBzb2Z0\n\t\t\t\t\t\t\td2FyZSwgd2l0aG91dCBh\n\t\t\t\t\t\t\tbnkgY2hhcmdlLiAgVGhl\n\t\t\t\t\t\t\tIHNvZnR3YXJlIG1heSBi\n\t\t\t\t\t\t\tZSByZWRpc3RyaWJ1dGVk\n\t\t\t\t\t\t\tIHByb3ZpZGVkIHRoYXQ6\n\t\t\t\t\t\t\tICAoMSkgSXQgaXMgb2Zm\n\t\t\t\t\t\t\tZXJlZCBmcmVlIG9mIGNo\n\t\t\t\t\t\t\tYXJnZSB0byBvdGhlcnM7\n\t\t\t\t\t\t\tICAoMikgIFRoZSBmb2xs\n\t\t\t\t\t\t\tb3dpbmcgYXJlIGluY2x1\n\t\t\t\t\t\t\tZGVkIGluIGFuZCBhcHBl\n\t\t\t\t\t\t\tYXIgaW4gYWxsIGNvcGll\n\t\t\t\t\t\t\tczogKGEpIFRoZSBhYm92\n\t\t\t\t\t\t\tZSBjb3B5cmlnaHQgbm90\n\t\t\t\t\t\t\taWNlOyAgKGIpIFRoaXMg\n\t\t\t\t\t\t\tTGljZW5zZSBpbiBpdHMg\n\t\t\t\t\t\t\tZW50aXJldHk7IGFuZCAo\n\t\t\t\t\t\t\tYykgQXR0cmlidXRpb24g\n\t\t\t\t\t\t\taXMgZ2l2ZW4gdG8gdGhl\n\t\t\t\t\t\t\tIG9yaWdpbmFsIGF1dGhv\n\t\t\t\t\t\t\tciBuYW1lZCBpbiB0aGUg\n\t\t\t\t\t\t\tYWJvdmUgUmVsZWFzZU5v\n\t\t\t\t\t\t\tdGVzLlwKXApOTyBXQVJS\n\t\t\t\t\t\t\tQU5UWTpcClRoZSBzb2Z0\n\t\t\t\t\t\t\td2FyZSBpcyBwcm92aWRl\n\t\t\t\t\t\t\tZCAiYXMgaXMiIGFuZCB0\n\t\t\t\t\t\t\taGUgYXV0aG9yIGRpc2Ns\n\t\t\t\t\t\t\tYWltcyBhbGwgd2FycmFu\n\t\t\t\t\t\t\tdGllcyB3aXRoIHJlZ2Fy\n\t\t\t\t\t\t\tZCB0byB0aGlzIHNvZnR3\n\t\t\t\t\t\t\tYXJlIGluY2x1ZGluZyBh\n\t\t\t\t\t\t\tbGwgaW1wbGllZCB3YXJy\n\t\t\t\t\t\t\tYW50aWVzIG9mIG1lcmNo\n\t\t\t\t\t\t\tYW50YWJpbGl0eSBhbmQv\n\t\t\t\t\t\t\tb3IgZml0bmVzcyBmb3Ig\n\t\t\t\t\t\t\tYSBwYXJ0aWN1bGFyIHB1\n\t\t\t\t\t\t\tcnBvc2UuIFwKXApOTyBJ\n\t\t\t\t\t\t\tTkRFTU5JVFk6XApJbiBu\n\t\t\t\t\t\t\tbyBldmVudCBzaGFsbCB0\n\t\t\t\t\t\t\taGUgYXV0aG9yIG9yIENv\n\t\t\t\t\t\t\tcHlyaWdodCBob2xkZXIg\n\t\t\t\t\t\t\tYmUgbGlhYmxlIGZvciBh\n\t\t\t\t\t\t\tbnkgc3BlY2lhbCwgZGly\n\t\t\t\t\t\t\tZWN0LCBpbmRpcmVjdCwg\n\t\t\t\t\t\t\tb3IgY29uc2VxdWVudGlh\n\t\t\t\t\t\t\tbCBkYW1hZ2VzIG9yIGFu\n\t\t\t\t\t\t\teSBkYW1hZ2VzIHdoYXRz\n\t\t\t\t\t\t\tb2V2ZXIgcmVzdWx0aW5n\n\t\t\t\t\t\t\tIGZyb20gbG9zcyBvZiB1\n\t\t\t\t\t\t\tc2UsIGRhdGEgb3IgcHJv\n\t\t\t\t\t\t\tZml0cywgd2hldGhlciBp\n\t\t\t\t\t\t\tbiBhbiBhY3Rpb24gb2Yg\n\t\t\t\t\t\t\tY29udHJhY3QsIG5lZ2xp\n\t\t\t\t\t\t\tZ2VuY2Ugb3Igb3RoZXIg\n\t\t\t\t\t\t\tdG9ydGlvdXMgYWN0aW9u\n\t\t\t\t\t\t\tLCBhcmlzaW5nIG91dCBv\n\t\t\t\t\t\t\tZiBvciBpbiBjb25uZWN0\n\t\t\t\t\t\t\taW9uIHdpdGggdGhlIHVz\n\t\t\t\t\t\t\tZSBvciBwZXJmb3JtYW5j\n\t\t\t\t\t\t\tZSBvZiB0aGlzIHNvZnR3\n\t\t\t\t\t\t\tYXJlLn0BAAAAIwAAAAEA\n\t\t\t\t\t\t\tAAAHAAAAVFhULnJ0ZhAA\n\t\t\t\t\t\t\tAABG7H5ctgEAAAAAAAAA\n\t\t\t\t\t\t\tAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "SET Default Values if EMPTY",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "FCD__DateToChange",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "FCD__DateToChange",
+					"Text": "Creation"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "FCD__NewDate",
+					"Text": "%ICUDateTime%yyyy-MM-dd%"
+				}
+			]
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "SCRIPT:  Get File Name and Dates",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "ScriptResults",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"ActionColor": "Teal",
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "use AppleScript version \"2.4\" -- Yosemite (10.10) or later\ruse scripting additions\r\rtell application \"Finder\"\r\tset fileList to selection\r\tset oFile to item 1 of fileList\r\tset fileName to name of oFile\r\t\r\t--- GET DATES IN ISO/INTERN'L DATE FORMAT ---\r\t\r\tset creDateStr to text 1 thru 10 of ((creation date of oFile) ¬\r\t\tas «class isot» as string)\r\tset modDateStr to text 1 thru 10 of ((modification date of oFile) ¬\r\t\tas «class isot» as string)\r\t\rend tell\r\rset returnResults to \"Item Name: \" & tab & tab & tab & fileName ¬\r\t& return & \"Creation Date: \" & tab & tab & creDateStr ¬\r\t& return & \"Modification Date: \" & tab & modDateStr\r\rreturn returnResults",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Change Dates of Selected Item in Finder",
+			"Prompt": "FINDER ITEM TO BE CHANGED:\n\n%Variable%ScriptResults%\n.\nNEW Date can be in ISO format (YYYY-MM-DD) or any format acceptable to AppleScript, like \"MMM d, YYYY\".",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"TimeOutPeriod": 300,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "FCD__DateToChange",
+					"Default": "%Variable%FCD__DateToChange%|Creation|Modification|Both"
+				},
+				{
+					"Variable": "FCD__NewDate",
+					"Default": "%Variable%FCD__NewDate%"
+				}
+			]
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "SCRIPT:  Set Date(s) of Selected File",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "ScriptResults",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"ActionColor": "Teal",
+			"TimeOutAbortsMacro": true,
+			"Path": "/Users/Shared/Dropbox/SW/DEV/KM/Scripts/[DATE] Change Creation and Modification Date of Finder File [KM] (AS).scpt",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "use AppleScript version \"2.4\" -- Yosemite (10.10)+\nuse framework \"Foundation\"\nuse scripting additions\n\nproperty ptyScriptName : \"Set Finder Item Dates\"\nproperty ptyScriptVer : \"2.0\"\nproperty ptyScriptDate : \"2016-09-10\"\nproperty ptyScriptAuthor : \"JMichaelTX\"\n\n(*\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nPURPOSE:  Set the Creation and/or Modification Date of Selected Finder Item\n\t\t\t\t(can be either file or folder)\n\nRETURNS:\n\n  IF SUCCESSFUL:\n\t• \"OK\" on line 1\n\t• Finder Item Name on line 3\n\t• Date info on lines 5 & 6\n\t\n  IF ERROR:\n  \t• \"[ERROR]\" on line 1\n  \t• Error details on remaining lines\n\nKM VARIABLES REQUIRED: (must be set before calling this script)\n\n\t• FCD__DateToChange -- MUST be one of these: \"Creation\", \"Modification\", \"Both\"\n\t• FCD__NewDate -- Date string convertable by AppleScript, like \"Sep 9, 2016\"\n\t\nKM VARIABLES SET: (by this script)\n\t• NONE\n\t\nREQUIRES:\n\n\t• masOS Yosemite (10.10)+\n\t• Keyboard Maestro 7.2.1\n\t\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\t\n*)\nset returnResults to \"TBD\"\n\ntry\n\t--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\tif (not my checkReqdASVer(\"2.4\")) then\n\t\terror \"This script requires macOS Yosemite (10.10)+\"\n\tend if\n\t\n\t#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t#\tSelect Item in Finder, then run this script\n\t#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\n\ttell application \"Keyboard Maestro Engine\"\n\t\tset dateToChangeStr to getvariable \"FCD__DateToChange\"\n\t\tset newDateStr to getvariable \"FCD__NewDate\"\n\tend tell\n\t\n\t--- FOR TESTING ---\n\t(*\t\n\t--- SET TO ONE OF THESE:  \"Creation\", \"Modification\", \"Both\" ---\n\tset dateToChangeStr to \"Both\"\n\t\n\tset newDateStr to \"Sep 1, 2010\"\n\t*)\n\t\n\t\n\ttell application \"Finder\" to set itemList to selection as alias list\n\tif length of itemList = 0 then error \"No files were selected in the Finder!\"\n\t\n\tset itemPosixPath to POSIX path of (item 1 of itemList)\n\t\n\tset returnResults to \"OK\" & return & my changeDate(itemPosixPath, dateToChangeStr, newDateStr)\n\t\n\t\n\t--~~~~~~~~~~~~~ END TRY ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\t\non error errMsg number errNum\n\t\n\tif errNum = -128 then ## User Canceled\n\t\tset returnResults to \"[USER_CANCELED]\" & return & return ¬\n\t\t\t& \"SCRIPT: \" & ptyScriptName & \"   Ver: \" & ptyScriptVer\n\telse\n\t\tset returnResults to \"[ERROR]\" & return & return ¬\n\t\t\t& \"SCRIPT: \" & ptyScriptName & \"   Ver: \" & ptyScriptVer & return ¬\n\t\t\t& \"Error Number: \" & errNum & return ¬\n\t\t\t& errMsg\n\tend if\n\t\n\t\nend try\n--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n--- RETURN THE RESULTS TO THE KM EXECUTE SCRIPT ACTION ---\nreturn returnResults\n\n--~~~~~~~~~~~~~~~~~~~~ END OF MAIN SCRIPT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n#\tHANDLERS FOR THIS SCRIPT\n#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\non changeDate(pPOSIXpath, pDateToChange, pNewDate)\n\t--—————————————————————————————————————————————————————————————————————\n\t-- VER: 2.0\t\t2016-09-10\n\t(*\n\tPURPOSE:  Change Creation and/or Modification Date(s) of Finder Item\n\tRETURNS:\tString -- Summary of Changes that were made\n\t\n\t# Auth: Christopher Stone (@ccstone) & @ShaneStanley\n\t# ModBy: @JMichaelTX (minor mods)\n\t# dMod: 2016-09-09\n\t# Tags: @Core, @Date, @Files, @Finder, @Applescript, @Script\n\t\n\tREQUIRES:\n\t\t• macOS Mavericks (10.9)+\n\t\t\n\tMODS BY @JMichaelTX:\n\t\t• Added handler to convert AppleScript Date to NSDate\n\t\t• Moved Finder commands to main script\n\t\t• Added Conversion of string date in ISO format to AS Date\n\t\t• Added return of results summary\n\t\t\n\tREFERENCES:\n\t\t• @ShaneStanley, 2016-06-27, ASUL, Can a Creation Date be Modified with ASObjC?\n\t\t\thttp://lists.apple.com/archives/applescript-users/2016/Jun/msg00209.html\n\t\t\t\n\tYou would think that since creation-date is NSURLCreationDateKey that modification-date would be NSURLModificationDateKey, but it's not.\n\t\n\tI had to search this reference:\n\thttps://developer.apple.com/reference/foundation/urlresourcekey\n\t*)\n\t---------------------------------------------------------------------------------\n\t\n\t\n\tif class of pNewDate ≠ \"date\" then\n\t\tset pNewDate to my convertToDate(pNewDate)\n\tend if\n\t\n\tset newDateISO to text 1 thru 10 of (pNewDate as «class isot» as string)\n\t\n\t\n\t--- CONVERT AppleScript DATE TO NSDATE FOR USE WITH macOS before El Capitan (10.11) ---\n\tset pNewDate to convertASDateToNSDate(pNewDate)\n\tset theURL to current application's |NSURL|'s fileURLWithPath:pPOSIXpath\n\t\n\tif ((pDateToChange = \"Creation\") or (pDateToChange = \"Both\")) then\n\t\t\n\t\t#-----------------\n\t\t# Creation Date\n\t\t#-----------------\n\t\t\n\t\tset {theResult, theError} to theURL's setResourceValue:pNewDate forKey:(current application's NSURLCreationDateKey) |error|:(reference)\n\t\t\n\t\tif theResult as boolean is false then\n\t\t\terror (theError's localizedDescription() as text)\n\t\tend if\n\t\t\n\tend if\n\t\n\tif ((pDateToChange = \"Modification\") or (pDateToChange = \"Both\")) then\n\t\t\n\t\t#----------------------\n\t\t# Modification Date\n\t\t#----------------------\n\t\t\n\t\tset {theResult, theError} to theURL's setResourceValue:pNewDate forKey:(current application's NSURLContentModificationDateKey) |error|:(reference)\n\t\t\n\t\tif theResult as boolean is false then error (theError's localizedDescription() as text)\n\t\t\n\tend if\n\t\n\tset itemName to my getItemName(pPOSIXpath)\n\t\n\tset resultsStr to \"Finder Item: \" & return & itemName ¬\n\t\t& return & \"Date(s) Chanaged: \" & return & pDateToChange & return & newDateISO\n\t\n\tdisplay notification \"New Date: \" & newDateISO ¬\n\t\twith title pDateToChange & \" Date(s) Changed For:\" subtitle itemName\n\t\n\t\n\treturn resultsStr\n\t\nend changeDate\n-------------------------------------------------------------------------------------------\n\non convertToDate(pDate)\n\t\n\t--==========================================\n\t--\tCONVERT TO DATE OBJECT\n\t--==========================================\n\t\n\t-- MUST NOT BE IN ANY APP WHEN USING THE date FUNCTION --\n\t\n\tif (class of pDate = \"date\") then\n\t\tset dateAsDate to pDate\n\t\t\n\telse\n\t\t\n\t\ttry -- Try Standard U.S. date format --\n\t\t\tset dateAsDate to date (pDate)\n\t\ton error --- Try International Date format (YYYY-MM-DD)\n\t\t\tset dateAsDate to my convertISOtoDate(pDate)\n\t\tend try\n\t\t\n\tend if\n\t\n\treturn dateAsDate\n\t\nend convertToDate\n\nto convertISOtoDate(pDateStr)\n\t\n\t--- pDateStr MUST be in the format of YYYY<delim>MM<delim>DD\n\t---\t  where <delim> can be any character\n\t---\t\tlike 2016-01-05\n\t\n\tset resultDate to the current date\n\t\n\tset the year of resultDate to (text 1 thru 4 of pDateStr)\n\tset the month of resultDate to (text 6 thru 7 of pDateStr)\n\tset the day of resultDate to (text 9 thru 10 of pDateStr)\n\tset the time of resultDate to 0\n\t\n\tif (length of pDateStr) > 10 then\n\t\tset the hours of resultDate to (text 12 thru 13 of pDateStr)\n\t\tset the minutes of resultDate to (text 15 thru 16 of pDateStr)\n\t\t\n\t\tif (length of pDateStr) > 16 then\n\t\t\tset the seconds of resultDate to (text 18 thru 19 of pDateStr)\n\t\tend if\n\tend if\n\t\n\treturn resultDate\n\t\nend convertISOtoDate\n\n--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\non checkReqdASVer(pVerReqdStr)\n\t-----------------------------------------------------------------\n\t\n\tconsidering numeric strings\n\t\t-- Use of \"considering numeric strings\" allows for the comparison\n\t\t--  of strings like \"1.10.3\" vs \"1.9\" and return that \"1.10.3\" is larger.\n\t\t--  Applescript's version returns a text value\n\t\t\n\t\tif AppleScript's version < pVerReqdStr then\n\t\t\tset verOK to false\n\t\t\t--error \"This script requires macOS El Capitan (10.11)+\"\n\t\telse\n\t\t\tset verOK to true\n\t\tend if\n\tend considering\n\t\n\treturn verOK\n\t\nend checkReqdASVer\n\n--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\non convertASDateToNSDate(pASDate)\n\t--—————————————————————————————————————————————————————————————————————\n\t-- VER: 1.1\t\t2016-09-10\n\t(*\n\tPURPOSE:  Convert Standard AppleScript Date to NSDate (ASObjC)\n\t\n\tREQUIRES:\n\t\t• use framework \"Foundation\"\n\t\t• macOS Mavericks (10.9)+\n\n\t\n\tNOTE:\t\tThis is needed ONLY in macOS prior to El Capitan (10.11)\n\t\t\t\tIt should work with both Yosemite (10.10) and Mavericks (10.9)\n\t\t\t\t\n\tAUTHOR:\tAdapted by @JMichaelTX from original by @ccstone & @ShaneStanley\n\t--——————————————————————————————————————————————————————————————————————\n\t*)\n\tlocal newNSDate, theYear, theMonth, theDay, theSeconds, theCalendar\n\t\n\tset {theYear, theMonth, theDay, theSeconds} to pASDate's {year, month, day, time}\n\t\n\tif theYear < 0 then\n\t\tset theYear to -theYear\n\t\tset theEra to 0\n\telse\n\t\tset theEra to 1\n\tend if\n\t\n\tset theCalendar to current application's NSCalendar's currentCalendar()\n\tset newNSDate to theCalendar's dateWithEra:theEra |year|:theYear |month|:(theMonth as integer) ¬\n\t\t|day|:theDay hour:0 minute:0 |second|:theSeconds nanosecond:0\n\t\n\treturn newNSDate\n\t\nend convertASDateToNSDate\n\n--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\non getItemName(pPOSIXpath)\n\t--—————————————————————————————————————————————————————————————————————\n\t-- VER: 1.0\t\t2016-09-10\n\t\n\t\n\tset AppleScript's text item delimiters to \"/\"\n\tset pathList to text items of pPOSIXpath\n\t\n\trepeat with oItem in (reverse of pathList)\n\t\tif (text of oItem ≠ \"\") then\n\t\t\tset itemName to text of oItem\n\t\t\texit repeat\n\t\tend if\n\tend repeat\n\t\n\treturn itemName\n\t\nend getItemName",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "~~~ Handle Script Errors ~~~",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "Switch",
+					"ActionName": "Handle Script Errors (Simplified Ver)",
+					"Source": "Variable",
+					"ActionColor": "Yellow",
+					"Variable": "ScriptResults",
+					"CaseEntries": [
+						{
+							"TestValue": "^\\[ERROR\\]",
+							"Actions": [
+								{
+									"MacroActionType": "Comment",
+									"Title": "",
+									"ActionName": "~~~ ERROR OCURRED ~~~",
+									"ActionColor": "Green",
+									"IsDisclosed": false,
+									"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5uAAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABm\n\t\t\t\t\t\t\t\tAAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDcw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbH0Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp9AQAA\n\t\t\t\t\t\t\t\tACMAAAABAAAA\n\t\t\t\t\t\t\t\tBwAAAFRYVC5y\n\t\t\t\t\t\t\t\tdGYQAAAAcy6w\n\t\t\t\t\t\t\t\tWbYBAAAAAAAA\n\t\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+								},
+								{
+									"MacroActionType": "PlaySound",
+									"IsDisclosed": false,
+									"TimeOutAbortsMacro": true,
+									"Path": "/System/Library/Sounds/Glass.aiff",
+									"DeviceID": "SOUNDEFFECTS"
+								},
+								{
+									"MacroActionType": "PromptForUserInput",
+									"Title": "Macro: \"%ExecutingMacro%\"",
+									"ActionName": "DISPLAY ERROR MESSAGE",
+									"Prompt": "MACRO CANCELED due to Script Error\n\n%Variable%ScriptResults%",
+									"TimeOutAbortsMacro": true,
+									"Buttons": [
+										{
+											"Button": "OK",
+											"Cancel": false
+										}
+									],
+									"Variables": []
+								},
+								{
+									"MacroActionType": "Cancel",
+									"Action": "CancelThisMacro",
+									"IsDisclosed": false
+								}
+							],
+							"ConditionType": "Matches"
+						},
+						{
+							"TestValue": "",
+							"Actions": [
+								{
+									"MacroActionType": "Comment",
+									"Title": "",
+									"ActionName": "~~~ VALID RETURN ~~~",
+									"ActionColor": "Green",
+									"IsDisclosed": false,
+									"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5uAAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABm\n\t\t\t\t\t\t\t\tAAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDcw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbH0Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp9AQAA\n\t\t\t\t\t\t\t\tACMAAAABAAAA\n\t\t\t\t\t\t\t\tBwAAAFRYVC5y\n\t\t\t\t\t\t\t\tdGYQAAAAcy6w\n\t\t\t\t\t\t\t\tWbYBAAAAAAAA\n\t\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+								},
+								{
+									"MacroActionType": "Notification",
+									"Title": "%ExecutingMacro%",
+									"IsDisclosed": false,
+									"Text": "",
+									"IsActive": false,
+									"Subtitle": "Script Results are VALID",
+									"SoundName": ""
+								},
+								{
+									"MacroActionType": "SetVariableToText",
+									"IsDisclosed": false,
+									"Variable": "ScriptResults",
+									"Text": "%Delete%"
+								}
+							],
+							"ConditionType": "Otherwise"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"Text": "%Delete%",
+			"Variable": "ScriptResults"
+		}
+	],
+	"CreationDate": 495144225.230537,
+	"IsActive": false,
+	"ModificationDate": 574825409.068924,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 122,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Change Creation and/or Modification Date of Selected Finder Item",
+	"CustomIconData": "KMEP-GenericApplication-/Applications/Calendar.app"
+}

@@ -1,0 +1,16 @@
+{
+	"UID": "3D6F184A-853A-47C4-B22E-533ECC2B6923",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "↖︎"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991050.547436,
+	"Triggers": [],
+	"Name": "25)  ↖︎    Home"
+}

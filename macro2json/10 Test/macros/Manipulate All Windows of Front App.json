@@ -1,0 +1,40 @@
+{
+	"UID": "353258E6-810F-480E-88C1-BC22F6B8D8FD",
+	"Actions": [
+		{
+			"MacroActionType": "For",
+			"Variable": "WindowIndex",
+			"Collections": {
+				"CollectionList": [
+					{
+						"Upwards": true,
+						"CollectionType": "Range",
+						"StartExpression": "1",
+						"EndExpression": "WINDOWCOUNT()"
+					}
+				]
+			},
+			"Actions": [
+				{
+					"MacroActionType": "ManipulateWindow",
+					"Action": "MoveAndResize",
+					"WindowIndexExpression": "WindowIndex",
+					"HorizontalExpression": "125",
+					"Targeting": "WindowIndex",
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"VerticalExpression": "125",
+					"HeightExpression": "300",
+					"WidthExpression": "300",
+					"WindowName": ""
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 536678540.50056,
+	"IsActive": false,
+	"ModificationDate": 567565095.779084,
+	"Triggers": [],
+	"Name": "Manipulate All Windows of Front App"
+}

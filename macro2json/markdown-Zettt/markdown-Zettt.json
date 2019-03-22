@@ -1,0 +1,39 @@
+{
+	"AddToMacroPalette": true,
+	"Modifiers": 0,
+	"CreationDate": 566899002.678709,
+	"AddToStatusMenu": true,
+	"Name": "markdown-Zettt",
+	"PaletteUnderMouse": true,
+	"UID": "2B375011-1032-430D-9C2C-5F92D611DD42",
+	"Targeting": {
+		"Targeting": "Included",
+		"TargetingApps": [
+			{
+				"NewFile": "/Applications/Typora.app",
+				"BundleIdentifier": "abnerworks.Typora",
+				"Name": "Typora"
+			},
+			{
+				"NewFile": "/Applications/CotEditor.app",
+				"BundleIdentifier": "com.coteditor.CotEditor",
+				"Name": "CotEditor"
+			},
+			{
+				"NewFile": "/Applications/TextMate.app",
+				"BundleIdentifier": "com.macromates.TextMate",
+				"Name": "TextMate"
+			},
+			{
+				"NewFile": "/Applications/MacDown.app",
+				"BundleIdentifier": "com.uranusjr.macdown",
+				"Name": "MacDown"
+			}
+		]
+	},
+	"Macros": [],
+	"ToggleMacroUID": "C68A4F52-2E13-45EC-B3B1-C7EAEC897F08",
+	"Activate": "ActiveAndAlwaysWithPalette",
+	"IsActive": false,
+	"KeyCode": 53
+}

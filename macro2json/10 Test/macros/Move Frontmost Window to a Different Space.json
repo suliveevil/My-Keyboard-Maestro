@@ -1,0 +1,226 @@
+{
+	"UID": "2A8D2F80-7AC9-4EF9-8C03-ACEC1442A1CD",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "Local Mouse",
+			"Text": "%CurrentMouse%"
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "200",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "4",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "64",
+			"Relative": "Window",
+			"MouseDrag": "Hold"
+		},
+		{
+			"MacroActionType": "Switch",
+			"Source": "Text",
+			"Text": "%TriggerValue%",
+			"CaseEntries": [
+				{
+					"TestValue": "→",
+					"Actions": [
+						{
+							"MacroActionType": "While",
+							"Actions": [
+								{
+									"MacroActionType": "SimulateKeystroke",
+									"IsDisclosed": false,
+									"ReleaseAll": false,
+									"TargetApplication": {},
+									"TargetingType": "Front",
+									"KeyCode": 124,
+									"Modifiers": 4096
+								}
+							],
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionList": [
+									{
+										"KeyConditionType": "Down",
+										"ConditionType": "Key",
+										"KeyCode": 124
+									}
+								],
+								"ConditionListMatch": "All"
+							}
+						}
+					],
+					"ConditionType": "Contains"
+				},
+				{
+					"TestValue": "←",
+					"Actions": [
+						{
+							"MacroActionType": "While",
+							"Actions": [
+								{
+									"MacroActionType": "SimulateKeystroke",
+									"IsDisclosed": false,
+									"ReleaseAll": false,
+									"TargetApplication": {},
+									"TargetingType": "Front",
+									"KeyCode": 123,
+									"Modifiers": 4096
+								}
+							],
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionList": [
+									{
+										"KeyConditionType": "Down",
+										"ConditionType": "Key",
+										"KeyCode": 123
+									}
+								],
+								"ConditionListMatch": "All"
+							}
+						}
+					],
+					"ConditionType": "Contains"
+				},
+				{
+					"TestValue": "1",
+					"Actions": [
+						{
+							"MacroActionType": "SimulateKeystroke",
+							"IsDisclosed": false,
+							"ReleaseAll": false,
+							"TargetApplication": {},
+							"TargetingType": "Front",
+							"KeyCode": 18,
+							"Modifiers": 4096
+						}
+					],
+					"ConditionType": "Contains"
+				},
+				{
+					"TestValue": "2",
+					"Actions": [
+						{
+							"MacroActionType": "SimulateKeystroke",
+							"IsDisclosed": false,
+							"ReleaseAll": false,
+							"TargetApplication": {},
+							"TargetingType": "Front",
+							"KeyCode": 19,
+							"Modifiers": 4096
+						}
+					],
+					"ConditionType": "Contains"
+				},
+				{
+					"TestValue": "3",
+					"Actions": [
+						{
+							"MacroActionType": "SimulateKeystroke",
+							"IsDisclosed": false,
+							"ReleaseAll": false,
+							"TargetApplication": {},
+							"TargetingType": "Front",
+							"KeyCode": 20,
+							"Modifiers": 4096
+						}
+					],
+					"ConditionType": "Contains"
+				},
+				{
+					"TestValue": "4",
+					"Actions": [
+						{
+							"MacroActionType": "SimulateKeystroke",
+							"IsDisclosed": false,
+							"ReleaseAll": false,
+							"TargetApplication": {},
+							"TargetingType": "Front",
+							"KeyCode": 21,
+							"Modifiers": 4096
+						}
+					],
+					"ConditionType": "Contains"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": ".3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": -1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "200",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "5",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "61",
+			"Relative": "Window",
+			"MouseDrag": "Hold"
+		},
+		{
+			"MacroActionType": "UseVariable",
+			"Action": "SetMouse",
+			"Variable": "Local Mouse"
+		}
+	],
+	"CreationDate": 531226394.038868,
+	"IsActive": false,
+	"ModificationDate": 550020535.674788,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 124,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 123,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 18,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 19,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 20,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 21,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Move Frontmost Window to a Different Space"
+}

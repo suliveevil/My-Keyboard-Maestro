@@ -1,0 +1,16 @@
+{
+	"UID": "D75D1E69-29C7-4E0A-AE47-576A2EDFA7CA",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇤"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991057.014085,
+	"Triggers": [],
+	"Name": "49)  ⇤   Back Tab"
+}

@@ -1,0 +1,85 @@
+{
+	"UID": "DCA1356C-AB0A-4822-BDA8-B602A41BE385",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "HighLight",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC64AgAAKwAAAAEAAACw\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZuaWxcZmNo\n\t\t\t\t\t\t\tYXJzZXQwIEhlbHZldGlj\n\t\t\t\t\t\t\tYU5ldWU7XGYxXGZuaWxc\n\t\t\t\t\t\t\tZmNoYXJzZXQxMzQgUGlu\n\t\t\t\t\t\t\tZ0ZhbmdTQy1SZWd1bGFy\n\t\t\t\t\t\t\tO30Ke1xjb2xvcnRibDtc\n\t\t\t\t\t\t\tcmVkMjU1XGdyZWVuMjU1\n\t\t\t\t\t\t\tXGJsdWUyNTU7XHJlZDBc\n\t\t\t\t\t\t\tZ3JlZW4wXGJsdWUwO30K\n\t\t\t\t\t\t\te1wqXGV4cGFuZGVkY29s\n\t\t\t\t\t\t\tb3J0Ymw7O1xjc3NyZ2Jc\n\t\t\t\t\t\t\tYzBcYzBcYzBcY25hbWUg\n\t\t\t\t\t\t\tdGV4dENvbG9yO30KXHBh\n\t\t\t\t\t\t\tcmRcdHg1NjBcdHgxMTIw\n\t\t\t\t\t\t\tXHR4MTY4MFx0eDIyNDBc\n\t\t\t\t\t\t\tdHgyODAwXHR4MzM2MFx0\n\t\t\t\t\t\t\teDM5MjBcdHg0NDgwXHR4\n\t\t\t\t\t\t\tNTA0MFx0eDU2MDBcdHg2\n\t\t\t\t\t\t\tMTYwXHR4NjcyMFxwYXJk\n\t\t\t\t\t\t\taXJuYXR1cmFsXHBhcnRp\n\t\t\t\t\t\t\tZ2h0ZW5mYWN0b3IwCgpc\n\t\t\t\t\t\t\tZjBcZnMyNiBcY2YyIEhU\n\t\t\t\t\t\t\tTUwgJiBNYXJrZHdvbiBI\n\t\t\t\t\t\t\taWdoTGlnaHRcCgpcZjEg\n\t\t\t\t\t\t\tXCdjZlwnZDZcJ2Q0XCdk\n\t\t\t\t\t\t\tYVwnYjVcJ2M0ClxmMCBi\n\t\t\t\t\t\t\tdWcKXGYxIFwnYTNcJ2Jh\n\t\t\t\t\t\t\tXCdkNFwnZGFpVGhvdWdo\n\t\t\t\t\t\t\tdHNcJ2MwXCdlZlwnYmJc\n\t\t\t\t\t\t\tJ2UxXCdiNlwnZTBcJ2Iw\n\t\t\t\t\t\t\tXCdiNFwnZDJcJ2JiXCdi\n\t\t\t\t\t\t\tNFwnY2VcJ2JiXCdkOFwn\n\t\t\t\t\t\t\tYjNcJ2I1XCdhM1wnYWNc\n\t\t\t\t\t\t\tJ2JmXCdjOVwnYzRcJ2Rj\n\t\t\t\t\t\t\tXCdjYVwnYzdcJ2M5XCdl\n\t\t\t\t\t\t\tOFwnZDZcJ2MzXCdjMVwn\n\t\t\t\t\t\t\tY2JcJ2M3XCdkMFwnYmJc\n\t\t\t\t\t\t\tJ2JiXCdkNlwnZDBcJ2Nl\n\t\t\t\t\t\t\tXCdjNFwnY2FcJ2U0XCdj\n\t\t\t\t\t\t\tOFwnZWJcJ2I3XCdhOFwn\n\t\t\t\t\t\t\tYjVcJ2JjXCdkNlwnYzJc\n\t\t\t\t\t\t\tJ2I1XCdjNFwnYTFcJ2Ez\n\t\t\t\t\t\t\tfQEAAAAjAAAAAQAAAAcA\n\t\t\t\t\t\t\tAABUWFQucnRmEAAAAFxU\n\t\t\t\t\t\t\tIVy2AQAAAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetKeyboardLayout",
+			"KeyboardLayoutName": "ABC",
+			"KeyboardLayoutID": "com.apple.keylayout.ABC"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 123,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 124,
+			"Modifiers": 768
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 7,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "<mark>%SystemClipboard%</mark>%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetKeyboardLayout",
+			"KeyboardLayoutName": "Pinyin - Simplified",
+			"KeyboardLayoutID": "com.apple.inputmethod.SCIM.ITABC"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"ModificationDate": 574950162.455147,
+	"Triggers": [
+		{
+			"Case": "Ignore",
+			"TypedString": "mmk",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "!mark",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！mark",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-HighLight-Line"
+}

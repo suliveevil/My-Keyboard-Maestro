@@ -1,0 +1,41 @@
+{
+	"UID": "A224584B-61FA-47C8-8038-76B74DD7BF6F",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Substring Search with Regular Expression",
+			"ActionName": "Macro Notes",
+			"ActionColor": "Aqua",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4mBQAAKwAAAAEAAAAe\n\t\t\t\t\t\t\tBQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmc3dpc3Nc\n\t\t\t\t\t\t\tZmNoYXJzZXQwIEhlbHZl\n\t\t\t\t\t\t\tdGljYTt9CntcY29sb3J0\n\t\t\t\t\t\t\tYmw7XHJlZDI1NVxncmVl\n\t\t\t\t\t\t\tbjI1NVxibHVlMjU1O30K\n\t\t\t\t\t\t\te1wqXGV4cGFuZGVkY29s\n\t\t\t\t\t\t\tb3J0Ymw7O30KXHBhcmRc\n\t\t\t\t\t\t\tdHg1NjBcdHgxMTIwXHR4\n\t\t\t\t\t\t\tMTY4MFx0eDIyNDBcdHgy\n\t\t\t\t\t\t\tODAwXHR4MzM2MFx0eDM5\n\t\t\t\t\t\t\tMjBcdHg0NDgwXHR4NTA0\n\t\t\t\t\t\t\tMFx0eDU2MDBcdHg2MTYw\n\t\t\t\t\t\t\tXHR4NjcyMFxwYXJkaXJu\n\t\t\t\t\t\t\tYXR1cmFsXHBhcnRpZ2h0\n\t\t\t\t\t\t\tZW5mYWN0b3IwCgpcZjBc\n\t\t\t\t\t\t\tZnMyNCBcY2YwIFwnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wKQXV0aG9y\n\t\t\t\t\t\t\tCTogIENocmlzdG9waGVy\n\t\t\t\t\t\t\tIFN0b25lIDxzY3JpcHRt\n\t\t\t\t\t\t\tZWlzdGVyQHRoZXN0b25l\n\t\t\t\t\t\t\tZm9yZ2UuY29tPlwKQ3Jl\n\t\t\t\t\t\t\tYXRlZAk6ICAyMDE5LzAx\n\t\t\t\t\t\t\tLzA1IDE0OjE4XApNb2Rp\n\t\t\t\t\t\t\tZmllZAk6ICAyMDE5LzAx\n\t\t\t\t\t\t\tLzA1IDE0OjE4XApUYWdz\n\t\t\t\t\t\t\tCQk6ICBAY2NzdG9uZSwg\n\t\t\t\t\t\t\tQEtNRm9ydW1cClwnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN30BAAAAIwAA\n\t\t\t\t\t\t\tAAEAAAAHAAAAVFhULnJ0\n\t\t\t\t\t\t\tZhAAAAAwETFctgEAAAAA\n\t\t\t\t\t\t\tAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "myStr",
+			"Text": "12345421GAH12764318643"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "(GAH.{5})",
+			"Source": "Variable",
+			"Captures": [
+				"",
+				"targetStr"
+			],
+			"Variable": "myStr"
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "%Variable%targetStr%",
+			"Subtitle": "",
+			"SoundName": ""
+		}
+	],
+	"CreationDate": 568412237.068575,
+	"IsActive": false,
+	"ModificationDate": 568821098.012069,
+	"Triggers": [],
+	"Name": "Regular Expression-Substring Search"
+}

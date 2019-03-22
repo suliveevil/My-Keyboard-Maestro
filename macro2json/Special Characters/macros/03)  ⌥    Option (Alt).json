@@ -1,0 +1,16 @@
+{
+	"UID": "538B9B8C-4823-45B3-A283-4D90F5BB830C",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⌥"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492990886.353227,
+	"Triggers": [],
+	"Name": "03)  ⌥    Option (Alt)"
+}

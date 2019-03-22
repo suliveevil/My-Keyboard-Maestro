@@ -1,0 +1,31 @@
+{
+	"UID": "7C15462A-BCC4-4782-B201-D332935BC715",
+	"Actions": [
+		{
+			"MacroActionType": "SetActionDelay",
+			"Preference": "SimulateKeystrokeNormalKey",
+			"Reset": false,
+			"Permanent": false,
+			"Value": "0.02"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "<kbd>%|%</kbd>"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568076086.684111,
+	"ModificationDate": 574736384.213962,
+	"Triggers": [
+		{
+			"TypedString": "kbd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Hotkey"
+}

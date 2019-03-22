@@ -1,0 +1,31 @@
+{
+	"UID": "E2255F7F-6867-45B7-BBE4-12D5D3686B8D",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"BundleIdentifier": "com.qiuyuzhou.ShadowsocksX-NG",
+				"Name": "ShadowsocksX-NG-R8"
+			}
+		}
+	],
+	"CreationDate": 566956591.11836,
+	"ModificationDate": 568917229.758361,
+	"Triggers": [
+		{
+			"TypedString": "!ssr",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！ssr",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Shadowsocks"
+}

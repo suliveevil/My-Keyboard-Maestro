@@ -1,0 +1,37 @@
+{
+	"UID": "B09BCFE6-A8BB-427A-AEEC-5FDAB6E02846",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Get Info about Current FrontMost App (Name, Path, ID) @Example",
+			"ActionName": "~~~ HOW TO USE ~~~",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7KAQAAKwAAAAEAAADC\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgWW91IG1h\n\t\t\t\t\t\t\teSBmaW5kIHRoaXMgc2Ny\n\t\t\t\t\t\t\taXB0IGhlbHBmdWwgdG8g\n\t\t\t\t\t\t\tZ2V0IHRoZSBpbmZvIGFi\n\t\t\t\t\t\t\tb3V0IHRoZSBmcm9udG1v\n\t\t\t\t\t\t\tc3QgYXBwLlwKXApQdXQg\n\t\t\t\t\t\t\tdGhpcyAgTWFjcm8gaW4g\n\t\t\t\t\t\t\tYSBHbG9iYWwgR3JvdXBc\n\t\t\t\t\t\t\tClRyaWdnZXIgd2hlbiB0\n\t\t\t\t\t\t\taGUgYXBwIG9mIGludGVy\n\t\t\t\t\t\t\tZXN0IGlzIGZyb250bW9z\n\t\t\t\t\t\t\tdC59AQAAACMAAAABAAAA\n\t\t\t\t\t\t\tBwAAAFRYVC5ydGYQAAAA\n\t\t\t\t\t\t\tp6g1XLYBAAAAAAAAAAAA\n\t\t\t\t\t\t\tAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\n\ttell (first process whose frontmost is true)\n\t\tset appName to displayed name\n\t\tset appPath to ((path to frontmost application) as text)\n\tend tell\nend tell\n\ntell application appPath\n\tset appID to id\nend tell\n\nreturn (\"NAME: \" & appName & return & \"PATH: \" & appPath & return & \"ID: \" & appID)",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 508872422.795476,
+	"ModificationDate": 573868826.231274,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 34,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Current FrontMost App info (Name, Path, ID)"
+}

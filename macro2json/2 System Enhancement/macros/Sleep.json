@@ -1,0 +1,23 @@
+{
+	"UID": "83272A8E-AFE9-49FA-8F22-CB95C927F96C",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"Finder\" to sleep",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568382012.005725,
+	"IsActive": false,
+	"ModificationDate": 568382153.549648,
+	"Triggers": [],
+	"Name": "Sleep"
+}

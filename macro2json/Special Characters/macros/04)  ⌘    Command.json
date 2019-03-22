@@ -1,0 +1,16 @@
+{
+	"UID": "FAD8C63F-96EA-43E7-B24B-590236184591",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⌘"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492990880.913415,
+	"Triggers": [],
+	"Name": "04)  ⌘    Command"
+}

@@ -1,0 +1,30 @@
+{
+	"UID": "9535A4E9-960A-453C-A9AB-FB5726B5C87E",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "use AppleScript version \"2.4\" -- Yosemite (10.10) or later\ruse scripting additions\r\r-- 隐藏其他app\rtell application \"System Events\" to key code 4 using {option down, command down}\r-- 隐藏桌面图标\rdo shell script \"chflags -h hidden ~/Desktop/*\"\r-- 自动隐藏和显示菜单栏\rtell application \"System Preferences\" to reveal the ¬\r\tanchor named \"main\" of ¬\r\tpane id \"com.apple.preference.general\"\rtell application \"System Events\" to tell ¬\r\tprocess \"System Preferences\" to tell ¬\r\twindow \"通用\" to tell ¬\r\tcheckbox \"自动隐藏和显示菜单栏\" to ¬\r\tperform action \"AXPress\"\r\rquit application \"System Preferences\"\r\r-- 开始录屏\rtell application \"QuickTime Player\" to activate (start (new screen recording))\rtell application \"System Events\"\r\tif application \"QuickTime Player\" is not (activate) then\r\t\t-- 显示桌面图标\r\t\tdo shell script \"chflags -h nohidden ~/Desktop/*\"\r\t\t-- 自动隐藏和显示菜单栏\r\t\ttell application \"System Preferences\" to reveal the ¬\r\t\t\tanchor named \"main\" of ¬\r\t\t\tpane id \"com.apple.preference.general\"\r\t\ttell application \"System Events\" to tell ¬\r\t\t\tprocess \"System Preferences\" to tell ¬\r\t\t\twindow \"通用\" to tell ¬\r\t\t\tcheckbox \"自动隐藏和显示菜单栏\" to ¬\r\t\t\tperform action \"AXPress\"\r\t\tquit application \"System Preferences\"\r\telse\r\t\treturn\r\tend if\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568536326.935581,
+	"IsActive": false,
+	"ModificationDate": 568559951.284243,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "AutoRecordScreen"
+}

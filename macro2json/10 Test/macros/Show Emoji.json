@@ -1,0 +1,25 @@
+{
+	"UID": "9757E55A-1AB4-461D-9696-06AB7A602616",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 49,
+			"Modifiers": 4352
+		}
+	],
+	"CreationDate": 566894996.347812,
+	"IsActive": false,
+	"ModificationDate": 567592090.949669,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 33,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Show Emoji"
+}

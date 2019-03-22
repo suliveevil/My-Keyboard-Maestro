@@ -1,0 +1,28 @@
+{
+	"UID": "3C5FD31F-2831-46B0-B901-C43E63E3045C",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Firefox.app",
+				"BundleIdentifier": "org.mozilla.firefox",
+				"Name": "Firefox"
+			}
+		}
+	],
+	"CreationDate": 566956591.11836,
+	"ModificationDate": 568820936.577509,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 19,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Firefox"
+}

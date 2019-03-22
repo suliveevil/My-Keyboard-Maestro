@@ -1,0 +1,76 @@
+{
+	"UID": "EE1B1C72-938F-4C21-B3F1-57EA1CA3E8AE",
+	"Actions": [
+		{
+			"MacroActionType": "Semaphore",
+			"TimeOutAbortsMacro": true,
+			"SemaphoreName": "speedtest",
+			"SemaphoreAction": "Lock"
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "This will take some seconds…",
+			"Subtitle": "Test has started. ",
+			"SoundName": "Tink"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"Variable": "istShellOut",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"Text": "/usr/local/bin/speedtest",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "(?ms)((?:\\d{1,3}\\.?){4}).*Hosted by (.*?)$.*Download: (.*?)$.*Upload: (.*)$",
+			"Source": "Variable",
+			"Captures": [
+				"",
+				"istIP",
+				"istHost",
+				"istDown",
+				"istUp"
+			],
+			"Variable": "istShellOut"
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "↓ %Variable%istDown% ↑ %Variable%istUp%",
+			"Text": "%Variable%istHost%",
+			"Subtitle": "My IP: %Variable%istIP%",
+			"SoundName": "DefaultSoundName"
+		},
+		{
+			"MacroActionType": "Semaphore",
+			"SemaphoreName": "speedtest",
+			"SemaphoreAction": "Unlock"
+		}
+	],
+	"CreationDate": 494847726.620182,
+	"IsActive": false,
+	"ModificationDate": 567137110.683698,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"TypedString": "speedcheck",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Internet Speedtest (fancy)"
+}

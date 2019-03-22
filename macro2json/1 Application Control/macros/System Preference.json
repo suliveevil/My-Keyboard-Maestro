@@ -1,0 +1,28 @@
+{
+	"UID": "CE00F14E-976C-411D-9E6A-95292750D476",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/System Preferences.app",
+				"BundleIdentifier": "com.apple.systempreferences",
+				"Name": "System Preferences"
+			}
+		}
+	],
+	"CreationDate": 568078166.745634,
+	"ModificationDate": 568820924.311459,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 18,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "System Preference"
+}

@@ -1,0 +1,23 @@
+{
+	"UID": "68D25A7C-DC68-4FC7-A6DD-089A5E49ACCE",
+	"Actions": [
+		{
+			"MacroActionType": "ClipboardSwitcherMacroAction",
+			"Action": "Paste",
+			"RedundandDisplayName": "Clipboard4",
+			"TimeOutAbortsMacro": true,
+			"Name": "BDBA7CAC-D159-4807-9E5D-1621F6DDE88F"
+		}
+	],
+	"CreationDate": 567337212.578491,
+	"ModificationDate": 568172758.016193,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 9,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "CP-Paste4"
+}

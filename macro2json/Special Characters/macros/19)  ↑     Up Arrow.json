@@ -1,0 +1,16 @@
+{
+	"UID": "8CBE0C1F-0C89-484A-8EC1-9FDE1C1A0CAF",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "↑"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991048.940226,
+	"Triggers": [],
+	"Name": "19)  ↑     Up Arrow"
+}

@@ -1,0 +1,74 @@
+{
+	"UID": "40099401-9230-4524-9F08-C01876F54C70",
+	"Actions": [
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "...zzZ",
+			"Subtitle": "Time to Sleep",
+			"SoundName": ""
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.2",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "PlaySound",
+			"Volume": 50,
+			"TimeOutAbortsMacro": true,
+			"Path": "/System/Library/Sounds/Glass.aiff",
+			"DeviceID": "SOUNDEFFECTS"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "30",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 567048947.7261,
+	"ModificationDate": 574910552.039543,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 20,
+			"RepeatTime": 60,
+			"TimeHour": 22,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Time",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "Time to Sleep"
+}

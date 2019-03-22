@@ -1,0 +1,26 @@
+{
+	"UID": "D3F30699-BDA8-45B5-BAF7-D29A00A3221B",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Notes",
+				"New Highlight"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		}
+	],
+	"CreationDate": 566900688.274136,
+	"ModificationDate": 427479092.564123,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 0,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Highlight  (Node)"
+}

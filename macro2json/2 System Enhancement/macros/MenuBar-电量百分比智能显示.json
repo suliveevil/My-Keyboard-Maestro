@@ -1,0 +1,124 @@
+{
+	"UID": "33594398-B082-4552-BC4D-928C559BFC01",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "注释",
+			"ActionName": "如果在用电池 且 没有显示百分比，则 显示百分比。",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4IAgAAKwAAAAEAAAAA\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTYxXGNvY29h\n\t\t\t\t\t\t\tc3VicnRmMjAwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MTM0IC5QaW5n\n\t\t\t\t\t\t\tRmFuZ1NDLVJlZ3VsYXI7\n\t\t\t\t\t\t\tfQp7XGNvbG9ydGJsO1xy\n\t\t\t\t\t\t\tZWQyNTVcZ3JlZW4yNTVc\n\t\t\t\t\t\t\tYmx1ZTI1NTtccmVkMFxn\n\t\t\t\t\t\t\tcmVlbjBcYmx1ZTA7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7XGNzZ3JheVxj\n\t\t\t\t\t\t\tMDt9ClxwYXJkXHR4NTYw\n\t\t\t\t\t\t\tXHR4MTEyMFx0eDE2ODBc\n\t\t\t\t\t\t\tdHgyMjQwXHR4MjgwMFx0\n\t\t\t\t\t\t\teDMzNjBcdHgzOTIwXHR4\n\t\t\t\t\t\t\tNDQ4MFx0eDUwNDBcdHg1\n\t\t\t\t\t\t\tNjAwXHR4NjE2MFx0eDY3\n\t\t\t\t\t\t\tMjBccGFyZGlybmF0dXJh\n\t\t\t\t\t\t\tbFxwYXJ0aWdodGVuZmFj\n\t\t\t\t\t\t\tdG9yMAoKXGYwXGZzMjYg\n\t\t\t\t\t\t\tXGNmMiBcJ2M4XCdlN1wn\n\t\t\t\t\t\t\tYjlcJ2ZiXCdkNFwnZGFc\n\t\t\t\t\t\t\tJ2QzXCdjM1wnYjVcJ2U3\n\t\t\t\t\t\t\tXCdiM1wnZDggXCdjN1wn\n\t\t\t\t\t\t\tZDIgXCdjM1wnYmJcJ2Qz\n\t\t\t\t\t\t\tXCdkMFwnY2ZcJ2Q0XCdj\n\t\t\t\t\t\t\tYVwnYmVcJ2IwXCdkOVwn\n\t\t\t\t\t\t\tYjdcJ2Q2XCdiMVwnYzhc\n\t\t\t\t\t\t\tJ2EzXCdhY1wnZDRcJ2Yy\n\t\t\t\t\t\t\tIFwnY2ZcJ2Q0XCdjYVwn\n\t\t\t\t\t\t\tYmVcJ2IwXCdkOVwnYjdc\n\t\t\t\t\t\t\tJ2Q2XCdiMVwnYzhcJ2Ex\n\t\t\t\t\t\t\tXCdhM30BAAAAIwAAAAEA\n\t\t\t\t\t\t\tAAAHAAAAVFhULnJ0ZhAA\n\t\t\t\t\t\t\tAADVm6xatgEAAAAAAAAA\n\t\t\t\t\t\t\tAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "Comment",
+					"Title": "注释",
+					"ActionName": "如果在用电源、电量>75%、显示百分比，则 关闭显示百分比。",
+					"IsDisclosed": false,
+					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5uAAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABm\n\t\t\t\t\t\t\t\tAAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDcw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbH0Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp9AQAA\n\t\t\t\t\t\t\t\tACMAAAABAAAA\n\t\t\t\t\t\t\t\tBwAAAFRYVC5y\n\t\t\t\t\t\t\t\tdGYQAAAAcy6w\n\t\t\t\t\t\t\t\tWbYBAAAAAAAA\n\t\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Text": "BATTERY()=0",
+								"ConditionType": "Calculation"
+							},
+							{
+								"ScriptConditionType": "Contains",
+								"ScriptResult": "YES",
+								"ScriptConditionSourceType": "ShellScriptText",
+								"ScriptTerminationStatus": 1,
+								"ScriptText": "defaults read com.apple.menuextra.battery ShowPercent",
+								"Path": "",
+								"ConditionType": "Script"
+							},
+							{
+								"ScriptConditionType": "GreaterThan",
+								"ScriptResult": "75",
+								"ScriptConditionSourceType": "ShellScriptText",
+								"ScriptTerminationStatus": 1,
+								"ScriptText": "pmset -g batt | grep -oE \"\\d+%\" | grep -oE \"\\d+\"",
+								"Path": "",
+								"ConditionType": "Script"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "ExecuteAppleScript",
+							"NotifyOnFailure": false,
+							"TrimResults": true,
+							"TimeOutAbortsMacro": true,
+							"Text": "tell application \"System Events\"\r\ttell application process \"SystemUIServer\"\r\t\tset bettaryIcon to first menu bar item of menu bar 1 whose description starts with \"电池\"\r\t\tclick bettaryIcon\r\t\tclick (the first menu item of menu 1 of bettaryIcon whose name = \"显示百分比\")\r\tend tell\rend tell",
+							"Path": "",
+							"TrimResultsNew": true,
+							"StopOnFailure": false,
+							"IncludeStdErr": false,
+							"DisplayKind": "None",
+							"UseText": true
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Text": "BATTERY()",
+						"ConditionType": "Calculation"
+					},
+					{
+						"ScriptConditionType": "Contains",
+						"ScriptResult": "NO",
+						"ScriptConditionSourceType": "ShellScriptText",
+						"ScriptTerminationStatus": 1,
+						"ScriptText": "defaults read com.apple.menuextra.battery ShowPercent",
+						"Path": "",
+						"ConditionType": "Script"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteAppleScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"IncludeStdErr": false,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "None",
+					"IsDisclosed": false,
+					"Text": "tell application \"System Events\"\r\ttell application process \"SystemUIServer\"\r\t\tset bettaryIcon to first menu bar item of menu bar 1 whose description starts with \"电池\"\r\t\tclick bettaryIcon\r\t\tclick (the first menu item of menu 1 of bettaryIcon whose name = \"显示百分比\")\r\tend tell\rend tell",
+					"NotifyOnFailure": false
+				}
+			]
+		}
+	],
+	"CreationDate": 542953201.778181,
+	"IsActive": false,
+	"ModificationDate": 568488128.420099,
+	"Triggers": [
+		{
+			"Repeat": true,
+			"TimeFinishHour": 23,
+			"TimeMinutes": 0,
+			"RepeatTime": 300,
+			"TimeHour": 0,
+			"TimeFinishMinutes": 59,
+			"WhichDays": 127,
+			"ExecuteType": "While",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "MenuBar-电量百分比智能显示"
+}

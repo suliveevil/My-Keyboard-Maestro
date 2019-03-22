@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"AddToStatusMenu": false,
+	"CreationDate": 568131643.752241,
+	"Modifiers": 0,
+	"PaletteUnderMouse": false,
+	"Name": "3.1 Python",
+	"UID": "C590A2B1-F5F6-4920-9411-9EDA9493B9EB",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "21129CF4-FE3E-4756-ACAA-DF0241A6F2CD",
+	"Activate": "Normal",
+	"KeyCode": 32767,
+	"DisplayToggle": false
+}

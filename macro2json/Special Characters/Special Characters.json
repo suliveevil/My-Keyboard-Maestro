@@ -1,0 +1,24 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 492987710.893068,
+	"AddToStatusMenu": true,
+	"PaletteUnderMouse": false,
+	"CustomIconData": "KMEP-TypedStringTrigger",
+	"Name": "Special Characters",
+	"Theme": {
+		"UseDefaultInstead": false,
+		"Columns": 3,
+		"Theme": "Evening"
+	},
+	"UID": "BE1BE4B6-47D2-4F4B-9A54-0DAAC5FDBF29",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "2804430E-3DF5-4FAA-B03B-4CF81341B799",
+	"Activate": "WithPalette",
+	"IsActive": false,
+	"KeyCode": 32767
+}

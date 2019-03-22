@@ -1,0 +1,30 @@
+{
+	"UID": "E3C69DC0-AFD0-45DA-8FDB-A28A33379DCC",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "----------------------------------------------------------------\n# Auth: Christopher Stone <scriptmeister@thestoneforge.com>\n# dCre: 2012/10/26 01:27\n# dMod: 2018/11/15 02:31\n# Appl: Finder\n# Task: Create a new file from a file-type list in the front Finder window using\n#     : template files stored in a folder.\n# Libs: Template files provided by the user.\n# Osax: None \n# Tags: @Applescript\n# Note: Auto-creates a Text template - others are for the user to supply.\n# Chng: Change List is appended at end.\n# Vers: 1.50\n----------------------------------------------------------------\nuse AppleScript version \"2.5\"\nuse framework \"Foundation\"\nuse scripting additions\n----------------------------------------------------------------\n\ntry\n   \n   -------------------------------------------------------------\n   --» Ensure the New-File-Here! folder exists.\n   -------------------------------------------------------------\n   \n   try\n      set templateFolderPath to ((path to application support from user domain as text) & \"Script_Support:New_File_Here!:\")\n      set templateFolder to alias templateFolderPath\n   on error\n      set newFilesHereFolder to quoted form of (POSIX path of templateFolderPath)\n      set textTemplate to newFilesHereFolder & \"Text_Template.txt\"\n      \n      do shell script \"\n         mkdir -p \" & newFilesHereFolder & \";\n         touch \" & textTemplate & \";\n         open -R \" & textTemplate\n      \n      return -- Bail!\n      \n   end try\n   \n   -------------------------------------------------------------\n   \n   tell application \"Finder\"\n      if front window exists then\n         set winTarget to target of front window as alias\n         set fileTemplateList to name of files of templateFolder\n         set beginning of fileTemplateList to \" Open New_Files_Here! Folder\"\n         set textTemplate to name of files of templateFolder whose name starts with \"Text\"\n         \n         tell me to set fileType to choose from list fileTemplateList with title \"New_File_Here! Templates\" with prompt ¬\n            \"Pick One or More:\" default items {textTemplate} with multiple selections allowed\n         \n         if fileType = false then\n            \n            return -- Bail!\n            \n         else if fileType ≠ false then\n            \n            if fileType = {\" Open New_Files_Here! Folder\"} then\n               open templateFolder\n               \n               return -- Bail!\n               \n            end if\n            \n            set AppleScript's text item delimiters to (return & templateFolderPath)\n            set itemsToCopy to paragraphs of ((templateFolder as text) & fileType)\n            \n            repeat with i in itemsToCopy\n               set i's contents to i as alias\n            end repeat\n            \n            set copiedFiles to duplicate itemsToCopy to winTarget\n            \n            if class of copiedFiles is not list then\n               set copiedFiles to {copiedFiles}\n            end if\n            \n            select copiedFiles\n            \n            repeat with i in copiedFiles\n               set contents of i to POSIX path of (i as alias)\n            end repeat\n            \n         end if\n         \n      else\n         error \"No windows open in Finder!\"\n      end if\n      \n   end tell\n   \n   set theDate to current date\n   \n   repeat with thePath in copiedFiles\n      set theURL to (current application's |NSURL|'s fileURLWithPath:thePath)\n      \n      set {resultOfCreationDate, theError} to (theURL's setResourceValue:theDate forKey:(current application's NSURLCreationDateKey) |error|:(reference))\n      if resultOfCreationDate as boolean is false then error (theError's localizedDescription() as text)\n      \n      set {resultOfModificationDate, theError} to (theURL's setResourceValue:theDate forKey:(current application's NSURLContentModificationDateKey) |error|:(reference))\n      if resultOfModificationDate as boolean is false then error (theError's localizedDescription() as text)\n      \n      set {resultOfContentAccessDate, theError} to (theURL's setResourceValue:theDate forKey:(current application's NSURLContentAccessDateKey) |error|:(reference))\n      if resultOfContentAccessDate as boolean is false then error (theError's localizedDescription() as text)\n   end repeat\n   \non error e number n\n   set e to e & return & return & \"Num: \" & n\n   tell me to set dDlg to display dialog e with title \"ERROR!\" buttons {\"Cancel\", \"Copy\", \"OK\"} default button \"OK\"\n   if button returned of dDlg = \"Copy\" then set the clipboard to e\nend try\n\n----------------------------------------------------------------\n\n(*\n\nChange List\n\n2018/11/07 02:15\n   + New files creation and modification dates are changed to NOW() when the user creates them.\n      (Before this all dates except .txt files were the same as the template file.)\n\n2018/11/15 02:27\n   - Removed old, redundant Text_Template.txt creation code.\n   + Previously an error was thrown if the user cancelled – this is no longer the case.\n   + Fixed a bug that stopped duplicated files from changing creation and modification dates to NOW().\n\n*)\n\n----------------------------------------------------------------",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568928127.628882,
+	"IsActive": false,
+	"ModificationDate": 574825411.838834,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 122,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Create File"
+}

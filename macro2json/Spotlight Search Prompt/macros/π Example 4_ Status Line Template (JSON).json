@@ -1,0 +1,70 @@
+{
+	"UID": "3E7226B3-D020-4A66-985E-26322B3A091F",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Example 4: Status Line Template (JSON)",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5pAQAAKwAAAAEAAABh\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgU2hvd3Mg\n\t\t\t\t\t\t\taG93IHRvIGNvbmZpZ3Vy\n\t\t\t\t\t\t\tZSBhIFN0YXR1cyBMaW5l\n\t\t\t\t\t\t\tIHVzaW5nIGEgVGVtcGxh\n\t\t\t\t\t\t\tdGUgc3RyaW5nLn0BAAAA\n\t\t\t\t\t\t\tIwAAAAEAAAAHAAAAVFhU\n\t\t\t\t\t\t\tLnJ0ZhAAAADIf3tctgEA\n\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspOptions",
+			"Text": "title: Example 4: Status Line Template (JSON)\nhelpMacroUUID: F3E260A0-8602-413D-8907-93BFA51D9D7E\ndataType: json\njsonDisplayField: name\njsonReturnField: value\njsonAdditionalSearchFields: city, state\njsonStatusLineFields: city, state\njsonStatusLineTemplate: Location: $1, $2"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspData",
+			"Text": "[{\n  \"name\": \"Doris Ryan\",\n  \"value\": \"205c89d8-1105-4e0b-9570-4243b40e305c\",\n  \"city\": \"Duluth\",\n  \"state\": \"Minnesota\"\n}, {\n  \"name\": \"Beverly Mccoy\",\n  \"value\": \"22b1ead3-4e17-4b45-9a3b-27690579bc7d\"\n}, {\n  \"name\": \"Gerald King\",\n  \"value\": \"1ff22e4f-7fff-42b0-be94-bd9dec1048f2\",\n  \"city\": \"Lafayette\",\n  \"state\": \"Indiana\"\n}, {\n  \"name\": \"Terry Sims\",\n  \"value\": \"881634fe-2ff6-4a36-99e1-bf32e8b462e8\"\n}, {\n  \"name\": \"Carl Payne\",\n  \"value\": \"f256c077-609e-4763-8db2-10ba70cbb207\",\n  \"city\": \"Grand Junction\",\n  \"state\": \"Colorado\"\n}, {\n  \"name\": \"Catherine Flores\",\n  \"value\": \"e2cb565c-7dba-49b8-9a61-dcbcb56dbf88\",\n  \"city\": \"Albany\",\n  \"state\": \"New York\"\n}, {\n  \"name\": \"Martin Clark\",\n  \"value\": \"00a8f05d-e88c-484d-bec5-5f02563c7cb3\",\n  \"city\": \"Washington\",\n  \"state\": \"District of Columbia\"\n}, {\n  \"name\": \"Joan Warren\",\n  \"value\": \"abdf8cda-b096-489f-9eff-804959c5118b\"\n}, {\n  \"name\": \"Amy Montgomery\",\n  \"value\": \"de538141-6aa0-48a1-a883-abea914a5465\",\n  \"city\": \"Seattle\",\n  \"state\": \"Washington\"\n}, {\n  \"name\": \"Paul Sanders\",\n  \"value\": \"6f4a7182-dc52-4fb1-9032-7e00251588b1\",\n  \"city\": \"Cincinnati\",\n  \"state\": \"Ohio\"\n}, {\n  \"name\": \"Willie Shaw\",\n  \"value\": \"060fd903-9b3d-4923-828a-9e9b93e986fc\",\n  \"city\": \"Salem\",\n  \"state\": \"Oregon\"\n}, {\n  \"name\": \"Willie Montgomery\",\n  \"value\": \"567b64bb-8d06-4a9b-96e1-015aec487258\",\n  \"city\": \"Reston\",\n  \"state\": \"Virginia\"\n}, {\n  \"name\": \"Chris Owens\",\n  \"value\": \"e63cc940-d1d3-4caf-9d5f-0d7bd15bbd71\",\n  \"city\": \"Salem\",\n  \"state\": \"Oregon\"\n}, {\n  \"name\": \"Brian Vasquez\",\n  \"value\": \"4a5042cd-b272-4c89-bc17-cb29232b2a63\",\n  \"city\": \"Lancaster\",\n  \"state\": \"Pennsylvania\"\n}, {\n  \"name\": \"Samuel Edwards\",\n  \"value\": \"14e8aed0-e80b-47ca-8bd2-2ffbbbb4daac\",\n  \"city\": \"Jackson\",\n  \"state\": \"Mississippi\"\n}, {\n  \"name\": \"Tina Webb\",\n  \"value\": \"64ec2241-0fd0-46e1-9975-cdabdc527f41\",\n  \"city\": \"Colorado Springs\",\n  \"state\": \"Colorado\"\n}, {\n  \"name\": \"Keith Adams\",\n  \"value\": \"c3451d34-df87-4d94-83e6-c8e512ca88d6\",\n  \"city\": \"Sacramento\",\n  \"state\": \"California\"\n}, {\n  \"name\": \"Mark Cunningham\",\n  \"value\": \"1e72ff4c-5d1c-45b2-89d7-85b50bd39934\",\n  \"city\": \"Topeka\",\n  \"state\": \"Kansas\"\n}, {\n  \"name\": \"Tammy Carter\",\n  \"value\": \"4aecca44-e7c7-4cca-85a9-43dd06f5c5a7\",\n  \"city\": \"Dallas\",\n  \"state\": \"Texas\"\n}, {\n  \"name\": \"Karen King\",\n  \"value\": \"a5553e72-2b99-4754-b441-81f48a526d76\",\n  \"city\": \"Santa Barbara\",\n  \"state\": \"California\"\n}]"
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "0BC9A4AD-D089-4160-B5E5-ECF032644797",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "%ExecutingMacro%",
+			"ActionName": "Show the results",
+			"Prompt": "sspResult: \"%Variable%sspResult%\"\nsspResultButton: \"%Variable%sspResultButton%\"\n",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK",
+					"Cancel": false
+				}
+			],
+			"Variables": []
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResult",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResultButton",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 492157499.630475,
+	"ModificationDate": 492816339.194926,
+	"Triggers": [],
+	"Name": "π Example 4: Status Line Template (JSON)"
+}

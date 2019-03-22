@@ -1,0 +1,22 @@
+{
+	"UID": "8350E941-622F-4BFE-9697-6AB9B9618246",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "defaults write com.apple.Dock autohide-delay -int 0 && killall Dock\ndefaults write com.apple.dock autohide-time-modifier -float 0.3;killall Dock",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568487336.268579,
+	"IsActive": false,
+	"ModificationDate": 568524628.723476,
+	"Triggers": [],
+	"Name": "Dock-autohide-0.3"
+}

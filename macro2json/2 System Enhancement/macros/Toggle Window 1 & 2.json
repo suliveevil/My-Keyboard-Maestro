@@ -1,0 +1,37 @@
+{
+	"UID": "A075A44E-5749-4CFF-A86F-5A5FD8FE3F62",
+	"Actions": [
+		{
+			"MacroActionType": "SwitchToLastApplication",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ManipulateWindow",
+			"Action": "SelectWindow",
+			"WindowIndexExpression": "2",
+			"HorizontalExpression": "125",
+			"Targeting": "FrontWindow",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"VerticalExpression": "125",
+			"HeightExpression": "300",
+			"WidthExpression": "300",
+			"WindowName": ""
+		}
+	],
+	"CreationDate": 568612952.23922,
+	"ModificationDate": 573147820.8931,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 50,
+			"Modifiers": 2304,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"MacroTriggerType": "StatusMenu"
+		}
+	],
+	"Name": "Toggle Window 1 & 2"
+}

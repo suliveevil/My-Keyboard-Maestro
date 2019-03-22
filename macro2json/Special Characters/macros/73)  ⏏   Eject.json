@@ -1,0 +1,16 @@
+{
+	"UID": "E2DF812B-ABE9-4F19-9776-257F98E87740",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⏏"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991063.509842,
+	"Triggers": [],
+	"Name": "73)  ⏏   Eject"
+}

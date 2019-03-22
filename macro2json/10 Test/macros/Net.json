@@ -1,0 +1,22 @@
+{
+	"UID": "44C857F0-CF16-42D0-AD9D-1B12B3D0A4F5",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "#!/bin/zsh -f\n\nwhile { ! curl --connect-timeout 5 --max-time 5 -sfL 'http://ipinfo.io/ip' }\ndo\n\tsleep 5\ndone\n\necho \"You are online\"\n\nexit 0\n",
+			"TimeOutPeriod": 60,
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Briefly",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568444237.444237,
+	"ModificationDate": 568444258.458694,
+	"Triggers": [],
+	"Name": "Net"
+}

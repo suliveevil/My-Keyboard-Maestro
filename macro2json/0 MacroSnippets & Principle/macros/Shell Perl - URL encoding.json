@@ -1,0 +1,21 @@
+{
+	"UID": "2B4A9E43-30B9-4DB9-85E9-EEC203CCAB8E",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "echo \"string to encode\"|perl -pe's/([^-_.~A-Za-z0-9])/sprintf(\"%%%02X\", ord(\"$1\"))/seg'",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568330494.923645,
+	"ModificationDate": 568330547.186534,
+	"Triggers": [],
+	"Name": "Shell Perl - URL encoding"
+}

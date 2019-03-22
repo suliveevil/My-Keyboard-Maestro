@@ -1,0 +1,67 @@
+{
+	"UID": "60A434FB-C3B0-4C08-9146-A66558BC62A2",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "开机启动的app-Setapp",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uAAAAKwAAAAEAAABm\n\t\t\t\t\t\t\tAAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibH0Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAcy6w\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Setapp/Bartender.app",
+				"BundleIdentifier": "com.surteesstudios.Bartender-setapp",
+				"Name": "Bartender"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Setapp/BetterTouchTool.app",
+				"BundleIdentifier": "com.hegenberg.bettertouchtool-setapp",
+				"Name": "BetterTouchTool"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Setapp/Timing.app",
+				"BundleIdentifier": "info.eurocomp.Timing-setapp",
+				"Name": "Timing"
+			}
+		},
+		{
+			"MacroActionType": "HideAll",
+			"HonorExcluded": true
+		}
+	],
+	"CreationDate": 567054602.802897,
+	"IsActive": false,
+	"ModificationDate": 574412619.091643,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 30,
+			"RepeatTime": 60,
+			"TimeHour": 8,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Login",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "Login&Open&Hide-Setapp"
+}

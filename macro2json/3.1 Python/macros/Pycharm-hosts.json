@@ -1,0 +1,30 @@
+{
+	"UID": "DD84F62C-970C-4584-AF2B-2B94A02451BF",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "0.0.0.0 account.jetbrains.com\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"IsActive": false,
+	"ModificationDate": 567046063.709062,
+	"Triggers": [
+		{
+			"TypedString": "!pyhost",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！pyhost",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Pycharm-hosts"
+}

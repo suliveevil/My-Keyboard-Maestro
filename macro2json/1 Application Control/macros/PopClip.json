@@ -1,0 +1,29 @@
+{
+	"UID": "ECAC6AF3-B98A-49EC-9C67-04F8791EB55A",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"PopClip\" to appear",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567076418.91215,
+	"ModificationDate": 568821064.109792,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 35,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "PopClip"
+}

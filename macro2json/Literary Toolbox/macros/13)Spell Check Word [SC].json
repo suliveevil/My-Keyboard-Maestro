@@ -1,0 +1,30 @@
+{
+	"UID": "58F111B1-138E-4087-8B98-50CFCE58F5A0",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"IsDisclosed": false,
+			"Text": "tell application \"Spell Catcher\"\r\tcheck selection\nend tell",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 565385358.124821,
+	"ModificationDate": 565402264.667829,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 13,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "13)Spell Check Word [SC]"
+}

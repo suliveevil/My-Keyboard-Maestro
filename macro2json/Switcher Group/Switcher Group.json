@@ -1,0 +1,17 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 568066131.0101,
+	"AddToStatusMenu": false,
+	"Name": "Switcher Group",
+	"PaletteUnderMouse": false,
+	"UID": "A78811EE-D223-44D8-803A-2971D10A490E",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "86EC9583-A54B-44C3-A390-40CD653B3581",
+	"Activate": "Normal",
+	"KeyCode": 32767
+}

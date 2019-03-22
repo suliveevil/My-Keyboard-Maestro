@@ -1,0 +1,23 @@
+{
+	"UID": "D31801F2-491D-4568-A967-F3560E352E2C",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"Finder\"\r\tset theFile to the selection\r\tset thePath to POSIX path of (first item of (get selection as alias list) as alias)\r\tset fileName to name of item 1 of theFile\r\tset thefolder to name of parent of (first item of (get selection as alias list) as alias)\r\tset ascriptPath to POSIX file thePath as string\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567569262.375269,
+	"IsActive": false,
+	"ModificationDate": 567570156.749933,
+	"Triggers": [],
+	"Name": "MD-Style"
+}

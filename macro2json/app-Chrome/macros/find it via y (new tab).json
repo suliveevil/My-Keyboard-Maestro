@@ -1,0 +1,60 @@
+{
+	"UID": "3D10B0D1-4D31-47F0-AAF5-0F8AEADD03B7",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Edit",
+				"Copy"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"File",
+				"New Tab"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "y "
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"IsDisclosed": false,
+			"Text": "%CurrentClipboard%\n"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 36,
+			"Modifiers": 0
+		}
+	],
+	"CreationDate": 566900638.71764,
+	"ModificationDate": 420810571.156984,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 16,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "find it via y (new tab)",
+	"CustomIconData": "KMEP-Help"
+}

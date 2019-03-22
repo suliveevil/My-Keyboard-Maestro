@@ -1,0 +1,65 @@
+{
+	"UID": "49C337E6-0CC1-4366-AC2A-5F7C63644228",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Button": 1,
+								"ConditionType": "MouseButton"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "HiliteLocation",
+							"Height": "20",
+							"TimeOutAbortsMacro": true,
+							"Style": "Rectangle",
+							"Left": "MOUSEX()",
+							"Top": "MOUSEY()",
+							"Width": "20",
+							"DisplayTime": "1",
+							"Animate": true
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Button": 0,
+						"ConditionType": "MouseButton"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "HiliteLocation",
+					"Height": "20",
+					"TimeOutAbortsMacro": true,
+					"Style": "Target",
+					"Left": "MOUSEX()",
+					"Top": "MOUSEY()",
+					"Width": "20",
+					"DisplayTime": "1",
+					"Animate": true
+				}
+			]
+		}
+	],
+	"CreationDate": 568190477.86286,
+	"IsActive": false,
+	"ModificationDate": 568190637.45021,
+	"Triggers": [],
+	"Name": "MouseShow"
+}

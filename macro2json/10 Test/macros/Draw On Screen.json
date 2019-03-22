@@ -1,0 +1,16 @@
+{
+	"UID": "C9C49872-0582-4E28-BE72-AECB5CCC4E9E",
+	"Actions": [],
+	"CreationDate": 567303791.121914,
+	"IsActive": false,
+	"ModificationDate": 567303836.443079,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 48,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Draw On Screen"
+}

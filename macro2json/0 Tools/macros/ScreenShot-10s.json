@@ -1,0 +1,27 @@
+{
+	"UID": "B7BDAA49-D1C4-48B6-9F89-28AD91156CDB",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "screencapture -T 10 ~/Desktop/10s.png",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 574952061.925731,
+	"ModificationDate": 574952099.893989,
+	"Triggers": [
+		{
+			"TypedString": "10==",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "ScreenShot-10s"
+}

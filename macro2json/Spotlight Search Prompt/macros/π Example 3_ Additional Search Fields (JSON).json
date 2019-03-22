@@ -1,0 +1,70 @@
+{
+	"UID": "CAAAD882-6EC1-4037-B749-B738221D84CD",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Example 3: Additional search fields (JSON)",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC51AgAAKwAAAAEAAABt\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgU2hvd3Mg\n\t\t\t\t\t\t\taG93IHRvIHVzZSB0aGUg\n\t\t\t\t\t\t\tU3BvdGxpZ2h0IFNlYXJj\n\t\t\t\t\t\t\taCBQcm9tcHQgd2l0aCBK\n\t\t\t\t\t\t\tU09OIGRhdGEsIHdpdGgg\n\t\t\t\t\t\t\tKGhpZGRlbikgc2VhcmNo\n\t\t\t\t\t\t\tYWJsZSBrZXl3b3Jkcy4g\n\t\t\t\t\t\t\tQW5kIGFsc28gaG93IHRv\n\t\t\t\t\t\t\tIHVzZSB0aGUgInBsYWNl\n\t\t\t\t\t\t\taG9sZGVyIiBvcHRpb24u\n\t\t\t\t\t\t\tXApcCk5vdGljZSB0aGF0\n\t\t\t\t\t\t\tIHNvbWUgb2YgdGhlICJr\n\t\t\t\t\t\t\tZXl3b3JkIiBmaWVsZHMg\n\t\t\t\t\t\t\tYXJlIGJsYW5rLCBhbmQg\n\t\t\t\t\t\t\tc29tZSBvZiB0aGUgaXRl\n\t\t\t\t\t\t\tbXMgZG9uJ3QgaGF2ZSAi\n\t\t\t\t\t\t\ta2V5d29yZCIgZmllbGRz\n\t\t\t\t\t\t\tIGF0IGFsbC4gVGhpcyBp\n\t\t\t\t\t\t\tcyBqdXN0IHRvIGRlbW9u\n\t\t\t\t\t\t\tc3RyYXRlIHRoYXQgImFk\n\t\t\t\t\t\t\tZGl0aW9uYWwgc2VhcmNo\n\t\t\t\t\t\t\tIGZpZWxkcyIgYXJyZSBv\n\t\t\t\t\t\t\tcHRpb25hbC59AQAAACMA\n\t\t\t\t\t\t\tAAABAAAABwAAAFRYVC5y\n\t\t\t\t\t\t\tdGYQAAAAyH97XLYBAAAA\n\t\t\t\t\t\t\tAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspOptions",
+			"Text": "title: Example 3: Additional search fields (JSON)\nplaceholder: Try \"animal\" or \"verb\"\ndataType: json\njsonDisplayField: name\njsonReturnField: name\njsonAdditionalSearchFields: keyword\nhelpMacroUUID: 4429D2F8-4663-44A6-A2F6-A531ABE71D93"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspData",
+			"Text": "[\n\t{\n\t\t\"name\": \"The\",\n\t\t\"keyword\": \"\"\n\t},\n\t{\n\t\t\"name\": \"Quick\"\n\t},\n\t{\n\t\t\"name\": \"sly\"\n\t},\n\t{\n\t\t\"name\": \"fox\",\n\t\t\"keyword\": \"animal\"\n\t},\n\t{\n\t\t\"name\": \"jumped\",\n\t\t\"keyword\": \"verb\"\n\t},\n\t{\n\t\t\"name\": \"over\",\n\t\t\"keyword\": \"\"\n\t},\n\t{\n\t\t\"name\": \"the\",\n\t\t\"keyword\": \"\"\n\t},\n\t{\n\t\t\"name\": \"lazy\",\n\t\t\"keyword\": \"\"\n\t},\n\t{\n\t\t\"name\": \"brown\",\n\t\t\"keyword\": \"\"\n\t},\n\t{\n\t\t\"name\": \"dog\",\n\t\t\"keyword\": \"animal\"\n\t},\n\t{\n\t\t\"name\": \"every\",\n\t\t\"keyword\": \"\"\n\t},\n\t{\n\t\t\"name\": \"good\",\n\t\t\"keyword\": \"\"\n\t},\n\t{\n\t\t\"name\": \"boy\",\n\t\t\"keyword\": \"animal\"\n\t},\n\t{\n\t\t\"name\": \"deserves\",\n\t\t\"keyword\": \"\"\n\t},\n\t{\n\t\t\"name\": \"fudge\",\n\t\t\"keyword\": \"\"\n\t}\n]"
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "0BC9A4AD-D089-4160-B5E5-ECF032644797",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "%ExecutingMacro%",
+			"ActionName": "Show the results",
+			"Prompt": "sspResult: \"%Variable%sspResult%\"\nsspResultButton: \"%Variable%sspResultButton%\"\n",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK",
+					"Cancel": false
+				}
+			],
+			"Variables": []
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResult",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResultButton",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 492039634.146216,
+	"ModificationDate": 492816330.036384,
+	"Triggers": [],
+	"Name": "π Example 3: Additional Search Fields (JSON)"
+}

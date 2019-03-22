@@ -1,0 +1,342 @@
+{
+	"UID": "386BE0E3-6F19-4B6B-9D23-ECE849E43C5F",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Macro Repository JSON Paster v0.1.7",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6lBAAAKwAAAAEAAACd\n\t\t\t\t\t\t\tBAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgTmFtZTog\n\t\t\t\t\t\t\tTWFjcm8gUmVwb3NpdG9y\n\t\t\t\t\t\t\teSBKU09OIFBhc3RlclwK\n\t\t\t\t\t\t\tVmVyc2lvbjogMC4xLjdc\n\t\t\t\t\t\t\tClVwZGF0ZWQ6IDIwMTcv\n\t\t\t\t\t\t\tMDEvMTkgMTc6MjMgUFNU\n\t\t\t\t\t\t\tXApCeTogRGFuIFRob21h\n\t\t\t\t\t\t\tc1wKXApQVVJQT1NFOlwK\n\t\t\t\t\t\t\tXApUYWtlcyBhIE1hY3Jv\n\t\t\t\t\t\t\tIFJlcG9zaXRvcnkgSlNP\n\t\t\t\t\t\t\tTiBzdHJpbmcgdGhhdCdz\n\t\t\t\t\t\t\tIG9uIHRoZSBjbGlwYm9h\n\t\t\t\t\t\t\tcmQsIGFuZCBwYXN0ZXMg\n\t\t\t\t\t\t\taXQgaW50byBLZXlib2Fy\n\t\t\t\t\t\t\tZCBNYWVzdHJvIGFzIGEg\n\t\t\t\t\t\t\tTWFjcm8gb3IgR3JvdXAu\n\t\t\t\t\t\t\tXApcClVTQUdFOlwKXApP\n\t\t\t\t\t\t\tcGVuIGEgTWFjcm8gUmVw\n\t\t\t\t\t\t\tb3NpdG9yeSBKU09OIGZp\n\t\t\t\t\t\t\tbGUgaW4gYSB0ZXh0IGVk\n\t\t\t\t\t\t\taXRvciwgdGhlbiBjb3B5\n\t\t\t\t\t\t\tIHRoZSB0ZXh0IHRvIHRo\n\t\t\t\t\t\t\tZSBjbGlwYm9hcmQuXApc\n\t\t\t\t\t\t\tCklmIHlvdSdyZSBwYXN0\n\t\t\t\t\t\t\taW5nIGEgTWFjcm8sIHRo\n\t\t\t\t\t\t\tZW4gc2VsZWN0IHRoZSBH\n\t\t\t\t\t\t\tcm91cCB5b3Ugd2FudCB0\n\t\t\t\t\t\t\tbyBwYXN0ZSB0aGUgbWFj\n\t\t\t\t\t\t\tcm8gaW50bywgdGhlbiBy\n\t\t\t\t\t\t\tdW4gdGhpcyBtYWNyby5c\n\t\t\t\t\t\t\tClwKSWYgeW91J3JlIHBh\n\t\t\t\t\t\t\tc3RpbmcgYSBHcm91cCwg\n\t\t\t\t\t\t\tdGhlbiBpdCBkb2Vzbid0\n\t\t\t\t\t\t\tIG1hdHRlciB3aGF0J3Mg\n\t\t\t\t\t\t\tc2VsZWN0ZWQgLSBqdXN0\n\t\t\t\t\t\t\tIHJ1biB0aGlzIG1hY3Jv\n\t\t\t\t\t\t\tLlwKXApWRVJTSU9OIEhJ\n\t\t\t\t\t\t\tU1RPUlk6XAowLjEuNyAt\n\t\t\t\t\t\t\tIEZpeGVkICJjb21wYXJl\n\t\t\t\t\t\t\tIiBpc3N1ZSB3aXRoIENy\n\t\t\t\t\t\t\tZWF0aW9uRGF0ZSB2YWx1\n\t\t\t\t\t\t\tZXMgb2YgMC4gUGxlYXNl\n\t\t\t\t\t\t\tIFdhaXQgZGlhbG9nIHJl\n\t\t\t\t\t\t\tc3BlY3RzIEVudGVyIGtl\n\t\t\t\t\t\t\teS5cCjAuMS4zLTYgLSBN\n\t\t\t\t\t\t\tYXRjaCB2ZXJzaW9uIG51\n\t\t\t\t\t\t\tbWJlciBvZiBVcGRhdGVy\n\t\t\t\t\t\t\tLlwKMC4xLjIgLSBEdXJp\n\t\t\t\t\t\t\tbmcgY29tcGFyZSwgZml4\n\t\t\t\t\t\t\tZWQgYnVnIHdpdGggbmVn\n\t\t\t\t\t\t\tYXRpdmUgbnVtYmVycy5c\n\t\t\t\t\t\t\tCjAuMS4xIC0gQnVnIGZp\n\t\t\t\t\t\t\teGVzOlwKCVx1YzBcdTk2\n\t\t\t\t\t\t\tNzkgIER1cmluZyBQbGlz\n\t\t\t\t\t\t\tdCBjb21wYXJlLCAiTlNT\n\t\t\t\t\t\t\tdXBlclNjcmlwdCIgaXMg\n\t\t\t\t\t\t\tdHlwZSAiaW50ZWdlciIs\n\t\t\t\t\t\t\tIG5vdCAicmVhbCIuXAow\n\t\t\t\t\t\t\tLjEuMCAtIEluaXRpYWwg\n\t\t\t\t\t\t\tQmV0YSB2ZXJzaW9uLn0B\n\t\t\t\t\t\t\tAAAAIwAAAAEAAAAHAAAA\n\t\t\t\t\t\t\tVFhULnJ0ZhAAAADCAy9c\n\t\t\t\t\t\t\ttgEAAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "License Agreement / Disclaimer",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4KBAAAKwAAAAEAAAAC\n\t\t\t\t\t\t\tBAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgQ29weXJp\n\t\t\t\t\t\t\tZ2h0IChjKSAyMDE3IERh\n\t\t\t\t\t\t\tbmllbCBUaG9tYXNcClwK\n\t\t\t\t\t\t\tUGVybWlzc2lvbiB0byB1\n\t\t\t\t\t\t\tc2UsIGNvcHksIG1vZGlm\n\t\t\t\t\t\t\teSwgYW5kL29yIGRpc3Ry\n\t\t\t\t\t\t\taWJ1dGUgdGhpcyBzb2Z0\n\t\t\t\t\t\t\td2FyZSBmb3IgYW55IHB1\n\t\t\t\t\t\t\tcnBvc2Ugd2l0aCBvciB3\n\t\t\t\t\t\t\taXRob3V0IGZlZSBpcyBo\n\t\t\t\t\t\t\tZXJlYnkgZ3JhbnRlZCwg\n\t\t\t\t\t\t\tcHJvdmlkZWQgdGhhdCB0\n\t\t\t\t\t\t\taGUgYWJvdmUgY29weXJp\n\t\t\t\t\t\t\tZ2h0IG5vdGljZSBhbmQg\n\t\t\t\t\t\t\tdGhpcyBwZXJtaXNzaW9u\n\t\t\t\t\t\t\tIG5vdGljZSBhcHBlYXIg\n\t\t\t\t\t\t\taW4gYWxsIGNvcGllcy5c\n\t\t\t\t\t\t\tClwKVEhFIFNPRlRXQVJF\n\t\t\t\t\t\t\tIElTIFBST1ZJREVEICJB\n\t\t\t\t\t\t\tUyBJUyIgQU5EIFRIRSBB\n\t\t\t\t\t\t\tVVRIT1IgRElTQ0xBSU1T\n\t\t\t\t\t\t\tIEFMTCBXQVJSQU5USUVT\n\t\t\t\t\t\t\tIFdJVEggUkVHQVJEIFRP\n\t\t\t\t\t\t\tIFRISVMgU09GVFdBUkUg\n\t\t\t\t\t\t\tSU5DTFVESU5HIEFMTCBJ\n\t\t\t\t\t\t\tTVBMSUVEIFdBUlJBTlRJ\n\t\t\t\t\t\t\tRVMgT0YgTUVSQ0hBTlRB\n\t\t\t\t\t\t\tQklMSVRZIEFORCBGSVRO\n\t\t\t\t\t\t\tRVNTLiBJTiBOTyBFVkVO\n\t\t\t\t\t\t\tVCBTSEFMTCBUSEUgQVVU\n\t\t\t\t\t\t\tSE9SIEJFIExJQUJMRSBG\n\t\t\t\t\t\t\tT1IgQU5ZIFNQRUNJQUws\n\t\t\t\t\t\t\tIERJUkVDVCwgSU5ESVJF\n\t\t\t\t\t\t\tQ1QsIE9SIENPTlNFUVVF\n\t\t\t\t\t\t\tTlRJQUwgREFNQUdFUyBP\n\t\t\t\t\t\t\tUiBBTlkgREFNQUdFUyBX\n\t\t\t\t\t\t\tSEFUU09FVkVSIFJFU1VM\n\t\t\t\t\t\t\tVElORyBGUk9NIExPU1Mg\n\t\t\t\t\t\t\tT0YgVVNFLCBEQVRBIE9S\n\t\t\t\t\t\t\tIFBST0ZJVFMsIFdIRVRI\n\t\t\t\t\t\t\tRVIgSU4gQU4gQUNUSU9O\n\t\t\t\t\t\t\tIE9GIENPTlRSQUNULCBO\n\t\t\t\t\t\t\tRUdMSUdFTkNFIE9SIE9U\n\t\t\t\t\t\t\tSEVSIFRPUlRJT1VTIEFD\n\t\t\t\t\t\t\tVElPTiwgQVJJU0lORyBP\n\t\t\t\t\t\t\tVVQgT0YgT1IgSU4gQ09O\n\t\t\t\t\t\t\tTkVDVElPTiBXSVRIIFRI\n\t\t\t\t\t\t\tRSBVU0UgT1IgUEVSRk9S\n\t\t\t\t\t\t\tTUFOQ0UgT0YgVEhJUyBT\n\t\t\t\t\t\t\tT0ZUV0FSRS59AQAAACMA\n\t\t\t\t\t\t\tAAABAAAABwAAAFRYVC5y\n\t\t\t\t\t\t\tdGYQAAAAwgMvXLYBAAAA\n\t\t\t\t\t\t\tAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "macrep_json",
+			"Text": "%CurrentClipboard%"
+		},
+		{
+			"MacroActionType": "ExecuteJavaScriptForAutomation",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "macrep_result",
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "(function(inDesignMode) {\n\t'use strict';\n\n\tObjC.import('AppKit');\n\n\tvar KMEngine = (function() {\n\t\tvar _engineApp;\n\n\t\treturn {\n\t\t\tgetEngineAppName: function() {\n\t\t\t\treturn \"Keyboard Maestro Engine\";\n\t\t\t},\n\n\t\t\tgetEngineApp: function() {\n\t\t\t\tif (!_engineApp)\n\t\t\t\t\t_engineApp = Application(this.getEngineAppName());\n\t\t\t\treturn _engineApp;\n\t\t\t},\n\n\t\t\tgetVariable: function(name, required) {\n\t\t\t\tvar result = this.getEngineApp().getvariable(name);\n\t\t\t\tif (!result && required)\n\t\t\t\t\tthrow Error(\"Variable '\" + name + \"' is empty\");\n\t\t\t\treturn result;\n\t\t\t},\n\n\t\t\tsetVariable: function(name, value) {\n\t\t\t\tthis.getEngineApp().setvariable(name, {\n\t\t\t\t\tto: value\n\t\t\t\t});\n\t\t\t},\n\t\t};\n\t})();\n\n\tvar PlistUtils = (function() {\n\t\tvar _currentApp;\n\t\tvar _dataNodeToken = \"41E4D515-C065-4C24-9859-EA2479C52CC9\";\n\n\t\tvar _kmObjectType_action = \"action\";\n\t\tvar _kmObjectType_group = \"group\";\n\t\tvar _kmObjectType_macro = \"macro\";\n\n\t\tvar _kmActionsXmlClipboardStringType = \"com.stairways.keyboardmaestro.actionarray\";\n\t\tvar _kmGroupsXmlClipboardStringType = \"com.stairways.keyboardmaestro.macrogroupsarray\";\n\t\tvar _kmMacrosXmlClipboardStringType = \"com.stairways.keyboardmaestro.macrosarray\";\n\n\t\tvar _kmClipboardStringTypes = {}\n\t\t_kmClipboardStringTypes[_kmObjectType_action] = _kmActionsXmlClipboardStringType;\n\t\t_kmClipboardStringTypes[_kmObjectType_group] = _kmGroupsXmlClipboardStringType;\n\t\t_kmClipboardStringTypes[_kmObjectType_macro] = _kmMacrosXmlClipboardStringType;\n\n\t\tfunction _cleanupXmlAfterDeserialization(xml) {\n\t\t\tvar result = xml.replace(/<real>(-?\\d+)(\\.0)?<\\/real>/g, \"<integer>$1</integer>\");\n\t\t\tvar result = result.replace(/(<key>CreationDate<\\/key>[\\W]*<)(integer>)(\\d+)(<\\/integer>)/g, \"$1real>$3.0</real>\");\n\t\t\tvar result = result.replace(/(<key>TimeOutPeriod<\\/key>[\\W]*<)(integer)(>\\d+<\\/)(integer)(>)/g, \"$1real$3real$5\");\n\t\t\tvar result = result.replace(/(<key>NSSuperScript<\\/key>[\\W]*<)(real)(>-?\\d+<\\/)(real)(>)/g, \"$1integer$3integer$5\");\n\t\t\treturn result;\n\t\t}\n\n\t\tfunction _deserializeFromXmlString(xml) {\n\t\t\tvar nsError = $();\n\t\t\tvar result = ObjC.deepUnwrap(\n\t\t\t\t$.NSPropertyListSerialization.propertyListWithDataOptionsFormatError(\n\t\t\t\t\t$(xml).dataUsingEncoding($.NSUTF8StringEncoding), 0, 0, nsError));\n\t\t\tif (!result)\n\t\t\t\tthrow Error(\"Could not convert string to plist. Error: \" + _getErrorMessage(nsError));\n\t\t\treturn result;\n\t\t}\n\n\t\tfunction _deTokenizeXmlDataNodes(xml) {\n\t\t\tvar regex = new RegExp(\"(<string>[\\\\W]*\" + _dataNodeToken + \")\", \"g\");\n\t\t\tvar result = xml.replace(regex, \"<data>\");\n\n\t\t\tregex = new RegExp(_dataNodeToken + \"[\\\\W]*<\\\\/string>\", \"g\");\n\t\t\treturn result.replace(regex, \"</data>\");\n\t\t}\n\n\t\tfunction _getAppSupportFolderName() {\n\t\t\tif (!_currentApp) {\n\t\t\t\t_currentApp = Application.currentApplication();\n\t\t\t\t_currentApp.includeStandardAdditions = true;\n\t\t\t}\n\t\t\treturn _currentApp.pathTo('application support', { from: 'user domain' });\n\t\t}\n\n\t\tfunction _clipboardContainsType(type) {\n\t\t\treturn _getClipboardTypes().indexOf(type) >= 0;\n\t\t}\n\n\t\tfunction _getClipboardStringForType(type, throwIfNotFound) {\n\t\t\tif (_clipboardContainsType(type))\n\t\t\t\treturn ObjC.unwrap(\n\t\t\t\t\t$.NSPasteboard.generalPasteboard\n\t\t\t\t\t.stringForType(type));\n\t\t\tif (throwIfNotFound)\n\t\t\t\tthrow Error(\"No clipboard data for specified type\");\n\t\t\treturn \"\";\n\t\t}\n\n\t\tfunction _getClipboardTypes() {\n\t\t\tvar items = $.NSPasteboard.generalPasteboard.pasteboardItems;\n\t\t\tif (items.count === 0)\n\t\t\t\treturn [];\n\t\t\treturn ObjC.deepUnwrap(items.js[0].types);\n\t\t}\n\n\t\tfunction _getErrorMessage(nsError, defaultErrorMessage) {\n\t\t\ttry {\n\t\t\t\treturn $(nsError.localizedDescription).js;\n\t\t\t} catch (e) {\n\t\t\t\treturn defaultErrorMessage || \"Unknown Error\";\n\t\t\t}\n\t\t}\n\n\t\tfunction _getKMClipboardStringTypeForObjectType(objectType) {\n\t\t\tvar result = _kmClipboardStringTypes[objectType];\n\t\t\tif (!result)\n\t\t\t\tthrow Error(\"'\" + objectType + \"' is not a valid KM Object Type\");\n\t\t\treturn result;\n\t\t}\n\n\t\tfunction _getKMPlistXmlObjectType(xml) {\n\t\t\tif (xml.indexOf(\"<key>AddToMacroPalette</key>\") > 0)\n\t\t\t\treturn _kmObjectType_group;\n\t\t\tif (xml.indexOf(\"<key>Triggers</key>\") > 0)\n\t\t\t\treturn _kmObjectType_macro;\n\t\t\treturn _kmObjectType_action;\n\t\t}\n\n\t\tfunction _reOrderJsonProperties(json) {\n\n\t\t\tfunction moveActionPropertyToTop(jsonArray, propertyName) {\n\n\t\t\t\tfunction findProperty(startingIndex) {\n\t\t\t\t\tfor (var i = startingIndex; i < jsonArray.length; i++) {\n\t\t\t\t\t\tvar line = jsonArray[i];\n\t\t\t\t\t\tvar regex = new RegExp('^([\\\\t]+)\"' + propertyName + '\":');\n\t\t\t\t\t\tvar match = line.match(regex);\n\t\t\t\t\t\tif (match) {\n\t\t\t\t\t\t\treturn {\n\t\t\t\t\t\t\t\tindex: i,\n\t\t\t\t\t\t\t\tleadingTabs: match[1]\n\t\t\t\t\t\t\t};\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\treturn null;\n\t\t\t\t}\n\n\t\t\t\tfunction findActionStartIndex(startingIndex, leadingTabs) {\n\t\t\t\t\tvar startingLineRegex = new RegExp(\"^(\" + leadingTabs.substring(0, leadingTabs.length - 1) + \"[^\\\\t])\");\n\t\t\t\t\tfor (var i = startingIndex - 1; i >= 0; i--) {\n\t\t\t\t\t\tvar line = jsonArray[i];\n\t\t\t\t\t\tvar match = line.match(startingLineRegex);\n\t\t\t\t\t\tif (match) {\n\t\t\t\t\t\t\tif (!match[1].endsWith(\"{\"))\n\t\t\t\t\t\t\t\treturn -1;\n\t\t\t\t\t\t\treturn i + 1;\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\treturn -1;\n\t\t\t\t}\n\n\t\t\t\tfunction moveProperty(fromIndex, toIndex) {\n\t\t\t\t\tvar endsWithComma = jsonArray[fromIndex].endsWith(\",\");\n\t\t\t\t\tif (!endsWithComma)\n\t\t\t\t\t\tjsonArray[fromIndex] = jsonArray[fromIndex] + \",\";\n\t\t\t\t\tjsonArray.splice(toIndex, 0, jsonArray.splice(fromIndex, 1)[0]);\n\n\t\t\t\t\t// If we moved the last property of the action, then the new last\n\t\t\t\t\t// property line probably needs to have its trailing comma removed.\n\t\t\t\t\tif (!endsWithComma) {\n\t\t\t\t\t\tvar line = jsonArray[fromIndex];\n\t\t\t\t\t\tif (line.endsWith(\",\"))\n\t\t\t\t\t\t\tjsonArray[fromIndex] = line.substring(0, line.length - 1);\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\t// moveActionPropertyToTop()\n\t\t\t\tvar i = 0;\n\t\t\t\twhile (i < jsonArray.length) {\n\t\t\t\t\tvar propertyLineInfo = findProperty(i);\n\t\t\t\t\tif (!propertyLineInfo)\n\t\t\t\t\t\treturn;\n\t\t\t\t\tvar actionStartIndex = findActionStartIndex(propertyLineInfo.index, propertyLineInfo.leadingTabs);\n\t\t\t\t\tif (actionStartIndex >= 0 && actionStartIndex < propertyLineInfo.index)\n\t\t\t\t\t\tmoveProperty(propertyLineInfo.index, actionStartIndex);\n\n\t\t\t\t\ti = propertyLineInfo.index + 1;\n\t\t\t\t}\n\t\t\t} // moveActionPropertyToTop()\n\n\t\t\t// _reOrderJsonProperties()\n\t\t\tif (json.indexOf(\"\\t\") < 0)\n\t\t\t\tthrow Error(\"ReOrderJsonProperties expects the JSON parameter to be stringified with tabs\");\n\t\t\tvar jsonArray = json.split(\"\\n\");\n\n\t\t\t// NOTE: These are backwards - the one we want top-most is last in the array.\n\t\t\t[\"ActionName\", \"Title\", \"MacroActionType\"].forEach(function(propertyName) {\n\t\t\t\tmoveActionPropertyToTop(jsonArray, propertyName);\n\t\t\t});\n\t\t\treturn jsonArray.join(\"\\n\");\n\t\t} // _reOrderJsonProperties()\n\n\t\tfunction _serializeToXmlString(plist) {\n\t\t\tvar data = $.NSPropertyListSerialization.dataWithPropertyListFormatOptionsError(\n\t\t\t\t$(plist), $.NSPropertyListXMLFormat_v1_0, 0, null);\n\t\t\tvar nsstring = $.NSString.alloc.initWithDataEncoding(data, $.NSUTF8StringEncoding);\n\t\t\tvar result = $(nsstring).js;\n\t\t\treturn result;\n\t\t}\n\n\t\tfunction _setClipboardStringForType(str, type) {\n\t\t\tvar clipboard = $.NSPasteboard.generalPasteboard;\n\t\t\t/*jshint -W030 */\n\t\t\tclipboard.clearContents;\n\t\t\t/*jshint +W030 */\n\t\t\tclipboard.setStringForType($(str), $(type));\n\t\t}\n\n\t\tfunction _tokenizeXmlDataNodes(xml) {\n\t\t\treturn xml.replace(/(<data>)([\\W]*)([^<]*)(<\\/data>)/g,\n\t\t\t\t\"<string>$2\" + _dataNodeToken + \"$2$3\" + _dataNodeToken + \"$2</string>\");\n\t\t}\n\n\t\treturn {\n\t\t\tKMObjectType_action: _kmObjectType_action,\n\t\t\tKMObjectType_group: _kmObjectType_group,\n\t\t\tKMObjectType_macro: _kmObjectType_macro,\n\n\t\t\tcomparePlistToXmlString: function(plist, origXml, failOptions) {\n\t\t\t\tvar testXml = this.serializeToXmlString(plist);\n\t\t\t\tif (testXml === origXml)\n\t\t\t\t\treturn;\n\n\t\t\t\tvar savedToFile = false;\n\t\t\t\tvar savedOrigFilePath = null;\n\t\t\t\tvar savedTestFilePath = null;\n\t\t\t\tvar defaultFailOptions = this.getComparePlistFailDefaultOptions();\n\t\t\t\tif (!failOptions)\n\t\t\t\t\tfailOptions = defaultFailOptions;\n\n\t\t\t\tif (failOptions && failOptions.saveFiles) {\n\n\t\t\t\t\tvar saveFolderPath = failOptions.saveFolderPath || defaultFailOptions.saveFolderPath;\n\t\t\t\t\tif (saveFolderPath.substring(saveFolderPath.length-1) !== \"/\")\n\t\t\t\t\t\tsaveFolderPath += \"/\";\n\n\t\t\t\t\tsavedOrigFilePath = saveFolderPath + (failOptions.saveOrigFileName || defaultFailOptions.saveOrigFileName);\n\t\t\t\t\tsavedTestFilePath = saveFolderPath + (failOptions.saveTestFileName || defaultFailOptions.saveTestFileName);\n\t\t\t\t\ttry {\n\t\t\t\t\t\tthis.writeTextFile(origXml, savedOrigFilePath);\n\t\t\t\t\t\tthis.writeTextFile(testXml, savedTestFilePath);\n\t\t\t\t\t\tsavedToFile = true;\n\t\t\t\t\t} catch (e) {\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t\tvar errorMessage = failOptions && failOptions.errorMessage ? failOptions.errorMessage : defaultFailOptions.errorMessage;\n\t\t\t\tif (savedToFile)\n\t\t\t\t\terrorMessage = errorMessage +\n\t\t\t\t\t\t\"\\nSaved original XML to: '\" + savedOrigFilePath + \"'\" +\n\t\t\t\t\t\t\"\\nSaved test XML to: '\" + savedTestFilePath + \"'\";\n\t\t\t\tthrow Error(errorMessage);\n\t\t\t},\n\n\t\t\tconvertJsonStringToXmlString: function(json) {\n\t\t\t\tvar plist = JSON.parse(json);\n\t\t\t\treturn this.serializeToXmlString(plist);\n\t\t\t},\n\n\t\t\tconvertXmlStringToJsonString: function(xml) {\n\t\t\t\tvar plist = this.deserializeFromXmlString(xml);\n\t\t\t\treturn JSON.stringify(plist, null, \"\\t\");\n\t\t\t},\n\n\t\t\tconvertXmlStringToJsonStringAndValidate: function(xml, failOptions) {\n\t\t\t\tvar json = this.convertXmlStringToJsonString(xml);\n\t\t\t\tvar plist = JSON.parse(json);\n\t\t\t\tthis.comparePlistToXmlString(plist, xml, failOptions || this.getCompareJsonFailDefaultOptions());\n\t\t\t\treturn json;\n\t\t\t},\n\n\t\t\tcreateEmptyGroupAction: function(actionName) {\n\t\t\t\treturn _deserializeFromXmlString(\n\t\t\t\t\t\"<plist version='1.0'> \\n\" +\n\t\t\t\t\t\"<dict> \\n\" +\n\t\t\t\t\t\"\t<key>\" + (actionName || \"\") + \"</key> \\n\" +\n\t\t\t\t\t\"\t<string>Installer</string> \\n\" +\n\t\t\t\t\t\"\t<key>Actions</key> \\n\" +\n\t\t\t\t\t\"\t<array/> \\n\" +\n\t\t\t\t\t\"\t<key>MacroActionType</key> \\n\" +\n\t\t\t\t\t\"\t<string>Group</string> \\n\" +\n\t\t\t\t\t\"\t<key>TimeOutAbortsMacro</key> \\n\" +\n\t\t\t\t\t\"\t<true/> \\n\" +\n\t\t\t\t\t\"</dict> \\n\" +\n\t\t\t\t\t\"</plist>\");\n\t\t\t},\n\n\t\t\tdeserializeFromXmlFile: function(path) {\n\t\t\t\treturn this.deserializeFromXmlString(this.readTextFile(path));\n\t\t\t},\n\n\t\t\tdeserializeFromXmlFileAndValidate: function(path, failOptions) {\n\t\t\t\treturn this.deserializeFromXmlStringAndValidate(this.readTextFile(path), failOptions);\n\t\t\t},\n\n\t\t\tdeserializeFromXmlString: function(xml) {\n\t\t\t\tvar result = _tokenizeXmlDataNodes(xml);\n\t\t\t\treturn _deserializeFromXmlString(result);\n\t\t\t},\n\n\t\t\tdeserializeFromXmlStringAndValidate: function(xml, failOptions) {\n\t\t\t\tvar result = this.deserializeFromXmlString(xml);\n\t\t\t\tthis.comparePlistToXmlString(result, xml, failOptions);\n\t\t\t\treturn result;\n\t\t\t},\n\n\t\t\tdeserializeKMAllMacrosSourceFile: function() {\n\t\t\t\tvar xml = this.readKMAllMacrosSourceFileAsXml();\n\t\t\t\treturn this.deserializeFromXmlString(xml);\n\t\t\t},\n\n\t\t\tdeserializeKMAllMacrosSourceFileAndValidate: function(failOptions) {\n\t\t\t\tvar xml = this.readKMAllMacrosSourceFileAsXml();\n\t\t\t\treturn this.deserializeFromXmlStringAndValidate(xml, failOptions);\n\t\t\t},\n\n\t\t\tgetCompareJsonFailDefaultOptions: function() {\n\t\t\t\treturn {\n\t\t\t\t\terrorMessage: \"Plist-to-JSON Conversion Error: Converted JSON back to XML, does not match Original XML.\",\n\t\t\t\t\tsaveFiles: true,\n\t\t\t\t\tsaveFolderPath: \"/tmp/\",\n\t\t\t\t\tsaveOrigFileName: \"PlistUtils_CompareFailure_Original.plist\",\n\t\t\t\t\tsaveTestFileName: \"PlistUtils_CompareFailure_Test.plist\"\n\t\t\t\t};\n\t\t\t},\n\n\t\t\tgetComparePlistFailDefaultOptions: function() {\n\t\t\t\treturn {\n\t\t\t\t\terrorMessage: \"Plist Conversion Error: Converted Plist does not match Original XML.\",\n\t\t\t\t\tsaveFiles: true,\n\t\t\t\t\tsaveFolderPath: \"/tmp/\",\n\t\t\t\t\tsaveOrigFileName: \"PlistUtils_CompareFailure_Original.plist\",\n\t\t\t\t\tsaveTestFileName: \"PlistUtils_CompareFailure_Test.plist\"\n\t\t\t\t};\n\t\t\t},\n\n\t\t\tgetInitialCommentFromMacro: function(macro) {\n\t\t\t\tvar results = [];\n\t\t\t\tif (!macro.Actions || macro.Actions.length === 0)\n\t\t\t\t\treturn null;\n\n\t\t\t\tvar action = macro.Actions[0];\n\t\t\t\tif (action.MacroActionType !== \"Comment\")\n\t\t\t\t\treturn null;\n\n\t\t\t\treturn {\n\t\t\t\t\tname: action.ActionName || action.Title || \"\",\n\t\t\t\t\ttitle: action.Title || \"\",\n\t\t\t\t\ttext: action.Text || \"\"\n\t\t\t\t};\n\t\t\t},\n\n\t\t\tgetKMActionsXmlFromClipboard(throwIfNotFound) {\n\t\t\t\treturn _getClipboardStringForType(_kmActionsXmlClipboardStringType, throwIfNotFound);\n\t\t\t},\n\n\t\t\tgetKMClipboardStringTypeForObjectType: function(objectType) {\n\t\t\t\tvar result = _kmClipboardStringTypes[objectType];\n\t\t\t\tif (!result)\n\t\t\t\t\tthrow Error(\"'\" + objectType + \"' is not a valid KM Object Type\");\n\t\t\t\treturn result;\n\t\t\t},\n\n\t\t\tgetKMGroupsXmlFromClipboard(throwIfNotFound) {\n\t\t\t\treturn _getClipboardStringForType(_kmGroupsXmlClipboardStringType, throwIfNotFound);\n\t\t\t},\n\n\t\t\tgetKMMacrosXmlFromClipboard(throwIfNotFound) {\n\t\t\t\treturn _getClipboardStringForType(_kmMacrosXmlClipboardStringType, throwIfNotFound);\n\t\t\t},\n\n\t\t\tgetKMPlistXmlObjectType: function(xml) {\n\t\t\t\treturn _getKMPlistXmlObjectType(xml);\n\t\t\t},\n\n\t\t\t// File must contain one macro only, or exception is thrown.\n\t\t\tgetMacroFromKMMacrosFile: function(path) {\n\t\t\t\tvar plist = this.deserializeFromXmlFile(path);\n\t\t\t\tif (!plist)\n\t\t\t\t\tthrow Error(\"Could not read file '\" + path + \"'\");\n\t\t\t\tif (plist.length === 0)\n\t\t\t\t\tthrow Error(\"No macros were found in '\" + path + \"'\");\n\t\t\t\tif (plist.length > 1)\n\t\t\t\t\tthrow Error(\"Multiple macros were found in '\" + path + \"'\");\n\t\t\t\tvar group = plist[0];\n\n\t\t\t\tif (!group.Macros || group.Macros.count === 0)\n\t\t\t\t\tthrow Error(\"No macros were found in '\" + path + \"'\");\n\t\t\t\tif (group.Macros.length > 1)\n\t\t\t\t\tthrow Error(\"Multiple macros were found in '\" + path + \"'\");\n\t\t\t\treturn group.Macros[0];\n\t\t\t},\n\n\t\t\treadKMAllMacrosSourceFileAsXml: function() {\n\t\t\t\tvar path = _getAppSupportFolderName() + \"/Keyboard Maestro/Keyboard Maestro Macros.plist\";\n\n\t\t\t\tvar nsError = $();\n\t\t\t\tvar fileData = $.NSData.dataWithContentsOfFileOptionsError(\n\t\t\t\t\t$(path).stringByStandardizingPath, 0, nsError);\n\t\t\t\tif (!fileData)\n\t\t\t\t\tthrow Error(_getErrorMessage(nsError));\n\n\t\t\t\tnsError = $();\n\t\t\t\tvar plistData = $.NSPropertyListSerialization.propertyListWithDataOptionsFormatError(\n\t\t\t\t\tfileData, $.NSPropertyListImmutable, 0, nsError);\n\t\t\t\tif (!plistData)\n\t\t\t\t\tthrow Error(_getErrorMessage(nsError));\n\n\t\t\t\tnsError = $();\n\t\t\t\tvar xmlData = $.NSPropertyListSerialization.dataWithPropertyListFormatOptionsError(\n\t\t\t\t\tplistData, $.NSPropertyListXMLFormat_v1_0, 0, nsError);\n\t\t\t\tif (!xmlData)\n\t\t\t\t\tthrow Error(_getErrorMessage(nsError));\n\n\t\t\t\treturn $($.NSString.alloc.initWithDataEncoding(xmlData, $.NSUTF8StringEncoding)).js;\n\t\t\t},\n\n\t\t\treadTextFile: function(path) {\n\t\t\t\tvar error;\n\t\t\t\tvar str = ObjC.unwrap(\n\t\t\t\t\t$.NSString.stringWithContentsOfFileEncodingError(\n\t\t\t\t\t\t$(path).stringByStandardizingPath,\n\t\t\t\t\t\t$.NSUTF8StringEncoding,\n\t\t\t\t\t\terror\n\t\t\t\t\t)\n\t\t\t\t);\n\t\t\t\tif (error)\n\t\t\t\t\tthrow Error('Could not read file \"' + path + '\"');\n\t\t\t\treturn str;\n\t\t\t},\n\n\t\t\treOrderJsonProperties: function(json) {\n\t\t\t\treturn _reOrderJsonProperties(json);\n\t\t\t},\n\n\t\t\tserializeToXmlFile: function(obj, path) {\n\t\t\t\tvar str = serializeToXmlString(obj);\n\t\t\t\twriteTextFile(str, path);\n\t\t\t},\n\n\t\t\tserializeToXmlString: function(obj) {\n\t\t\t\tvar str = _serializeToXmlString(obj);\n\t\t\t\tstr = _cleanupXmlAfterDeserialization(str);\n\t\t\t\treturn _deTokenizeXmlDataNodes(str);\n\t\t\t},\n\n\t\t\tsetClipboardToKMPlistXml: function(xml) {\n\t\t\t\tvar objectType = _getKMPlistXmlObjectType(xml);\n\t\t\t\tvar clipboardStringType = _getKMClipboardStringTypeForObjectType(objectType);\n\t\t\t\t_setClipboardStringForType(xml, clipboardStringType);\n\t\t\t\treturn objectType;\n\t\t\t},\n\n\t\t\twriteTextFile: function(text, path) {\n\t\t\t\tvar str = $.NSString.alloc.initWithUTF8String(text);\n\t\t\t\tvar result = str.writeToFileAtomicallyEncodingError(\n\t\t\t\t\t$(path).stringByStandardizingPath,\n\t\t\t\t\ttrue,\n\t\t\t\t\t$.NSUTF8StringEncoding,\n\t\t\t\t\tnull);\n\t\t\t\tif (!result)\n\t\t\t\t\tthrow Error(\"Could not write file '\" + path + \"'\");\n\t\t\t}\n\t\t};\n\t})();\n\n\tfunction execute() {\n\t\tvar jsonString = KMEngine.getVariable(\"macrep_json\", true);\n\t\tvar obj;\n\t\ttry {\n\t\t\tobj = JSON.parse(jsonString);\n\t\t} catch (e) {\n\t\t\tthrow Error(\"String does not appear to be a valid JSON string\");\n\t\t}\n\t\tif (!Array.isArray(obj))\n\t\t\tobj = [obj];\n\t\tvar plistString = PlistUtils.serializeToXmlString(obj);\n\t\tvar objectType = PlistUtils.setClipboardToKMPlistXml(plistString);\n\t\tKMEngine.setVariable(\"macrep_objectType\", objectType);\n\t\treturn \"OK\";\n\t}\n\n\tif (inDesignMode) {\n        return execute();\n    } else {\n        try {\n            return execute();\n        } catch (e) {\n            return \"Error: \" + e.message;\n        }\n    }\n})(false);\n",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Abort if error",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "macrep_result",
+						"VariableConditionType": "IsNot",
+						"VariableValue": "OK",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "PlaySound",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Path": "/System/Library/Sounds/Basso.aiff",
+					"DeviceID": "SOUNDEFFECTS"
+				},
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "%ExecutingMacro%",
+					"ActionName": "Prompt error with cancel: 'An error has occurred'",
+					"Prompt": "Macro \"%ExecutingThisMacro%\" has encountered an error: %Variable%macrep_result%",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "OK",
+							"Cancel": true
+						}
+					],
+					"Variables": []
+				}
+			]
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Verify that the correct part of the editor is focused",
+			"ActionColor": "Magenta",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "ExecuteAppleScript",
+					"ActionName": "Set 'macrep_objectType' to the currently-focused editor list, if any",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Variable": "macrep_KMFocusedList",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Variable",
+					"IsDisclosed": false,
+					"Text": "activate application \"Keyboard Maestro\"\rtell application \"System Events\"\r\ttell process \"Keyboard Maestro\"\r\t\tif focused of scroll area 1 of splitter group 1 of group 1 of window \"Keyboard Maestro Editor\" is true then return \"grouplist\"\r\t\tif focused of scroll area 2 of splitter group 1 of group 1 of window \"Keyboard Maestro Editor\" is true then return \"macrolist\"\r\t\tif focused of scroll area 3 of splitter group 1 of group 1 of window \"Keyboard Maestro Editor\" is true then return \"actionlist\"\r\t\treturn \"\"\r\tend tell\rend tell\r",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "Switch",
+					"Source": "Variable",
+					"Variable": "macrep_objectType",
+					"CaseEntries": [
+						{
+							"TestValue": "group",
+							"Actions": [
+								{
+									"MacroActionType": "IfThenElse",
+									"ActionName": "Make sure the Groups List is focused",
+									"ActionColor": "Yellow",
+									"IsDisclosed": false,
+									"ElseActions": [],
+									"TimeOutAbortsMacro": true,
+									"Conditions": {
+										"ConditionList": [
+											{
+												"Variable": "macrep_KMFocusedList",
+												"VariableConditionType": "IsNot",
+												"VariableValue": "grouplist",
+												"ConditionType": "Variable"
+											}
+										],
+										"ConditionListMatch": "All"
+									},
+									"ElseActionListDisclosed": false,
+									"ThenActions": [
+										{
+											"MacroActionType": "DeletePastClipboard",
+											"IsDisclosed": false,
+											"PastExpression": "0"
+										},
+										{
+											"MacroActionType": "PromptForUserInput",
+											"Title": "%ExecutingThisMacro%",
+											"ActionName": "You must click in the \"Groups\" list before pasting groups into the editor.",
+											"Prompt": "You must click in the \"Groups\" list before pasting groups into the editor.",
+											"IsDisclosed": false,
+											"TimeOutAbortsMacro": true,
+											"Buttons": [
+												{
+													"Button": "OK",
+													"Cancel": true
+												}
+											],
+											"Variables": []
+										}
+									]
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "macro",
+							"Actions": [
+								{
+									"MacroActionType": "IfThenElse",
+									"ActionName": "Make sure the Macros List is focused",
+									"ActionColor": "Yellow",
+									"IsDisclosed": false,
+									"ElseActions": [],
+									"TimeOutAbortsMacro": true,
+									"Conditions": {
+										"ConditionList": [
+											{
+												"Variable": "macrep_KMFocusedList",
+												"VariableConditionType": "IsNot",
+												"VariableValue": "macrolist",
+												"ConditionType": "Variable"
+											}
+										],
+										"ConditionListMatch": "All"
+									},
+									"ElseActionListDisclosed": false,
+									"ThenActions": [
+										{
+											"MacroActionType": "DeletePastClipboard",
+											"IsDisclosed": false,
+											"PastExpression": "0"
+										},
+										{
+											"MacroActionType": "PromptForUserInput",
+											"Title": "%ExecutingThisMacro%",
+											"ActionName": "You must click in the \"Macros\" list before pasting macros into the editor.",
+											"Prompt": "You must click in the \"Macros\" list before pasting macros into the editor.",
+											"IsDisclosed": false,
+											"TimeOutAbortsMacro": true,
+											"Buttons": [
+												{
+													"Button": "OK",
+													"Cancel": true
+												}
+											],
+											"Variables": []
+										}
+									]
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "action",
+							"Actions": [
+								{
+									"MacroActionType": "IfThenElse",
+									"ActionName": "Make sure the Actions List is focused",
+									"ActionColor": "Yellow",
+									"IsDisclosed": false,
+									"ElseActions": [],
+									"TimeOutAbortsMacro": true,
+									"Conditions": {
+										"ConditionList": [
+											{
+												"Variable": "macrep_KMFocusedList",
+												"VariableConditionType": "IsNot",
+												"VariableValue": "actionlist",
+												"ConditionType": "Variable"
+											}
+										],
+										"ConditionListMatch": "All"
+									},
+									"ElseActionListDisclosed": false,
+									"ThenActions": [
+										{
+											"MacroActionType": "DeletePastClipboard",
+											"IsDisclosed": false,
+											"PastExpression": "0"
+										},
+										{
+											"MacroActionType": "PromptForUserInput",
+											"Title": "%ExecutingThisMacro%",
+											"ActionName": "You must click inside a Macro before pasting actions into the editor.",
+											"Prompt": "You must click inside a Macro before pasting actions into the editor.",
+											"IsDisclosed": false,
+											"TimeOutAbortsMacro": true,
+											"Buttons": [
+												{
+													"Button": "OK",
+													"Cancel": true
+												}
+											],
+											"Variables": []
+										}
+									]
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "",
+							"Actions": [
+								{
+									"MacroActionType": "PlaySound",
+									"ActionColor": "Red",
+									"IsDisclosed": false,
+									"TimeOutAbortsMacro": true,
+									"Path": "/System/Library/Sounds/Basso.aiff",
+									"DeviceID": "SOUNDEFFECTS"
+								},
+								{
+									"MacroActionType": "PromptForUserInput",
+									"Title": "%ExecutingThisMacro%",
+									"ActionName": "Prompt error with cancel 'Unexpected ObjectType'",
+									"Prompt": "Unexpected ObjectType '%Variable%macrep_objectType%'.",
+									"ActionColor": "Red",
+									"IsDisclosed": false,
+									"TimeOutAbortsMacro": true,
+									"Buttons": [
+										{
+											"Button": "OK",
+											"Cancel": true
+										}
+									],
+									"Variables": []
+								}
+							],
+							"ConditionType": "Otherwise"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Paste",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": ".5",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"IsDisclosed": false,
+			"PastExpression": "0"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "macrep_json",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "macrep_KMFocusedList",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "macrep_objectType",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "macrep_result",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 506042882.960385,
+	"ModificationDate": 506568211.671974,
+	"Triggers": [],
+	"Name": "[KM] Macro Repository JSON Paster",
+	"CustomIconData": "KMEP-ClipboardAction"
+}

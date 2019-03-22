@@ -1,0 +1,83 @@
+{
+	"UID": "EEE935AF-4D9C-4F42-806A-D1BFC9347621",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "InsertText",
+					"Action": "DisplayBriefly",
+					"IsDisclosed": false,
+					"Text": "Select a word…"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Is",
+						"MenuTitle": "Copy"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "CutCopyPaste",
+					"Action": "Copy",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "SC_Word",
+					"Text": "%CurrentClipboard%"
+				},
+				{
+					"MacroActionType": "ActivateApplication",
+					"ReopenWindows": false,
+					"AllWindows": true,
+					"IsDisclosed": false,
+					"AlreadyActivatedActionType": "Normal",
+					"TimeOutAbortsMacro": true,
+					"Application": {
+						"NewFile": "/Applications/Dictionary.app",
+						"BundleIdentifier": "com.apple.Dictionary",
+						"Name": "Dictionary"
+					}
+				},
+				{
+					"MacroActionType": "CutCopyPaste",
+					"Action": "Paste",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"IsDisclosed": false,
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 36,
+					"Modifiers": 0
+				}
+			]
+		}
+	],
+	"CreationDate": 562526911.665746,
+	"ModificationDate": 565400936.062109,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 2,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "00)Dictionary"
+}

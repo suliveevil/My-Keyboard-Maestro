@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"AddToStatusMenu": false,
+	"CreationDate": 568075935.80635,
+	"Modifiers": 0,
+	"PaletteUnderMouse": false,
+	"Name": "2 System Enhancement",
+	"UID": "99D81B85-02F7-4F19-BFE5-F39B51C752F5",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "0E83BBFC-383F-4C48-87AC-A27C3B7A7904",
+	"Activate": "Normal",
+	"KeyCode": 32767,
+	"DisplayToggle": false
+}

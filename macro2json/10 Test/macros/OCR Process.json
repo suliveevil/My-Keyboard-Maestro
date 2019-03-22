@@ -1,0 +1,46 @@
+{
+	"UID": "20D2D347-AAC1-4C5C-915C-523699FD28C5",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "OCR_file_path",
+			"Text": "%TriggerValue%"
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "Start OCR...",
+			"Subtitle": "",
+			"SoundName": ""
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Text": "#!/bin/bash\n\nimgFile=$KMVAR_OCR_file_path\n\nFileType=$(file -b -I \"$imgFile\")\n\nif [[ $FileType = image* ]]; then\n    # 预处理并识别文字\n   # sed 是为了转义识别结果中的英文双引号，会引起错误\n    CONTENTS=$(/usr/local/bin/convert \"$imgFile\" -magnify -alpha remove - | /usr/local/bin/tesseract -c language_model_penalty_non_dict_word=0.8 stdin stdout -l eng+chi_sim  | sed \"s/\\\"/\\\\\\\\\\\"/g\" )\n\n    # 将识别结果设置为图片的注释\n    cmd1=\"set theComment to \\\"$CONTENTS\\\"\"\n    cmd2=\"tell application \\\"Finder\\\" to set comment of (POSIX file \\\"$imgFile\\\" as alias) to theComment\"\n    /usr/bin/osascript -e \"$cmd1\" -e \"$cmd2\"\nfi",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 521522967.209149,
+	"IsActive": false,
+	"ModificationDate": 568288556.437767,
+	"Triggers": [
+		{
+			"Interest": {
+				"UID2": "4C1D1006-D0A4-474A-9668-9E7281874DC6",
+				"Observe": "Add",
+				"ObserveWhen": "WaitCompletion",
+				"Path": "~/Desktop"
+			},
+			"MacroTriggerType": "Folder"
+		}
+	],
+	"Name": "OCR Process"
+}

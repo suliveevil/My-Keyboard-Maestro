@@ -1,0 +1,22 @@
+{
+	"UID": "6C0FF3A9-E96F-48C3-A14F-D9458D1F1AD1",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteJavaScriptForAutomation",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "var ptyScriptName   = \"Get List of All Window Names of Windowed Apps\"\nvar ptyScriptVer     = \"1.2\"  //  Revise title\nvar ptyScriptDate   = \"2018-11-16\"\nvar ptyScriptAuthor = \"JMichaelTX\"\n\n\n'use strict';\n(function myMain() {      // this will auto-run when script is executed\n\n/*\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n  \nRETURNS:  CSV List of Window Names\n\nREQUIRED:\n  1.  macOS 10.11.6+\n\nTAGS:  @Lang.JXA @CAT.Windows @CAT.UI @type.Example @Auth.JMichaelTX\n\nREF:  The following were used in some way in the writing of this script.\n\n  1.  2018-11-03, JMichaelTX, Stack Overflow\n      osascript is very slower than Script Editor\n      https://stackoverflow.com/a/53136902/915019\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n*/\n\nvar winList = Application(\"System Events\").processes.whose(\n    {backgroundOnly: {'=': false} }).windows.name();\n\n// REF: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce\n\n//--- Flatten 2D Array into 1D ---\nvar winList2 = winList.reduce(\n        function(accumulator, currentValue) {\n          return accumulator.concat(currentValue);\n        },\n        []\n      );\n\n//--- Remove Windows with No Title ---\nwinList2 = winList2.filter(e => (e !== \"\"));\n\n//--- Create CSV List of Window Names ---\n//    (use .join('\\n') if you'd prefer each name on separate line)\nvar scriptResults = winList2.join(',')\n\nreturn scriptResults;\n\n}  // END of function myMain()\n)();  // autorun",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568437337.844372,
+	"ModificationDate": 568437424.284709,
+	"Triggers": [],
+	"Name": "Window Name List-JXA"
+}

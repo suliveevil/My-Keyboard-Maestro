@@ -1,0 +1,108 @@
+{
+	"UID": "70467D4E-43F5-40DD-AE45-95F92480894F",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "[CB] How to Detect When Clipboard Has Changes",
+			"ActionName": "~~~ ReleaseNotes for VER: 1.1    2016-08-31 ~~~",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7OBQAAKwAAAAEAAADG\n\t\t\t\t\t\t\tBQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgQXV0aG9y\n\t\t\t\t\t\t\tLkBKTWljaGFlbFRYXApc\n\t\t\t\t\t\t\tClVTRSBDQVNFOlwKXApc\n\t\t\t\t\t\t\tJ2EwXCdhMFwnOTVcJ2Ew\n\t\t\t\t\t\t\tVXNlZCB0byBkZXRlcm1p\n\t\t\t\t\t\t\tbmUgSUYgdGhlIHVzZXIg\n\t\t\t\t\t\t\taGFkIG1hZGUgYSBzZWxl\n\t\t\t\t\t\t\tY3Rpb24gUFJJT1IgdG8g\n\t\t\t\t\t\t\tcnVubmluZyBhIG1hY3Jv\n\t\t\t\t\t\t\tXApcJ2EwXCdhMFwnOTVc\n\t\t\t\t\t\t\tJ2EwSWYgeW91IHVzZSAi\n\t\t\t\t\t\t\tXHVjMFx1ODk4NCBDIiBp\n\t\t\t\t\t\t\tbiBhICJUeXBlIGEgS2V5\n\t\t\t\t\t\t\tc3Ryb2tlIiBBY3Rpb24s\n\t\t\t\t\t\t\tIGl0IHdpbGwgcmV0dXJu\n\t\t\t\t\t\t\tIGltbWVkYXRlbHksIHJl\n\t\t\t\t\t\t\tZ2FyZGxlc3Mgb2YgdGhl\n\t\t\t\t\t\t\tIHVzZXIncyBzZWxlY3Rp\n\t\t\t\t\t\t\tb24gKG9yIG5vIHNlbGVj\n\t\t\t\t\t\t\tdGlvbilcClwnYTBcJ2Ew\n\t\t\t\t\t\t\tXCc5NSBUaGVuIHlvdSBk\n\t\t\t\t\t\t\tb24ndCBrbm93IGlmIHRo\n\t\t\t\t\t\t\tZSBDbGlwYm9hcmQgaXMg\n\t\t\t\t\t\t\tZnJvbSB0aGUgdXNlcidz\n\t\t\t\t\t\t\tIHNlbGVjdGlvbiwgb3Ig\n\t\t\t\t\t\t\tanVzdCB0aGUgcHJpb3Ig\n\t\t\t\t\t\t\tKHVuY2hhbmdlZCkgQ2xp\n\t\t\t\t\t\t\tcGJvYXJkLlwKXCdhMFwn\n\t\t\t\t\t\t\tYTBcJzk1IElmIHlvdSB1\n\t\t\t\t\t\t\tc2UgdGhlICJDT1BZIiBB\n\t\t\t\t\t\t\tY3Rpb24sIGJ5IGRlZmF1\n\t\t\t\t\t\t\tbHQgaXQgd2lsbCBmYWls\n\t\t\t\t\t\t\tLCBhbmQgYWJvcnQgdGhl\n\t\t\t\t\t\t\tIE1hY3JvLCBhZnRlciBp\n\t\t\t\t\t\t\tdHMgdGltZW91dCBpZiB0\n\t\t\t\t\t\t\taGUgdXNlciBoYWQgbm90\n\t\t\t\t\t\t\tIG1hZGUgYSBzZWxlY3Rp\n\t\t\t\t\t\t\tb24uXApcCioqSG93IFRv\n\t\t\t\t\t\t\tIFRlc3QgVGhpcyBNYWNy\n\t\t\t\t\t\t\tbyoqXApcCiogVGVzdCAj\n\t\t\t\t\t\t\tMTogIENsaWNrIG9uICBh\n\t\t\t\t\t\t\tIGJsYW5rIGFyZWEgaW4g\n\t\t\t\t\t\t\tYW55IGFwcCB0byBtYWtl\n\t\t\t\t\t\t\tIHN1cmUgbm90aGluZyBp\n\t\t\t\t\t\t\tcyBzZWxlY3RlZCwgYW5k\n\t\t\t\t\t\t\tIHRyaWdnZXIgdGhpcyBt\n\t\t\t\t\t\t\tYWNyby5cCiogVGVzdCAj\n\t\t\t\t\t\t\tMjogIFNlbGVjdCBzb21l\n\t\t\t\t\t\t\tIHRleHQgYW55d2hlcmUs\n\t\t\t\t\t\t\tIGFuZCB0cmlnZ2VyIHRo\n\t\t\t\t\t\t\taXMgbWFjcm8uXApcCkNP\n\t\t\t\t\t\t\tUFkgTUVUSE9EUzpcClwK\n\t\t\t\t\t\t\tMS4gVXNlIFx1YzBcdTg5\n\t\t\t\t\t\t\tODQgQyB3aXRoIGEgc2hv\n\t\t\t\t\t\t\tcnQgcGF1c2UgKDAuNSlc\n\t\t\t\t\t\t\tClwnYTBcJ2EwXCdhMFwn\n\t\t\t\t\t\t\tYTBcJ2EwT1JcCjIuXCdh\n\t\t\t\t\t\t\tMFVzZSBDT1BZIEFjdGlv\n\t\t\t\t\t\t\tbiwgYnV0IHNldCBBY3Rp\n\t\t\t\t\t\t\tb24gT3B0aW9uczpcCiAg\n\t\t\t\t\t\t\tICAgXCc5NSBVbmNoZWNr\n\t\t\t\t\t\t\tICJUaWltZW91dCBBYm9y\n\t\t\t\t\t\t\tdHMgTWFjcm8iXApcJ2Ew\n\t\t\t\t\t\t\tXCdhMFwnYTBcJ2EwXCdh\n\t\t\t\t\t\t\tMFwnOTUgU2V0ICJBY3Rp\n\t\t\t\t\t\t\tb24gVGltZW91dCIgdG8g\n\t\t\t\t\t\t\tc2hvcnQgcGF1c2VcClwK\n\t\t\t\t\t\t\tVGhlIG1hY3JvIGlzIHNl\n\t\t\t\t\t\t\tdHVwIHRvIHVzZSBtZXRo\n\t\t\t\t\t\t\tb2QgIzEuXApcClJFRkVS\n\t\t\t\t\t\t\tRU5DRVM6XApcClNlZSB0\n\t\t\t\t\t\t\taGlzICBLTSBXaWtpIGFy\n\t\t\t\t\t\t\tdGljbGU6XApbZnVuY3Rp\n\t\t\t\t\t\t\tb246Q0xJUEJPQVJEU0VF\n\t\t\t\t\t\t\tRCBbS2V5Ym9hcmQgTWFl\n\t\t\t\t\t\t\tc3RybyBXaWtpXV0oaHR0\n\t\t\t\t\t\t\tcHM6Ly93aWtpLmtleWJv\n\t\t\t\t\t\t\tYXJkbWFlc3Ryby5jb20v\n\t\t\t\t\t\t\tZnVuY3Rpb24vQ0xJUEJP\n\t\t\t\t\t\t\tQVJEU0VFRClcCn0BAAAA\n\t\t\t\t\t\t\tIwAAAAEAAAAHAAAAVFhU\n\t\t\t\t\t\t\tLnJ0ZhAAAAAVXS5ctgEA\n\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToCalculation",
+			"UseFormat": false,
+			"Variable": "CBSeedBefore",
+			"Text": "CLIPBOARDSEED()"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "USE ⌘C with Short Pause",
+			"ActionColor": "Magenta",
+			"Actions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 8,
+					"Modifiers": 256
+				},
+				{
+					"MacroActionType": "Pause",
+					"ActionName": "Set a PAUSE Long Enough for the App to Complete the COPY",
+					"Time": "0.5",
+					"TimeOutAbortsMacro": true
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"ActionName": "Or, use COPY and Set Options for TimeOut and Error",
+			"Action": "Copy",
+			"ActionColor": "Magenta",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": false,
+			"IsActive": false,
+			"TimeOutPeriod": 2
+		},
+		{
+			"MacroActionType": "SetVariableToCalculation",
+			"UseFormat": false,
+			"Variable": "CBSeedAfter",
+			"Text": "CLIPBOARDSEED()"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionColor": "Yellow",
+			"ElseActions": [
+				{
+					"MacroActionType": "InsertText",
+					"Action": "DisplayWindow",
+					"Text": "The Clipboard has NOT CHANGED.",
+					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5IAQAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABA\n\t\t\t\t\t\t\t\tAQAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDYw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbFxmMFxmbmls\n\t\t\t\t\t\t\t\tXGZjaGFyc2V0\n\t\t\t\t\t\t\t\tMCBIZWx2ZXRp\n\t\t\t\t\t\t\t\tY2FOZXVlO30K\n\t\t\t\t\t\t\t\te1xjb2xvcnRi\n\t\t\t\t\t\t\t\tbDtccmVkMjU1\n\t\t\t\t\t\t\t\tXGdyZWVuMjU1\n\t\t\t\t\t\t\t\tXGJsdWUyNTU7\n\t\t\t\t\t\t\t\tXHJlZDBcZ3Jl\n\t\t\t\t\t\t\t\tZW4wXGJsdWUw\n\t\t\t\t\t\t\t\tO30KXHBhcmRc\n\t\t\t\t\t\t\t\tdHg1NjBcdHgx\n\t\t\t\t\t\t\t\tMTIwXHR4MTY4\n\t\t\t\t\t\t\t\tMFx0eDIyNDBc\n\t\t\t\t\t\t\t\tdHgyODAwXHR4\n\t\t\t\t\t\t\t\tMzM2MFx0eDM5\n\t\t\t\t\t\t\t\tMjBcdHg0NDgw\n\t\t\t\t\t\t\t\tXHR4NTA0MFx0\n\t\t\t\t\t\t\t\teDU2MDBcdHg2\n\t\t\t\t\t\t\t\tMTYwXHR4Njcy\n\t\t\t\t\t\t\t\tMFxwYXJkaXJu\n\t\t\t\t\t\t\t\tYXR1cmFsXHBh\n\t\t\t\t\t\t\t\tcnRpZ2h0ZW5m\n\t\t\t\t\t\t\t\tYWN0b3IwCgpc\n\t\t\t\t\t\t\t\tZjBcZnMyNiBc\n\t\t\t\t\t\t\t\tY2YyIFRoZSBD\n\t\t\t\t\t\t\t\tbGlwYm9hcmQg\n\t\t\t\t\t\t\t\taGFzIE5PVCBD\n\t\t\t\t\t\t\t\tSEFOR0VELn0B\n\t\t\t\t\t\t\t\tAAAAIwAAAAEA\n\t\t\t\t\t\t\t\tAAAHAAAAVFhU\n\t\t\t\t\t\t\t\tLnJ0ZhAAAABa\n\t\t\t\t\t\t\t\tZMdXtgEAAAAA\n\t\t\t\t\t\t\t\tAAAAAAAA\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "CBSeedAfter",
+						"VariableConditionType": "IsNot",
+						"VariableValue": "%Variable%CBSeedBefore%",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "InsertText",
+					"Action": "DisplayWindow",
+					"Text": "The Clipboard HAS CHANGED.",
+					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5EAQAA\n\t\t\t\t\t\t\t\tKwAAAAEAAAA8\n\t\t\t\t\t\t\t\tAQAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDYw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbFxmMFxmbmls\n\t\t\t\t\t\t\t\tXGZjaGFyc2V0\n\t\t\t\t\t\t\t\tMCBIZWx2ZXRp\n\t\t\t\t\t\t\t\tY2FOZXVlO30K\n\t\t\t\t\t\t\t\te1xjb2xvcnRi\n\t\t\t\t\t\t\t\tbDtccmVkMjU1\n\t\t\t\t\t\t\t\tXGdyZWVuMjU1\n\t\t\t\t\t\t\t\tXGJsdWUyNTU7\n\t\t\t\t\t\t\t\tXHJlZDBcZ3Jl\n\t\t\t\t\t\t\t\tZW4wXGJsdWUw\n\t\t\t\t\t\t\t\tO30KXHBhcmRc\n\t\t\t\t\t\t\t\tdHg1NjBcdHgx\n\t\t\t\t\t\t\t\tMTIwXHR4MTY4\n\t\t\t\t\t\t\t\tMFx0eDIyNDBc\n\t\t\t\t\t\t\t\tdHgyODAwXHR4\n\t\t\t\t\t\t\t\tMzM2MFx0eDM5\n\t\t\t\t\t\t\t\tMjBcdHg0NDgw\n\t\t\t\t\t\t\t\tXHR4NTA0MFx0\n\t\t\t\t\t\t\t\teDU2MDBcdHg2\n\t\t\t\t\t\t\t\tMTYwXHR4Njcy\n\t\t\t\t\t\t\t\tMFxwYXJkaXJu\n\t\t\t\t\t\t\t\tYXR1cmFsXHBh\n\t\t\t\t\t\t\t\tcnRpZ2h0ZW5m\n\t\t\t\t\t\t\t\tYWN0b3IwCgpc\n\t\t\t\t\t\t\t\tZjBcZnMyNiBc\n\t\t\t\t\t\t\t\tY2YyIFRoZSBD\n\t\t\t\t\t\t\t\tbGlwYm9hcmQg\n\t\t\t\t\t\t\t\tSEFTIENIQU5H\n\t\t\t\t\t\t\t\tRUQufQEAAAAj\n\t\t\t\t\t\t\t\tAAAAAQAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tEAAAAFpkx1e2\n\t\t\t\t\t\t\t\tAQAAAAAAAAAA\n\t\t\t\t\t\t\t\tAAA=\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+				}
+			]
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"Text": "%Delete%",
+			"Variable": "CBSeedBefore"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"Text": "%Delete%",
+			"Variable": "CBSeedAfter"
+		}
+	],
+	"CreationDate": 494374446.136208,
+	"IsActive": false,
+	"ModificationDate": 568235240.006839,
+	"Triggers": [],
+	"Name": "Clipboard Changed Detect"
+}

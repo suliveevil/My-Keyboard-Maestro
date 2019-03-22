@@ -1,0 +1,63 @@
+{
+	"UID": "A283A009-A4E7-4784-B0ED-1A5761EE1897",
+	"Actions": [
+		{
+			"MacroActionType": "SetClipboardToText",
+			"IsDisclosed": false,
+			"Text": "%ChromeURL%",
+			"JustDisplay": false
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"File",
+				"Close Tab"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"File",
+				"New Window"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Edit",
+				"Paste"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 36,
+			"Modifiers": 0
+		}
+	],
+	"CreationDate": 566900638.71764,
+	"IsActive": false,
+	"ModificationDate": 568015763.019783,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 45,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "_Move in new window",
+	"CustomIconData": "KMEP-HotKeyBadge"
+}

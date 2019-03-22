@@ -1,0 +1,51 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 505095836.058227,
+	"AddToStatusMenu": false,
+	"Name": "Literary Toolbox",
+	"PaletteUnderMouse": true,
+	"UID": "26CD1402-3E14-44C6-9A46-EC7166F24262",
+	"Theme": {
+		"Opacity": 85,
+		"Size": 20,
+		"UseDefaultInstead": false,
+		"UseTrigger": true,
+		"UseIcon": false,
+		"Theme": "Custom"
+	},
+	"Targeting": {
+		"Targeting": "Included",
+		"TargetingApps": [
+			{
+				"NewFile": "/Applications/BBEdit.app",
+				"BundleIdentifier": "com.barebones.bbedit",
+				"Name": "BBEdit"
+			},
+			{
+				"NewFile": "/Applications/TextEdit.app",
+				"BundleIdentifier": "com.apple.TextEdit",
+				"Name": "TextEdit"
+			},
+			{
+				"NewFile": "/System/Library/CoreServices/Finder.app",
+				"BundleIdentifier": "com.apple.finder",
+				"Name": "Finder"
+			},
+			{
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			},
+			{
+				"NewFile": "/Applications/Sublime Text.app",
+				"BundleIdentifier": "com.sublimetext.3",
+				"Name": "Sublime Text"
+			}
+		]
+	},
+	"Macros": [],
+	"ToggleMacroUID": "1FA6611F-2018-40E0-944D-3DD5C2BBE9E2",
+	"Activate": "OnceWithPalette",
+	"KeyCode": 109
+}

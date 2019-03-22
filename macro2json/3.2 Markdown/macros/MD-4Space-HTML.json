@@ -1,0 +1,29 @@
+{
+	"UID": "9B1B974A-E337-4D6D-9903-879AB4F5705F",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "&nbsp;&nbsp;&nbsp;&nbsp;%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568076086.684111,
+	"ModificationDate": 571764180.711412,
+	"Triggers": [
+		{
+			"TypedString": "fsp",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "4sp",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-4Space-HTML"
+}

@@ -1,0 +1,93 @@
+{
+	"UID": "1621EF2E-F585-4DE1-94A2-716C8F86743D",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Get Current Macro Info v1.0",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7tAgAAKwAAAAEAAADl\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgTmFtZTog\n\t\t\t\t\t\t\tR2V0IEN1cnJlbnQgTWFj\n\t\t\t\t\t\t\tcm8gSW5mb1wKVmVyc2lv\n\t\t\t\t\t\t\tbjogMS4wXApVcGRhdGVk\n\t\t\t\t\t\t\tOiAyMDE2LzExLzExIDE0\n\t\t\t\t\t\t\tOjMwIFBUXApCeTogRGFu\n\t\t\t\t\t\t\tIFRob21hc1wKXApQVVJQ\n\t\t\t\t\t\t\tT1NFOlwKXApHZXRzIGlu\n\t\t\t\t\t\t\tZm9ybWF0aW9uIGFib3V0\n\t\t\t\t\t\t\tIHRoZSBjdXJyZW50bHkt\n\t\t\t\t\t\t\tc2VsZWN0ZWQgbWFjcm8u\n\t\t\t\t\t\t\tXApcClVTQUdFOlwKXApD\n\t\t\t\t\t\t\tYWxsIHRoaXMgbWFjcm8s\n\t\t\t\t\t\t\tIG9yIGJldHRlciB5ZXQs\n\t\t\t\t\t\t\tIGp1c3QgY29weSB0aGUg\n\t\t\t\t\t\t\tZ3JlZW4gR3JvdXAgYmVs\n\t\t\t\t\t\t\tb3csIGFuZCBleGVjdXRl\n\t\t\t\t\t\t\tIGl0LiBUaGUgcmVzdWx0\n\t\t\t\t\t\t\tcyBhcmUgcmV0dXJuZWQg\n\t\t\t\t\t\t\taW4gdGhlc2UgdmFyaWFi\n\t\t\t\t\t\t\tbGVzOlwKXApcdWMwXHU5\n\t\t\t\t\t\t\tNjc5ICBnY21pTWFjcm9V\n\t\t\t\t\t\t\tVUlEXApcdWMwXHU5Njc5\n\t\t\t\t\t\t\tICBnY21pTWFjcm9OYW1l\n\t\t\t\t\t\t\tXApcdWMwXHU5Njc5ICBn\n\t\t\t\t\t\t\tY21pR3JvdXBVVUlEXApc\n\t\t\t\t\t\t\tdWMwXHU5Njc5ICBnY21p\n\t\t\t\t\t\t\tR3JvdXBOYW1lXApcClZF\n\t\t\t\t\t\t\tUlNJT04gSElTVE9SWTpc\n\t\t\t\t\t\t\tCjEuMCAtIEluaXRpYWwg\n\t\t\t\t\t\t\tdmVyc2lvbi59AQAAACMA\n\t\t\t\t\t\t\tAAABAAAABwAAAFRYVC5y\n\t\t\t\t\t\t\tdGYQAAAAcO0uXLYBAAAA\n\t\t\t\t\t\t\tAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Get the Group UUID for this Macro UUID",
+			"ActionColor": "Green",
+			"Actions": [
+				{
+					"MacroActionType": "ExecuteJavaScriptForAutomation",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Variable": "rmgResult",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "/Users/Dan/Documents/Development/JXA/Keyboard Maestro/Work/Reveal Macro Group.scpt",
+					"DisplayKind": "Variable",
+					"IsDisclosed": false,
+					"Text": "(function() {\n\t'use strict';\n\n\tfunction convertStringToPlist(str) {\n\t\treturn ObjC.deepUnwrap(\n\t\t\t$.NSPropertyListSerialization.propertyListWithDataOptionsFormatError(\n\t\t\t\t$(str).dataUsingEncoding($.NSUTF8StringEncoding), 0, 0, null));\n\t};\n\n\tfunction getSelectedKMMacroUUID(km) {\n\t\tvar _km = km || Application(\"Keyboard Maestro\");\n\t\tvar _macros = _km.selectedmacros();\n\t\treturn (_macros && _macros.length) ? _macros[0] : undefined;\n\t}\n\n\tfunction getAllKMGroupsAndMacrosArray(kme) {\n\t\tvar _kme = kme || Application(\"Keyboard Maestro Engine\");\n\t\tvar _macros = _kme.getmacros({ asstring: true });\n\t\treturn convertStringToPlist(_macros);\n\t}\n\n\tfunction getKMMacroAndGroupByMacroUUID(macroUUID, plist) {\n\t\tvar _result = undefined;\n\t\tplist.find(function(group) {\n\t\t\tvar macros = group.macros;\n\t\t\tif (!macros) return false;\n\n\t\t\tvar macro = macros.find(function(m) {\n\t\t\t\treturn m.uid === macroUUID; });\n\t\t\tif (macro) {\n\t\t\t\t_result = { macro: macro, group: group };\n\t\t\t\treturn true;\n\t\t\t}\n\t\t\treturn false;\n\t\t});\n\t\treturn _result;\n\t}\n\n\tvar _kme = Application(\"Keyboard Maestro Engine\");\n\tvar _macroUUID = getSelectedKMMacroUUID();\n\tvar _plist = getAllKMGroupsAndMacrosArray(_kme);\n\n\tif (!_macroUUID) return \"No macros selected\";\n\n\tvar _match = getKMMacroAndGroupByMacroUUID(_macroUUID, _plist);\n\tif (!_match) return \"You must select a macro first\";\n\n\t_kme.setvariable(\"gcmiMacroUUID\", { to: _macroUUID });\n\t_kme.setvariable(\"gcmiMacroName\", { to: _match.macro.name });\n\t_kme.setvariable(\"gcmiGroupUUID\", { to: _match.group.uid });\n\t_kme.setvariable(\"gcmiGroupName\", { to: _match.group.name });\n\treturn \"OK\";\n})()",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "Cancel if error",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "rmgResult",
+								"VariableConditionType": "IsNot",
+								"VariableValue": "OK",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ElseActionListDisclosed": false,
+					"ThenActions": [
+						{
+							"MacroActionType": "PromptForUserInput",
+							"Title": "%ExecutingThisMacro%",
+							"Prompt": "Error: %Variable%rmgResult%",
+							"IsDisclosed": false,
+							"TimeOutAbortsMacro": true,
+							"Buttons": [
+								{
+									"Button": "OK",
+									"Cancel": true
+								}
+							],
+							"Variables": []
+						},
+						{
+							"MacroActionType": "Cancel",
+							"Action": "CancelThisMacro",
+							"IsDisclosed": false
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayWindow",
+			"IsDisclosed": false,
+			"Text": "Macro Name: %Variable%gcmiMacroName%\nMacro UUID: %Variable%gcmiMacroUUID%\nMacro Group Name: %Variable%gcmiGroupName%\nMacro Group UUID: %Variable%gcmiGroupUUID%\n",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7OAQAAKwAAAAEAAADG\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBIZWx2ZXRp\n\t\t\t\t\t\t\tY2FOZXVlO30Ke1xjb2xv\n\t\t\t\t\t\t\tcnRibDtccmVkMjU1XGdy\n\t\t\t\t\t\t\tZWVuMjU1XGJsdWUyNTU7\n\t\t\t\t\t\t\tXHJlZDBcZ3JlZW4wXGJs\n\t\t\t\t\t\t\tdWUwO30KXHBhcmRcdHg1\n\t\t\t\t\t\t\tNjBcdHgxMTIwXHR4MTY4\n\t\t\t\t\t\t\tMFx0eDIyNDBcdHgyODAw\n\t\t\t\t\t\t\tXHR4MzM2MFx0eDM5MjBc\n\t\t\t\t\t\t\tdHg0NDgwXHR4NTA0MFx0\n\t\t\t\t\t\t\teDU2MDBcdHg2MTYwXHR4\n\t\t\t\t\t\t\tNjcyMFxwYXJkaXJuYXR1\n\t\t\t\t\t\t\tcmFsXHBhcnRpZ2h0ZW5m\n\t\t\t\t\t\t\tYWN0b3IwCgpcZjBcZnMy\n\t\t\t\t\t\t\tNiBcY2YyIE1hY3JvIE5h\n\t\t\t\t\t\t\tbWU6ICVWYXJpYWJsZSVn\n\t\t\t\t\t\t\tY21pTWFjcm9OYW1lJVwK\n\t\t\t\t\t\t\tTWFjcm8gVVVJRDogJVZh\n\t\t\t\t\t\t\tcmlhYmxlJWdjbWlNYWNy\n\t\t\t\t\t\t\tb1VVSUQlXApNYWNybyBH\n\t\t\t\t\t\t\tcm91cCBOYW1lOiAlVmFy\n\t\t\t\t\t\t\taWFibGUlZ2NtaUdyb3Vw\n\t\t\t\t\t\t\tTmFtZSVcCk1hY3JvIEdy\n\t\t\t\t\t\t\tb3VwIFVVSUQ6ICVWYXJp\n\t\t\t\t\t\t\tYWJsZSVnY21pR3JvdXBV\n\t\t\t\t\t\t\tVUlEJVwKfQEAAAAjAAAA\n\t\t\t\t\t\t\tAQAAAAcAAABUWFQucnRm\n\t\t\t\t\t\t\tEAAAACtIJli2AQAAAAAA\n\t\t\t\t\t\t\tAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		}
+	],
+	"CreationDate": 493242723.774877,
+	"ModificationDate": 568272196.61347,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 34,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "KM-Get Current Macro Info"
+}

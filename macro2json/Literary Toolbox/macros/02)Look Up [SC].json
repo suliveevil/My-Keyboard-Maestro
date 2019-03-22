@@ -1,0 +1,86 @@
+{
+	"UID": "B018D5BB-CDE4-4ED0-8A33-B5B87EF62FCC",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "InsertText",
+					"Action": "DisplayBriefly",
+					"IsDisclosed": false,
+					"Text": "Select a word…"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Is",
+						"MenuTitle": "Copy"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "CutCopyPaste",
+					"Action": "Copy",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "SC_Word",
+					"Text": "%CurrentClipboard%"
+				},
+				{
+					"MacroActionType": "ExecuteAppleScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Briefly",
+					"IsDisclosed": false,
+					"Text": "tell application \"Keyboard Maestro Engine\" to set myVar to getvariable \"SC_Word\"\rtell application \"Spell Catcher\"\r\tlook up myVar\rend tell",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ManipulateWindow",
+					"TargetApplication": {
+						"BundleIdentifier": "com.rainmaker.SpellCatcher",
+						"Name": "Spell Catcher"
+					},
+					"WindowName": "",
+					"HorizontalExpression": "125",
+					"TargetingType": "Specific",
+					"Action": "SelectWindow",
+					"VerticalExpression": "125",
+					"WidthExpression": "300",
+					"Targeting": "FrontWindow",
+					"IsDisclosed": false,
+					"WindowIndexExpression": "2",
+					"HeightExpression": "300"
+				}
+			]
+		}
+	],
+	"CreationDate": 505096122.049236,
+	"ModificationDate": 565400910.367016,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 37,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "02)Look Up [SC]"
+}

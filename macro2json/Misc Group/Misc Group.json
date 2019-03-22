@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 459334118.065338,
+	"AddToStatusMenu": false,
+	"Name": "Misc Group",
+	"PaletteUnderMouse": false,
+	"UID": "D23FCF2A-F851-422E-B3AA-A86DC7F1DC8C",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "BCE81830-E223-47CB-B819-2EE18856AF5F",
+	"Activate": "Normal",
+	"IsActive": false,
+	"KeyCode": 32767
+}

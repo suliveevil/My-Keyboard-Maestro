@@ -1,0 +1,23 @@
+{
+	"UID": "468A739C-D079-42B3-A86C-82A78AA2335A",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell app \"System Events\"\n\tactivate\n\ttell appearance preferences\n\t    if dark mode is true and value = \"True\" then\n        \tset dark mode to false\n    \telse if dark mode is false and value = \"False\" then\n        \tset dark mode to true\n    \telse\n        \treturn\n    \tend if\n\tend tell\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568382379.466841,
+	"IsActive": false,
+	"ModificationDate": 568382571.162438,
+	"Triggers": [],
+	"Name": "DarkMode-AutoSwitch"
+}

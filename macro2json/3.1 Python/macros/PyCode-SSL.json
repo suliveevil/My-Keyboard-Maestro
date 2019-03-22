@@ -1,0 +1,24 @@
+{
+	"UID": "98726363-E44B-4FA8-B8F7-E91D438F1C09",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "# 默认不校验网站证书\nssl._create_default_https_context = ssl._create_unverified_context\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"ModificationDate": 568133242.103537,
+	"Triggers": [
+		{
+			"TypedString": "!ssl",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "PyCode-SSL"
+}

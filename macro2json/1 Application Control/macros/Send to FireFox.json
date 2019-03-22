@@ -1,0 +1,54 @@
+{
+	"UID": "4AACD4A3-407E-4DB8-BC1D-89A6456C55F6",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Firefox.app",
+				"BundleIdentifier": "org.mozilla.firefox",
+				"Name": "Firefox"
+			}
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 17,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "%SafariURL%"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 36,
+			"Modifiers": 0
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566257243.525055,
+	"ModificationDate": 568379861.565873,
+	"Triggers": [
+		{
+			"TapCount": 3,
+			"FireType": "Tapped",
+			"KeyCode": 48,
+			"Modifiers": 2304,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Send to FireFox"
+}

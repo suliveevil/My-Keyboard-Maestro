@@ -1,0 +1,22 @@
+{
+	"UID": "8EAD874A-64BE-4432-8257-4AF880140AE2",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 574921347.791081,
+	"ModificationDate": 574921357.703217,
+	"Triggers": [],
+	"Name": "GUI"
+}

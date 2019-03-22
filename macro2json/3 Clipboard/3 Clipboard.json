@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"AddToStatusMenu": false,
+	"CreationDate": 568075954.554351,
+	"Modifiers": 0,
+	"PaletteUnderMouse": false,
+	"Name": "3 Clipboard",
+	"UID": "BC2589DA-AFE6-4B0D-BD2E-78BEFA50053C",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "A4A6BB12-CB9D-4A50-AC08-7BA821A36E8C",
+	"Activate": "Normal",
+	"KeyCode": 32767,
+	"DisplayToggle": false
+}

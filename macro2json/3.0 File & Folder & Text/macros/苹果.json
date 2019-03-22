@@ -1,0 +1,29 @@
+{
+	"UID": "E0AAED83-8A90-4EF1-ABA5-858B0D9EC74F",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": ""
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"ModificationDate": 568015918.727433,
+	"Triggers": [
+		{
+			"TypedString": "!apple",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！apple",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "苹果"
+}

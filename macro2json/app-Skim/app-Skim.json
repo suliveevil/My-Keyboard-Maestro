@@ -1,0 +1,25 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 566950173.772177,
+	"AddToStatusMenu": false,
+	"PaletteUnderMouse": false,
+	"CustomIconData": "KMEP-GenericApplication-/Applications/Skim.app",
+	"Name": "app-Skim",
+	"UID": "252E5FC2-F332-4C35-B39B-8A4CF4E4CFEA",
+	"Targeting": {
+		"Targeting": "Included",
+		"TargetingApps": [
+			{
+				"NewFile": "/Applications/Skim.app",
+				"BundleIdentifier": "net.sourceforge.skim-app.skim",
+				"Name": "Skim"
+			}
+		]
+	},
+	"Macros": [],
+	"ToggleMacroUID": "3F637B88-A9AB-4068-828C-4608B07FF02C",
+	"Activate": "Normal",
+	"IsActive": false,
+	"KeyCode": 32767
+}

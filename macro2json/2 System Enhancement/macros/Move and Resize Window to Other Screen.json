@@ -1,0 +1,75 @@
+{
+	"UID": "A9D68D64-4CC6-4587-97D4-4BC6E169CB24",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "W1",
+			"Text": "%WindowFrame%Front%"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "S1",
+			"Text": "%ScreenVisible%Front%"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "S2",
+			"Text": "%ScreenVisible%Back%"
+		},
+		{
+			"MacroActionType": "ManipulateWindow",
+			"Action": "MoveAndResize",
+			"WindowIndexExpression": "2",
+			"HorizontalExpression": "(W1.left - S1.left) * S2.width/S1.width + S2.left",
+			"Targeting": "FrontWindow",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"VerticalExpression": "(W1.top - S1.top) * S2.height/S1.height + S2.top",
+			"HeightExpression": "W1.height * S2.height/S1.height",
+			"WidthExpression": "W1.width * S2.width/S1.width",
+			"WindowName": ""
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"IsActive": false,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Text": "SCREENCOUNT()=2",
+						"ConditionType": "Calculation"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ManipulateWindow",
+					"Action": "MoveAndResize",
+					"WindowIndexExpression": "2",
+					"HorizontalExpression": "(W1.left - S1.left) * S2.width/S1.width + S2.left",
+					"Targeting": "FrontWindow",
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"VerticalExpression": "(W1.top - S1.top) * S2.height/S1.height + S2.top",
+					"HeightExpression": "W1.height * S2.height/S1.height",
+					"WidthExpression": "W1.width * S2.width/S1.width",
+					"WindowName": ""
+				}
+			]
+		}
+	],
+	"CreationDate": 561357195.050639,
+	"ModificationDate": 573432344.812512,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 124,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Move and Resize Window to Other Screen"
+}

@@ -1,0 +1,24 @@
+{
+	"UID": "319B85E2-09F8-4563-9114-CA8BE839555F",
+	"Actions": [
+		{
+			"MacroActionType": "Search",
+			"Title": "Search the web with Google",
+			"TimeOutAbortsMacro": true,
+			"Default": "",
+			"URL": "http://www.google.com/search?q=%Search%"
+		}
+	],
+	"CreationDate": 566070948.433158,
+	"IsActive": false,
+	"ModificationDate": 568131265.990551,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 5,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Search with Google"
+}

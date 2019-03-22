@@ -1,0 +1,67 @@
+{
+	"UID": "EE6E0DE0-E2B3-4D23-A74F-60F284A611FC",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "export PATH=/usr/local/bin/:$PATH\n\nscreencapture -i /tmp/ocr_snapshot.png\n\ntesseract /tmp/ocr_snapshot.png stdout -l chi_sim+chi_sim_vert+chi_tra+chi_tra_vert+eng+osd 2>&1\n",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Clipboard",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "CaseSensitiveRegEx",
+			"Search": "\\W",
+			"IsDisclosed": false,
+			"Destination": "Clipboard",
+			"Source": "Clipboard",
+			"IsActive": false,
+			"Replace": " "
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"ActionName": "Remove SpecialCharacters Front of Letters",
+			"Action": "CaseSensitiveRegEx",
+			"Search": "^([^[a-zA-Z].]*)",
+			"Source": "Clipboard",
+			"Destination": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"Eudb_en\"\r\treopen\r\tshow dic with word the clipboard\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "%SystemClipboard%",
+			"Subtitle": "",
+			"SoundName": ""
+		}
+	],
+	"CreationDate": 568752918.618329,
+	"IsActive": false,
+	"ModificationDate": 568831916.35745,
+	"Triggers": [
+		{
+			"TypedString": "oodd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "0 OCR&Define"
+}

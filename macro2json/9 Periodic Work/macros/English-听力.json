@@ -1,0 +1,78 @@
+{
+	"UID": "121E037E-A241-4182-9E31-8E37DBE7D018",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/PodcastMenu.app",
+				"BundleIdentifier": "br.com.guilhermerambo.PodcastMenu",
+				"Name": "PodcastMenu"
+			}
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.2",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "PlaySound",
+			"Volume": 50,
+			"TimeOutAbortsMacro": true,
+			"Path": "/System/Library/Sounds/Glass.aiff",
+			"DeviceID": "SOUNDEFFECTS"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "30",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 568436348.07929,
+	"ModificationDate": 574910528.085559,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 5,
+			"RepeatTime": 60,
+			"TimeHour": 12,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Time",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "English-听力"
+}

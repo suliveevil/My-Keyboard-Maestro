@@ -1,0 +1,39 @@
+{
+	"UID": "D44B1D35-5FC5-452F-9962-0D827FEA2FDD",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "python3 -m pylint %SystemClipboard%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 567045213.679116,
+	"ModificationDate": 568133228.81976,
+	"Triggers": [
+		{
+			"TypedString": "!lint",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！lint",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "!pylint",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！pylint",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "PyTool-PyLint"
+}

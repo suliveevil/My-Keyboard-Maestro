@@ -1,0 +1,23 @@
+{
+	"UID": "0487709D-FFB0-4A29-8EB8-ADAF89DBB42B",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"script editor\"\n\tactivate\n\tset to frontmost\nend tell\n\ntell application \"script editor\"\n\tcreate new file\nend tell\n\nkeystroke/click \n\n\n\n\n\n",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568434101.141309,
+	"IsActive": false,
+	"ModificationDate": 568434722.163102,
+	"Triggers": [],
+	"Name": "AppleScript Dictionary"
+}

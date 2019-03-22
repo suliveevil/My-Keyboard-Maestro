@@ -1,0 +1,24 @@
+{
+	"UID": "4BAD7A6E-D23E-425A-B0EA-A83328006B0B",
+	"Actions": [
+		{
+			"MacroActionType": "Search",
+			"Title": "Search the web with Baidu",
+			"TimeOutAbortsMacro": true,
+			"Default": "",
+			"URL": "https://www.baidu.com/s?wd=%Search%"
+		}
+	],
+	"CreationDate": 566070948.433158,
+	"IsActive": false,
+	"ModificationDate": 568131253.08376,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 11,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Search with Baidu"
+}

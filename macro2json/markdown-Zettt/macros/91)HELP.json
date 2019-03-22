@@ -1,0 +1,12 @@
+{
+	"UID": "FF33777A-A995-4A1E-AF99-CA4EF6EA97E8",
+	"Actions": [],
+	"CreationDate": 457084305.764058,
+	"ModificationDate": 395766636.694755,
+	"Triggers": [
+		{
+			"MacroTriggerType": "StatusMenu"
+		}
+	],
+	"Name": "91)HELP"
+}

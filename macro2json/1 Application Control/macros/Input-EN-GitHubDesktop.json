@@ -1,0 +1,58 @@
+{
+	"UID": "2CA932C2-70CA-4989-A4F5-ADDC898C2943",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ApplicationConditionType": "Active",
+						"ConditionType": "Application",
+						"Application": {
+							"NewFile": "/Applications/GitHub Desktop.app",
+							"BundleIdentifier": "com.github.GitHubClient",
+							"Name": "GitHub Desktop"
+						}
+					},
+					{
+						"FrontWindowConditionType": "Exists",
+						"ConditionType": "FrontWindow",
+						"IsFrontApplication": false,
+						"Application": {
+							"NewFile": "/Applications/GitHub Desktop.app",
+							"BundleIdentifier": "com.github.GitHubClient",
+							"Name": "GitHub Desktop"
+						}
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetKeyboardLayout",
+					"KeyboardLayoutName": "ABC",
+					"KeyboardLayoutID": "com.apple.keylayout.ABC"
+				}
+			]
+		}
+	],
+	"CreationDate": 567203137.780422,
+	"ModificationDate": 568130798.13501,
+	"Triggers": [
+		{
+			"MacroTriggerType": "Application",
+			"Target": "Specific",
+			"RepeatTime": 60,
+			"Application": {
+				"NewFile": "/Applications/GitHub Desktop.app",
+				"BundleIdentifier": "com.github.GitHubClient",
+				"Name": "GitHub Desktop"
+			},
+			"FireType2": "Activate"
+		}
+	],
+	"Name": "Input-EN-GitHubDesktop",
+	"CustomIconData": "KMEP-GenericApplication-/Applications/GitHub Desktop.app"
+}

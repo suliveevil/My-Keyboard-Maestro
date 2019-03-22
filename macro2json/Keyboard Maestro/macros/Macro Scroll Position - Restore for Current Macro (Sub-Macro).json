@@ -1,0 +1,228 @@
+{
+	"UID": "369E2E9D-9F91-4A37-878F-4C537C94735F",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Macro Scroll Position - Restore for Current Macro (Sub-Macro) v1.0",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC57AgAAKwAAAAEAAABz\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgTmFtZTog\n\t\t\t\t\t\t\tTWFjcm8gU2Nyb2xsIFBv\n\t\t\t\t\t\t\tc2l0aW9uIC0gUmVzdG9y\n\t\t\t\t\t\t\tZSBmb3IgQ3VycmVudCBN\n\t\t\t\t\t\t\tYWNybyAoU3ViLU1hY3Jv\n\t\t\t\t\t\t\tKVwKVmVyc2lvbjogMS4w\n\t\t\t\t\t\t\tXApVcGRhdGVkOiAyMDE2\n\t\t\t\t\t\t\tLzA4LzA0IDEzOjM4IFBU\n\t\t\t\t\t\t\tXApCeTogRGFuIFRob21h\n\t\t\t\t\t\t\tc1wKXApQVVJQT1NFOlwK\n\t\t\t\t\t\t\tXApSZXN0b3JlcyB0aGUg\n\t\t\t\t\t\t\tY3VycmVudCBtYWNybydz\n\t\t\t\t\t\t\tIGxhc3Qga25vd24gc2Ny\n\t\t\t\t\t\t\tb2xsIHBvc2l0aW9uLlwK\n\t\t\t\t\t\t\tXApXb3JrcyBpbiBjb25q\n\t\t\t\t\t\t\tdW5jdGlvbiB3aXRoICJN\n\t\t\t\t\t\t\tYWNybyBTY3JvbGwgUG9z\n\t\t\t\t\t\t\taXRpb24gLSBTdG9yZSBm\n\t\t\t\t\t\t\tb3IgQ3VycmVudCBNYWNy\n\t\t\t\t\t\t\tbyAoU3ViLU1hY3JvKSIu\n\t\t\t\t\t\t\tXApcClZFUlNJT04gSElT\n\t\t\t\t\t\t\tVE9SWTpcCjEuMCAtIElu\n\t\t\t\t\t\t\taXRpYWwgdmVyc2lvbi59\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAwH97\n\t\t\t\t\t\t\tXLYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Get current Macro UUID - Abort if error",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "mspUUID",
+					"Text": ""
+				},
+				{
+					"MacroActionType": "ExecuteAppleScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Variable": "mspResult",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Variable",
+					"IsDisclosed": false,
+					"Text": "try\r\tset macroUUID to my getSelectedMacroUUID()\r\tif macroUUID = \"\" then return \"No macros selected\"\r\t\r\ttell application \"Keyboard Maestro Engine\"\r\t\tsetvariable \"mspUUID\" to macroUUID\r\tend tell\r\t\r\treturn \"\"\ron error errMsg number errNum\r\treturn errMsg\rend try\r\ron getSelectedMacroUUID()\r\ttell application \"Keyboard Maestro\"\r\t\tset macroUUIDs to selectedMacros\r\t\tif (count of macroUUIDs) is 0 then\r\t\t\treturn \"\"\r\t\tend if\r\t\treturn item 1 of macroUUIDs\r\tend tell\rend getSelectedMacroUUID",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "Abort if error",
+					"ActionColor": "Red",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "mspResult",
+								"VariableConditionType": "IsNotEmpty",
+								"VariableValue": "value",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ElseActionListDisclosed": false,
+					"ThenActions": [
+						{
+							"MacroActionType": "PlaySound",
+							"IsDisclosed": false,
+							"TimeOutAbortsMacro": true,
+							"Path": "/System/Library/Sounds/Basso.aiff",
+							"DeviceID": "SOUNDEFFECTS"
+						},
+						{
+							"MacroActionType": "PromptForUserInput",
+							"Title": "%ExecutingThisMacro%",
+							"ActionName": "Notify error 'An error has occurred: %Variable%mspResult%'",
+							"Prompt": "An error has occurred: %Variable%mspResult%",
+							"IsDisclosed": false,
+							"TimeOutAbortsMacro": true,
+							"Buttons": [
+								{
+									"Button": "OK",
+									"Cancel": false
+								}
+							],
+							"Variables": []
+						},
+						{
+							"MacroActionType": "Cancel",
+							"Action": "CancelThisMacro",
+							"IsDisclosed": false
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Retrieve the last scroll position, if any",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "mspScrollPosition",
+					"Text": ""
+				},
+				{
+					"MacroActionType": "SearchRegEx",
+					"Action": "IgnoreCaseRegEx",
+					"NotifyOnFailure": false,
+					"IsDisclosed": false,
+					"Captures": [
+						"",
+						"mspScrollPosition"
+					],
+					"Search": "(?m)^%Variable%mspUUID%=(.*)$",
+					"Source": "Variable",
+					"Variable": "DND__mspStorage",
+					"StopOnFailure": false
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Restore the last scroll position, if any - Abort if error",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "mspScrollPosition",
+						"VariableConditionType": "IsNotEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteAppleScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Variable": "mspResult",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Variable",
+					"IsDisclosed": false,
+					"Text": "try\r\ttell application \"Keyboard Maestro Engine\"\r\t\tset scrollPosition to getvariable \"mspScrollPosition\"\r\tend tell\r\t\r\ttell application \"System Events\"\r\t\ttell process \"Keyboard Maestro\"\r\t\t\tset value of scroll bar 1 of scroll area 3 of splitter group 1 of group 1 of window \"Keyboard Maestro Editor\" to scrollPosition as number\r\t\tend tell\r\tend tell\r\t\r\treturn \"\"\ron error errMsg number errNum\r\treturn errMsg\rend try",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "Abort if error",
+					"ActionColor": "Red",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "mspResult",
+								"VariableConditionType": "IsNotEmpty",
+								"VariableValue": "value",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ElseActionListDisclosed": false,
+					"ThenActions": [
+						{
+							"MacroActionType": "PlaySound",
+							"IsDisclosed": false,
+							"TimeOutAbortsMacro": true,
+							"Path": "/System/Library/Sounds/Basso.aiff",
+							"DeviceID": "SOUNDEFFECTS"
+						},
+						{
+							"MacroActionType": "PromptForUserInput",
+							"Title": "%ExecutingThisMacro%",
+							"ActionName": "Notify error 'An error has occurred: %Variable%mspResult%'",
+							"Prompt": "An error has occurred: %Variable%mspResult%",
+							"IsDisclosed": false,
+							"TimeOutAbortsMacro": true,
+							"Buttons": [
+								{
+									"Button": "OK",
+									"Cancel": false
+								}
+							],
+							"Variables": []
+						},
+						{
+							"MacroActionType": "Cancel",
+							"Action": "CancelThisMacro",
+							"IsDisclosed": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "mspResult",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "mspUUID",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 492865149.327271,
+	"ModificationDate": 492867976.211282,
+	"Triggers": [],
+	"Name": "Macro Scroll Position - Restore for Current Macro (Sub-Macro)"
+}

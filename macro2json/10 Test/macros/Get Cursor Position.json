@@ -1,0 +1,23 @@
+{
+	"UID": "022737F8-A208-4CED-852C-81635507CD4C",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayWindow",
+			"Text": "Cursor position relative to:\n\nScreen: → %Calculate%MOUSEX()% / ↓ %Calculate%MOUSEY()%\nWindow: → %Calculate%MOUSEX()-WINDOW(1,Left)% / ↓ %Calculate%MOUSEY()-WINDOW(1,Top)% / ← %Calculate%WINDOW(1,Right)-MOUSEX()% / ↑ %Calculate%WINDOW(1,Bottom)-MOUSEY()%",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC57AwAAKwAAAAEAAABz\n\t\t\t\t\t\t\tAwAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZuaWxcZmNo\n\t\t\t\t\t\t\tYXJzZXQwIEhlbHZldGlj\n\t\t\t\t\t\t\tYU5ldWU7XGYxXGZuaWxc\n\t\t\t\t\t\t\tZmNoYXJzZXQxMzQgLlBp\n\t\t\t\t\t\t\tbmdGYW5nU0MtUmVndWxh\n\t\t\t\t\t\t\tcjt9CntcY29sb3J0Ymw7\n\t\t\t\t\t\t\tXHJlZDI1NVxncmVlbjI1\n\t\t\t\t\t\t\tNVxibHVlMjU1O1xyZWQw\n\t\t\t\t\t\t\tXGdyZWVuMFxibHVlMDt9\n\t\t\t\t\t\t\tCntcKlxleHBhbmRlZGNv\n\t\t\t\t\t\t\tbG9ydGJsOztcY3Nzcmdi\n\t\t\t\t\t\t\tXGMwXGMwXGMwXGNuYW1l\n\t\t\t\t\t\t\tIHRleHRDb2xvcjt9Clxw\n\t\t\t\t\t\t\tYXJkXHR4NTYwXHR4MTEy\n\t\t\t\t\t\t\tMFx0eDE2ODBcdHgyMjQw\n\t\t\t\t\t\t\tXHR4MjgwMFx0eDMzNjBc\n\t\t\t\t\t\t\tdHgzOTIwXHR4NDQ4MFx0\n\t\t\t\t\t\t\teDUwNDBcdHg1NjAwXHR4\n\t\t\t\t\t\t\tNjE2MFx0eDY3MjBccGFy\n\t\t\t\t\t\t\tZGlybmF0dXJhbFxwYXJ0\n\t\t\t\t\t\t\taWdodGVuZmFjdG9yMAoK\n\t\t\t\t\t\t\tXGYwXGZzMjYgXGNmMiBD\n\t\t\t\t\t\t\tdXJzb3IgcG9zaXRpb24g\n\t\t\t\t\t\t\tcmVsYXRpdmUgdG86XApc\n\t\t\t\t\t\t\tClNjcmVlbjogXHVjMFx1\n\t\t\t\t\t\t\tODU5NCAgJUNhbGN1bGF0\n\t\t\t\t\t\t\tZSVNT1VTRVgKXGYxICgp\n\t\t\t\t\t\t\tClxmMCAlIC8gXHVjMFx1\n\t\t\t\t\t\t\tODU5NSAgJUNhbGN1bGF0\n\t\t\t\t\t\t\tZSVNT1VTRVkKXGYxICgp\n\t\t\t\t\t\t\tClxmMCAlXApXaW5kb3c6\n\t\t\t\t\t\t\tIFx1YzBcdTg1OTQgICVD\n\t\t\t\t\t\t\tYWxjdWxhdGUlTU9VU0VY\n\t\t\t\t\t\t\tClxmMSAoKQpcZjAgLVdJ\n\t\t\t\t\t\t\tTkRPVwpcZjEgKApcZjAg\n\t\t\t\t\t\t\tMQpcZjEgLApcZjAgTGVm\n\t\t\t\t\t\t\tdApcZjEgKQpcZjAgJSAv\n\t\t\t\t\t\t\tIFx1YzBcdTg1OTUgICVD\n\t\t\t\t\t\t\tYWxjdWxhdGUlTU9VU0VZ\n\t\t\t\t\t\t\tClxmMSAoKQpcZjAgLVdJ\n\t\t\t\t\t\t\tTkRPVwpcZjEgKApcZjAg\n\t\t\t\t\t\t\tMQpcZjEgLApcZjAgVG9w\n\t\t\t\t\t\t\tClxmMSApClxmMCAlIC8g\n\t\t\t\t\t\t\tXHVjMFx1ODU5MiAgJUNh\n\t\t\t\t\t\t\tbGN1bGF0ZSVXSU5ET1cK\n\t\t\t\t\t\t\tXGYxICgKXGYwIDEKXGYx\n\t\t\t\t\t\t\tICwKXGYwIFJpZ2h0Clxm\n\t\t\t\t\t\t\tMSApClxmMCAtTU9VU0VY\n\t\t\t\t\t\t\tClxmMSAoKQpcZjAgJSAv\n\t\t\t\t\t\t\tIFx1YzBcdTg1OTMgICVD\n\t\t\t\t\t\t\tYWxjdWxhdGUlV0lORE9X\n\t\t\t\t\t\t\tClxmMSAoClxmMCAxClxm\n\t\t\t\t\t\t\tMSAsClxmMCBCb3R0b20K\n\t\t\t\t\t\t\tXGYxICkKXGYwIC1NT1VT\n\t\t\t\t\t\t\tRVkKXGYxICgpClxmMCAl\n\t\t\t\t\t\t\tfQEAAAAjAAAAAQAAAAcA\n\t\t\t\t\t\t\tAABUWFQucnRmEAAAAHq0\n\t\t\t\t\t\t\tIFy2AQAAAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		}
+	],
+	"CreationDate": 567339582.689087,
+	"IsActive": false,
+	"ModificationDate": 567412301.138931,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 35,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Get Cursor Position"
+}

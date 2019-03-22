@@ -1,0 +1,16 @@
+{
+	"UID": "C9E54D09-ABAD-47AF-83E8-1BF8297723AF",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "←"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991046.530023,
+	"Triggers": [],
+	"Name": "10)  ←    Left Arrow"
+}

@@ -1,0 +1,44 @@
+{
+	"UID": "5833B3D7-C021-4392-A260-D553CD2BE504",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application id \"com.runningwithcrayons.Alfred-3\" to search",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 566960091.1149,
+	"ModificationDate": 574742828.466893,
+	"Triggers": [
+		{
+			"TypedString": "@alf",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "!alf",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！alf",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 6912,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Alfred"
+}

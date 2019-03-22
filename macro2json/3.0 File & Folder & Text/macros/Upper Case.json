@@ -1,0 +1,56 @@
+{
+	"UID": "B74A91E1-F3ED-43AB-A3D9-2303075A3C04",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Change Typed String to Upper Case [Example]",
+			"ActionName": "~~~ ReleaseNotes for VER: 1.0    2016-09-13 ~~~",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6jAgAAKwAAAAEAAACb\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgQXV0aG9y\n\t\t\t\t\t\t\tLkBKTWljaGFlbFRYXApc\n\t\t\t\t\t\t\tClBVUlBPU0U6IENvbnZl\n\t\t\t\t\t\t\tcnQgYW55dGhpbmcgdHlw\n\t\t\t\t\t\t\tZWQgYWZ0ZXIgdHJpZ2dl\n\t\t\t\t\t\t\tciB0ZXh0IHRvIHVwcGVy\n\t\t\t\t\t\t\tIGNhc2VcClwKSE9XIFRP\n\t\t\t\t\t\t\tIFVTRTpcClwKKiBUeXBl\n\t\t\t\t\t\t\tICI7dWMuPFRleHRUb0Nv\n\t\t\t\t\t\t\tbnZlcnRUb1VwcGVyQ2Fz\n\t\t\t\t\t\t\tZT48V2hpdGVTcGFjZT5c\n\t\t\t\t\t\t\tCiogPFdoaXRlU3BhY2U+\n\t\t\t\t\t\t\tIGlzIFNQQUNFIG9yIFRB\n\t\t\t\t\t\t\tQiBrZXlcCiogRXhhbXBs\n\t\t\t\t\t\t\tZTogIDt1Yy5zb21ldGV4\n\t\t\t\t\t\t\tdCBcCiogUmVzdWx0cyBp\n\t\t\t\t\t\t\tbjogIFNPTUVURVhUXApc\n\t\t\t\t\t\t\tClJFRjpcClwKKiBTZWUg\n\t\t\t\t\t\t\tdXNlciByZXF1ZXN0IGF0\n\t\t\t\t\t\t\tXApodHRwczovL2ZvcnVt\n\t\t\t\t\t\t\tLmtleWJvYXJkbWFlc3Ry\n\t\t\t\t\t\t\tby5jb20vdC9oZWxwLXdp\n\t\t\t\t\t\t\tdGgtdGV4dC1leHBhbnNp\n\t\t\t\t\t\t\tb24tY2FzZS1jb3JyZWN0\n\t\t\t\t\t\t\taW9uLXctcHVuY3R1YXRp\n\t\t\t\t\t\t\tb24vNDk2M1wKfQEAAAAj\n\t\t\t\t\t\t\tAAAAAQAAAAcAAABUWFQu\n\t\t\t\t\t\t\tcnRmEAAAALRlfVy2AQAA\n\t\t\t\t\t\t\tAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "TypedString",
+			"Text": "%TriggerValue%"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "^;uc.(\\w+)\\s",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"TextToMakeUpper"
+			],
+			"Source": "Variable",
+			"Variable": "TypedString"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "Uppercase",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "TextToMakeUpper"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"IsDisclosed": false,
+			"Text": "%Variable%TextToMakeUpper%"
+		}
+	],
+	"CreationDate": 495516739.674894,
+	"IsActive": false,
+	"ModificationDate": 573414759.429088,
+	"Triggers": [
+		{
+			"Case": "Match",
+			"TypedString": "^;uc.\\w+\\s",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Upper Case"
+}

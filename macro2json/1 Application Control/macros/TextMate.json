@@ -1,0 +1,28 @@
+{
+	"UID": "1A8C7606-99FA-47C4-83AC-3121126AA330",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/TextMate.app",
+				"BundleIdentifier": "com.macromates.TextMate",
+				"Name": "TextMate"
+			}
+		}
+	],
+	"CreationDate": 568078166.745634,
+	"ModificationDate": 568917254.853952,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 20,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "TextMate"
+}

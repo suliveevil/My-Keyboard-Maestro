@@ -1,0 +1,204 @@
+{
+	"UID": "0CFC80D6-0F51-48EE-B313-02CC6694641C",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "LocalFlag",
+					"Text": "0"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ModifiersUp": 0,
+						"ModifiersDown": 2048,
+						"ConditionType": "Modifiers"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "LocalFlag",
+					"Text": "1"
+				}
+			]
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsNotEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Is",
+						"MenuTitle": "Copy"
+					},
+					{
+						"ApplicationConditionType": "NotActive",
+						"ConditionType": "Application",
+						"Application": {
+							"BundleIdentifier": "com.adobe.InDesign",
+							"Name": "Adobe InDesign CS5"
+						}
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 0,
+					"Modifiers": 256
+				}
+			]
+		},
+		{
+			"MacroActionType": "ClipboardSwitcherMacroAction",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"RedundandDisplayName": "myTextTemp",
+			"TimeOutAbortsMacro": true,
+			"Name": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "RemoveStyles",
+			"Source": "NamedClipboard",
+			"IsDisclosed": false,
+			"NamedClipboardName": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66",
+			"RedundandDisplayName": "myTextTemp"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "LocalText",
+			"Text": "%NamedClipboard%myTextTemp%"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"Variable": "LocalTags",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Variable",
+					"Text": "#!/usr/bin/perl\n\nuse Lingua::EN::Tagger;\nbinmode STDOUT, \":utf8\";\n\n$selection = $ENV{KMVAR_LocalText};\nmy $parser = Lingua::EN::Tagger->new(stem=>1);\nmy $readable_text = $parser->get_readable($selection);\n\n\t# copy tagged text\n$_ = $readable_text;\n\n\t# initialize variables\nmy ($adj, $adv, $prep, $conj, $det, $foreign, $punc, $sym, $verb, $pronoun, $noun, $pos, $int) = \"0\" x 13;\nmy $sep = \"&middot;\"; # Or |, /, :, etc.\nmy $c_tag = \"dimgray\";\nmy $tot = 0;\n\n\t# set colors: match action below\nmy $c_adj = \"\\#c33\";\nmy $c_pronoun = \"\\#b00\";\nmy $c_noun = \"\\#f00\";\nmy $c_adv = \"\\#396\";\nmy $c_verb = \"\\#6e9\";\nmy $c_prep = \"\\#05f\";\nmy $c_conj = \"goldenrod\";\nmy $c_det = \"\\#93f\";\nmy $c_foreign = \"olive\";\nmy $c_pos = \"cornflowerblue\";\nmy $c_int = \"purple\";\nmy $c_punc = \"white\";\nmy $c_sym = \"lightsteelblue\";\n\n\t# conj\n$conj = s#(\\w+?)/(CC)#<span style=\"color:${c_conj};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# adj\n$adj = s#(\\w+?)/(CD)#<span style=\"color:${c_adj};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n$adj += s#(\\w+?)/(JJ[RS]?)#<span style=\"color:${c_adj};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# determiners\n$det = s#(\\w+?)\\/(PRPS|WDT|WPS|DET|PDT)#<span style=\"color:${c_det};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# pronouns\n$pronoun = s#(\\w+?)/(EX|WP|PRP)#<span style=\"color:${c_pronoun};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# foreign words\n$foreign = s#(\\w+?)/(FW)#<span style=\"color:${c_foreign};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# prep\n$prep = s#(\\w+?)/(IN|TO)#<span style=\"color:${c_prep};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# symbols\n$sym = s#(\\S+?)/(LS|SYM)#<span style=\"color:${c_sym};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# verb\n$verb = s#(\\w+?)/(MD|VB[DGNPZ]?)#<span style=\"color:${c_verb};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# noun\n$noun = s#(\\S+?)/(NNPS|NNS|NNP|NN)#<span style=\"color:${c_noun};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# possessive\n$pos = s#(\\S+?)/(POS)#<span style=\"color:${c_pos};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# adv\n$adv = s#(\\w+?)/(R[BP][RS]?|WRB)#<span style=\"color:${c_adv};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t#interjection\n$int = s#(\\w+?)/(UH)#<span style=\"color:${c_int};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\t# punc\n$punc =  s#(\\S+?)/(PP[CDLRS]?|LRB|RRB)#<span style=\"color:${c_punc};\">$1</span><span style=\"color:$c_tag;\"></span><span style=\"color:$c_tag;\">$sep$2</span>#g;\n\n$tot = $adj  + $pronoun  + $noun  + $adv  + $verb  + $prep  + $conj  + $det  + $foreign  + $pos  + $int  + $punc  + $sym;\n$tot = commify($tot);\n\nprint \"<p>C O U N T S</p><p style=\\\"margin-left:16px;\\\">\";\nprint \"<p>The selection contains:</p>\";\nprint \"<table border=0 cellpadding=3 cellspacing=0 width=80% align=center>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$adj</td><td><span style=\\\"color:${c_adj};\\\">Adjectives</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$noun</td><td><span style=\\\"color:${c_noun};\\\">Nouns</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$pronoun</td><td><span style=\\\"color:${c_pronoun};\\\">Pronouns</span></td>\\n</tr>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$adv</td><td><span style=\\\"color:${c_adv};\\\">Adverbs</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$verb</td><td><span style=\\\"color:${c_verb};\\\">Verbs</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$prep</td><td><span style=\\\"color:${c_prep};\\\">Prepositions</span></td>\\n</tr>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$conj</td><td><span style=\\\"color:${c_conj};\\\">Conjunctions</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$det</td><td><span style=\\\"color:${c_det};\\\">Determiners</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$punc</td><td><span style=\\\"color:${c_punc};\\\">Punctuation</span></td>\\n</tr>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$pos</td><td><span style=\\\"color:${c_pos};\\\">Possessives</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$sym</td><td><span style=\\\"color:${c_sym};\\\">Symbols</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$foreign</td><td><span style=\\\"color:${c_foreign};\\\">Foreign Words</span></td>\\n</tr>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$int</td><td><span style=\\\"color:${c_int};\\\">Interjections</span></td>\\n\";\nprint \"<td align=\\\"right\\\"></td><td>Untagged</td>\\n\";\nprint \"<td align=\\\"right\\\">$tot</td><td><span style=\\\"color:${c_tag};\\\">Tagged</span></td>\\n</tr>\\n\";\n\nprint \"</table>\\n\";\n\nprint \"<p>NB: A legend explaining the tags is available from the main palette.</p>\";\n\nprint \"<p>T A G G E D &nbsp; T E X T</p>\";\nprint \"<p>\\n$_\\n</p>\";\n\n# FUNCTION\n\nsub commify {\n\tmy $citations = reverse $_[0];\n\t$citations =~ s/(\\d\\d\\d)(?=\\d)(?!\\d*\\.)/$1,/g;\n\treturn scalar reverse $citations;\n}\n\n",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"Variable": "LocalLegend",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Variable",
+					"IsDisclosed": false,
+					"Text": "#!/usr/bin/perl\n\n\t# set colors: match action above\nmy $c_adj = \"\\#c33\";\nmy $c_pronoun = \"\\#b00\";\nmy $c_noun = \"\\#f00\";\nmy $c_adv = \"\\#396\";\nmy $c_verb = \"\\#6e9\";\nmy $c_prep = \"\\#05f\";\nmy $c_conj = \"goldenrod\";\nmy $c_det = \"\\#93f\";\nmy $c_foreign = \"olive\";\nmy $c_pos = \"cornflowerblue\";\nmy $c_int = \"purple\";\nmy $c_punc = \"white\";\nmy $c_sym = \"lightsteelblue\";\n\nprint \"<p>L E G E N D</p><p style=\\\"margin-left:16px;\\\">\";\nprint \"<table border=0 cellpadding=3 cellspacing=0 width=80% align=center>\\n\";\nprint \"<tr><td>CC</td><td style=\\\"color:${c_conj};\\\">Conjunction, coordinating</td><td>and, or</td></tr>\";\nprint \"<tr><td>CD</td><td style=\\\"color:${c_adj};\\\">Adjective, cardinal number</td><td>3, fifteen</td></tr>\";\nprint \"<tr><td>DET</td><td style=\\\"color:${c_det};\\\">Determiner</td><td>this, each, some</td></tr>\";\nprint \"<tr><td>EX</td><td style=\\\"color:${c_pronoun};\\\">Pronoun, existential there</td><td>there</td></tr>\";\nprint \"<tr><td>FW</td><td style=\\\"color:${c_foreign};\\\">Foreign words</td></tr>\";\nprint \"<tr><td>IN</td><td style=\\\"color:${c_prep};\\\">Preposition/Conjunction</td><td>for, of, although, that</td></tr>\";\nprint \"<tr><td>JJ</td><td style=\\\"color:${c_adj};\\\">Adjective</td><td>happy, bad</td></tr>\";\nprint \"<tr><td>JJR</td><td style=\\\"color:${c_adj};\\\">Adjective, comparative</td><td>happier, worse</td></tr>\";\nprint \"<tr><td>JJS</td><td style=\\\"color:${c_adj};\\\">Adjective, superlative</td><td>happiest, worst</td></tr>\";\nprint \"<tr><td>LS</td><td style=\\\"color:${c_sym};\\\">Symbol, list item</td><td>A, A.</td></tr>\";\nprint \"<tr><td>MD</td><td style=\\\"color:${c_verb};\\\">Verb, modal</td><td>can, could, 'll</td></tr>\";\nprint \"<tr><td>NN</td><td style=\\\"color:${c_noun};\\\">Noun</td><td>aircraft, data</td></tr>\";\nprint \"<tr><td>NNP</td><td style=\\\"color:${c_noun};\\\">Noun, proper</td><td>London, Michael</td></tr>\";\nprint \"<tr><td>NNPS</td><td style=\\\"color:${c_noun};\\\">Noun, proper, plural</td><td>Australians, Methodists</td></tr>\";\nprint \"<tr><td>NNS</td><td style=\\\"color:${c_noun};\\\">Noun, plural</td><td>women, books</td></tr>\";\nprint \"<tr><td style=\\\"color:${c_det};\\\">PDT</td><td>Determiner, prequalifier</td><td>quite, all, half</td></tr>\";\nprint \"<tr><td>POS</td><td style=\\\"color:${c_pos};\\\">Possessive</td><td>'s, '</td></tr>\";\nprint \"<tr><td>PRP</td><td style=\\\"color:${c_pronoun};\\\">Determiner, possessive second</td><td>mine, yours</td></tr>\";\nprint \"<tr><td>PRPS</td><td style=\\\"color:${c_det};\\\">Determiner, possessive</td><td>their, your</td></tr>\";\nprint \"<tr><td>RB</td><td style=\\\"color:${c_adv};\\\">Adverb</td><td>often, not, very, here</td></tr>\";\nprint \"<tr><td>RBR</td><td style=\\\"color:${c_adv};\\\">Adverb, comparative</td><td>faster</td></tr>\";\nprint \"<tr><td>RBS</td><td style=\\\"color:${c_adv};\\\">Adverb, superlative</td><td>fastest</td></tr>\";\nprint \"<tr><td>RP</td><td style=\\\"color:${c_adv};\\\">Adverb, particle</td><td>up, off, out</td></tr>\";\nprint \"<tr><td>SYM</td><td style=\\\"color:${c_sym};\\\">Symbol</td><td>*</td></tr>\";\nprint \"<tr><td>TO</td><td style=\\\"color:${c_prep};\\\">Preposition</td><td>to</td></tr>\";\nprint \"<tr><td>UH</td><td style=\\\"color:${c_int};\\\">Interjection</td><td>oh, yes, mmm</td></tr>\";\nprint \"<tr><td>VB</td><td style=\\\"color:${c_verb};\\\">Verb, infinitive</td><td>take, live</td></tr>\";\nprint \"<tr><td>VBD</td><td style=\\\"color:${c_verb};\\\">Verb, past tense</td><td>took, lived</td></tr>\";\nprint \"<tr><td>VBG</td><td style=\\\"color:${c_verb};\\\">Verb, gerund</td><td>taking, living</td></tr>\";\nprint \"<tr><td>VBN</td><td style=\\\"color:${c_verb};\\\">Verb, past/passive participle</td><td>taken, lived</td></tr>\";\nprint \"<tr><td>VBP</td><td style=\\\"color:${c_verb};\\\">Verb, base present form</td><td>take, live</td></tr>\";\nprint \"<tr><td>VBZ</td><td style=\\\"color:${c_verb};\\\">Verb, present 3SG -s form</td><td>takes, lives</td></tr>\";\nprint \"<tr><td>WDT</td><td style=\\\"color:${c_det};\\\">Determiner, question</td><td>which, whatever</td></tr>\";\nprint \"<tr><td>WP</td style=\\\"color:${c_pronoun};\\\"><td>Pronoun, question</td><td>who, whoever</td></tr>\";\nprint \"<tr><td>WPS</td><td style=\\\"color:${c_det};\\\">Determiner, possessive & question</td><td>whose</td></tr>\";\nprint \"<tr><td>WRB</td><td style=\\\"color:${c_adv};\\\">Adverb, question</td><td>when, how, however</td></tr>\";\nprint \"<tr><td>PP</td><td style=\\\"color:${c_punc};\\\">Punctuation, sentence ender</td><td>., !, ?</td></tr>\";\nprint \"<tr><td>PPC</td><td style=\\\"color:${c_punc};\\\">Punctuation, comma</td><td>,</td></tr>\";\nprint \"<tr><td>PPD</td><td style=\\\"color:${c_punc};\\\">Punctuation, dollar sign</td><td>$</td></tr>\";\nprint \"<tr><td>PPL</td><td style=\\\"color:${c_punc};\\\">Punctuation, quotation mark left</td><td>``</td></tr>\";\nprint \"<tr><td>PPR</td><td style=\\\"color:${c_punc};\\\">Punctuation, quotation mark right</td><td>''</td></tr>\";\nprint \"<tr><td>PPS</td><td style=\\\"color:${c_punc};\\\">Punctuation, colon, semicolon, elipsis</td><td>:, ..., -</td></tr>\";\nprint \"<tr><td>LRB</td><td style=\\\"color:${c_punc};\\\">Punctuation, left bracket</td><td>(, {, [</td></tr>\";\nprint \"<tr><td>RRB</td><td style=\\\"color:${c_punc};\\\">Punctuation, right bracket</td><td>), }, ]</td></tr>\";\nprint \"</table>\";\n",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "CustomPrompt",
+					"IsDisclosed": false,
+					"Resizable": true,
+					"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>L I T E R A R Y &nbsp T O O L B O X</title>\n\t<style type=\"text/css\">\nbody{background-color:black;font:.80em \"Lucida Grande\",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:66%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}\n\t</style> \n</head>\n<body data-kmwindow=\"SCREEN(Main,Left,15%),SCREEN(Main,Top,20%),500,610\">\n<div id=\"title\">\n\t<b>TAGGED TEXT LEGEND</b>\n</div>\n<div id=\"text\">\n<script>\n\tdocument.write(window.KeyboardMaestro.GetVariable('LocalLegend'))\n</script>\n</div><script>\nfunction KMInit() {\n\tdocument.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');\n}\n</script>\n</body>\n</html>\n",
+					"TimeOutAbortsMacro": true,
+					"Floating": true,
+					"Asynchronously": true,
+					"UseText": true
+				},
+				{
+					"MacroActionType": "CustomPrompt",
+					"IsDisclosed": false,
+					"Resizable": true,
+					"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>L I T E R A R Y &nbsp T O O L B O X</title>\n\t<style type=\"text/css\">\nbody{background-color:black;font:.80em \"Lucida Grande\",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:66%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}\n\t</style> \n</head>\n<body data-kmwindow=\"SCREEN(Main,Left,46%),SCREEN(Main,Top,20%),500,610\">\n<div id=\"title\">\n\t<b>TAGGED TEXT</b>\n</div>\n<div id=\"text\">\n<script>\n\tdocument.write(window.KeyboardMaestro.GetVariable('LocalTags'))\n</script>\n</div><script>\nfunction KMInit() {\n\tdocument.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');\n}\n</script>\n</body>\n</html>\n",
+					"TimeOutAbortsMacro": true,
+					"Floating": true,
+					"Asynchronously": true,
+					"UseText": true
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "LocalFlag",
+						"VariableConditionType": "LessThan",
+						"VariableValue": "1",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"Variable": "LocalTags",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Variable",
+					"Text": "#!/usr/bin/perl\n\nuse Lingua::EN::Tagger;\nbinmode STDOUT, \":utf8\";\n\n$selection = $ENV{KMVAR_LocalText};\nmy $parser = Lingua::EN::Tagger->new(stem=>1);\nmy $readable_text = $parser->get_readable($selection);\n\n\t# copy tagged text\n$_ = $readable_text;\n\n\t# initialize variables\nmy ($adj, $adv, $prep, $conj, $det, $foreign, $punc, $sym, $verb, $pronoun, $noun, $pos, $int) = \"0\" x 13;\n\n\t# set colors: match next macro\nmy $c_adj = \"\\#c33\";\nmy $c_pronoun = \"\\#b00\";\nmy $c_noun = \"\\#f00\";\nmy $c_adv = \"\\#396\";\nmy $c_verb = \"\\#6e9\";\nmy $c_prep = \"\\#05f\";\nmy $c_conj = \"goldenrod\";\nmy $c_det = \"\\#93f\";\nmy $c_foreign = \"olive\";\nmy $c_pos = \"cornflowerblue\";\nmy $c_int = \"purple\";\nmy $c_punc = \"white\";\nmy $c_sym = \"lightsteelblue\";\n\n\t# conj\n$conj = s#(\\w+?)/CC#<span style=\"color:${c_conj};\">$1</span>#g;\n\t# adj\n$adj = s#(\\w+?)/CD#<span style=\"color:${c_adj};\">$1</span>#g;\n$adj += s#(\\w+?)/JJ[RS]?#<span style=\"color:${c_adj};\">$1</span>#g;\n\t# determiners\n$det = s#(\\w+?)\\/(PRPS|WDT|WPS|DET|PDT)#<span style=\"color:${c_det};\">$1</span>#g;\n\t# pronouns\n$pronoun = s#(\\w+?)/(EX|WP|PRP)#<span style=\"color:${c_pronoun};\">$1</span>#g;\n\t# foreign words\n$foreign = s#(\\w+?)/FW#<span style=\"color:${c_foreign};\">$1</span>#g;\n\t# prep\n$prep = s#(\\w+?)/(IN|TO)#<span style=\"color:${c_prep};\">$1</span>#g;\n\t# symbols\n$sym = s#(\\S+?)/(LS|SYM)#<span style=\"color:${c_sym};\">$1</span>#g;\n\t# verb\n$verb = s#(\\w+?)/(MD|VB[DGNPZ]?)#<span style=\"color:${c_verb};\">$1</span>#g;\n\t# noun\n$noun = s#(\\S+?)/(NNPS|NNS|NNP|NN)#<span style=\"color:${c_noun};\">$1</span>#g;\n\t# possessive\n$pos = s#(\\S+?)/POS#<span style=\"color:${c_pos};\">$1</span>#g;\n\t# adv\n$adv = s#(\\w+?)/(R[BP][RS]?|WRB)#<span style=\"color:${c_adv};\">$1</span>#g;\n\t#interjection\n$int = s#(\\w+?)/UH#<span style=\"color:${c_int};\">$1</span>#g;\n\t# punc\n$punc =  s#(\\S+?)/(PP[CDLRS]?|LRB|RRB)#<span style=\"color:${c_punc};\">$1</span>#g;\n\nprint \"<p>C O U N T S</p><p style=\\\"margin-left:16px;\\\">\";\nprint \"<p>The selection contains:</p>\";\nprint \"<table border=0 cellpadding=3 cellspacing=0 width=80% align=center>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$adj</td><td><span style=\\\"color:${c_adj};\\\">Adjectives</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$noun</td><td><span style=\\\"color:${c_noun};\\\">Nouns</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$pronoun</td><td><span style=\\\"color:${c_pronoun};\\\">Pronouns</span></td>\\n</tr>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$adv</td><td><span style=\\\"color:${c_adv};\\\">Adverbs</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$verb</td><td><span style=\\\"color:${c_verb};\\\">Verbs</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$prep</td><td><span style=\\\"color:${c_prep};\\\">Prepositions</span></td>\\n</tr>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$conj</td><td><span style=\\\"color:${c_conj};\\\">Conjunctions</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$det</td><td><span style=\\\"color:${c_det};\\\">Determiners</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$punc</td><td><span style=\\\"color:${c_punc};\\\">Punctuation</span></td>\\n</tr>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$pos</td><td><span style=\\\"color:${c_pos};\\\">Possessives</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$sym</td><td><span style=\\\"color:${c_sym};\\\">Symbols</span></td>\\n\";\nprint \"<td align=\\\"right\\\">$foreign</td><td><span style=\\\"color:${c_foreign};\\\">Foreign Words</span></td>\\n</tr>\\n\";\n\nprint \"<tr>\\n<td align=\\\"right\\\">$int</td><td><span style=\\\"color:${c_int};\\\">Interjections</span></td>\\n\";\nprint \"<td align=\\\"right\\\"></td><td>Untagged</td>\\n</tr>\\n\";\n\n\nprint \"</table>\\n\";\n\nprint \"<p>T A G G E D &nbsp; T E X T</p>\";\nprint \"<p>\\n$_\\n</p>\";\n\n#print \"<p>T E X T</p>\";\n#print \"<p>\\n$readable_text\\n</p>\";\n",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "CustomPrompt",
+					"Resizable": true,
+					"TimeOutAbortsMacro": true,
+					"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>L I T E R A R Y &nbsp T O O L B O X</title>\n\t<style type=\"text/css\">\nbody{background-color:black;font:.80em \"Lucida Grande\",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:66%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}\n\t</style> \n</head>\n<body data-kmwindow=\"SCREEN(Main,Left,46%),SCREEN(Main,Top,20%),500,610\">\n<div id=\"title\">\n\t<b>TAGGED TEXT</b>\n</div>\n<div id=\"text\">\n<script>\n\tdocument.write(window.KeyboardMaestro.GetVariable('LocalTags'))\n</script>\n</div><script>\nfunction KMInit() {\n\tdocument.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');\n}\n</script>\n</body>\n</html>\n",
+					"Floating": true,
+					"UseText": true
+				}
+			]
+		}
+	],
+	"CreationDate": 563666443.197277,
+	"ModificationDate": 565401618.439115,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 35,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 35,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "41)Parts of Speech [Opt-P for tags]"
+}

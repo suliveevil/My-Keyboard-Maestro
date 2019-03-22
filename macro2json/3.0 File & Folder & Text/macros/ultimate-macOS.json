@@ -1,0 +1,28 @@
+{
+	"UID": "EEA0D355-FF9F-4F04-849F-312869ED91E8",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "open /allmyfiles/gitFiles/ultimate-macOS/",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567071968.311578,
+	"ModificationDate": 569418255.098635,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "ultimate-macOS"
+}

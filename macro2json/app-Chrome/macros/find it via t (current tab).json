@@ -1,0 +1,59 @@
+{
+	"UID": "FB0B5385-2D11-4CDF-9206-CFC76F44A27C",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"File",
+				"Open Location..."
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 123,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "t \n"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "1",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 36,
+			"Modifiers": 0
+		}
+	],
+	"CreationDate": 566900638.71764,
+	"ModificationDate": 420810568.356869,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 17,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "find it via t (current tab)",
+	"CustomIconData": "KMEP-Help"
+}

@@ -1,0 +1,39 @@
+{
+	"UID": "4460EF08-6B0C-4A5D-A489-F1A62AA78A0B",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "python3 -m yapf %SystemClipboard%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 567045213.679116,
+	"ModificationDate": 568133213.010656,
+	"Triggers": [
+		{
+			"TypedString": "!flake8",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！flake8",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "!flake",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！flake",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "PyTool-flake8"
+}

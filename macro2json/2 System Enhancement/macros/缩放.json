@@ -1,0 +1,24 @@
+{
+	"UID": "69F7B8B6-5B7F-4310-9EA4-DCA27BE8C3A2",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 28,
+			"Modifiers": 2304
+		}
+	],
+	"CreationDate": 568711571.935139,
+	"ModificationDate": 573438532.894982,
+	"Triggers": [
+		{
+			"Case": "Ignore",
+			"TypedString": "bbbbb",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "缩放"
+}

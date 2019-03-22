@@ -1,0 +1,30 @@
+{
+	"UID": "D31D2B8E-C22D-4A74-BC9F-6257CDB78549",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\n    activate\n    set f to choose file with invisibles\n    set p to POSIX path of f\n    do shell script \"open \" & quoted form of p\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567338061.288786,
+	"IsActive": false,
+	"ModificationDate": 567338096.568855,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 31,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Open Anything"
+}

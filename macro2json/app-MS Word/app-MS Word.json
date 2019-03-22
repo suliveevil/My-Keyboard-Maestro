@@ -1,0 +1,25 @@
+{
+	"AddToMacroPalette": false,
+	"AddToStatusMenu": false,
+	"CreationDate": 566319300.925372,
+	"Modifiers": 0,
+	"PaletteUnderMouse": false,
+	"Name": "app-MS Word",
+	"UID": "4BA109C0-721C-405C-B450-21BEB71A374C",
+	"Targeting": {
+		"Targeting": "Included",
+		"TargetingApps": [
+			{
+				"NewFile": "/Applications/Microsoft Word.app",
+				"BundleIdentifier": "com.microsoft.Word",
+				"Name": "Microsoft Word"
+			}
+		]
+	},
+	"Macros": [],
+	"ToggleMacroUID": "122BD625-94BF-424E-AB73-86A8C422ED7A",
+	"Activate": "AlwaysWithPalette",
+	"IsActive": false,
+	"KeyCode": 32767,
+	"DisplayToggle": false
+}

@@ -1,0 +1,628 @@
+{
+	"UID": "BD1F36D6-8745-496A-B32E-557E7220AEFA",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Ver 1.0.1 (87svx0)",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4LAgAAKwAAAAEAAAAD\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgVG9tIEZs\n\t\t\t\t\t\t\tb2VyZW4gPGVjZGx0ZkBt\n\t\t\t\t\t\t\tYWMuY29tPiwgaHR0cDov\n\t\t\t\t\t\t\tL2RmbGVjdC5uZXRcClwK\n\t\t\t\t\t\t\tMS4wLjFcCkhUTUwgcHJv\n\t\t\t\t\t\t\tbXB0IHVwZGF0ZWQgZm9y\n\t\t\t\t\t\t\tIG1hY09TIFNpZXJyYS5c\n\t\t\t\t\t\t\tClNwb3RsaWdodCBjb21t\n\t\t\t\t\t\t\tZW50IG5vdyBnZXRzIHdy\n\t\t\t\t\t\t\taXR0ZW4gYWxzbyB3aGVu\n\t\t\t\t\t\t\tIGFkdnBuZyBpcyBkaXNh\n\t\t\t\t\t\t\tYmxlZC5cCkNoYW5nZWQg\n\t\t\t\t\t\t\tc29tZSBkZWZhdWx0czog\n\t\t\t\t\t\t\tU3BlZWQgLT4gMSwgRGl0\n\t\t\t\t\t\t\taGVyIC0+IDEsIGFkdnBu\n\t\t\t\t\t\t\tZyAtPiA3en0BAAAAIwAA\n\t\t\t\t\t\t\tAAEAAAAHAAAAVFhULnJ0\n\t\t\t\t\t\t\tZhAAAAC0vCBctgEAAAAA\n\t\t\t\t\t\t\tAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Reset",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "pqOptions",
+					"Text": ""
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "pqScriptOut",
+					"Text": ""
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "pqDeflateOut",
+					"Text": ""
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "pqDeflateResult",
+					"Text": "–"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "HTML Result Button",
+					"Text": ""
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Set defaults",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "pqQuality",
+						"VariableConditionType": "DoesNotExist",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqQuality",
+					"Text": "60-90"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqDither",
+					"Text": "1"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqSpeed",
+					"Text": "1"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqSkip",
+					"Text": "1"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqOverwrite",
+					"Text": "0"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqSuffix",
+					"Text": "standard"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqVerbose",
+					"Text": "1"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqWriteComment",
+					"Text": "1"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqAdvpng",
+					"Text": "3"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqImageoptim",
+					"Text": "0"
+				}
+			]
+		},
+		{
+			"MacroActionType": "CustomPrompt",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"Text": "<html>\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>Optimize PNG</title>\n\t<style media=\"screen\" type=\"text/css\">\t\t\n\t\tbody {\n\t\t\tfont-family: -apple-system, 'Helvetica Neue', 'Lucida Grande';\n\t\t\tbackground: #E6E6E6;\n\t\t}\n\t\t\n\t\ttable, th, td {\n\t\t\tfont-size: small;\n\t\t\tborder-collapse: collapse;\n\t\t\tpadding: 2px;\n\t\t\ttext-align: left;\n\t\t\tvertical-align: middle;\t\n\t\t}\n\t\t\n\t\tth {\n\t\t\tfont-size: larger;\n\t\t\tfont-weight: 600;\n\t\t\tpadding: 0 0 10 0;\n\t\t}\n\t\t\n\t\t.last-sub-row {\n\t\t\tborder-bottom: 1px solid;\n\t\t}\n\t\t\n\t\t.button {\n\t\t\tfloat: right;\n\t\t}\n\n\t\t.button-default {\n\t\t\tfont-weight: 700;\n\t\t}\n\n\t</style>\n\t<script type=\"text/javascript\">\n\t\tfunction KMInit() {\n\t\t\tdocument.getElementById(\"pqQuality\").value = window.KeyboardMaestro.GetVariable(\"pqQuality\");\n\t\t\tdocument.getElementById(\"pqDither\").value = window.KeyboardMaestro.GetVariable(\"pqDither\");\n\t\t\tdocument.getElementById(\"pqSpeed\").value = window.KeyboardMaestro.GetVariable(\"pqSpeed\");\n\t\t\tdocument.getElementById(\"pqSkip\").checked = +window.KeyboardMaestro.GetVariable(\"pqSkip\"); // Checkbox\n\t\t\tdocument.getElementById(\"pqOverwrite\").checked = +window.KeyboardMaestro.GetVariable(\"pqOverwrite\"); // Checkbox\n\t\t\tdocument.getElementById(\"pqSuffix\").value = window.KeyboardMaestro.GetVariable(\"pqSuffix\");\n\t\t\tdocument.getElementById(\"pqVerbose\").checked = +window.KeyboardMaestro.GetVariable(\"pqVerbose\"); // Checkbox\n\t\t\tdocument.getElementById(\"pqWriteComment\").checked = +window.KeyboardMaestro.GetVariable(\"pqWriteComment\"); // Checkbox\n\t\t\tdocument.getElementById(\"pqAdvpng\").value = window.KeyboardMaestro.GetVariable(\"pqAdvpng\");\n\t\t\tdocument.getElementById(\"pqImageoptim\").checked = +window.KeyboardMaestro.GetVariable(\"pqImageoptim\"); // Checkbox\n\t\t}\n\t\t\n\t\tfunction submitWindow(result) {\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqQuality\", document.getElementById(\"pqQuality\").value);\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqDither\", document.getElementById(\"pqDither\").value);\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqSpeed\", document.getElementById(\"pqSpeed\").value);\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqSkip\", document.getElementById(\"pqSkip\").checked == true ? \"1\" : \"0\"); // Checkbox\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqOverwrite\", document.getElementById(\"pqOverwrite\").checked == true ? \"1\" : \"0\"); // Checkbox\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqSuffix\", document.getElementById(\"pqSuffix\").value);\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqVerbose\", document.getElementById(\"pqVerbose\").checked == true ? \"1\" : \"0\"); // Checkbox\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqWriteComment\", document.getElementById(\"pqWriteComment\").checked == true ? \"1\" : \"0\"); // Checkbox\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqAdvpng\", document.getElementById(\"pqAdvpng\").value);\n\t\t\twindow.KeyboardMaestro.SetVariable(\"pqImageoptim\", document.getElementById(\"pqImageoptim\").checked == true ? \"1\" : \"0\"); // Checkbox\n\t\t\twindow.KeyboardMaestro.Submit(result);\n\t\t}\n\t\t\n\t</script>\n</head>\n<body data-kmwindow=\"SCREEN(Main,Left,80%),SCREEN(Main,Top,10%),340,320\">\n<form>\n\t<table id=\"pngquant-settings\" class=\"settings\">\n\t\t<thead class=\"last-sub-row\">\n\t\t\t<th colspan=\"2\">Optimize PNG</th>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td class=\"label\">Quality [%]:</td>\n\t\t\t\t<td> \n\t\t\t\t<input id=\"pqQuality\" placeholder=\"60-90\" type=\"text\" size=\"6\" tabindex=\"1\" autofocus title=\"Visual quality range in percent of the quality of the original image. If the minimum value can not be achieved the process will be skipped.\"> </td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td class=\"label\">Dither:</td>\n\t\t\t\t<td> \n\t\t\t\t<select id=\"pqDither\" title=\"Use a low dithering value or 0 for screenshot-like images. Use a higher value or 1 for halftone (photo-like) images, or for screenshots with window shadow. Dithering always increases file size.\">\n\t\t\t\t\t<option value=\"0\">&#x2008;0</option>\n\t\t\t\t\t<option disabled>&#x2500;</option>\n\t\t\t\t\t<option value=\".1\">.1</option>\n\t\t\t\t\t<option value=\".2\">.2</option>\n\t\t\t\t\t<option value=\".3\">.3</option>\n\t\t\t\t\t<option value=\".4\">.4</option>\n\t\t\t\t\t<option value=\".5\">.5</option>\n\t\t\t\t\t<option value=\".6\">.6</option>\n\t\t\t\t\t<option value=\".7\">.7</option>\n\t\t\t\t\t<option value=\".8\">.8</option>\n\t\t\t\t\t<option value=\".9\">.9</option>\n\t\t\t\t\t<option disabled>&#x2500;</option>\n\t\t\t\t\t<option value=\"1\">&#x2008;1</option>\n\t\t\t\t</select>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr class=\"last-sub-row\">\n\t\t\t\t<td class=\"label\">Speed:</td>\n\t\t\t\t<td> \n\t\t\t\t<select id=\"pqSpeed\" title=\"1 is slowest and gives best results. Recommended: 1&ndash;3. Speed 11 disables dithering and lowers compression level.\">\n\t\t\t\t\t<option value=\"1\">&#x2007;1</option>\n\t\t\t\t\t<option value=\"2\">&#x2007;2</option>\n\t\t\t\t\t<option value=\"3\">&#x2007;3</option>\n\t\t\t\t\t<option value=\"4\">&#x2007;4</option>\n\t\t\t\t\t<option value=\"5\">&#x2007;5</option>\n\t\t\t\t\t<option value=\"6\">&#x2007;6</option>\n\t\t\t\t\t<option value=\"7\">&#x2007;7</option>\n\t\t\t\t\t<option value=\"8\">&#x2007;8</option>\n\t\t\t\t\t<option value=\"9\">&#x2007;9</option>\n\t\t\t\t\t<option value=\"10\">10</option>\n\t\t\t\t\t<option disabled>&#x2500;</option>\n\t\t\t\t\t<option value=\"11\">11</option>\n\t\t\t\t</select>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td class=\"label\">Skip if larger:</td>\n\t\t\t\t<td> \n\t\t\t\t<input id=\"pqSkip\" type=\"checkbox\" title=\"The output file will be skipped if it is not significantly smaller than the original.\"> </td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td class=\"label\">Overwrite existing file:</td>\n\t\t\t\t<td> \n\t\t\t\t<input id=\"pqOverwrite\" type=\"checkbox\" title=\"Allows pngquant to overwrite any existing output file with the same name, or the original file if selected in the File Naming option.\"> </td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td class=\"label\">File naming:</td>\n\t\t\t\t<td> \n\t\t\t\t<select id=\"pqSuffix\" title=\"The standard suffix is .or8 (or .fs8 with dithering). A unique suffix is useful if you’re going to test various settings on the same image.\">\n\t\t\t\t\t<option value=\"standard\">Standard suffix</option>\n\t\t\t\t\t<option value=\"unique\">Unique suffix</option>\n\t\t\t\t\t<option disabled>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</option>\n\t\t\t\t\t<option value=\"overwrite\">Overwrite original file</option>\n\t\t\t\t</select>\n\t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<td class=\"label\">Verbose:</td>\n\t\t\t\t<td> \n\t\t\t\t<input id=\"pqVerbose\" type=\"checkbox\" title=\"Opens a window with the detailed results.\"> </td>\n\t\t\t</tr>\n\t\t\t<tr class=\"last-sub-row\">\n\t\t\t\t<td class=\"label\">Write comment:</td>\n\t\t\t\t<td> \n\t\t\t\t<input id=\"pqWriteComment\" type=\"checkbox\" title=\"Writes the settings and the effectivly achieved quantization, number of colors and compression as a Finder comment to the file.\"> </td>\n\t\t\t</tr>\n\t\t</tbody>\n\t\t<tr class=\"last-sub-row\">\n\t\t\t<td class=\"label\">Deflate with <i>advpng</i>&#x200A;:</td>\n\t\t\t<td> \n\t\t\t<select id=\"pqAdvpng\" title=\"The type of deflate library advpng should use. zlib is fastest but won&rsquo;t improve compression much. Recommended: Extra.\">\n\t\t\t\t<optgroup label=\"Deflate\"> \n\t\t\t\t<option value=\"1\">Fast (zlib)</option>\n\t\t\t\t<option value=\"2\">Normal (7z)</option>\n\t\t\t\t<option value=\"3\">Extra (7z)</option>\n\t\t\t\t<option value=\"4\">Insane (zopfli)</option>\n\t\t\t\t</optgroup> <optgroup label=\"Other\"> \n\t\t\t\t<option value=\"None\">Do not use advpng</option>\n\t\t\t\t<option value=\"0\">Uncompress</option>\n\t\t\t\t</optgroup> \n\t\t\t</select>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"label\">Hand over to <i>ImageOptim</i>&#x200A;:</td>\n\t\t\t<td> \n\t\t\t<input id=\"pqImageoptim\" type=\"checkbox\" title=\"File will be opened in ImageOptim for further processing. Don’t forget to setup ImageOptim *before* selecting this.\"> </td>\n\t\t</tr>\n\t</table>\n\t<div class=\"button\">\n\t\t<button id=\"Cancel\" type=\"button\" onclick=\"window.KeyboardMaestro.Cancel('Cancel')\">Cancel</button>\n\t\t<button class=\"button-default\" id=\"OK\" type=\"submit\" onclick=\"submitWindow('OK')\">OK</button> \n\t</div>\n</form>\n</body>\n</html>\n",
+			"TimeOutAbortsMacro": true,
+			"Floating": true,
+			"UseText": true
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "HTML Result Button",
+						"VariableConditionType": "DoesNotContain",
+						"VariableValue": "OK",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "Cancel",
+					"Action": "CancelThisMacro",
+					"IsDisclosed": false
+				}
+			]
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Compose command line",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "pqOptions",
+					"Text": "--quality=%Variable%pqQuality% --floyd=%Variable%pqDither% --speed %Variable%pqSpeed%"
+				},
+				{
+					"MacroActionType": "Switch",
+					"Source": "Variable",
+					"Variable": "pqSkip",
+					"CaseEntries": [
+						{
+							"TestValue": "1",
+							"Actions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "pqOptions",
+									"Text": "%Variable%pqOptions% --skip-if-larger"
+								}
+							],
+							"ConditionType": "Is"
+						}
+					]
+				},
+				{
+					"MacroActionType": "Switch",
+					"Source": "Variable",
+					"Variable": "pqOverwrite",
+					"CaseEntries": [
+						{
+							"TestValue": "1",
+							"Actions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "pqOptions",
+									"Text": "%Variable%pqOptions% --force"
+								}
+							],
+							"ConditionType": "Is"
+						}
+					]
+				},
+				{
+					"MacroActionType": "Switch",
+					"Source": "Variable",
+					"Variable": "pqSuffix",
+					"CaseEntries": [
+						{
+							"TestValue": "overwrite",
+							"Actions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "pqOptions",
+									"Text": "%Variable%pqOptions% --ext=.png"
+								}
+							],
+							"ConditionType": "Contains"
+						}
+					]
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "pqVerbose",
+								"VariableConditionType": "Is",
+								"VariableValue": "1",
+								"ConditionType": "Variable"
+							},
+							{
+								"Variable": "pqWriteComment",
+								"VariableConditionType": "Is",
+								"VariableValue": "1",
+								"ConditionType": "Variable"
+							},
+							{
+								"Variable": "pqImageoptim",
+								"VariableConditionType": "Is",
+								"VariableValue": "1",
+								"ConditionType": "Variable"
+							},
+							{
+								"Variable": "pqAdvpng",
+								"VariableConditionType": "DoesNotContain",
+								"VariableValue": "None",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "Any"
+					},
+					"ElseActionListDisclosed": false,
+					"ThenActions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "pqOptions",
+							"Text": "%Variable%pqOptions% -v"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "For",
+			"ActionColor": "Aqua",
+			"Collections": {
+				"CollectionList": [
+					{
+						"CollectionType": "FinderSelection"
+					}
+				]
+			},
+			"Actions": [
+				{
+					"MacroActionType": "GetFileAttribute",
+					"Variable": "pqFileExt",
+					"Attribute": "Extension",
+					"Path": "%Variable%pqFile%"
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionColor": "Teal",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "pqFileExt",
+								"VariableConditionType": "Matches",
+								"VariableValue": "png|tif|bmp|gif",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ElseActionListDisclosed": false,
+					"ThenActions": [
+						{
+							"MacroActionType": "Switch",
+							"Source": "Variable",
+							"IsDisclosed": false,
+							"Variable": "pqSuffix",
+							"CaseEntries": [
+								{
+									"TestValue": "unique",
+									"Actions": [
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "pqOptions",
+											"Text": "%Variable%pqOptions% --ext=-%Calculate%TRUNC(SECONDS())%.png"
+										}
+									],
+									"ConditionType": "Contains"
+								}
+							]
+						},
+						{
+							"MacroActionType": "ExecuteShellScript",
+							"ActionNotes": "--force --ext=.png",
+							"StopOnFailure": false,
+							"Source": "Nothing",
+							"TrimResults": true,
+							"IncludeStdErr": true,
+							"Variable": "pqScriptOut",
+							"UseText": true,
+							"TrimResultsNew": true,
+							"ActionColor": "Red",
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "Variable",
+							"Text": "pngquant $KMVAR_pqOptions -- \"$KMVAR_pqFile\"",
+							"NotifyOnFailure": false
+						},
+						{
+							"MacroActionType": "Switch",
+							"Source": "Variable",
+							"IsDisclosed": false,
+							"Variable": "pqScriptOut",
+							"CaseEntries": [
+								{
+									"TestValue": "should|There were errors",
+									"Actions": [
+										{
+											"MacroActionType": "Alert",
+											"Title": "Error!",
+											"TimeOutAbortsMacro": true,
+											"Text": "%Variable%pqScriptOut%\n\nThe macro will be canceled.",
+											"SoundPath": ""
+										},
+										{
+											"MacroActionType": "Cancel",
+											"Action": "CancelThisMacro"
+										}
+									],
+									"ConditionType": "Matches"
+								}
+							]
+						},
+						{
+							"MacroActionType": "IfThenElse",
+							"IsDisclosed": false,
+							"ElseActions": [],
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionList": [
+									{
+										"Variable": "pqVerbose",
+										"VariableConditionType": "Is",
+										"VariableValue": "1",
+										"ConditionType": "Variable"
+									},
+									{
+										"Variable": "pqAdvpng",
+										"VariableConditionType": "Contains",
+										"VariableValue": "None",
+										"ConditionType": "Variable"
+									}
+								],
+								"ConditionListMatch": "All"
+							},
+							"ElseActionListDisclosed": false,
+							"ThenActions": [
+								{
+									"MacroActionType": "InsertText",
+									"Action": "DisplayWindow",
+									"Text": "==========\nPNGQUANT\n==========\n\\nUsed options:\n\\n%Variable%pqOptions%\n\\n\\n%Variable%pqScriptOut%",
+									"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC6YAQAA\n\t\t\t\t\t\t\t\tKwAAAAEAAACQ\n\t\t\t\t\t\t\t\tAQAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNTA0CntcZm9u\n\t\t\t\t\t\t\t\tdHRibFxmMFxm\n\t\t\t\t\t\t\t\tbmlsXGZjaGFy\n\t\t\t\t\t\t\t\tc2V0MCBIZWx2\n\t\t\t\t\t\t\t\tZXRpY2FOZXVl\n\t\t\t\t\t\t\t\tO30Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp7XCpc\n\t\t\t\t\t\t\t\tZXhwYW5kZWRj\n\t\t\t\t\t\t\t\tb2xvcnRibDtc\n\t\t\t\t\t\t\t\tY3NncmF5XGMx\n\t\t\t\t\t\t\t\tMDAwMDA7fQpc\n\t\t\t\t\t\t\t\tcGFyZFx0eDU2\n\t\t\t\t\t\t\t\tMFx0eDExMjBc\n\t\t\t\t\t\t\t\tdHgxNjgwXHR4\n\t\t\t\t\t\t\t\tMjI0MFx0eDI4\n\t\t\t\t\t\t\t\tMDBcdHgzMzYw\n\t\t\t\t\t\t\t\tXHR4MzkyMFx0\n\t\t\t\t\t\t\t\teDQ0ODBcdHg1\n\t\t\t\t\t\t\t\tMDQwXHR4NTYw\n\t\t\t\t\t\t\t\tMFx0eDYxNjBc\n\t\t\t\t\t\t\t\tdHg2NzIwXHBh\n\t\t\t\t\t\t\t\tcmRpcm5hdHVy\n\t\t\t\t\t\t\t\tYWxccGFydGln\n\t\t\t\t\t\t\t\taHRlbmZhY3Rv\n\t\t\t\t\t\t\t\tcjAKClxmMFxm\n\t\t\t\t\t\t\t\tczI2IFxjZjAg\n\t\t\t\t\t\t\t\tPT09PT09PT09\n\t\t\t\t\t\t\t\tPVwKUE5HUVVB\n\t\t\t\t\t\t\t\tTlRcCj09PT09\n\t\t\t\t\t\t\t\tPT09PT1cClxc\n\t\t\t\t\t\t\t\tblVzZWQgb3B0\n\t\t\t\t\t\t\t\taW9uczpcClxc\n\t\t\t\t\t\t\t\tbiVWYXJpYWJs\n\t\t\t\t\t\t\t\tZSVwcU9wdGlv\n\t\t\t\t\t\t\t\tbnMlXApcXG5c\n\t\t\t\t\t\t\t\tXG4lVmFyaWFi\n\t\t\t\t\t\t\t\tbGUlcHFTY3Jp\n\t\t\t\t\t\t\t\tcHRPdXQlfQEA\n\t\t\t\t\t\t\t\tAAAjAAAAAQAA\n\t\t\t\t\t\t\t\tAAcAAABUWFQu\n\t\t\t\t\t\t\t\tcnRmEAAAAJTv\n\t\t\t\t\t\t\t\t7Fe2AQAAAAAA\n\t\t\t\t\t\t\t\tAAAAAAA=\n\t\t\t\t\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+								}
+							]
+						},
+						{
+							"MacroActionType": "IfThenElse",
+							"ActionColor": "Yellow",
+							"ElseActions": [
+								{
+									"MacroActionType": "IfThenElse",
+									"ActionColor": "Purple",
+									"ElseActions": [],
+									"TimeOutAbortsMacro": true,
+									"Conditions": {
+										"ConditionList": [
+											{
+												"Variable": "pqWriteComment",
+												"VariableConditionType": "Is",
+												"VariableValue": "1",
+												"ConditionType": "Variable"
+											},
+											{
+												"Variable": "pqImageoptim",
+												"VariableConditionType": "Is",
+												"VariableValue": "1",
+												"ConditionType": "Variable"
+											},
+											{
+												"Variable": "pqAdvpng",
+												"VariableConditionType": "DoesNotContain",
+												"VariableValue": "None",
+												"ConditionType": "Variable"
+											}
+										],
+										"ConditionListMatch": "Any"
+									},
+									"ElseActionListDisclosed": false,
+									"ThenActions": [
+										{
+											"MacroActionType": "GetFileAttribute",
+											"IsDisclosed": false,
+											"Variable": "pqPath",
+											"Attribute": "Parent",
+											"Path": "%Variable%pqFile%"
+										},
+										{
+											"MacroActionType": "SearchRegEx",
+											"Action": "CaseSensitiveRegEx",
+											"Search": "(?m)-color image as (.*?)$",
+											"IsDisclosed": false,
+											"Captures": [
+												"",
+												"pqFileOut"
+											],
+											"Source": "Variable",
+											"Variable": "pqScriptOut"
+										},
+										{
+											"MacroActionType": "IfThenElse",
+											"ElseActions": [],
+											"TimeOutAbortsMacro": true,
+											"Conditions": {
+												"ConditionList": [
+													{
+														"Variable": "pqAdvpng",
+														"VariableConditionType": "DoesNotContain",
+														"VariableValue": "None",
+														"ConditionType": "Variable"
+													}
+												],
+												"ConditionListMatch": "All"
+											},
+											"ElseActionListDisclosed": false,
+											"ThenActions": [
+												{
+													"MacroActionType": "ExecuteShellScript",
+													"ActionNotes": "--force --ext=.png",
+													"StopOnFailure": false,
+													"Source": "Nothing",
+													"TrimResults": true,
+													"IncludeStdErr": true,
+													"Variable": "pqDeflateOut",
+													"UseText": true,
+													"TrimResultsNew": true,
+													"ActionColor": "Red",
+													"TimeOutAbortsMacro": true,
+													"Path": "",
+													"DisplayKind": "Variable",
+													"Text": "advpng -z$KMVAR_pqAdvpng \"$KMVAR_pqPath\"/\"$KMVAR_pqFileOut\"",
+													"NotifyOnFailure": false
+												},
+												{
+													"MacroActionType": "IfThenElse",
+													"IsDisclosed": false,
+													"ElseActions": [],
+													"TimeOutAbortsMacro": true,
+													"Conditions": {
+														"ConditionList": [
+															{
+																"Variable": "pqVerbose",
+																"VariableConditionType": "Is",
+																"VariableValue": "1",
+																"ConditionType": "Variable"
+															}
+														],
+														"ConditionListMatch": "All"
+													},
+													"ElseActionListDisclosed": false,
+													"ThenActions": [
+														{
+															"MacroActionType": "InsertText",
+															"Action": "DisplayWindow",
+															"Text": "==========\nPNGQUANT\n==========\n\\nUsed options:\n\\n%Variable%pqOptions%\n\\n\\n%Variable%pqScriptOut%\\n\\n\n======\nADVPNG\n======\n\\n%Variable%pqDeflateOut%",
+															"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC7SAQAA\n\t\t\t\t\t\t\t\tKwAAAAEAAADK\n\t\t\t\t\t\t\t\tAQAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNTA0CntcZm9u\n\t\t\t\t\t\t\t\tdHRibFxmMFxm\n\t\t\t\t\t\t\t\tbmlsXGZjaGFy\n\t\t\t\t\t\t\t\tc2V0MCBIZWx2\n\t\t\t\t\t\t\t\tZXRpY2FOZXVl\n\t\t\t\t\t\t\t\tO30Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp7XCpc\n\t\t\t\t\t\t\t\tZXhwYW5kZWRj\n\t\t\t\t\t\t\t\tb2xvcnRibDtc\n\t\t\t\t\t\t\t\tY3NncmF5XGMx\n\t\t\t\t\t\t\t\tMDAwMDA7fQpc\n\t\t\t\t\t\t\t\tcGFyZFx0eDU2\n\t\t\t\t\t\t\t\tMFx0eDExMjBc\n\t\t\t\t\t\t\t\tdHgxNjgwXHR4\n\t\t\t\t\t\t\t\tMjI0MFx0eDI4\n\t\t\t\t\t\t\t\tMDBcdHgzMzYw\n\t\t\t\t\t\t\t\tXHR4MzkyMFx0\n\t\t\t\t\t\t\t\teDQ0ODBcdHg1\n\t\t\t\t\t\t\t\tMDQwXHR4NTYw\n\t\t\t\t\t\t\t\tMFx0eDYxNjBc\n\t\t\t\t\t\t\t\tdHg2NzIwXHBh\n\t\t\t\t\t\t\t\tcmRpcm5hdHVy\n\t\t\t\t\t\t\t\tYWxccGFydGln\n\t\t\t\t\t\t\t\taHRlbmZhY3Rv\n\t\t\t\t\t\t\t\tcjAKClxmMFxm\n\t\t\t\t\t\t\t\tczI2IFxjZjAg\n\t\t\t\t\t\t\t\tPT09PT09PT09\n\t\t\t\t\t\t\t\tPVwKUE5HUVVB\n\t\t\t\t\t\t\t\tTlRcCj09PT09\n\t\t\t\t\t\t\t\tPT09PT1cClxc\n\t\t\t\t\t\t\t\tblVzZWQgb3B0\n\t\t\t\t\t\t\t\taW9uczpcClxc\n\t\t\t\t\t\t\t\tbiVWYXJpYWJs\n\t\t\t\t\t\t\t\tZSVwcU9wdGlv\n\t\t\t\t\t\t\t\tbnMlXApcXG5c\n\t\t\t\t\t\t\t\tXG4lVmFyaWFi\n\t\t\t\t\t\t\t\tbGUlcHFTY3Jp\n\t\t\t\t\t\t\t\tcHRPdXQlXFxu\n\t\t\t\t\t\t\t\tXFxuXAo9PT09\n\t\t\t\t\t\t\t\tPT1cCkFEVlBO\n\t\t\t\t\t\t\t\tR1wKPT09PT09\n\t\t\t\t\t\t\t\tXApcXG4lVmFy\n\t\t\t\t\t\t\t\taWFibGUlcHFE\n\t\t\t\t\t\t\t\tZWZsYXRlT3V0\n\t\t\t\t\t\t\t\tJX0BAAAAIwAA\n\t\t\t\t\t\t\t\tAAEAAAAHAAAA\n\t\t\t\t\t\t\t\tVFhULnJ0ZhAA\n\t\t\t\t\t\t\t\tAACU7+xXtgEA\n\t\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+														}
+													]
+												}
+											]
+										},
+										{
+											"MacroActionType": "Switch",
+											"Source": "Variable",
+											"Variable": "pqWriteComment",
+											"CaseEntries": [
+												{
+													"TestValue": "1",
+													"Actions": [
+														{
+															"MacroActionType": "SearchRegEx",
+															"Action": "CaseSensitiveRegEx",
+															"Search": "(?ms)(\\d*) colors found.*?(MSE.*\\)).*?writing (\\d{1,3})",
+															"Source": "Variable",
+															"Captures": [
+																"",
+																"pqColorsPrev",
+																"pqQualityOut",
+																"pqColorsOut"
+															],
+															"Variable": "pqScriptOut"
+														},
+														{
+															"MacroActionType": "SearchRegEx",
+															"Action": "CaseSensitiveRegEx",
+															"NotifyOnFailure": false,
+															"Search": "\\d*%",
+															"Captures": [
+																"pqDeflateResult"
+															],
+															"Source": "Variable",
+															"Variable": "pqDeflateOut",
+															"StopOnFailure": false
+														},
+														{
+															"MacroActionType": "SetFileAttribute",
+															"Text": "q%Variable%pqQuality%, d%Variable%pqDither%, s%Variable%pqSpeed%; %Variable%pqColorsPrev% -> %Variable%pqColorsOut% colors, %Variable%pqQualityOut% — z%Variable%pqAdvpng%; %Variable%pqDeflateResult%",
+															"Attribute": "Comment",
+															"Path": "%Variable%pqPath%/%Variable%pqFileOut%"
+														}
+													],
+													"ConditionType": "Is"
+												}
+											]
+										},
+										{
+											"MacroActionType": "Switch",
+											"Source": "Variable",
+											"Variable": "pqImageoptim",
+											"CaseEntries": [
+												{
+													"TestValue": "1",
+													"Actions": [
+														{
+															"MacroActionType": "ExecuteShellScript",
+															"ActionNotes": "--force --ext=.png",
+															"StopOnFailure": false,
+															"Source": "Nothing",
+															"TrimResults": true,
+															"IncludeStdErr": true,
+															"UseText": true,
+															"TrimResultsNew": true,
+															"ActionColor": "Red",
+															"TimeOutAbortsMacro": true,
+															"Path": "",
+															"DisplayKind": "Window",
+															"Text": "open -b net.pornel.ImageOptim \"$KMVAR_pqPath\"/\"$KMVAR_pqFileOut\"",
+															"NotifyOnFailure": false
+														}
+													],
+													"ConditionType": "Is"
+												}
+											]
+										}
+									]
+								}
+							],
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionList": [
+									{
+										"Variable": "pqScriptOut",
+										"VariableConditionType": "Contains",
+										"VariableValue": "Skipped",
+										"ConditionType": "Variable"
+									}
+								],
+								"ConditionListMatch": "All"
+							},
+							"ThenActions": [
+								{
+									"MacroActionType": "Alert",
+									"Title": "File Skipped",
+									"IsDisclosed": false,
+									"TimeOutAbortsMacro": true,
+									"Text": "Pngquant has skipped the file “%Variable%pqFile%” because…\n\n– the output was not significantly smaller than the original file, or…\n– the desired minimum quality could not be achieved.\n\nLower the minimum value of your quality setting or/and uncheck “Skip if larger”.\n\nClick Continue to continue with the remaining files.",
+									"SoundPath": ""
+								}
+							]
+						}
+					]
+				}
+			],
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Variable": "pqFile"
+		}
+	],
+	"CreationDate": 480676539.437622,
+	"IsActive": false,
+	"ModificationDate": 568481471.024951,
+	"Triggers": [
+		{
+			"MacroTriggerType": "MacroPalette"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 120,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "PNG Optimize"
+}

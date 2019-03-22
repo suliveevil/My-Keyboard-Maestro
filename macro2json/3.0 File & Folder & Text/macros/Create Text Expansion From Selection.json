@@ -1,0 +1,83 @@
+{
+	"UID": "083201CE-1A4C-46E8-957F-765B0B5EE21A",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Changes",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5ZAgAAKwAAAAEAAABR\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgQmFzZWQg\n\t\t\t\t\t\t\tb24gcGV0ZXJubGV3aXMn\n\t\t\t\t\t\t\tcyAiQ3JlYXRlIFRleHQg\n\t\t\t\t\t\t\tRXhwYW5zaW9uIEZyb20g\n\t\t\t\t\t\t\tU2VsZWN0aW9uIE1hY3Jv\n\t\t\t\t\t\t\tIlwKaHR0cHM6Ly9mb3J1\n\t\t\t\t\t\t\tbS5rZXlib2FyZG1hZXN0\n\t\t\t\t\t\t\tcm8uY29tL3QvY3JlYXRl\n\t\t\t\t\t\t\tLXRleHQtZXhwYW5zaW9u\n\t\t\t\t\t\t\tLWZyb20tc2VsZWN0aW9u\n\t\t\t\t\t\t\tLW1hY3JvLzMzMjlcClwK\n\t\t\t\t\t\t\tQ2hhbmdlZCBCeVR5cGlu\n\t\t\t\t\t\t\tZyB0byBCeVBhc3Rpbmcu\n\t\t\t\t\t\t\tXApBZGRlZCB0aGUgYWN0\n\t\t\t\t\t\t\taW9uIHRvIHNldCBjbGlw\n\t\t\t\t\t\t\tYm9hcmQgdG8gcHJldmlv\n\t\t\t\t\t\t\tdXMgc3RhdGUuXApDaGFu\n\t\t\t\t\t\t\tZ2VkICJtYXRjaCBhbnkg\n\t\t\t\t\t\t\tY2hhcmFjdGVyIiB0byAi\n\t\t\t\t\t\t\tbWF0Y2ggYWZ0ZXIgYSB3\n\t\t\t\t\t\t\tb3JkIGJyZWFrIn0BAAAA\n\t\t\t\t\t\t\tIwAAAAEAAAAHAAAAVFhU\n\t\t\t\t\t\t\tLnJ0ZhAAAABleH1ctgEA\n\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Text Expansion Trigger",
+			"Prompt": "What trigger text would you like to use for your new macro?",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "Trigger",
+					"Default": "trigger"
+				}
+			]
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "Text",
+			"Text": "%CurrentClipboard%"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "EncodeHTMLEntities",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "Text"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "Export",
+			"Text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<array>\n\t<dict>\n\t\t<key>Activate</key>\n\t\t<string>Normal</string>\n\t\t<key>Macros</key>\n\t\t<array>\n\t\t\t<dict>\n\t\t\t\t<key>Actions</key>\n\t\t\t\t<array>\n\t\t\t\t\t<dict>\n\t\t\t\t\t\t<key>Action</key>\n\t\t\t\t\t\t<string>ByPasting</string>\n\t\t\t\t\t\t<key>MacroActionType</key>\n\t\t\t\t\t\t<string>InsertText</string>\n\t\t\t\t\t\t<key>Paste</key>\n\t\t\t\t\t\t<false/>\n\t\t\t\t\t\t<key>Text</key>\n\t\t\t\t\t\t<string>%Variable%Text%</string>\n\t\t\t\t\t</dict>\n\t\t\t\t\t<dict>\n\t\t\t\t\t\t<key>MacroActionType</key>\n\t\t\t\t\t\t<string>SetClipboardToPastClipboard</string>\n\t\t\t\t\t\t<key>PastExpression</key>\n\t\t\t\t\t\t<string>1</string>\n\t\t\t\t\t\t<key>TargetNamedClipboardRedundantDisplayName</key>\n\t\t\t\t\t\t<string>Default Clipboard</string>\n\t\t\t\t\t\t<key>TargetNamedClipboardUID</key>\n\t\t\t\t\t\t<string>E651FF92-612F-45D4-B2B5-529416309DF3</string>\n\t\t\t\t\t\t<key>TargetUseNamedClipboard</key>\n\t\t\t\t\t\t<false/>\n\t\t\t\t\t</dict>\n\t\t\t\t</array>\n\t\t\t\t<key>Name</key>\n\t\t\t\t<string>%Variable%Trigger%</string>\n\t\t\t\t<key>Triggers</key>\n\t\t\t\t<array>\n\t\t\t\t\t<dict>\n\t\t\t\t\t\t<key>Case</key>\n\t\t\t\t\t\t<string>Exact</string>\n\t\t\t\t\t\t<key>DiacriticalsMatter</key>\n\t\t\t\t\t\t<true/>\n\t\t\t\t\t\t<key>MacroTriggerType</key>\n\t\t\t\t\t\t<string>TypedString</string>\n\t\t\t\t\t\t<key>OnlyAfterWordBreak</key>\n\t\t\t\t\t\t<true/>\n\t\t\t\t\t\t<key>SimulateDeletes</key>\n\t\t\t\t\t\t<true/>\n\t\t\t\t\t\t<key>TypedString</key>\n\t\t\t\t\t\t<string>%Variable%Trigger%</string>\n\t\t\t\t\t</dict>\n\t\t\t\t</array>\n\t\t\t</dict>\n\t\t</array>\n\t\t<key>Name</key>\n\t\t<string>Text Expansions</string>\n\t</dict>\n</array>\n</plist>"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"Keyboard Maestro Engine\"\n\tset e to value of variable \"Export\"\nend tell\ntell application \"Keyboard Maestro\"\n\timportMacros e\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 481779021.082639,
+	"ModificationDate": 573419532.984417,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 17,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Create Text Expansion From Selection"
+}

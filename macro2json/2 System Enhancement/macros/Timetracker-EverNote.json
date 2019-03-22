@@ -1,0 +1,53 @@
+{
+	"UID": "E94A716A-0A31-4977-A4C7-01271FAAC03B",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Timetracker-JMichaelTX",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uAAAAKwAAAAEAAABm\n\t\t\t\t\t\t\tAAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibH0Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAcy6w\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionName": "SET VARIABLE TT__Log to Log Data",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Text": "%ICUDateTime%EEE, hh:mm  -  dd MMM yyyy% | %Application%1% | %TriggerValue%",
+			"Variable": "TT__Log"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"ActionName": "Enable for Debug:  Display Log Entry",
+			"Action": "DisplayWindow",
+			"IsDisclosed": false,
+			"Text": "%Variable%TT__Log%",
+			"IsActive": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC48AQAAKwAAAAEAAAA0\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDYwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBIZWx2ZXRp\n\t\t\t\t\t\t\tY2FOZXVlO30Ke1xjb2xv\n\t\t\t\t\t\t\tcnRibDtccmVkMjU1XGdy\n\t\t\t\t\t\t\tZWVuMjU1XGJsdWUyNTU7\n\t\t\t\t\t\t\tXHJlZDBcZ3JlZW4wXGJs\n\t\t\t\t\t\t\tdWUwO30KXHBhcmRcdHg1\n\t\t\t\t\t\t\tNjBcdHgxMTIwXHR4MTY4\n\t\t\t\t\t\t\tMFx0eDIyNDBcdHgyODAw\n\t\t\t\t\t\t\tXHR4MzM2MFx0eDM5MjBc\n\t\t\t\t\t\t\tdHg0NDgwXHR4NTA0MFx0\n\t\t\t\t\t\t\teDU2MDBcdHg2MTYwXHR4\n\t\t\t\t\t\t\tNjcyMFxwYXJkaXJuYXR1\n\t\t\t\t\t\t\tcmFsXHBhcnRpZ2h0ZW5m\n\t\t\t\t\t\t\tYWN0b3IwCgpcZjBcZnMy\n\t\t\t\t\t\t\tNiBcY2YyICVWYXJpYWJs\n\t\t\t\t\t\t\tZSVUVF9fTG9nJX0BAAAA\n\t\t\t\t\t\t\tIwAAAAEAAAAHAAAAVFhU\n\t\t\t\t\t\t\tLnJ0ZhAAAAB3jsRXtgEA\n\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "SCRIPT: Append Log Entry to Evernote Note",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"ActionColor": "Teal",
+			"TimeOutAbortsMacro": true,
+			"Path": "/Users/Shared/Dropbox/SW/DEV/KM/Scripts/[EN] Append Evernote Note with TimeTracker Info (AS).scpt",
+			"DisplayKind": "None",
+			"Text": "use AppleScript version \"2.4\" -- Yosemite (10.10) or later\nuse scripting additions\n\n### SCRIPT SETUP ###\n-- Change the next 2 variables as needed\n\nset nbName to \"Journal\" -- Evernote Notebook\nset titleStr to \"TimeLog\" -- Evernote Note Title\n\n--- GET LOG ENTRY FROM Keyboard Maestro VARIABLE ---\ntell application \"Keyboard Maestro Engine\" to ¬\n\tset logStr to getvariable \"TT__Log\"\n\n--- CONVERT TO HTML TO HAVE PROPER LINE SPACING ---\nset logHTML to \"<div>\" & logStr & \"</div>\"\n\ntell application \"Evernote\"\n\t\n\tset noteList to find notes \"notebook:\\\"\" & nbName & \"\\\" intitle:\\\"\" & titleStr & \"\\\"\"\n\t\n\tif ((count of noteList) > 0) then\n\t\t\n\t\t--- APPEND LOG ENTRY ---\n\t\t\n\t\tset oNote to item 1 of noteList\n\t\tappend oNote html logHTML\n\t\t\n\telse\n\t\t--- CREATE NEW NOTE WITH LOG ENTRY ---\n\t\t\n\t\tcreate note with html logHTML title titleStr notebook nbName\n\t\t\n\tend if\n\t\n\tsynchronize\nend tell",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 494188564.421403,
+	"IsActive": false,
+	"ModificationDate": 568614464.151971,
+	"Triggers": [
+		{
+			"MacroTriggerType": "FocussedWindow",
+			"ChangeType": "FocussedWindowTitleChanges"
+		}
+	],
+	"Name": "Timetracker-EverNote"
+}

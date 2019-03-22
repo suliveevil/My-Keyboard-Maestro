@@ -1,0 +1,16 @@
+{
+	"UID": "E70EC62E-3253-4D92-964F-BA32B3387BB2",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇟"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991052.956166,
+	"Triggers": [],
+	"Name": "34)  ⇟    Page Down"
+}

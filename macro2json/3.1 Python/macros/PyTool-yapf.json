@@ -1,0 +1,29 @@
+{
+	"UID": "C6DFE609-DA38-4D61-97F9-F8531BA1DB91",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "python3 -m yapf %SystemClipboard%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 567045213.679116,
+	"ModificationDate": 568133221.507331,
+	"Triggers": [
+		{
+			"TypedString": "!yapf",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！yapf",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "PyTool-yapf"
+}

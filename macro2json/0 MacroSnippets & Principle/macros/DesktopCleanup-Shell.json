@@ -1,0 +1,22 @@
+{
+	"UID": "96052973-283E-4DC9-88B0-CCB301848ACB",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "#!/bin/bash\ncase $1 in\n\t'stop')\n\t\tosascript -e 'tell application \"System Events\" to set the autohide of the dock preferences to false'\n\t\tosascript -e 'tell application \"GeekTool Helper\" to set visible of group \"Default Group\" to true'\n\t\tosascript -e 'tell application \"GeekTool Helper\" to refresh'\n\t\tosascript -e \"tell application \\\"Finder\\\" to set desktop picture to (POSIX file \\\"$(cat ~/.olddesktop)\\\")\"\n\t\tdefaults write com.apple.finder CreateDesktop 1 && killall \"Finder\"\n\t\tosascript -e 'tell application \"TotalFinder\" to launch'\n\t\t;;\n\t'start')\n\t\tosascript -e 'tell application \"Finder\" to return POSIX path of (desktop picture as alias)' > ~/.olddesktop\n\t\tosascript -e 'tell application \"Finder\" to set desktop picture to (POSIX file \"/Users/ttscoff/Pictures/clothbackground.jpg\")'\n\t\tosascript -e 'tell application \"System Events\" to set the autohide of the dock preferences to true'\n\t\tosascript -e 'tell application \"GeekTool Helper\" to set visible of group \"Default Group\" to false'\n\t\tdefaults write com.apple.finder CreateDesktop 0 && killall \"Finder\"\n\t\tosascript -e 'tell application \"TotalFinder\" to launch'\n\t\t;;\n\t*)\n\t\techo \"Hides Desktop icons, Dock and GeekTool\"\n\t\techo \"'start' to begin screencasting, 'stop' to restore state\"\n\t\techo \"Usage: $(basename $0) [start -- stop]\"\n\t\t;;\nesac",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568332979.901214,
+	"IsActive": false,
+	"ModificationDate": 568333565.419921,
+	"Triggers": [],
+	"Name": "DesktopCleanup-Shell"
+}

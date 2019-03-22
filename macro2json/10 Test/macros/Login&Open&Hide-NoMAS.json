@@ -1,0 +1,229 @@
+{
+	"UID": "1E22CDAA-5919-4367-B584-2928B67F3FEA",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Avira.app",
+				"BundleIdentifier": "com.avira.controlcenter",
+				"Name": "Avira"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Alfred 3.app",
+				"BundleIdentifier": "com.runningwithcrayons.Alfred-3",
+				"Name": "Alfred 3"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/BetterAndBetter.app",
+				"BundleIdentifier": "com.sunny.BetterAndBetter",
+				"Name": "BetterAndBetter"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"BundleIdentifier": "com.mediaatelier.CheatSheet",
+				"Name": "CheatSheet"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Dozer.app",
+				"BundleIdentifier": "com.mortennn.Dozer",
+				"Name": "Dozer"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Karabiner-Elements.app",
+				"BundleIdentifier": "org.pqrs.Karabiner-Elements.Preferences",
+				"Name": "Karabiner-Elements"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Keyboard Maestro.app",
+				"BundleIdentifier": "com.stairways.keyboardmaestro.editor",
+				"Name": "Keyboard Maestro"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/KeyCastr.app",
+				"BundleIdentifier": "net.stephendeken.KeyCastr",
+				"Name": "KeyCastr"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/LuLu.app",
+				"BundleIdentifier": "com.objective-see.lulu",
+				"Name": "LuLu"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Macs Fan Control.app",
+				"BundleIdentifier": "com.crystalidea.MacsFanControl",
+				"Name": "Macs Fan Control"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/PodcastMenu.app",
+				"BundleIdentifier": "br.com.guilhermerambo.PodcastMenu",
+				"Name": "PodcastMenu"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Pomotodo.app",
+				"BundleIdentifier": "com.pomotodo.PomotodoMac",
+				"Name": "Pomotodo"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/RescueTime.app",
+				"BundleIdentifier": "com.rescuetime.RescueTime",
+				"Name": "RescueTime"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/ShowyEdge.app",
+				"BundleIdentifier": "org.pqrs.ShowyEdge",
+				"Name": "ShowyEdge"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Tencent Lemon.app",
+				"BundleIdentifier": "com.tencent.Lemon",
+				"Name": "Tencent Lemon"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/WhatPulse.app",
+				"BundleIdentifier": "com.whatpulse.mac",
+				"Name": "WhatPulse"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/微力同步.app",
+				"BundleIdentifier": "com.verysync.macosx.verysync",
+				"Name": "微力同步"
+			}
+		},
+		{
+			"MacroActionType": "HideAll",
+			"HonorExcluded": true
+		}
+	],
+	"CreationDate": 567054602.802897,
+	"IsActive": false,
+	"ModificationDate": 574412530.884642,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 30,
+			"RepeatTime": 60,
+			"TimeHour": 8,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Login",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "Login&Open&Hide-NoMAS"
+}

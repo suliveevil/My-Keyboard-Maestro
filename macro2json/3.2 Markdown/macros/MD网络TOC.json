@@ -1,0 +1,25 @@
+{
+	"UID": "718FA30B-E0CB-4A09-A0CA-DE798F52854A",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "./gh-md-toc %FrontBrowserURL% | pbcopy"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"IsActive": false,
+	"ModificationDate": 567475230.303444,
+	"Triggers": [
+		{
+			"TypedString": "@toc",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD网络TOC"
+}

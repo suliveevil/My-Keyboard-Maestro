@@ -1,0 +1,23 @@
+{
+	"UID": "45526392-2296-4476-BECF-2562AC06C703",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"IsDisclosed": false,
+			"Text": "%PastClipboard%1% %CurrentClipboard%"
+		}
+	],
+	"CreationDate": 566900676.561097,
+	"IsActive": false,
+	"ModificationDate": 567379977.763571,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 34,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Paste clipboard of 'PAST1 CURRENT'"
+}

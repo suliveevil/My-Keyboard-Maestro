@@ -1,0 +1,28 @@
+{
+	"UID": "6683CE57-92B1-409B-9BB3-884466E7E061",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 44,
+			"Modifiers": 4864
+		}
+	],
+	"CreationDate": 568935996.688917,
+	"ModificationDate": 568936041.526882,
+	"Triggers": [
+		{
+			"TypedString": "////",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "???",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Man Pages"
+}

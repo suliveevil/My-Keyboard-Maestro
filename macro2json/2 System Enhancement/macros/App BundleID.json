@@ -1,0 +1,22 @@
+{
+	"UID": "8D01285B-C1DD-48A8-B820-8514A672C8F3",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "mdls -name kMDItemCFBundleIdentifier /Applications/Google\\ Chrome.app",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568478358.748706,
+	"IsActive": false,
+	"ModificationDate": 568478388.973373,
+	"Triggers": [],
+	"Name": "App BundleID"
+}

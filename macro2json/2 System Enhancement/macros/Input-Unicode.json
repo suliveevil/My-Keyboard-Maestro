@@ -1,0 +1,37 @@
+{
+	"UID": "3B756C2B-B380-4A4A-8103-5A17EB33460B",
+	"Actions": [
+		{
+			"MacroActionType": "SetKeyboardLayout",
+			"KeyboardLayoutName": "ABC",
+			"KeyboardLayoutID": "com.apple.keylayout.ABC"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.2",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetKeyboardLayout",
+			"KeyboardLayoutName": "Unicode Hex Input",
+			"KeyboardLayoutID": "com.apple.keylayout.UnicodeHexInput"
+		}
+	],
+	"CreationDate": 568082597.923024,
+	"ModificationDate": 574910661.786927,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 34,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Input-Unicode"
+}

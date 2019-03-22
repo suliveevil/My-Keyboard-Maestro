@@ -1,0 +1,16 @@
+{
+	"UID": "AE709A4C-99CD-4E20-97CF-3E42FCD5A6D9",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇲"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991113.905616,
+	"Triggers": [],
+	"Name": "30)  ⇲    End of Document "
+}

@@ -1,0 +1,30 @@
+{
+	"UID": "3831A6F0-C88D-45BC-AFEB-3491C45CF917",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\n    if (count every process whose name is \"fHash\") = 0 then\n        tell application \"fHash\" to activate\n    else\n        if visible of process \"fHash\" is true then\n            set visible of process \"fHash\" to false\n        else\n            tell application \"fHash\" to activate\n        end if\n    end if\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567338787.194419,
+	"IsActive": false,
+	"ModificationDate": 567338916.034682,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Toggle fHash"
+}

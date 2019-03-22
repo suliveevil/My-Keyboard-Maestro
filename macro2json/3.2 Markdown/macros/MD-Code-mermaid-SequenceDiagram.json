@@ -1,0 +1,24 @@
+{
+	"UID": "C8FD0265-07EA-4247-BA62-F98F699AA09D",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n<div class=\"mermaid\">\nsequenceDiagram\n    participant A as Alice%|%\n    participant J as John\n    A->>J: Hello John, how are you?\n    J->>A: Great!\n</div>\n\n"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568122443.362611,
+	"ModificationDate": 573224713.644692,
+	"Triggers": [
+		{
+			"TypedString": "codd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Code-mermaid-SequenceDiagram"
+}

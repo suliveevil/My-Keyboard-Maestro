@@ -1,0 +1,24 @@
+{
+	"UID": "0BD20909-7BFC-486C-9C24-C04D1762094F",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 15,
+			"Modifiers": 768
+		}
+	],
+	"CreationDate": 566900688.274129,
+	"ModificationDate": 425152308.250352,
+	"Triggers": [
+		{
+			"TypedString": "xz",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": false
+		}
+	],
+	"Name": "str.SK.adjust"
+}

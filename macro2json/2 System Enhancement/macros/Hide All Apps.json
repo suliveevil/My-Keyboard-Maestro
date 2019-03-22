@@ -1,0 +1,24 @@
+{
+	"UID": "5FE6F43C-9F07-4DB0-8085-0C832D70D654",
+	"Actions": [
+		{
+			"MacroActionType": "HideAll",
+			"HonorExcluded": true
+		}
+	],
+	"CreationDate": 567201418.349443,
+	"ModificationDate": 568524893.465731,
+	"Triggers": [
+		{
+			"TypedString": "hal;",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "hal；",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Hide All Apps"
+}

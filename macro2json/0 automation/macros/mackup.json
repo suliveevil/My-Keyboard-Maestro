@@ -1,0 +1,48 @@
+{
+	"UID": "4793F0A9-8F9C-42CF-9B0B-450086112219",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "mackup bacup",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "PlugIn",
+			"PlugInFolderName": "Execute a Script in Terminal",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"PlugInParameters": {
+				"Script": "mackup backup && cd /Users/liveevilsu/macOS-HOME/",
+				"Bring Terminal to foreground": "1",
+				"New Terminal window": "1",
+				"KM variables": "Optional. Separate variables with newline and refer with $km1, $km2, $km3, etc."
+			},
+			"TrimResultsNew": true,
+			"IncludeStdErr": true,
+			"DisplayKind": "None"
+		}
+	],
+	"CreationDate": 569948951.444483,
+	"ModificationDate": 574403615.82577,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 30,
+			"RepeatTime": 60,
+			"TimeHour": 12,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Time",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "mackup"
+}

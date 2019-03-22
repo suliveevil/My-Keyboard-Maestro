@@ -1,0 +1,22 @@
+{
+	"UID": "F62D0B5B-65B9-4B74-808B-7950296BC824",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "defaults write com.apple.Dock showhidden -boolean no; killall Dock",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568569159.339336,
+	"IsActive": false,
+	"ModificationDate": 568569381.84658,
+	"Triggers": [],
+	"Name": "Dock Dim Hidden AppIcon-YES"
+}

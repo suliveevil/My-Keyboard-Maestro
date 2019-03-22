@@ -1,0 +1,162 @@
+{
+	"UID": "CA5C99AA-73B7-4D5D-9A5E-444117B9AB31",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 8,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.5",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "Filter clipboard.",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5VAQAAKwAAAAEAAABN\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgQ2hhcmFj\n\t\t\t\t\t\t\tdGVycyBsaWtlICMsIC0s\n\t\t\t\t\t\t\tIF8sIGFuZCB3aGl0ZSBz\n\t\t\t\t\t\t\tcGFjZS59AQAAACMAAAAB\n\t\t\t\t\t\t\tAAAABwAAAFRYVC5ydGYQ\n\t\t\t\t\t\t\tAAAAsv0ZXLYBAAAAAAAA\n\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "RemoveStyles",
+			"Source": "Clipboard",
+			"IsDisclosed": false
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "Lowercase",
+			"Source": "Clipboard",
+			"IsDisclosed": false
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "Set variable, get rid of characters that will be removed by MMD",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5VAQAAKwAAAAEAAABN\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgQ2hhcmFj\n\t\t\t\t\t\t\tdGVycyBsaWtlICMsIC0s\n\t\t\t\t\t\t\tIF8sIGFuZCB3aGl0ZSBz\n\t\t\t\t\t\t\tcGFjZS59AQAAACMAAAAB\n\t\t\t\t\t\t\tAAAABwAAAFRYVC5ydGYQ\n\t\t\t\t\t\t\tAAAAsv0ZXLYBAAAAAAAA\n\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "Clipboard",
+			"Text": "%CurrentClipboard%"
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseString",
+			"Search": " ",
+			"IsDisclosed": false,
+			"Source": "Variable",
+			"Variable": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseString",
+			"Search": "-",
+			"IsDisclosed": false,
+			"Source": "Variable",
+			"Variable": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseString",
+			"Search": "#",
+			"IsDisclosed": false,
+			"Source": "Variable",
+			"Variable": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseString",
+			"Search": "_",
+			"IsDisclosed": false,
+			"Source": "Variable",
+			"Variable": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseString",
+			"Search": "\\",
+			"IsDisclosed": false,
+			"Source": "Variable",
+			"Variable": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseString",
+			"Search": "/",
+			"IsDisclosed": false,
+			"Source": "Variable",
+			"Variable": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseString",
+			"Search": "'",
+			"IsDisclosed": false,
+			"Source": "Variable",
+			"Variable": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "IgnoreCaseString",
+			"Search": "\"",
+			"IsDisclosed": false,
+			"Source": "Variable",
+			"Variable": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "Paste results as chapter reference",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uAAAAKwAAAAEAAABm\n\t\t\t\t\t\t\tAAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibH0Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAcy6w\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 124,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"IsDisclosed": false,
+			"Text": "[][#%Variable%Clipboard%]"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"IsDisclosed": false,
+			"PastExpression": "0"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "Clipboard",
+			"Text": "%Delete%"
+		}
+	],
+	"CreationDate": 457084305.764058,
+	"ModificationDate": 396446978.806955,
+	"Triggers": [
+		{
+			"MacroTriggerType": "StatusMenu"
+		}
+	],
+	"Name": "82)Insert Chapter Reference"
+}

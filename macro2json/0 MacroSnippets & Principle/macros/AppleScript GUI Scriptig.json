@@ -1,0 +1,43 @@
+{
+	"UID": "C8FD9CA7-B4EA-46F9-B22F-2DD5839E3B69",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\r\tset _app to the name of every process whose frontmost is true\r\t-- 告诉 Money Pro\r\ttell application named _app\r\t\t-- 获取所有 UI 元素\r\t\tentire contents\r\tend tell\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\r\t-- set _app to the name of every process whose frontmost is true\r\ttell process \"Safari\" -- 告诉 Money Pro\r\t\ttell window 1 -- 再告诉 Money Pro 的第一个窗口\r\t\t\tentire contents -- 获取所有 UI 元素\r\t\tend tell\r\tend tell\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568327708.357045,
+	"IsActive": false,
+	"ModificationDate": 574726986.974576,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 5,
+			"Modifiers": 6912,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "AppleScript GUI Scriptig"
+}

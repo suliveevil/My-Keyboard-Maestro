@@ -1,0 +1,30 @@
+{
+	"UID": "04B0A9D9-F8D4-4CA0-A12E-DA0223F1689F",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"Safari\"\t\n\tactivate\n    set myURL to URL of current tab of front window\nend tell\n\ntell application \"Google Chrome\"\n\tactivate\t\t\n    if (count windows) is 0 then\t\t\n        make new window\t\t\n        set URL of tab 1 of window 1 to myURL\t\n    else\n        activate front window\t\t\n        make new tab at front window\t\t\n        set URL of tab (count tabs of front window) of front window \n            to myURL\t\n    end if\t\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568451518.439335,
+	"IsActive": false,
+	"ModificationDate": 568453814.884108,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 48,
+			"Modifiers": 2304,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Send to Chrome-AppleScript"
+}

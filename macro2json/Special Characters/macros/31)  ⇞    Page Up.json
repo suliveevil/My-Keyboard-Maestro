@@ -1,0 +1,16 @@
+{
+	"UID": "7D641DB8-DF97-4469-9C82-EFE56A2D84A6",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇞"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991052.154179,
+	"Triggers": [],
+	"Name": "31)  ⇞    Page Up"
+}

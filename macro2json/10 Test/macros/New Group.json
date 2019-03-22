@@ -1,0 +1,232 @@
+{
+	"UID": "3316269D-E387-4F92-AF18-711366AC87DD",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 45,
+			"Modifiers": 768
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.5",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"IsDisclosed": false,
+			"Text": "%Application%2%"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "143",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "466",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "153",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "466",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "167",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "466",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 125,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 36,
+			"Modifiers": 0
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 3,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 9,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 2,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "100",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "240",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "108",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "446",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.3",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 20,
+			"Modifiers": 256
+		}
+	],
+	"CreationDate": 566900683.039138,
+	"IsActive": false,
+	"ModificationDate": 568228991.831025,
+	"Triggers": [
+		{
+			"TypedString": "NG",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": false
+		}
+	],
+	"Name": "New Group"
+}

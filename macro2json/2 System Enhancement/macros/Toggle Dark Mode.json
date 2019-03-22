@@ -1,0 +1,93 @@
+{
+	"UID": "5975AC5D-1F44-4F89-860E-EAFD0DFF7C94",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Info",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6fAQAAKwAAAAEAAACX\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNjcxXGNvY29h\n\t\t\t\t\t\t\tc3VicnRmMjAwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBIZWx2ZXRp\n\t\t\t\t\t\t\tY2FOZXVlO30Ke1xjb2xv\n\t\t\t\t\t\t\tcnRibDtccmVkMjU1XGdy\n\t\t\t\t\t\t\tZWVuMjU1XGJsdWUyNTU7\n\t\t\t\t\t\t\tXHJlZDBcZ3JlZW4wXGJs\n\t\t\t\t\t\t\tdWUwO30Ke1wqXGV4cGFu\n\t\t\t\t\t\t\tZGVkY29sb3J0Ymw7O1xj\n\t\t\t\t\t\t\tc3NyZ2JcYzBcYzBcYzBc\n\t\t\t\t\t\t\tY25hbWUgdGV4dENvbG9y\n\t\t\t\t\t\t\tO30KXHBhcmRcdHg1NjBc\n\t\t\t\t\t\t\tdHgxMTIwXHR4MTY4MFx0\n\t\t\t\t\t\t\teDIyNDBcdHgyODAwXHR4\n\t\t\t\t\t\t\tMzM2MFx0eDM5MjBcdHg0\n\t\t\t\t\t\t\tNDgwXHR4NTA0MFx0eDU2\n\t\t\t\t\t\t\tMDBcdHg2MTYwXHR4Njcy\n\t\t\t\t\t\t\tMFxwYXJkaXJuYXR1cmFs\n\t\t\t\t\t\t\tXHBhcnRpZ2h0ZW5mYWN0\n\t\t\t\t\t\t\tb3IwCgpcZjBcZnMyNiBc\n\t\t\t\t\t\t\tY2YyIFRvZ2dsZSBkYXJr\n\t\t\t\t\t\t\tIG1vZGUgdXNpbmcgYW4g\n\t\t\t\t\t\t\tYXBwbGVzY3JpcHRcClJl\n\t\t\t\t\t\t\tcXVpcmVzIE1hY09TIE1v\n\t\t\t\t\t\t\tamF2ZX0BAAAAIwAAAAEA\n\t\t\t\t\t\t\tAAAHAAAAVFhULnJ0ZhAA\n\t\t\t\t\t\t\tAAAEWipctgEAAAAAAAAA\n\t\t\t\t\t\t\tAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "OSVer",
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"Text": "set osver to system version of (system info)\nreturn osver",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "\\d+\\.(\\d+)\\.?\\d?",
+			"Source": "Variable",
+			"Captures": [
+				"",
+				"OSMajorVer"
+			],
+			"Variable": "OSVer"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "Notification",
+					"Title": "%ExecutingMacro%",
+					"Text": "Requires MacOS version 10.14 (Mojave) or later",
+					"Subtitle": "Error",
+					"SoundName": ""
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "OSMajorVer",
+						"VariableConditionType": "GreaterThanOrEqual",
+						"VariableValue": "14",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "ExecuteAppleScript",
+					"NotifyOnFailure": false,
+					"TrimResults": true,
+					"TimeOutAbortsMacro": true,
+					"Text": "tell application \"System Events\" to tell appearance preferences to set dark mode to not dark mode",
+					"Path": "",
+					"TrimResultsNew": true,
+					"StopOnFailure": false,
+					"IncludeStdErr": false,
+					"DisplayKind": "None",
+					"UseText": true
+				},
+				{
+					"MacroActionType": "Notification",
+					"Title": "%ExecutingMacro%",
+					"Text": "Dark mode setting toggled!",
+					"Subtitle": "Action Completed",
+					"SoundName": ""
+				}
+			]
+		}
+	],
+	"CreationDate": 567972085.303034,
+	"IsActive": false,
+	"ModificationDate": 568228839.813535,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 2,
+			"Modifiers": 6912,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Toggle Dark Mode"
+}

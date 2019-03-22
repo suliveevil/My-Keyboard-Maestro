@@ -1,0 +1,50 @@
+{
+	"UID": "17B408E1-9DA8-4C31-A1A5-055C387C0860",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 123,
+			"Modifiers": 0
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 123,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "-- "
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 573521443.631127,
+	"ModificationDate": 573521611.482319,
+	"Triggers": [
+		{
+			"TypedString": "cmt;",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "cmt；",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "CommentCurrentLine"
+}

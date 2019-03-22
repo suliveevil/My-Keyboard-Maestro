@@ -1,0 +1,27 @@
+{
+	"UID": "C6312543-C5E7-4CEE-99D8-77C26C22026B",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "screencapture -T 5 ~/Desktop/5s.png",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 574952061.925731,
+	"ModificationDate": 574952977.468974,
+	"Triggers": [
+		{
+			"TypedString": "5==",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "ScreenShot-3s"
+}

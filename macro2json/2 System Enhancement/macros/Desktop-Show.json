@@ -1,0 +1,33 @@
+{
+	"UID": "CF4A9494-D335-4A50-B557-0D2047CC6323",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "defaults write com.apple.finder CreateDesktop -bool true; killall Finder",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567201418.349443,
+	"IsActive": false,
+	"ModificationDate": 574598742.913864,
+	"Triggers": [
+		{
+			"TypedString": "!show",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！show",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Desktop-Show"
+}

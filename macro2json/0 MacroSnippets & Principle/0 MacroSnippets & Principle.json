@@ -1,0 +1,17 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 568265768.916668,
+	"AddToStatusMenu": false,
+	"Name": "0 MacroSnippets & Principle",
+	"PaletteUnderMouse": false,
+	"UID": "A3314DE4-D22F-4E20-B2A1-69F6FE0C03A2",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "A5F3E6C1-6B18-429E-B998-818B54DAE6B0",
+	"Activate": "Normal",
+	"KeyCode": 32767
+}

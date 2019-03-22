@@ -1,0 +1,13 @@
+{
+	"UID": "7F005F64-6C95-4F00-9368-D23533482132",
+	"Actions": [],
+	"CreationDate": 457084305.764058,
+	"ModificationDate": 393719215.819718,
+	"Triggers": [
+		{
+			"MacroTriggerType": "StatusMenu"
+		}
+	],
+	"Name": "19)-",
+	"CustomIconData": "KMEC=Rounded=KMCOLOR:0,0,0,255=—=86=0=0=0=KMCOLOR:255,255,255,255"
+}

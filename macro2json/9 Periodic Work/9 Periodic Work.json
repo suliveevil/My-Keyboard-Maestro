@@ -1,0 +1,17 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 567048234.371657,
+	"AddToStatusMenu": false,
+	"Name": "9 Periodic Work",
+	"PaletteUnderMouse": false,
+	"UID": "82F7E31A-11B1-422F-9354-302768D8CFD2",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "5959B143-89B3-453A-BD27-B6F9B6C5D89D",
+	"Activate": "Normal",
+	"KeyCode": 32767
+}

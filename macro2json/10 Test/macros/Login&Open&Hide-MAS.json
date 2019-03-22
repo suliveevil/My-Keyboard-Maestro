@@ -1,0 +1,227 @@
+{
+	"UID": "4C004DB7-16A3-4DA5-B3BD-0248588D3CD7",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Amphetamine.app",
+				"BundleIdentifier": "com.if.Amphetamine",
+				"Name": "Amphetamine"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Bitwarden.app",
+				"BundleIdentifier": "com.bitwarden.desktop",
+				"Name": "Bitwarden"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"BundleIdentifier": "com.mediaatelier.CheatSheet",
+				"Name": "CheatSheet"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Easy New File.app",
+				"BundleIdentifier": "com.liupeng.mac.FinderMenu",
+				"Name": "Easy New File"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/iStat Menus.app",
+				"BundleIdentifier": "com.bjango.istatmenus.mas",
+				"Name": "iStat Menus"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/iStatistica Sensors.app",
+				"BundleIdentifier": "imagetasks.iStatisticaSensors",
+				"Name": "iStatistica Sensors"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/iStatistica.app",
+				"BundleIdentifier": "imagetasks.iStatistica",
+				"Name": "iStatistica"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Launchey 2.app",
+				"BundleIdentifier": "com.jgronek.Launchey-2",
+				"Name": "Launchey 2"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"BundleIdentifier": "com.crowdcafe.windowmagnet",
+				"Name": "Magnet"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Moom.app",
+				"BundleIdentifier": "com.manytricks.Moom",
+				"Name": "Moom"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/PopClip.app",
+				"BundleIdentifier": "com.pilotmoon.popclip",
+				"Name": "PopClip"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/QuickMoveFile.app",
+				"BundleIdentifier": "com.lllteam.QuickMoveFile.Pro",
+				"Name": "QuickMoveFile"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"BundleIdentifier": "com.lapier.Recents",
+				"Name": "Recents"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Shortcut Bar.app",
+				"BundleIdentifier": "com.fiplab.shortcutbar",
+				"Name": "Shortcut Bar"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Time Sink.app",
+				"BundleIdentifier": "com.manytricks.TimeSinkClient",
+				"Name": "Time Sink"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/WeChat.app",
+				"BundleIdentifier": "com.tencent.xinWeChat",
+				"Name": "WeChat"
+			}
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Hide",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Jietu.app",
+				"BundleIdentifier": "com.tencent.JietuMac",
+				"Name": "截图"
+			}
+		},
+		{
+			"MacroActionType": "HideAll",
+			"HonorExcluded": true
+		}
+	],
+	"CreationDate": 567054602.802897,
+	"IsActive": false,
+	"ModificationDate": 567312413.924359,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 30,
+			"RepeatTime": 60,
+			"TimeHour": 8,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Login",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "Login&Open&Hide-MAS"
+}

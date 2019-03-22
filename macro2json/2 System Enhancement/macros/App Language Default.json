@@ -1,0 +1,22 @@
+{
+	"UID": "6F6467B0-A870-43EE-BC9B-2685054F25DA",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "defaults write com.apple.TextEdit AppleLanguages '(zh-CN)'",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568478426.30249,
+	"IsActive": false,
+	"ModificationDate": 568524626.344682,
+	"Triggers": [],
+	"Name": "App Language Default"
+}

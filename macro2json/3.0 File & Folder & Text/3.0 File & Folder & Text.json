@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"AddToStatusMenu": false,
+	"CreationDate": 568481555.458128,
+	"Modifiers": 0,
+	"PaletteUnderMouse": false,
+	"Name": "3.0 File & Folder & Text",
+	"UID": "27215D41-2AC6-46EC-8F7F-54ECB332C656",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "6CE0A1AA-E144-4647-AB99-26402B1352A4",
+	"Activate": "Normal",
+	"KeyCode": 32767,
+	"DisplayToggle": false
+}

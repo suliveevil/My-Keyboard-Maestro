@@ -1,0 +1,52 @@
+{
+	"UID": "20EDD01D-F3BA-4C46-AB4E-4D95B8DB7ABD",
+	"Actions": [
+		{
+			"MacroActionType": "Semaphore",
+			"TimeOutAbortsMacro": true,
+			"SemaphoreName": "speedtest",
+			"SemaphoreAction": "Lock"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayBriefly",
+			"Text": "Results will appear here when completed—anywhere from a few seconds to a minute."
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Briefly",
+			"Text": "/usr/local/bin/speedtest --simple",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "Semaphore",
+			"SemaphoreName": "speedtest",
+			"SemaphoreAction": "Unlock"
+		}
+	],
+	"CreationDate": 511131029.229811,
+	"IsActive": false,
+	"ModificationDate": 567137113.366501,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"TypedString": "speedcheck",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Internet Speedtest (simple)"
+}

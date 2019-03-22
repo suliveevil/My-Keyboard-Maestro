@@ -1,0 +1,87 @@
+{
+	"UID": "CE98B21C-137B-4458-A73C-2B2A8E29846C",
+	"Actions": [
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "请输入要找的软件名",
+			"Prompt": "Please enter the details for these variables.",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "softwareSearch",
+					"Default": "SoftwareName"
+				}
+			]
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": false,
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			},
+			"URL": "https://www.osxwin.com/?s=%Variable%softwareSearch%"
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": false,
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			},
+			"URL": "https://www.waitsun.com/?s=%Variable%softwareSearch%"
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": false,
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Safari.app",
+				"BundleIdentifier": "com.apple.Safari",
+				"Name": "Safari"
+			},
+			"URL": "http://www.zdfans.com/search.asp?keyword=%Variable%softwareSearch%"
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": true,
+			"TimeOutAbortsMacro": true,
+			"URL": "https://stacksocial.com/search?=%Variable%softwareSearch%"
+		},
+		{
+			"MacroActionType": "OpenURL",
+			"IsDefaultApplication": true,
+			"TimeOutAbortsMacro": true,
+			"URL": "https://alternativeto.net/browse/search?q=%Variable%softwareSearch%"
+		}
+	],
+	"CreationDate": 566980863.654744,
+	"IsActive": false,
+	"ModificationDate": 568241947.500487,
+	"Triggers": [
+		{
+			"TypedString": "!soft",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！soft",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Search-Software"
+}

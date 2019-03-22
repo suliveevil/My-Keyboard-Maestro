@@ -1,0 +1,56 @@
+{
+	"UID": "CFD7B289-979D-4605-B66C-656B77985A7E",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Edit",
+				"Copy"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"File",
+				"New Tab"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Edit",
+				"Paste"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 36,
+			"Modifiers": 0
+		}
+	],
+	"CreationDate": 566900638.717638,
+	"ModificationDate": 568481975.088466,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 5,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "find it via g (new tab)",
+	"CustomIconData": "KMEP-Help"
+}

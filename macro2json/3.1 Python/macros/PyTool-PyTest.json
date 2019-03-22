@@ -1,0 +1,39 @@
+{
+	"UID": "EEA693ED-0F60-4419-BEF3-EC9C518460F9",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "python3 -m pytest %SystemClipboard%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 567045213.679116,
+	"ModificationDate": 568133225.407848,
+	"Triggers": [
+		{
+			"TypedString": "!test",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！test",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "!pytest",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！pytest",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "PyTool-PyTest"
+}

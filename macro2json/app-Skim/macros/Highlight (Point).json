@@ -1,0 +1,45 @@
+{
+	"UID": "8922F405-485E-4943-AD65-676D6EB2B7D6",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Notes",
+				"New Highlight"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "157",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "1321",
+			"Relative": "Screen",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		}
+	],
+	"CreationDate": 566900688.274137,
+	"IsActive": false,
+	"ModificationDate": 427479111.579042,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 35,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Highlight (Point)"
+}

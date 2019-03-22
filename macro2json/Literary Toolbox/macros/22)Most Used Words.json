@@ -1,0 +1,101 @@
+{
+	"UID": "61DB7585-F119-406F-BADC-D9EBCA24278F",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsNotEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Is",
+						"MenuTitle": "Copy"
+					},
+					{
+						"ApplicationConditionType": "NotActive",
+						"ConditionType": "Application",
+						"Application": {
+							"BundleIdentifier": "com.adobe.InDesign",
+							"Name": "Adobe InDesign CS5"
+						}
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"IsDisclosed": false,
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 0,
+					"Modifiers": 256
+				}
+			]
+		},
+		{
+			"MacroActionType": "ClipboardSwitcherMacroAction",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"RedundandDisplayName": "myTextTemp",
+			"TimeOutAbortsMacro": true,
+			"Name": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "RemoveStyles",
+			"Source": "NamedClipboard",
+			"IsDisclosed": false,
+			"NamedClipboardName": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66",
+			"RedundandDisplayName": "myTextTemp"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "LocalText",
+			"Text": "%NamedClipboard%myTextTemp%"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"Variable": "LocalText",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"Text": "#!/usr/bin/perl\n\nuse Lingua::EN::Fathom;\n\n$sample1 = $ENV{KMVAR_LocalText};\n\nmy $text = Lingua::EN::Fathom->new();\n$text->analyse_block($sample1,1);\n \n%u_words = $text->unique_words;\n\nprint \"<table border=0 cellpadding=3 cellspacing=0 width=100%>\\n\";\nforeach $word ( sort { $u_words{$b} <=> $u_words{$a} } keys %u_words ) {\n\tif ($u_words{$word} > 1 && $word !~ /\\b(the|and|or|an?|in|to|of|on|for|by|in|but)\\b/) {\n        \tprint \"<tr>\\n<td align=\\\"right\\\">$u_words{$word}</td><td>$word</td>\\n</tr>\\n\";\n\t}\n}\nprint \"</table>\\n\";",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "CustomPrompt",
+			"IsDisclosed": false,
+			"Resizable": true,
+			"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>L I T E R A R Y &nbsp T O O L B O X</title>\n\t<style type=\"text/css\">\nbody{background-color:black;font:.80em \"Lucida Grande\",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:66%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}span {background-color: #36aac2;color:white}\n\t</style> \n</head>\n<body data-kmwindow=\"SCREEN(Main,Left,46%),SCREEN(Main,Top,20%),380,400\">\n<div id=\"title\">\n\t<b>MOST USED WORDS</b>\n</div>\n<div id=\"text\">\n<script>\n\tdocument.write(window.KeyboardMaestro.GetVariable('LocalText'))\n</script>\n</div><script>\nfunction KMInit() {\n\tdocument.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');\n}\n</script>\n</body>\n</html>\n",
+			"TimeOutAbortsMacro": true,
+			"Floating": true,
+			"UseText": true
+		}
+	],
+	"CreationDate": 562700787.519603,
+	"ModificationDate": 574539547.404248,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 46,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "22)Most Used Words"
+}

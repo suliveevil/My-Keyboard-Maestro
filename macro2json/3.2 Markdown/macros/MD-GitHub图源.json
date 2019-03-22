@@ -1,0 +1,25 @@
+{
+	"UID": "FE8B6F42-BF49-4333-8780-AB14C6A529D7",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "<details> <summary> Screenshots </summary> <p float=\"left\">  <bt><img src='%FrontBrowserURL%' />  </p></details> \n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566256048.831961,
+	"IsActive": false,
+	"ModificationDate": 574950151.770147,
+	"Triggers": [
+		{
+			"TypedString": "@pic",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-GitHub图源"
+}

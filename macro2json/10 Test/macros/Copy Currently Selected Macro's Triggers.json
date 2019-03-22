@@ -1,0 +1,30 @@
+{
+	"UID": "54FEAD30-78C6-4A2F-B0E1-D8378B66106F",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "set TriggersList to {}\n\ntell application \"Keyboard Maestro\"\n\tset MacroTriggers to every trigger of item 1 of (get selection)\n\trepeat with TriggerXML in MacroTriggers\n\t\tset end of TriggersList to xml of TriggerXML\n\tend repeat\nend tell\n\nTriggersList as text",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "Clipboard",
+			"UseText": true
+		}
+	],
+	"CreationDate": 527775949.032359,
+	"IsActive": false,
+	"ModificationDate": 567342361.027292,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 8,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Copy Currently Selected Macro's Triggers"
+}

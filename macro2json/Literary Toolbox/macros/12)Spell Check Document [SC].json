@@ -1,0 +1,39 @@
+{
+	"UID": "A6A245C5-A9BC-4F1C-BC53-501923DCEA1B",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 0,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "tell application \"Spell Catcher\"\n\tcheck selection\nend tell",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 505095578.944067,
+	"ModificationDate": 565402243.362237,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "12)Spell Check Document [SC]"
+}

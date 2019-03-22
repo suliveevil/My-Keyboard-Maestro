@@ -1,0 +1,37 @@
+{
+	"UID": "E5766D3A-364B-468B-A2AC-42B67DB1C8F3",
+	"Actions": [
+		{
+			"MacroActionType": "SetKeyboardLayout",
+			"KeyboardLayoutName": "ABC",
+			"KeyboardLayoutID": "com.apple.keylayout.ABC"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.2",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetKeyboardLayout",
+			"KeyboardLayoutName": "Pinyin - Simplified",
+			"KeyboardLayoutID": "com.apple.inputmethod.SCIM.ITABC"
+		}
+	],
+	"CreationDate": 568082597.923024,
+	"ModificationDate": 574910603.703752,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 34,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Input-CN"
+}

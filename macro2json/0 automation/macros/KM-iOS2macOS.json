@@ -1,0 +1,41 @@
+{
+	"UID": "C07A5BC3-D9CF-4C61-AF8F-ECAD2C57BAEE",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "remote web trigger",
+			"ActionName": "remote web trigger",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5uAAAAKwAAAAEAAABm\n\t\t\t\t\t\t\tAAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNDA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmNDcwCntcZm9u\n\t\t\t\t\t\t\tdHRibH0Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAcy6w\n\t\t\t\t\t\t\tWbYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/System/Library/CoreServices/Finder.app",
+				"BundleIdentifier": "com.apple.finder",
+				"Name": "访达"
+			}
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "Finder Open",
+			"Subtitle": "",
+			"SoundName": ""
+		}
+	],
+	"CreationDate": 570325088.643927,
+	"ModificationDate": 570325847.433785,
+	"Triggers": [
+		{
+			"Shared": false,
+			"Name": "127D5434-D617-4F45-85E1-C8991979F9F6",
+			"MacroTriggerType": "Remote"
+		}
+	],
+	"Name": "KM-iOS2macOS"
+}

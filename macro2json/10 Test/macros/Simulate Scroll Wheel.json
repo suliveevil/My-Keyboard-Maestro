@@ -1,0 +1,21 @@
+{
+	"UID": "43D5D35C-A14D-4F3D-A69A-66CB80F94268",
+	"Actions": [
+		{
+			"MacroActionType": "ScrollWheelEvent",
+			"ScrollAmountExpression": "60",
+			"ScrollDirection": "Right"
+		}
+	],
+	"CreationDate": 567394084.578545,
+	"IsActive": false,
+	"ModificationDate": 568020737.722968,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 124,
+			"Modifiers": 768,
+			"MacroTriggerType": "HotKey"
+		}
+	]
+}

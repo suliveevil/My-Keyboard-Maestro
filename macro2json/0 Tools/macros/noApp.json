@@ -1,0 +1,30 @@
+{
+	"UID": "40E4A229-3283-49B7-8589-1EED7C895011",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "set frontApp to path to frontmost application as text\rset the clipboard to frontApp",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 574674931.645438,
+	"IsActive": false,
+	"ModificationDate": 574683210.623597,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 98,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "noApp"
+}

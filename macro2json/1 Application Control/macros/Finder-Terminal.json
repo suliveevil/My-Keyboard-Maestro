@@ -1,0 +1,33 @@
+{
+	"UID": "6E5D9566-D231-4EE2-9B27-364C93272F3B",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "on run\r\ttry\r\t\ttell application \"Finder\"\r\t\t\tset currFolder to POSIX path of (folder of the front window as string)\r\t\tend tell\r\ton error\r\t\tset currFolder to \"./\"\r\tend try\r\t\r\t\r\ttell application \"Terminal\"\r\t\tif it is running then\r\t\t\tset itermisrunning to true\r\t\telse\r\t\t\tset itermisrunning to false\r\t\tend if\r\t\tactivate\r\t\t-- 文档解释Brings an application to the front, and opens it if it is on the local computer and not already running.\r\t\tif itermisrunning = true then\r\t\t\ttell application \"System Events\" to keystroke \"t\" using command down\r\t\tend if\r\t\tdo script (\"cd \" & \"'\" & currFolder & \"'\") in front window\r\tend tell\r\t\rend run",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 569984804.845086,
+	"ModificationDate": 574825624.376989,
+	"Triggers": [
+		{
+			"TypedString": "fft",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "ftt",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Finder-Terminal"
+}

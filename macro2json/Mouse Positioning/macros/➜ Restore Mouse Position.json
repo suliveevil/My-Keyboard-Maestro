@@ -1,0 +1,37 @@
+{
+	"UID": "A7C21EAE-4D0A-4330-9A60-5260A95F1FA8",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Move mouse back…",
+			"ActionName": "Move mouse back…",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5zAQAAKwAAAAEAAABr\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgdG8gd2hl\n\t\t\t\t\t\t\tcmUgaXQgd2FzIGJlZm9y\n\t\t\t\t\t\t\tZSBleGVjdXRpbmcgb25l\n\t\t\t\t\t\t\tIG9mIHRoZSBvdGhlciBt\n\t\t\t\t\t\t\tYWNyb3MgaW4gdGhpcyBn\n\t\t\t\t\t\t\tcm91cC59AQAAACMAAAAB\n\t\t\t\t\t\t\tAAAABwAAAFRYVC5ydGYQ\n\t\t\t\t\t\t\tAAAAM7s2XLYBAAAAAAAA\n\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "UseVariable",
+			"Action": "SetMouse",
+			"IsDisclosed": false,
+			"Variable": "MP Saved Position"
+		}
+	],
+	"CreationDate": 483413207.436535,
+	"ModificationDate": 499791271.823879,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 65,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 47,
+			"Modifiers": 6656,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "➜ Restore Mouse Position",
+	"CustomIconData": "KMEP-MoveClickMouse"
+}

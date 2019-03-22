@@ -1,0 +1,41 @@
+{
+	"UID": "20EA2B3E-E714-4C51-8775-9EA05655055D",
+	"Actions": [
+		{
+			"MacroActionType": "SafariControl",
+			"Command": "NewTab",
+			"TimeOutAbortsMacro": true,
+			"WebBrowser": "Safari",
+			"Argument": "https://regex101.com"
+		},
+		{
+			"MacroActionType": "SafariControl",
+			"Command": "NewTab",
+			"TimeOutAbortsMacro": true,
+			"WebBrowser": "Safari",
+			"Argument": "https://regexper.com"
+		},
+		{
+			"MacroActionType": "SafariControl",
+			"Command": "NewTab",
+			"TimeOutAbortsMacro": true,
+			"WebBrowser": "Safari",
+			"Argument": "http://tool.oschina.net"
+		}
+	],
+	"CreationDate": 568790992.781586,
+	"ModificationDate": 568807442.495428,
+	"Triggers": [
+		{
+			"TypedString": "reg;",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "reg；",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Regex"
+}

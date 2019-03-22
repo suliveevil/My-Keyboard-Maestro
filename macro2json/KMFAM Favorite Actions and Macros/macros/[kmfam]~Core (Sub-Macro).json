@@ -1,0 +1,180 @@
+{
+	"UID": "E6CA701B-B1B2-43E8-BAD2-F97F8B0145AB",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "[kmfam]~Core (Sub-Macro) v1.1",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7OAgAAKwAAAAEAAADG\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgTmFtZTog\n\t\t\t\t\t\t\tW2ttZmFtXX5Db3JlIChT\n\t\t\t\t\t\t\tdWItTWFjcm8pXApWZXJz\n\t\t\t\t\t\t\taW9uOiAxLjFcClVwZGF0\n\t\t\t\t\t\t\tZWQ6IDIwMTYvMDkvMTgg\n\t\t\t\t\t\t\tMTQ6NTUgUERUXApCeTog\n\t\t\t\t\t\t\tRGFuIFRob21hc1wKXApO\n\t\t\t\t\t\t\tT1RFOiBUaGlzIGlzIGEg\n\t\t\t\t\t\t\tU3ViLU1hY3JvLCB3aGlj\n\t\t\t\t\t\t\taCBnZXRzIHJ1biBieSBv\n\t\t\t\t\t\t\tdGhlciBtYWNyb3MuIEl0\n\t\t\t\t\t\t\tIGlzIG5vdCBtZWFudCB0\n\t\t\t\t\t\t\tbyBiZSBydW4gYnkgaXRz\n\t\t\t\t\t\t\tZWxmLlwKXApQVVJQT1NF\n\t\t\t\t\t\t\tOlwKXApDYWxscyB0aGUg\n\t\t\t\t\t\t\tQ29yZSBzY3JpcHQgZm9y\n\t\t\t\t\t\t\tIHZhcmlvdXMgYWN0aW9u\n\t\t\t\t\t\t\tcy5cClwKVkVSU0lPTiBI\n\t\t\t\t\t\t\tSVNUT1JZOlwKMS4xIC0g\n\t\t\t\t\t\t\tQWRhcHRpdmUgT3JkZXJp\n\t\t\t\t\t\t\tbmcsIEJldHRlciBpbWFn\n\t\t\t\t\t\t\tZS1oYW5kbGluZyBmb3Ig\n\t\t\t\t\t\t\tUmV0aW5hIGRpc3BsYXlz\n\t\t\t\t\t\t\tLCBVSSBpbXByb3ZlbWVu\n\t\t\t\t\t\t\tdHMuXAoxLjAuMSAtIFdv\n\t\t\t\t\t\t\tcmthcm91bmRzIGZvciBZ\n\t\t\t\t\t\t\tb3NlbWl0ZSBidWdzLlwK\n\t\t\t\t\t\t\tMS4wIC0gSW5pdGlhbCB2\n\t\t\t\t\t\t\tZXJzaW9uLn0BAAAAIwAA\n\t\t\t\t\t\t\tAAEAAAAHAAAAVFhULnJ0\n\t\t\t\t\t\t\tZhAAAAAWbUpctgEAAAAA\n\t\t\t\t\t\t\tAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Comment",
+			"Title": "License Agreement / Disclaimer",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4KBAAAKwAAAAEAAAAC\n\t\t\t\t\t\t\tBAAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgQ29weXJp\n\t\t\t\t\t\t\tZ2h0IChjKSAyMDE2IERh\n\t\t\t\t\t\t\tbmllbCBUaG9tYXNcClwK\n\t\t\t\t\t\t\tUGVybWlzc2lvbiB0byB1\n\t\t\t\t\t\t\tc2UsIGNvcHksIG1vZGlm\n\t\t\t\t\t\t\teSwgYW5kL29yIGRpc3Ry\n\t\t\t\t\t\t\taWJ1dGUgdGhpcyBzb2Z0\n\t\t\t\t\t\t\td2FyZSBmb3IgYW55IHB1\n\t\t\t\t\t\t\tcnBvc2Ugd2l0aCBvciB3\n\t\t\t\t\t\t\taXRob3V0IGZlZSBpcyBo\n\t\t\t\t\t\t\tZXJlYnkgZ3JhbnRlZCwg\n\t\t\t\t\t\t\tcHJvdmlkZWQgdGhhdCB0\n\t\t\t\t\t\t\taGUgYWJvdmUgY29weXJp\n\t\t\t\t\t\t\tZ2h0IG5vdGljZSBhbmQg\n\t\t\t\t\t\t\tdGhpcyBwZXJtaXNzaW9u\n\t\t\t\t\t\t\tIG5vdGljZSBhcHBlYXIg\n\t\t\t\t\t\t\taW4gYWxsIGNvcGllcy5c\n\t\t\t\t\t\t\tClwKVEhFIFNPRlRXQVJF\n\t\t\t\t\t\t\tIElTIFBST1ZJREVEICJB\n\t\t\t\t\t\t\tUyBJUyIgQU5EIFRIRSBB\n\t\t\t\t\t\t\tVVRIT1IgRElTQ0xBSU1T\n\t\t\t\t\t\t\tIEFMTCBXQVJSQU5USUVT\n\t\t\t\t\t\t\tIFdJVEggUkVHQVJEIFRP\n\t\t\t\t\t\t\tIFRISVMgU09GVFdBUkUg\n\t\t\t\t\t\t\tSU5DTFVESU5HIEFMTCBJ\n\t\t\t\t\t\t\tTVBMSUVEIFdBUlJBTlRJ\n\t\t\t\t\t\t\tRVMgT0YgTUVSQ0hBTlRB\n\t\t\t\t\t\t\tQklMSVRZIEFORCBGSVRO\n\t\t\t\t\t\t\tRVNTLiBJTiBOTyBFVkVO\n\t\t\t\t\t\t\tVCBTSEFMTCBUSEUgQVVU\n\t\t\t\t\t\t\tSE9SIEJFIExJQUJMRSBG\n\t\t\t\t\t\t\tT1IgQU5ZIFNQRUNJQUws\n\t\t\t\t\t\t\tIERJUkVDVCwgSU5ESVJF\n\t\t\t\t\t\t\tQ1QsIE9SIENPTlNFUVVF\n\t\t\t\t\t\t\tTlRJQUwgREFNQUdFUyBP\n\t\t\t\t\t\t\tUiBBTlkgREFNQUdFUyBX\n\t\t\t\t\t\t\tSEFUU09FVkVSIFJFU1VM\n\t\t\t\t\t\t\tVElORyBGUk9NIExPU1Mg\n\t\t\t\t\t\t\tT0YgVVNFLCBEQVRBIE9S\n\t\t\t\t\t\t\tIFBST0ZJVFMsIFdIRVRI\n\t\t\t\t\t\t\tRVIgSU4gQU4gQUNUSU9O\n\t\t\t\t\t\t\tIE9GIENPTlRSQUNULCBO\n\t\t\t\t\t\t\tRUdMSUdFTkNFIE9SIE9U\n\t\t\t\t\t\t\tSEVSIFRPUlRJT1VTIEFD\n\t\t\t\t\t\t\tVElPTiwgQVJJU0lORyBP\n\t\t\t\t\t\t\tVVQgT0YgT1IgSU4gQ09O\n\t\t\t\t\t\t\tTkVDVElPTiBXSVRIIFRI\n\t\t\t\t\t\t\tRSBVU0UgT1IgUEVSRk9S\n\t\t\t\t\t\t\tTUFOQ0UgT0YgVEhJUyBT\n\t\t\t\t\t\t\tT0ZUV0FSRS59AQAAACMA\n\t\t\t\t\t\t\tAAABAAAABwAAAFRYVC5y\n\t\t\t\t\t\t\tdGYQAAAAFm1KXLYBAAAA\n\t\t\t\t\t\t\tAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Assert parameter was supplied",
+			"ActionColor": "Magenta",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Text": "%TriggerValue%",
+						"TextConditionType": "IsEmpty",
+						"ConditionType": "Text",
+						"TextValue": ""
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "%ExecutingThisMacro%",
+					"ActionName": "Notify the error",
+					"Prompt": "Parameter required.",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "OK",
+							"Cancel": true
+						}
+					],
+					"Variables": []
+				},
+				{
+					"MacroActionType": "Cancel",
+					"Action": "CancelThisMacro",
+					"IsDisclosed": false
+				}
+			]
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "kmfamRequest",
+			"Text": "%TriggerValue%"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "kmfamLog",
+			"Text": ""
+		},
+		{
+			"MacroActionType": "ExecuteJavaScriptForAutomation",
+			"ActionName": "Run our Core script, to process the Request that was passed in TriggerValue",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "kmfamcResult",
+			"IncludeStdErr": true,
+			"UseText": false,
+			"TrimResultsNew": true,
+			"ActionColor": "Aqua",
+			"TimeOutAbortsMacro": true,
+			"Path": "%Variable%DND__kmfamResourcesFolderPath%/lib/Favorite Actions Core.scpt",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Cancel if error",
+			"ActionColor": "Red",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "kmfamcResult",
+						"VariableConditionType": "IsNot",
+						"VariableValue": "OK",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "PlaySound",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Path": "/System/Library/Sounds/Basso.aiff",
+					"DeviceID": "SOUNDEFFECTS"
+				},
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "%ExecutingMacro%",
+					"ActionName": "Notify error '%Variable%kmfamcResult%'",
+					"Prompt": "%Variable%kmfamcResult%",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "OK",
+							"Cancel": true
+						}
+					],
+					"Variables": []
+				},
+				{
+					"MacroActionType": "Cancel",
+					"Action": "CancelThisMacro",
+					"IsDisclosed": false
+				}
+			]
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "If the Log variable contains anything, display it (for debugging)",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "kmfamLog",
+						"VariableConditionType": "IsNotEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "%ExecutingMacro%",
+					"Prompt": "%Variable%kmfamLog%",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "OK"
+						},
+						{
+							"Button": "Cancel",
+							"Cancel": true
+						}
+					],
+					"Variables": []
+				}
+			]
+		}
+	],
+	"CreationDate": 490489224.372939,
+	"ModificationDate": 495928522.785818,
+	"Triggers": [],
+	"Name": "[kmfam]~Core (Sub-Macro)"
+}

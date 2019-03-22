@@ -1,0 +1,23 @@
+{
+	"UID": "E0E67071-E9F4-42B2-94DB-61BBDC7092DF",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"IsDisclosed": false,
+			"Text": "%ChromeURL%"
+		}
+	],
+	"CreationDate": 566900676.561097,
+	"IsActive": false,
+	"ModificationDate": 567379972.614354,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 37,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Paste Chrome URL"
+}

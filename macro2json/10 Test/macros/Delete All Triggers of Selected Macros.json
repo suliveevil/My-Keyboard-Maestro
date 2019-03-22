@@ -1,0 +1,30 @@
+{
+	"UID": "8065EC23-A8C8-4C41-AD47-2970A248ADB7",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"Keyboard Maestro\"\r\trepeat with CurrentlySelectedMacros in every item of (get selection)\r\t\tdelete every trigger of CurrentlySelectedMacros\r\tend repeat\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 527779146.262915,
+	"IsActive": false,
+	"ModificationDate": 567342358.406024,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 51,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Delete All Triggers of Selected Macros"
+}

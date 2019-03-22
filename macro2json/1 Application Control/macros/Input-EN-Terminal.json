@@ -1,0 +1,41 @@
+{
+	"UID": "90083E2E-66B3-47BF-A6F9-8A7BCDB552C5",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [
+				{
+					"MacroActionType": "SetKeyboardLayout",
+					"KeyboardLayoutName": "Pinyin - Simplified",
+					"KeyboardLayoutID": "com.apple.inputmethod.SCIM.ITABC"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ApplicationConditionType": "Active",
+						"ConditionType": "Application",
+						"Application": {
+							"NewFile": "/Applications/Utilities/Terminal.app",
+							"BundleIdentifier": "com.apple.Terminal",
+							"Name": "Terminal"
+						}
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetKeyboardLayout",
+					"KeyboardLayoutName": "ABC",
+					"KeyboardLayoutID": "com.apple.keylayout.ABC"
+				}
+			]
+		}
+	],
+	"CreationDate": 567203137.780422,
+	"ModificationDate": 568148002.417465,
+	"Triggers": [],
+	"Name": "Input-EN-Terminal"
+}

@@ -1,0 +1,662 @@
+{
+	"UID": "B99C3A44-23B8-4431-82CD-E7FE4DE414E6",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Export Macro Groups as individual macros v1.2",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4YBgAAKwAAAAEAAAAQ\n\t\t\t\t\t\t\tBgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTYxXGNvY29h\n\t\t\t\t\t\t\tc3VicnRmMjAwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmc3dpc3Nc\n\t\t\t\t\t\t\tZmNoYXJzZXQwIEhlbHZl\n\t\t\t\t\t\t\tdGljYTt9CntcY29sb3J0\n\t\t\t\t\t\t\tYmw7XHJlZDI1NVxncmVl\n\t\t\t\t\t\t\tbjI1NVxibHVlMjU1O30K\n\t\t\t\t\t\t\te1wqXGV4cGFuZGVkY29s\n\t\t\t\t\t\t\tb3J0Ymw7O30KXHBhcmRc\n\t\t\t\t\t\t\tdHg1NjBcdHgxMTIwXHR4\n\t\t\t\t\t\t\tMTY4MFx0eDIyNDBcdHgy\n\t\t\t\t\t\t\tODAwXHR4MzM2MFx0eDM5\n\t\t\t\t\t\t\tMjBcdHg0NDgwXHR4NTA0\n\t\t\t\t\t\t\tMFx0eDU2MDBcdHg2MTYw\n\t\t\t\t\t\t\tXHR4NjcyMFxwYXJkaXJu\n\t\t\t\t\t\t\tYXR1cmFsXHBhcnRpZ2h0\n\t\t\t\t\t\t\tZW5mYWN0b3IwCgpcZjBc\n\t\t\t\t\t\t\tZnMyNCBcY2YwIE5hbWU6\n\t\t\t\t\t\t\tIEV4cG9ydCBHcm91cHMg\n\t\t\t\t\t\t\tKGluZGl2aWR1YWwgbWFj\n\t\t\t\t\t\t\tcm9zKVwKVmVyc2lvbjog\n\t\t\t\t\t\t\tMS4yXApEYXRlOiAyMDE4\n\t\t\t\t\t\t\tLzA1LzMxIDEwOjMwIENF\n\t\t\t\t\t\t\tU1RcCkJ5OiBQYXRyaWNr\n\t\t\t\t\t\t\tIFdlbGtlclwKV2ViOiBo\n\t\t\t\t\t\t\tdHRwOi8vcm9ja2V0aW5r\n\t\t\t\t\t\t\tLm5ldFwKXApTZWxlY3Qg\n\t\t\t\t\t\t\tYSBtYWNybyBncm91cCBv\n\t\t\t\t\t\t\tciBhIG1hY3JvIGluc2lk\n\t\t\t\t\t\t\tZSBhIGdyb3VwIGluIHRo\n\t\t\t\t\t\t\tZSBlZGl0b3IuIFJ1biB0\n\t\t\t\t\t\t\taGlzIG1hY3JvLiBUaGUg\n\t\t\t\t\t\t\tZWRpdG9yIHdpbGwgbG9v\n\t\t\t\t\t\t\tcCB0aHJvdWdoIGFsbCBt\n\t\t\t\t\t\t\tYWNyb3MsIGV4cG9ydCB0\n\t\t\t\t\t\t\taGVtIGluZGl2aWR1YWxs\n\t\t\t\t\t\t\teSBfKG5hbWVkIHdpdGgg\n\t\t\t\t\t\t\tdGhlaXIgYWN0dWFsIG5h\n\t\t\t\t\t\t\tbWUpXyBhbmQgZXhwb3J0\n\t\t\t\t\t\t\tIHRoZW0gaW4gYSBmb2xk\n\t\t\t\t\t\t\tZXIgb24geW91ciBEZXNr\n\t\t\t\t\t\t\tdG9wIF8obmFtZWQgYWZ0\n\t\t\t\t\t\t\tZXIgdGhlIGdyb3VwKV8u\n\t\t\t\t\t\t\tXApcCk9QVElPTlM6XApc\n\t\t\t\t\t\t\tCjEuIFlvdSBjYW4gc2V0\n\t\t\t\t\t\t\tIGEgY3VzdG9tIGV4cG9y\n\t\t\t\t\t\t\tdCBwYXRoIGFuZCB3aGV0\n\t\t\t\t\t\t\taGVyIHlvdSdkIGFsc28g\n\t\t\t\t\t\t\tbGlrZSB0byBleHBvcnQg\n\t\t\t\t\t\t\tYSBzY3JlZW4gc2hvdCBv\n\t\t\t\t\t\t\tZiB0aGUgbWFjcm8gaW4g\n\t\t\t\t\t\t\tdGhlIFNFVFRJTkdTOlwK\n\t\t\t\t\t\t\tXAohW10oaHR0cHM6Ly9w\n\t\t\t\t\t\t\tYXRyaWNrd2Vsa2VyLmNv\n\t\t\t\t\t\t\tbS9zL2ttX19leHBvcnRf\n\t\t\t\t\t\t\tZ3JvdXBzX3NldHRpbmdz\n\t\t\t\t\t\t\tLnBuZylcClwKMi4gWW91\n\t\t\t\t\t\t\tIGNhbiBhZGQgY3VzdG9t\n\t\t\t\t\t\t\tIHJlbmFtaW5nIHJ1bGVz\n\t\t\t\t\t\t\tIHRvIHRoZSBtYWNybyBf\n\t\t\t\t\t\t\tKHNlZSBtYWdlbnRhIGNv\n\t\t\t\t\t\t\tbG9yZWQgYWN0aW9ucyBp\n\t\t\t\t\t\t\tbiB0aGUgc2NyZWVuIHNo\n\t\t\t\t\t\t\tb3QpXy4gVGhpcyBpcyB1\n\t\t\t\t\t\t\tc2VmdWwgaW4gY2FzZSB5\n\t\t\t\t\t\t\tb3UgbmFtZWQgc29tZSBv\n\t\t\t\t\t\t\tZiB5b3VyIGdyb3VwcyB3\n\t\t\t\t\t\t\taXRoIGNoYXJhY3RlcnMg\n\t\t\t\t\t\t\tdGhhdCBkb24ndCB3b3Jr\n\t\t\t\t\t\t\tIHdlbGwgaW4gdGhlIG9w\n\t\t\t\t\t\t\tZXJhdGlvbiBzeXN0ZW0s\n\t\t\t\t\t\t\tIGMuZi4gbXkgIlx1YzBc\n\t\t\t\t\t\t\tdTYzNzQzICA6OiBLZXli\n\t\t\t\t\t\t\tb2FyZCBNYWVzdHJvIFBh\n\t\t\t\t\t\t\tbGV0dGUiIGdldHMgcmVu\n\t\t\t\t\t\t\tYW1lZCB0byAiXHU2Mzc0\n\t\t\t\t\t\t\tMyAgS2V5Ym9hcmQgTWFl\n\t\t\t\t\t\t\tc3RybyBQYWxldHRlIiBc\n\t\t\t\t\t\t\tJzk2IEkgZ290IHJpZCBv\n\t\t\t\t\t\t\tZiBhbGwgZG91YmxlIGNv\n\t\t\t\t\t\t\tbG9ucy4gQWxzbyAiRm9v\n\t\t\t\t\t\t\tOiBCYXIiIHdvdWxkIGVu\n\t\t\t\t\t\t\tZCB1cCBhcyAiRm9vIC0g\n\t\t\t\t\t\t\tQmFyIjpcClwKIVtdKGh0\n\t\t\t\t\t\t\tdHBzOi8vcGF0cmlja3dl\n\t\t\t\t\t\t\tbGtlci5jb20vcy9rbV9f\n\t\t\t\t\t\t\tZXhwb3J0X2dyb3Vwc19j\n\t\t\t\t\t\t\tbGVhbnVwLW5hbWUucG5n\n\t\t\t\t\t\t\tKVwKXApOT1RFOiBXaGls\n\t\t\t\t\t\t\tZSB0aGUgbWFjcm8gZG9l\n\t\t\t\t\t\t\tcyBpdCdzIG1hZ2ljLCBk\n\t\t\t\t\t\t\tb24ndCBzd2l0Y2ggYXBw\n\t\t\t\t\t\t\tcy4gSnVzdCBzaXQgdGln\n\t\t\t\t\t\t\taHQgYW5kIGxldCBpdCBk\n\t\t\t\t\t\t\tbyBpdHMgdGhpbmcuIFRo\n\t\t\t\t\t\t\taXMgaXMgbm90IGEgc29w\n\t\t\t\t\t\t\taGlzdGljYXRlZCBzb2x1\n\t\t\t\t\t\t\tdGlvbiwgaXQncyBqdXN0\n\t\t\t\t\t\t\tIHlvdXIgYXZlcmFnZSBG\n\t\t\t\t\t\t\tcmFua2Vuc3RlaW4ncyBH\n\t\t\t\t\t\t\tVUkgYXV0b21hdGlvbiBt\n\t\t\t\t\t\t\tb25zdGVyLlwKfQEAAAAj\n\t\t\t\t\t\t\tAAAAAQAAAAcAAABUWFQu\n\t\t\t\t\t\t\tcnRmEAAAAMLED1u2AQAA\n\t\t\t\t\t\t\tAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "SETTINGS",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "Global_Configuration",
+						"VariableConditionType": "DoesNotExist",
+						"VariableValue": "true",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionName": "CONFIG: set default export path here (without trailing slash)",
+					"ActionColor": "Teal",
+					"Variable": "Macro_Export_Path",
+					"Text": "~/Desktop/"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionName": "CONFIG: optionally generate screen shots. (Boolean – set to true or false)",
+					"ActionColor": "Teal",
+					"Variable": "Sceen_Shots",
+					"Text": "true"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "TEST",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "InsertText",
+					"Action": "DisplayLarge",
+					"Text": "Global Config: %Global_Configuration%\nPath: %Macro_Export_Path%\nScreenshots: %Screen_Shots%"
+				},
+				{
+					"MacroActionType": "Cancel",
+					"Action": "CancelAllMacros"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"IsActive": false
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Prepare paths",
+			"ActionColor": "Green",
+			"Actions": [
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "Always start in group column",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"MenuConditionType": "ExistsButIsNotEnabled",
+								"MenuModifiers": 256,
+								"ConditionType": "Menu",
+								"MenuShortcut": "C",
+								"MenuConditionSelectionType": "Is",
+								"MenuTitle": "Select Groups Column"
+							}
+						],
+						"ConditionListMatch": "None"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "SelectMenuItem",
+							"ActionName": "Switch to Groups Column",
+							"Menu": [
+								"View",
+								"Select Groups Column"
+							],
+							"TargetApplication": {
+								"NewFile": "/Applications/Keyboard Maestro.app",
+								"BundleIdentifier": "com.stairways.keyboardmaestro.editor",
+								"Name": "Keyboard Maestro"
+							},
+							"TargetingType": "Specific"
+						}
+					]
+				},
+				{
+					"MacroActionType": "CutCopyPaste",
+					"ActionName": "Copy Group Name",
+					"Action": "Copy",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionName": "Set \"Name\" to 📋",
+					"IsDisclosed": false,
+					"Variable": "Name",
+					"Text": "%SystemClipboard%"
+				},
+				{
+					"MacroActionType": "Group",
+					"ActionName": "Clean-up Group Name",
+					"Actions": [
+						{
+							"MacroActionType": "Filter",
+							"ActionName": "Trim whitespace",
+							"Action": "TrimWhitespace",
+							"Source": "Variable",
+							"IsDisclosed": false,
+							"Variable": "Name"
+						},
+						{
+							"MacroActionType": "Group",
+							"ActionName": "Custom replace rules (Patrick)",
+							"ActionColor": "Magenta",
+							"Actions": [
+								{
+									"MacroActionType": "SearchReplace",
+									"ActionName": "Remove double colons \" ::\"",
+									"Action": "CaseSensitiveRegEx",
+									"Search": "(?<=\\s)\\:+\\s",
+									"ActionColor": "Magenta",
+									"Source": "Variable",
+									"Variable": "Name",
+									"Replace": ""
+								},
+								{
+									"MacroActionType": "SearchReplace",
+									"ActionName": "Replace colon followed by space with \" - \"",
+									"Action": "CaseSensitiveRegEx",
+									"Search": "(?<!\\s)\\:\\s",
+									"ActionColor": "Magenta",
+									"Source": "Variable",
+									"Variable": "Name",
+									"Replace": " - "
+								}
+							],
+							"TimeOutAbortsMacro": true
+						},
+						{
+							"MacroActionType": "SearchReplace",
+							"ActionName": "Replace colon with hyphen",
+							"Action": "CaseSensitiveRegEx",
+							"Search": "\\:",
+							"IsDisclosed": false,
+							"Source": "Variable",
+							"Variable": "Name",
+							"Replace": "-"
+						},
+						{
+							"MacroActionType": "SearchReplace",
+							"ActionName": "Replace dash with hyphen",
+							"Action": "CaseSensitiveRegEx",
+							"Search": "/",
+							"IsDisclosed": false,
+							"Source": "Variable",
+							"Variable": "Name",
+							"Replace": "-"
+						}
+					],
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionName": "Set \"Macro_Export_Path\" as child directory of export path",
+					"Variable": "Macro_Export_Path",
+					"Text": "%Macro_Export_Path%/%Name%"
+				},
+				{
+					"MacroActionType": "Filter",
+					"ActionName": "Expand tilde",
+					"Action": "ExpandTildeInPath",
+					"Source": "Variable",
+					"IsDisclosed": false,
+					"Variable": "Macro_Export_Path"
+				},
+				{
+					"MacroActionType": "DeletePastClipboard",
+					"IsDisclosed": false,
+					"PastExpression": "0"
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"ActionName": "Build directory structure",
+					"TrimResults": true,
+					"Source": "Nothing",
+					"IncludeStdErr": false,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"ActionColor": "Red",
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Window",
+					"IsDisclosed": false,
+					"Text": "#!/bin/bash\nDIR=\"$KMVAR_Macro_Export_Path\"\n\nif [ ! -d \"$DIR\" ]; then\n\tmkdir -p \"$DIR\";\nfi"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Count macros",
+			"ActionColor": "Green",
+			"Actions": [
+				{
+					"MacroActionType": "SelectMenuItem",
+					"ActionName": "Switch to Macros Column",
+					"Menu": [
+						"View",
+						"Select Macros Column"
+					],
+					"IsDisclosed": false,
+					"TargetApplication": {
+						"NewFile": "/Applications/Keyboard Maestro.app",
+						"BundleIdentifier": "com.stairways.keyboardmaestro.editor",
+						"Name": "Keyboard Maestro"
+					},
+					"TargetingType": "Specific"
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ActionName": "Select all (⌘A)",
+					"IsDisclosed": false,
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 0,
+					"Modifiers": 256
+				},
+				{
+					"MacroActionType": "CutCopyPaste",
+					"Action": "Copy",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ActionName": "Go to first item in the group",
+					"IsDisclosed": false,
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 126,
+					"Modifiers": 0
+				},
+				{
+					"MacroActionType": "Filter",
+					"ActionName": "Set \"Macros_Total\" to numbers of selected macros",
+					"Action": "LineCount",
+					"DestinationVariable": "Macros_Total",
+					"IsDisclosed": false,
+					"Destination": "Variable",
+					"Source": "Clipboard"
+				},
+				{
+					"MacroActionType": "DeletePastClipboard",
+					"IsDisclosed": false,
+					"PastExpression": "0"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Repeat",
+			"ActionColor": "Aqua",
+			"Actions": [
+				{
+					"MacroActionType": "Group",
+					"ActionName": "Get \"Name\"",
+					"Actions": [
+						{
+							"MacroActionType": "CutCopyPaste",
+							"Action": "Copy",
+							"IsDisclosed": false,
+							"TimeOutAbortsMacro": true
+						},
+						{
+							"MacroActionType": "SetVariableToText",
+							"ActionName": "Set \"Name\" to 📋",
+							"Variable": "Name",
+							"Text": "%SystemClipboard%"
+						},
+						{
+							"MacroActionType": "Filter",
+							"ActionName": "Trim whitespace",
+							"Action": "TrimWhitespace",
+							"Source": "Variable",
+							"IsDisclosed": false,
+							"Variable": "Name"
+						},
+						{
+							"MacroActionType": "SearchReplace",
+							"ActionName": "Replace colon with hyphen",
+							"Action": "CaseSensitiveRegEx",
+							"Search": "\\:",
+							"IsDisclosed": false,
+							"Source": "Variable",
+							"Variable": "Name",
+							"Replace": "-"
+						},
+						{
+							"MacroActionType": "SearchReplace",
+							"ActionName": "Replace dash with hyphen",
+							"Action": "CaseSensitiveRegEx",
+							"Search": "/",
+							"IsDisclosed": false,
+							"Source": "Variable",
+							"Variable": "Name",
+							"Replace": "-"
+						},
+						{
+							"MacroActionType": "DeletePastClipboard",
+							"IsDisclosed": false,
+							"PastExpression": "0"
+						}
+					],
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "If macro is disabled prepend \"Name\" with asterisks",
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"MenuConditionType": "Exists",
+								"MenuModifiers": 256,
+								"ConditionType": "Menu",
+								"MenuShortcut": "C",
+								"MenuConditionSelectionType": "Is",
+								"MenuTitle": "Enable Macro"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "Group",
+							"ActionName": "Check if Macro is numbered",
+							"Actions": [
+								{
+									"MacroActionType": "SearchRegEx",
+									"ActionName": "Check if %Name% begins with a number in the \"01)\" format",
+									"Action": "IgnoreCaseRegEx",
+									"NotifyOnFailure": false,
+									"Search": "\\d{2}\\)",
+									"Captures": [
+										"Disabled_Macro"
+									],
+									"Source": "Variable",
+									"Variable": "Name",
+									"StopOnFailure": false
+								},
+								{
+									"MacroActionType": "IfThenElse",
+									"ActionName": "If numbered append * aftert number ELSE prepend with *",
+									"ElseActions": [
+										{
+											"MacroActionType": "SetVariableToText",
+											"ActionName": "Set \"Name\" to 📋",
+											"Variable": "Name",
+											"Text": "*%Name%"
+										}
+									],
+									"TimeOutAbortsMacro": true,
+									"Conditions": {
+										"ConditionList": [
+											{
+												"Variable": "Disabled_Macro",
+												"VariableConditionType": "Exists",
+												"VariableValue": "value",
+												"ConditionType": "Variable"
+											}
+										],
+										"ConditionListMatch": "All"
+									},
+									"ThenActions": [
+										{
+											"MacroActionType": "SearchReplace",
+											"Action": "CaseSensitiveString",
+											"Search": "%Disabled_Macro%",
+											"Source": "Variable",
+											"Variable": "Name",
+											"Replace": "%Disabled_Macro%*"
+										}
+									]
+								}
+							],
+							"TimeOutAbortsMacro": true
+						}
+					]
+				},
+				{
+					"MacroActionType": "Group",
+					"ActionName": "Save Screen Shot",
+					"ActionColor": "Orange",
+					"Actions": [
+						{
+							"MacroActionType": "IfThenElse",
+							"ElseActions": [],
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionList": [
+									{
+										"Variable": "Sceen_Shots",
+										"VariableConditionType": "Is",
+										"VariableValue": "true",
+										"ConditionType": "Variable"
+									}
+								],
+								"ConditionListMatch": "All"
+							},
+							"ThenActions": [
+								{
+									"MacroActionType": "Comment",
+									"Title": "",
+									"ActionName": "Using Keyboard Maestro's CLIPBOARDSEED() function to check when the clipboard’s contents changed",
+									"ActionColor": "Yellow",
+									"IsDisclosed": false,
+									"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5uAAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABm\n\t\t\t\t\t\t\t\tAAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDcw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbH0Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp9AQAA\n\t\t\t\t\t\t\t\tACMAAAABAAAA\n\t\t\t\t\t\t\t\tBwAAAFRYVC5y\n\t\t\t\t\t\t\t\tdGYQAAAAcy6w\n\t\t\t\t\t\t\t\tWbYBAAAAAAAA\n\t\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+								},
+								{
+									"MacroActionType": "SetVariableToCalculation",
+									"ActionName": "“Check_Clipboard” == “CLIPBOARDSEED()”",
+									"ActionColor": "Orange",
+									"IsDisclosed": false,
+									"Text": "CLIPBOARDSEED()",
+									"UseFormat": false,
+									"Variable": "Check_Clipboard"
+								},
+								{
+									"MacroActionType": "SelectMenuItem",
+									"ActionName": "Copy macro as image to clipboard",
+									"Menu": [
+										"Edit",
+										"Copy as",
+										"Copy as Image"
+									],
+									"ActionColor": "Orange",
+									"IsDisclosed": false,
+									"TargetApplication": {
+										"NewFile": "/Applications/Keyboard Maestro.app",
+										"BundleIdentifier": "com.stairways.keyboardmaestro.editor",
+										"Name": "Keyboard Maestro"
+									},
+									"TargetingType": "Specific"
+								},
+								{
+									"MacroActionType": "PauseUntil",
+									"ActionName": "Pause until clipboard changed",
+									"ActionColor": "Orange",
+									"IsDisclosed": false,
+									"TimeOutAbortsMacro": true,
+									"Conditions": {
+										"ConditionList": [
+											{
+												"Text": "CLIPBOARDSEED() ≠ Check_Clipboard",
+												"ConditionType": "Calculation"
+											}
+										],
+										"ConditionListMatch": "All"
+									}
+								},
+								{
+									"MacroActionType": "WriteFile",
+									"ActionName": "Write system clipboard to PNG image",
+									"Append": false,
+									"Format": "PNG",
+									"ActionColor": "Orange",
+									"Destination": "%Macro_Export_Path%/%Name%.png",
+									"Format2": "PNG",
+									"Encoding": "UTF8",
+									"Source": "Clipboard"
+								}
+							]
+						}
+					],
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "Group",
+					"ActionName": "Save Macro",
+					"ActionColor": "Orange",
+					"Actions": [
+						{
+							"MacroActionType": "Comment",
+							"Title": "",
+							"ActionName": "Using Keyboard Maestro's CLIPBOARDSEED() function to check when the clipboard’s contents changed",
+							"ActionColor": "Yellow",
+							"IsDisclosed": false,
+							"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5uAAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABm\n\t\t\t\t\t\t\t\tAAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDcw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbH0Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp9AQAA\n\t\t\t\t\t\t\t\tACMAAAABAAAA\n\t\t\t\t\t\t\t\tBwAAAFRYVC5y\n\t\t\t\t\t\t\t\tdGYQAAAAcy6w\n\t\t\t\t\t\t\t\tWbYBAAAAAAAA\n\t\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+						},
+						{
+							"MacroActionType": "SetVariableToCalculation",
+							"ActionName": "“Check_Clipboard” == “CLIPBOARDSEED()”",
+							"ActionColor": "Orange",
+							"IsDisclosed": false,
+							"Text": "CLIPBOARDSEED()",
+							"UseFormat": false,
+							"Variable": "Check_Clipboard"
+						},
+						{
+							"MacroActionType": "SelectMenuItem",
+							"ActionName": "Copy macro as XML code to clipboard",
+							"Menu": [
+								"Edit",
+								"Copy as",
+								"Copy as XML"
+							],
+							"ActionColor": "Orange",
+							"IsDisclosed": false,
+							"TargetApplication": {
+								"NewFile": "/Applications/Keyboard Maestro.app",
+								"BundleIdentifier": "com.stairways.keyboardmaestro.editor",
+								"Name": "Keyboard Maestro"
+							},
+							"TargetingType": "Specific"
+						},
+						{
+							"MacroActionType": "PauseUntil",
+							"ActionName": "Pause until clipboard changed",
+							"ActionColor": "Orange",
+							"IsDisclosed": false,
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionList": [
+									{
+										"Text": "CLIPBOARDSEED() ≠ Check_Clipboard",
+										"ConditionType": "Calculation"
+									}
+								],
+								"ConditionListMatch": "All"
+							}
+						},
+						{
+							"MacroActionType": "ExecuteShellScript",
+							"ActionName": "Write macro file",
+							"TrimResults": true,
+							"Source": "Nothing",
+							"IncludeStdErr": false,
+							"UseText": true,
+							"TrimResultsNew": true,
+							"ActionColor": "Red",
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "Window",
+							"Text": "#!/bin/bash\nEXPORT_PATH=$KMVAR_Macro_Export_Path\nFILE_NAME=$KMVAR_Name\nEXT=kmmacros\n\npbpaste > \"$EXPORT_PATH/${FILE_NAME}.$EXT\""
+						}
+					],
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ActionName": "Proceed to next macro (↓)",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 125,
+					"Modifiers": 0
+				},
+				{
+					"MacroActionType": "Pause",
+					"Time": "1.25",
+					"TimeOutAbortsMacro": true
+				}
+			],
+			"CountExpression": "Macros_Total",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Clean-up",
+			"ActionColor": "Purple",
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionColor": "Purple",
+					"IsDisclosed": false,
+					"Text": "%Delete%",
+					"Variable": "Global_Configuration"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionColor": "Purple",
+					"IsDisclosed": false,
+					"Text": "%Delete%",
+					"Variable": "Sceen_Shots"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionColor": "Purple",
+					"IsDisclosed": false,
+					"Text": "%Delete%",
+					"Variable": "Name"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionColor": "Purple",
+					"IsDisclosed": false,
+					"Text": "%Delete%",
+					"Variable": "Disabled_Macro"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionColor": "Purple",
+					"IsDisclosed": false,
+					"Text": "%Delete%",
+					"Variable": "Check_Clipboard"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionColor": "Purple",
+					"IsDisclosed": false,
+					"Text": "%Delete%",
+					"Variable": "Macro_Export_Path"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionColor": "Purple",
+					"IsDisclosed": false,
+					"Text": "%Delete%",
+					"Variable": "Macros_Total"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro% Done!",
+			"Text": "",
+			"Subtitle": "",
+			"SoundName": "Glass"
+		}
+	],
+	"CreationDate": 544700511.940685,
+	"ModificationDate": 549453046.024679,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 14,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "99)Export Groups (individual macros)",
+	"CustomIconData": "\n\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\tTU0AKgAADVaAACBQOCQWDQeEQmFQuGQ2HQ+I\n\t\t\t\t\tRGJROKRWLReMRmNRuOR2PR+QSGRSOSSWTSeU\n\t\t\t\t\tSmVSuWS2XS+YTGZTOaRoIzcQhKbhsLhgMCoN\n\t\t\t\t\thkNC0Gg0GBUEAoFBB+vt9vp6vV7O15PN5Olx\n\t\t\t\t\t1lnOyuN13vB4OR6WN0zWzWeNAe1A8Ph4PjQV\n\t\t\t\t\tisVEoQiAQDkK3kRA4Hg8LgEAYCEP8AYTBQPD\n\t\t\t\t\twZ9vynO/HOR05FsNvKMBrthsLty5toQPCWjQ\n\t\t\t\t\tTK8hUTDUaDQtjMZDIqhgMhkU4DE4XaSjZQl8\n\t\t\t\t\tvl8Pdwb1lMtms1TM/iK178d26HlR8J80RkIg\n\t\t\t\t\tEA4DMajUsg4GA0JwTCZ/lwfbwRzuhztlisRi\n\t\t\t\t\tppisdjJ3cvl49/5QkC/UFD8fD82EMhkI5gev\n\t\t\t\t\tgLO6+aNPCgZwHCcBmloWpaj+a0IFrAjlgy1w\n\t\t\t\t\tWioKYpkeFMOCGgUBpFAyLRAkbbsWpxhRSS0G\n\t\t\t\t\tQc974wmlwXhcFwpCtGxKAiCAIgzEkCsCgp/S\n\t\t\t\t\tCf6vnecp5yOdLdnueR+H4fx8gCAcogKAgCAQ\n\t\t\t\t\tBcsAkvoHg1LAFgjETaO9HzAG0bZtGGUpTFMM\n\t\t\t\t\tp1zcbMYJMHk5jSKsMkg+oDANHqIzCeh6noeB\n\t\t\t\t\tvm8bxisuzJvG+b5jHjRpzHtSB3qcfZ7IWAS1\n\t\t\t\t\tAOBsvAmClOhEE4TBMIITBKEohLsEAagGAYCA\n\t\t\t\t\tHPiKNuyJ0G2UJRlGLzenAZE4o66AgDkKNgkU\n\t\t\t\t\tAVVgGjDbnVNxvGQZBjlAZjglQrh2G2mFigOD\n\t\t\t\t\ttshkHNuDGGYYhiKilAWB9Xoe28iHMTt1itRJ\n\t\t\t\t\tvmLXiKBveYxC2LQtE3YoBVhH8/0CYGAElFJh\n\t\t\t\t\tkrfx1V5CoMhaJIkCOPYYXAKtWgIAVzIU283H\n\t\t\t\t\tUcBMEyTInvGdBpXihdQBMIozZQV4EZWBd+MA\n\t\t\t\t\tbZuG2YhWZoOJxnIchmI+AVUBupQFAigisnGZ\n\t\t\t\t\t8jnmc6QBlcAr2CKJGAmCQJg5iyEtuchxnEaR\n\t\t\t\t\tIkoSgiqieuD5GAEtg6OA3jeX4LgsC4R6ohDb\n\t\t\t\t\tmGYZhE2VpXleOZ9byeaQWuOY5DmYwQA+D4ZI\n\t\t\t\t\tITxQE+LhmcWUqSAtx4Ui5e5OhIEgShztzwR+\n\t\t\t\t\tZJkmQUpRlKUowyCfx9ziAYxC+MJTBo0wrcyh\n\t\t\t\t\tRcFyXJDln2w+IGfySb6OQ5GLwQQBmghOk+Tw\n\t\t\t\t\ttuC4SUAYBYGAsLwvi8UQWBUFYj9ghJSdCMpj\n\t\t\t\t\t+4TkCBgF4XioMgxjIVQAgEALZoW25efcR5XF\n\t\t\t\t\tgV45JZa/ejkYgQg+EAaeH4rxzgimJYz8CgZg\n\t\t\t\t\tyhlFaqQEwPnrm3HaO4do5BGCNEaDpRo8Rxlo\n\t\t\t\t\tUwA5vzvgOAbA4CyBqPxnDQGeK8T0KQsOkH0/\n\t\t\t\t\tVVYB37v5f2/0gbxHjPIgES8m4EQQBuDaG0Xj\n\t\t\t\t\tam2QjMAL8YAvxLCrZoGstAO4nBoC2FkLQl4i\n\t\t\t\t\tAAHSOodI3RHCPEeD1ozSCXv2d7DJ/j/obwBJ\n\t\t\t\t\toCiNQRwzwHFeAYtQCSGGHT+PUeEExGg5HVHs\n\t\t\t\t\tbBMD6gFAWHUOgdBkQfhC9cfsiR/QpE8FcaA0\n\t\t\t\t\tRoisJpGJ/D+oyw1f/DgtCGAqCSCEEEIIbYqi\n\t\t\t\t\t+F+L4SQrBWitDeTAuIKwmhpDOGgWL6H1RzR+\n\t\t\t\t\tNMag0xbCXEwJgJxAx+yThfDGS0NCBQ2gA8ks\n\t\t\t\t\t4DpmAaDqHMOYyGogTA7LYwED4IiKEWIsGrRh\n\t\t\t\t\t0EsDAF8L4pwbA1BsFiRCTR+CREmJMIg3Z4DB\n\t\t\t\t\tLRJSMkxgATIk0coI8+w+hPCaE4QT1yCCfE+K\n\t\t\t\t\tBxQzRmONJOl4CoeA7h3Gc1BqTVDbjYGyNkYA\n\t\t\t\t\tlBKiUCM6R0xZ56TFjNMmHJoQIUnA+HgOwdhl\n\t\t\t\t\tgNmYBWawABmjOGcK4TonhOhTJQCpDgSQ0U/F\n\t\t\t\t\tovqmIphUCnDUMSpAlzl0hhnSOfJ8gxBgDAKg\n\t\t\t\t\t04NQr0UR/HsdI3ptCLBsSgJFYQ/BOCYE0QL1\n\t\t\t\t\tzjj3HmIYQ4hwYDurgN6pcw4x0ikxGeZR8jVg\n\t\t\t\t\tyCyGQMQYxTTpH6PwSAkhIhCIGvsgTuiPhksc\n\t\t\t\t\tK4GTEAo1YZezEYojxICQB/MAjdigAWMQK+oA\n\t\t\t\t\tgdHejFBCCEEVXyBibE4JsK4zxoDQFUgRToFA\n\t\t\t\t\tS0qDsMwBJSgHUxFcK8VwdyigNAyEsJQShAAH\n\t\t\t\t\tAMAgBli0xkUBWCwFoSnltAueQY247B2jsHCZ\n\t\t\t\t\tQbYwX0pRIk+kfo/ymi2vQIKuA7q5EbAiX0Dw\n\t\t\t\t\tbQ3BuF4BgnoJSCXoFqIQWl6BAWcOVH8BUHRi\n\t\t\t\t\tgeA6B4GFlAASQGkLSxIRD+B0CkFEKQiSOUCf\n\t\t\t\t\tYj8ipghdC4FwIoWDtg9YAIsa8DIL6/BiFOa4\n\t\t\t\t\t2BCJEj9H9TMZwqRT41DM3kfQ9DlywDOLQFoL\n\t\t\t\t\tQXBLeuPBRs3yDhVyQJYIIPwgBpwwWY260BmC\n\t\t\t\t\trFAKEUIXIWEYSqAQBIcg4hxGG8AGcVRojTwa\n\t\t\t\t\tOccw5hqgDAEAIAifTAR1HcL3OgjMskXCyFcK\n\t\t\t\t\t4mgeg9B8GWREiiEQbDNY9DgKgh5PJabdBA4R\n\t\t\t\t\tnCVEsJUJDXx1kcjUCgI4bA1BrFvLR9ZDkw4b\n\t\t\t\t\tIEWAeA6BACBECCbHDeyLhRCgFARoRQiBFDlo\n\t\t\t\t\tohl7wH3xh+LsnwGQTa2RKj9dIk2uBGHRscap\n\t\t\t\t\tIE5g8DSFoLAWBLXX0XVkdY6hv1sEOC7HGOiL\n\t\t\t\t\thQn+IkI0+w7bAIcCLcwPA0SxFk8tL+5CO44H\n\t\t\t\t\txawTgVUIDWwcSOngKQkhr34LZY+Gt/gAMcO8\n\t\t\t\t\tc4gRBCC1U3nbhFgr5JB/kzJxtSRrzBuGFewW\n\t\t\t\t\thOVCJWbcVorhWh1F6L4XwjCUR/AXaR3y2QPA\n\t\t\t\t\tvhGQIao1xri7HSOgdI2EpAAWMRB9QAY6jsdk\n\t\t\t\t\tLkQuLx8kYDEGEMIqgaAzBoFWtA9q1EYCeE4J\n\t\t\t\t\twigj7hDru7nSPxijGGKJ5NQpgzYkJTgYDoNQ\n\t\t\t\t\tw1SFKBe+5DKZjNFc9kUoYkXFozaAIArZg4DB\n\t\t\t\t\tBICMEbmOJEKG6Nwbgx8tJVASGTowqQXAvBgE\n\t\t\t\t\t3rDmkysxGIJfygTO5kzbIaYGgWeyAyHy3ke1\n\t\t\t\t\tFhsi8OIM8VmdzQpbA2HYOodRlUnAgBqmIuRd\n\t\t\t\t\tC5EWRy4YGYfBtF2BsDQGwV7uuzdscIkp2hGW\n\t\t\t\t\tmNpsXywAKhBMEQN98xd9ZIEJaXoUCQAe+0DY\n\t\t\t\t\tNVPxazMAeBTRQ+PyD1E1+cKI2RtDa+n8z92r\n\t\t\t\t\ttYay1pgoeI8h4jqq6DckgM/+BaC+C6C8FCVY\n\t\t\t\t\tVYIgFRAMDYGGqQEq/c/cUwAe9YDqGSYSBOwU\n\t\t\t\t\touGwGCnYEmQ8JOuMCUEGuMCWD4T4NuGCiOEs\n\t\t\t\t\tFSZoDadzAY+Yr2CwDGr+FOQ+IaNuFgfkDyF0\n\t\t\t\t\tfcEQJQWuDAeeFI/4BmCoIIQgGqF4E0E4E4Ci\n\t\t\t\t\t23BY+WWKAQDeh+F8cqcurQOOHmEZCyBw5oHS\n\t\t\t\t\tGsJYoY+iDcF8ZWAQAaswEgCA4GHBCbAYW4By\n\t\t\t\t\tDIC6C2C2E22kbeR+zKwaY6Y9BWJe98A2BiSo\n\t\t\t\t\tAIAOHAHEHCV3DY+YbIg6GIOaAmA8IgH8xeEq\n\t\t\t\t\t8oCWMwGwFzEQAAcqBICCQqJ/ASGJAXEyJO7q\n\t\t\t\t\tAKDKDGDGFYfCBgCcirCKF4+sEwCUo9BY9gA/\n\t\t\t\t\tDCF4J0AkA8XWE6CuGklyFhFGJGCcCaCaEQYa\n\t\t\t\t\tCQDu0UH0NyHuEoEsEsCSngG6nlAY5MjaDKFg\n\t\t\t\t\tBUeoCIIIHoSOHccOE+Cy9EF1GGI01kCIDy6i\n\t\t\t\t\tCeEK086yiLBKEqFXHqDZEQACyQCqEmyWCADX\n\t\t\t\t\tBGX6KiHexqFMDOtgGgFXHRBotECZIaEICOCK\n\t\t\t\t\tCMDtHgXOR+HKHMHKGqEgEiEiCC0pAYACOgCC\n\t\t\t\t\tDiCkCmCkEY520+IKNu8+N0F1JeEQF0F2F2ES\n\t\t\t\t\txeHxIUbITsQ0NWBmCm3cHuUgHkEs8oCUXcXh\n\t\t\t\t\tDYACckC2E8B0B2B0DAH/KiIyUOF8QaFqD6UU\n\t\t\t\t\tUW+XFLCCCzBAD+AsL03dEikSFITWDKc4GSE/\n\t\t\t\t\tIVAcqiDAFKx+yC+ER+/JKAWgGaFObiGGEuZu\n\t\t\t\t\tHIGaLQwEBSBQBSCOCAPwDaBOjUCCNu8eIElS\n\t\t\t\t\tFaDolIF+EbIUIRDIAgC8C4C4FABgYgCfMaR+\n\t\t\t\t\tMANyN2GyMqkgGiFcZiG4GEHcHeHcHC6EI4AT\n\t\t\t\t\tNmmmAmBEBZNwCUBcx+CccGA+BnMY7+T6R+nU\n\t\t\t\t\tH4FiFkFiDy5C5HMqIeT0AMAYwmCiEaB8z67C\n\t\t\t\t\tR/NATC6cHsHm5mHQGuHWK4G8u0HaG8HlPOHS\n\t\t\t\t\tUmHsWKAKAQLUAapOAiA4AqApNsU4AqBGceNI\n\t\t\t\t\tYms8TEIyNvO2HnHqFWDcGSGUGUFBOaIyAEB9\n\t\t\t\t\tQaDYrICYEGXGAdNBDtJUI7Qq8gAAKyHEGiFT\n\t\t\t\t\tHsUIG8GJQUJC+0A8BsCg6kEQjUBSCCO5OFRJ\n\t\t\t\t\tJYN0HuGMGOGQE8FuFuFsEEjqbDRIJMy2AS4o\n\t\t\t\t\tC+P6CEDkvsAwvwM9RgbENuH4sGH8ou9G5+EN\n\t\t\t\t\tGpGtR+JqgINOBoC0B0BuByDAA6A+A6BiTDQy\n\t\t\t\t\tTIILQCG4/WGAGCqQEs5g5i7FSwPkwEBGtOB2\n\t\t\t\t\tfCBeCicsBKB9LCAqBKTyT3SZTQIIHlHAHa5m\n\t\t\t\t\tHSGyGqGqGoFqzMGkFkHOMiGpTpR/OeAYbUAs\n\t\t\t\t\tBOtQBEB2BauiCXN8BseYAWAgIgH+SEiwHUG0\n\t\t\t\t\tG6UGUMMwF4HFVqGYWmG5SXUxV3V5V7V9V/WB\n\t\t\t\t\tWDWFWHWJWLWNCaICABEBAAADAAAAAQBAAAAB\n\t\t\t\t\tAQADAAAAAQBAAAABAgADAAAABAAADigBAwAD\n\t\t\t\t\tAAAAAQAFAAABBgADAAAAAQACAAABCgADAAAA\n\t\t\t\t\tAQABAAABEQAEAAAAAQAAAAgBEgADAAAAAQAB\n\t\t\t\t\tAAABFQADAAAAAQAEAAABFgADAAAAAQBAAAAB\n\t\t\t\t\tFwAEAAAAAQAADU4BHAADAAAAAQABAAABKAAD\n\t\t\t\t\tAAAAAQACAAABPQADAAAAAQACAAABUgADAAAA\n\t\t\t\t\tAQABAAABUwADAAAABAAADjCHcwAHAAAH2AAA\n\t\t\t\t\tDjgAAB1CAAgACAAIAAgAAQABAAEAAQAAB9hh\n\t\t\t\t\tcHBsAiAAAG1udHJSR0IgWFlaIAfZAAIAGQAL\n\t\t\t\t\tABoAC2Fjc3BBUFBMAAAAAGFwcGwAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAD21gABAAAAANMtYXBwbAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MAAAEI\n\t\t\t\t\tAAAAb2RzY20AAAF4AAAFnGNwcnQAAAcUAAAA\n\t\t\t\t\tOHd0cHQAAAdMAAAAFHJYWVoAAAdgAAAAFGdY\n\t\t\t\t\tWVoAAAd0AAAAFGJYWVoAAAeIAAAAFHJUUkMA\n\t\t\t\t\tAAecAAAADmNoYWQAAAesAAAALGJUUkMAAAec\n\t\t\t\t\tAAAADmdUUkMAAAecAAAADmRlc2MAAAAAAAAA\n\t\t\t\t\tFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAA\n\t\t\t\t\tAAAAABRHZW5lcmljIFJHQiBQcm9maWxlAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVjAAAA\n\t\t\t\t\tAAAAAB8AAAAMc2tTSwAAACgAAAGEZGFESwAA\n\t\t\t\t\tAC4AAAGsY2FFUwAAACQAAAHadmlWTgAAACQA\n\t\t\t\t\tAAH+cHRCUgAAACYAAAIidWtVQQAAACoAAAJI\n\t\t\t\t\tZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhU\n\t\t\t\t\tVwAAABYAAALCbmJOTwAAACYAAALYY3NDWgAA\n\t\t\t\t\tACIAAAL+aGVJTAAAAB4AAAMgaXRJVAAAACgA\n\t\t\t\t\tAAM+cm9STwAAACQAAANmZGVERQAAACwAAAOK\n\t\t\t\t\ta29LUgAAABYAAAO2c3ZTRQAAACYAAALYemhD\n\t\t\t\t\tTgAAABYAAAPMamFKUAAAABoAAAPiZWxHUgAA\n\t\t\t\t\tACIAAAP8cHRQTwAAACYAAAQebmxOTAAAACgA\n\t\t\t\t\tAAREZXNFUwAAACYAAAQedGhUSAAAACQAAARs\n\t\t\t\t\tdHJUUgAAACIAAASQZmlGSQAAACgAAASyaHJI\n\t\t\t\t\tUgAAACgAAATacGxQTAAAACwAAAUCcnVSVQAA\n\t\t\t\t\tACIAAAUuYXJFRwAAACYAAAVQZW5VUwAAACYA\n\t\t\t\t\tAAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBH\n\t\t\t\t\tAEIAIABwAHIAbwBmAGkAbABHAGUAbgBlAHIA\n\t\t\t\t\tZQBsACAAUgBHAEIALQBiAGUAcwBrAHIAaQB2\n\t\t\t\t\tAGUAbABzAGUAUABlAHIAZgBpAGwAIABSAEcA\n\t\t\t\t\tQgAgAGcAZQBuAOgAcgBpAGMAQx6lAHUAIABo\n\t\t\t\t\tAOwAbgBoACAAUgBHAEIAIABDAGgAdQBuAGcA\n\t\t\t\t\tUABlAHIAZgBpAGwAIABSAEcAQgAgAEcAZQBu\n\t\t\t\t\tAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgE\n\t\t\t\t\tOQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcAQgBQ\n\t\t\t\t\tAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEA\n\t\t\t\t\tdQBlACAAUgBWAEIAwQBsAHQAYQBsAOEAbgBv\n\t\t\t\t\tAHMAIABSAEcAQgAgAHAAcgBvAGYAaQBskBp1\n\t\t\t\t\tKAAgAFIARwBCACCCcl9pY8+P8ABHAGUAbgBl\n\t\t\t\t\tAHIAaQBzAGsAIABSAEcAQgAtAHAAcgBvAGYA\n\t\t\t\t\taQBsAE8AYgBlAGMAbgD9ACAAUgBHAEIAIABw\n\t\t\t\t\tAHIAbwBmAGkAbAXkBegF1QXkBdkF3AAgAFIA\n\t\t\t\t\tRwBCACAF2wXcBdwF2QBQAHIAbwBmAGkAbABv\n\t\t\t\t\tACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAG8A\n\t\t\t\t\tUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBu\n\t\t\t\t\tAGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4A\n\t\t\t\t\tZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbMd8\n\t\t\t\t\tvBgAIABSAEcAQgAg1QS4XNMMx3xmbpAaACAA\n\t\t\t\t\tUgBHAEIAIGPPj/Blh072TgCCLAAgAFIARwBC\n\t\t\t\t\tACAw1zDtMNUwoTCkMOsDkwO1A70DuQO6A8wA\n\t\t\t\t\tIAPAA8EDvwPGA68DuwAgAFIARwBCAFAAZQBy\n\t\t\t\t\tAGYAaQBsACAAUgBHAEIAIABnAGUAbgDpAHIA\n\t\t\t\t\taQBjAG8AQQBsAGcAZQBtAGUAZQBuACAAUgBH\n\t\t\t\t\tAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQO\n\t\t\t\t\tHw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4b\n\t\t\t\t\tAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8A\n\t\t\t\t\tZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAAUgBH\n\t\t\t\t\tAEIALQBwAHIAbwBmAGkAaQBsAGkARwBlAG4A\n\t\t\t\t\tZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBv\n\t\t\t\t\tAGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4A\n\t\t\t\t\teQAgAHAAcgBvAGYAaQBsACAAUgBHAEIEHgQx\n\t\t\t\t\tBEkEOAQ5ACAEPwRABD4ERAQ4BDsETAAgAFIA\n\t\t\t\t\tRwBCBkUGRAZBACAGKgY5BjEGSgZBACAAUgBH\n\t\t\t\t\tAEIAIAYnBkQGOQYnBkUARwBlAG4AZQByAGkA\n\t\t\t\t\tYwAgAFIARwBCACAAUAByAG8AZgBpAGwAZXRl\n\t\t\t\t\teHQAAAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUg\n\t\t\t\t\tSW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4A\n\t\t\t\t\tWFlaIAAAAAAAAPNSAAEAAAABFs9YWVogAAAA\n\t\t\t\t\tAAAAdE0AAD3uAAAD0FhZWiAAAAAAAABadQAA\n\t\t\t\t\trHMAABc0WFlaIAAAAAAAACgaAAAVnwAAuDZj\n\t\t\t\t\tdXJ2AAAAAAAAAAEBzQAAc2YzMgAAAAAAAQxC\n\t\t\t\t\tAAAF3v//8yYAAAeSAAD9kf//+6L///2jAAAD\n\t\t\t\t\t3AAAwGyAACBQOCQWDQeEQmFQuGQ2HQ+IRGJR\n\t\t\t\t\tOKRWLReMRQFxsKg6PBcByEDPqSPV5SdzviVP\n\t\t\t\t\tKMy2XQ4OTEZCwViwlCMRiIehcKhYSgqNhMBg\n\t\t\t\t\tQBgV9yR7PN6PR1uinNZs1FftaqLd2O12t2X1\n\t\t\t\t\tuHh+vDciEMiHOaCskg0HA0GP+2AC2P+3P5/Q\n\t\t\t\t\tkAgIBAAA3m8QN2u53OtmMxmqleL1eI134lwV\n\t\t\t\t\tyWyEBgewkM5kgjEc8g0Hg4GPvOADHXi9Pl8P\n\t\t\t\t\tl+vV7PV4P9/P9+gUCgQDggEgkHgbbW626q50\n\t\t\t\t\tMCABz79wq9YLA7s7jKnGRED7YGFbnJUfdEvP\n\t\t\t\t\tzqZ4AgMAPp+Pt/t5uNxiNJqNNZN5vt9j4l3u\n\t\t\t\t\tR++19csDAwJhQKCESiQSD4Xi0XE8Og8DoWII\n\t\t\t\t\tuq7pIfR9ljBI+l2XheEUga4OSgbHAMLELEwI\n\t\t\t\t\tQgiCMJ8w6ADXAKADzm+aZaFqWo/mrFRbPafp\n\t\t\t\t\t8oIAkYtk2YHnnGx0oQA8dAeG4ahsLgkyCPb5\n\t\t\t\t\tgmDMWr2txUFSVI4mAYJgkjCSBwyII5QsLBGu\n\t\t\t\t\tofkPtcABlS+VpTlQVA1qWekcIWH7ojaI02jw\n\t\t\t\t\tSRJkmIh0zoa6GA0DIMheLoui8ToSBEEYZn41\n\t\t\t\t\tgAH2lR6kqS5LiebJtG0XqXgyDAMBWOY5DkYY\n\t\t\t\t\tFgYBgIxi3pmmaZxZk8T5PCzAx6ogItWD0KAn\n\t\t\t\t\tieQhCEKQoYN+c5pIgCVdhCNQ0jSWYPWEFa8g\n\t\t\t\t\tCABuG2bhmkiSZJCElR8JYi4tCyLJNiFbAyH6\n\t\t\t\t\t6s6HUbxHEgR4fnhchyIpVgijwJwmiaQZDEOQ\n\t\t\t\t\t4ZVuaaKJwEYfjYNQ1lo2QEAYAgBN6UBRlCM5\n\t\t\t\t\ti4OTSKV2CQRDuOw7GSCAHgeCiCFEUZR4MYxj\n\t\t\t\t\tYSi90XVdl3XheTf3oi4riqKpLCJVg0gAuYAG\n\t\t\t\t\twbRsGOSBJEkIKKBwG4bjEMefk6fz2gAczfm2\n\t\t\t\t\tRJFEUG1oHgjGP3Xdt33jeaMA3qwYjpTBhxmB\n\t\t\t\t\tbRHye5GkeRwfLsAUQoEAK3n6hFqiyTUqDEt4\n\t\t\t\t\tAF6XxfE1MZUDTYu972AcWxehdsCEOYoigKBE\n\t\t\t\t\tEHWQWHVxhsoxCg4DcNxfhOFAUB03QAQSWJAA\n\t\t\t\t\trzwTCoKQpEc2YFga1Z+rhmANA6DYXAYjYIoJ\n\t\t\t\t\tOh0m6eB3HgcTrrq3gCl/upJGcZ5nuQg7ZgSC\n\t\t\t\t\tQvi8LxQBiGAYCaVhWlaPRfF+X5GxbLaFQity\n\t\t\t\t\tECwK4rkuyI0H27eiaKbO9h8HoejYLouC4SXu\n\t\t\t\t\t7lLTce6gWys8kIAAMAoBkvDMGWLgT0BQrrQW\n\t\t\t\t\tkQZdYThEBPCcE4O4+R9IvNUWxZI3BhmcH0Pd\n\t\t\t\t\tYxeDHABFoLYWwhRuwlGCQgJISAkB+dEFIQKB\n\t\t\t\t\tiGwOCcIoJgTAmh1JI4Ah5toAQlG6M8SglRKh\n\t\t\t\t\tITMOohgZgyhlFeDiJgUB7xPAAUQ7AAn+MvIM\n\t\t\t\t\tAQ14AFFCWC0YEZgpyEBICOEcPgU4zCDhgsUh\n\t\t\t\t\tMPAFhhC+GEU6PgaBNQ7DqK7/D1DoEnEIJQ5Y\n\t\t\t\t\t/DPIgCqQQSgxBfDAKAjwDwKjgHEOAaUIhbCD\n\t\t\t\t\tH2Pkfaqi7l4LuAIcQ4hyDOJOPIc5CAqBTCoJ\n\t\t\t\t\tGMQRw3IHH0AArA7VzELYmA8DYbV9C4K8CAFh\n\t\t\t\t\t2pVxqS0PkTsBQtjRmEK0jAGALgYBUBUCgEwR\n\t\t\t\t\tSMHEMxGw8x0EYWKAMNoaw1i6BYC0FoQorAAF\n\t\t\t\t\twLoXAjyIAgnMDgNQaA0i0YmA4CaBAAPTFaH0\n\t\t\t\t\tXIuhdCESklInoFgTh2DoHQY6nFOmcM4JFm4R\n\t\t\t\t\tCKA0oUFsMwYwyikGKxsUopBSijDCP0uQ+58o\n\t\t\t\t\tSCWEoJYg3ChPD4asuA4KTDSEaI4RwPCMA3Bs\n\t\t\t\t\tDYMA2BsjYFyPEeMoKNnJUopUOIcA4C/I8A4C\n\t\t\t\t\tqIAACpFUKoPIu6lCIo2DGpwVicgiB2K0Vwrg\n\t\t\t\t\t4FvfxTl4xsgIBnDMGYV4KgVgqCAQSPw5Rurg\n\t\t\t\t\tEgDweZJ5pmMA7XEGivg0iymUBUDIthbi2EeL\n\t\t\t\t\tEWQsQ8HtH9KurQAC1AMAuFsLYXBNgzBmDIJt\n\t\t\t\t\tBCCD/E8J0T4WxmDOi/RsLQVwsCZCNGIMw9rS\n\t\t\t\t\tRRRiAAZ40BnC1FmLMWofhyWxGcYwAUggVBIg\n\t\t\t\t\teE4QtUQYWSh4ABE4tRHHCFgHUgbMEpARuUB0\n\t\t\t\t\tL6fBRTcBcECCSL6iDyXIPAaA0hpCwtSNAV1Z\n\t\t\t\t\txoWkHsPIt4/IpAHU2Aw+s5wZ0KCuCoFIKQjI\n\t\t\t\t\t6AOARI6n25t1EwKy/gcJe2FIKArAQEwpuiEa\n\t\t\t\t\tDoHAOQulFYBfe09kh5U3HUPJGw6j2j8PeAa9\n\t\t\t\t\tEsQMKcAWA+Kh2H7VEmiPUW+JxCmFF6IwuQ/q\n\t\t\t\t\tNYAIcAKx4MgqhFZYHUEM5gZ4MABRh7bMJ4WT\n\t\t\t\t\tLkQWeD+onj3H0NYa41xdi5FwLgQ55hvjFxgS\n\t\t\t\t\t4BABgEAOBQCoFARgYAvBeE8EAHwQA4c8BUEY\n\t\t\t\t\tCAEAHbSQcehSh7LdG3CUbgwnhDOFaNyEoxCB\n\t\t\t\t\ttryrjDAQCkip5BTmsA4DaskCk+Ohxg6htKpz\n\t\t\t\t\t/pHSWk9KaVImQEAAEQEAAAMAAAABACAAAAEB\n\t\t\t\t\tAAMAAAABACAAAAECAAMAAAAEAAAeFAEDAAMA\n\t\t\t\t\tAAABAAUAAAEGAAMAAAABAAIAAAEKAAMAAAAB\n\t\t\t\t\tAAEAAAERAAQAAAABAAAWEAESAAMAAAABAAEA\n\t\t\t\t\tAAEVAAMAAAABAAQAAAEWAAMAAAABACAAAAEX\n\t\t\t\t\tAAQAAAABAAAHMgEcAAMAAAABAAEAAAEoAAMA\n\t\t\t\t\tAAABAAIAAAE9AAMAAAABAAIAAAFSAAMAAAAB\n\t\t\t\t\tAAEAAAFTAAMAAAAEAAAeHIdzAAcAAAfYAAAe\n\t\t\t\t\tJAAAKIwACAAIAAgACAABAAEAAQABAAAH2GFw\n\t\t\t\t\tcGwCIAAAbW50clJHQiBYWVogB9kAAgAZAAsA\n\t\t\t\t\tGgALYWNzcEFQUEwAAAAAYXBwbAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAPbWAAEAAAAA0y1hcHBsAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAALZGVzYwAAAQgA\n\t\t\t\t\tAABvZHNjbQAAAXgAAAWcY3BydAAABxQAAAA4\n\t\t\t\t\td3RwdAAAB0wAAAAUclhZWgAAB2AAAAAUZ1hZ\n\t\t\t\t\tWgAAB3QAAAAUYlhZWgAAB4gAAAAUclRSQwAA\n\t\t\t\t\tB5wAAAAOY2hhZAAAB6wAAAAsYlRSQwAAB5wA\n\t\t\t\t\tAAAOZ1RSQwAAB5wAAAAOZGVzYwAAAAAAAAAU\n\t\t\t\t\tR2VuZXJpYyBSR0IgUHJvZmlsZQAAAAAAAAAA\n\t\t\t\t\tAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAG1sdWMAAAAA\n\t\t\t\t\tAAAAHwAAAAxza1NLAAAAKAAAAYRkYURLAAAA\n\t\t\t\t\tLgAAAaxjYUVTAAAAJAAAAdp2aVZOAAAAJAAA\n\t\t\t\t\tAf5wdEJSAAAAJgAAAiJ1a1VBAAAAKgAAAkhm\n\t\t\t\t\tckZVAAAAKAAAAnJodUhVAAAAKAAAApp6aFRX\n\t\t\t\t\tAAAAFgAAAsJuYk5PAAAAJgAAAthjc0NaAAAA\n\t\t\t\t\tIgAAAv5oZUlMAAAAHgAAAyBpdElUAAAAKAAA\n\t\t\t\t\tAz5yb1JPAAAAJAAAA2ZkZURFAAAALAAAA4pr\n\t\t\t\t\tb0tSAAAAFgAAA7ZzdlNFAAAAJgAAAth6aENO\n\t\t\t\t\tAAAAFgAAA8xqYUpQAAAAGgAAA+JlbEdSAAAA\n\t\t\t\t\tIgAAA/xwdFBPAAAAJgAABB5ubE5MAAAAKAAA\n\t\t\t\t\tBERlc0VTAAAAJgAABB50aFRIAAAAJAAABGx0\n\t\t\t\t\tclRSAAAAIgAABJBmaUZJAAAAKAAABLJockhS\n\t\t\t\t\tAAAAKAAABNpwbFBMAAAALAAABQJydVJVAAAA\n\t\t\t\t\tIgAABS5hckVHAAAAJgAABVBlblVTAAAAJgAA\n\t\t\t\t\tBXYAVgFhAGUAbwBiAGUAYwBuAP0AIABSAEcA\n\t\t\t\t\tQgAgAHAAcgBvAGYAaQBsAEcAZQBuAGUAcgBl\n\t\t\t\t\tAGwAIABSAEcAQgAtAGIAZQBzAGsAcgBpAHYA\n\t\t\t\t\tZQBsAHMAZQBQAGUAcgBmAGkAbAAgAFIARwBC\n\t\t\t\t\tACAAZwBlAG4A6AByAGkAYwBDHqUAdQAgAGgA\n\t\t\t\t\t7ABuAGgAIABSAEcAQgAgAEMAaAB1AG4AZwBQ\n\t\t\t\t\tAGUAcgBmAGkAbAAgAFIARwBCACAARwBlAG4A\n\t\t\t\t\t6QByAGkAYwBvBBcEMAQzBDAEOwRMBD0EOAQ5\n\t\t\t\t\tACAEPwRABD4ERAQwBDkEOwAgAFIARwBCAFAA\n\t\t\t\t\tcgBvAGYAaQBsACAAZwDpAG4A6QByAGkAcQB1\n\t\t\t\t\tAGUAIABSAFYAQgDBAGwAdABhAGwA4QBuAG8A\n\t\t\t\t\tcwAgAFIARwBCACAAcAByAG8AZgBpAGyQGnUo\n\t\t\t\t\tACAAUgBHAEIAIIJyX2ljz4/wAEcAZQBuAGUA\n\t\t\t\t\tcgBpAHMAawAgAFIARwBCAC0AcAByAG8AZgBp\n\t\t\t\t\tAGwATwBiAGUAYwBuAP0AIABSAEcAQgAgAHAA\n\t\t\t\t\tcgBvAGYAaQBsBeQF6AXVBeQF2QXcACAAUgBH\n\t\t\t\t\tAEIAIAXbBdwF3AXZAFAAcgBvAGYAaQBsAG8A\n\t\t\t\t\tIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMAbwBQ\n\t\t\t\t\tAHIAbwBmAGkAbAAgAFIARwBCACAAZwBlAG4A\n\t\t\t\t\tZQByAGkAYwBBAGwAbABnAGUAbQBlAGkAbgBl\n\t\t\t\t\tAHMAIABSAEcAQgAtAFAAcgBvAGYAaQBsx3y8\n\t\t\t\t\tGAAgAFIARwBCACDVBLhc0wzHfGZukBoAIABS\n\t\t\t\t\tAEcAQgAgY8+P8GWHTvZOAIIsACAAUgBHAEIA\n\t\t\t\t\tIDDXMO0w1TChMKQw6wOTA7UDvQO5A7oDzAAg\n\t\t\t\t\tA8ADwQO/A8YDrwO7ACAAUgBHAEIAUABlAHIA\n\t\t\t\t\tZgBpAGwAIABSAEcAQgAgAGcAZQBuAOkAcgBp\n\t\t\t\t\tAGMAbwBBAGwAZwBlAG0AZQBlAG4AIABSAEcA\n\t\t\t\t\tQgAtAHAAcgBvAGYAaQBlAGwOQg4bDiMORA4f\n\t\t\t\t\tDiUOTAAgAFIARwBCACAOFw4xDkgOJw5EDhsA\n\t\t\t\t\tRwBlAG4AZQBsACAAUgBHAEIAIABQAHIAbwBm\n\t\t\t\t\tAGkAbABpAFkAbABlAGkAbgBlAG4AIABSAEcA\n\t\t\t\t\tQgAtAHAAcgBvAGYAaQBpAGwAaQBHAGUAbgBl\n\t\t\t\t\tAHIAaQENAGsAaQAgAFIARwBCACAAcAByAG8A\n\t\t\t\t\tZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5\n\t\t\t\t\tACAAcAByAG8AZgBpAGwAIABSAEcAQgQeBDEE\n\t\t\t\t\tSQQ4BDkAIAQ/BEAEPgREBDgEOwRMACAAUgBH\n\t\t\t\t\tAEIGRQZEBkEAIAYqBjkGMQZKBkEAIABSAEcA\n\t\t\t\t\tQgAgBicGRAY5BicGRQBHAGUAbgBlAHIAaQBj\n\t\t\t\t\tACAAUgBHAEIAIABQAHIAbwBmAGkAbABldGV4\n\t\t\t\t\tdAAAAABDb3B5cmlnaHQgMjAwNyBBcHBsZSBJ\n\t\t\t\t\tbmMuLCBhbGwgcmlnaHRzIHJlc2VydmVkLgBY\n\t\t\t\t\tWVogAAAAAAAA81IAAQAAAAEWz1hZWiAAAAAA\n\t\t\t\t\tAAB0TQAAPe4AAAPQWFlaIAAAAAAAAFp1AACs\n\t\t\t\t\tcwAAFzRYWVogAAAAAAAAKBoAABWfAAC4NmN1\n\t\t\t\t\tcnYAAAAAAAAAAQHNAABzZjMyAAAAAAABDEIA\n\t\t\t\t\tAAXe///zJgAAB5IAAP2R///7ov///aMAAAPc\n\t\t\t\t\tAADAbIAAIFA4JBYNB4RCYVC4ZDQAFogJw0GQ\n\t\t\t\t\tyKgLFwQ6o03HK5nM1H5IXvDpJAxEIBEOyYTS\n\t\t\t\t\tWgBRLyHFwKAX/NQAAYHHXM2l1PUWx2QyE7NZ\n\t\t\t\t\ttJYGNRoNC6YjCYk68Hi8HWwKolW63m8xn7W3\n\t\t\t\t\t0F68KB4Ox2YhZZR2ulyuU0qFUqjY/rg+4YIA\n\t\t\t\t\t+Hxud7wwWw2Wyxk/fy48sE5hDhRyG8QMGJi0\n\t\t\t\t\tuAccBCWSiUfSqVCqflIplKel3nUPCwCazUa1\n\t\t\t\t\txdA8L0GhEIMHk83m6IILdkTxGIRGOlgslgd4\n\t\t\t\t\tQZDGY1YK+ERkAgUCKQHyQPjscEecHj+fj81V\n\t\t\t\t\t5nUcs1qtT7BK2/X0KvASREIREOVotVofoQIP\n\t\t\t\t\tYOD2eTyx1TbTsFgqFRMXS6XlAEP8DAJgmCQQ\n\t\t\t\t\tnfApxncdh2nET5RFCLh3QgcIsQmTATBKEoem\n\t\t\t\t\tDDRLH1Dp7GYZpmlQ5IBgMPw+j6a4DxWBKCB1\n\t\t\t\t\tF4yjCMAwE0kJ+AAAYAgGABOk+TowGSZRlFC5\n\t\t\t\t\tgAjOMwzFgEclh0a8nF4fB7nueRXliWI7KIf4\n\t\t\t\t\t+j4PhrgXL4IoQKAnieRQpiiKI6lSVhWEKWk3\n\t\t\t\t\tj4hAETmBwDTsBbBHkc6EA7PoZj4PY9mWWFCE\n\t\t\t\t\tChACgIAgErEHgzGGYhhku7sboEfyjIOLz9FC\n\t\t\t\t\tpIaCsP5AEAFKShzUgxha4QkFEUhSDKfFXHgk\n\t\t\t\t\tog1kOIvv2RxXFeVxDlkWZZj0kofB6Ho1i/Yp\n\t\t\t\t\tKHGcRxGuXReF4SJwG+b5jn6uL7AqEqwh2Mob\n\t\t\t\t\thwHAmGHcBVFCURRC/Gx8UugTwBUJYozIQQQM\n\t\t\t\t\tKGR/n6f4AXqfoAJkAB3Hadp0F3ZpHF9ghI2o\n\t\t\t\t\tfx9XShIBYYAoPg8DwZg5PoZAI5ICnWjRtm9a\n\t\t\t\t\tJkHtKR3YVkWRoagIABEBAAADAAAAAQAQAAAB\n\t\t\t\t\tAQADAAAAAQAQAAABAgADAAAABAAAKV4BAwAD\n\t\t\t\t\tAAAAAQAFAAABBgADAAAAAQACAAABCgADAAAA\n\t\t\t\t\tAQABAAABEQAEAAAAAQAAJfwBEgADAAAAAQAB\n\t\t\t\t\tAAABFQADAAAAAQAEAAABFgADAAAAAQAQAAAB\n\t\t\t\t\tFwAEAAAAAQAAApABHAADAAAAAQABAAABKAAD\n\t\t\t\t\tAAAAAQACAAABPQADAAAAAQACAAABUgADAAAA\n\t\t\t\t\tAQABAAABUwADAAAABAAAKWaHcwAHAAAH2AAA\n\t\t\t\t\tKW4AAAAAAAgACAAIAAgAAQABAAEAAQAAB9hh\n\t\t\t\t\tcHBsAiAAAG1udHJSR0IgWFlaIAfZAAIAGQAL\n\t\t\t\t\tABoAC2Fjc3BBUFBMAAAAAGFwcGwAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAD21gABAAAAANMtYXBwbAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAC2Rlc2MAAAEI\n\t\t\t\t\tAAAAb2RzY20AAAF4AAAFnGNwcnQAAAcUAAAA\n\t\t\t\t\tOHd0cHQAAAdMAAAAFHJYWVoAAAdgAAAAFGdY\n\t\t\t\t\tWVoAAAd0AAAAFGJYWVoAAAeIAAAAFHJUUkMA\n\t\t\t\t\tAAecAAAADmNoYWQAAAesAAAALGJUUkMAAAec\n\t\t\t\t\tAAAADmdUUkMAAAecAAAADmRlc2MAAAAAAAAA\n\t\t\t\t\tFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAA\n\t\t\t\t\tAAAAABRHZW5lcmljIFJHQiBQcm9maWxlAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\tAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVjAAAA\n\t\t\t\t\tAAAAAB8AAAAMc2tTSwAAACgAAAGEZGFESwAA\n\t\t\t\t\tAC4AAAGsY2FFUwAAACQAAAHadmlWTgAAACQA\n\t\t\t\t\tAAH+cHRCUgAAACYAAAIidWtVQQAAACoAAAJI\n\t\t\t\t\tZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhU\n\t\t\t\t\tVwAAABYAAALCbmJOTwAAACYAAALYY3NDWgAA\n\t\t\t\t\tACIAAAL+aGVJTAAAAB4AAAMgaXRJVAAAACgA\n\t\t\t\t\tAAM+cm9STwAAACQAAANmZGVERQAAACwAAAOK\n\t\t\t\t\ta29LUgAAABYAAAO2c3ZTRQAAACYAAALYemhD\n\t\t\t\t\tTgAAABYAAAPMamFKUAAAABoAAAPiZWxHUgAA\n\t\t\t\t\tACIAAAP8cHRQTwAAACYAAAQebmxOTAAAACgA\n\t\t\t\t\tAAREZXNFUwAAACYAAAQedGhUSAAAACQAAARs\n\t\t\t\t\tdHJUUgAAACIAAASQZmlGSQAAACgAAASyaHJI\n\t\t\t\t\tUgAAACgAAATacGxQTAAAACwAAAUCcnVSVQAA\n\t\t\t\t\tACIAAAUuYXJFRwAAACYAAAVQZW5VUwAAACYA\n\t\t\t\t\tAAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBH\n\t\t\t\t\tAEIAIABwAHIAbwBmAGkAbABHAGUAbgBlAHIA\n\t\t\t\t\tZQBsACAAUgBHAEIALQBiAGUAcwBrAHIAaQB2\n\t\t\t\t\tAGUAbABzAGUAUABlAHIAZgBpAGwAIABSAEcA\n\t\t\t\t\tQgAgAGcAZQBuAOgAcgBpAGMAQx6lAHUAIABo\n\t\t\t\t\tAOwAbgBoACAAUgBHAEIAIABDAGgAdQBuAGcA\n\t\t\t\t\tUABlAHIAZgBpAGwAIABSAEcAQgAgAEcAZQBu\n\t\t\t\t\tAOkAcgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgE\n\t\t\t\t\tOQAgBD8EQAQ+BEQEMAQ5BDsAIABSAEcAQgBQ\n\t\t\t\t\tAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBpAHEA\n\t\t\t\t\tdQBlACAAUgBWAEIAwQBsAHQAYQBsAOEAbgBv\n\t\t\t\t\tAHMAIABSAEcAQgAgAHAAcgBvAGYAaQBskBp1\n\t\t\t\t\tKAAgAFIARwBCACCCcl9pY8+P8ABHAGUAbgBl\n\t\t\t\t\tAHIAaQBzAGsAIABSAEcAQgAtAHAAcgBvAGYA\n\t\t\t\t\taQBsAE8AYgBlAGMAbgD9ACAAUgBHAEIAIABw\n\t\t\t\t\tAHIAbwBmAGkAbAXkBegF1QXkBdkF3AAgAFIA\n\t\t\t\t\tRwBCACAF2wXcBdwF2QBQAHIAbwBmAGkAbABv\n\t\t\t\t\tACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAG8A\n\t\t\t\t\tUAByAG8AZgBpAGwAIABSAEcAQgAgAGcAZQBu\n\t\t\t\t\tAGUAcgBpAGMAQQBsAGwAZwBlAG0AZQBpAG4A\n\t\t\t\t\tZQBzACAAUgBHAEIALQBQAHIAbwBmAGkAbMd8\n\t\t\t\t\tvBgAIABSAEcAQgAg1QS4XNMMx3xmbpAaACAA\n\t\t\t\t\tUgBHAEIAIGPPj/Blh072TgCCLAAgAFIARwBC\n\t\t\t\t\tACAw1zDtMNUwoTCkMOsDkwO1A70DuQO6A8wA\n\t\t\t\t\tIAPAA8EDvwPGA68DuwAgAFIARwBCAFAAZQBy\n\t\t\t\t\tAGYAaQBsACAAUgBHAEIAIABnAGUAbgDpAHIA\n\t\t\t\t\taQBjAG8AQQBsAGcAZQBtAGUAZQBuACAAUgBH\n\t\t\t\t\tAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQO\n\t\t\t\t\tHw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4b\n\t\t\t\t\tAEcAZQBuAGUAbAAgAFIARwBCACAAUAByAG8A\n\t\t\t\t\tZgBpAGwAaQBZAGwAZQBpAG4AZQBuACAAUgBH\n\t\t\t\t\tAEIALQBwAHIAbwBmAGkAaQBsAGkARwBlAG4A\n\t\t\t\t\tZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBv\n\t\t\t\t\tAGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4A\n\t\t\t\t\teQAgAHAAcgBvAGYAaQBsACAAUgBHAEIEHgQx\n\t\t\t\t\tBEkEOAQ5ACAEPwRABD4ERAQ4BDsETAAgAFIA\n\t\t\t\t\tRwBCBkUGRAZBACAGKgY5BjEGSgZBACAAUgBH\n\t\t\t\t\tAEIAIAYnBkQGOQYnBkUARwBlAG4AZQByAGkA\n\t\t\t\t\tYwAgAFIARwBCACAAUAByAG8AZgBpAGwAZXRl\n\t\t\t\t\teHQAAAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUg\n\t\t\t\t\tSW5jLiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4A\n\t\t\t\t\tWFlaIAAAAAAAAPNSAAEAAAABFs9YWVogAAAA\n\t\t\t\t\tAAAAdE0AAD3uAAAD0FhZWiAAAAAAAABadQAA\n\t\t\t\t\trHMAABc0WFlaIAAAAAAAACgaAAAVnwAAuDZj\n\t\t\t\t\tdXJ2AAAAAAAAAAEBzQAAc2YzMgAAAAAAAQxC\n\t\t\t\t\tAAAF3v//8yYAAAeSAAD9kf//+6L///2jAAAD\n\t\t\t\t\t3AAAwGw=\n\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t"
+}

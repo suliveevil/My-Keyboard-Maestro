@@ -1,0 +1,30 @@
+{
+	"UID": "2A83AEA8-CB18-4CF5-A373-2D785FE7F036",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Edit",
+				"Comment"
+			],
+			"TargetApplication": {
+				"NewFile": "/Applications/Script Debugger.app",
+				"BundleIdentifier": "com.latenightsw.ScriptDebugger7",
+				"Name": "Script Debugger"
+			},
+			"TargetingType": "Specific"
+		}
+	],
+	"CreationDate": 573480841.533762,
+	"IsActive": false,
+	"ModificationDate": 573481427.822047,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 44,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Script Debugger Comment"
+}

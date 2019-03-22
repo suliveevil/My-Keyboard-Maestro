@@ -1,0 +1,99 @@
+{
+	"UID": "0FF76332-04B6-4904-9EDF-D29D3FE090A4",
+	"Actions": [
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 12,
+			"Modifiers": 0
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 0,
+			"Modifiers": 0
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 6,
+			"Modifiers": 0
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 18,
+			"Modifiers": 0
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 19,
+			"Modifiers": 0
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 20,
+			"Modifiers": 0
+		}
+	],
+	"CreationDate": 567392164.59697,
+	"ModificationDate": 568917263.583288,
+	"Triggers": [
+		{
+			"MacroTriggerType": "Application",
+			"Target": "Specific",
+			"RepeatTime": 60,
+			"Application": {
+				"NewFile": "/Applications/Tickeys.app",
+				"BundleIdentifier": "com.yingDev.Tickeys",
+				"Name": "Tickeys"
+			},
+			"FireType2": "Activate"
+		}
+	],
+	"Name": "Tickeys"
+}

@@ -1,0 +1,20 @@
+{
+	"UID": "C07980CA-481B-454A-A455-CD6531EAEC34",
+	"Actions": [
+		{
+			"MacroActionType": "ClipboardHistorySwitcher",
+			"IsDisclosed": false
+		}
+	],
+	"CreationDate": 568066131.008072,
+	"IsActive": false,
+	"ModificationDate": 574605411.726963,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 9,
+			"Modifiers": 4864,
+			"MacroTriggerType": "HotKey"
+		}
+	]
+}

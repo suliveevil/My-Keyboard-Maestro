@@ -1,0 +1,16 @@
+{
+	"UID": "8D7251EC-4B56-41C3-AC22-3830229FC1D7",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇱"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991105.954632,
+	"Triggers": [],
+	"Name": "29)  ⇱    Start of Document "
+}

@@ -1,0 +1,82 @@
+{
+	"UID": "038B1D68-9609-4444-8553-83781F5EDA7E",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Screenshot Desktop Script with Hide Items",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6zAQAAKwAAAAEAAACr\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTYxXGNvY29h\n\t\t\t\t\t\t\tc3VicnRmMjAwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBIZWx2ZXRp\n\t\t\t\t\t\t\tY2FOZXVlO30Ke1xjb2xv\n\t\t\t\t\t\t\tcnRibDtccmVkMjU1XGdy\n\t\t\t\t\t\t\tZWVuMjU1XGJsdWUyNTU7\n\t\t\t\t\t\t\tXHJlZDBcZ3JlZW4wXGJs\n\t\t\t\t\t\t\tdWUwO30Ke1wqXGV4cGFu\n\t\t\t\t\t\t\tZGVkY29sb3J0Ymw7O1xj\n\t\t\t\t\t\t\tc2dyYXlcYzA7fQpccGFy\n\t\t\t\t\t\t\tZFx0eDU2MFx0eDExMjBc\n\t\t\t\t\t\t\tdHgxNjgwXHR4MjI0MFx0\n\t\t\t\t\t\t\teDI4MDBcdHgzMzYwXHR4\n\t\t\t\t\t\t\tMzkyMFx0eDQ0ODBcdHg1\n\t\t\t\t\t\t\tMDQwXHR4NTYwMFx0eDYx\n\t\t\t\t\t\t\tNjBcdHg2NzIwXHBhcmRp\n\t\t\t\t\t\t\tcm5hdHVyYWxccGFydGln\n\t\t\t\t\t\t\taHRlbmZhY3RvcjAKClxm\n\t\t\t\t\t\t\tMFxmczI2IFxjZjIgaHR0\n\t\t\t\t\t\t\tcHM6Ly9mb3J1bS5rZXli\n\t\t\t\t\t\t\tb2FyZG1hZXN0cm8uY29t\n\t\t\t\t\t\t\tL3QvYXBwbGVzY3JpcHQt\n\t\t\t\t\t\t\tc2NyZWVuc2hvdC13aXRo\n\t\t\t\t\t\t\tLWhpZGUtZGVza3RvcC1p\n\t\t\t\t\t\t\tdGVtcy85MTE0LzU/dT1h\n\t\t\t\t\t\t\tcHBsZWlhbmVyfQEAAAAj\n\t\t\t\t\t\t\tAAAAAQAAAAcAAABUWFQu\n\t\t\t\t\t\t\tcnRmEAAAAC4uYVq2AQAA\n\t\t\t\t\t\t\tAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\n    tell dock preferences to set autohide to not autohide\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Preferences\"\r\tactivate\r\treveal pane id \"com.apple.preference.general\"\rend tell\rdelay 0.6\rtell application \"System Events\"\r\ttell window \"Allgemein\" of process \"System Preferences\"\r\t\tclick checkbox \"Menüleiste automatisch ein- und ausblenden\"\r\tend tell\rend tell\rtell application \"System Preferences\" to quit",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "set ssDir to POSIX path of (path to desktop as text)\rset ssDate to current date\r# For a shorter date string:\r# set ssDate to short date string of ssDate & space & time string of ssDate\rset ssName to \"Screen-Shot\" & space & ssDate & \".png\"\r\rdo shell script \"chflags -h hidden ~/Desktop/*\"\rdelay 1\r\rdo shell script \"screencapture\" & space & quoted form of (ssDir & ssName)\r\rdo shell script \"chflags -h nohidden ~/Desktop/*\"",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Preferences\"\r\tactivate\r\treveal pane id \"com.apple.preference.general\"\rend tell\rdelay 0.6\rtell application \"System Events\"\r\ttell window \"Allgemein\" of process \"System Preferences\"\r\t\tclick checkbox \"Menüleiste automatisch ein- und ausblenden\"\r\tend tell\rend tell\rtell application \"System Preferences\" to quit",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\n    tell dock preferences to set autohide to not autohide\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 537899813.77933,
+	"IsActive": false,
+	"ModificationDate": 568513398.818681,
+	"Triggers": [],
+	"Name": "截图增强-German",
+	"CustomIconData": "KMEP-Computer"
+}

@@ -1,0 +1,140 @@
+{
+	"UID": "38D898E0-C6BA-41EF-83B1-F5A1DB647402",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"Text": "~/.Trash",
+			"Variable": "temp_png_file_directory",
+			"ActionNotes": "Location where we’ll make the temporary image file."
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "file_path",
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "tell application \"System Events\"\r\tactivate\r\tPOSIX path of (choose file with prompt \"Choose a file:\")\rend tell",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "file_path",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "Cancel",
+					"Action": "CancelJustThisMacro"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "StandardizePath",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "file_path"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "png_file_path",
+			"Text": "%Variable%temp_png_file_directory%/.temp-mgicon-%ICUDateTime%A%.png"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "StandardizePath",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "png_file_path"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "png_file_path_encoded",
+			"Text": "%Variable%png_file_path%"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "PercentEncodeForURL",
+			"Source": "Variable",
+			"IsDisclosed": false,
+			"Variable": "png_file_path_encoded"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"ActionColor": "Green",
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"Text": "/usr/local/bin/mgicon -s 128 -o \"$KMVAR_png_file_path\" \"$KMVAR_file_path\"\n\n# Note: The \"-s\" flag specifies the dimensions of the icon file (width and height).\n# Note: Instead of a file-path, you can use \"-x html\" (for example) to get the icon for \".html\" files.",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "GetFileAttribute",
+			"IsDisclosed": false,
+			"Variable": "file_name",
+			"Attribute": "Name",
+			"Path": "%Variable%file_path%"
+		},
+		{
+			"MacroActionType": "GetFileAttribute",
+			"IsDisclosed": false,
+			"Variable": "file_content_kind",
+			"Attribute": "ContentKind",
+			"Path": "%Variable%file_path%"
+		},
+		{
+			"MacroActionType": "CustomPrompt",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"utf-8\">\n    <title>File Info</title>\n\n\t<style type=\"text/css\">\n\nhtml {\n\tfont-family: HelveticaNeue, Verdana, sans-serif;\n\tfont-size: 20px;\n}\n\nbody {\n\tmargin: 1rem;\n}\n\n#file_icon, #file_name, #file_kind, #file_path {\n\tfloat: left;\n}\n\n#icon_img {\n\twidth: 128px;\n}\n\n#file_name, #file_kind, #file_path {\n\tclear: right;\n\tmargin-left: 1rem;\n\twidth: calc(100% - 128px - 1rem);\n\toverflow: auto;\n\twhite-space: nowrap;\n}\n\n#file_name {\n\tfont-size: 1.5rem;\n\tfont-weight: bold;\n\tmargin-top: 1rem;\n}\n\n#file_kind, #file_path {\n\tfont-size: 0.8rem;\n\tcolor: #777;\n\tmargin-top: 0.5rem;\n}\n\n#file_kind {\n\tfont-weight: bold;\n}\n\n\t</style>\n\n</head>\n\n<body data-kmwindow=\"500,180\">\n\n<div id=\"file_icon\"><img id=\"icon_img\" src=\"\" alt=\"file icon\" /></div>\n\n<div id=\"file_name\">name</div>\n\n<div id=\"file_kind\">kind</div>\n\n<div id=\"file_path\">path</div>\n\n<script>\n\ndocument.onkeydown = function(evt) {\n\tevt = evt || window.event;\n\tif (evt.keyCode == 27) { // Escape\n\t\t// Ensure we know the dialog was cancelled when Escape is pressed.\n\t\twindow.KeyboardMaestro.Cancel('Cancel');\n\t\t\n\t}\n}\n\nfunction KMInit() {\n\t// Load variables\n\tdocument.getElementById('icon_img').src = 'file://' + window.KeyboardMaestro.ProcessTokens('%Variable%png_file_path_encoded%');\n\t\n\tdocument.getElementById('file_name').innerHTML = window.KeyboardMaestro.ProcessTokens('%Variable%file_name%');\n\t\n\tdocument.getElementById('file_kind').innerHTML = window.KeyboardMaestro.ProcessTokens('%Variable%file_content_kind%');\n\t\n\tdocument.getElementById('file_path').innerHTML = window.KeyboardMaestro.ProcessTokens('%Variable%file_path%');\n}\n\n</script>\n\n</body>\n</html>\n",
+			"Floating": true,
+			"UseText": true
+		},
+		{
+			"MacroActionType": "File",
+			"Source": "%Variable%png_file_path%",
+			"IsDisclosed": false,
+			"Destination": "",
+			"Operation": "Delete",
+			"ActionNotes": "Clean up after ourselves."
+		}
+	],
+	"CreationDate": 477333292.680301,
+	"ModificationDate": 568668310.055925,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 34,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "App & File Icon Test"
+}

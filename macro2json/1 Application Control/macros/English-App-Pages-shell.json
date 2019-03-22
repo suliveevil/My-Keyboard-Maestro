@@ -1,0 +1,29 @@
+{
+	"UID": "69C1EBA5-CC1E-45FD-A36F-854F72E1F008",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Supported Languages",
+			"ActionName": "Supported Languages",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6nAQAAKwAAAAEAAACf\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZuaWxcZmNo\n\t\t\t\t\t\t\tYXJzZXQwIE1lbmxvLVJl\n\t\t\t\t\t\t\tZ3VsYXI7fQp7XGNvbG9y\n\t\t\t\t\t\t\tdGJsO1xyZWQyNTVcZ3Jl\n\t\t\t\t\t\t\tZW4yNTVcYmx1ZTI1NTtc\n\t\t\t\t\t\t\tcmVkMzhcZ3JlZW4zOFxi\n\t\t\t\t\t\t\tbHVlMzg7XHJlZDI0NFxn\n\t\t\t\t\t\t\tcmVlbjI0NlxibHVlMjQ5\n\t\t\t\t\t\t\tO30Ke1wqXGV4cGFuZGVk\n\t\t\t\t\t\t\tY29sb3J0Ymw7O1xjc3Ny\n\t\t\t\t\t\t\tZ2JcYzIwMDAwXGMyMDAw\n\t\t\t\t\t\t\tMFxjMjAwMDA7XGNzc3Jn\n\t\t\t\t\t\t\tYlxjOTY0NzFcYzk3MjU1\n\t\t\t\t\t\t\tXGM5ODAzOTt9ClxkZWZ0\n\t\t\t\t\t\t\tYWI3MjAKXHBhcmRccGFy\n\t\t\t\t\t\t\tZGVmdGFiNzIwXHBhcnRp\n\t\t\t\t\t\t\tZ2h0ZW5mYWN0b3IwCgpc\n\t\t\t\t\t\t\tZjBcZnMyOCBcY2YyIFxj\n\t\t\t\t\t\t\tYjMgXGV4cG5kMFxleHBu\n\t\t\t\t\t\t\tZHR3MFxrZXJuaW5nMAps\n\t\t\t\t\t\t\tcyAvQXBwbGljYXRpb25z\n\t\t\t\t\t\t\tL1BhZ2VzLmFwcC9Db250\n\t\t\t\t\t\t\tZW50cy9SZXNvdXJjZXMg\n\t\t\t\t\t\t\tfCBncmVwIGxwcm9qfQEA\n\t\t\t\t\t\t\tAAAjAAAAAQAAAAcAAABU\n\t\t\t\t\t\t\tWFQucnRmEAAAABUSMly2\n\t\t\t\t\t\t\tAQAAAAAAAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Text": "open -a /Applications/Pages.app --args -AppleLanguages '(en)'",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568477941.44503,
+	"ModificationDate": 568478251.338429,
+	"Triggers": [],
+	"Name": "English-App-Pages-shell"
+}

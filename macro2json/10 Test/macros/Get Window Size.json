@@ -1,0 +1,25 @@
+{
+	"UID": "0146518A-36D8-48B1-B819-B2C745922D5C",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "winSize",
+			"Text": "%WindowSize%1%"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayWindow",
+			"Text": "Front window size:\n\n→ %Calculate%winSize[1]% / ↓ %Calculate%winSize[2]%",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7uAQAAKwAAAAEAAADm\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZuaWxcZmNo\n\t\t\t\t\t\t\tYXJzZXQwIE1vbmFjbzt9\n\t\t\t\t\t\t\tCntcY29sb3J0Ymw7XHJl\n\t\t\t\t\t\t\tZDI1NVxncmVlbjI1NVxi\n\t\t\t\t\t\t\tbHVlMjU1O1xyZWQzOFxn\n\t\t\t\t\t\t\tcmVlbjM4XGJsdWUzODtc\n\t\t\t\t\t\t\tcmVkMjU1XGdyZWVuMjU1\n\t\t\t\t\t\t\tXGJsdWUyNTU7fQp7XCpc\n\t\t\t\t\t\t\tZXhwYW5kZWRjb2xvcnRi\n\t\t\t\t\t\t\tbDs7XGNzc3JnYlxjMjAw\n\t\t\t\t\t\t\tMDBcYzIwMDAwXGMyMDAw\n\t\t\t\t\t\t\tMDtcY3NzcmdiXGMxMDAw\n\t\t\t\t\t\t\tMDBcYzEwMDAwMFxjMTAw\n\t\t\t\t\t\t\tMDAwO30KXGRlZnRhYjcy\n\t\t\t\t\t\t\tMApccGFyZFxwYXJkZWZ0\n\t\t\t\t\t\t\tYWI3MjBccWpccGFyaHlw\n\t\t\t\t\t\t\taGVuZmFjdG9yMjBccGFy\n\t\t\t\t\t\t\tdGlnaHRlbmZhY3RvcjAK\n\t\t\t\t\t\t\tClxmMFxmczIyXGZzbWls\n\t\t\t\t\t\t\tbGkxMTI1NiBcY2YyIFxj\n\t\t\t\t\t\t\tYjMgXGV4cG5kMFxleHBu\n\t\t\t\t\t\t\tZHR3MFxrZXJuaW5nMApG\n\t\t\t\t\t\t\tcm9udCB3aW5kb3cgc2l6\n\t\t\t\t\t\t\tZTpcY2IxIFwKXApcY2Iz\n\t\t\t\t\t\t\tIFx1YzBcdTg1OTQgICVD\n\t\t\t\t\t\t\tYWxjdWxhdGUld2luU2l6\n\t\t\t\t\t\t\tZVsxXSUgLyBcdTg1OTUg\n\t\t\t\t\t\t\tICVDYWxjdWxhdGUld2lu\n\t\t\t\t\t\t\tU2l6ZVsyXSV9AQAAACMA\n\t\t\t\t\t\t\tAAABAAAABwAAAFRYVC5y\n\t\t\t\t\t\t\tdGYQAAAAcLUgXLYBAAAA\n\t\t\t\t\t\t\tAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		}
+	],
+	"CreationDate": 567339582.689087,
+	"IsActive": false,
+	"ModificationDate": 567340333.230574,
+	"Triggers": [
+		{
+			"MacroTriggerType": "StatusMenu"
+		}
+	],
+	"Name": "Get Window Size"
+}

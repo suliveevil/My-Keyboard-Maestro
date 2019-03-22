@@ -1,0 +1,65 @@
+{
+	"UID": "F11A42A7-BBB9-4168-9EDE-66D5FD39A43A",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "# 隐藏桌面图标\rdo shell script \"defaults write com.apple.finder CreateDesktop -bool false;killall Finder\"\r\r# 自动隐藏和显示菜单栏\rtell application \"System Preferences\" to reveal the ¬\r\tanchor named \"main\" of ¬\r\tpane id \"com.apple.preference.general\"\r\rtell application \"System Events\" to tell ¬\r\tprocess \"System Preferences\" to tell ¬\r\twindow \"通用\" to tell ¬\r\tcheckbox \"自动隐藏和显示菜单栏\" to ¬\r\tperform action \"AXPress\"",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.2",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 20,
+			"Modifiers": 768
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "7",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "# 显示桌面图标\rdo shell script \"defaults write com.apple.finder CreateDesktop -bool true;killall Finder\"\r\r# 自动隐藏和显示菜单栏\rtell application \"System Preferences\" to reveal the ¬\r\tanchor named \"main\" of ¬\r\tpane id \"com.apple.preference.general\"\r\rtell application \"System Events\" to tell ¬\r\tprocess \"System Preferences\" to tell ¬\r\twindow \"通用\" to tell ¬\r\tcheckbox \"自动隐藏和显示菜单栏\" to ¬\r\tperform action \"AXPress\"\r\rquit application \"System Preferences\"",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 567419408.499704,
+	"IsActive": false,
+	"ModificationDate": 568488083.673374,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 18,
+			"Modifiers": 4608,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "截图-OneApp"
+}

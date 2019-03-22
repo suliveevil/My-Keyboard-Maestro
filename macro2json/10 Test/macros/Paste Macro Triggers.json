@@ -1,0 +1,63 @@
+{
+	"UID": "7B66B5F8-C385-4ACD-99FB-E1930701AED2",
+	"Actions": [
+		{
+			"MacroActionType": "For",
+			"Variable": "Local TriggerXML",
+			"Collections": {
+				"CollectionList": [
+					{
+						"Search": "(?s)\\<\\?xml.*?\\<\\/plist\\>",
+						"Source": "Clipboard",
+						"CollectionType": "SubstringsIn",
+						"SearchKind": "Match",
+						"ResultType": "String"
+					}
+				]
+			},
+			"Actions": [
+				{
+					"MacroActionType": "SearchRegEx",
+					"Action": "IgnoreCaseRegEx",
+					"Search": "(?s)\\<\\?xml.*?\\<\\/plist\\>",
+					"Source": "Variable",
+					"Captures": [
+						"XML"
+					],
+					"Variable": "Local TriggerXML"
+				},
+				{
+					"MacroActionType": "ExecuteAppleScript",
+					"NotifyOnFailure": false,
+					"TrimResults": true,
+					"TimeOutAbortsMacro": true,
+					"Text": "tell application \"Keyboard Maestro Engine\"\r\tset TriggerXML to getvariable \"XML\"\rend tell\r\rtell application \"Keyboard Maestro\"\r\trepeat with CurrentlySelectedMacro in every item of (get selection)\r\t\ttell CurrentlySelectedMacro\r\t\t\tmake new trigger\r\t\t\tset xml of result to TriggerXML\r\t\tend tell\r\tend repeat\rend tell",
+					"Path": "",
+					"TrimResultsNew": true,
+					"StopOnFailure": false,
+					"IncludeStdErr": false,
+					"DisplayKind": "None",
+					"UseText": true
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "XML",
+			"Text": ""
+		}
+	],
+	"CreationDate": 527776305.374652,
+	"IsActive": false,
+	"ModificationDate": 567342363.564663,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 9,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Paste Macro Triggers"
+}

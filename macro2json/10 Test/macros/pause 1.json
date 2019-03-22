@@ -1,0 +1,92 @@
+{
+	"UID": "F1104070-D228-4CB4-BD01-4335DBC3E5F0",
+	"Actions": [
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "100",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "40",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 3,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "pause"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "1",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 2,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "80",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "220",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "1"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 33,
+			"Modifiers": 256
+		}
+	],
+	"CreationDate": 566900680.592727,
+	"IsActive": false,
+	"ModificationDate": 423372715.845512,
+	"Triggers": [
+		{
+			"TypedString": "P1",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": false
+		}
+	],
+	"Name": "pause 1"
+}

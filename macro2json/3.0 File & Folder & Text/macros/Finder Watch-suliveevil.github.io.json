@@ -1,0 +1,26 @@
+{
+	"UID": "27121738-8675-4632-932E-1F20F2C576BE",
+	"Actions": [
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "",
+			"Subtitle": "File Change",
+			"SoundName": ""
+		}
+	],
+	"CreationDate": 568475443.893579,
+	"ModificationDate": 574605535.232167,
+	"Triggers": [
+		{
+			"Interest": {
+				"UID2": "81BDDBC7-7EB4-4555-B085-579837C10157",
+				"Observe": "Both",
+				"ObserveWhen": "IgnorePartial",
+				"Path": "/allmyfiles/myRepo/suliveevil.github.io/_posts"
+			},
+			"MacroTriggerType": "Folder"
+		}
+	],
+	"Name": "Finder Watch-suliveevil.github.io"
+}

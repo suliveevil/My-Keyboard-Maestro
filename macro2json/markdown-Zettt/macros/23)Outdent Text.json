@@ -1,0 +1,60 @@
+{
+	"UID": "F4A85BDA-6823-4CBD-A596-42B20EBAFB46",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 7,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "0.1",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": false,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": false,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Pasting",
+			"IsDisclosed": false,
+			"Text": "#!/usr/bin/env ruby\n# encoding: utf-8\n# Markdown Service Tools v 2.11\n\nif RUBY_VERSION.to_f > 1.9\n\tEncoding.default_external = Encoding::UTF_8\n\tEncoding.default_internal = Encoding::UTF_8\n\tinput = IO.popen('pbpaste', 'r+').read.force_encoding('utf-8')\nelse\n\tinput = IO.popen('pbpaste', 'r+').read\nend\n\n#  Since any Ruby version before 1.9 doesn't much care for Unicode,\n#  patch in a new String#utf8_length method that returns the correct length\n#  for UTF-8 strings.\nUNICODE_COMPETENT = ((RUBY_VERSION)[0..2].to_f > 1.8)\n\nunless UNICODE_COMPETENT # lower than 1.9\n  class String\n    def utf8_length\n      i = 0\n      i = self.scan(/(.)/).length\n      i\n    end\n  end\nelse # 1.9 and above\n  class String\n    alias_method :utf8_length, :length\n  end\nend\n\ninput.split(\"\\n\").each {|line|\n  if line =~ /\\A(?: {2,4}|\\t)(.*)/\n    puts $1\n  else\n    puts line\n  end\n}\n",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"IsDisclosed": false,
+			"PastExpression": "0"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"IsDisclosed": false,
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 457084305.764058,
+	"ModificationDate": 413328865.234118,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 33,
+			"Modifiers": 6656,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"MacroTriggerType": "StatusMenu"
+		}
+	],
+	"Name": "23)Outdent Text",
+	"CustomIconData": "KMEC=Rounded=KMCOLOR:0,0,0,255=←=86=0=0=0=KMCOLOR:255,255,255,255"
+}

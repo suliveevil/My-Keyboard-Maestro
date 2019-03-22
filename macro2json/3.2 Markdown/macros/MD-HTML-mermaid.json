@@ -1,0 +1,24 @@
+{
+	"UID": "413F7C43-1BA9-4905-AE51-056CAE551997",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "<div class=\"mermaid\">\n    %|%\n</div>"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 569963086.680921,
+	"ModificationDate": 569963150.130853,
+	"Triggers": [
+		{
+			"TypedString": "hmmd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-HTML-mermaid"
+}

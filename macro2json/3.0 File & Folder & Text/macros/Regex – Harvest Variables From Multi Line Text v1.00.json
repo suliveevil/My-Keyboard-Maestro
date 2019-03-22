@@ -1,0 +1,194 @@
+{
+	"UID": "01AB7D13-A12D-48D2-BCEB-519F7981D486",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Regex – Harvest Variables From Multi Line Text v1.00",
+			"ActionName": "Macro Notes",
+			"ActionColor": "Aqua",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5hBQAAKwAAAAEAAABZ\n\t\t\t\t\t\t\tBQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmc3dpc3Nc\n\t\t\t\t\t\t\tZmNoYXJzZXQwIEhlbHZl\n\t\t\t\t\t\t\tdGljYTt9CntcY29sb3J0\n\t\t\t\t\t\t\tYmw7XHJlZDI1NVxncmVl\n\t\t\t\t\t\t\tbjI1NVxibHVlMjU1O30K\n\t\t\t\t\t\t\te1wqXGV4cGFuZGVkY29s\n\t\t\t\t\t\t\tb3J0Ymw7O30KXHBhcmRc\n\t\t\t\t\t\t\tdHg1NjBcdHgxMTIwXHR4\n\t\t\t\t\t\t\tMTY4MFx0eDIyNDBcdHgy\n\t\t\t\t\t\t\tODAwXHR4MzM2MFx0eDM5\n\t\t\t\t\t\t\tMjBcdHg0NDgwXHR4NTA0\n\t\t\t\t\t\t\tMFx0eDU2MDBcdHg2MTYw\n\t\t\t\t\t\t\tXHR4NjcyMFxwYXJkaXJu\n\t\t\t\t\t\t\tYXR1cmFsXHBhcnRpZ2h0\n\t\t\t\t\t\t\tZW5mYWN0b3IwCgpcZjBc\n\t\t\t\t\t\t\tZnMyNCBcY2YwIFwnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wKQXV0aG9y\n\t\t\t\t\t\t\tCTogIENocmlzdG9waGVy\n\t\t\t\t\t\t\tIFN0b25lIDxzY3JpcHRt\n\t\t\t\t\t\t\tZWlzdGVyQHRoZXN0b25l\n\t\t\t\t\t\t\tZm9yZ2UuY29tPlwKQ3Jl\n\t\t\t\t\t\t\tYXRlZAk6ICAyMDE5LzAx\n\t\t\t\t\t\t\tLzA2IDE4OjA1XApNb2Rp\n\t\t\t\t\t\t\tZmllZAk6ICAyMDE5LzAx\n\t\t\t\t\t\t\tLzA2IDE4OjA1XApUYWdz\n\t\t\t\t\t\t\tCQk6ICBAY2NzdG9uZSwg\n\t\t\t\t\t\t\tQEtNRm9ydW0sIEBUcm95\n\t\t\t\t\t\t\tLCBAUmVnZXgsIEBIYXJ2\n\t\t\t\t\t\t\tZXN0LCBAVmFyaWFibGVz\n\t\t\t\t\t\t\tLCBATXVsdGksIEBMaW5l\n\t\t\t\t\t\t\tLCBAVGV4dFwKXCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3fQEAAAAjAAAA\n\t\t\t\t\t\t\tAQAAAAcAAABUWFQucnRm\n\t\t\t\t\t\t\tEAAAAAyYMly2AQAAAAAA\n\t\t\t\t\t\t\tAAAAAAA=\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "initialData",
+			"Text": "Live Help | Log Out\nMuffetta's Domestic Assistants\nHome\t Lead Center\t Opportunities\t Reviews\t My Profile\t Articles & Tools\t Account\nActive Leads  Closed Leads My Appointments Reports Services Offered Coverage Area Manage Lead Flow Sync My Schedule\nActive Leads (28) Print Leads | Export Leads\nFilter Sort by Newest - Oldest Status Leads   Search\nBlasco, Matt\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1052 Norwalk, CT 12/30/2018\nRaughter, Lidia\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1050 Goshen, NY 12/30/2018\nAvella, Tiffany\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1047 New Hampton, NY 12/30/2018\nHoff, Kathy\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1045 Middletown, NY 12/30/2018\nTirc, Beth\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1043 Stony Point, NY 12/30/2018\nGlab, Marilyn\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1042 Nanuet , NY 12/29/2018\nLinsky, Ann\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1039 Florida, NY 12/28/2018\nHazzard, Iesha\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1038 Middletown, NY 12/28/2018\nPerrino, Judith A\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1036 Middletown, NY 12/27/2018\nVan Pamelen, Lauren\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1034 Warwick, NY 12/27/2018\nM, Naomi\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1033 Monsey, NY 12/27/2018\njones, daryl\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1032 new rochelle, NY 12/27/2018\nBlumberg, Dave\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1030 Monroe, NY 12/26/2018\nNeuman, Idy\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1027 New hempstead, NY 12/26/2018\nselfridge, alice\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1026 montgomery, NY 12/25/2018\nBiradavolu, Lakshmi\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1025 Spring Valley, NY 12/25/2018\nGillick, Frank\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1023 Pelham, NY 12/24/2018\nMcVeigh, Yulia\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1020 White Plains, NY 12/23/2018\nname, name\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1018 Pomona, NY 12/23/2018\nname, name\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1017 Pomona, NY 12/22/2018\nname, name\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1014 White Plains, NY 12/22/2018\nname, name\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1012 Pearl River, NY 12/22/2018\nname, name\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1010 West Nyack, NY 12/21/2018\nname, name\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1007 EASTON, CT 12/21/2018\nname, name\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1006 Bridgeport, CT 12/20/2018\nname, name\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1004 Mamaroneck, NY FREE 3/6/2018\nname, name\nClean House Interior (Maid Service)\n(929) 295-4774 ext. 1003 White Plains, NY FREE 2/21/2018\nname, name\nOne Time Interior House Cleaning\n(929) 295-4774 ext. 1001 Dobbs Ferry, NY FREE 2/4/2018\nExpand\nSet Status\nAvella, Tiffany\n\nDaytime\n(929) 295-4774 ext. 1047\n\nCell\n(929) 295-4774 ext. 1048\n\n\ntiffany.avella817@gmail.com\n\nMessages\n\nRate this lead\nPrint this lead\nMaple Ave \nNew Hampton, NY 10958\n\nMap\n\nDetailsEmailNotes & RemindersHistory\nClean House Interior (Maid Service)\n\nJob #: 131584913\nAdditional HomeAdvisor Pros Matched: 2\nService Description\n\nConsumer Comments:\nIn need of kitchen, bathrooms, living room and dining rooms cleaned. Just the upstairs which include 3 bedrooms, 2 baths, living room, dining room, kitchen, steps and landing\n\nWhat kind of location is this?:\nHome/Residence\n\nCleaning Type Needed:\nRecurring Service\n\nRequest Stage:\nPlanning & Budgeting\n\nDesired Completion Date:\n1 - 2 weeks"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Main Data from initialData",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "(?s)Expand\\nSet Status\\n(.+)",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"scrapeData"
+			],
+			"Source": "Variable",
+			"Variable": "initialData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Name_Last and Name_First",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "([^,]+)\\h*,\\h*([^,]+)",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"Name_Last",
+				"Name_First"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Phone_Daytime and Phone_Ext_Daytime",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "(?m)^Daytime\\n(\\(\\d+\\)\\h\\d{3}-\\d{4})(?:[^\\d\\v]+(\\d+))?",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"Phone_Daytime",
+				"Phone_Ext_Daytime"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Phone_Cell and Phone_Ext_Cell",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "(?m)^Cell\\n(\\(\\d+\\)\\h\\d{3}-\\d{4})(?:[^\\d\\v]+(\\d+))?",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"Phone_Cell",
+				"Phone_Ext_Cell"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Client Email Address",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "\\b[A-Z0-9.%+-]+@[A-Z0-9.-]+.[A-Z]{2,}\\b",
+			"IsDisclosed": false,
+			"Captures": [
+				"Client_Email"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Address_Street, Address_City, Address_State, and Address_Zip",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "(?m)Print this lead\\n(.+)\\n([^,]+),\\h+([A-Z]{2})\\h+(\\d{5})",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"Address_Street",
+				"Address_City",
+				"Address_State",
+				"Address_Zip"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Consumer_Comments",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "Consumer Comments:\\s+(\\S.+)",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"Detail_Consumer_Comments"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Location",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "What kind of location is this\\?:\\s+(\\S.+)",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"Detail_Location"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Cleaning_Type",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "Cleaning Type Needed:\\s+(\\S.+)",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"Detail_Cleaning_Type"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Stage",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "Request Stage:\\s+(\\S.+)",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"Detail_Stage"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "SearchRegEx",
+			"ActionName": "Extract -- Completion_Date",
+			"Action": "IgnoreCaseRegEx",
+			"Search": "Desired Completion Date:\\n(.+)",
+			"IsDisclosed": false,
+			"Captures": [
+				"",
+				"Detail_Completion_Date"
+			],
+			"Source": "Variable",
+			"Variable": "scrapeData"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "Delete Variables -- Housekeeping",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"IsActive": false,
+			"Text": "set varNamesToDelete to items 1 thru -2 of {¬\r\t\"initialData\", ¬\r\t\"scrapeData\", ¬\r\t\"Address_City\", ¬\r\t\"Address_State\", ¬\r\t\"Address_Street\", ¬\r\t\"Address_Zip\", ¬\r\t\"Client_Email\", ¬\r\t\"Detail_Cleaning_Type\", ¬\r\t\"Detail_Completion_Date\", ¬\r\t\"Detail_Consumer_Comments\", ¬\r\t\"Detail_Location\", ¬\r\t\"Detail_Stage\", ¬\r\t\"Name_First\", ¬\r\t\"Name_Last\", ¬\r\t\"Phone_Daytime\", ¬\r\t\"Phone_Ext_Daytime\", ¬\r\t\"\"}\r\rtell application \"Keyboard Maestro Engine\"\r\trepeat with varName in varNamesToDelete\r\t\ttry\r\t\t\tsetvariable varName to \"%Delete%\"\r\t\tend try\r\tend repeat\rend tell",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 568507562.52275,
+	"IsActive": false,
+	"ModificationDate": 568533741.470719,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 122,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Regex – Harvest Variables From Multi Line Text v1.00"
+}

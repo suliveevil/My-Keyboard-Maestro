@@ -1,0 +1,38 @@
+{
+	"UID": "D5BC520A-DD37-43E6-BB5D-6CC4DA48B441",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "MouseMoveAndClick",
+					"ClickCount": 1,
+					"DragVerticalPosition": "0",
+					"Modifiers": 0,
+					"Button": 0,
+					"Fuzz": 15,
+					"Action": "MoveAndClick",
+					"DisplayMatches": false,
+					"DragHorizontalPosition": "30",
+					"RestoreMouseLocation": false,
+					"VerticalPositionExpression": "0",
+					"RelativeCorner": "TopLeft",
+					"HorizontalPositionExpression": "0",
+					"Relative": "Mouse",
+					"MouseDrag": "To"
+				}
+			]
+		}
+	],
+	"CreationDate": 566956591.11836,
+	"IsActive": false,
+	"ModificationDate": 567565594.743528,
+	"Triggers": [],
+	"Name": "Safari-Drag&Drop"
+}

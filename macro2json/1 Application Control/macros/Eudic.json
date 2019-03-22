@@ -1,0 +1,28 @@
+{
+	"UID": "B1E7F20E-F873-4F01-AA0C-9CDBBB361D05",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": true,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Eudb_en.app",
+				"BundleIdentifier": "com.eusoft.eudic",
+				"Name": "EuDic"
+			}
+		}
+	],
+	"CreationDate": 566956591.11836,
+	"ModificationDate": 568820932.650604,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 19,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Eudic"
+}

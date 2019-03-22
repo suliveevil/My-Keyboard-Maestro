@@ -1,0 +1,16 @@
+{
+	"UID": "E312BE22-2FA2-4CA9-8E1B-46A6A762A2F4",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇡"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991142.723308,
+	"Triggers": [],
+	"Name": "82)  ⇡ "
+}

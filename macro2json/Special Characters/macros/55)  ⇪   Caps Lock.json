@@ -1,0 +1,16 @@
+{
+	"UID": "3FE19634-0F26-4DB4-B65D-52C13D63D02C",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇪"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991058.626964,
+	"Triggers": [],
+	"Name": "55)  ⇪   Caps Lock"
+}

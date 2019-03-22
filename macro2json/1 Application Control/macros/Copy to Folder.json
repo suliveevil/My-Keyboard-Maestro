@@ -1,0 +1,41 @@
+{
+	"UID": "4E1663EF-6EC9-47CA-B384-C39FFAD3520B",
+	"Actions": [
+		{
+			"MacroActionType": "For",
+			"Variable": "Path",
+			"Collections": {
+				"CollectionList": [
+					{
+						"CollectionType": "FinderSelection"
+					}
+				]
+			},
+			"Actions": [
+				{
+					"MacroActionType": "File",
+					"Source": "%Variable%Path%",
+					"Destination": "/allmyfiles",
+					"Operation": "Copy"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": ".4",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "DisplayBriefly",
+			"Text": "File was saved in @Guillem folder"
+		}
+	],
+	"CreationDate": 567822721.61836,
+	"IsActive": false,
+	"ModificationDate": 568236424.478071,
+	"Triggers": [],
+	"Name": "Copy to Folder",
+	"CustomIconData": "KMEP-GenericFolder"
+}

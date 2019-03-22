@@ -1,0 +1,33 @@
+{
+	"UID": "0F62F137-3AE6-401D-BBB8-1A746C26E0FD",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "defaults write com.apple.finder CreateDesktop -bool false",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567201418.349443,
+	"IsActive": false,
+	"ModificationDate": 574598745.757181,
+	"Triggers": [
+		{
+			"TypedString": "!hide",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！hide",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Desktop-Hide"
+}

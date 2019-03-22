@@ -1,0 +1,21 @@
+{
+	"UID": "1502AA6D-33B2-45EC-8665-DB09296FE753",
+	"Actions": [
+		{
+			"MacroActionType": "SetClipboardToText",
+			"Text": "[%FrontBrowserTitle%](%FrontBrowserURL%)",
+			"JustDisplay": false
+		}
+	],
+	"CreationDate": 568076086.684111,
+	"ModificationDate": 574950191.942365,
+	"Triggers": [
+		{
+			"Case": "Ignore",
+			"TypedString": "lj-",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-URL2ClipBoard"
+}

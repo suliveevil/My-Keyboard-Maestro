@@ -1,0 +1,21 @@
+{
+	"UID": "31131201-F2A6-4548-84D4-0B2DFE4BC501",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "osascript -e 'display notification \"通知内容\" with title \"标题\" subtitle \"子标题\"'",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568484303.05426,
+	"ModificationDate": 568484323.109,
+	"Triggers": [],
+	"Name": "Notification"
+}

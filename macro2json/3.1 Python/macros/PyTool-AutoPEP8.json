@@ -1,0 +1,39 @@
+{
+	"UID": "B5230A55-23AC-4C95-8240-026F95E48D4E",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "python3 -m autopep8 %SystemClipboard%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 567045213.679116,
+	"ModificationDate": 568133233.496173,
+	"Triggers": [
+		{
+			"TypedString": "!pep8",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！pep8",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "!autopep8",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！autopep8",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "PyTool-AutoPEP8"
+}

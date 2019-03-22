@@ -1,0 +1,24 @@
+{
+	"UID": "01CEB36B-3EBC-42F5-A5D1-B1EBF1FAFC22",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "➡️→"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"ModificationDate": 568015901.320041,
+	"Triggers": [
+		{
+			"TypedString": "yjt",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "箭头-右"
+}

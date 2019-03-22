@@ -1,0 +1,58 @@
+{
+	"UID": "12A4DD12-EEB7-46DD-83CF-FB9909BA2F77",
+	"Actions": [
+		{
+			"MacroActionType": "OpenFinderSelection",
+			"TargetApplication": {
+				"NewFile": "/System/Library/CoreServices/Finder.app",
+				"BundleIdentifier": "com.apple.finder",
+				"Name": "Finder"
+			},
+			"TargetingType": "Specific"
+		},
+		{
+			"MacroActionType": "For",
+			"Variable": "FilePath",
+			"Collections": {
+				"CollectionList": [
+					{
+						"CollectionType": "FinderSelection"
+					}
+				]
+			},
+			"Actions": [
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"Source": "Variable",
+					"SourceVariable": "FilePath",
+					"IncludeStdErr": false,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Clipboard",
+					"Text": "tesseract %Variable%FilePath% stdout -l eng+chi_tra+chi_sim+jpn | LC_CTYPE=UTF-8 pbcopy",
+					"TimeOutPeriod": 10
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 566952596.223263,
+	"IsActive": false,
+	"ModificationDate": 567046489.418506,
+	"Triggers": [
+		{
+			"TypedString": "!ocr",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！ocr",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "OCR"
+}

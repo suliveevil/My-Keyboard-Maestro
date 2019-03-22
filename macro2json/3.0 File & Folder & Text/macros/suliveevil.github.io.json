@@ -1,0 +1,28 @@
+{
+	"UID": "295DACDB-2B0A-4E8A-A6EC-F89FE4733BEC",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "open /allmyfiles/gitFiles/suliveevil.github.io/_posts\n",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 567071968.311578,
+	"ModificationDate": 569418251.75445,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "suliveevil.github.io"
+}

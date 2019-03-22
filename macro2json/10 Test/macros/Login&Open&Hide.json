@@ -1,0 +1,70 @@
+{
+	"UID": "215AE46C-89BF-4A53-A504-97A8E0C65332",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "4C004DB7-16A3-4DA5-B3BD-0248588D3CD7",
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "1E22CDAA-5919-4367-B584-2928B67F3FEA",
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "60A434FB-C3B0-4C08-9146-A66558BC62A2",
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "A114D9F1-63DB-4DD4-A7FD-ECAAEE790586",
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "HideAll",
+			"HonorExcluded": true
+		}
+	],
+	"CreationDate": 567054602.802897,
+	"IsActive": false,
+	"ModificationDate": 567312434.979409,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 30,
+			"RepeatTime": 60,
+			"TimeHour": 8,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Login",
+			"MacroTriggerType": "Time"
+		},
+		{
+			"TypedString": "!seemenow",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！seemenow",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 0,
+			"Modifiers": 6912,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Login&Open&Hide"
+}

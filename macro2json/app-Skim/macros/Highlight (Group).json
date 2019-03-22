@@ -1,0 +1,44 @@
+{
+	"UID": "2FE8EC83-3725-4937-B58C-B7D0C937B2CE",
+	"Actions": [
+		{
+			"MacroActionType": "SelectMenuItem",
+			"Menu": [
+				"Notes",
+				"New Highlight"
+			],
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front"
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "138",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "1326",
+			"Relative": "Screen",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		}
+	],
+	"CreationDate": 566900688.274133,
+	"ModificationDate": 424407007.57522,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 5,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Highlight (Group)"
+}

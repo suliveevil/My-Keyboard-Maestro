@@ -1,0 +1,296 @@
+{
+	"UID": "E28847B0-0BDF-450D-8209-2D40A88BA9FC",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Stopwatch Example 2 (All Options)",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7CAgAAKwAAAAEAAAC6\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgTmFtZTog\n\t\t\t\t\t\t\tU3RvcHdhdGNoIEV4YW1w\n\t\t\t\t\t\t\tbGUgMiAoQWxsIE9wdGlv\n\t\t\t\t\t\t\tbnMpXApWZXJzaW9uOiAx\n\t\t\t\t\t\t\tLjBcClVwZGF0ZWQ6IDIw\n\t\t\t\t\t\t\tMTYvMTIvMDEgMDg6MDYg\n\t\t\t\t\t\t\tUFNUXApCeTogRGFuIFRo\n\t\t\t\t\t\t\tb21hc1wKXApQVVJQT1NF\n\t\t\t\t\t\t\tOlwKXApBbGxvd3MgeW91\n\t\t\t\t\t\t\tIHRvIGludGVyYWN0aXZl\n\t\t\t\t\t\t\tbHkgdHJ5IGVhY2ggb2Yg\n\t\t\t\t\t\t\tdGhlIFN0b3B3YXRjaCBB\n\t\t\t\t\t\t\tY3Rpb25zLlwKXApVU0FH\n\t\t\t\t\t\t\tRTpcClwKUnVuIHRoZSBt\n\t\t\t\t\t\t\tYWNyby5cClwKTk9URVM6\n\t\t\t\t\t\t\tXApcClBsZWFzZSBzZWUg\n\t\t\t\t\t\t\tdGhlIGluaXRpYWwgY29t\n\t\t\t\t\t\t\tbWVudHMgaW4gdGhlIG1h\n\t\t\t\t\t\t\tY3JvICJTdG9wd2F0Y2gg\n\t\t\t\t\t\t\tRXhhbXBsZSAxIChTaW1w\n\t\t\t\t\t\t\tbGUgRXhhbXBsZSkiLCBm\n\t\t\t\t\t\t\tb3IgbW9yZSBkZXRhaWxl\n\t\t\t\t\t\t\tZCBpbmZvcm1hdGlvbiBh\n\t\t\t\t\t\t\tYm91dCB0aGUgU3RvcHdh\n\t\t\t\t\t\t\tdGNoIGFjdGlvbi5cClwK\n\t\t\t\t\t\t\tVkVSU0lPTiBISVNUT1JZ\n\t\t\t\t\t\t\tOlwKMS4wIC0gSW5pdGlh\n\t\t\t\t\t\t\tbCB2ZXJzaW9uLn0BAAAA\n\t\t\t\t\t\t\tIwAAAAEAAAAHAAAAVFhU\n\t\t\t\t\t\t\tLnJ0ZhAAAABo7kpctgEA\n\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "PlugIn",
+			"PlugInFolderName": "Stopwatch",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"PlugInParameters": {
+				"Action": "Start",
+				"Elapsed Time Format": "Seconds.Milliseconds",
+				"Stopwatch Variable": "MyStopwatch"
+			},
+			"TrimResultsNew": true,
+			"IncludeStdErr": true,
+			"DisplayKind": "None"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "StopwatchStatusMessage",
+			"Text": "The Stopwatch is now running.\nTry the other buttons to see what happens:"
+		},
+		{
+			"MacroActionType": "Until",
+			"ActionName": "Repeat until \"Done\" button pressed",
+			"ActionColor": "Aqua",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "%ExecutingMacro%",
+					"Prompt": "%Variable%StopwatchStatusMessage%\n\nStart\\tResets the stopwatch to 0, and starts it.\nStop\\tStops (pauses) the stopwatch.\nResume\\tResumes the stopwatch if it was stopped.\nReset\\tStops the stopwatch and resets it to zero. Does NOT start it running.\nCheck\\tGets the current elapsed time on the stopwatch. Doesn't change anything.\n\nClick the \"Done\" button when you're finished.",
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "Done",
+							"Cancel": false
+						},
+						{
+							"Button": "Check",
+							"Cancel": false
+						},
+						{
+							"Button": "Reset",
+							"Cancel": false
+						},
+						{
+							"Button": "Resume",
+							"Cancel": false
+						},
+						{
+							"Button": "Stop",
+							"Cancel": false
+						},
+						{
+							"Button": "Start",
+							"Cancel": false
+						}
+					],
+					"Variables": []
+				},
+				{
+					"MacroActionType": "Switch",
+					"Source": "Variable",
+					"ActionColor": "Yellow",
+					"Variable": "Result Button",
+					"CaseEntries": [
+						{
+							"TestValue": "Stop",
+							"Actions": [
+								{
+									"MacroActionType": "Group",
+									"ActionName": "Stop",
+									"ActionColor": "Red",
+									"Actions": [
+										{
+											"MacroActionType": "PlugIn",
+											"PlugInFolderName": "Stopwatch",
+											"Variable": "StopwatchElapsedTime",
+											"TimeOutAbortsMacro": true,
+											"PlugInParameters": {
+												"Action": "Stop",
+												"Elapsed Time Format": "Seconds.Milliseconds",
+												"Stopwatch Variable": "MyStopwatch"
+											},
+											"TrimResultsNew": true,
+											"IncludeStdErr": true,
+											"DisplayKind": "Variable"
+										},
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "StopwatchStatusMessage",
+											"Text": "Elapsed Time: %Variable%StopwatchElapsedTime%\n\nThe Stopwatch is now stopped. It will return the same elapsed time if you \"Stop\" it again, or \"Check\" it."
+										}
+									],
+									"TimeOutAbortsMacro": true
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "Resume",
+							"Actions": [
+								{
+									"MacroActionType": "Group",
+									"ActionName": "Continue",
+									"ActionColor": "Green",
+									"Actions": [
+										{
+											"MacroActionType": "PlugIn",
+											"PlugInFolderName": "Stopwatch",
+											"Variable": "StopwatchElapsedTime",
+											"TimeOutAbortsMacro": true,
+											"PlugInParameters": {
+												"Action": "Resume",
+												"Elapsed Time Format": "Seconds.Milliseconds",
+												"Stopwatch Variable": "MyStopwatch"
+											},
+											"TrimResultsNew": true,
+											"IncludeStdErr": true,
+											"DisplayKind": "Variable"
+										},
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "StopwatchStatusMessage",
+											"Text": "Elapsed Time: %Variable%StopwatchElapsedTime%\n\nThe Stopwatch is running."
+										}
+									],
+									"TimeOutAbortsMacro": true
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "Reset",
+							"Actions": [
+								{
+									"MacroActionType": "Group",
+									"ActionName": "Reset",
+									"ActionColor": "Red",
+									"Actions": [
+										{
+											"MacroActionType": "PlugIn",
+											"PlugInFolderName": "Stopwatch",
+											"Variable": "StopwatchElapsedTime",
+											"TimeOutAbortsMacro": true,
+											"PlugInParameters": {
+												"Action": "Reset",
+												"Elapsed Time Format": "Seconds.Milliseconds",
+												"Stopwatch Variable": "MyStopwatch"
+											},
+											"TrimResultsNew": true,
+											"IncludeStdErr": true,
+											"DisplayKind": "Variable"
+										},
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "StopwatchStatusMessage",
+											"Text": "Elapsed Time: %Variable%StopwatchElapsedTime%\n\nThe Stopwatch has been reset to 0, and is stopped."
+										}
+									],
+									"TimeOutAbortsMacro": true
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "Check",
+							"Actions": [
+								{
+									"MacroActionType": "Group",
+									"ActionName": "Reset",
+									"ActionColor": "Green",
+									"Actions": [
+										{
+											"MacroActionType": "PlugIn",
+											"PlugInFolderName": "Stopwatch",
+											"Variable": "StopwatchElapsedTime",
+											"TimeOutAbortsMacro": true,
+											"PlugInParameters": {
+												"Action": "Check",
+												"Elapsed Time Format": "Seconds.Milliseconds",
+												"Stopwatch Variable": "MyStopwatch"
+											},
+											"TrimResultsNew": true,
+											"IncludeStdErr": true,
+											"DisplayKind": "Variable"
+										},
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "StopwatchStatusMessage",
+											"Text": "Elapsed Time: %Variable%StopwatchElapsedTime%\n\nThe state of the stopwatch is unchanged."
+										}
+									],
+									"TimeOutAbortsMacro": true
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "Start",
+							"Actions": [
+								{
+									"MacroActionType": "Group",
+									"ActionName": "Start",
+									"ActionColor": "Green",
+									"Actions": [
+										{
+											"MacroActionType": "PlugIn",
+											"PlugInFolderName": "Stopwatch",
+											"Variable": "StopwatchElapsedTime",
+											"TimeOutAbortsMacro": true,
+											"PlugInParameters": {
+												"Action": "Start",
+												"Elapsed Time Format": "Seconds.Milliseconds",
+												"Stopwatch Variable": "MyStopwatch"
+											},
+											"TrimResultsNew": true,
+											"IncludeStdErr": true,
+											"DisplayKind": "Variable"
+										},
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "StopwatchStatusMessage",
+											"Text": "Elapsed Time: %Variable%StopwatchElapsedTime%\n\nThe Stopwatch has been reset to 0 and is now running."
+										}
+									],
+									"TimeOutAbortsMacro": true
+								}
+							],
+							"ConditionType": "Is"
+						},
+						{
+							"TestValue": "",
+							"Actions": [
+								{
+									"MacroActionType": "Cancel",
+									"Action": "BreakFromLoop",
+									"IsDisclosed": false
+								}
+							],
+							"ConditionType": "Otherwise"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Text": "%Result Button%",
+						"TextConditionType": "Is",
+						"ConditionType": "Text",
+						"TextValue": "Done"
+					}
+				],
+				"ConditionListMatch": "All"
+			}
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "MyStopwatch",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "StopwatchElapsedTime",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 502075013.153244,
+	"IsActive": false,
+	"ModificationDate": 570107462.397331,
+	"Triggers": [],
+	"Name": "Stopwatch Example 2 (All Options)"
+}

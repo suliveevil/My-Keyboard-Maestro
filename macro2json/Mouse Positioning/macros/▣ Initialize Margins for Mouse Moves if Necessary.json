@@ -1,0 +1,69 @@
+{
+	"UID": "2669BF29-8299-4F41-B142-1B6DAF20E17C",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "How This Works",
+			"ActionName": "How This Works",
+			"ActionColor": "Orange",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC7+AwAAKwAAAAEAAAD2\n\t\t\t\t\t\t\tAwAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgVGhpcyBt\n\t\t\t\t\t\t\tYWNybyBpcyBydW4gb24g\n\t\t\t\t\t\t\tbG9naW4gdG8gc2V0cyB2\n\t\t\t\t\t\t\tYWx1ZXMgdGhhdCByZXBy\n\t\t\t\t\t\t\tZXNlbnQgdGhlIG1hcmdp\n\t\t\t\t\t\t\tbnMgdXNlZCBpbiB0aGUg\n\t\t\t\t\t\t\tb3RoZXIgbWFjcm9zIG9m\n\t\t\t\t\t\t\tIHRoaXMgZ3JvdXAgd2hl\n\t\t\t\t\t\t\tbiBtb3ZpbmcgdG8gZWRn\n\t\t\t\t\t\t\tZXMgb2YgdGhlIEludGVy\n\t\t\t\t\t\t\tbmFsIGFuZCBFeHRlcm5h\n\t\t\t\t\t\t\tbCBzY3JlZW5zLiBUaGUg\n\t\t\t\t\t\t\tZm9ybWF0IGlzIEwsVCxS\n\t\t\t\t\t\t\tLEIuIChGb3IgZXhhbXBs\n\t\t\t\t\t\t\tZSwgTVAgTWFyZ2lucyBJ\n\t\t\t\t\t\t\tbnRlcm5hbFszXSByZXBy\n\t\t\t\t\t\t\tZXNlbnRzIHRoZSBkaXN0\n\t\t\t\t\t\t\tYW5jZSBmcm9tIHRoZSBy\n\t\t\t\t\t\t\taWdodCBlZGdlIG9mIHRo\n\t\t\t\t\t\t\tZSBpbnRlcm5hbCBzY3Jl\n\t\t\t\t\t\t\tZW4uKSBUaGUgdmFsdWVz\n\t\t\t\t\t\t\tIGFyZSBhc3N1bWVkIHRv\n\t\t\t\t\t\t\tIGFsbCBiZSBwb3NpdGl2\n\t\t\t\t\t\t\tZS5cClwKTm90ZSB0aGF0\n\t\t\t\t\t\t\tIChhbGwpIHZhcmlhYmxl\n\t\t\t\t\t\t\tIHZhbHVlcyBhcmUgcHJl\n\t\t\t\t\t\t\tc2VydmVkIGFjcm9zcyBL\n\t\t\t\t\t\t\tTSByZXN0YXJ0cy5cClwK\n\t\t\t\t\t\t\tWW91IGNuIGNhbiBjaGFu\n\t\t\t\t\t\t\tZ2UgdGhlc2UgdmFsdWVz\n\t\t\t\t\t\t\tIGF0IGFueSB0aW1lIGJ5\n\t\t\t\t\t\t\tIGVkaXRpbmcgdGhlbSBp\n\t\t\t\t\t\t\tbiB0aGUgVmFyaWFibGVz\n\t\t\t\t\t\t\tIHNlY3Rpb24gb2YgS00n\n\t\t\t\t\t\t\tcyBQcmVmZXJlbmNlcy4g\n\t\t\t\t\t\t\tKElmIHlvdSBlZGl0IHRo\n\t\t\t\t\t\t\tZW0gaGVyZSB0aGVyZSBp\n\t\t\t\t\t\t\tcyBubyB3YXkgdG8gZ2V0\n\t\t\t\t\t\t\tIHRoZSBvcmlnaW5hbCB2\n\t\t\t\t\t\t\tYWx1ZXMgYmFjay4pIFRv\n\t\t\t\t\t\t\tIG1ha2UgdGhlIGNoYW5n\n\t\t\t\t\t\t\tZSB0YWtlIGVmZmVjdCBp\n\t\t\t\t\t\t\tbW1lZGlhdGVseSBleGVj\n\t\t\t\t\t\t\tdXRlICgidHJ5IikgdGhl\n\t\t\t\t\t\t\tIG1hY3JvLiBPdGhlcndp\n\t\t\t\t\t\t\tc2UgdGhlIGNoYW5nZSB3\n\t\t\t\t\t\t\tb24ndCB0YWtlIGVmZmVj\n\t\t\t\t\t\t\tdCB1bnRpbCB5b3VyIG5l\n\t\t\t\t\t\t\teHQgbG9naW4uXAp9AQAA\n\t\t\t\t\t\t\tACMAAAABAAAABwAAAFRY\n\t\t\t\t\t\t\tVC5ydGYQAAAAM7s2XLYB\n\t\t\t\t\t\t\tAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "MP Margins Internal",
+						"VariableConditionType": "DoesNotExist",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					},
+					{
+						"Variable": "MP Margins Internal",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"ActionName": "Initialize MP Margins Internal",
+					"ActionColor": "Aqua",
+					"UseFormat": false,
+					"Text": "20, 50, 20, 80",
+					"Variable": "MP Margins Internal"
+				},
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"ActionName": "Initialize MP Margins External",
+					"ActionColor": "Aqua",
+					"UseFormat": false,
+					"Text": "20, 50, 20, 80",
+					"Variable": "MP Margins External"
+				}
+			]
+		}
+	],
+	"CreationDate": 483413207.436535,
+	"ModificationDate": 499824371.329004,
+	"Triggers": [
+		{
+			"Repeat": false,
+			"TimeFinishHour": 17,
+			"TimeMinutes": 30,
+			"RepeatTime": 60,
+			"TimeHour": 8,
+			"TimeFinishMinutes": 30,
+			"WhichDays": 127,
+			"ExecuteType": "Login",
+			"MacroTriggerType": "Time"
+		}
+	],
+	"Name": "▣ Initialize Margins for Mouse Moves if Necessary",
+	"CustomIconData": "KMEP-DebuggerContinue"
+}

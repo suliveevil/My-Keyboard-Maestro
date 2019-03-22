@@ -1,0 +1,25 @@
+{
+	"UID": "646D9C24-04B6-4FC3-A688-BC532D35E712",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "%FrontBrowserURL%%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"IsActive": false,
+	"ModificationDate": 568015943.376736,
+	"Triggers": [
+		{
+			"TypedString": "!url",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "网页URL"
+}

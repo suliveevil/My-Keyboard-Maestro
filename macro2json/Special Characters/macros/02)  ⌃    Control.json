@@ -1,0 +1,16 @@
+{
+	"UID": "29FB9776-2D7A-41A9-9A48-4201F2F32426",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⌃"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492990890.608737,
+	"Triggers": [],
+	"Name": "02)  ⌃    Control"
+}

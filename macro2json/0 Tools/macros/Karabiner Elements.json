@@ -1,0 +1,26 @@
+{
+	"UID": "AA87B144-2D22-440B-B82A-BED4D8225368",
+	"Actions": [],
+	"CreationDate": 573466989.004607,
+	"IsActive": false,
+	"ModificationDate": 573467139.704098,
+	"Triggers": [
+		{
+			"ElementCookie": 105,
+			"FireType": "Pressed",
+			"ElementDeviceUsage": 6,
+			"ElementUsage": 57,
+			"ElementDeviceUsagePage": 1,
+			"Modifiers": 0,
+			"UseModifiers": true,
+			"ElementVendorID": 5824,
+			"ElementName": "Karabiner VirtualHIDKeyboard Caps Lock",
+			"ElementProductID": 10203,
+			"ElementShortName": "#57",
+			"ElementValue": 1,
+			"MacroTriggerType": "HID",
+			"ElementUsagePage": 7
+		}
+	],
+	"Name": "Karabiner Elements"
+}

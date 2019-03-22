@@ -1,0 +1,22 @@
+{
+	"UID": "3C10FAA9-BD1A-4775-8A88-259A12026429",
+	"Actions": [
+		{
+			"MacroActionType": "MacroGroupToggle",
+			"MacroGroupUID": "2C315236-481D-4B3E-B8AF-0A8594318FD5",
+			"ToggleMode": "TogglePalette",
+			"DisplayToggle": true
+		}
+	],
+	"CreationDate": 574812279.424589,
+	"ModificationDate": 574812352.494833,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 121,
+			"Modifiers": 512,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Pallet"
+}

@@ -1,0 +1,29 @@
+{
+	"UID": "22D8B51F-DE19-419F-8E70-360386E3A69A",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "[%|%](%CurrentClipboard%)"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 566302929.068525,
+	"ModificationDate": 573285227.425482,
+	"Triggers": [
+		{
+			"TypedString": "!lj",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "！lj",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-本地链接"
+}

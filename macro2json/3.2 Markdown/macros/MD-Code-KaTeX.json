@@ -1,0 +1,24 @@
+{
+	"UID": "F2A10076-1BCB-4C99-A722-B84020767FB6",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "\n<div class=\"katex\">\n%SystemClipboard%\n</div>\n%|%\n"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568122443.362611,
+	"ModificationDate": 570205080.297793,
+	"Triggers": [
+		{
+			"TypedString": "codd",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Code-KaTeX"
+}

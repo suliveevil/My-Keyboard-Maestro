@@ -1,0 +1,22 @@
+{
+	"UID": "5382E789-E16B-434B-9328-CAE0AB53FAA7",
+	"Actions": [
+		{
+			"MacroActionType": "Filter",
+			"Action": "RemoveStyles",
+			"Source": "Clipboard",
+			"Destination": "Clipboard"
+		}
+	],
+	"CreationDate": 569184969.134284,
+	"ModificationDate": 570128413.059395,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 8,
+			"Modifiers": 4352,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Copy as Plain text"
+}

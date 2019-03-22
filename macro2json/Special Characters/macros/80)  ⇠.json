@@ -1,0 +1,16 @@
+{
+	"UID": "6566D0F6-0A27-4545-B0F4-30447260CC99",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⇠"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991141.922201,
+	"Triggers": [],
+	"Name": "80)  ⇠ "
+}

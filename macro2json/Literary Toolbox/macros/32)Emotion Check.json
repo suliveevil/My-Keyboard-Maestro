@@ -1,0 +1,101 @@
+{
+	"UID": "BD39371D-CE75-4264-BFC9-B99F620817AD",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsNotEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Is",
+						"MenuTitle": "Copy"
+					},
+					{
+						"ApplicationConditionType": "NotActive",
+						"ConditionType": "Application",
+						"Application": {
+							"BundleIdentifier": "com.adobe.InDesign",
+							"Name": "Adobe InDesign CS5"
+						}
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 0,
+					"Modifiers": 256
+				}
+			]
+		},
+		{
+			"MacroActionType": "ClipboardSwitcherMacroAction",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"RedundandDisplayName": "myTextTemp",
+			"TimeOutAbortsMacro": true,
+			"Name": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "RemoveStyles",
+			"Source": "NamedClipboard",
+			"IsDisclosed": false,
+			"NamedClipboardName": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66",
+			"RedundandDisplayName": "myTextTemp"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "LocalText",
+			"Text": "%NamedClipboard%myTextTemp%"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"Variable": "LocalText",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "#!/usr/bin/perl\n\nuse strict;\nuse warnings;\n\nuse Lingua::EN::Opinion;\nuse List::Util qw( max );\n\nmy $selection = $ENV{KMVAR_LocalText};\nmy $emotion    = shift || 'anger,anticipation,disgust,fear,joy,sadness,surprise,trust';\nmy @emotions = split /,/, $emotion;\n\nmy $opinion = Lingua::EN::Opinion->new( text => $selection );\n$opinion->nrc_sentiment();\n\nmy %score;\n@score{ @{ $opinion->sentences } } = @{ $opinion->nrc_scores };\n\nmy %max;\nfor my $score ( values %score ) {\n    for my $item ( keys %$score ) {\n        push @{ $max{$item} }, $score->{$item};\n    }\n}\nfor my $item ( keys %max ) {\n    $max{$item} = max( @{ $max{$item} } );\n}\n\nfor my $value ( @emotions ) {\n    print \"<p>Sentences with the most <span>&nbsp;$value&nbsp;</span>:</p><ul>\";\n    for my $sentence ( @{ $opinion->sentences } ) {\n        next if $score{$sentence}->{$value} < $max{$value};\n        print \"<li>$sentence</li>\\n\\n\";\n    }\n    print \"</ul>\";\n}",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "CustomPrompt",
+			"IsDisclosed": false,
+			"Resizable": true,
+			"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>L I T E R A R Y &nbsp T O O L B O X</title>\n\t<style type=\"text/css\">\nbody{background-color:black;font:.80em \"Lucida Grande\",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:66%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}span {background-color: #36aac2;color:white}li{margin-bottom:10px}\n\t</style> \n</head>\n<body data-kmwindow=\"SCREEN(Main,Left,46%),SCREEN(Main,Top,20%),380,400\">\n<div id=\"title\">\n\t<b>EMOTION</b>\n</div>\n<div id=\"text\">\n<script>\n\tdocument.write(window.KeyboardMaestro.GetVariable('LocalText'))\n</script>\n</div><script>\nfunction KMInit() {\n\tdocument.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');\n}\n</script>\n</body>\n</html>\n",
+			"TimeOutAbortsMacro": true,
+			"Floating": true,
+			"UseText": true
+		}
+	],
+	"CreationDate": 562947743.56194,
+	"ModificationDate": 565401460.264506,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 14,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "32)Emotion Check"
+}

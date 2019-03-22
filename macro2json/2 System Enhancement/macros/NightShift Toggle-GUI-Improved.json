@@ -1,0 +1,28 @@
+{
+	"UID": "017FE81D-E82B-4ED6-B3BF-F0167964E2F5",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Untitled",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4nAgAAKwAAAAEAAAAf\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZuaWxcZmNo\n\t\t\t\t\t\t\tYXJzZXQxMzQgLlBpbmdG\n\t\t\t\t\t\t\tYW5nU0MtUmVndWxhcjtc\n\t\t\t\t\t\t\tZjFcZm5pbFxmY2hhcnNl\n\t\t\t\t\t\t\tdDAgSGVsdmV0aWNhTmV1\n\t\t\t\t\t\t\tZTt9CntcY29sb3J0Ymw7\n\t\t\t\t\t\t\tXHJlZDI1NVxncmVlbjI1\n\t\t\t\t\t\t\tNVxibHVlMjU1O1xyZWQw\n\t\t\t\t\t\t\tXGdyZWVuMFxibHVlMDt9\n\t\t\t\t\t\t\tCntcKlxleHBhbmRlZGNv\n\t\t\t\t\t\t\tbG9ydGJsOztcY3Nzcmdi\n\t\t\t\t\t\t\tXGMwXGMwXGMwXGNuYW1l\n\t\t\t\t\t\t\tIHRleHRDb2xvcjt9Clxw\n\t\t\t\t\t\t\tYXJkXHR4NTYwXHR4MTEy\n\t\t\t\t\t\t\tMFx0eDE2ODBcdHgyMjQw\n\t\t\t\t\t\t\tXHR4MjgwMFx0eDMzNjBc\n\t\t\t\t\t\t\tdHgzOTIwXHR4NDQ4MFx0\n\t\t\t\t\t\t\teDUwNDBcdHg1NjAwXHR4\n\t\t\t\t\t\t\tNjE2MFx0eDY3MjBccGFy\n\t\t\t\t\t\t\tZGlybmF0dXJhbFxwYXJ0\n\t\t\t\t\t\t\taWdodGVuZmFjdG9yMAoK\n\t\t\t\t\t\t\tXGYwXGZzMjYgXGNmMiBb\n\t\t\t\t\t\t\tClxmMSBUb2dnbGUgTmln\n\t\t\t\t\t\t\taHQgU2hpZnQgLSBNYWNy\n\t\t\t\t\t\t\tbyBMaWJyYXJ5IC0gS2V5\n\t\t\t\t\t\t\tYm9hcmQgTWFlc3RybyBE\n\t\t\t\t\t\t\taXNjb3Vyc2UKXGYwIF0o\n\t\t\t\t\t\t\tClxmMSBodHRwczovL2Zv\n\t\t\t\t\t\t\tcnVtLmtleWJvYXJkbWFl\n\t\t\t\t\t\t\tc3Ryby5jb20vdC90b2dn\n\t\t\t\t\t\t\tbGUtbmlnaHQtc2hpZnQv\n\t\t\t\t\t\t\tMTExNzUvNApcZjAgKQpc\n\t\t\t\t\t\t\tZjEgXAp9AQAAACMAAAAB\n\t\t\t\t\t\t\tAAAABwAAAFRYVC5ydGYQ\n\t\t\t\t\t\t\tAAAAN3UxXLYBAAAAAAAA\n\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Preferences\" to reveal the ¬\n\tanchor named \"displaysNightShiftTab\" of ¬\n\tpane id \"com.apple.preference.displays\"\n\ntell application \"System Events\" to tell ¬\n\tprocess \"System Preferences\" to tell ¬\n\twindow 1 to tell ¬\n\ttab group 1 to tell ¬\n\tcheckbox \"Turn On Until Later Today\" to ¬\n\tperform action \"AXPress\"\n\nquit application \"System Preferences\"",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568437890.123497,
+	"ModificationDate": 574601645.472383,
+	"Triggers": [],
+	"Name": "NightShift Toggle-GUI-Improved"
+}

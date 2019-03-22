@@ -1,0 +1,137 @@
+{
+	"UID": "F4B066C7-647C-4AC5-B8EC-20781BD09268",
+	"Actions": [
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "LocalFlag",
+					"Text": "0"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"ModifiersUp": 0,
+						"ModifiersDown": 2048,
+						"ConditionType": "Modifiers"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "LocalFlag",
+					"Text": "1"
+				}
+			]
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"MenuConditionType": "IsNotEnabled",
+						"MenuModifiers": 256,
+						"ConditionType": "Menu",
+						"MenuShortcut": "C",
+						"MenuConditionSelectionType": "Is",
+						"MenuTitle": "Copy"
+					},
+					{
+						"ApplicationConditionType": "NotActive",
+						"ConditionType": "Application",
+						"Application": {
+							"BundleIdentifier": "com.adobe.InDesign",
+							"Name": "Adobe InDesign CS5"
+						}
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ElseActionListDisclosed": false,
+			"ThenActions": [
+				{
+					"MacroActionType": "SimulateKeystroke",
+					"ReleaseAll": false,
+					"TargetApplication": {},
+					"TargetingType": "Front",
+					"KeyCode": 0,
+					"Modifiers": 256
+				}
+			]
+		},
+		{
+			"MacroActionType": "ClipboardSwitcherMacroAction",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"RedundandDisplayName": "myTextTemp",
+			"TimeOutAbortsMacro": true,
+			"Name": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "RemoveStyles",
+			"Source": "NamedClipboard",
+			"IsDisclosed": false,
+			"NamedClipboardName": "A2AA54A6-5BE3-4F00-84EA-DAC3E8AF3F66",
+			"RedundandDisplayName": "myTextTemp"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"IsDisclosed": false,
+			"Variable": "LocalText",
+			"Text": "%NamedClipboard%myTextTemp%"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"Variable": "kmVar",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"IsDisclosed": false,
+			"Text": "#!/usr/bin/perl\n\nuse warnings;\nuse Lingua::EN::Grammarian ':all';\nuse Data::Dumper 'Dumper';\n\nmy $selection = $ENV{KMVAR_LocalText};\nmy $flag = $ENV{KMVAR_LocalFlag};\nmy $c = 0;\nmy $e = 0;\nmy $report = \"\";\nmy $problem = \"\";\nmy $line = \"\";\nmy $explanation = \"\";\n\n\t# standardize grafs to a single return\n$selection =~ s/\\R{2,}/\\n/g;\n\n$report = \"<table border=0 cellpadding=6 cellspacing=0 width=90% align=center>\\n\";\n$report .= \"<col width=\\\"15%\\\"><col width=\\\"5%\\\"><col width=\\\"60%\\\"><col width=\\\"20%\\\">\";\n$report .= \"<tr style=\\\"background:#36aac2;color:white;text-align:left;\\\"><th>Error</th><th>Graf</th><th>Explanation</th><th>Suggestion</th></tr>\";\nfor $error (extract_errors_from $selection) {\n\t$problem = $error->match;\n\t$report .= \"<tr><td>$problem</td>\";\n\t$line = show($error->from);\n\t$line =~ s/^.*?'line' =\\> (\\d+?).*?$/$1/;\n\t$report .= \"<td>$line</td>\";\n\t$explanation = $error->explanation;\n\t$explanation =~ s/\\n/<br><br>/gxms;\n\t$explanation =~ s/\\s+?\\:/:/g;\n\t$explanation =~ s/<br>$//g;\n\t$report .= \"<td>$explanation</td><td>\";\n\t$report .= \"$_<br>\" for $error->suggestions;\n\t$report .= \"</td></tr>\" for $error->suggestions;\n\t$e++;\n}\nif ($e < 1) {\n\t$report .= \"<tr><td colspan=\\\"4\\\" style=\\\"text-align:center;\\\">No errors found.</td></tr>\";\n}\n$report .= \"</table><br>\";\n\n$report .= \"<table border=0 cellpadding=6 cellspacing=0 width=90% align=center>\\n\";\n$report .= \"<col width=\\\"15%\\\"><col width=\\\"5%\\\"><col width=\\\"60%\\\"><col width=\\\"20%\\\">\";\n$report .= \"<tr style=\\\"background:#36aac2;color:white;text-align:left;\\\"><th>Caution</th><th>Graf</th><th>Explanation</th><th>Suggestion</th></tr>\";\nif ($flag < 1) {\n\tfor $caution (extract_cautions_from $selection) {\n\t\t$problem = $caution->match;\n\t\t$report .= \"<tr><td>$problem</td>\";\n\t\t$line = show($caution->from);\n\t\t$line =~ s/^.*?'line' =\\> (\\d+?).*?$/$1/;\n\t\t$report .= \"<td>$line</td>\";\n\t\t$explanation = $caution->explanation;\n\t\t$explanation =~ s/\\n/<br><br>/gxms;\n\t\t$explanation =~ s/\\s+?\\:/:/g;\n\t\t$explanation =~ s/<br>$//g;\n\t\t$report .= \"<td>$explanation</td><td>\";\n\t\t$report .= \"$_<br>\" for $caution->suggestions;\n\t\t$report .= \"</td></tr>\" for $caution->suggestions;\n\t\t$c++;\n\t}\n\tif ($c < 1) {\n\t\t$report .= \"<tr><td colspan=\\\"4\\\" style=\\\"text-align:center;\\\">No cautions found.</td></tr>\";\n\t}\n} else {\n\t$report .= \"<tr><td colspan=\\\"4\\\" style=\\\"text-align:center;\\\">Cautions have been skipped.</td></tr>\";\n}\n$report .= \"</table>\";\n\nprint \"<p>A grammar check of the selection reveals <span style=\\\"color:white;\\\">$e</span> Errors and <span style=\\\"color:white;\\\">$c</span> Cautions:</p>\";\nprint $report;\n\n# FUNCTION\n\nsub show {\n    my $text = Dumper(@_);\n    $text =~ s/^.{8}|;\\s*$//g;\n    return join q{ }, split /\\s+/, $text;\n}\n\n",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "CustomPrompt",
+			"IsDisclosed": false,
+			"Resizable": true,
+			"Text": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\" />\n\t<title>L I T E R A R Y &nbsp T O O L B O X</title>\n\t<style type=\"text/css\">\nbody{background-color:black;font:.80em \"Lucida Grande\",serif;color:#36aac2;margin:0;}#title{background-color:#36aac2;color:white;text-shadow:2px 2px 3px #26aac2;padding-left:12px;font-size:1.1em;width:66%;padding-top:5px;padding-bottom:5px;margin-bottom:8px;text-transform:uppercase;letter-spacing:6px;font-weight:bold}#text{align:left;padding:2em;padding-top:.25em;}td {vertical-align:top;}\n\t</style> \n</head>\n<body data-kmwindow=\"SCREEN(Main,Left,15%),SCREEN(Main,Top,20%),500,610\">\n<div id=\"title\">\n\t<b>GRAMMARIAN</b>\n</div>\n<div id=\"text\">\n<script>\n\tdocument.write(window.KeyboardMaestro.GetVariable('kmVar'))\n</script>\n</div><script>\nfunction KMInit() {\n\tdocument.getElementById('ignored').value = window.KeyboardMaestro.Calculate('10,32*12');\n}\n</script>\n</body>\n</html>\n",
+			"TimeOutAbortsMacro": true,
+			"Floating": true,
+			"Asynchronously": true,
+			"UseText": true
+		}
+	],
+	"CreationDate": 564276612.46731,
+	"ModificationDate": 565401535.809459,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 5,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 5,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "44)Grammarian [Opt-G skips Cautions]"
+}

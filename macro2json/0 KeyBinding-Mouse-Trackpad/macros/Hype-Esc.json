@@ -1,0 +1,36 @@
+{
+	"UID": "9BB6BB8A-6238-4F34-8280-B43FBD3CB48A",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 53,
+			"Modifiers": 0
+		}
+	],
+	"CreationDate": 567388948.711749,
+	"IsActive": false,
+	"ModificationDate": 568234444.739967,
+	"Triggers": [
+		{
+			"ElementCookie": 103,
+			"FireType": "Tapped",
+			"ElementDeviceUsage": 6,
+			"ElementUsage": 57,
+			"ElementDeviceUsagePage": 1,
+			"Modifiers": 0,
+			"TapCount": 2,
+			"ElementVendorID": 5824,
+			"UseModifiers": false,
+			"ElementName": "Karabiner VirtualHIDKeyboard Caps Lock",
+			"ElementProductID": 10203,
+			"ElementShortName": "#57",
+			"ElementValue": 1,
+			"MacroTriggerType": "HID",
+			"ElementUsagePage": 7
+		}
+	],
+	"Name": "Hype-Esc"
+}

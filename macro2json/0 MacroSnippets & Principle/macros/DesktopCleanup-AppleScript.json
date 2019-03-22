@@ -1,0 +1,23 @@
+{
+	"UID": "3D27B653-BFD5-4510-B27D-6538A585CA0F",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "-- Script to toggle \"screencast mode\" (LaunchBar Action compatible)\n-- Assumes you normally have your Desktop icons showing\n-- and uses that boolean to determine which state to activate\n\n-- Brett Terpstra (http://brettterpstra.com)\n-- No license, all yours, modify at will\n\non run\n\tset current_state to do shell script \"defaults read com.apple.finder CreateDesktop\"\n\tif current_state = \"1\" then\n\t\ttell application \"Finder\" to set old_wallpaper to POSIX path of (desktop picture as alias)\n\t\tdo shell script \"echo \" & old_wallpaper & \" > ~/.olddesktop\"\n\t\ttell application \"Finder\" to set desktop picture to (POSIX file \"/Users/ttscoff/Pictures/clothbackground.jpg\")\n\t\ttell application \"System Events\" to set the autohide of the dock preferences to true\n\t\ttell application \"GeekTool Helper\" to set visible of group \"Default Group\" to false\n\t\tdo shell script \"defaults write com.apple.finder CreateDesktop 0 && killall \\\"Finder\\\"\"\n\t\tdelay 5\n\t\ttell application \"TotalFinder\" to launch\n\telse\n\t\ttell application \"System Events\" to set the autohide of the dock preferences to false\n\t\ttell application \"GeekTool Helper\" to set visible of group \"Default Group\" to true\n\t\ttell application \"GeekTool Helper\" to refresh\n\t\tset old_wallpaper to do shell script \"cat ~/.olddesktop\"\n\t\ttell application \"Finder\" to set desktop picture to (POSIX file old_wallpaper)\n\t\tdo shell script \"defaults write com.apple.finder CreateDesktop 1 && killall \\\"Finder\\\"\"\n\t\tdelay 5\n\t\ttell application \"TotalFinder\" to launch\n\tend if\nend run",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568333080.806913,
+	"IsActive": false,
+	"ModificationDate": 568333144.715848,
+	"Triggers": [],
+	"Name": "DesktopCleanup-AppleScript"
+}

@@ -1,0 +1,29 @@
+{
+	"UID": "ED1CA179-BD20-4009-8A6A-74E0C956F2A1",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/LibreOffice.app",
+				"BundleIdentifier": "org.libreoffice.script",
+				"Name": "LibreOffice"
+			}
+		}
+	],
+	"CreationDate": 566991158.146129,
+	"IsActive": false,
+	"ModificationDate": 568821086.235122,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 37,
+			"Modifiers": 6912,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "LibreOffice"
+}

@@ -1,0 +1,23 @@
+{
+	"UID": "B38D49C3-EC58-4173-960D-BA5E6CD6E2E0",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Preferences\"\n\tactivate\n\tset current pane to pane \"com.apple.preference.displays\"\n\tdelay 0.3\n\ttell application \"System Events\"\n\t\ttell process \"System Preferences\"\n\t\t\tclick radio button 3 of tab group 1 of window 1\n\t\t\tclick checkbox 1 of tab group 1 of window 1\n\t\tend tell\n\tend tell\nend tell\ntell application \"System Preferences\" to quit",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568437772.223089,
+	"IsActive": false,
+	"ModificationDate": 568442055.209916,
+	"Triggers": [],
+	"Name": "NightShift Toggle-GUI"
+}

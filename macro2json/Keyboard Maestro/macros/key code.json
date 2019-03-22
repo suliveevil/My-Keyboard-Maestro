@@ -1,0 +1,16 @@
+{
+	"UID": "78851B93-E5B0-463D-B7F6-349451D325EB",
+	"Actions": [],
+	"CreationDate": 573467142.08562,
+	"IsActive": false,
+	"ModificationDate": 573467158.201676,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 17,
+			"Modifiers": 6400,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "key code"
+}

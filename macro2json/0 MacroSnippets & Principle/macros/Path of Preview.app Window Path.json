@@ -1,0 +1,23 @@
+{
+	"UID": "1F34DBEF-5221-4975-B447-E9F419A44B46",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application (get path to frontmost application as text) to set frontApp to its name\ntell application \"System Events\"\n  tell process frontApp\n    set thefile to value of attribute \"AXDocument\" of (first window whose subrole is \"AXStandardWindow\")\n  end tell\nend tell\n\nif thefile ≠ missing value then\n  urldecode(POSIX path of POSIX file thefile)\nelse\n  error \"No file has been saved!\"\nend if\n\non urldecode(theText)\n  # Content omitted\nend urldecode",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 570107799.126203,
+	"IsActive": false,
+	"ModificationDate": 573868846.941384,
+	"Triggers": [],
+	"Name": "Path of Preview.app Window Path"
+}

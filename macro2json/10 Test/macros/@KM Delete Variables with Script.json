@@ -1,0 +1,59 @@
+{
+	"UID": "01AD53B1-781F-436D-B71B-512526E26AC4",
+	"Actions": [
+		{
+			"MacroActionType": "Group",
+			"ActionName": "CLEANUP (Delete) VARIABLES -- Macro Finished",
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionColor": "Magenta",
+					"Variable": "KMVarPrefix",
+					"Text": ""
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"ActionColor": "Magenta",
+					"Variable": "KMVars_To_Delete",
+					"Text": ""
+				},
+				{
+					"MacroActionType": "ExecuteAppleScript",
+					"ActionName": "SCRIPT:  DELETE All Variables with KMVarPrefix and in KMVars_To_Delete",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"ActionColor": "Red",
+					"TimeOutAbortsMacro": true,
+					"Path": "/Users/Shared/Dropbox/SW/DEV/KM/Scripts/[KM] Delete Variables Used in Macro (AS).scpt",
+					"DisplayKind": "None",
+					"Text": "tell application \"Keyboard Maestro Engine\"\n\t\n\t--- DELETE ALL KM VARIABLES WITH THIS PREFIX ---\n\t\n\tset prefixStr to getvariable \"KMVarPrefix\"\n\t\n\tif (prefixStr ≠ \"\") then\n\t\tset value of variables whose name starts with prefixStr to \"%Delete%\"\n\t\t--display notification \"All KM Variables with PREFIX = '\" & prefixStr & ¬\n\t\t--\t\"' have been deleted.\" with title \"Keyboard Maestro Script\"\n\tend if\n\t\n\t--- DELETE KM VARS IN THE VARIABLE \"KMVars_To_Delete\" ---\n\t\n\tset varsToDeleteList to paragraphs of (getvariable \"KMVars_To_Delete\")\n\t\n\tif (varsToDeleteList ≠ {}) then\n\t\t\n\t\tset varsToDeleteList to varsToDeleteList & {\"KMVars_To_Delete\"}\n\t\t\n\t\trepeat with oVar in varsToDeleteList\n\t\t\tsetvariable (oVar as text) to \"%Delete%\"\n\t\tend repeat\n\t\t\n\t\t--display notification \"All KM Variables in 'KMVars_To_Delete' have been deleted.\" with title \"Keyboard Maestro Script\"\n\t\t\n\tend if\n\t\nend tell\n",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "Repeat",
+					"ActionName": "DELETE  CLIPBOARDS Used in this macro",
+					"ActionColor": "Red",
+					"Actions": [
+						{
+							"MacroActionType": "DeletePastClipboard",
+							"IsDisclosed": false,
+							"PastExpression": "0"
+						}
+					],
+					"CountExpression": "1",
+					"IsActive": false,
+					"TimeOutAbortsMacro": true
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 515627593.289706,
+	"IsActive": false,
+	"ModificationDate": 515627656.599561,
+	"Triggers": [],
+	"Name": "@KM Delete Variables with Script"
+}

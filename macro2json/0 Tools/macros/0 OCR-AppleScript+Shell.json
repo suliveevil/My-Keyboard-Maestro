@@ -1,0 +1,53 @@
+{
+	"UID": "D646D2FB-5081-4C5B-91C5-3E53FE61A28F",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "export PATH=/usr/local/bin/:$PATH\n\nscreencapture -i /tmp/ocr_snapshot.png\n\ntesseract /tmp/ocr_snapshot.png stdout -l chi_sim+chi_sim_vert+chi_tra+chi_tra_vert+eng+osd 2>&1\n",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Clipboard",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"Action": "CaseSensitiveRegEx",
+			"Search": "\\W",
+			"IsDisclosed": false,
+			"Destination": "Clipboard",
+			"Source": "Clipboard",
+			"IsActive": false,
+			"Replace": " "
+		},
+		{
+			"MacroActionType": "SearchReplace",
+			"ActionName": "Remove SpecialCharacters Front of Letters",
+			"Action": "CaseSensitiveRegEx",
+			"Search": "^([^[a-zA-Z].]*)[a-zA-Z]",
+			"Source": "Clipboard",
+			"Replace": ""
+		},
+		{
+			"MacroActionType": "Notification",
+			"Title": "%ExecutingMacro%",
+			"Text": "%SystemClipboard%",
+			"Subtitle": "",
+			"SoundName": ""
+		}
+	],
+	"CreationDate": 568752918.618329,
+	"IsActive": false,
+	"ModificationDate": 568831920.488013,
+	"Triggers": [
+		{
+			"TypedString": "ooo",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "0 OCR-AppleScript+Shell"
+}

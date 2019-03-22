@@ -1,0 +1,24 @@
+{
+	"UID": "EDC70DE4-3C41-4EEE-A318-68A9CF7E0522",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 41,
+			"Modifiers": 2304
+		}
+	],
+	"CreationDate": 565402258.667569,
+	"ModificationDate": 565415346.267321,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 1,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "14)System Spell Check"
+}

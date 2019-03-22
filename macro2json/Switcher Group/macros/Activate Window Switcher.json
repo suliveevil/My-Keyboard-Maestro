@@ -1,0 +1,27 @@
+{
+	"UID": "AFB94846-668E-48B5-943A-EDA49FBB14FE",
+	"Actions": [
+		{
+			"MacroActionType": "WindowSwitcher",
+			"IsDisclosed": false,
+			"Alpha": 70,
+			"Green": 128,
+			"Blue": 128,
+			"MouseRollover": true,
+			"Red": 0,
+			"SwitcherUnderMouse": false,
+			"SortAlphabetically": false
+		}
+	],
+	"CreationDate": 568066131.002805,
+	"IsActive": false,
+	"ModificationDate": 574605413.775404,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 48,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	]
+}

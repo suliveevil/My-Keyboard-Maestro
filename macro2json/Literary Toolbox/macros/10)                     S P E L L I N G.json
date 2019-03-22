@@ -1,0 +1,17 @@
+{
+	"UID": "12E4F83F-649F-4858-A88F-A56E3E4ACB01",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 41,
+			"Modifiers": 768
+		}
+	],
+	"CreationDate": 563006224.754982,
+	"ModificationDate": 565553031.238528,
+	"Triggers": [],
+	"Name": "10)                     S P E L L I N G"
+}

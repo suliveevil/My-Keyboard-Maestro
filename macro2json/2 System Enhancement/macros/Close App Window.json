@@ -1,0 +1,23 @@
+{
+	"UID": "B0809ACB-06AC-49C2-818D-186A9FE9DE23",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "tell application \"System Events\"\n   tell application process \"Keyboard Maestro Engine\"\n      tell (first window whose name is \"Keyboard Maestro - Display Text\")\n         tell (first button whose role description is \"close button\")\n            perform action \"AXPress\"\n         end tell\n      end tell\n   end tell\nend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 572283014.679386,
+	"IsActive": false,
+	"ModificationDate": 572283046.829189,
+	"Triggers": [],
+	"Name": "Close App Window"
+}

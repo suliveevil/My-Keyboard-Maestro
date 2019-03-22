@@ -1,0 +1,70 @@
+{
+	"UID": "E8E1E577-3716-4ECF-8777-56255D6D77F8",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Example 7: Custom Button returning custom sspResultButton value",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6LAQAAKwAAAAEAAACD\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgVGhpcyBt\n\t\t\t\t\t\t\tYWNybyBzaG93cyBob3cg\n\t\t\t\t\t\t\tdG8gdXNlIHRoZSBvcHRp\n\t\t\t\t\t\t\tb25zICJjdXN0b21CdXR0\n\t\t\t\t\t\t\tb25UZXh0IiBhbmQgImN1\n\t\t\t\t\t\t\tc3RvbUJ1dHRvblN1Ym1p\n\t\t\t\t\t\t\tdFJlc3VsdEJ1dHRvbiJ9\n\t\t\t\t\t\t\tAQAAACMAAAABAAAABwAA\n\t\t\t\t\t\t\tAFRYVC5ydGYQAAAAyH97\n\t\t\t\t\t\t\tXLYBAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspOptions",
+			"Text": "title: Example 7: Custom Button with custom sspResultButton\nplaceholder: Select an item and click the \"Edit\" button.\ndataType: strings\ncustomButtonText: Edit\ncustomButtonSubmitResultButton: EditPerson\ncustomPromptWidth: 600\nhelpMacroUUID: 848057C0-E4C7-4F02-A216-F73A184DF537"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspData",
+			"Text": "Alice Banks\nCarlos Boyd\nCatherine Nguyen\nCatherine Parker\nElizabeth Lee\nHarold Carroll\nHarry Diaz\nHoward Lane\nLawrence Russell\nLinda Medina\nLinda Pierce\nLois Meyer\nPatricia Wheeler\nPatrick Mcdonald\nRonald Franklin\nSamuel Robertson\nSusan Butler\nTeresa Mcdonald\nTheresa Gomez\nThomas Ross"
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "0BC9A4AD-D089-4160-B5E5-ECF032644797",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "%ExecutingMacro%",
+			"ActionName": "Show the results",
+			"Prompt": "sspResult: \"%Variable%sspResult%\"\nsspResultButton: \"%Variable%sspResultButton%\"\n",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK",
+					"Cancel": false
+				}
+			],
+			"Variables": []
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResult",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResultButton",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 492792932.208074,
+	"ModificationDate": 492816370.266491,
+	"Triggers": [],
+	"Name": "π Example 7: Custom Button returning custom sspResultButton value"
+}

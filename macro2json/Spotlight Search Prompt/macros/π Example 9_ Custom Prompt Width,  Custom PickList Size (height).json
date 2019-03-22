@@ -1,0 +1,115 @@
+{
+	"UID": "B194FB73-FBAF-40C4-B63B-D54EEEB8B986",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Example 9: Custom Prompt Width,  Custom PickList Size (height)",
+			"ActionColor": "Yellow",
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6xAQAAKwAAAAEAAACp\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgVGhpcyBt\n\t\t\t\t\t\t\tYWNybyBhc2tzIHlvdSBm\n\t\t\t\t\t\t\tb3IgYSBDdXN0b20gUHJv\n\t\t\t\t\t\t\tbXB0IFdpZHRoLCBhbmQg\n\t\t\t\t\t\t\tYSBDdXN0b20gUGlja0xp\n\t\t\t\t\t\t\tc3QgU2l6ZSwgYW5kIHNo\n\t\t\t\t\t\t\tb3dzIHlvdSBhIFNwb3Rs\n\t\t\t\t\t\t\taWdodCBTZWFyY2ggUHJv\n\t\t\t\t\t\t\tbXB0IHVzaW5nIHlvdXIg\n\t\t\t\t\t\t\tdmFsdWVzLn0BAAAAIwAA\n\t\t\t\t\t\t\tAAEAAAAHAAAAVFhULnJ0\n\t\t\t\t\t\t\tZhAAAADIf3tctgEAAAAA\n\t\t\t\t\t\t\tAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "Accept these settings, or enter your own.",
+			"Prompt": "Width: Defaults to 400.\n\nPickList Size: Default 15. The number of items in the PickList before the list starts scrolling. The Prompt's height is adjust to accomodate this number.\n\nWhen you run the Spotlight prompt, if it has two vertical scroll bars, please click the Help button.",
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK"
+				},
+				{
+					"Button": "Cancel",
+					"Cancel": true
+				}
+			],
+			"Variables": [
+				{
+					"Variable": "ssp__Width",
+					"Default": "700"
+				},
+				{
+					"Variable": "ssp__PickList Size",
+					"Default": "25"
+				}
+			]
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspOptions",
+			"Text": "title: Example 9: Custom Prompt Width,  Custom PickList Size (height)\nplaceholder: Select an item\ndataType: strings\ncustomPromptWidth: %Variable%ssp__Width%\ncustomPickListSize: %Variable%ssp__PickList Size%"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "ssp__Width",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "ssp__PickList Size",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "sspData",
+			"Text": "Dennis Garza\nJoan Castillo\nRachel Murphy\nKeith Garza\nScott Morrison\nChris Jacobs\nDoris Welch\nCraig Collins\nCraig Ferguson\nJulia Moore\nKatherine Alvarez\nSarah Rivera\nFred Taylor\nJohnny Stanley\nJudith Matthews\nAmy Garcia\nRussell Ellis\nSara Smith\nArthur Reynolds\nRyan Perry\nDouglas Murray\nEugene Hall\nRuby Burke\nKimberly Robertson\nEugene Barnes\nCarol Burke\nAaron Anderson\nBarbara Scott\nTammy Matthews\nCheryl Rodriguez\nBarbara Schmidt\nEmily Fox\nJimmy Freeman\nJoshua Stanley\nClarence Fisher\nShirley Green\nTimothy Ward\nDaniel Walker\nDoris Perkins\nJohnny Pierce\nBeverly West\nSteve Lee\nBeverly Ellis\nSteven Reyes\nRobin Nichols\nLinda Parker\nMargaret Coleman\nJoshua Ramirez\nGary Bradley\nLarry Scott\nJuan Lewis\nEric Jacobs\nDenise Bishop\nMary Rogers\nKathy Gilbert\nAshley Sanchez\nJulie Brooks\nFrances Matthews\nJoseph Stanley\nChristine Bailey\nErnest Ramirez\nJoe Powell\nCatherine Allen\nNorma Frazier\nDonald Willis\nKevin Campbell\nJonathan Stewart\nJanice Medina\nJuan Long\nJerry Hart\nJames Sanders\nSara Cook\nWalter Little\nShirley Mason\nLouise Lewis\nLouise Mills\nRussell Ferguson\nWillie Boyd\nGary Hayes\nJustin Gardner\nRoger Knight\nShawn Phillips\nRuby Austin\nBobby Lane\nJoseph Reyes\nRichard Coleman\nTammy Mendoza\nAmanda Rice\nJuan Wilson\nHarry Welch\nAmanda Harper\nJesse Barnes\nCarlos Bennett\nKimberly Watson\nJane Richards\nTerry Chavez\nLisa Greene\nWalter Matthews\nBrandon Patterson\nErnest Williamson"
+		},
+		{
+			"MacroActionType": "ExecuteMacro",
+			"MacroUID": "0BC9A4AD-D089-4160-B5E5-ECF032644797",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"UseParameter": false,
+			"Asynchronously": false
+		},
+		{
+			"MacroActionType": "PromptForUserInput",
+			"Title": "%ExecutingMacro%",
+			"ActionName": "Show the results",
+			"Prompt": "sspResult: \"%Variable%sspResult%\"\nsspResultButton: \"%Variable%sspResultButton%\"\n",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true,
+			"Buttons": [
+				{
+					"Button": "OK",
+					"Cancel": false
+				}
+			],
+			"Variables": []
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Cleanup Variables",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResult",
+					"Text": "%Delete%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "sspResultButton",
+					"Text": "%Delete%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 492811642.91752,
+	"ModificationDate": 492816392.350473,
+	"Triggers": [],
+	"Name": "π Example 9: Custom Prompt Width,  Custom PickList Size (height)"
+}

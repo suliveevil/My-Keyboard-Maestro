@@ -1,0 +1,26 @@
+{
+	"UID": "F3F71196-8DD2-4B95-8BBA-43E614FFA008",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Called from Other Macros",
+			"ActionName": "Called from Other Macros",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC6yAQAAKwAAAAEAAACq\n\t\t\t\t\t\t\tAQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgVGhpcyBt\n\t\t\t\t\t\t\tYWNybyBpcyBjYWxsZWQg\n\t\t\t\t\t\t\tZnJvbSB0aGUgbWFjcm9z\n\t\t\t\t\t\t\tIGluIHRoaXMgZ3JvdXAg\n\t\t\t\t\t\t\tdGhhdCB0cmlnZ2VyIHRo\n\t\t\t\t\t\t\tZSBtb3ZlbWVudHMuIEl0\n\t\t\t\t\t\t\tIHNhdmVzIHRoZSBtb3Vz\n\t\t\t\t\t\t\tZSBwb3NpdGlvbiBpbiB0\n\t\t\t\t\t\t\taGUgdmFyaWFibGUgTVAg\n\t\t\t\t\t\t\tUG9zaXRpb259AQAAACMA\n\t\t\t\t\t\t\tAAABAAAABwAAAFRYVC5y\n\t\t\t\t\t\t\tdGYQAAAAM7s2XLYBAAAA\n\t\t\t\t\t\t\tAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToCalculation",
+			"ActionName": "Set Variable MP Saved Position to Current Mouse Position",
+			"IsDisclosed": false,
+			"UseFormat": false,
+			"Text": "MOUSEX(), MOUSEY()",
+			"Variable": "MP Saved Position"
+		}
+	],
+	"CreationDate": 483821328.595715,
+	"ModificationDate": 499791962.397722,
+	"Triggers": [],
+	"Name": "Save Mouse Position",
+	"CustomIconData": "KMEC=Rounded=KMCOLOR:255,255,255,255=🔘=134=4=6=1=KMCOLOR:0,0,0,255"
+}

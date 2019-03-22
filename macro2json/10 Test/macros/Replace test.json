@@ -1,0 +1,23 @@
+{
+	"UID": "936A60B1-7021-47B2-9F37-FA27A8EE1711",
+	"Actions": [
+		{
+			"MacroActionType": "SpeakText",
+			"Rate": "Default",
+			"TimeOutAbortsMacro": true,
+			"Text": "This is a new sound!",
+			"Voice": ""
+		}
+	],
+	"CreationDate": 572889722.36901,
+	"ModificationDate": 572889759.513126,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 27,
+			"Modifiers": 2816,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Replace test"
+}

@@ -1,0 +1,55 @@
+{
+	"UID": "79E9082F-48F1-4F14-AE3E-5FD94132CD5D",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Window ⇢ Resize Name Column ⇢ Text Script",
+			"ActionName": "Macro Notes",
+			"ActionColor": "Aqua",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5IBQAAKwAAAAEAAABA\n\t\t\t\t\t\t\tBQAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmc3dpc3Nc\n\t\t\t\t\t\t\tZmNoYXJzZXQwIEhlbHZl\n\t\t\t\t\t\t\tdGljYTt9CntcY29sb3J0\n\t\t\t\t\t\t\tYmw7XHJlZDI1NVxncmVl\n\t\t\t\t\t\t\tbjI1NVxibHVlMjU1O30K\n\t\t\t\t\t\t\te1wqXGV4cGFuZGVkY29s\n\t\t\t\t\t\t\tb3J0Ymw7O30KXHBhcmRc\n\t\t\t\t\t\t\tdHg1NjBcdHgxMTIwXHR4\n\t\t\t\t\t\t\tMTY4MFx0eDIyNDBcdHgy\n\t\t\t\t\t\t\tODAwXHR4MzM2MFx0eDM5\n\t\t\t\t\t\t\tMjBcdHg0NDgwXHR4NTA0\n\t\t\t\t\t\t\tMFx0eDU2MDBcdHg2MTYw\n\t\t\t\t\t\t\tXHR4NjcyMFxwYXJkaXJu\n\t\t\t\t\t\t\tYXR1cmFsXHBhcnRpZ2h0\n\t\t\t\t\t\t\tZW5mYWN0b3IwCgpcZjBc\n\t\t\t\t\t\t\tZnMyNCBcY2YwIFwnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wKQXV0aG9y\n\t\t\t\t\t\t\tCTogIENocmlzdG9waGVy\n\t\t\t\t\t\t\tIFN0b25lIDxzY3JpcHRt\n\t\t\t\t\t\t\tZWlzdGVyQHRoZXN0b25l\n\t\t\t\t\t\t\tZm9yZ2UuY29tPlwKQ3Jl\n\t\t\t\t\t\t\tYXRlZAk6ICAyMDE0LzEw\n\t\t\t\t\t\t\tLzA1IDExOjEwXApNb2Rp\n\t\t\t\t\t\t\tZmllZAk6ICAyMDE3LzAz\n\t\t\t\t\t\t\tLzAyIDA5OjUwXApUYWdz\n\t\t\t\t\t\t\tCQk6ICBAY2NzdG9uZSwg\n\t\t\t\t\t\t\tQEtNRm9ydW0sIEBGaW5k\n\t\t\t\t\t\t\tZXIsIEBSZXNpemUsIEBO\n\t\t\t\t\t\t\tYW1lLCBAQ29sdW1uXApc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjdcJ2I3\n\t\t\t\t\t\t\tXCdiN1wnYjdcJ2I3XCdi\n\t\t\t\t\t\t\tN1wnYjdcJ2I3XCdiN1wn\n\t\t\t\t\t\t\tYjdcJ2I3XCdiN1wnYjdc\n\t\t\t\t\t\t\tJ2I3XCdiN1wnYjd9AQAA\n\t\t\t\t\t\t\tACMAAAABAAAABwAAAFRY\n\t\t\t\t\t\t\tVC5ydGYQAAAAvHgZXLYB\n\t\t\t\t\t\t\tAAAAAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "----------------------------------------------------------------\r# Auth: Christopher Stone <scriptmeister@thestoneforge.com>\r# dCre: 2014/10/05 11:02\r# dMod: 2017/03/02 09:44\r# Appl: Finder & System Events & Keyboard Maestro\r# Task: Expand/Contract Name Column in List-View to fit\r# Libs: GLb\r# Osax: None\r# Tags: @Applescript, @Script, @Finder, @System_Events, @Expand, @Name, @Column\r# Test: OSX 10.10.5\r----------------------------------------------------------------\r\rtry\r\t\r\ttell application \"Finder\"\r\t\t\r\t\tset frontmost to true\r\t\t\r\t\tif current view of front window ≠ list view ¬\r\t\t\tthen error \"View of front Finder window is not list view!\"\r\tend tell\r\t\r\ttell application \"System Events\"\r\t\tset quit delay to 0\r\t\t\r\t\ttell application \"System Events\"\r\t\t\ttell application process \"Finder\"\r\t\t\t\ttell (first window whose subrole is \"AXStandardWindow\")\r\t\t\t\t\ttell static text 2 of scroll area 1 of splitter group 1 of splitter group 1\r\t\t\t\t\t\tset {x, Y} to position\r\t\t\t\t\t\t\r\t\t\t\t\t\tset x to x - 10\r\t\t\t\t\t\tset Y to Y + 5\r\t\t\t\t\t\t\r\t\t\t\t\tend tell\r\t\t\t\tend tell\r\t\t\t\t\r\t\t\tend tell\r\t\t\t\r\t\tend tell\r\t\t\r\tend tell\r\t\r\ttell application \"Keyboard Maestro Engine\"\r\t\tsetvariable \"X\" to x\r\t\tsetvariable \"Y\" to Y\r\tend tell\r\t\ron error e number n\r\tset e to e & return & return & \"Num: \" & n\r\tif n ≠ -128 then\r\t\ttell application (path to frontmost application as text) to button returned of ¬\r\t\t\t(display dialog e with title \"ERROR!\" buttons {\"Copy Error Message\", \"Cancel\", \"OK\"} ¬\r\t\t\t\tdefault button \"OK\" giving up after 30)\r\t\tif ddButton = \"Copy\" then set the clipboard to e\r\tend if\rend try\r\r----------------------------------------------------------------",
+			"Path": "~/Documents/Application Support Files/Keyboard Maestro User Files/AppleScript Support/Finder/Window ⇢ Resize Name Column.scpt",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"DisplayKind": "None",
+			"UseText": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 2,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "Y",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "X",
+			"Relative": "Absolute",
+			"MouseDrag": "None"
+		}
+	],
+	"CreationDate": 566865726.702378,
+	"IsActive": false,
+	"ModificationDate": 567563317.366871,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 15,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Window ⇢ Resize Name Column ⇢ Text Script"
+}

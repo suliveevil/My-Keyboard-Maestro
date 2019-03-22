@@ -1,0 +1,32 @@
+{
+	"UID": "C73DD213-7C4D-4891-90D0-A9C0C8B06091",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "cd /allmyfiles/gitFiles/suliveevil.github.io/ | jekyll build",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568924198.543507,
+	"IsActive": false,
+	"ModificationDate": 568928288.758665,
+	"Triggers": [
+		{
+			"Interest": {
+				"UID2": "294C59DE-9CBC-4794-AECA-8439A6665B03",
+				"Observe": "Both",
+				"ObserveWhen": "IgnorePartial",
+				"Path": "/allmyfiles/gitFiles/suliveevil.github.io"
+			},
+			"MacroTriggerType": "Folder"
+		}
+	],
+	"Name": "Blog-AutoBuild"
+}

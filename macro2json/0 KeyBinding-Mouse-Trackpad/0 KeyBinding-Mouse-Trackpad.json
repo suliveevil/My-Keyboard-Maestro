@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 567141722.401635,
+	"AddToStatusMenu": false,
+	"Name": "0 KeyBinding-Mouse-Trackpad",
+	"PaletteUnderMouse": false,
+	"UID": "26DD20DA-600E-456D-A63A-4A9F58AEA1C1",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "5A4C15A8-642A-4C07-892E-88E9830D3815",
+	"Activate": "Normal",
+	"IsActive": false,
+	"KeyCode": 32767
+}

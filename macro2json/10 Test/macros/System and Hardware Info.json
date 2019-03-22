@@ -1,0 +1,234 @@
+{
+	"UID": "0B285BB2-C90C-49E5-BCBE-ED0506C4B511",
+	"Actions": [
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Resources",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "OpenURL",
+					"IsDisclosed": false,
+					"IsDefaultApplication": true,
+					"TimeOutAbortsMacro": true,
+					"URL": "http://teczd.com/2015/09/23/osx-get-system-info-from-command-line/"
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Window",
+					"Text": "system_profiler -listDataTypes",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Window",
+					"Text": "system_profiler SPSoftwareDataType",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Window",
+					"Text": "system_profiler SPHardwareDataType",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Window",
+					"Text": "system_profiler SPDisplaysDataType",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Window",
+					"Text": "uname -v",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Window",
+					"Text": "system_profiler -detailLevel mini",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Window",
+					"Text": "system_profiler -detailLevel basic",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "Window",
+					"IsActive": false,
+					"Text": "system_profiler -detailLevel full",
+					"NotifyOnFailure": false
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"IsActive": false
+		},
+		{
+			"MacroActionType": "Switch",
+			"Source": "Text",
+			"Text": "%TriggerValue%",
+			"CaseEntries": [
+				{
+					"TestValue": "S",
+					"Actions": [
+						{
+							"MacroActionType": "ExecuteShellScript",
+							"ActionName": "Info - Medium",
+							"TrimResults": true,
+							"StopOnFailure": false,
+							"Source": "Nothing",
+							"IncludeStdErr": true,
+							"UseText": true,
+							"TrimResultsNew": true,
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "Pasting",
+							"Text": "system_profiler SPHardwareDataType SPSoftwareDataType | grep -E \"Model Identifier|Version|Memory: \\d|Integrity\" | sed 's/^ *//'",
+							"NotifyOnFailure": false
+						}
+					],
+					"ConditionType": "Matches"
+				},
+				{
+					"TestValue": "Y",
+					"Actions": [
+						{
+							"MacroActionType": "ExecuteShellScript",
+							"ActionName": "Info - Large",
+							"TrimResults": true,
+							"StopOnFailure": false,
+							"Source": "Nothing",
+							"IncludeStdErr": true,
+							"UseText": true,
+							"TrimResultsNew": true,
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "Pasting",
+							"Text": "system_profiler SPHardwareDataType SPDisplaysDataType SPSoftwareDataType | grep -E \"Model|Version|Processor|Cores|Memory: \\d|VRAM|Integrity|Time\" | sed 's/^ *//'",
+							"NotifyOnFailure": false
+						}
+					],
+					"ConditionType": "Matches"
+				},
+				{
+					"TestValue": "",
+					"Actions": [
+						{
+							"MacroActionType": "ExecuteShellScript",
+							"ActionName": "Info - Small",
+							"TrimResults": true,
+							"StopOnFailure": false,
+							"Source": "Nothing",
+							"IncludeStdErr": true,
+							"UseText": true,
+							"TrimResultsNew": true,
+							"TimeOutAbortsMacro": true,
+							"Path": "",
+							"DisplayKind": "Pasting",
+							"Text": "system_profiler SPHardwareDataType SPSoftwareDataType | grep -E \"Model Identifier|System Version\" | sed 's/^ *//'",
+							"NotifyOnFailure": false
+						}
+					],
+					"ConditionType": "Otherwise"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Restore Clipboard State",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "Pause",
+					"Time": "1",
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "DeletePastClipboard",
+					"PastExpression": "0"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		}
+	],
+	"CreationDate": 478982788.279489,
+	"IsActive": false,
+	"ModificationDate": 567137159.869101,
+	"Triggers": [
+		{
+			"OnlyAfterWordBreak": true,
+			"Case": "Ignore",
+			"TypedString": ";sysinfo",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "System and Hardware Info"
+}

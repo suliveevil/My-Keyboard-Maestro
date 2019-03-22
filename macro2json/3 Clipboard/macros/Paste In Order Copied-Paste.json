@@ -1,0 +1,657 @@
+{
+	"UID": "D875B783-A661-444A-A3A3-CC801E483883",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "TAGS:  @Paste @Clipboard @History",
+			"ActionName": "~~~ ReleaseNotes for  VER: 2.0    2018-07-20 ~~~",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC4YIwAAKwAAAAEAAAAA\n\t\t\t\t\t\t\tAACAQBMAAMgPAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAAAAAAAAAAAAAAAAAAAA\n\t\t\t\t\t\t\tAHtccnRmMVxhbnNpXGFu\n\t\t\t\t\t\t\tc2ljcGcxMjUyXGNvY29h\n\t\t\t\t\t\t\tcnRmMTUwNFxjb2NvYXN1\n\t\t\t\t\t\t\tYnJ0ZjgzMAp7XGZvbnR0\n\t\t\t\t\t\t\tYmxcZjBcZm5pbFxmY2hh\n\t\t\t\t\t\t\tcnNldDAgVmVyZGFuYTtc\n\t\t\t\t\t\t\tZjFcZm5pbFxmY2hhcnNl\n\t\t\t\t\t\t\tdDAgTHVjaWRhR3JhbmRl\n\t\t\t\t\t\t\tO1xmMlxmc3dpc3NcZmNo\n\t\t\t\t\t\t\tYXJzZXQwIEhlbHZldGlj\n\t\t\t\t\t\t\tYTsKfQp7XGNvbG9ydGJs\n\t\t\t\t\t\t\tO1xyZWQyNTVcZ3JlZW4y\n\t\t\t\t\t\t\tNTVcYmx1ZTI1NTtccmVk\n\t\t\t\t\t\t\tMjIwXGdyZWVuOFxibHVl\n\t\t\t\t\t\t\tNjtccmVkMjVcZ3JlZW4y\n\t\t\t\t\t\t\tNVxibHVlMjU7XHJlZDI0\n\t\t\t\t\t\t\tMlxncmVlbjE3MFxibHVl\n\t\t\t\t\t\t\tMjQzOwp9CntcKlxleHBh\n\t\t\t\t\t\t\tbmRlZGNvbG9ydGJsOztc\n\t\t\t\t\t\t\tY3NnZW5lcmljcmdiXGM4\n\t\t\t\t\t\t\tNjMyOVxjMzEyNVxjMjM0\n\t\t\t\t\t\t\tNDtcY3NnZW5lcmljcmdi\n\t\t\t\t\t\t\tXGM5NzY2XGM5NzY2XGM5\n\t\t\t\t\t\t\tNzY2O1xjc2dlbmVyaWNy\n\t\t\t\t\t\t\tZ2JcYzk0ODU1XGM2NjYz\n\t\t\t\t\t\t\tNVxjOTUyMzU7Cn0KXHBh\n\t\t\t\t\t\t\tcmRcdHg1NjBcdHgxMTIw\n\t\t\t\t\t\t\tXHR4MTY4MFx0eDIyNDBc\n\t\t\t\t\t\t\tdHgyODAwXHR4MzM2MFx0\n\t\t\t\t\t\t\teDM5MjBcdHg0NDgwXHR4\n\t\t\t\t\t\t\tNTA0MFx0eDU2MDBcdHg2\n\t\t\t\t\t\t\tMTYwXHR4NjcyMFxwYXJk\n\t\t\t\t\t\t\taXJuYXR1cmFsXHBhcnRp\n\t\t\t\t\t\t\tZ2h0ZW5mYWN0b3IwCgpc\n\t\t\t\t\t\t\tZjBcZnMyOCBcY2YwIEF1\n\t\t\t\t\t\t\tdGhvci5ASk1pY2hhZWxU\n\t\t\t\t\t\t\tWFwKXAoqKgpcYiBQVVJQ\n\t\t\t\t\t\t\tT1NFClxiMCA6KipcClwK\n\t\t\t\t\t\t\tKiAqKgpcYiBQYXN0ZSBD\n\t\t\t\t\t\t\tbGlwYm9hcmRzIEluIE9y\n\t\t\t\t\t\t\tZGVyIFRoZXkgV2VyZSBD\n\t\t\t\t\t\t\tb3BpZWQKXGIwICoqXAog\n\t\t\t\t\t\t\tICAqIFVzaW5nIHlvdXIg\n\t\t\t\t\t\t\tQ2xpcGJvYXJkIEhpc3Rv\n\t\t\t\t\t\t\tcnksIHN0YXJ0cyB3aXRo\n\t\t\t\t\t\t\tIHRoZSBvbGRlc3QgQ2xp\n\t\t\t\t\t\t\tcGJvYXJkLCBhbmQgUGFz\n\t\t\t\t\t\t\tdGVzIGVhY2ggb25lIHVu\n\t\t\t\t\t\t\tdGlsIHRoZSBtb3N0IHJl\n\t\t\t\t\t\t\tY2VudCBDbGlwYm9hcmQg\n\t\t\t\t\t\t\tKHByaW9yIHRvIHRoaXMg\n\t\t\t\t\t\t\tbWFjcm8pIGhhcyBiZWVu\n\t\t\t\t\t\t\tIFBhc3RlZC5cCiAgICog\n\t\t\t\t\t\t\tV29ya3Mgd2l0aCBQbGFp\n\t\t\t\t\t\t\tbiBUZXh0LCBTdHlsZWQg\n\t\t\t\t\t\t\tVGV4dCwgYW5kIEltYWdl\n\t\t\t\t\t\t\tcy5cCiAgICogQW4gT3B0\n\t\t\t\t\t\t\taW9uYWwgRGVsbGltaXRl\n\t\t\t\t\t\t\tciBNYXkgYmUgUGFzdGVk\n\t\t\t\t\t\t\tIG9yIFR5cGVkIGJldHdl\n\t\t\t\t\t\t\tZW4gZWFjaCBDbGlwYm9h\n\t\t\t\t\t\t\tcmQuXAogICAgICogRm9y\n\t\t\t\t\t\t\tIGV4YW1wbGUsIHlvdSBj\n\t\t\t\t\t\t\tYW4gdXNlIGEgVEFCIHRo\n\t\t\t\t\t\t\tYXQgaXMgVFlQRUQgdG8g\n\t\t\t\t\t\t\tUGFzdGUgQ2xpcGJvYXJk\n\t\t\t\t\t\t\tcyBpbnRvIEV4Y2VsLCBl\n\t\t\t\t\t\t\tYWNoIENsaXBib2FyZCBp\n\t\t\t\t\t\t\tbiBhIHNlcGFyYXRlIGNl\n\t\t\t\t\t\t\tbGwuXAogICAqIE9wdGlv\n\t\t\t\t\t\t\tbmFsbHksIHlvdSBjYW4g\n\t\t\t\t\t\t\tZGVsZXRlIGFsbCBDbGlw\n\t\t\t\t\t\t\tYm9hcmRzIGluIHRoZSBz\n\t\t\t\t\t\t\tZXQgd2hlbiBkb25lLlwK\n\t\t\t\t\t\t\tICAgKiBZb3UgbWF5IFBh\n\t\t\t\t\t\t\tc3RlIEFsbC1hdC1vbmNl\n\t\t\t\t\t\t\tLCBvciBPbmUgQ2xpcGJv\n\t\t\t\t\t\t\tYXJkIHBlciB0cmlnZ2Vy\n\t\t\t\t\t\t\tIG9mIHRoZSBtYWNyby5c\n\t\t\t\t\t\t\tCiAgICogTWF5IGJlIHVz\n\t\t\t\t\t\t\tZWQgU3RhbmQtYWxvbmUs\n\t\t\t\t\t\t\tIG9yIFdpdGggYSBDb21w\n\t\t\t\t\t\t\tYW5pb24gTWFjcm8gV2hp\n\t\t\t\t\t\t\tY2ggRG9lcyB0aGUgQ29w\n\t\t\t\t\t\t\taW5nIGFuZCBLZWVwcyBD\n\t\t\t\t\t\t\tb3VudCBvZiBDbGlwYm9h\n\t\t\t\t\t\t\tcmRzLlwKXAoqKgpcYiBD\n\t\t\t\t\t\t\tb21wYW5pb24gTWFjcm8K\n\t\t\t\t\t\t\tXGIwIDoqKiAgQ29weSAm\n\t\t\t\t\t\t\tIFByZXBhcmUgZm9yIFBh\n\t\t\t\t\t\t\tc3RlIEluIE9yZGVyXApc\n\t\t\t\t\t\t\tCioqClxiIFJFUVVJUkVT\n\t\t\t\t\t\t\tClxiMCA6KipcClwKMS4g\n\t\t\t\t\t\t\tKipLTSA4LjAuMisqKlwK\n\t\t\t\t\t\t\tICAqIEJ1dCBpdCBjYW4g\n\t\t\t\t\t\t\tYmUgd3JpdHRlbiBpbiBL\n\t\t\t\t\t\t\tTSA3LjMuMStcCiAgKiBJ\n\t\t\t\t\t\t\tdCBpcyBLTTggc3BlY2lm\n\t\t\t\t\t\t\taWMganVzdCBiZWNhdXNl\n\t\t\t\t\t\t\tIHNvbWUgb2YgdGhlIEFj\n\t\t\t\t\t\t\tdGlvbnMgaGF2ZSBjaGFu\n\t\t\t\t\t\t\tZ2VkIHRvIG1ha2UgdGhp\n\t\t\t\t\t\t\tbmdzIHNpbXBsZXIsIGJ1\n\t\t\t\t\t\t\tdCBlcXVpdmFsZW50IEFj\n\t\t\t\t\t\t\tdGlvbnMgYXJlIGF2YWls\n\t\t\t\t\t\t\tYWJsZSBpbiBLTSA3LjMu\n\t\t\t\t\t\t\tMS5cCi5cCjIuICoqbWFj\n\t\t\t\t\t\t\tT1MgMTAuMTEuNiAoRWwg\n\t\t\t\t\t\t\tQ2FwaXRhbikqKlwKICAq\n\t\t\t\t\t\t\tIEtNIDggUmVxdWlyZXMg\n\t\t\t\t\t\t\tWW9zZW1pdGUgb3IgbGF0\n\t\t\t\t\t\t\tZXIsIHNvIHRoaXMgbWFj\n\t\t\t\t\t\t\tcm8gd2lsbCBwcm9iYWJs\n\t\t\t\t\t\t\teSBydW4gb24gWW9zZW1p\n\t\t\t\t\t\t\tdGUsIGJ1dCBJIG1ha2Ug\n\t\t\t\t\t\t\tbm8gZ3VhcmFudGVlcy4g\n\t\t\t\t\t\t\tIDp3aW5rOiBcClwKKioK\n\t\t\t\t\t\t\tXGIgXGNmMiBOT1RJQ0U6\n\t\t\t\t\t\t\tIFRoaXMgbWFjcm8gaGFz\n\t\t\t\t\t\t\tIGhhZCBsaW1pdGVkIHRl\n\t\t\t\t\t\t\tc3RpbmcuClxiMCBcY2Yw\n\t\t\t\t\t\t\tICoqXApcCiogSXQgaGFz\n\t\t\t\t\t\t\tIGhhZCB2ZXJ5IGxpbWl0\n\t\t\t\t\t\t\tZWQgdGVzdGluZywgYnV0\n\t\t\t\t\t\t\tIHdvcmtzIHRvIHRoZSBi\n\t\t\t\t\t\t\tZXN0IG9mIG15IGtub3ds\n\t\t\t\t\t\t\tZWRnZS5cCiogWW91IG5l\n\t\t\t\t\t\t\tZWQgdG8gdGVzdCBmdXJ0\n\t\t\t\t\t\t\taGVyIGJlZm9yZSB1c2lu\n\t\t\t\t\t\t\tZyBpbiBhIHByb2R1Y3Rp\n\t\t\t\t\t\t\tb24gZW52aXJvbm1lbnQu\n\t\t\t\t\t\t\tXAoqIEl0IGRvZXMgbm90\n\t\t\t\t\t\t\tIGhhdmUgZXh0ZW5zaXZl\n\t\t\t\t\t\t\tIGVycm9yIGNoZWNraW5n\n\t\t\t\t\t\t\tL2hhbmRsaW5nLlwKKiBJ\n\t\t\t\t\t\t\tdCBjYW4gcmVzdWx0IGlu\n\t\t\t\t\t\t\tIHRoZSBwZXJtYW5lbnQg\n\t\t\t\t\t\t\tbG9zcyBvZiBzb21lIGNs\n\t\t\t\t\t\t\taXBib2FyZHMgaW4geW91\n\t\t\t\t\t\t\tciBoaXN0b3J5LCBJRiB5\n\t\t\t\t\t\t\tb3UgY2hvb3NlIHRoYXQg\n\t\t\t\t\t\t\tb3B0aW9uLiAgT3RoZXJ3\n\t\t\t\t\t\t\taXNlLCBpdCBpcyBub24t\n\t\t\t\t\t\t\tZGVzdHJ1Y3RpdmUgYnkg\n\t\t\t\t\t\t\tZGVzaWduLlwKXAoqKgpc\n\t\t\t\t\t\t\tYiBcY2YzIEhvdyBUbyBV\n\t\t\t\t\t\t\tc2UqKlwKXApccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxiMCBc\n\t\t\t\t\t\t\tY2YzIDEuIEl0IGlzIGJl\n\t\t\t\t\t\t\tc3QgdG8gdHJpZ2dlciB0\n\t\t\t\t\t\t\taGUgQ29weSBNYWNybyBm\n\t\t\t\t\t\t\taXJzdCwgZm9yIGVhY2gg\n\t\t\t\t\t\t\tb2JqZWN0IHlvdSB3YW50\n\t\t\t\t\t\t\tIHRvIHBhc3RlLlwKMi4g\n\t\t\t\t\t\t\tVHJpZ2dlciB0aGlzIG1h\n\t\t\t\t\t\t\tY3JvLlwKICAgKiBVc2Ug\n\t\t\t\t\t\t\tYSBOT1JNQUwgS2V5cHJl\n\t\t\t\t\t\t\tc3Mgb2YgClxmMSBcdWMw\n\t\t\t\t\t\t\tXHU4OTYzIApcZjAgViB0\n\t\t\t\t\t\t\tbyBQYXN0ZSBBbGwtQXQt\n\t\t\t\t\t\t\tT25jZSBhbmQgQ29uZmln\n\t\t\t\t\t\t\tdXJlIHRoZSBQYXN0ZSBP\n\t\t\t\t\t\t\tcHRpb25zLlwKICAgKiBV\n\t\t\t\t\t\t\tc2UgYSBMT05HIFBSRVNT\n\t\t\t\t\t\t\tIEtleSBvZiAKXGYxIFx1\n\t\t\t\t\t\t\tYzBcdTg5NjMgClxmMCBW\n\t\t\t\t\t\t\tIHRvIFBhc3RlIGp1c3Qg\n\t\t\t\t\t\t\tT05FIENsaXBib2FyZC5c\n\t\t\t\t\t\t\tCiAgICogSW4gYm90aCBj\n\t\t\t\t\t\t\tYXNlcywgaXQgd2lsbCBh\n\t\t\t\t\t\t\tdXRvbWF0aWNhbGx5IGN5\n\t\t\t\t\t\t\tY2xlIHRvIHRoZSBuZXh0\n\t\t\t\t\t\t\tIGNsaXBib2FyZC5cCiAg\n\t\t\t\t\t\t\tICogSWYgeW91IGFyZSBQ\n\t\t\t\t\t\t\tYXN0aW5nIGludG8gYSBS\n\t\t\t\t\t\t\taWNoIFRleHQgQXBwIChs\n\t\t\t\t\t\t\taWtlIFRleHRFZGl0KSwg\n\t\t\t\t\t\t\teW91IGNhbiBjaG9vc2Ug\n\t\t\t\t\t\t\tdG8gUGFzdGUgT1IgVHlw\n\t\t\t\t\t\t\tZSBhIERlbGltaXRlciB0\n\t\t\t\t\t\t\tbyBiZSBJbnNlcnRlZCBB\n\t\t\t\t\t\t\tZnRlciB0aGUgQ2xpcGJv\n\t\t\t\t\t\t\tYXJkIFBhc3RlLlwKICAg\n\t\t\t\t\t\t\tKiBJZiB5b3UgYXJlIHBh\n\t\t\t\t\t\t\tc3RpbmcgaW50byBhbiBh\n\t\t\t\t\t\t\tcHAgbGlrZSBFeGNlbCwg\n\t\t\t\t\t\t\tb3IgYW55IGFwcCBvciB3\n\t\t\t\t\t\t\tZWIgcGFnZSB0aGF0IGhh\n\t\t\t\t\t\t\tcyBmaWVsZHMsIHRoZW4g\n\t\t\t\t\t\t\teW91IG5lZWQgdG8gVFlQ\n\t\t\t\t\t\t\tRSB0aGUgRGVsaW1pdGVy\n\t\t\t\t\t\t\tIHRvIG1vdmUgdG8gdGhl\n\t\t\t\t\t\t\tIG5leHQgZmllbGQuICBV\n\t\t\t\t\t\t\tc3VhbGx5IHRoaXMgaXMg\n\t\t\t\t\t\t\tdGhlIFRBQiBjaGFyYWN0\n\t\t\t\t\t\t\tZXIuXApccGFyZFx0eDU2\n\t\t\t\t\t\t\tMFx0eDExMjBcdHgxNjgw\n\t\t\t\t\t\t\tXHR4MjI0MFx0eDI4MDBc\n\t\t\t\t\t\t\tdHgzMzYwXHR4MzkyMFx0\n\t\t\t\t\t\t\teDQ0ODBcdHg1MDQwXHR4\n\t\t\t\t\t\t\tNTYwMFx0eDYxNjBcdHg2\n\t\t\t\t\t\t\tNzIwXHBhcmRpcm5hdHVy\n\t\t\t\t\t\t\tYWxccGFydGlnaHRlbmZh\n\t\t\t\t\t\t\tY3RvcjAKXGNmMCBcCioq\n\t\t\t\t\t\t\tClxiIE1BQ1JPIFNFVFVQ\n\t\t\t\t\t\t\tClxiMCAqKlwKXAoqICoq\n\t\t\t\t\t\t\tQ2FyZWZ1bGx5IHJldmll\n\t\t\t\t\t\t\tdyB0aGUgUmVsZWFzZSBO\n\t\t\t\t\t\t\tb3RlcyBhbmQgdGhlIE1h\n\t\t\t\t\t\t\tY3JvIEFjdGlvbnMqKlwK\n\t\t\t\t\t\t\tICAqIE1ha2Ugc3VyZSB5\n\t\t\t\t\t\t\tb3UgdW5kZXJzdGFuZCB3\n\t\t\t\t\t\t\taGF0IHRoZSBNYWNybyB3\n\t\t\t\t\t\t\taWxsIGRvLiAgXAogICog\n\t\t\t\t\t\t\tWW91IGFyZSByZXNwb25z\n\t\t\t\t\t\t\taWJsZSBmb3IgcnVubmlu\n\t\t\t\t\t\t\tZyB0aGUgTWFjcm8sIG5v\n\t\t\t\t\t\t\tdCBtZS4gIApcZjJcZnMy\n\t\t\t\t\t\t\tNCA/PwpcZjBcZnMyOCBc\n\t\t\t\t\t\t\tCi5cCjEuIEFzc2lnbiBh\n\t\t\t\t\t\t\tIFRyaWdnZXIgdG8gdGhp\n\t\t\t\t\t\t\tcyBtYXJvLi5cCjIuIE1v\n\t\t\t\t\t\t\tdmUgdGhpcyBtYWNybyB0\n\t\t\t\t\t\t\tbyBhIE1hY3JvIEdyb3Vw\n\t\t\t\t\t\t\tIHRoYXQgaXMgb25seSBB\n\t\t\t\t\t\t\tY3RpdmUgd2hlbiB5b3Ug\n\t\t\t\t\t\t\tbmVlZCB0aGlzIE1hY3Jv\n\t\t\t\t\t\t\tLlwKMy4gRU5BQkxFIHRo\n\t\t\t\t\t\t\taXMgTWFjcm8uXAouXAoq\n\t\t\t\t\t\t\tICoqClxiIFxjZjIgUkVW\n\t\t\t\t\t\t\tSUVXL0NIQU5HRSBUSEUg\n\t\t\t\t\t\t\tRk9MTE9XSU5HIE1BQ1JP\n\t\t\t\t\t\t\tIEFDVElPTlMKXGIwIFxj\n\t\t\t\t\t\t\tZjAgOioqXAooYWxsIHNo\n\t\t\t\t\t\t\tb3duIGluIHRoZSBtYWdl\n\t\t\t\t\t\t\tbnRhIGNvbG9yKVwKICAg\n\t\t\t\t\t\t\tKiBHZW5lcmFsbHkgeW91\n\t\t\t\t\t\t\tIHdpbGwgbm90IG5lZWQg\n\t\t\t\t\t\t\tdG8gbWFrZSBhbnkgY2hh\n\t\t\t\t\t\t\tbmdlcywgZXhjZXB0IGZv\n\t\t\t\t\t\t\tcjpcCiAgICAgKiBTZXQg\n\t\t\t\t\t\t\tVmFyaWFibGUgQ3VzdG9t\n\t\t\t\t\t\t\tRGVsaW1pdGVyXAogICAg\n\t\t\t\t\t\t\tICogVGhlIE1hY3JvIHBy\n\t\t\t\t\t\t\tb3ZpZGVzIGZvciB0aGVz\n\t\t\t\t\t\t\tZSBEZWxpbWl0ZXJzLCB3\n\t\t\t\t\t\t\taGljaCB5b3UgY2FuIGNo\n\t\t\t\t\t\t\tb29zZSBmcm9tIHRoZSBQ\n\t\t\t\t\t\t\tcm9tcHQ6ICBSZXR1cm58\n\t\t\t\t\t\t\tVGFifFNwYWNlfExJbmVG\n\t\t\t\t\t\t\tZWVkfEhvcml6b250YWxM\n\t\t\t\t\t\t\taW5lfE5vdGhpbmdcCiAg\n\t\t\t\t\t\t\tICAgKiBJZiB5b3UgbmVl\n\t\t\t\t\t\t\tZCBhIGRpZmZlcmVudCBE\n\t\t\t\t\t\t\tZWxpbWl0ZXIsIHlvdSBj\n\t\t\t\t\t\t\tYW4gc2V0IHRoZSBgQ3Vz\n\t\t\t\t\t\t\tdG9tRGVsaW10ZXJgXApc\n\t\t\t\t\t\t\tClVTRVIgU0VUVElOR1M6\n\t\t\t\t\t\t\tXApcCipcJ2EwQW55IEFj\n\t\t\t\t\t\t\tdGlvbiBpbiBfXGNmNCBt\n\t\t\t\t\t\t\tYWdlbnRhIGNvbG9yXGNm\n\t\t\t\t\t\t\tMCBfIGlzIGRlc2lnbmVk\n\t\t\t\t\t\t\tIHRvIGJlIGNoYW5nZWQg\n\t\t\t\t\t\t\tYnkgZW5kLXVzZXJcClwK\n\t\t\t\t\t\t\tQUNUSU9OIENPTE9SIENP\n\t\t\t\t\t\t\tREVTXApcCipcJ2EwVG8g\n\t\t\t\t\t\t\tZmFjaWxpdGF0ZSB0aGUg\n\t\t\t\t\t\t\tcmVhZGluZywgY3VzdG9t\n\t\t\t\t\t\t\taXppbmcsIGFuZCBtYWlu\n\t\t\t\t\t\t\tdGVuYW5jZSBvZiB0aGlz\n\t\t\t\t\t\t\tIG1hY3JvLFwKXCdhMFwn\n\t\t\t\t\t\t\tYTBcJ2EwXCdhMFwnYTBc\n\t\t\t\t\t\t\tJ2Ewa2V5IEFjdGlvbnMg\n\t\t\t\t\t\t\tYXJlIGNvbG9yZWQgYXMg\n\t\t\t\t\t\t\tZm9sbG93czpcCipcJ2Ew\n\t\t\t\t\t\t\tR1JFRU5cJ2EwXCdhMFwn\n\t\t\t\t\t\t\tYTAtLSBLZXkgQ29tbWVu\n\t\t\t\t\t\t\tdHMgZGVzaWduZWQgdG8g\n\t\t\t\t\t\t\taGlnaGxpZ2h0IG1haW4g\n\t\t\t\t\t\t\tc2VjdGlvbnMgb2YgbWFj\n\t\t\t\t\t\t\tcm9cCipcJ2EwTUFHRU5U\n\t\t\t\t\t\t\tQSAtLSBBY3Rpb25zIGRl\n\t\t\t\t\t\t\tc2lnbmVkIHRvIGJlIGN1\n\t\t\t\t\t\t\tc3RvbWl6ZWQgYnkgdXNl\n\t\t\t\t\t\t\tclwKKlwnYTBZRUxMT1dc\n\t\t\t\t\t\t\tJ2EwXCdhMC0tIFByaW1h\n\t\t\t\t\t\t\tcnkgQWN0aW9ucyAodXN1\n\t\t\t\t\t\t\tYWxseSB0aGUgbWFpbiBw\n\t\t\t\t\t\t\tdXJwb3NlIG9mIHRoZSBt\n\t\t\t\t\t\t\tYWNybylcCipcJ2EwT1JB\n\t\t\t\t\t\t\tTkdFXCdhMFwnYTAtLSBB\n\t\t\t\t\t\t\tY3Rpb25zIHRoYXQgcGVy\n\t\t\t\t\t\t\tbWFuZW50bHkgZGVzdHJv\n\t\t\t\t\t\t\teSBWYXJpYWJsZXMgb3Ig\n\t\t\t\t\t\t\tQ2xpcGJvYXJkcyxcCk9S\n\t\t\t\t\t\t\tIElGL1RIRU4gYW5kIFBB\n\t\t\t\t\t\t\tVVNFIEFjdGlvbnNcClwK\n\t\t\t\t\t\t\tXAoqKgpcYiBcY2YyIFVT\n\t\t\t\t\t\t\tRSBBVCBZT1VSIE9XTiBS\n\t\t\t\t\t\t\tSVNLClxiMCBcY2YwICoq\n\t\t\t\t\t\t\tXApcCiogV2hpbGUgSSBo\n\t\t\t\t\t\t\tYXZlIGdpdmVuIHRoaXMg\n\t\t\t\t\t\t\tbGltaXRlZCB0ZXN0aW5n\n\t\t\t\t\t\t\tLCBhbmQgdG8gdGhlIGJl\n\t\t\t\t\t\t\tc3Qgb2YgbXkga25vd2xl\n\t\t\t\t\t\t\tZGdlIHdpbGwgZG8gbm8g\n\t\t\t\t\t\t\taGFybSwgSSBjYW5ub3Qg\n\t\t\t\t\t\t\tZ3VhcmFudGVlIGl0LlwK\n\t\t\t\t\t\t\tKiBJZiB5b3UgaGF2ZSBh\n\t\t\t\t\t\t\tbnkgZG91YnRzIG9yIHF1\n\t\t\t\t\t\t\tZXN0aW9uczpcCiAgKiAq\n\t\t\t\t\t\t\tKkFzayBmaXJzdCoqXAog\n\t\t\t\t\t\t\tICogVHVybiBvbiB0aGUg\n\t\t\t\t\t\t\tS00gRGVidWdnZXIgZnJv\n\t\t\t\t\t\t\tbSB0aGUgS00gU3RhdHVz\n\t\t\t\t\t\t\tIE1lbnUsIGFuZCBzdGVw\n\t\t\t\t\t\t\tIHRocm91Z2ggdGhlIG1h\n\t\t\t\t\t\t\tY3JvLCBtYWtpbmcgc3Vy\n\t\t\t\t\t\t\tZSB5b3UgdW5kZXJzdGFu\n\t\t\t\t\t\t\tZCB3aGF0IGl0IGlzIGRv\n\t\t\t\t\t\t\taW5nIHdpdGggZWFjaCBB\n\t\t\t\t\t\t\tY3Rpb24uXAp9AQAAACMA\n\t\t\t\t\t\t\tAAABAAAABwAAAFRYVC5y\n\t\t\t\t\t\t\tdGYQAAAAwbRSW7YBAAAA\n\t\t\t\t\t\t\tAAAAAAAAAA==\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionColor": "Magenta",
+			"IsDisclosed": false,
+			"Text": "",
+			"Variable": "DND_POC__CustomDelimiter"
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "IF:  DND_CAP__NumCB is Undefined; SET to 0",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "DND_CAP__NumCB",
+						"VariableConditionType": "DoesNotExist",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					},
+					{
+						"Variable": "DND_CAP__NumCB",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "DND_CAP__NumCB",
+					"Text": "0"
+				}
+			]
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "IF:  Initialize NumPaste",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "DND_CAP__NumPaste",
+						"VariableConditionType": "DoesNotExist",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					},
+					{
+						"Variable": "DND_CAP__NumPaste",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"UseFormat": false,
+					"Variable": "DND_CAP__NumPaste",
+					"Text": "0"
+				}
+			]
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "IF:  Set Default for Insert Between Pastes",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "DND_CAP__InsertBetweenPastes",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "DND_CAP__InsertBetweenPastes",
+					"Text": "Return"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"Variable": "DND_CAP__PasteOrType",
+					"Text": "Paste"
+				}
+			]
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "IF:  Handle Combo of Single Paste and Paste All",
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"UseFormat": false,
+					"Variable": "DND_CAP__NumCB",
+					"Text": "0"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "DND_CAP__NumPaste",
+						"VariableConditionType": "IsNotEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					},
+					{
+						"Variable": "DND_CAP__NumPaste",
+						"VariableConditionType": "GreaterThan",
+						"VariableValue": "0",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"UseFormat": false,
+					"Variable": "Local__NumberToPaste",
+					"Text": "DND_CAP__NumCB - DND_CAP__NumPaste"
+				}
+			]
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "IF: Long Key Press; THEN Single Paste;  ELSE Paste All",
+			"ActionColor": "Orange",
+			"Actions": [
+				{
+					"MacroActionType": "Pause",
+					"ActionName": "PAUSE:  0.2 sec  (Adjust for Preference of Long Key Press)",
+					"Time": "0.2",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "Comment",
+					"Title": "",
+					"ActionName": "~~~ SET THE KEY BELOW TO MATCH MACRO TRIGGER ~~~",
+					"ActionColor": "Green",
+					"IsDisclosed": false,
+					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5uAAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABm\n\t\t\t\t\t\t\t\tAAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDcw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbH0Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp9AQAA\n\t\t\t\t\t\t\t\tACMAAAABAAAA\n\t\t\t\t\t\t\t\tBwAAAFRYVC5y\n\t\t\t\t\t\t\t\tdGYQAAAAcy6w\n\t\t\t\t\t\t\t\tWbYBAAAAAAAA\n\t\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "CHECK FOR LONG PRESS HOT KEY",
+					"IsDisclosed": false,
+					"ElseActions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"IsDisclosed": false,
+							"Variable": "Local__MACRO_Option",
+							"Text": "[ON]"
+						},
+						{
+							"MacroActionType": "PromptForUserInput",
+							"Title": "%ExecutingMacro%",
+							"Prompt": "Set Options for Paste Multiple Clipboards in Order\n\n  • PasteAllAtOnce -- IF NO, you may continue pastes manually with Long Key Press\n  • NumberToPaste -- IF Zero, Then Enter # for Last N Clipboards\n  • PasteOrType -- Refers to the Delimiter between Pastes\n                                (Apps like Excel require \"Type\")\n  • DeleteClipHistory -- deletes N Clipboards that were Pasted\n.",
+							"ActionColor": "Yellow",
+							"TimeOutAbortsMacro": true,
+							"Buttons": [
+								{
+									"Button": "OK"
+								},
+								{
+									"Button": "Cancel",
+									"Cancel": true
+								}
+							],
+							"Variables": [
+								{
+									"Variable": "Local__PasteAllAtOnce",
+									"Default": "YES|NO"
+								},
+								{
+									"Variable": "Local__NumberToPaste",
+									"Default": "%Variable%Local__NumberToPaste%"
+								},
+								{
+									"Variable": "DND_CAP__InsertBetweenPastes",
+									"Default": "|%Variable%DND_CAP__InsertBetweenPastes%|Return|Tab|Space|LIneFeed|HorizontalLine|Nothing"
+								},
+								{
+									"Variable": "DND_CAP__PasteOrType",
+									"Default": "|%Variable%DND_CAP__PasteOrType%|Paste|Type"
+								},
+								{
+									"Variable": "Local__DeleteClipHistory",
+									"Default": "NO|YES"
+								},
+								{
+									"Variable": "DND_POC__CustomDelimiter",
+									"Default": "%Variable%DND_POC__CustomDelimiter%"
+								}
+							]
+						},
+						{
+							"MacroActionType": "IfThenElse",
+							"ActionName": "IF:  Set NumCB",
+							"IsDisclosed": false,
+							"ElseActions": [],
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionList": [
+									{
+										"Variable": "DND_CAP__NumCB",
+										"VariableConditionType": "Is",
+										"VariableValue": "0",
+										"ConditionType": "Variable"
+									}
+								],
+								"ConditionListMatch": "All"
+							},
+							"ThenActions": [
+								{
+									"MacroActionType": "SetVariableToText",
+									"Variable": "DND_CAP__NumCB",
+									"Text": "%Variable%Local__NumberToPaste%"
+								}
+							]
+						},
+						{
+							"MacroActionType": "Switch",
+							"ActionName": "Set Delimiter Based on User Prompt",
+							"Source": "Variable",
+							"ActionColor": "Purple",
+							"IsDisclosed": false,
+							"Variable": "DND_CAP__InsertBetweenPastes",
+							"CaseEntries": [
+								{
+									"TestValue": "Return",
+									"Actions": [
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "DND_CAP__Delilmiter",
+											"Text": "\\r"
+										}
+									],
+									"ConditionType": "Is"
+								},
+								{
+									"TestValue": "Tab",
+									"Actions": [
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "DND_CAP__Delilmiter",
+											"Text": "\\t"
+										}
+									],
+									"ConditionType": "Is"
+								},
+								{
+									"TestValue": "Space",
+									"Actions": [
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "DND_CAP__Delilmiter",
+											"Text": "%Space%"
+										}
+									],
+									"ConditionType": "Is"
+								},
+								{
+									"TestValue": "LineFeed",
+									"Actions": [
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "DND_CAP__Delilmiter",
+											"Text": "\\n"
+										}
+									],
+									"ConditionType": "Is"
+								},
+								{
+									"TestValue": "HorizontalLine",
+									"Actions": [
+										{
+											"MacroActionType": "SetVariableToText",
+											"ActionName": "Set DND_CAP__Delilmiter to 40 Double Horiz Box Drawings",
+											"Variable": "DND_CAP__Delilmiter",
+											"Text": "\n════════════════════════════════════════\n"
+										}
+									],
+									"ConditionType": "Is"
+								},
+								{
+									"TestValue": "Custom",
+									"Actions": [
+										{
+											"MacroActionType": "SetVariableToText",
+											"Variable": "DND_CAP__Delilmiter",
+											"Text": "%Variable%DND_POC__CustomDelimiter%"
+										}
+									],
+									"ConditionType": "Is"
+								},
+								{
+									"TestValue": "",
+									"Actions": [
+										{
+											"MacroActionType": "SetVariableToText",
+											"ActionName": "Set DEFAULT Delimiter (Nothing)",
+											"ActionColor": "Magenta",
+											"Variable": "DND_CAP__Delilmiter",
+											"Text": ""
+										}
+									],
+									"ConditionType": "Otherwise"
+								}
+							]
+						}
+					],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"KeyConditionType": "Down",
+								"ConditionType": "Key",
+								"KeyCode": 9
+							},
+							{
+								"ModifiersUp": 0,
+								"ModifiersDown": 4096,
+								"ConditionType": "Modifiers"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"IsDisclosed": false,
+							"Variable": "Local__MACRO_Option",
+							"Text": "[OFF]"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "IF:  Num of Clipboards is ZERO;  Then ERROR",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "DND_CAP__NumCB",
+						"VariableConditionType": "Is",
+						"VariableValue": "0",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "PlaySound",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Path": "/System/Library/Sounds/Basso.aiff",
+					"DeviceID": "SOUNDEFFECTS"
+				},
+				{
+					"MacroActionType": "PromptForUserInput",
+					"Title": "%ExecutingMacro%",
+					"Prompt": "❯❯❯ ERROR ❮❮❮\n\nYou either have already pasted ALL Clipboards previously set by, or have not run this Macro:\n\nMACRO:  Copy & Prepare for Reverse Paste\n\n\nThis macro will now be cancelled.",
+					"TimeOutAbortsMacro": true,
+					"Buttons": [
+						{
+							"Button": "OK/",
+							"Cancel": true
+						}
+					],
+					"Variables": []
+				}
+			]
+		},
+		{
+			"MacroActionType": "Repeat",
+			"ActionColor": "Purple",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "Comment",
+					"Title": "",
+					"ActionName": "~~~ Pasting Prior Clipboards ~~~",
+					"ActionColor": "Green",
+					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC6jAgAA\n\t\t\t\t\t\t\t\tKwAAAAEAAACb\n\t\t\t\t\t\t\t\tAgAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNTA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmODMw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbFxmMFxmbmls\n\t\t\t\t\t\t\t\tXGZjaGFyc2V0\n\t\t\t\t\t\t\t\tMCBIZWx2ZXRp\n\t\t\t\t\t\t\t\tY2FOZXVlO30K\n\t\t\t\t\t\t\t\te1xjb2xvcnRi\n\t\t\t\t\t\t\t\tbDtccmVkMjU1\n\t\t\t\t\t\t\t\tXGdyZWVuMjU1\n\t\t\t\t\t\t\t\tXGJsdWUyNTU7\n\t\t\t\t\t\t\t\tXHJlZDBcZ3Jl\n\t\t\t\t\t\t\t\tZW4wXGJsdWUw\n\t\t\t\t\t\t\t\tO30Ke1wqXGV4\n\t\t\t\t\t\t\t\tcGFuZGVkY29s\n\t\t\t\t\t\t\t\tb3J0Ymw7O1xj\n\t\t\t\t\t\t\t\tc3NyZ2JcYzBc\n\t\t\t\t\t\t\t\tYzBcYzA7fQpc\n\t\t\t\t\t\t\t\tcGFyZFx0eDU2\n\t\t\t\t\t\t\t\tMFx0eDExMjBc\n\t\t\t\t\t\t\t\tdHgxNjgwXHR4\n\t\t\t\t\t\t\t\tMjI0MFx0eDI4\n\t\t\t\t\t\t\t\tMDBcdHgzMzYw\n\t\t\t\t\t\t\t\tXHR4MzkyMFx0\n\t\t\t\t\t\t\t\teDQ0ODBcdHg1\n\t\t\t\t\t\t\t\tMDQwXHR4NTYw\n\t\t\t\t\t\t\t\tMFx0eDYxNjBc\n\t\t\t\t\t\t\t\tdHg2NzIwXHBh\n\t\t\t\t\t\t\t\tcmRpcm5hdHVy\n\t\t\t\t\t\t\t\tYWxccGFydGln\n\t\t\t\t\t\t\t\taHRlbmZhY3Rv\n\t\t\t\t\t\t\t\tcjAKClxmMFxm\n\t\t\t\t\t\t\t\tczI2IFxjZjIg\n\t\t\t\t\t\t\t\tV2Ugc3RhcnQg\n\t\t\t\t\t\t\t\tYnkgUGFzdGlu\n\t\t\t\t\t\t\t\tZyB0aGUgZmly\n\t\t\t\t\t\t\t\tc3QgQ2xpcGJv\n\t\t\t\t\t\t\t\tYXJkIHRoYXQg\n\t\t\t\t\t\t\t\td2FzIGNvcGll\n\t\t\t\t\t\t\t\tZCwgd2hpY2gg\n\t\t\t\t\t\t\t\taXMgQ2xpcGJv\n\t\t\t\t\t\t\t\tYXJkICMgTnVt\n\t\t\t\t\t\t\t\tQ0ItMSBpbiB0\n\t\t\t\t\t\t\t\taGUgQ2xpcGJv\n\t\t\t\t\t\t\t\tYXJkIEhpc3Rv\n\t\t\t\t\t\t\t\tcnkuICBUaGUg\n\t\t\t\t\t\t\t\tZmlyc3QgY2xp\n\t\t\t\t\t\t\t\tcGJvYXJkIGlu\n\t\t\t\t\t\t\t\tIEhpc3Rvcnks\n\t\t\t\t\t\t\t\tIHRoZSBjdXJy\n\t\t\t\t\t\t\t\tZW50IGNsaXBi\n\t\t\t\t\t\t\t\tb2FyZCwgaXMg\n\t\t\t\t\t\t\t\tIzAuXApcCkFz\n\t\t\t\t\t\t\t\tIHdlIHBhc3Rl\n\t\t\t\t\t\t\t\tIGVhY2ggcHJp\n\t\t\t\t\t\t\t\tb3IgY2xpcGJv\n\t\t\t\t\t\t\t\tYXJkLCBpdCBt\n\t\t\t\t\t\t\t\tb3ZlcyBmcm9t\n\t\t\t\t\t\t\t\tIGl0cyBvcmln\n\t\t\t\t\t\t\t\taW5hbCBwb3Np\n\t\t\t\t\t\t\t\tdGlvbiB0byB0\n\t\t\t\t\t\t\t\taGUgZmlyc3Qs\n\t\t\t\t\t\t\t\tIGN1cnJlbnQg\n\t\t\t\t\t\t\t\tY2xpcGJvYXJk\n\t\t\t\t\t\t\t\tLCBlc3NlbnRp\n\t\t\t\t\t\t\t\tYWxsIGN5Y2xp\n\t\t\t\t\t\t\t\tbmcgdGhlIGNs\n\t\t\t\t\t\t\t\taXBib2FyZHMg\n\t\t\t\t\t\t\t\tYXMgdGhleSBh\n\t\t\t\t\t\t\t\tcmUgcGFzdGVk\n\t\t\t\t\t\t\t\tLlwKfQEAAAAj\n\t\t\t\t\t\t\t\tAAAAAQAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tEAAAAPKsUlu2\n\t\t\t\t\t\t\t\tAQAAAAAAAAAA\n\t\t\t\t\t\t\t\tAAA=\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+				},
+				{
+					"MacroActionType": "SetClipboardToPastClipboard",
+					"ActionName": "Set Clipboard to Past Clipboard NumCB - 1 (Zero is current clipboard)",
+					"ActionColor": "Yellow",
+					"PastExpression": "DND_CAP__NumCB - 1"
+				},
+				{
+					"MacroActionType": "CutCopyPaste",
+					"Action": "Paste",
+					"ActionColor": "Yellow",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "Pause",
+					"ActionName": "Pause for 0.5 sec (ENABLE if your having trouble)",
+					"Time": "0.5",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"IsActive": false
+				},
+				{
+					"MacroActionType": "PauseUntil",
+					"ActionName": "PAUSE UNTIL:  Paste Menu is Active to Ensure App is Ready",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"MenuConditionType": "IsEnabled",
+								"MenuModifiers": 256,
+								"ConditionType": "Menu",
+								"MenuShortcut": "C",
+								"MenuConditionSelectionType": "Path",
+								"MenuTitle": "Edit>Paste"
+							}
+						],
+						"ConditionListMatch": "All"
+					}
+				},
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"IsDisclosed": false,
+					"UseFormat": false,
+					"Text": "DND_CAP__NumPaste  + 1",
+					"Variable": "DND_CAP__NumPaste"
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "IF:  Insert Delimiter Between Clipboards",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "DND_CAP__Delilmiter",
+								"VariableConditionType": "IsNotEmpty",
+								"VariableValue": "value",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "IfThenElse",
+							"ActionName": "IF:  Paste OR Type Delimiter?",
+							"IsDisclosed": false,
+							"ElseActions": [
+								{
+									"MacroActionType": "InsertText",
+									"Action": "ByTyping",
+									"ActionColor": "Yellow",
+									"TargetApplication": {},
+									"TargetingType": "Front",
+									"Text": "%Variable%DND_CAP__Delilmiter%"
+								}
+							],
+							"TimeOutAbortsMacro": true,
+							"Conditions": {
+								"ConditionList": [
+									{
+										"Variable": "DND_CAP__PasteOrType",
+										"VariableConditionType": "Is",
+										"VariableValue": "Paste",
+										"ConditionType": "Variable"
+									}
+								],
+								"ConditionListMatch": "All"
+							},
+							"ThenActions": [
+								{
+									"MacroActionType": "InsertText",
+									"Action": "ByPasting",
+									"ActionColor": "Yellow",
+									"Text": "%Variable%DND_CAP__Delilmiter%"
+								},
+								{
+									"MacroActionType": "DeletePastClipboard",
+									"ActionName": "Delete Delimiter on Clipboard",
+									"PastExpression": "0"
+								}
+							]
+						}
+					]
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "IF:  NOT Paste All at Once, THEN BREAK From Loop",
+					"ActionColor": "Orange",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "Local__PasteAllAtOnce",
+								"VariableConditionType": "IsNot",
+								"VariableValue": "YES",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "Cancel",
+							"Action": "BreakFromLoop"
+						}
+					]
+				}
+			],
+			"CountExpression": "Local__NumberToPaste",
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "IF:  Reset and Notify When ALL Clipboards Have Been Pasted",
+			"ActionColor": "Red",
+			"IsDisclosed": false,
+			"ElseActions": [],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "DND_CAP__NumPaste",
+						"VariableConditionType": "GreaterThanOrEqual",
+						"VariableValue": "DND_CAP__NumCB",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "Local__ClipboardsToDelete",
+					"Text": "%Variable%DND_CAP__NumPaste%"
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "DND_CAP__NumCB",
+					"Text": ""
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "DND_CAP__NumPaste",
+					"Text": "0"
+				},
+				{
+					"MacroActionType": "Notification",
+					"Title": "%ExecutingMacro%",
+					"IsDisclosed": false,
+					"Text": "",
+					"Subtitle": "ALL Clipboards Have Been Pasted",
+					"SoundName": "Hero"
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "IF:  Delete Clipboards IF Requested",
+					"IsDisclosed": false,
+					"ElseActions": [],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"Variable": "Local__DeleteClipHistory",
+								"VariableConditionType": "Is",
+								"VariableValue": "YES",
+								"ConditionType": "Variable"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "Alert",
+							"Title": "%ExecutingMacro%",
+							"TimeOutAbortsMacro": true,
+							"Text": "Are you SURE you want to DELETE the Last %Variable%Local__ClipboardsToDelete% Clipboards?\n\n❗WARNING❗  You cannot undo this.\n\nPress/Click CONTINUE to DELETE.",
+							"SoundPath": "/System/Library/Sounds/Glass.aiff"
+						},
+						{
+							"MacroActionType": "Repeat",
+							"Actions": [
+								{
+									"MacroActionType": "DeletePastClipboard",
+									"ActionColor": "Red",
+									"IsDisclosed": false,
+									"PastExpression": "0"
+								}
+							],
+							"CountExpression": "Local__ClipboardsToDelete",
+							"TimeOutAbortsMacro": true
+						}
+					]
+				}
+			]
+		}
+	],
+	"CreationDate": 536542453.404123,
+	"IsActive": false,
+	"ModificationDate": 568444373.539037,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 9,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Paste In Order Copied-Paste"
+}

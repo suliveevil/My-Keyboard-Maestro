@@ -1,0 +1,24 @@
+{
+	"UID": "24373ED9-0257-4A02-88C1-BFC9D7BF6402",
+	"Actions": [
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 3,
+			"Modifiers": 4352
+		}
+	],
+	"CreationDate": 574811858.879472,
+	"ModificationDate": 574812165.80762,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 3,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Full Screen Toggle"
+}

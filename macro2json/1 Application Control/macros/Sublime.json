@@ -1,0 +1,28 @@
+{
+	"UID": "7B6094C6-9C7F-48AD-B615-D6128023A5B7",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Sublime Text.app",
+				"BundleIdentifier": "com.sublimetext.3",
+				"Name": "Sublime Text"
+			}
+		}
+	],
+	"CreationDate": 566956591.11836,
+	"ModificationDate": 568917237.945179,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 20,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Sublime"
+}

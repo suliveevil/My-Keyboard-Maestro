@@ -1,0 +1,16 @@
+{
+	"UID": "E3A961E0-8AF4-45B4-B0D3-E182A8CD3202",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "⎋"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991062.703877,
+	"Triggers": [],
+	"Name": "70)  ⎋   Power"
+}

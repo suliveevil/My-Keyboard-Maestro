@@ -1,0 +1,40 @@
+{
+	"UID": "D268CE37-FD82-4BE0-9186-764065B36786",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "currentClip",
+			"Text": "%CurrentClipboard%"
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetClipboardToText",
+			"Text": "%Variable%currentClip%\n%CurrentClipboard%",
+			"JustDisplay": false
+		},
+		{
+			"MacroActionType": "PlaySound",
+			"TimeOutAbortsMacro": true,
+			"Path": "/System/Library/Sounds/Purr.aiff",
+			"DeviceID": "DEFAULT"
+		}
+	],
+	"CreationDate": 510177759.231301,
+	"IsActive": false,
+	"ModificationDate": 510285538.723871,
+	"Triggers": [
+		{
+			"TapCount": 2,
+			"FireType": "Tapped",
+			"KeyCode": 7,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Append Clipboard"
+}

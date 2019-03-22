@@ -1,0 +1,23 @@
+{
+	"UID": "5221A3B0-E35A-405B-B228-030B18C3C2B9",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "do shell script \"open -a [应用程序路径] --args -AppleLanguages '([要显示的语言])'\"",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568478710.46823,
+	"IsActive": false,
+	"ModificationDate": 568478747.128205,
+	"Triggers": [],
+	"Name": "App Open with Language-AppleScript"
+}

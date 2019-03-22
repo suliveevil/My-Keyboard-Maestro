@@ -1,0 +1,172 @@
+{
+	"UID": "984C9B8A-49C2-449C-AF07-610A39F931D5",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "Window Discovery Tool → Windows System Events Can See v1.0",
+			"ActionName": "A Macro by Christopher Stone <scriptmeister@thestoneforge.com>",
+			"ActionColor": "Aqua",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC47AgAAKwAAAAEAAAAz\n\t\t\t\t\t\t\tAgAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzkzNlxjb2Nv\n\t\t\t\t\t\t\tYXJ0ZjE2NzFcY29jb2Fz\n\t\t\t\t\t\t\tdWJydGYyMDAKe1xmb250\n\t\t\t\t\t\t\tdGJsXGYwXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhO30Ke1xjb2xvcnRi\n\t\t\t\t\t\t\tbDtccmVkMjU1XGdyZWVu\n\t\t\t\t\t\t\tMjU1XGJsdWUyNTU7fQp7\n\t\t\t\t\t\t\tXCpcZXhwYW5kZWRjb2xv\n\t\t\t\t\t\t\tcnRibDs7fQpccGFyZFx0\n\t\t\t\t\t\t\teDU2MFx0eDExMjBcdHgx\n\t\t\t\t\t\t\tNjgwXHR4MjI0MFx0eDI4\n\t\t\t\t\t\t\tMDBcdHgzMzYwXHR4Mzky\n\t\t\t\t\t\t\tMFx0eDQ0ODBcdHg1MDQw\n\t\t\t\t\t\t\tXHR4NTYwMFx0eDYxNjBc\n\t\t\t\t\t\t\tdHg2NzIwXHBhcmRpcm5h\n\t\t\t\t\t\t\tdHVyYWxccGFydGlnaHRl\n\t\t\t\t\t\t\tbmZhY3RvcjAKClxmMFxm\n\t\t\t\t\t\t\tczI0IFxjZjAgQXV0aG9y\n\t\t\t\t\t\t\tZWQgYnkgQ2hyaXN0b3Bo\n\t\t\t\t\t\t\tZXIgU3RvbmUgPHNjcmlw\n\t\t\t\t\t\t\tdG1laXN0ZXJAdGhlc3Rv\n\t\t\t\t\t\t\tbmVmb3JnZS5jb20+XAoy\n\t\t\t\t\t\t\tMDE2LzA1LzIxLyA0OjE1\n\t\t\t\t\t\t\tIDogQ3JlYXRlZFwKMjAx\n\t\t\t\t\t\t\tNi8xMi8xMyAwNDo0MSA6\n\t\t\t\t\t\t\tIE1vZGlmaWVkXApcClRo\n\t\t\t\t\t\t\taXMgbWFjcm8gbGlzdHMg\n\t\t\t\t\t\t\tZXZlcnkgd2luZG93IHZp\n\t\t\t\t\t\t\tc2JpYmxlIHRvIFN5c3Rl\n\t\t\t\t\t\t\tbSBFdmVudHMuXApcCkl0\n\t\t\t\t\t\t\tIHRoZW4gZGlzcGxheXMg\n\t\t\t\t\t\t\tdGhpcyBpbmZvcm1hdGlv\n\t\t\t\t\t\t\tbiBpbiBUZXh0RWRpdCAo\n\t\t\t\t\t\t\tb3IgYXRlcm5hdGl2ZWx5\n\t\t\t\t\t\t\tIEJCRWRpdCBvciBUZXh0\n\t\t\t\t\t\t\tV3JhbmdsZXIpLn0BAAAA\n\t\t\t\t\t\t\tIwAAAAEAAAAHAAAAVFhU\n\t\t\t\t\t\t\tLnJ0ZhAAAAC4vyBctgEA\n\t\t\t\t\t\t\tAAAAAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Variable": "winRecSEV",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Variable",
+			"Text": "-------------------------------------------------------------------------------------------\r# Auth: Christopher Stone\r# dCre: 2016/12/13 04:45\r# dMod: 2016/12/13 05:17\r# Appl: System Events\r# Task: List every window of every application process.\r# Libs: None\r# Osax: None\r# Tags: @Applescript, @Script, @System_Events, @List, @Every, @Windows, @Application, @Process\r-------------------------------------------------------------------------------------------\r\rset _sep to \"-------------------------------------------------------------------------------------------\"\rset dataAccumulator to {}\r\rtell application \"System Events\"\r\tset processList to every process\r\t\r\trepeat with theProcess in processList\r\t\tset winList to every window of theProcess\r\t\t\r\t\tif length of winList > 0 then\r\t\t\tset end of dataAccumulator to _sep\r\t\t\tset end of dataAccumulator to name of theProcess\r\t\t\tset end of dataAccumulator to _sep\r\t\t\t\r\t\t\trepeat with theWin in winList\r\t\t\t\tset end of dataAccumulator to contents of theWin\r\t\t\t\tset end of dataAccumulator to \"•\"\r\t\t\tend repeat\r\t\t\t\r\t\tend if\r\t\t\r\tend repeat\r\t\rend tell\r\rreturn dataAccumulator\r\r-------------------------------------------------------------------------------------------\r",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Reformat Report",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "SearchReplace",
+					"Action": "IgnoreCaseRegEx",
+					"Search": "[ ,]*(?m)(-{40,})[ ,]*",
+					"IsDisclosed": false,
+					"Source": "Variable",
+					"Variable": "winRecSEV",
+					"Replace": "\\n$1\\n"
+				},
+				{
+					"MacroActionType": "SearchReplace",
+					"Action": "IgnoreCaseRegEx",
+					"Search": ", •, ",
+					"IsDisclosed": false,
+					"Source": "Variable",
+					"Variable": "winRecSEV",
+					"Replace": "\\n"
+				},
+				{
+					"MacroActionType": "SearchReplace",
+					"Action": "IgnoreCaseRegEx",
+					"Search": ", •",
+					"IsDisclosed": false,
+					"Source": "Variable",
+					"Variable": "winRecSEV",
+					"Replace": "\\n"
+				},
+				{
+					"MacroActionType": "SearchReplace",
+					"Action": "IgnoreCaseRegEx",
+					"Search": "of application process.*",
+					"IsDisclosed": false,
+					"Source": "Variable",
+					"Variable": "winRecSEV",
+					"Replace": ""
+				},
+				{
+					"MacroActionType": "SearchReplace",
+					"Action": "IgnoreCaseRegEx",
+					"Search": "\\A\\s+",
+					"IsDisclosed": false,
+					"Source": "Variable",
+					"Variable": "winRecSEV",
+					"Replace": ""
+				},
+				{
+					"MacroActionType": "SearchReplace",
+					"Action": "IgnoreCaseRegEx",
+					"Search": "(?m)window",
+					"IsDisclosed": false,
+					"Source": "Variable",
+					"Variable": "winRecSEV",
+					"Replace": "$0 → "
+				},
+				{
+					"MacroActionType": "SetVariableToText",
+					"IsDisclosed": false,
+					"Variable": "winRecSEV",
+					"Text": "-------------------------------------------------------------------------------------------\n\nWindows Visible to System Events\n   %ICUDateTime%yyyy/MM/DD hh:mm%\n\n%Variable%winRecSEV%"
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "Display Report",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"ActionName": "Display Report in TextEdit",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "None",
+					"IsDisclosed": false,
+					"Text": "echo \"$KMVAR_winRecSEV\" | open -f;",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"ActionName": "Display Report in BBEdit",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "None",
+					"IsDisclosed": false,
+					"IsActive": false,
+					"Text": "# Requires BBEdit's command-line tools to be installed.\necho \"$KMVAR_winRecSEV\" | bbedit",
+					"NotifyOnFailure": false
+				},
+				{
+					"MacroActionType": "ExecuteShellScript",
+					"ActionName": "Display Report in TextWrangler",
+					"TrimResults": true,
+					"StopOnFailure": false,
+					"Source": "Nothing",
+					"IncludeStdErr": true,
+					"UseText": true,
+					"TrimResultsNew": true,
+					"TimeOutAbortsMacro": true,
+					"Path": "",
+					"DisplayKind": "None",
+					"IsDisclosed": false,
+					"IsActive": false,
+					"Text": "# Requires TextWrangler's command-line tools to be installed.\necho \"$KMVAR_winRecSEV\" | edit",
+					"NotifyOnFailure": false
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"ActionName": "Variable Housekeeping",
+			"IsDisclosed": false,
+			"Variable": "winRecSEV",
+			"Text": "%Delete%"
+		}
+	],
+	"CreationDate": 503314346.704046,
+	"IsActive": false,
+	"ModificationDate": 568435838.642694,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 122,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Window Discovery Tool → Windows System Events Can See v1.0"
+}

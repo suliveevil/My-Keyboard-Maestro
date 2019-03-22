@@ -1,0 +1,36 @@
+{
+	"UID": "6E3483C7-3DBC-4AA5-A140-B50CA6B8C16F",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "# Name: Alias/Symlink Converter\n# Description: Replaces aliases with symlinks and vice versa.\n# Download: <https://forum.keyboardmaestro.com/t/alias-symlink-converter/6699?u=tom>\n# Author: Tom Floeren <tom@dflect.net>\n# Created: 2017-03-30\n# Last modified: 2017-03-31\n# Version: 0.9.2 (5)\n#\n#\n# Copyright © 2017 Thomas Floeren\n# \n# Permission to use, copy, modify, and/or distribute this software for any\n# purpose with or without fee is hereby granted, provided that the above\n# copyright notice and this permission notice appear in all copies.\n# \n# THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\n# REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY\n# AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\n# INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM\n# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR\n# OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\n# PERFORMANCE OF THIS SOFTWARE.\n\nuse AppleScript version \"2.4\" -- Yosemite (10.10) or later\nuse framework \"Foundation\"\nuse scripting additions\n\nset {countLink, countAlias, countMissingTrg, countOtherErr} to {0, 0, 0, 0}\nset brokenSuffix to \".---broken!\"\nset relLink to false\nset fileManager to current application's NSFileManager's defaultManager()\n\n# Comment out this block if you never use relative symlinks\nglobal keyDown\nmodifierKeyTest()\n# Options: commandDown, controlDown, shiftDown, optionDown\nif keyDown's controlDown then set relLink to true\n\ntell application \"Finder\"\n\tset theSel to the selection\n\trepeat with theItem in theSel\n\t\tif class of theItem is alias file then\n\t\t\t# Selection is alias or symlink\n\t\t\tset linkPath to theItem as text\n\t\t\tset linkParent to container of file linkPath\n\t\t\tset linkName to name of file linkPath\n\t\t\ttry\n\t\t\t\tif file type of theItem is missing value then\n\t\t\t\t\t# Selection is symlink\n\t\t\t\t\tset trgPath to (theItem as alias)\n\t\t\t\t\tdelete linkPath\n\t\t\t\t\tmake new alias at linkParent to item trgPath with properties {name:linkName}\n\t\t\t\t\tset countAlias to countAlias + 1\n\t\t\t\telse\n\t\t\t\t\t# Selection is alias\n\t\t\t\t\t# Absolute path\n\t\t\t\t\tset trgPath to POSIX path of (original item of theItem as text)\n\t\t\t\t\t# Relative path\n\t\t\t\t\tif relLink then set trgPath to do shell script \"perl -MFile::Spec -e \\\"print File::Spec->abs2rel(\" & quoted form of trgPath & \",\" & quoted form of POSIX path of (linkParent as text) & \")\\\"\"\n\t\t\t\t\tdelete linkPath\n\t\t\t\t\tset theResult to (fileManager's createSymbolicLinkAtPath:(POSIX path of linkPath) withDestinationPath:trgPath |error|:(missing value))\n\t\t\t\t\t# Alternatively, via shell\n\t\t\t\t\t--do shell script \"ln -s\" & space & quoted form of trgPath & space & quoted form of POSIX path of linkPath\n\t\t\t\t\tset countLink to countLink + 1\n\t\t\t\tend if\n\t\t\ton error errMsg number errNum\n\t\t\t\tif errNum is -1700 then\n\t\t\t\t\tset countMissingTrg to countMissingTrg + 1\n\t\t\t\t\tset name of file linkPath to linkName & brokenSuffix\n\t\t\t\telse\n\t\t\t\t\tdisplay alert \"Error \" & errNum message errMsg buttons {\"Stop\", \"Continue\"} default button 2 cancel button 1 as warning\n\t\t\t\t\tset countOtherErr to countOtherErr + 1\n\t\t\t\tend if\n\t\t\tend try\n\t\tend if\n\tend repeat\n\tif countMissingTrg > 0 then\n\t\tdisplay alert (countMissingTrg as text) & \" aliases or symlinks seem to be broken! (Target cannot be found.)\" message \"The broken link files have been marked with\" & linefeed & \"“\" & brokenSuffix & \"”.\" as warning\n\tend if\nend tell\n\n\n### Notifications and alerts\n\nset sName to \"Tink\"\nif relLink then\n\tset relPrefix to \" rel.\"\nelse\n\tset relPrefix to \"\"\nend if\n\nif countAlias = 1 then\n\tset aliasText to (countAlias as text) & \" alias created  \"\nelse if countAlias > 1 then\n\tset aliasText to (countAlias as text) & \" aliases created  \"\nelse\n\tset aliasText to \"\"\nend if\n\nif countLink = 1 then\n\tset linkText to (countLink as text) & relPrefix & \" symlink created\"\nelse if countLink > 1 then\n\tset linkText to (countLink as text) & relPrefix & \" symlinks created\"\nelse\n\tset linkText to \"\"\nend if\n\nif countAlias + countLink < 1 then\n\tset aliasText to \"No aliases or symlinks created!\"\n\tset sName to \"Blow\"\nend if\n\nset countAllErr to countMissingTrg + countOtherErr\nif countAllErr > 0 then\n\tset sTitle to \"💣 A total of \" & (countAllErr as text) & \" errors has occured!\"\n\tset sName to \"Basso\"\nelse\n\tset sTitle to \"\"\nend if\n\ndisplay notification aliasText & linefeed & linkText with title \"🔗 Alias/Symlink Converter\" subtitle sTitle sound name sName\n\n\n### Handlers\n\non modifierKeyTest()\n\tset keyDown to {commandDown:false, optionDown:false, controlDown:false, shiftDown:false}\n\tset currentModifiers to current application's class \"NSEvent\"'s modifierFlags()\n\ttell keyDown\n\t\tset its optionDown to (currentModifiers div (get current application's NSAlternateKeyMask) mod 2 is 1)\n\t\tset its commandDown to (currentModifiers div (get current application's NSCommandKeyMask) mod 2 is 1)\n\t\tset its shiftDown to (currentModifiers div (get current application's NSShiftKeyMask) mod 2 is 1)\n\t\tset its controlDown to (currentModifiers div (get current application's NSControlKeyMask) mod 2 is 1)\n\tend tell\n\treturn keyDown\nend modifierKeyTest\n",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 512608842.530524,
+	"IsActive": false,
+	"ModificationDate": 574825420.996786,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 122,
+			"Modifiers": 256,
+			"MacroTriggerType": "HotKey"
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 122,
+			"Modifiers": 4352,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Alias/Symlink Converter [ver 0.9.5]"
+}

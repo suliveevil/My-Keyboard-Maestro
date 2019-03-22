@@ -1,0 +1,25 @@
+{
+	"AddToMacroPalette": false,
+	"Modifiers": 0,
+	"CreationDate": 566950173.772177,
+	"AddToStatusMenu": false,
+	"PaletteUnderMouse": false,
+	"CustomIconData": "KMEP-GenericApplication-/Applications/Google Chrome.app",
+	"Name": "app-Chrome",
+	"UID": "FD2C7057-A1C9-4DC1-8D58-4BE55275FD91",
+	"Targeting": {
+		"Targeting": "Included",
+		"TargetingApps": [
+			{
+				"NewFile": "/Applications/Google Chrome.app",
+				"BundleIdentifier": "com.google.Chrome",
+				"Name": "Google Chrome"
+			}
+		]
+	},
+	"Macros": [],
+	"ToggleMacroUID": "89533888-F0B6-4FEC-A172-96903C5C43CA",
+	"Activate": "Normal",
+	"IsActive": false,
+	"KeyCode": 32767
+}

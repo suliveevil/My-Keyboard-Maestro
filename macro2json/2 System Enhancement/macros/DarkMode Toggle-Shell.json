@@ -1,0 +1,33 @@
+{
+	"UID": "680C454F-E049-4658-9F52-53ACE4899C2B",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"Source": "Nothing",
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "osascript -e 'tell app \"System Events\" to tell appearance preferences to set dark mode to not dark mode'",
+			"Path": "",
+			"TrimResultsNew": true,
+			"IncludeStdErr": false,
+			"DisplayKind": "Window",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568334056.23111,
+	"ModificationDate": 568935749.537373,
+	"Triggers": [
+		{
+			"TypedString": "@dms",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"FireType": "Pressed",
+			"KeyCode": 2,
+			"Modifiers": 6144,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "DarkMode Toggle-Shell"
+}

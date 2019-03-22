@@ -1,0 +1,40 @@
+{
+	"UID": "DF400ED8-0BFC-4B03-8AE8-BDA7725C2065",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "Code",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "set sites to {\"http://stackoverflow.com\", \"https://www.google.com\", \"https://github.com/\"}\n-- set apps to {\"Slack\", \"iTerm\", \"Sublime Text\", \"Spotify\"}\rset apps to {\"iTerm\", \"Sublime Text\"}\rrepeat with a in apps\r\ttell application a\r\t\tactivate\r\tend tell\rend repeat\r-- tell application \"Spotify\"\r-- set shuffling to false\r-- set shuffling to true\r-- play track \"spotify:album:2skvJw7CjGmagv5JDGd3sn\"\r-- end tell\r\r\rif application \"Google Chrome\" is running then\r\ttell application \"Google Chrome\"\r\t\tquit\r\tend tell\rend if\rtell application \"Google Chrome\"\r\tactivate\r\tmake new window\r\ttell window 1\r\t\trepeat with i from 1 to count of sites\r\t\t\tset site to item i of sites\r\t\t\tmake new tab with properties {URL:site}\r\t\tend repeat\r\t\tdelete tab 1\r\tend tell\rend tell",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"ActionName": "Relax",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "None",
+			"IsDisclosed": false,
+			"Text": "set sites to {\"https://facebook.com\", \"https://www.netflix.com\", \"https://reddit.com\", \"https://youtube.com\"}\n\n-- set apps to {\"Slack\", \"iTerm\", \"Sublime Text\", \"Spotify\", \"Google Chrome\"}\nset apps to {\"iTerm\", \"Sublime Text\", \"Google Chrome\"}\nrepeat with a in apps\n    if application a is running then\n        tell application a\n            quit\n        end tell\n    end if\nend repeat\n\ntell application \"Google Chrome\"\n    activate\n    make new window\n    tell window 1\n        repeat with i from 1 to count of sites\n            set site to item i of sites\n            make new tab with properties {URL:site}\n        end repeat\n        delete tab 1\n    end tell\nend tell",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 569679917.418005,
+	"IsActive": false,
+	"ModificationDate": 569680258.477047,
+	"Triggers": [],
+	"Name": "Code Relax"
+}

@@ -1,0 +1,18 @@
+{
+	"AddToMacroPalette": false,
+	"AddToStatusMenu": false,
+	"CreationDate": 568122691.472415,
+	"Modifiers": 0,
+	"PaletteUnderMouse": false,
+	"Name": "10 Test",
+	"UID": "DF9C421C-0294-4CC7-9C59-7CDEB233268E",
+	"Targeting": {
+		"Targeting": "All",
+		"TargetingApps": []
+	},
+	"Macros": [],
+	"ToggleMacroUID": "21C9FAF5-4489-4CBD-8436-9C9F6E733D38",
+	"Activate": "Normal",
+	"KeyCode": 32767,
+	"DisplayToggle": false
+}

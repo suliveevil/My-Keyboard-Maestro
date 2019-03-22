@@ -1,0 +1,28 @@
+{
+	"UID": "EFD049F3-2D5D-4BCD-9C3D-3FFBA485F0F7",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/Google Chrome.app",
+				"BundleIdentifier": "com.google.Chrome",
+				"Name": "Google Chrome"
+			}
+		}
+	],
+	"CreationDate": 566956591.11836,
+	"ModificationDate": 568820928.305231,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 19,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Chrome"
+}

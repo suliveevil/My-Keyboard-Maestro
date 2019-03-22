@@ -1,0 +1,75 @@
+{
+	"UID": "7A7E5CCB-3A1E-4178-BAC6-DA55130E4EDD",
+	"Actions": [
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "100",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "40",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "SimulateKeystroke",
+			"IsDisclosed": false,
+			"ReleaseAll": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"KeyCode": 3,
+			"Modifiers": 256
+		},
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"IsDisclosed": false,
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "menu"
+		},
+		{
+			"MacroActionType": "Pause",
+			"Time": "1",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 2,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "Click",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": true,
+			"VerticalPositionExpression": "60",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "220",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		}
+	],
+	"CreationDate": 566900680.592728,
+	"IsActive": false,
+	"ModificationDate": 423372651.704754,
+	"Triggers": [
+		{
+			"TypedString": "MM",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": false
+		}
+	],
+	"Name": "menu"
+}

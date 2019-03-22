@@ -1,0 +1,15 @@
+{
+	"UID": "D050A9AC-39C6-4553-8029-DD4B04DE3F07",
+	"Actions": [],
+	"CreationDate": 567229798.351039,
+	"IsActive": false,
+	"ModificationDate": 567229889.170753,
+	"Triggers": [
+		{
+			"TypedString": "fff",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Folders"
+}

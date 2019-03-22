@@ -1,0 +1,23 @@
+{
+	"UID": "E59EFBDA-69CC-453B-BC0B-BE83846731CE",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "set text item delimiters to \".\"\nset OSMajorVer to text item 2 of system version of (system info)\nif the OSMajorVer < 14 then return false\rtell application \"System Events\" to tell ¬\r\tthe appearance preferences to ¬\r\tset dark mode to not dark mode",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 568437772.223089,
+	"IsActive": false,
+	"ModificationDate": 573219318.534176,
+	"Triggers": [],
+	"Name": "DarkMode Toggle-GUI-Improved"
+}

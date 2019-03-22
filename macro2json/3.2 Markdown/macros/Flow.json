@@ -1,0 +1,29 @@
+{
+	"UID": "C1DF0FC7-2B13-4CF6-8238-BB3BD25D13A8",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": " --> %|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568930040.782485,
+	"ModificationDate": 573438833.111709,
+	"Triggers": [
+		{
+			"TypedString": "---;",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		},
+		{
+			"TypedString": "---；",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "Flow"
+}

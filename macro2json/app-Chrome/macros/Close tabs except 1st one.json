@@ -1,0 +1,71 @@
+{
+	"UID": "5F8FBB72-4CB8-4751-9516-FA3DFE9DEC96",
+	"Actions": [
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "21",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "108",
+			"Relative": "Window",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 1,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "0",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "0",
+			"Relative": "Mouse",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		},
+		{
+			"MacroActionType": "MouseMoveAndClick",
+			"ClickCount": 1,
+			"DragVerticalPosition": "0",
+			"Modifiers": 0,
+			"Button": 0,
+			"Fuzz": 15,
+			"Action": "MoveAndClick",
+			"DisplayMatches": false,
+			"DragHorizontalPosition": "0",
+			"RestoreMouseLocation": false,
+			"VerticalPositionExpression": "123",
+			"RelativeCorner": "TopLeft",
+			"HorizontalPositionExpression": "55",
+			"Relative": "Mouse",
+			"IsDisclosed": false,
+			"MouseDrag": "None"
+		}
+	],
+	"CreationDate": 566900638.717637,
+	"ModificationDate": 420810131.569928,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 18,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Close tabs except 1st one",
+	"CustomIconData": "KMEP-MoveClickMouse"
+}

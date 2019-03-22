@@ -1,0 +1,16 @@
+{
+	"UID": "32DFA24F-E032-499C-8873-BEEEA365333B",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByTyping",
+			"TargetApplication": {},
+			"TargetingType": "Front",
+			"Text": "↩︎"
+		}
+	],
+	"CreationDate": 492987750.615019,
+	"ModificationDate": 492991078.83334,
+	"Triggers": [],
+	"Name": "06)  ↩︎    Enter"
+}

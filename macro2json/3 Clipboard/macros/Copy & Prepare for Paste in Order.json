@@ -1,0 +1,211 @@
+{
+	"UID": "958A9F3D-5FE9-48AB-B9E9-7AA53FBBDCE9",
+	"Actions": [
+		{
+			"MacroActionType": "Comment",
+			"Title": "TAGS:  @Copy @Clipboard @History @PasteInOrder",
+			"ActionName": "~~~ ReleaseNotes for  VER: 2.0    2018-07-20 ~~~",
+			"ActionColor": "Green",
+			"IsDisclosed": false,
+			"StyledText": "\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\tcnRmZAAAAAADAAAAAgAA\n\t\t\t\t\t\t\tAAcAAABUWFQucnRmAQAA\n\t\t\t\t\t\t\tAC5nDwAAKwAAAAEAAABf\n\t\t\t\t\t\t\tDwAAe1xydGYxXGFuc2lc\n\t\t\t\t\t\t\tYW5zaWNwZzEyNTJcY29j\n\t\t\t\t\t\t\tb2FydGYxNTA0XGNvY29h\n\t\t\t\t\t\t\tc3VicnRmODMwCntcZm9u\n\t\t\t\t\t\t\tdHRibFxmMFxmbmlsXGZj\n\t\t\t\t\t\t\taGFyc2V0MCBWZXJkYW5h\n\t\t\t\t\t\t\tO1xmMVxmbmlsXGZjaGFy\n\t\t\t\t\t\t\tc2V0MCBMdWNpZGFHcmFu\n\t\t\t\t\t\t\tZGU7XGYyXGZzd2lzc1xm\n\t\t\t\t\t\t\tY2hhcnNldDAgSGVsdmV0\n\t\t\t\t\t\t\taWNhOwp9CntcY29sb3J0\n\t\t\t\t\t\t\tYmw7XHJlZDI1NVxncmVl\n\t\t\t\t\t\t\tbjI1NVxibHVlMjU1O1xy\n\t\t\t\t\t\t\tZWQyMjBcZ3JlZW44XGJs\n\t\t\t\t\t\t\tdWU2O1xyZWQyNVxncmVl\n\t\t\t\t\t\t\tbjI1XGJsdWUyNTtccmVk\n\t\t\t\t\t\t\tMjQyXGdyZWVuMTcwXGJs\n\t\t\t\t\t\t\tdWUyNDM7Cn0Ke1wqXGV4\n\t\t\t\t\t\t\tcGFuZGVkY29sb3J0Ymw7\n\t\t\t\t\t\t\tO1xjc2dlbmVyaWNyZ2Jc\n\t\t\t\t\t\t\tYzg2MzI5XGMzMTI1XGMy\n\t\t\t\t\t\t\tMzQ0O1xjc2dlbmVyaWNy\n\t\t\t\t\t\t\tZ2JcYzk3NjZcYzk3NjZc\n\t\t\t\t\t\t\tYzk3NjY7XGNzZ2VuZXJp\n\t\t\t\t\t\t\tY3JnYlxjOTQ4NTVcYzY2\n\t\t\t\t\t\t\tNjM1XGM5NTIzNTsKfQpc\n\t\t\t\t\t\t\tcGFyZFx0eDU2MFx0eDEx\n\t\t\t\t\t\t\tMjBcdHgxNjgwXHR4MjI0\n\t\t\t\t\t\t\tMFx0eDI4MDBcdHgzMzYw\n\t\t\t\t\t\t\tXHR4MzkyMFx0eDQ0ODBc\n\t\t\t\t\t\t\tdHg1MDQwXHR4NTYwMFx0\n\t\t\t\t\t\t\teDYxNjBcdHg2NzIwXHBh\n\t\t\t\t\t\t\tcmRpcm5hdHVyYWxccGFy\n\t\t\t\t\t\t\tdGlnaHRlbmZhY3RvcjAK\n\t\t\t\t\t\t\tClxmMFxmczI4IFxjZjAg\n\t\t\t\t\t\t\tQXV0aG9yLkBKTWljaGFl\n\t\t\t\t\t\t\tbFRYXApcCioqClxiIFBV\n\t\t\t\t\t\t\tUlBPU0UKXGIwIDoqKlwK\n\t\t\t\t\t\t\tXAoqICoqClxiIENvcHkg\n\t\t\t\t\t\t\tYW5kIFJldGFpbiBDb3Vu\n\t\t\t\t\t\t\tdCBvZiBDbGlwYm9hcmRz\n\t\t\t\t\t\t\tClxiMCAqKlwKICAgKiBU\n\t\t\t\t\t\t\taGlzIE1hY3JvLCB1c2Vk\n\t\t\t\t\t\t\tIHdpdGggaXRzIENvbXBh\n\t\t\t\t\t\t\tbmlvbiBNYWNybyBlbmFi\n\t\t\t\t\t\t\tbGVzIHlvdSB0byBlYXNp\n\t\t\t\t\t\t\tbHkgY29weSBvYmplY3Rz\n\t\t\t\t\t\t\tIGluIHRoZSBvcmRlciB5\n\t\t\t\t\t\t\tb3Ugd2FudCB0byBoYXZl\n\t\t\t\t\t\t\tIHRoZW0gYXBwZWFyIHdo\n\t\t\t\t\t\t\tZW4geW91IHBhc3RlIHRo\n\t\t\t\t\t\t\tZW0uXAogICAqIEFzIHlv\n\t\t\t\t\t\t\tdSBDb3B5IGVhY2ggb2Jq\n\t\t\t\t\t\t\tZWN0LCBpdCBrZWVwcyBj\n\t\t\t\t\t\t\tb3VudCBhbmQgbm90aWZp\n\t\t\t\t\t\t\tZXMgeW91LlwKICAgKiBU\n\t\t\t\t\t\t\taGlzIG1hY3JvIGlzIE5P\n\t\t\t\t\t\t\tVCByZXF1aXJlZCAtLSBp\n\t\t\t\t\t\t\tdCBqdXN0IG1ha2Uga2Vl\n\t\t\t\t\t\t\tcGluZyBjb3VudCBlYXNp\n\t\t\t\t\t\t\tZXIuXApcCioqClxiIENv\n\t\t\t\t\t\t\tbXBhbmlvbiBNYWNybwpc\n\t\t\t\t\t\t\tYjAgOioqICBQYXN0ZSBJ\n\t\t\t\t\t\t\tbiBPcmRlciBDb3BpZWRc\n\t\t\t\t\t\t\tClwKKioKXGIgUkVRVUlS\n\t\t\t\t\t\t\tRVMKXGIwIDoqKlwKXAox\n\t\t\t\t\t\t\tLiAqKktNIDguMC4yKyoq\n\t\t\t\t\t\t\tXAogICogQnV0IGl0IGNh\n\t\t\t\t\t\t\tbiBiZSB3cml0dGVuIGlu\n\t\t\t\t\t\t\tIEtNIDcuMy4xK1wKICAq\n\t\t\t\t\t\t\tIEl0IGlzIEtNOCBzcGVj\n\t\t\t\t\t\t\taWZpYyBqdXN0IGJlY2F1\n\t\t\t\t\t\t\tc2Ugc29tZSBvZiB0aGUg\n\t\t\t\t\t\t\tQWN0aW9ucyBoYXZlIGNo\n\t\t\t\t\t\t\tYW5nZWQgdG8gbWFrZSB0\n\t\t\t\t\t\t\taGluZ3Mgc2ltcGxlciwg\n\t\t\t\t\t\t\tYnV0IGVxdWl2YWxlbnQg\n\t\t\t\t\t\t\tQWN0aW9ucyBhcmUgYXZh\n\t\t\t\t\t\t\taWxhYmxlIGluIEtNIDcu\n\t\t\t\t\t\t\tMy4xLlwKLlwKMi4gKipt\n\t\t\t\t\t\t\tYWNPUyAxMC4xMS42IChF\n\t\t\t\t\t\t\tbCBDYXBpdGFuKSoqXAog\n\t\t\t\t\t\t\tICogS00gOCBSZXF1aXJl\n\t\t\t\t\t\t\tcyBZb3NlbWl0ZSBvciBs\n\t\t\t\t\t\t\tYXRlciwgc28gdGhpcyBt\n\t\t\t\t\t\t\tYWNybyB3aWxsIHByb2Jh\n\t\t\t\t\t\t\tYmx5IHJ1biBvbiBZb3Nl\n\t\t\t\t\t\t\tbWl0ZSwgYnV0IEkgbWFr\n\t\t\t\t\t\t\tZSBubyBndWFyYW50ZWVz\n\t\t\t\t\t\t\tLiAgOndpbms6IFwKXAoq\n\t\t\t\t\t\t\tKgpcYiBcY2YyIE5PVElD\n\t\t\t\t\t\t\tRTogVGhpcyBtYWNybyBo\n\t\t\t\t\t\t\tYXMgaGFkIGxpbWl0ZWQg\n\t\t\t\t\t\t\tdGVzdGluZy4KXGIwIFxj\n\t\t\t\t\t\t\tZjAgKipcClwKKiBJdCBo\n\t\t\t\t\t\t\tYXMgaGFkIHZlcnkgbGlt\n\t\t\t\t\t\t\taXRlZCB0ZXN0aW5nLCBi\n\t\t\t\t\t\t\tdXQgd29ya3MgdG8gdGhl\n\t\t\t\t\t\t\tIGJlc3Qgb2YgbXkga25v\n\t\t\t\t\t\t\td2xlZGdlLlwKKiBZb3Ug\n\t\t\t\t\t\t\tbmVlZCB0byB0ZXN0IGZ1\n\t\t\t\t\t\t\tcnRoZXIgYmVmb3JlIHVz\n\t\t\t\t\t\t\taW5nIGluIGEgcHJvZHVj\n\t\t\t\t\t\t\tdGlvbiBlbnZpcm9ubWVu\n\t\t\t\t\t\t\tdC5cCiogSXQgZG9lcyBu\n\t\t\t\t\t\t\tb3QgaGF2ZSBleHRlbnNp\n\t\t\t\t\t\t\tdmUgZXJyb3IgY2hlY2tp\n\t\t\t\t\t\t\tbmcvaGFuZGxpbmcuXApc\n\t\t\t\t\t\t\tCioqClxiIFxjZjMgSG93\n\t\t\t\t\t\t\tIFRvIFVzZSoqXApcClxw\n\t\t\t\t\t\t\tYXJkXHR4NTYwXHR4MTEy\n\t\t\t\t\t\t\tMFx0eDE2ODBcdHgyMjQw\n\t\t\t\t\t\t\tXHR4MjgwMFx0eDMzNjBc\n\t\t\t\t\t\t\tdHgzOTIwXHR4NDQ4MFx0\n\t\t\t\t\t\t\teDUwNDBcdHg1NjAwXHR4\n\t\t\t\t\t\t\tNjE2MFx0eDY3MjBccGFy\n\t\t\t\t\t\t\tZGlybmF0dXJhbFxwYXJ0\n\t\t\t\t\t\t\taWdodGVuZmFjdG9yMAoK\n\t\t\t\t\t\t\tXGIwIFxjZjMgMS4gU2Vs\n\t\t\t\t\t\t\tZWN0IHRoZSBvYmplY3Qg\n\t\t\t\t\t\t\tKHRleHQsIGltYWdlcywg\n\t\t\t\t\t\t\tb3IgYm90aCkgb24gYW55\n\t\t\t\t\t\t\tIHNvdXJjZSAoYXBwIG9y\n\t\t\t\t\t\t\tIHdlYiBwYWdlKS5cCjIu\n\t\t\t\t\t\t\tIFRyaWdnZXIgdGhpcyBt\n\t\t\t\t\t\t\tYWNyby5cCiAgICogVXNl\n\t\t\t\t\t\t\tIGEgTk9STUFMIEtleXBy\n\t\t\t\t\t\t\tZXNzIG9mIApcZjEgXHVj\n\t\t\t\t\t\t\tMFx1ODk2MyAKXGYwIEMg\n\t\t\t\t\t\t\tdG8gQ29weSBhbmQgSW5j\n\t\t\t\t\t\t\tcmVtZW50IHRoZSBDb3Vu\n\t\t\t\t\t\t\tdFwKICAgKiBVc2UgYSBM\n\t\t\t\t\t\t\tT05HIFBSRVNTIEtleSBv\n\t\t\t\t\t\t\tZiAKXGYxIFx1YzBcdTg5\n\t\t\t\t\t\t\tNjMgClxmMCBDIHRvIENv\n\t\t\t\t\t\t\tcHkgYW5kIApcYiBSZXNl\n\t\t\t\t\t\t\tdApcYjAgIHRoZSBDb3Vu\n\t\t\t\t\t\t\tdCB0byAxLlwKXHBhcmRc\n\t\t\t\t\t\t\tdHg1NjBcdHgxMTIwXHR4\n\t\t\t\t\t\t\tMTY4MFx0eDIyNDBcdHgy\n\t\t\t\t\t\t\tODAwXHR4MzM2MFx0eDM5\n\t\t\t\t\t\t\tMjBcdHg0NDgwXHR4NTA0\n\t\t\t\t\t\t\tMFx0eDU2MDBcdHg2MTYw\n\t\t\t\t\t\t\tXHR4NjcyMFxwYXJkaXJu\n\t\t\t\t\t\t\tYXR1cmFsXHBhcnRpZ2h0\n\t\t\t\t\t\t\tZW5mYWN0b3IwClxjZjAg\n\t\t\t\t\t\t\tXAoqKgpcYiBNQUNSTyBT\n\t\t\t\t\t\t\tRVRVUApcYjAgKipcClwK\n\t\t\t\t\t\t\tKiAqKkNhcmVmdWxseSBy\n\t\t\t\t\t\t\tZXZpZXcgdGhlIFJlbGVh\n\t\t\t\t\t\t\tc2UgTm90ZXMgYW5kIHRo\n\t\t\t\t\t\t\tZSBNYWNybyBBY3Rpb25z\n\t\t\t\t\t\t\tKipcCiAgKiBNYWtlIHN1\n\t\t\t\t\t\t\tcmUgeW91IHVuZGVyc3Rh\n\t\t\t\t\t\t\tbmQgd2hhdCB0aGUgTWFj\n\t\t\t\t\t\t\tcm8gd2lsbCBkby4gIFwK\n\t\t\t\t\t\t\tICAqIFlvdSBhcmUgcmVz\n\t\t\t\t\t\t\tcG9uc2libGUgZm9yIHJ1\n\t\t\t\t\t\t\tbm5pbmcgdGhlIE1hY3Jv\n\t\t\t\t\t\t\tLCBub3QgbWUuICAKXGYy\n\t\t\t\t\t\t\tXGZzMjQgPz8KXGYwXGZz\n\t\t\t\t\t\t\tMjggXAouXAoxLiBDb25m\n\t\t\t\t\t\t\taXJtL0NoYW5nZSB0aGUg\n\t\t\t\t\t\t\tVHJpZ2dlciBhc3NpZ25l\n\t\t\t\t\t\t\tZCB0byB0aGlzIG1hcm8u\n\t\t\t\t\t\t\tLlwKMi4gTW92ZSB0aGlz\n\t\t\t\t\t\t\tIG1hY3JvIHRvIGEgZ2xv\n\t\t\t\t\t\t\tYmFsIE1hY3JvIEdyb3Vw\n\t\t\t\t\t\t\tXAozLiBFTkFCTEUgdGhp\n\t\t\t\t\t\t\tcyBNYWNyby5cCi5cCiog\n\t\t\t\t\t\t\tKioKXGIgXGNmMiBSRVZJ\n\t\t\t\t\t\t\tRVcvQ0hBTkdFIFRIRSBG\n\t\t\t\t\t\t\tT0xMT1dJTkcgTUFDUk8g\n\t\t\t\t\t\t\tQUNUSU9OUwpcYjAgXGNm\n\t\t\t\t\t\t\tMCA6KipcCihhbGwgc2hv\n\t\t\t\t\t\t\td24gaW4gdGhlIG1hZ2Vu\n\t\t\t\t\t\t\tdGEgY29sb3IpXAogICAq\n\t\t\t\t\t\t\tIEdlbmVyYWxseSB5b3Ug\n\t\t\t\t\t\t\td2lsbCBub3QgbmVlZCB0\n\t\t\t\t\t\t\tbyBtYWtlIGFueSBjaGFu\n\t\t\t\t\t\t\tZ2VzLCBleGNlcHQgZm9y\n\t\t\t\t\t\t\tOlwKICAgICAqIFNldCBW\n\t\t\t\t\t\t\tYXJpYWJsZSBDdXN0b21E\n\t\t\t\t\t\t\tZWxpbWl0ZXJcCiAgICAg\n\t\t\t\t\t\t\tKiBUaGUgTWFjcm8gcHJv\n\t\t\t\t\t\t\tdmlkZXMgZm9yIHRoZXNl\n\t\t\t\t\t\t\tIERlbGltaXRlcnMsIHdo\n\t\t\t\t\t\t\taWNoIHlvdSBjYW4gY2hv\n\t\t\t\t\t\t\tb3NlIGZyb20gdGhlIFBy\n\t\t\t\t\t\t\tb21wdDogIFJldHVybnxU\n\t\t\t\t\t\t\tYWJ8U3BhY2V8TEluZUZl\n\t\t\t\t\t\t\tZWR8SG9yaXpvbnRhbExp\n\t\t\t\t\t\t\tbmV8Tm90aGluZ1wKICAg\n\t\t\t\t\t\t\tICAqIElmIHlvdSBuZWVk\n\t\t\t\t\t\t\tIGEgZGlmZmVyZW50IERl\n\t\t\t\t\t\t\tbGltaXRlciwgeW91IGNh\n\t\t\t\t\t\t\tbiBzZXQgdGhlIGBDdXN0\n\t\t\t\t\t\t\tb21EZWxpbXRlcmBcClwK\n\t\t\t\t\t\t\tVVNFUiBTRVRUSU5HUzpc\n\t\t\t\t\t\t\tClwKKlwnYTBBbnkgQWN0\n\t\t\t\t\t\t\taW9uIGluIF9cY2Y0IG1h\n\t\t\t\t\t\t\tZ2VudGEgY29sb3JcY2Yw\n\t\t\t\t\t\t\tIF8gaXMgZGVzaWduZWQg\n\t\t\t\t\t\t\tdG8gYmUgY2hhbmdlZCBi\n\t\t\t\t\t\t\teSBlbmQtdXNlclwKXApB\n\t\t\t\t\t\t\tQ1RJT04gQ09MT1IgQ09E\n\t\t\t\t\t\t\tRVNcClwKKlwnYTBUbyBm\n\t\t\t\t\t\t\tYWNpbGl0YXRlIHRoZSBy\n\t\t\t\t\t\t\tZWFkaW5nLCBjdXN0b21p\n\t\t\t\t\t\t\temluZywgYW5kIG1haW50\n\t\t\t\t\t\t\tZW5hbmNlIG9mIHRoaXMg\n\t\t\t\t\t\t\tbWFjcm8sXApcJ2EwXCdh\n\t\t\t\t\t\t\tMFwnYTBcJ2EwXCdhMFwn\n\t\t\t\t\t\t\tYTBrZXkgQWN0aW9ucyBh\n\t\t\t\t\t\t\tcmUgY29sb3JlZCBhcyBm\n\t\t\t\t\t\t\tb2xsb3dzOlwKKlwnYTBH\n\t\t\t\t\t\t\tUkVFTlwnYTBcJ2EwXCdh\n\t\t\t\t\t\t\tMC0tIEtleSBDb21tZW50\n\t\t\t\t\t\t\tcyBkZXNpZ25lZCB0byBo\n\t\t\t\t\t\t\taWdobGlnaHQgbWFpbiBz\n\t\t\t\t\t\t\tZWN0aW9ucyBvZiBtYWNy\n\t\t\t\t\t\t\tb1wKKlwnYTBNQUdFTlRB\n\t\t\t\t\t\t\tIC0tIEFjdGlvbnMgZGVz\n\t\t\t\t\t\t\taWduZWQgdG8gYmUgY3Vz\n\t\t\t\t\t\t\tdG9taXplZCBieSB1c2Vy\n\t\t\t\t\t\t\tXAoqXCdhMFlFTExPV1wn\n\t\t\t\t\t\t\tYTBcJ2EwLS0gUHJpbWFy\n\t\t\t\t\t\t\teSBBY3Rpb25zICh1c3Vh\n\t\t\t\t\t\t\tbGx5IHRoZSBtYWluIHB1\n\t\t\t\t\t\t\tcnBvc2Ugb2YgdGhlIG1h\n\t\t\t\t\t\t\tY3JvKVwKKlwnYTBPUkFO\n\t\t\t\t\t\t\tR0VcJ2EwXCdhMC0tIEFj\n\t\t\t\t\t\t\tdGlvbnMgdGhhdCBwZXJt\n\t\t\t\t\t\t\tYW5lbnRseSBkZXN0cm95\n\t\t\t\t\t\t\tIFZhcmlhYmxlcyBvciBD\n\t\t\t\t\t\t\tbGlwYm9hcmRzLFwKT1Ig\n\t\t\t\t\t\t\tSUYvVEhFTiBhbmQgUEFV\n\t\t\t\t\t\t\tU0UgQWN0aW9uc1wKXApc\n\t\t\t\t\t\t\tCioqClxiIFxjZjIgVVNF\n\t\t\t\t\t\t\tIEFUIFlPVVIgT1dOIFJJ\n\t\t\t\t\t\t\tU0sKXGIwIFxjZjAgKipc\n\t\t\t\t\t\t\tClwKKiBXaGlsZSBJIGhh\n\t\t\t\t\t\t\tdmUgZ2l2ZW4gdGhpcyBs\n\t\t\t\t\t\t\taW1pdGVkIHRlc3Rpbmcs\n\t\t\t\t\t\t\tIGFuZCB0byB0aGUgYmVz\n\t\t\t\t\t\t\tdCBvZiBteSBrbm93bGVk\n\t\t\t\t\t\t\tZ2Ugd2lsbCBkbyBubyBo\n\t\t\t\t\t\t\tYXJtLCBJIGNhbm5vdCBn\n\t\t\t\t\t\t\tdWFyYW50ZWUgaXQuXAoq\n\t\t\t\t\t\t\tIElmIHlvdSBoYXZlIGFu\n\t\t\t\t\t\t\teSBkb3VidHMgb3IgcXVl\n\t\t\t\t\t\t\tc3Rpb25zOlwKICAqICoq\n\t\t\t\t\t\t\tQXNrIGZpcnN0KipcCiAg\n\t\t\t\t\t\t\tKiBUdXJuIG9uIHRoZSBL\n\t\t\t\t\t\t\tTSBEZWJ1Z2dlciBmcm9t\n\t\t\t\t\t\t\tIHRoZSBLTSBTdGF0dXMg\n\t\t\t\t\t\t\tTWVudSwgYW5kIHN0ZXAg\n\t\t\t\t\t\t\tdGhyb3VnaCB0aGUgbWFj\n\t\t\t\t\t\t\tcm8sIG1ha2luZyBzdXJl\n\t\t\t\t\t\t\tIHlvdSB1bmRlcnN0YW5k\n\t\t\t\t\t\t\tIHdoYXQgaXQgaXMgZG9p\n\t\t\t\t\t\t\tbmcgd2l0aCBlYWNoIEFj\n\t\t\t\t\t\t\tdGlvbi5cCn0BAAAAIwAA\n\t\t\t\t\t\t\tAAEAAAAHAAAAVFhULnJ0\n\t\t\t\t\t\t\tZhAAAACHt1JbtgEAAAAA\n\t\t\t\t\t\t\tAAAAAAAA\n\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t"
+		},
+		{
+			"MacroActionType": "Group",
+			"ActionName": "IF Long Press Hot Key; THEN Restart CB Numbering",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"Actions": [
+				{
+					"MacroActionType": "Pause",
+					"Time": "0.5",
+					"ActionColor": "Red",
+					"IsDisclosed": false,
+					"TimeOutAbortsMacro": true
+				},
+				{
+					"MacroActionType": "Comment",
+					"Title": "",
+					"ActionName": "~~~ SET THE KEY BELOW TO MATCH MACRO TRIGGER ~~~",
+					"ActionColor": "Green",
+					"IsDisclosed": false,
+					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5uAAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABm\n\t\t\t\t\t\t\t\tAAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDcw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbH0Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp9AQAA\n\t\t\t\t\t\t\t\tACMAAAABAAAA\n\t\t\t\t\t\t\t\tBwAAAFRYVC5y\n\t\t\t\t\t\t\t\tdGYQAAAAcy6w\n\t\t\t\t\t\t\t\tWbYBAAAAAAAA\n\t\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+				},
+				{
+					"MacroActionType": "IfThenElse",
+					"ActionName": "CHECK FOR LONG PRESS HOT KEY",
+					"ElseActions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "Local__LongPress",
+							"Text": "[OFF]"
+						}
+					],
+					"TimeOutAbortsMacro": true,
+					"Conditions": {
+						"ConditionList": [
+							{
+								"KeyConditionType": "Down",
+								"ConditionType": "Key",
+								"KeyCode": 8
+							},
+							{
+								"ModifiersUp": 0,
+								"ModifiersDown": 4096,
+								"ConditionType": "Modifiers"
+							}
+						],
+						"ConditionListMatch": "All"
+					},
+					"ThenActions": [
+						{
+							"MacroActionType": "SetVariableToText",
+							"Variable": "Local__LongPress",
+							"Text": "[ON]"
+						},
+						{
+							"MacroActionType": "SetVariableToCalculation",
+							"ActionName": "ReStart CB Numbering",
+							"UseFormat": false,
+							"Variable": "DND_CAP__NumCB",
+							"Text": "0"
+						},
+						{
+							"MacroActionType": "Notification",
+							"Title": "%ExecutingMacro%",
+							"IsDisclosed": false,
+							"Text": "",
+							"IsActive": false,
+							"Subtitle": "Macro OPTION is [ON]",
+							"SoundName": "Tink"
+						}
+					]
+				}
+			],
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "Set or Increment Copy Counter Variable",
+			"ActionColor": "Yellow",
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"UseFormat": false,
+					"Variable": "DND_CAP__NumCB",
+					"Text": "DND_CAP__NumCB  + 1"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Variable": "DND_CAP__NumCB",
+						"VariableConditionType": "DoesNotExist",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					},
+					{
+						"Variable": "DND_CAP__NumCB",
+						"VariableConditionType": "IsEmpty",
+						"VariableValue": "value",
+						"ConditionType": "Variable"
+					},
+					{
+						"Variable": "DND_CAP__NumCB",
+						"VariableConditionType": "Is",
+						"VariableValue": "0",
+						"ConditionType": "Variable"
+					}
+				],
+				"ConditionListMatch": "Any"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"UseFormat": false,
+					"Variable": "DND_CAP__NumCB",
+					"Text": "1"
+				}
+			]
+		},
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": false,
+			"TimeOutPeriod": 2
+		},
+		{
+			"MacroActionType": "IfThenElse",
+			"ActionName": "IF: Last Action Aborted",
+			"ActionColor": "Orange",
+			"IsDisclosed": false,
+			"ElseActions": [
+				{
+					"MacroActionType": "Comment",
+					"Title": "",
+					"ActionName": "~~~ ACTION SUCCEEDED ~~~",
+					"ActionColor": "Green",
+					"IsDisclosed": false,
+					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5uAAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABm\n\t\t\t\t\t\t\t\tAAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDcw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbH0Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp9AQAA\n\t\t\t\t\t\t\t\tACMAAAABAAAA\n\t\t\t\t\t\t\t\tBwAAAFRYVC5y\n\t\t\t\t\t\t\t\tdGYQAAAAcy6w\n\t\t\t\t\t\t\t\tWbYBAAAAAAAA\n\t\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+				},
+				{
+					"MacroActionType": "Notification",
+					"Title": "%ExecutingMacro%",
+					"Text": "",
+					"Subtitle": "CB Count: %Variable%DND_CAP__NumCB%",
+					"SoundName": "Tink"
+				}
+			],
+			"TimeOutAbortsMacro": true,
+			"Conditions": {
+				"ConditionList": [
+					{
+						"Text": "%ActionResult%",
+						"TextConditionType": "IsNot",
+						"ConditionType": "Text",
+						"TextValue": "OK"
+					}
+				],
+				"ConditionListMatch": "All"
+			},
+			"ThenActions": [
+				{
+					"MacroActionType": "Comment",
+					"Title": "",
+					"ActionName": "~~~ ACTION FAILED ~~~",
+					"ActionColor": "Green",
+					"IsDisclosed": false,
+					"StyledText": "\n\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\tcnRmZAAAAAAD\n\t\t\t\t\t\t\t\tAAAAAgAAAAcA\n\t\t\t\t\t\t\t\tAABUWFQucnRm\n\t\t\t\t\t\t\t\tAQAAAC5uAAAA\n\t\t\t\t\t\t\t\tKwAAAAEAAABm\n\t\t\t\t\t\t\t\tAAAAe1xydGYx\n\t\t\t\t\t\t\t\tXGFuc2lcYW5z\n\t\t\t\t\t\t\t\taWNwZzEyNTJc\n\t\t\t\t\t\t\t\tY29jb2FydGYx\n\t\t\t\t\t\t\t\tNDA0XGNvY29h\n\t\t\t\t\t\t\t\tc3VicnRmNDcw\n\t\t\t\t\t\t\t\tCntcZm9udHRi\n\t\t\t\t\t\t\t\tbH0Ke1xjb2xv\n\t\t\t\t\t\t\t\tcnRibDtccmVk\n\t\t\t\t\t\t\t\tMjU1XGdyZWVu\n\t\t\t\t\t\t\t\tMjU1XGJsdWUy\n\t\t\t\t\t\t\t\tNTU7fQp9AQAA\n\t\t\t\t\t\t\t\tACMAAAABAAAA\n\t\t\t\t\t\t\t\tBwAAAFRYVC5y\n\t\t\t\t\t\t\t\tdGYQAAAAcy6w\n\t\t\t\t\t\t\t\tWbYBAAAAAAAA\n\t\t\t\t\t\t\t\tAAAAAA==\n\t\t\t\t\t\t\t\t\t41E4D515-C065-4C24-9859-EA2479C52CC9\n\t\t\t\t\t\t\t\t"
+				},
+				{
+					"MacroActionType": "SetVariableToCalculation",
+					"ActionName": "ReStart CB Numbering",
+					"UseFormat": false,
+					"Variable": "DND_CAP__NumCB",
+					"Text": "0"
+				},
+				{
+					"MacroActionType": "Notification",
+					"Title": "%ExecutingMacro%",
+					"Text": "",
+					"Subtitle": "CB Count: Reset to 0",
+					"SoundName": "Pop"
+				}
+			]
+		}
+	],
+	"CreationDate": 536541273.329902,
+	"IsActive": false,
+	"ModificationDate": 567568280.231899,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 8,
+			"Modifiers": 4096,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Copy & Prepare for Paste in Order"
+}

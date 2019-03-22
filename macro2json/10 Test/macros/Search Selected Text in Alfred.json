@@ -1,0 +1,36 @@
+{
+	"UID": "E4935373-4BA3-4D32-B4BF-B1CD337FADA1",
+	"Actions": [
+		{
+			"MacroActionType": "CutCopyPaste",
+			"Action": "Copy",
+			"IsDisclosed": false,
+			"TimeOutAbortsMacro": true
+		},
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "set query to the clipboard as text\rtell application \"Alfred 3\" to search query",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": true,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 534834889.036198,
+	"IsActive": false,
+	"ModificationDate": 534834896.690221,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 0,
+			"Modifiers": 2048,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Search Selected Text in Alfred"
+}

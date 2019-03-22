@@ -1,0 +1,57 @@
+{
+	"UID": "4126F560-F2B0-4D11-BF9A-A743895CBE74",
+	"Actions": [
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "searchFolder",
+			"Text": "~/Documents"
+		},
+		{
+			"MacroActionType": "Filter",
+			"Action": "ExpandTildeInPath",
+			"Source": "Variable",
+			"Variable": "searchFolder"
+		},
+		{
+			"MacroActionType": "SetVariableToText",
+			"Variable": "searchPattern",
+			"Text": "txt"
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"IsDisclosed": false,
+			"IsActive": false,
+			"Text": "read -r -d '' shCMD <<EOT\n\tmdfind -onlyin \"$KMVAR_searchFolder\" 'kMDItemFSName == \"*.$KMVAR_searchPattern\"c'\nEOT\n\neval \"$shCMD\";",
+			"NotifyOnFailure": false
+		},
+		{
+			"MacroActionType": "ExecuteShellScript",
+			"TrimResults": true,
+			"StopOnFailure": false,
+			"Source": "Nothing",
+			"IncludeStdErr": true,
+			"UseText": true,
+			"TrimResultsNew": true,
+			"TimeOutAbortsMacro": true,
+			"Path": "",
+			"DisplayKind": "Window",
+			"IsDisclosed": false,
+			"Text": "mdfind -onlyin \"$KMVAR_searchFolder\" \"kMDItemFSName == \\\"*.$KMVAR_searchPattern\\\"c\"",
+			"NotifyOnFailure": false
+		}
+	],
+	"CreationDate": 480616904.444492,
+	"IsActive": false,
+	"ModificationDate": 568787075.873458,
+	"Triggers": [],
+	"Name": "mdfind with Variables (double quotes)"
+}

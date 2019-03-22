@@ -1,0 +1,30 @@
+{
+	"UID": "30D4B35A-2ED1-4131-AF82-DA08CE5765E4",
+	"Actions": [
+		{
+			"MacroActionType": "ExecuteAppleScript",
+			"NotifyOnFailure": false,
+			"TrimResults": true,
+			"TimeOutAbortsMacro": true,
+			"Text": "--set myURL to \"https://www.github.com/search?q=SelectedText\"\r--set myURL to \"https://www.zhihu.com/search?type=content&q=SelectedText\"\rset myURL to \"https://www.baidu.com/s?wd=SelectedText\"\r\rtell application id \"com.google.Chrome\"\r\tactivate\r\ttell window 1 of application id \"com.google.Chrome\"\r\t\tset myActiveTab to active tab\r\t\tif myURL is not \"\" then\r\t\t\tset myTab to make new tab at after myActiveTab with properties {URL:myURL}\r\t\tend if\r\tend tell\rend tell",
+			"Path": "",
+			"TrimResultsNew": true,
+			"StopOnFailure": false,
+			"IncludeStdErr": false,
+			"DisplayKind": "None",
+			"UseText": true
+		}
+	],
+	"CreationDate": 574668752.010876,
+	"IsActive": false,
+	"ModificationDate": 574668859.906912,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 98,
+			"Modifiers": 0,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "ChromeTab"
+}

@@ -1,0 +1,25 @@
+{
+	"UID": "D4E8758F-44A0-4860-8B6F-A0C58DA4A96F",
+	"Actions": [
+		{
+			"MacroActionType": "InsertText",
+			"Action": "ByPasting",
+			"Text": "<details>\n<summary>details</summary>\n\n%SystemClipboard%\n\n</details>\n%|%"
+		},
+		{
+			"MacroActionType": "DeletePastClipboard",
+			"PastExpression": "0"
+		}
+	],
+	"CreationDate": 568075965.304386,
+	"ModificationDate": 574950146.088458,
+	"Triggers": [
+		{
+			"Case": "Ignore",
+			"TypedString": "detail=",
+			"MacroTriggerType": "TypedString",
+			"SimulateDeletes": true
+		}
+	],
+	"Name": "MD-Details折叠"
+}

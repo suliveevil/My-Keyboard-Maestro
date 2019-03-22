@@ -1,0 +1,22 @@
+{
+	"UID": "7CDA9A9C-55A3-47B4-8332-508A09E37E6A",
+	"Actions": [
+		{
+			"MacroActionType": "ActivateApplication",
+			"ReopenWindows": false,
+			"AllWindows": true,
+			"AlreadyActivatedActionType": "Normal",
+			"TimeOutAbortsMacro": true,
+			"Application": {
+				"NewFile": "/Applications/WeChat.app",
+				"BundleIdentifier": "com.tencent.xinWeChat",
+				"Name": "WeChat"
+			}
+		}
+	],
+	"CreationDate": 566960091.1149,
+	"IsActive": false,
+	"ModificationDate": 568749835.247137,
+	"Triggers": [],
+	"Name": "Launch-WeChat"
+}

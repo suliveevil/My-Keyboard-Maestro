@@ -1,0 +1,23 @@
+{
+	"UID": "430658A7-C99B-4E3C-B1D7-11A5262F8B2E",
+	"Actions": [
+		{
+			"MacroActionType": "SafariControl",
+			"Command": "NewTab",
+			"TimeOutAbortsMacro": true,
+			"WebBrowser": "Google Chrome",
+			"Argument": "%FrontBrowserURL%"
+		}
+	],
+	"CreationDate": 567207884.110483,
+	"ModificationDate": 568379853.377486,
+	"Triggers": [
+		{
+			"FireType": "Pressed",
+			"KeyCode": 48,
+			"Modifiers": 2304,
+			"MacroTriggerType": "HotKey"
+		}
+	],
+	"Name": "Send to Chrome"
+}
