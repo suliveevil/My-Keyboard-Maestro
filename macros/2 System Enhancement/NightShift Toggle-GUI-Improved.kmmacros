@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075935.80634999</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC4nAgAAKwAAAAEA
+						AAAfAgAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZuaWxcZmNoYXJzZXQx
+						MzQgLlBpbmdGYW5nU0MtUmVndWxh
+						cjtcZjFcZm5pbFxmY2hhcnNldDAg
+						SGVsdmV0aWNhTmV1ZTt9CntcY29s
+						b3J0Ymw7XHJlZDI1NVxncmVlbjI1
+						NVxibHVlMjU1O1xyZWQwXGdyZWVu
+						MFxibHVlMDt9CntcKlxleHBhbmRl
+						ZGNvbG9ydGJsOztcY3NzcmdiXGMw
+						XGMwXGMwXGNuYW1lIHRleHRDb2xv
+						cjt9ClxwYXJkXHR4NTYwXHR4MTEy
+						MFx0eDE2ODBcdHgyMjQwXHR4Mjgw
+						MFx0eDMzNjBcdHgzOTIwXHR4NDQ4
+						MFx0eDUwNDBcdHg1NjAwXHR4NjE2
+						MFx0eDY3MjBccGFyZGlybmF0dXJh
+						bFxwYXJ0aWdodGVuZmFjdG9yMAoK
+						XGYwXGZzMjYgXGNmMiBbClxmMSBU
+						b2dnbGUgTmlnaHQgU2hpZnQgLSBN
+						YWNybyBMaWJyYXJ5IC0gS2V5Ym9h
+						cmQgTWFlc3RybyBEaXNjb3Vyc2UK
+						XGYwIF0oClxmMSBodHRwczovL2Zv
+						cnVtLmtleWJvYXJkbWFlc3Ryby5j
+						b20vdC90b2dnbGUtbmlnaHQtc2hp
+						ZnQvMTExNzUvNApcZjAgKQpcZjEg
+						XAp9AQAAACMAAAABAAAABwAAAFRY
+						VC5ydGYQAAAAN3UxXLYBAAAAAAAA
+						AAAAAA==
+						</data>
+						<key>Title</key>
+						<string>Untitled</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>tell application "System Preferences" to reveal the ?
+	anchor named "displaysNightShiftTab" of ?
+	pane id "com.apple.preference.displays"
+
+tell application "System Events" to tell ?
+	process "System Preferences" to tell ?
+	window 1 to tell ?
+	tab group 1 to tell ?
+	checkbox "Turn On Until Later Today" to ?
+	perform action "AXPress"
+
+quit application "System Preferences"</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568437890.12349701</real>
+				<key>ModificationDate</key>
+				<real>574601645.47238302</real>
+				<key>Name</key>
+				<string>NightShift Toggle-GUI-Improved</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>017FE81D-E82B-4ED6-B3BF-F0167964E2F5</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>2 System Enhancement</string>
+		<key>ToggleMacroUID</key>
+		<string>0E83BBFC-383F-4C48-87AC-A27C3B7A7904</string>
+		<key>UID</key>
+		<string>99D81B85-02F7-4F19-BFE5-F39B51C752F5</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568075935.80634999</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Green</string>
+						<key>ActionName</key>
+						<string>~~~ HOW TO USE ~~~</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>StyledText</key>
+						<data>
+						cnRmZAAAAAADAAAAAgAAAAcAAABU
+						WFQucnRmAQAAAC7KAQAAKwAAAAEA
+						AADCAQAAe1xydGYxXGFuc2lcYW5z
+						aWNwZzkzNlxjb2NvYXJ0ZjE2NzFc
+						Y29jb2FzdWJydGYyMDAKe1xmb250
+						dGJsXGYwXGZzd2lzc1xmY2hhcnNl
+						dDAgSGVsdmV0aWNhO30Ke1xjb2xv
+						cnRibDtccmVkMjU1XGdyZWVuMjU1
+						XGJsdWUyNTU7fQp7XCpcZXhwYW5k
+						ZWRjb2xvcnRibDs7fQpccGFyZFx0
+						eDU2MFx0eDExMjBcdHgxNjgwXHR4
+						MjI0MFx0eDI4MDBcdHgzMzYwXHR4
+						MzkyMFx0eDQ0ODBcdHg1MDQwXHR4
+						NTYwMFx0eDYxNjBcdHg2NzIwXHBh
+						cmRpcm5hdHVyYWxccGFydGlnaHRl
+						bmZhY3RvcjAKClxmMFxmczI0IFxj
+						ZjAgWW91IG1heSBmaW5kIHRoaXMg
+						c2NyaXB0IGhlbHBmdWwgdG8gZ2V0
+						IHRoZSBpbmZvIGFib3V0IHRoZSBm
+						cm9udG1vc3QgYXBwLlwKXApQdXQg
+						dGhpcyAgTWFjcm8gaW4gYSBHbG9i
+						YWwgR3JvdXBcClRyaWdnZXIgd2hl
+						biB0aGUgYXBwIG9mIGludGVyZXN0
+						IGlzIGZyb250bW9zdC59AQAAACMA
+						AAABAAAABwAAAFRYVC5ydGYQAAAA
+						p6g1XLYBAAAAAAAAAAAAAA==
+						</data>
+						<key>Title</key>
+						<string>Get Info about Current FrontMost App (Name, Path, ID) @Example</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Window</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>tell application "System Events"
+	tell (first process whose frontmost is true)
+		set appName to displayed name
+		set appPath to ((path to frontmost application) as text)
+	end tell
+end tell
+
+tell application appPath
+	set appID to id
+end tell
+
+return ("NAME: " &amp; appName &amp; return &amp; "PATH: " &amp; appPath &amp; return &amp; "ID: " &amp; appID)</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>508872422.79547602</real>
+				<key>ModificationDate</key>
+				<real>573868826.23127401</real>
+				<key>Name</key>
+				<string>Current FrontMost App info (Name, Path, ID)</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>34</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6400</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>B09BCFE6-A8BB-427A-AEEC-5FDAB6E02846</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>2 System Enhancement</string>
+		<key>ToggleMacroUID</key>
+		<string>0E83BBFC-383F-4C48-87AC-A27C3B7A7904</string>
+		<key>UID</key>
+		<string>99D81B85-02F7-4F19-BFE5-F39B51C752F5</string>
+	</dict>
+</array>
+</plist>

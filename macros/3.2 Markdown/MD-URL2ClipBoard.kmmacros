@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568131860.18294704</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>JustDisplay</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetClipboardToText</string>
+						<key>Text</key>
+						<string>[%FrontBrowserTitle%](%FrontBrowserURL%)</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568076086.684111</real>
+				<key>ModificationDate</key>
+				<real>574950191.94236505</real>
+				<key>Name</key>
+				<string>MD-URL2ClipBoard</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>Case</key>
+						<string>Ignore</string>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>lj-</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>1502AA6D-33B2-45EC-8665-DB09296FE753</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.2 Markdown</string>
+		<key>ToggleMacroUID</key>
+		<string>BBF022AD-8D2E-4F46-B387-1FA08A4726CE</string>
+		<key>UID</key>
+		<string>CF264727-7D23-469A-9001-7DD523D2BEF1</string>
+	</dict>
+</array>
+</plist>

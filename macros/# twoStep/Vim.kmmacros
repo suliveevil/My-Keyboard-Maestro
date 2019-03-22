@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>ActiveAndWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>CreationDate</key>
+		<real>574811702.50010097</real>
+		<key>IsActive</key>
+		<false/>
+		<key>KeyCode</key>
+		<integer>116</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array/>
+				<key>CreationDate</key>
+				<real>574812051.01560998</real>
+				<key>ModificationDate</key>
+				<real>574812074.94754303</real>
+				<key>Name</key>
+				<string>Vim</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>TypedString</string>
+						<key>SimulateDeletes</key>
+						<true/>
+						<key>TypedString</key>
+						<string>H J K L</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>C267D78E-6BF0-4FE2-8FE6-C76F5C69A14A</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>512</integer>
+		<key>Name</key>
+		<string># twoStep</string>
+		<key>PaletteUnderMouse</key>
+		<true/>
+		<key>Theme</key>
+		<dict>
+			<key>Opacity</key>
+			<integer>57</integer>
+			<key>Size</key>
+			<integer>17</integer>
+			<key>UseDefaultInstead</key>
+			<false/>
+			<key>UseTrigger</key>
+			<true/>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>FEA6A359-2514-4ABC-989F-4023F4F16FD4</string>
+		<key>UID</key>
+		<string>2C315236-481D-4B3E-B8AF-0A8594318FD5</string>
+	</dict>
+</array>
+</plist>

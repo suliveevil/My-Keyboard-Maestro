@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568481555.45812798</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string># Name: Alias/Symlink Converter
+# Description: Replaces aliases with symlinks and vice versa.
+# Download: &lt;https://forum.keyboardmaestro.com/t/alias-symlink-converter/6699?u=tom&gt;
+# Author: Tom Floeren &lt;tom@dflect.net&gt;
+# Created: 2017-03-30
+# Last modified: 2017-03-31
+# Version: 0.9.2 (5)
+#
+#
+# Copyright ý 2017 Thomas Floeren
+# 
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+# REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+# AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+# INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+# OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
+
+use AppleScript version "2.4" -- Yosemite (10.10) or later
+use framework "Foundation"
+use scripting additions
+
+set {countLink, countAlias, countMissingTrg, countOtherErr} to {0, 0, 0, 0}
+set brokenSuffix to ".---broken!"
+set relLink to false
+set fileManager to current application's NSFileManager's defaultManager()
+
+# Comment out this block if you never use relative symlinks
+global keyDown
+modifierKeyTest()
+# Options: commandDown, controlDown, shiftDown, optionDown
+if keyDown's controlDown then set relLink to true
+
+tell application "Finder"
+	set theSel to the selection
+	repeat with theItem in theSel
+		if class of theItem is alias file then
+			# Selection is alias or symlink
+			set linkPath to theItem as text
+			set linkParent to container of file linkPath
+			set linkName to name of file linkPath
+			try
+				if file type of theItem is missing value then
+					# Selection is symlink
+					set trgPath to (theItem as alias)
+					delete linkPath
+					make new alias at linkParent to item trgPath with properties {name:linkName}
+					set countAlias to countAlias + 1
+				else
+					# Selection is alias
+					# Absolute path
+					set trgPath to POSIX path of (original item of theItem as text)
+					# Relative path
+					if relLink then set trgPath to do shell script "perl -MFile::Spec -e \"print File::Spec-&gt;abs2rel(" &amp; quoted form of trgPath &amp; "," &amp; quoted form of POSIX path of (linkParent as text) &amp; ")\""
+					delete linkPath
+					set theResult to (fileManager's createSymbolicLinkAtPath:(POSIX path of linkPath) withDestinationPath:trgPath |error|:(missing value))
+					# Alternatively, via shell
+					--do shell script "ln -s" &amp; space &amp; quoted form of trgPath &amp; space &amp; quoted form of POSIX path of linkPath
+					set countLink to countLink + 1
+				end if
+			on error errMsg number errNum
+				if errNum is -1700 then
+					set countMissingTrg to countMissingTrg + 1
+					set name of file linkPath to linkName &amp; brokenSuffix
+				else
+					display alert "Error " &amp; errNum message errMsg buttons {"Stop", "Continue"} default button 2 cancel button 1 as warning
+					set countOtherErr to countOtherErr + 1
+				end if
+			end try
+		end if
+	end repeat
+	if countMissingTrg &gt; 0 then
+		display alert (countMissingTrg as text) &amp; " aliases or symlinks seem to be broken! (Target cannot be found.)" message "The broken link files have been marked with" &amp; linefeed &amp; "¡°" &amp; brokenSuffix &amp; "¡±." as warning
+	end if
+end tell
+
+
+### Notifications and alerts
+
+set sName to "Tink"
+if relLink then
+	set relPrefix to " rel."
+else
+	set relPrefix to ""
+end if
+
+if countAlias = 1 then
+	set aliasText to (countAlias as text) &amp; " alias created  "
+else if countAlias &gt; 1 then
+	set aliasText to (countAlias as text) &amp; " aliases created  "
+else
+	set aliasText to ""
+end if
+
+if countLink = 1 then
+	set linkText to (countLink as text) &amp; relPrefix &amp; " symlink created"
+else if countLink &gt; 1 then
+	set linkText to (countLink as text) &amp; relPrefix &amp; " symlinks created"
+else
+	set linkText to ""
+end if
+
+if countAlias + countLink &lt; 1 then
+	set aliasText to "No aliases or symlinks created!"
+	set sName to "Blow"
+end if
+
+set countAllErr to countMissingTrg + countOtherErr
+if countAllErr &gt; 0 then
+	set sTitle to "?? A total of " &amp; (countAllErr as text) &amp; " errors has occured!"
+	set sName to "Basso"
+else
+	set sTitle to ""
+end if
+
+display notification aliasText &amp; linefeed &amp; linkText with title "?? Alias/Symlink Converter" subtitle sTitle sound name sName
+
+
+### Handlers
+
+on modifierKeyTest()
+	set keyDown to {commandDown:false, optionDown:false, controlDown:false, shiftDown:false}
+	set currentModifiers to current application's class "NSEvent"'s modifierFlags()
+	tell keyDown
+		set its optionDown to (currentModifiers div (get current application's NSAlternateKeyMask) mod 2 is 1)
+		set its commandDown to (currentModifiers div (get current application's NSCommandKeyMask) mod 2 is 1)
+		set its shiftDown to (currentModifiers div (get current application's NSShiftKeyMask) mod 2 is 1)
+		set its controlDown to (currentModifiers div (get current application's NSControlKeyMask) mod 2 is 1)
+	end tell
+	return keyDown
+end modifierKeyTest
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>512608842.53052402</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>574825420.996786</real>
+				<key>Name</key>
+				<string>Alias/Symlink Converter [ver 0.9.5]</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>122</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+					</dict>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>122</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>4352</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>6E3483C7-3DBC-4AA5-A140-B50CA6B8C16F</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.0 File &amp; Folder &amp; Text</string>
+		<key>ToggleMacroUID</key>
+		<string>6CE0A1AA-E144-4647-AB99-26402B1352A4</string>
+		<key>UID</key>
+		<string>27215D41-2AC6-46EC-8F7F-54ECB332C656</string>
+	</dict>
+</array>
+</plist>

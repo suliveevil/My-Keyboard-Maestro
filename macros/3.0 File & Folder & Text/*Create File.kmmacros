@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>568481555.45812798</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteAppleScript</string>
+						<key>NotifyOnFailure</key>
+						<false/>
+						<key>Path</key>
+						<string></string>
+						<key>StopOnFailure</key>
+						<false/>
+						<key>Text</key>
+						<string>----------------------------------------------------------------
+# Auth: Christopher Stone &lt;scriptmeister@thestoneforge.com&gt;
+# dCre: 2012/10/26 01:27
+# dMod: 2018/11/15 02:31
+# Appl: Finder
+# Task: Create a new file from a file-type list in the front Finder window using
+#     : template files stored in a folder.
+# Libs: Template files provided by the user.
+# Osax: None 
+# Tags: @Applescript
+# Note: Auto-creates a Text template - others are for the user to supply.
+# Chng: Change List is appended at end.
+# Vers: 1.50
+----------------------------------------------------------------
+use AppleScript version "2.5"
+use framework "Foundation"
+use scripting additions
+----------------------------------------------------------------
+
+try
+   
+   -------------------------------------------------------------
+   --? Ensure the New-File-Here! folder exists.
+   -------------------------------------------------------------
+   
+   try
+      set templateFolderPath to ((path to application support from user domain as text) &amp; "Script_Support:New_File_Here!:")
+      set templateFolder to alias templateFolderPath
+   on error
+      set newFilesHereFolder to quoted form of (POSIX path of templateFolderPath)
+      set textTemplate to newFilesHereFolder &amp; "Text_Template.txt"
+      
+      do shell script "
+         mkdir -p " &amp; newFilesHereFolder &amp; ";
+         touch " &amp; textTemplate &amp; ";
+         open -R " &amp; textTemplate
+      
+      return -- Bail!
+      
+   end try
+   
+   -------------------------------------------------------------
+   
+   tell application "Finder"
+      if front window exists then
+         set winTarget to target of front window as alias
+         set fileTemplateList to name of files of templateFolder
+         set beginning of fileTemplateList to " Open New_Files_Here! Folder"
+         set textTemplate to name of files of templateFolder whose name starts with "Text"
+         
+         tell me to set fileType to choose from list fileTemplateList with title "New_File_Here! Templates" with prompt ?
+            "Pick One or More:" default items {textTemplate} with multiple selections allowed
+         
+         if fileType = false then
+            
+            return -- Bail!
+            
+         else if fileType ¡Ù false then
+            
+            if fileType = {" Open New_Files_Here! Folder"} then
+               open templateFolder
+               
+               return -- Bail!
+               
+            end if
+            
+            set AppleScript's text item delimiters to (return &amp; templateFolderPath)
+            set itemsToCopy to paragraphs of ((templateFolder as text) &amp; fileType)
+            
+            repeat with i in itemsToCopy
+               set i's contents to i as alias
+            end repeat
+            
+            set copiedFiles to duplicate itemsToCopy to winTarget
+            
+            if class of copiedFiles is not list then
+               set copiedFiles to {copiedFiles}
+            end if
+            
+            select copiedFiles
+            
+            repeat with i in copiedFiles
+               set contents of i to POSIX path of (i as alias)
+            end repeat
+            
+         end if
+         
+      else
+         error "No windows open in Finder!"
+      end if
+      
+   end tell
+   
+   set theDate to current date
+   
+   repeat with thePath in copiedFiles
+      set theURL to (current application's |NSURL|'s fileURLWithPath:thePath)
+      
+      set {resultOfCreationDate, theError} to (theURL's setResourceValue:theDate forKey:(current application's NSURLCreationDateKey) |error|:(reference))
+      if resultOfCreationDate as boolean is false then error (theError's localizedDescription() as text)
+      
+      set {resultOfModificationDate, theError} to (theURL's setResourceValue:theDate forKey:(current application's NSURLContentModificationDateKey) |error|:(reference))
+      if resultOfModificationDate as boolean is false then error (theError's localizedDescription() as text)
+      
+      set {resultOfContentAccessDate, theError} to (theURL's setResourceValue:theDate forKey:(current application's NSURLContentAccessDateKey) |error|:(reference))
+      if resultOfContentAccessDate as boolean is false then error (theError's localizedDescription() as text)
+   end repeat
+   
+on error e number n
+   set e to e &amp; return &amp; return &amp; "Num: " &amp; n
+   tell me to set dDlg to display dialog e with title "ERROR!" buttons {"Cancel", "Copy", "OK"} default button "OK"
+   if button returned of dDlg = "Copy" then set the clipboard to e
+end try
+
+----------------------------------------------------------------
+
+(*
+
+Change List
+
+2018/11/07 02:15
+   + New files creation and modification dates are changed to NOW() when the user creates them.
+      (Before this all dates except .txt files were the same as the template file.)
+
+2018/11/15 02:27
+   - Removed old, redundant Text_Template.txt creation code.
+   + Previously an error was thrown if the user cancelled ? this is no longer the case.
+   + Fixed a bug that stopped duplicated files from changing creation and modification dates to NOW().
+
+*)
+
+----------------------------------------------------------------</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>568928127.62888205</real>
+				<key>IsActive</key>
+				<false/>
+				<key>ModificationDate</key>
+				<real>574825411.83883405</real>
+				<key>Name</key>
+				<string>Create File</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>122</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>E3C69DC0-AFD0-45DA-8FDB-A28A33379DCC</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>3.0 File &amp; Folder &amp; Text</string>
+		<key>ToggleMacroUID</key>
+		<string>6CE0A1AA-E144-4647-AB99-26402B1352A4</string>
+		<key>UID</key>
+		<string>27215D41-2AC6-46EC-8F7F-54ECB332C656</string>
+	</dict>
+</array>
+</plist>

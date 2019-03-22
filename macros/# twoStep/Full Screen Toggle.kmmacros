@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>ActiveAndWithPalette</string>
+		<key>AddToMacroPalette</key>
+		<false/>
+		<key>AddToStatusMenu</key>
+		<false/>
+		<key>CreationDate</key>
+		<real>574811702.50010097</real>
+		<key>IsActive</key>
+		<false/>
+		<key>KeyCode</key>
+		<integer>116</integer>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>KeyCode</key>
+						<integer>3</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>4352</integer>
+						<key>ReleaseAll</key>
+						<false/>
+						<key>TargetApplication</key>
+						<dict/>
+						<key>TargetingType</key>
+						<string>Front</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>574811858.87947202</real>
+				<key>ModificationDate</key>
+				<real>574812165.80762005</real>
+				<key>Name</key>
+				<string>Full Screen Toggle</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>3</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>24373ED9-0257-4A02-88C1-BFC9D7BF6402</string>
+			</dict>
+		</array>
+		<key>Modifiers</key>
+		<integer>512</integer>
+		<key>Name</key>
+		<string># twoStep</string>
+		<key>PaletteUnderMouse</key>
+		<true/>
+		<key>Theme</key>
+		<dict>
+			<key>Opacity</key>
+			<integer>57</integer>
+			<key>Size</key>
+			<integer>17</integer>
+			<key>UseDefaultInstead</key>
+			<false/>
+			<key>UseTrigger</key>
+			<true/>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>FEA6A359-2514-4ABC-989F-4023F4F16FD4</string>
+		<key>UID</key>
+		<string>2C315236-481D-4B3E-B8AF-0A8594318FD5</string>
+	</dict>
+</array>
+</plist>
