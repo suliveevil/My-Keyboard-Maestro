@@ -65,7 +65,7 @@
 				<key>IsActive</key>
 				<false/>
 				<key>ModificationDate</key>
-				<real>567482950.13262296</real>
+				<real>574961007.41951895</real>
 				<key>Name</key>
 				<string>SendTo</string>
 				<key>Triggers</key>
@@ -81,36 +81,6 @@
 						<integer>0</integer>
 						<key>TapCount</key>
 						<integer>3</integer>
-					</dict>
-					<dict>
-						<key>ElementCookie</key>
-						<integer>105</integer>
-						<key>ElementDeviceUsage</key>
-						<integer>6</integer>
-						<key>ElementDeviceUsagePage</key>
-						<integer>1</integer>
-						<key>ElementName</key>
-						<string>Karabiner VirtualHIDKeyboard Caps Lock</string>
-						<key>ElementProductID</key>
-						<integer>10203</integer>
-						<key>ElementShortName</key>
-						<string>#57</string>
-						<key>ElementUsage</key>
-						<integer>57</integer>
-						<key>ElementUsagePage</key>
-						<integer>7</integer>
-						<key>ElementValue</key>
-						<integer>1</integer>
-						<key>ElementVendorID</key>
-						<integer>5824</integer>
-						<key>FireType</key>
-						<string>Pressed</string>
-						<key>MacroTriggerType</key>
-						<string>HID</string>
-						<key>Modifiers</key>
-						<integer>0</integer>
-						<key>UseModifiers</key>
-						<true/>
 					</dict>
 				</array>
 				<key>UID</key>

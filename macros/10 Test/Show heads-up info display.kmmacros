@@ -81,8 +81,6 @@ ruby calendar.rb -c calendar-config-html.yml</string>
 						<string>Variable</string>
 						<key>IncludeStdErr</key>
 						<true/>
-						<key>IsDisclosed</key>
-						<false/>
 						<key>MacroActionType</key>
 						<string>ExecuteShellScript</string>
 						<key>NotifyOnFailure</key>
@@ -109,8 +107,6 @@ ruby calendar.rb -c calendar-config-html.yml</string>
 					<dict>
 						<key>Floating</key>
 						<true/>
-						<key>IsDisclosed</key>
-						<false/>
 						<key>MacroActionType</key>
 						<string>CustomPrompt</string>
 						<key>Path</key>
@@ -126,7 +122,7 @@ ruby calendar.rb -c calendar-config-html.yml</string>
 				<key>CustomIconData</key>
 				<string>KMEP-ToolbarInfo</string>
 				<key>ModificationDate</key>
-				<real>568476750.98503602</real>
+				<real>574961040.601457</real>
 				<key>Name</key>
 				<string>Show heads-up info display</string>
 				<key>Triggers</key>

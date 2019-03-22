@@ -19,8 +19,6 @@
 						<false/>
 						<key>EnableRepeat</key>
 						<true/>
-						<key>IsDisclosed</key>
-						<false/>
 						<key>KeyCode</key>
 						<integer>122</integer>
 						<key>MacroActionType</key>
@@ -36,7 +34,7 @@
 				<key>IsActive</key>
 				<false/>
 				<key>ModificationDate</key>
-				<real>567564046.54477406</real>
+				<real>574959379.26852703</real>
 				<key>Name</key>
 				<string>Quick Macro for ?F1</string>
 				<key>Triggers</key>

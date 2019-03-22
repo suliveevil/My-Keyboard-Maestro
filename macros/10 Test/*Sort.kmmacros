@@ -17,6 +17,8 @@
 						<string>None</string>
 						<key>IncludeStdErr</key>
 						<false/>
+						<key>IsDisclosed</key>
+						<false/>
 						<key>MacroActionType</key>
 						<string>ExecuteAppleScript</string>
 						<key>NotifyOnFailure</key>
@@ -44,7 +46,7 @@ set Clipboard to listSorton listSort(L)	return quicksort(L, 1, count L)end l
 				<key>IsActive</key>
 				<false/>
 				<key>ModificationDate</key>
-				<real>568336711.362607</real>
+				<real>574961096.94646204</real>
 				<key>Name</key>
 				<string>Sort</string>
 				<key>Triggers</key>

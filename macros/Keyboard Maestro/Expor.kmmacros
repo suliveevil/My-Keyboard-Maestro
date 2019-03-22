@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>459061285.50323999</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array/>
+				<key>CreationDate</key>
+				<real>574982440.72599494</real>
+				<key>ModificationDate</key>
+				<real>574982443.92969298</real>
+				<key>Name</key>
+				<string>Expor</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>12BB0D1F-8D0A-46AC-8F06-65AB14209965</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Keyboard Maestro</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.stairways.keyboardmaestro.editor</string>
+					<key>Name</key>
+					<string>Keyboard Maestro</string>
+					<key>NewFile</key>
+					<string>/Applications/Keyboard Maestro.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>8B0D742C-0E8B-4925-8547-B21EE67D3D66</string>
+		<key>UID</key>
+		<string>2C05B241-1E91-44F4-A48C-A10A6708A04F</string>
+	</dict>
+</array>
+</plist>
