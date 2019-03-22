@@ -1,0 +1,3982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>490752742.26498199</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string>Name: Macro Repository JSON Paster
+Version: 0.1.7
+Updated: 2017/01/19 17:23 PST
+By: Dan Thomas
+
+PURPOSE:
+
+Takes a Macro Repository JSON string that's on the clipboard, and pastes it into Keyboard Maestro as a Macro or Group.
+
+USAGE:
+
+Open a Macro Repository JSON file in a text editor, then copy the text to the clipboard.
+
+If you're pasting a Macro, then select the Group you want to paste the macro into, then run this macro.
+
+If you're pasting a Group, then it doesn't matter what's selected - just run this macro.
+
+VERSION HISTORY:
+0.1.7 - Fixed "compare" issue with CreationDate values of 0. Please Wait dialog respects Enter key.
+0.1.3-6 - Match version number of Updater.
+0.1.2 - During compare, fixed bug with negative numbers.
+0.1.1 - Bug fixes:
+	● During Plist compare, "NSSuperScript" is type "integer", not "real".
+0.1.0 - Initial Beta version.</string>
+						<key>Title</key>
+						<string>Macro Repository JSON Paster v0.1.7</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string>Copyright (c) 2017 Daniel Thomas
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</string>
+						<key>Title</key>
+						<string>License Agreement / Disclaimer</string>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%CurrentClipboard%</string>
+						<key>Variable</key>
+						<string>macrep_json</string>
+					</dict>
+					<dict>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteJavaScriptForAutomation</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>(function(inDesignMode) {
+	'use strict';
+
+	ObjC.import('AppKit');
+
+	var KMEngine = (function() {
+		var _engineApp;
+
+		return {
+			getEngineAppName: function() {
+				return "Keyboard Maestro Engine";
+			},
+
+			getEngineApp: function() {
+				if (!_engineApp)
+					_engineApp = Application(this.getEngineAppName());
+				return _engineApp;
+			},
+
+			getVariable: function(name, required) {
+				var result = this.getEngineApp().getvariable(name);
+				if (!result &amp;&amp; required)
+					throw Error("Variable '" + name + "' is empty");
+				return result;
+			},
+
+			setVariable: function(name, value) {
+				this.getEngineApp().setvariable(name, {
+					to: value
+				});
+			},
+		};
+	})();
+
+	var PlistUtils = (function() {
+		var _currentApp;
+		var _dataNodeToken = "41E4D515-C065-4C24-9859-EA2479C52CC9";
+
+		var _kmObjectType_action = "action";
+		var _kmObjectType_group = "group";
+		var _kmObjectType_macro = "macro";
+
+		var _kmActionsXmlClipboardStringType = "com.stairways.keyboardmaestro.actionarray";
+		var _kmGroupsXmlClipboardStringType = "com.stairways.keyboardmaestro.macrogroupsarray";
+		var _kmMacrosXmlClipboardStringType = "com.stairways.keyboardmaestro.macrosarray";
+
+		var _kmClipboardStringTypes = {}
+		_kmClipboardStringTypes[_kmObjectType_action] = _kmActionsXmlClipboardStringType;
+		_kmClipboardStringTypes[_kmObjectType_group] = _kmGroupsXmlClipboardStringType;
+		_kmClipboardStringTypes[_kmObjectType_macro] = _kmMacrosXmlClipboardStringType;
+
+		function _cleanupXmlAfterDeserialization(xml) {
+			var result = xml.replace(/&lt;real&gt;(-?\d+)(\.0)?&lt;\/real&gt;/g, "&lt;integer&gt;$1&lt;/integer&gt;");
+			var result = result.replace(/(&lt;key&gt;CreationDate&lt;\/key&gt;[\W]*&lt;)(integer&gt;)(\d+)(&lt;\/integer&gt;)/g, "$1real&gt;$3.0&lt;/real&gt;");
+			var result = result.replace(/(&lt;key&gt;TimeOutPeriod&lt;\/key&gt;[\W]*&lt;)(integer)(&gt;\d+&lt;\/)(integer)(&gt;)/g, "$1real$3real$5");
+			var result = result.replace(/(&lt;key&gt;NSSuperScript&lt;\/key&gt;[\W]*&lt;)(real)(&gt;-?\d+&lt;\/)(real)(&gt;)/g, "$1integer$3integer$5");
+			return result;
+		}
+
+		function _deserializeFromXmlString(xml) {
+			var nsError = $();
+			var result = ObjC.deepUnwrap(
+				$.NSPropertyListSerialization.propertyListWithDataOptionsFormatError(
+					$(xml).dataUsingEncoding($.NSUTF8StringEncoding), 0, 0, nsError));
+			if (!result)
+				throw Error("Could not convert string to plist. Error: " + _getErrorMessage(nsError));
+			return result;
+		}
+
+		function _deTokenizeXmlDataNodes(xml) {
+			var regex = new RegExp("(&lt;string&gt;[\\W]*" + _dataNodeToken + ")", "g");
+			var result = xml.replace(regex, "&lt;data&gt;");
+
+			regex = new RegExp(_dataNodeToken + "[\\W]*&lt;\\/string&gt;", "g");
+			return result.replace(regex, "&lt;/data&gt;");
+		}
+
+		function _getAppSupportFolderName() {
+			if (!_currentApp) {
+				_currentApp = Application.currentApplication();
+				_currentApp.includeStandardAdditions = true;
+			}
+			return _currentApp.pathTo('application support', { from: 'user domain' });
+		}
+
+		function _clipboardContainsType(type) {
+			return _getClipboardTypes().indexOf(type) &gt;= 0;
+		}
+
+		function _getClipboardStringForType(type, throwIfNotFound) {
+			if (_clipboardContainsType(type))
+				return ObjC.unwrap(
+					$.NSPasteboard.generalPasteboard
+					.stringForType(type));
+			if (throwIfNotFound)
+				throw Error("No clipboard data for specified type");
+			return "";
+		}
+
+		function _getClipboardTypes() {
+			var items = $.NSPasteboard.generalPasteboard.pasteboardItems;
+			if (items.count === 0)
+				return [];
+			return ObjC.deepUnwrap(items.js[0].types);
+		}
+
+		function _getErrorMessage(nsError, defaultErrorMessage) {
+			try {
+				return $(nsError.localizedDescription).js;
+			} catch (e) {
+				return defaultErrorMessage || "Unknown Error";
+			}
+		}
+
+		function _getKMClipboardStringTypeForObjectType(objectType) {
+			var result = _kmClipboardStringTypes[objectType];
+			if (!result)
+				throw Error("'" + objectType + "' is not a valid KM Object Type");
+			return result;
+		}
+
+		function _getKMPlistXmlObjectType(xml) {
+			if (xml.indexOf("&lt;key&gt;AddToMacroPalette&lt;/key&gt;") &gt; 0)
+				return _kmObjectType_group;
+			if (xml.indexOf("&lt;key&gt;Triggers&lt;/key&gt;") &gt; 0)
+				return _kmObjectType_macro;
+			return _kmObjectType_action;
+		}
+
+		function _reOrderJsonProperties(json) {
+
+			function moveActionPropertyToTop(jsonArray, propertyName) {
+
+				function findProperty(startingIndex) {
+					for (var i = startingIndex; i &lt; jsonArray.length; i++) {
+						var line = jsonArray[i];
+						var regex = new RegExp('^([\\t]+)"' + propertyName + '":');
+						var match = line.match(regex);
+						if (match) {
+							return {
+								index: i,
+								leadingTabs: match[1]
+							};
+						}
+					}
+					return null;
+				}
+
+				function findActionStartIndex(startingIndex, leadingTabs) {
+					var startingLineRegex = new RegExp("^(" + leadingTabs.substring(0, leadingTabs.length - 1) + "[^\\t])");
+					for (var i = startingIndex - 1; i &gt;= 0; i--) {
+						var line = jsonArray[i];
+						var match = line.match(startingLineRegex);
+						if (match) {
+							if (!match[1].endsWith("{"))
+								return -1;
+							return i + 1;
+						}
+					}
+					return -1;
+				}
+
+				function moveProperty(fromIndex, toIndex) {
+					var endsWithComma = jsonArray[fromIndex].endsWith(",");
+					if (!endsWithComma)
+						jsonArray[fromIndex] = jsonArray[fromIndex] + ",";
+					jsonArray.splice(toIndex, 0, jsonArray.splice(fromIndex, 1)[0]);
+
+					// If we moved the last property of the action, then the new last
+					// property line probably needs to have its trailing comma removed.
+					if (!endsWithComma) {
+						var line = jsonArray[fromIndex];
+						if (line.endsWith(","))
+							jsonArray[fromIndex] = line.substring(0, line.length - 1);
+					}
+				}
+
+				// moveActionPropertyToTop()
+				var i = 0;
+				while (i &lt; jsonArray.length) {
+					var propertyLineInfo = findProperty(i);
+					if (!propertyLineInfo)
+						return;
+					var actionStartIndex = findActionStartIndex(propertyLineInfo.index, propertyLineInfo.leadingTabs);
+					if (actionStartIndex &gt;= 0 &amp;&amp; actionStartIndex &lt; propertyLineInfo.index)
+						moveProperty(propertyLineInfo.index, actionStartIndex);
+
+					i = propertyLineInfo.index + 1;
+				}
+			} // moveActionPropertyToTop()
+
+			// _reOrderJsonProperties()
+			if (json.indexOf("\t") &lt; 0)
+				throw Error("ReOrderJsonProperties expects the JSON parameter to be stringified with tabs");
+			var jsonArray = json.split("\n");
+
+			// NOTE: These are backwards - the one we want top-most is last in the array.
+			["ActionName", "Title", "MacroActionType"].forEach(function(propertyName) {
+				moveActionPropertyToTop(jsonArray, propertyName);
+			});
+			return jsonArray.join("\n");
+		} // _reOrderJsonProperties()
+
+		function _serializeToXmlString(plist) {
+			var data = $.NSPropertyListSerialization.dataWithPropertyListFormatOptionsError(
+				$(plist), $.NSPropertyListXMLFormat_v1_0, 0, null);
+			var nsstring = $.NSString.alloc.initWithDataEncoding(data, $.NSUTF8StringEncoding);
+			var result = $(nsstring).js;
+			return result;
+		}
+
+		function _setClipboardStringForType(str, type) {
+			var clipboard = $.NSPasteboard.generalPasteboard;
+			/*jshint -W030 */
+			clipboard.clearContents;
+			/*jshint +W030 */
+			clipboard.setStringForType($(str), $(type));
+		}
+
+		function _tokenizeXmlDataNodes(xml) {
+			return xml.replace(/(&lt;data&gt;)([\W]*)([^&lt;]*)(&lt;\/data&gt;)/g,
+				"&lt;string&gt;$2" + _dataNodeToken + "$2$3" + _dataNodeToken + "$2&lt;/string&gt;");
+		}
+
+		return {
+			KMObjectType_action: _kmObjectType_action,
+			KMObjectType_group: _kmObjectType_group,
+			KMObjectType_macro: _kmObjectType_macro,
+
+			comparePlistToXmlString: function(plist, origXml, failOptions) {
+				var testXml = this.serializeToXmlString(plist);
+				if (testXml === origXml)
+					return;
+
+				var savedToFile = false;
+				var savedOrigFilePath = null;
+				var savedTestFilePath = null;
+				var defaultFailOptions = this.getComparePlistFailDefaultOptions();
+				if (!failOptions)
+					failOptions = defaultFailOptions;
+
+				if (failOptions &amp;&amp; failOptions.saveFiles) {
+
+					var saveFolderPath = failOptions.saveFolderPath || defaultFailOptions.saveFolderPath;
+					if (saveFolderPath.substring(saveFolderPath.length-1) !== "/")
+						saveFolderPath += "/";
+
+					savedOrigFilePath = saveFolderPath + (failOptions.saveOrigFileName || defaultFailOptions.saveOrigFileName);
+					savedTestFilePath = saveFolderPath + (failOptions.saveTestFileName || defaultFailOptions.saveTestFileName);
+					try {
+						this.writeTextFile(origXml, savedOrigFilePath);
+						this.writeTextFile(testXml, savedTestFilePath);
+						savedToFile = true;
+					} catch (e) {
+					}
+				}
+
+				var errorMessage = failOptions &amp;&amp; failOptions.errorMessage ? failOptions.errorMessage : defaultFailOptions.errorMessage;
+				if (savedToFile)
+					errorMessage = errorMessage +
+						"\nSaved original XML to: '" + savedOrigFilePath + "'" +
+						"\nSaved test XML to: '" + savedTestFilePath + "'";
+				throw Error(errorMessage);
+			},
+
+			convertJsonStringToXmlString: function(json) {
+				var plist = JSON.parse(json);
+				return this.serializeToXmlString(plist);
+			},
+
+			convertXmlStringToJsonString: function(xml) {
+				var plist = this.deserializeFromXmlString(xml);
+				return JSON.stringify(plist, null, "\t");
+			},
+
+			convertXmlStringToJsonStringAndValidate: function(xml, failOptions) {
+				var json = this.convertXmlStringToJsonString(xml);
+				var plist = JSON.parse(json);
+				this.comparePlistToXmlString(plist, xml, failOptions || this.getCompareJsonFailDefaultOptions());
+				return json;
+			},
+
+			createEmptyGroupAction: function(actionName) {
+				return _deserializeFromXmlString(
+					"&lt;plist version='1.0'&gt; \n" +
+					"&lt;dict&gt; \n" +
+					"	&lt;key&gt;" + (actionName || "") + "&lt;/key&gt; \n" +
+					"	&lt;string&gt;Installer&lt;/string&gt; \n" +
+					"	&lt;key&gt;Actions&lt;/key&gt; \n" +
+					"	&lt;array/&gt; \n" +
+					"	&lt;key&gt;MacroActionType&lt;/key&gt; \n" +
+					"	&lt;string&gt;Group&lt;/string&gt; \n" +
+					"	&lt;key&gt;TimeOutAbortsMacro&lt;/key&gt; \n" +
+					"	&lt;true/&gt; \n" +
+					"&lt;/dict&gt; \n" +
+					"&lt;/plist&gt;");
+			},
+
+			deserializeFromXmlFile: function(path) {
+				return this.deserializeFromXmlString(this.readTextFile(path));
+			},
+
+			deserializeFromXmlFileAndValidate: function(path, failOptions) {
+				return this.deserializeFromXmlStringAndValidate(this.readTextFile(path), failOptions);
+			},
+
+			deserializeFromXmlString: function(xml) {
+				var result = _tokenizeXmlDataNodes(xml);
+				return _deserializeFromXmlString(result);
+			},
+
+			deserializeFromXmlStringAndValidate: function(xml, failOptions) {
+				var result = this.deserializeFromXmlString(xml);
+				this.comparePlistToXmlString(result, xml, failOptions);
+				return result;
+			},
+
+			deserializeKMAllMacrosSourceFile: function() {
+				var xml = this.readKMAllMacrosSourceFileAsXml();
+				return this.deserializeFromXmlString(xml);
+			},
+
+			deserializeKMAllMacrosSourceFileAndValidate: function(failOptions) {
+				var xml = this.readKMAllMacrosSourceFileAsXml();
+				return this.deserializeFromXmlStringAndValidate(xml, failOptions);
+			},
+
+			getCompareJsonFailDefaultOptions: function() {
+				return {
+					errorMessage: "Plist-to-JSON Conversion Error: Converted JSON back to XML, does not match Original XML.",
+					saveFiles: true,
+					saveFolderPath: "/tmp/",
+					saveOrigFileName: "PlistUtils_CompareFailure_Original.plist",
+					saveTestFileName: "PlistUtils_CompareFailure_Test.plist"
+				};
+			},
+
+			getComparePlistFailDefaultOptions: function() {
+				return {
+					errorMessage: "Plist Conversion Error: Converted Plist does not match Original XML.",
+					saveFiles: true,
+					saveFolderPath: "/tmp/",
+					saveOrigFileName: "PlistUtils_CompareFailure_Original.plist",
+					saveTestFileName: "PlistUtils_CompareFailure_Test.plist"
+				};
+			},
+
+			getInitialCommentFromMacro: function(macro) {
+				var results = [];
+				if (!macro.Actions || macro.Actions.length === 0)
+					return null;
+
+				var action = macro.Actions[0];
+				if (action.MacroActionType !== "Comment")
+					return null;
+
+				return {
+					name: action.ActionName || action.Title || "",
+					title: action.Title || "",
+					text: action.Text || ""
+				};
+			},
+
+			getKMActionsXmlFromClipboard(throwIfNotFound) {
+				return _getClipboardStringForType(_kmActionsXmlClipboardStringType, throwIfNotFound);
+			},
+
+			getKMClipboardStringTypeForObjectType: function(objectType) {
+				var result = _kmClipboardStringTypes[objectType];
+				if (!result)
+					throw Error("'" + objectType + "' is not a valid KM Object Type");
+				return result;
+			},
+
+			getKMGroupsXmlFromClipboard(throwIfNotFound) {
+				return _getClipboardStringForType(_kmGroupsXmlClipboardStringType, throwIfNotFound);
+			},
+
+			getKMMacrosXmlFromClipboard(throwIfNotFound) {
+				return _getClipboardStringForType(_kmMacrosXmlClipboardStringType, throwIfNotFound);
+			},
+
+			getKMPlistXmlObjectType: function(xml) {
+				return _getKMPlistXmlObjectType(xml);
+			},
+
+			// File must contain one macro only, or exception is thrown.
+			getMacroFromKMMacrosFile: function(path) {
+				var plist = this.deserializeFromXmlFile(path);
+				if (!plist)
+					throw Error("Could not read file '" + path + "'");
+				if (plist.length === 0)
+					throw Error("No macros were found in '" + path + "'");
+				if (plist.length &gt; 1)
+					throw Error("Multiple macros were found in '" + path + "'");
+				var group = plist[0];
+
+				if (!group.Macros || group.Macros.count === 0)
+					throw Error("No macros were found in '" + path + "'");
+				if (group.Macros.length &gt; 1)
+					throw Error("Multiple macros were found in '" + path + "'");
+				return group.Macros[0];
+			},
+
+			readKMAllMacrosSourceFileAsXml: function() {
+				var path = _getAppSupportFolderName() + "/Keyboard Maestro/Keyboard Maestro Macros.plist";
+
+				var nsError = $();
+				var fileData = $.NSData.dataWithContentsOfFileOptionsError(
+					$(path).stringByStandardizingPath, 0, nsError);
+				if (!fileData)
+					throw Error(_getErrorMessage(nsError));
+
+				nsError = $();
+				var plistData = $.NSPropertyListSerialization.propertyListWithDataOptionsFormatError(
+					fileData, $.NSPropertyListImmutable, 0, nsError);
+				if (!plistData)
+					throw Error(_getErrorMessage(nsError));
+
+				nsError = $();
+				var xmlData = $.NSPropertyListSerialization.dataWithPropertyListFormatOptionsError(
+					plistData, $.NSPropertyListXMLFormat_v1_0, 0, nsError);
+				if (!xmlData)
+					throw Error(_getErrorMessage(nsError));
+
+				return $($.NSString.alloc.initWithDataEncoding(xmlData, $.NSUTF8StringEncoding)).js;
+			},
+
+			readTextFile: function(path) {
+				var error;
+				var str = ObjC.unwrap(
+					$.NSString.stringWithContentsOfFileEncodingError(
+						$(path).stringByStandardizingPath,
+						$.NSUTF8StringEncoding,
+						error
+					)
+				);
+				if (error)
+					throw Error('Could not read file "' + path + '"');
+				return str;
+			},
+
+			reOrderJsonProperties: function(json) {
+				return _reOrderJsonProperties(json);
+			},
+
+			serializeToXmlFile: function(obj, path) {
+				var str = serializeToXmlString(obj);
+				writeTextFile(str, path);
+			},
+
+			serializeToXmlString: function(obj) {
+				var str = _serializeToXmlString(obj);
+				str = _cleanupXmlAfterDeserialization(str);
+				return _deTokenizeXmlDataNodes(str);
+			},
+
+			setClipboardToKMPlistXml: function(xml) {
+				var objectType = _getKMPlistXmlObjectType(xml);
+				var clipboardStringType = _getKMClipboardStringTypeForObjectType(objectType);
+				_setClipboardStringForType(xml, clipboardStringType);
+				return objectType;
+			},
+
+			writeTextFile: function(text, path) {
+				var str = $.NSString.alloc.initWithUTF8String(text);
+				var result = str.writeToFileAtomicallyEncodingError(
+					$(path).stringByStandardizingPath,
+					true,
+					$.NSUTF8StringEncoding,
+					null);
+				if (!result)
+					throw Error("Could not write file '" + path + "'");
+			}
+		};
+	})();
+
+	function execute() {
+		var jsonString = KMEngine.getVariable("macrep_json", true);
+		var obj;
+		try {
+			obj = JSON.parse(jsonString);
+		} catch (e) {
+			throw Error("String does not appear to be a valid JSON string");
+		}
+		if (!Array.isArray(obj))
+			obj = [obj];
+		var plistString = PlistUtils.serializeToXmlString(obj);
+		var objectType = PlistUtils.setClipboardToKMPlistXml(plistString);
+		KMEngine.setVariable("macrep_objectType", objectType);
+		return "OK";
+	}
+
+	if (inDesignMode) {
+        return execute();
+    } else {
+        try {
+            return execute();
+        } catch (e) {
+            return "Error: " + e.message;
+        }
+    }
+})(false);
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>macrep_result</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>Abort if error</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>macrep_result</string>
+									<key>VariableConditionType</key>
+									<string>IsNot</string>
+									<key>VariableValue</key>
+									<string>OK</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>DeviceID</key>
+								<string>SOUNDEFFECTS</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PlaySound</string>
+								<key>Path</key>
+								<string>/System/Library/Sounds/Basso.aiff</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Volume</key>
+								<integer>100</integer>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Prompt error with cancel: 'An error has occurred'</string>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Macro "%ExecutingThisMacro%" has encountered an error: %Variable%macrep_result%</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>%ExecutingMacro%</string>
+								<key>Variables</key>
+								<array/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Magenta</string>
+						<key>ActionName</key>
+						<string>Verify that the correct part of the editor is focused</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>ActionName</key>
+								<string>Set 'macrep_objectType' to the currently-focused editor list, if any</string>
+								<key>DisplayKind</key>
+								<string>Variable</string>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteAppleScript</string>
+								<key>Path</key>
+								<string></string>
+								<key>Text</key>
+								<string>activate application "Keyboard Maestro"tell application "System Events"	tell process "Keyboard Maestro"		if focused of scroll area 1 of splitter group 1 of group 1 of window "Keyboard Maestro Editor" is true then return "grouplist"		if focused of scroll area 2 of splitter group 1 of group 1 of window "Keyboard Maestro Editor" is true then return "macrolist"		if focused of scroll area 3 of splitter group 1 of group 1 of window "Keyboard Maestro Editor" is true then return "actionlist"		return ""	end tellend tell</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+								<key>Variable</key>
+								<string>macrep_KMFocusedList</string>
+							</dict>
+							<dict>
+								<key>CaseEntries</key>
+								<array>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Yellow</string>
+												<key>ActionName</key>
+												<string>Make sure the Groups List is focused</string>
+												<key>Conditions</key>
+												<dict>
+													<key>ConditionList</key>
+													<array>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>macrep_KMFocusedList</string>
+															<key>VariableConditionType</key>
+															<string>IsNot</string>
+															<key>VariableValue</key>
+															<string>grouplist</string>
+														</dict>
+													</array>
+													<key>ConditionListMatch</key>
+													<string>All</string>
+												</dict>
+												<key>ElseActionListDisclosed</key>
+												<false/>
+												<key>ElseActions</key>
+												<array/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>IfThenElse</string>
+												<key>ThenActions</key>
+												<array>
+													<dict>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>DeletePastClipboard</string>
+														<key>PastExpression</key>
+														<string>0</string>
+													</dict>
+													<dict>
+														<key>ActionName</key>
+														<string>You must click in the "Groups" list before pasting groups into the editor.</string>
+														<key>Buttons</key>
+														<array>
+															<dict>
+																<key>Button</key>
+																<string>OK</string>
+																<key>Cancel</key>
+																<true/>
+															</dict>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>PromptForUserInput</string>
+														<key>Prompt</key>
+														<string>You must click in the "Groups" list before pasting groups into the editor.</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>Title</key>
+														<string>%ExecutingThisMacro%</string>
+														<key>Variables</key>
+														<array/>
+													</dict>
+												</array>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>group</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Yellow</string>
+												<key>ActionName</key>
+												<string>Make sure the Macros List is focused</string>
+												<key>Conditions</key>
+												<dict>
+													<key>ConditionList</key>
+													<array>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>macrep_KMFocusedList</string>
+															<key>VariableConditionType</key>
+															<string>IsNot</string>
+															<key>VariableValue</key>
+															<string>macrolist</string>
+														</dict>
+													</array>
+													<key>ConditionListMatch</key>
+													<string>All</string>
+												</dict>
+												<key>ElseActionListDisclosed</key>
+												<false/>
+												<key>ElseActions</key>
+												<array/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>IfThenElse</string>
+												<key>ThenActions</key>
+												<array>
+													<dict>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>DeletePastClipboard</string>
+														<key>PastExpression</key>
+														<string>0</string>
+													</dict>
+													<dict>
+														<key>ActionName</key>
+														<string>You must click in the "Macros" list before pasting macros into the editor.</string>
+														<key>Buttons</key>
+														<array>
+															<dict>
+																<key>Button</key>
+																<string>OK</string>
+																<key>Cancel</key>
+																<true/>
+															</dict>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>PromptForUserInput</string>
+														<key>Prompt</key>
+														<string>You must click in the "Macros" list before pasting macros into the editor.</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>Title</key>
+														<string>%ExecutingThisMacro%</string>
+														<key>Variables</key>
+														<array/>
+													</dict>
+												</array>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>macro</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Yellow</string>
+												<key>ActionName</key>
+												<string>Make sure the Actions List is focused</string>
+												<key>Conditions</key>
+												<dict>
+													<key>ConditionList</key>
+													<array>
+														<dict>
+															<key>ConditionType</key>
+															<string>Variable</string>
+															<key>Variable</key>
+															<string>macrep_KMFocusedList</string>
+															<key>VariableConditionType</key>
+															<string>IsNot</string>
+															<key>VariableValue</key>
+															<string>actionlist</string>
+														</dict>
+													</array>
+													<key>ConditionListMatch</key>
+													<string>All</string>
+												</dict>
+												<key>ElseActionListDisclosed</key>
+												<false/>
+												<key>ElseActions</key>
+												<array/>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>IfThenElse</string>
+												<key>ThenActions</key>
+												<array>
+													<dict>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>DeletePastClipboard</string>
+														<key>PastExpression</key>
+														<string>0</string>
+													</dict>
+													<dict>
+														<key>ActionName</key>
+														<string>You must click inside a Macro before pasting actions into the editor.</string>
+														<key>Buttons</key>
+														<array>
+															<dict>
+																<key>Button</key>
+																<string>OK</string>
+																<key>Cancel</key>
+																<true/>
+															</dict>
+														</array>
+														<key>IsDisclosed</key>
+														<false/>
+														<key>MacroActionType</key>
+														<string>PromptForUserInput</string>
+														<key>Prompt</key>
+														<string>You must click inside a Macro before pasting actions into the editor.</string>
+														<key>TimeOutAbortsMacro</key>
+														<true/>
+														<key>Title</key>
+														<string>%ExecutingThisMacro%</string>
+														<key>Variables</key>
+														<array/>
+													</dict>
+												</array>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Is</string>
+										<key>TestValue</key>
+										<string>action</string>
+									</dict>
+									<dict>
+										<key>Actions</key>
+										<array>
+											<dict>
+												<key>ActionColor</key>
+												<string>Red</string>
+												<key>DeviceID</key>
+												<string>SOUNDEFFECTS</string>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PlaySound</string>
+												<key>Path</key>
+												<string>/System/Library/Sounds/Basso.aiff</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>Volume</key>
+												<integer>100</integer>
+											</dict>
+											<dict>
+												<key>ActionColor</key>
+												<string>Red</string>
+												<key>ActionName</key>
+												<string>Prompt error with cancel 'Unexpected ObjectType'</string>
+												<key>Buttons</key>
+												<array>
+													<dict>
+														<key>Button</key>
+														<string>OK</string>
+														<key>Cancel</key>
+														<true/>
+													</dict>
+												</array>
+												<key>IsDisclosed</key>
+												<false/>
+												<key>MacroActionType</key>
+												<string>PromptForUserInput</string>
+												<key>Prompt</key>
+												<string>Unexpected ObjectType '%Variable%macrep_objectType%'.</string>
+												<key>TimeOutAbortsMacro</key>
+												<true/>
+												<key>Title</key>
+												<string>%ExecutingThisMacro%</string>
+												<key>Variables</key>
+												<array/>
+											</dict>
+										</array>
+										<key>ConditionType</key>
+										<string>Otherwise</string>
+										<key>TestValue</key>
+										<string></string>
+									</dict>
+								</array>
+								<key>MacroActionType</key>
+								<string>Switch</string>
+								<key>Source</key>
+								<string>Variable</string>
+								<key>Variable</key>
+								<string>macrep_objectType</string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>Paste</string>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>CutCopyPaste</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>.5</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>DeletePastClipboard</string>
+						<key>PastExpression</key>
+						<string>0</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>Cleanup Variables</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_json</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_KMFocusedList</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_objectType</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_result</string>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>506042882.96038502</real>
+				<key>CustomIconData</key>
+				<string>KMEP-ClipboardAction</string>
+				<key>ModificationDate</key>
+				<real>506568211.671974</real>
+				<key>Name</key>
+				<string>[KM] Macro Repository JSON Paster</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>89382FD6-9DB2-4F31-A986-55CAC2E66CDA</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>KM</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.stairways.keyboardmaestro.editor</string>
+					<key>Name</key>
+					<string>Keyboard Maestro</string>
+					<key>NewFile</key>
+					<string>/Applications/Keyboard Maestro.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>CF50116E-47B9-4929-A637-1B4733232DD3</string>
+		<key>UID</key>
+		<string>C913CB41-43FF-4375-99C4-EE925739BE7D</string>
+	</dict>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>490752742.26498199</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string>Name: Macro Repository Updater
+Version: 0.1.7
+Updated: 2017/01/19 17:05 PST
+By: Dan Thomas
+
+PURPOSE:
+
+Updates the files in th Macro Repository.
+
+USAGE:
+
+YOU MUST CHANGE the first action (magenta-colored) to specify the location of your repository.
+
+VERSION HISTORY:
+0.1.7 - Fixed "compare" issue with CreationDate values of 0.
+0.1.6 -
+  Bug Fix:
+	 ● Fixed an issue with renamed Groups.
+	 ● Only rewrites Group JSON files if the group changes.
+  Improved functionality:
+	 ● The "Please Wait" dialog gets the focus back when the macro is finished (thanks, Tom!).
+0.1.5 - Handle files with leading periods.
+0.1.4 - Really! Don't allow duplicate file names.
+0.1.3 - Don't allow duplicate file names.
+0.1.2	 - During compare, fixed bug with negative numbers.
+0.1.1 - Bug fixes:
+	● During Plist compare, "NSSuperScript" is type "integer", not "real".
+	● Handle issue where an empty "macros" folder is missing, probably due to a VCS not restoring it.
+0.1.0 - Initial Beta version.</string>
+						<key>Title</key>
+						<string>Macro Repository Updater v0.1.7</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string>Copyright (c) 2017 Daniel Thomas
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</string>
+						<key>Title</key>
+						<string>License Agreement / Disclaimer</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Magenta</string>
+						<key>IsActive</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string></string>
+						<key>Variable</key>
+						<string>macrep_repositoryFolderPath</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>Get Repository Folder Path</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>macrep_repositoryFolderPath</string>
+									<key>VariableConditionType</key>
+									<string>IsEmpty</string>
+									<key>VariableValue</key>
+									<string>value</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionName</key>
+								<string>Prompt: 'Please change the macro to specify the correct location of your Repository.'</string>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Please change the macro to specify the correct location of your Repository.
+
+NOTE: All files in this folder may be trashed, so make sure you get it right.</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>%ExecutingThisMacro%</string>
+								<key>Variables</key>
+								<array/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>Buttons</key>
+						<array>
+							<dict>
+								<key>Button</key>
+								<string>OK</string>
+							</dict>
+							<dict>
+								<key>Button</key>
+								<string>Cancel</string>
+								<key>Cancel</key>
+								<true/>
+							</dict>
+						</array>
+						<key>MacroActionType</key>
+						<string>PromptForUserInput</string>
+						<key>Prompt</key>
+						<string>Click 'OK' to update the Macro Repository folder:
+
+%Variable%macrep_repositoryFolderPath%
+
+NOTE:
+
+During this process, the Editor may switch to different macros. This is normal, so don't be concerned.
+
+When the process is finished, the Editor will return to the original macro you were editing.</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>Title</key>
+						<string>Update Macro Repository</string>
+						<key>Variables</key>
+						<array/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Purple</string>
+						<key>ActionName</key>
+						<string>Show the Please Wait dialog</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>&lt;dict&gt;
+		&lt;key&gt;MacroActionType&lt;/key&gt;
+		&lt;string&gt;CustomPrompt&lt;/string&gt;
+		&lt;key&gt;Text&lt;/key&gt;
+		&lt;string&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+	&amp;lt;head&amp;gt;
+		&amp;lt;title&amp;gt;Macro Repository Updater&amp;lt;/title&amp;gt;
+		&amp;lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&amp;gt;
+
+		&amp;lt;!-- ======== Top and Client =============================== --&amp;gt;
+		&amp;lt;style type="text/css"&amp;gt;
+			body {
+				overflow: hidden;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				text-align: center;
+				margin: 0;
+				background: #ececec;
+			}
+
+			#tblPleaseWait {
+				padding: 20px;
+			}
+			#divPleaseWaitMessage {
+				font-size: 20px;
+				font-weight: bold;
+				padding-bottom: 10px;
+			}
+			#divText {
+				font-size: 14px;
+			}
+
+			#tblCompleted {
+				padding-left: 20px;
+				padding-right: 10px;
+				padding-top: 20px;
+				padding-bottom: 10px;
+				width:100%;
+			}
+			#divCompletedMessage {
+				font-size: 20px;
+				font-weight: bold;
+				padding-bottom: 5px;
+			}
+			#divOkButton a {
+				float: right;
+				width: 50px;
+				margin-top:5px;
+			}
+
+			.hidden {
+				display: none;
+			}
+
+			.okButton {
+				box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+				background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+				background-color:#79bbff;
+				border-radius:6px;
+				border:1px solid #84bbf3;
+				display:inline-block;
+				cursor:pointer;
+				color:#ffffff;
+				font-family:Arial;
+				font-size:15px;
+				font-weight:bold;
+				padding:6px 24px;
+				text-decoration:none;
+				text-shadow:0px 1px 0px #528ecc;
+			}
+			.okButton:hover {
+				background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+				background-color:#378de5;
+			}
+			.okButton:active {
+				position:relative;
+				top:1px;
+			}
+
+		&amp;lt;/style&amp;gt;
+
+		&amp;lt;script type="text/javascript"&amp;gt;
+			Node.prototype.toggleClass = function toggleClass(className, include) {
+				var classNames = this.className.split(" ");
+				var index = classNames.indexOf(className);
+				if (include) {
+					if (index &amp;lt; 0) {
+						classNames.push(className);
+					}
+				} else {
+					if (index &amp;gt;= 0) {
+						classNames.splice(index, 1);
+					}
+				}
+				this.className = classNames.join(" ");
+			};
+
+			var _inDevMode = window.KeyboardMaestro.GetVariable("CustomHtmlPrompt_inDevMode") === "1";
+			var _left;
+			var _top;
+			var _width;
+			var _height;
+			var _availWindowWidth;
+			var _availWindowHeight;
+			var _completed;
+			function KMWindow() {
+				document.onkeydown = function(event) {
+					if (event.which == 13 &amp;amp;&amp;amp; _completed) {
+						window.KeyboardMaestro.Cancel("Cancel");
+					}
+				};
+
+				var ani = document.getElementById("ani") ;
+				ani.setAttribute( "src", "data:image/png;base64," +
+					"R0lGODlhGQE/AOcAAAAAAP///5eruD4+PoCSnZKmso6hrZWptneHkYiapT09" +
+					"PTo6Ov7+/jU1NSEhIc7Z4LHAyf7//8/a4bLAyrLBytDb4tng5N3j59bd4dHY" +
+					"3dPa38/X3DExMSQkJCsrKy4uLigoKC3T9paqty7V9yrQ9jHZ+CrO9SjM9A55" +
+					"rizS9yvR9ifK9C3U9+Hm6SnN9S7W+CPE8iTG8jDY+CjL9A11qS/X+CbI8wxx" +
+					"pSXH8w+AtSLC8SDA8CHB8RCEugttoSXF8RCGvAppnRKJvTDU9B+/8BKQxxWV" +
+					"yQ58sRWb0h277h257hai2Qlgkhqx6AplmBem3RaZzRGNxA9+synO9SC+7xed" +
+					"0ROTyh687yLD8v39/eTp7BWe1hGKwR+98Bmt5RSXzSLD8Rik2ZWotROOwhmq" +
+					"4Bii1DDW9h646RSRxImcpw+CuBqt4Rag1fr7+/f4+SzO8hy27C/S9DHY9xyx" +
+					"5CbI9Bip4Rqm1x+25hy37CXI8y7U9Rmp3fj5+hKNwY2jso+ir5OntCjH7yC9" +
+					"7RSSxxy47ivM8fX295Oms4yequru8O7x8oiaphqv5By16Bin3RCDtyK/7iG9" +
+					"6iC66SjK9Bu17By05izQ9Rqo2hOX0B667Kq7xinJ7y3Q9IaYo3iHkt/k6ISV" +
+					"oRwcHOfs7heg0i7R8whZio2grCXH8iTB6yO/6x6x4ibF7inO9hyv4vL09fz8" +
+					"/Ruz6gdPfijK8CbC6/v8/Buq2pCjr4KUn5GksXqKlaS4xdvi5i3R9fDz9BOW" +
+					"zh+04x2u3pKlshus3izU95ywvZ60wiPC7hidzSXD7xOZ0fT19qO2wx6v3/3+" +
+					"/qGzv3+Qm9fe4rzK09Pb36+/ya2+yBgYGJmvvI+mtJSrusDN1rbFztXc4Byr" +
+					"3C3W9x645yrO9iC557TDzVpaWszX332NmLrH0cnW3MTR2cfT28TP15emsKi2" +
+					"v9HZ3rLCzMrV25Got9LZ3goQEZuqtCe53NXe5dXV1eXl5YiZpJepsxuFn9ra" +
+					"2hAeJA1AXxYkKy3F5QAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFMgD/ACwA" +
+					"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");
+
+				var tbl = document.getElementById("tblPleaseWait");
+				_width = 550;
+				_height = 146;
+				document.body.style.width = _width + "px";
+				document.body.style.height = _height + 'px';
+
+				// center on the screen
+				_left = ((window.screen.availWidth - _width) / 2) + window.screen.availLeft;
+				_top = ((window.screen.availHeight - _height) / 2) + window.screen.availTop;
+
+				if (_inDevMode) {
+					setTimeout(function() {
+						showCompleted();
+					}, 4000);
+				}
+
+				return _left + ", " + _top + ", " + _width + ", " + _height;
+			}
+
+			function showCompleted() {
+				document.getElementById("tblPleaseWait").toggleClass("hidden", true);
+				document.getElementById("tblCompleted").toggleClass("hidden", false);
+				var widthAdj = 60;
+				var width = _width - (widthAdj * 2);
+				document.body.style.width = width + "px";
+				window.KeyboardMaestro.ResizeWindow((_left + widthAdj) + ", " + _top + ", " + width + ", " + (_height - 40));
+				_completed = true;
+			}
+		&amp;lt;/script&amp;gt;
+	&amp;lt;/head&amp;gt;
+
+	&amp;lt;body data-kmwindowid="MacroRepositoryPleaseWaitScreen"&amp;gt;
+		&amp;lt;table id="tblPleaseWait"&amp;gt;
+			&amp;lt;tr&amp;gt;
+				&amp;lt;td&amp;gt;
+					&amp;lt;div id="divPleaseWaitMessage" &amp;gt;
+						Please Wait while the Macro Repository is updated...
+					&amp;lt;/div&amp;gt;
+				&amp;lt;/td&amp;gt;
+			&amp;lt;/tr&amp;gt;
+			&amp;lt;tr&amp;gt;
+				&amp;lt;td&amp;gt;
+					&amp;lt;div id="divAni" &amp;gt;
+						&amp;lt;img id="ani" src="data:image/gif;" /&amp;gt;
+					&amp;lt;/div&amp;gt;
+				&amp;lt;/td&amp;gt;
+			&amp;lt;/tr&amp;gt;
+		&amp;lt;/table&amp;gt;
+		&amp;lt;table id="tblCompleted" class="hidden"&amp;gt;
+			&amp;lt;tr&amp;gt;
+				&amp;lt;td&amp;gt;
+					&amp;lt;div id="divCompletedMessage" &amp;gt;
+						Finished!
+					&amp;lt;/div&amp;gt;
+				&amp;lt;/td&amp;gt;
+			&amp;lt;/tr&amp;gt;
+			&amp;lt;tr&amp;gt;
+				&amp;lt;td&amp;gt;
+					&amp;lt;div id="divOkButton" &amp;gt;
+						&amp;lt;a id="btnOK" class="okButton" onclick="window.KeyboardMaestro.Cancel('Cancel')"&amp;gt;OK&amp;lt;/a&amp;gt;
+					&amp;lt;/div&amp;gt;
+				&amp;lt;/td&amp;gt;
+			&amp;lt;/tr&amp;gt;
+		&amp;lt;/table&amp;gt;
+	&amp;lt;/body&amp;gt;
+
+&amp;lt;/html&amp;gt;&lt;/string&gt;
+		&lt;key&gt;TimeOutAbortsMacro&lt;/key&gt;
+		&lt;true/&gt;
+		&lt;key&gt;UseText&lt;/key&gt;
+		&lt;true/&gt;
+&lt;/dict&gt;
+</string>
+								<key>Variable</key>
+								<string>macrep_PleaseWaitDialog</string>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Show the Custom HTML Prompt asynchronously</string>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteAppleScript</string>
+								<key>Path</key>
+								<string></string>
+								<key>Text</key>
+								<string>tell application "Keyboard Maestro Engine"	set _script to getvariable "macrep_PleaseWaitDialog"	ignoring application responses		do script _script	end ignoringend tell</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>Pause</string>
+								<key>Time</key>
+								<string>.5</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>JXA script to update the repository</string>
+						<key>DisplayKind</key>
+						<string>Variable</string>
+						<key>IncludeStdErr</key>
+						<false/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>ExecuteJavaScriptForAutomation</string>
+						<key>Path</key>
+						<string></string>
+						<key>Text</key>
+						<string>(function(inDesignMode, designModeParams) {
+	'use strict';
+
+	// ================== Misc. Prototypes and Polyfills =======================
+	if (!String.prototype.endsWith) {
+		String.prototype.endsWith = function(searchString, position) {
+			var subjectString = this.toString();
+			if (typeof position !== 'number' || !isFinite(position) || Math.floor(position) !== position || position &gt; subjectString.length) {
+				position = subjectString.length;
+			}
+			position -= searchString.length;
+			var lastIndex = subjectString.indexOf(searchString, position);
+			return lastIndex !== -1 &amp;&amp; lastIndex === position;
+		};
+	}
+
+	if (!String.prototype.includes) {
+		String.prototype.includes = function(search, start) {
+			if (typeof start !== 'number') {
+				start = 0;
+			}
+
+			if (start + search.length &gt; this.length) {
+				return false;
+			} else {
+				return this.indexOf(search, start) !== -1;
+			}
+		};
+	}
+
+	if (!String.prototype.startsWith) {
+		String.prototype.startsWith = function(searchString, position) {
+			position = position || 0;
+			return this.substr(position, searchString.length) === searchString;
+		};
+	}
+
+	// ================== Utility Objects ======================================
+	var PathNameUtils = (function() {
+		return {
+			addTrailingSlash: function(path) {
+				return path.endsWith("/") ? path : path + "/";
+			},
+
+			expandLeadingPathTilde: function(path) {
+				return path.startsWith("~") ?
+					ObjC.unwrap($(path).stringByExpandingTildeInPath) :
+					path;
+			},
+
+			makeValidFileName: function(str) {
+				var result = str.replace(/[\/:|"]/g, "_").trim();
+				if (!result)
+					throw Error("'" + str + "' can't be made into a valid file name");
+				return result;
+			},
+		};
+	})();
+
+	var FileUtils = (function() {
+		function _getErrorMessage(nsError, defaultErrorMessage) {
+			var result = "";
+			try {
+				result = $(nsError.localizedDescription).js;
+			} catch (e) {
+			}
+
+			return result || defaultErrorMessage || "Unknown Error";
+		}
+		return {
+			chooseFile: function(prompt, type) {
+				try {
+					var options = {};
+					if (prompt) options.withPrompt = prompt;
+					if (type) options.ofType = type;
+					return this.getCurrentApp().chooseFile(options).toString();
+				} catch (e) {
+					return "";
+				}
+			},
+
+			copyFile: function(fromPath, toPath, throwIfFail) {
+				var error;
+				var result = ObjC.unwrap(
+					$.NSFileManager.defaultManager
+					.copyItemAtPathToPathError(
+						$(fromPath).stringByStandardizingPath,
+						$(toPath).stringByStandardizingPath,
+						error
+					)
+				);
+				if (error || (!result &amp;&amp; throwIfFail))
+					throw Error('Could not copy "' + fromPath + '" to "' + toPath + '"');
+				return result;
+			},
+
+			createFolder: function(path, createIntermediateDirectories) {
+				var error = $();
+				if (!$.NSFileManager.defaultManager
+					.createDirectoryAtPathWithIntermediateDirectoriesAttributesError(
+						$(path).stringByStandardizingPath,
+						createIntermediateDirectories,
+						$(), error)) {
+					throw Error("Could not create folder '" + path + "'");
+				}
+			},
+
+			createFolderIfNeeded: function(path, createIntermediateDirectories) {
+				if (!this.folderExists(path))
+					this.createFolder(path, createIntermediateDirectories);
+			},
+
+			fileExists: function(path) {
+				var result = this.getFileOrFolderExists(path);
+				return result.exists &amp;&amp; result.isFile;
+			},
+
+			folderExists: function(path) {
+				var result = this.getFileOrFolderExists(path);
+				return result.exists &amp;&amp; !result.isFile;
+			},
+
+			getCurrentApp: function() {
+				var app = Application.currentApplication();
+				app.includeStandardAdditions = true;
+				return app;
+			},
+
+			getDirectoryContents: function(strPath, includeSubfolders, includeDotFiles) {
+				var method = includeSubfolders ?
+					"subpathsOfDirectoryAtPathError" :
+					"contentsOfDirectoryAtPathError";
+				var error;
+				var contents =
+					ObjC.deepUnwrap(
+						$.NSFileManager.defaultManager[method](
+							$(strPath)
+							.stringByStandardizingPath, error
+						)
+					);
+				if (error)
+					throw Error('Could not get contents of "' + strPath + '"');
+				if (!contents)
+					contents = [];
+				if (!includeDotFiles) {
+					contents = contents.filter(function(item) {
+						return !item.startsWith(".") &amp;&amp; !item.includes("/.");
+					});
+				}
+				return contents;
+			},
+
+			getFileOrFolderExists: function(path) {
+				var isDirectory = Ref();
+				var exists = $.NSFileManager.defaultManager
+					.fileExistsAtPathIsDirectory(path, isDirectory);
+				return {
+					exists: exists,
+					isFile: isDirectory[0] !== 1
+				};
+			},
+
+			moveFileOrFolder: function(sourcePath, destPath) {
+				var nsError = Ref();
+				var result = $.NSFileManager.defaultManager
+					.moveItemAtPathToPathError($(sourcePath), $(destPath), nsError);
+				if (!result)
+					throw Error(_getErrorMessage(nsError, "Error trying to move '" + sourcePath + "' to '" + destPath + "'"));
+			},
+
+			readAndParseJsonFile: function(path, throwIfNotFound) {
+				var json = this.readTextFile(path, throwIfNotFound);
+				try {
+					return JSON.parse(json);
+				} catch (e) {
+					throw Error("Error parsing JSON file '" + path + "':\n" + e.message);
+				}
+			},
+
+			readTextFile: function(path, throwIfNotFound) {
+				if (!this.fileExists(path)) {
+					if (throwIfNotFound)
+						throw Error("File not found: '" + path + "'");
+					return "";
+				}
+				var nsError = Ref();
+				var result = ObjC.unwrap(
+					$.NSString.stringWithContentsOfFileEncodingError(
+						$(path).stringByStandardizingPath,
+						$.NSUTF8StringEncoding,
+						nsError)
+					);
+				if (!result)
+					throw Error(_getErrorMessage(nsError, "File not found: '" + path + "'"));
+				return result;
+			},
+
+			trashFile: function(path, throwIfFail) {
+				return this.trashFileOrFolder(path, true, throwIfFail);
+			},
+
+			trashFileOrFolder: function(path, isFile, throwIfFail) {
+				var fileOrFolderText = isFile ? "file" : "folder";
+				if (!path)
+					throw Error("Path is required in trashFileOrFolder");
+				if (isFile === undefined)
+					throw Error("isFile is required in trashFileOrFolder");
+
+				if (!isFile &amp;&amp; path.endsWith("/"))
+					path = path.substring(0, path.length - 1);
+
+				var exists = this.getFileOrFolderExists(path);
+				if (!exists.exists)
+					return false;
+				if (exists.isFile !== isFile) {
+					if (throwIfFail)
+						throw Error("Path to be deleted '" + path + "' is not a " + fileOrFolderText);
+					return false;
+				}
+
+				var fileURL = $.NSURL.fileURLWithPathIsDirectory($(path), !isFile);
+				var error;
+				var result = ObjC.unwrap(
+					$.NSFileManager.defaultManager
+					.trashItemAtURLResultingItemURLError(
+						fileURL,
+						null,
+						error
+					)
+				);
+				if (error || (!result &amp;&amp; throwIfFail))
+					throw Error("Could not trash " + fileOrFolderText + "'" + path + "'");
+				return result;
+			},
+
+			trashFolder: function(path, throwIfFail) {
+				return this.trashFileOrFolder(path, false, throwIfFail);
+			},
+
+			writeTextFile: function(text, path) {
+				var nsError = Ref();
+				var str = $.NSString.alloc.initWithUTF8String(text);
+				var result = str.writeToFileAtomicallyEncodingError(
+					$(path).stringByStandardizingPath,
+					true,
+					$.NSUTF8StringEncoding,
+					nsError);
+				if (!result)
+					throw Error(_getErrorMessage(nsError, "Could not write file '" + path + "'"));
+			}
+		};
+	})();
+
+	var PlistUtils = (function() {
+		var _currentApp;
+		var _dataNodeToken = "41E4D515-C065-4C24-9859-EA2479C52CC9";
+
+		var _kmObjectType_action = "action";
+		var _kmObjectType_group = "group";
+		var _kmObjectType_macro = "macro";
+
+		var _kmActionsXmlClipboardStringType = "com.stairways.keyboardmaestro.actionarray";
+		var _kmGroupsXmlClipboardStringType = "com.stairways.keyboardmaestro.macrogroupsarray";
+		var _kmMacrosXmlClipboardStringType = "com.stairways.keyboardmaestro.macrosarray";
+
+		var _kmClipboardStringTypes = {}
+		_kmClipboardStringTypes[_kmObjectType_action] = _kmActionsXmlClipboardStringType;
+		_kmClipboardStringTypes[_kmObjectType_group] = _kmGroupsXmlClipboardStringType;
+		_kmClipboardStringTypes[_kmObjectType_macro] = _kmMacrosXmlClipboardStringType;
+
+		function _cleanupXmlAfterDeserialization(xml) {
+			var result = xml.replace(/&lt;real&gt;(-?\d+)(\.0)?&lt;\/real&gt;/g, "&lt;integer&gt;$1&lt;/integer&gt;");
+			var result = result.replace(/(&lt;key&gt;CreationDate&lt;\/key&gt;[\W]*&lt;)(integer&gt;)(\d+)(&lt;\/integer&gt;)/g, "$1real&gt;$3.0&lt;/real&gt;");
+			var result = result.replace(/(&lt;key&gt;TimeOutPeriod&lt;\/key&gt;[\W]*&lt;)(integer)(&gt;\d+&lt;\/)(integer)(&gt;)/g, "$1real$3real$5");
+			var result = result.replace(/(&lt;key&gt;NSSuperScript&lt;\/key&gt;[\W]*&lt;)(real)(&gt;-?\d+&lt;\/)(real)(&gt;)/g, "$1integer$3integer$5");
+			return result;
+		}
+
+		function _deserializeFromXmlString(xml) {
+			var nsError = $();
+			var result = ObjC.deepUnwrap(
+				$.NSPropertyListSerialization.propertyListWithDataOptionsFormatError(
+					$(xml).dataUsingEncoding($.NSUTF8StringEncoding), 0, 0, nsError));
+			if (!result)
+				throw Error("Could not convert string to plist. Error: " + _getErrorMessage(nsError));
+			return result;
+		}
+
+		function _deTokenizeXmlDataNodes(xml) {
+			var regex = new RegExp("(&lt;string&gt;[\\W]*" + _dataNodeToken + ")", "g");
+			var result = xml.replace(regex, "&lt;data&gt;");
+
+			regex = new RegExp(_dataNodeToken + "[\\W]*&lt;\\/string&gt;", "g");
+			return result.replace(regex, "&lt;/data&gt;");
+		}
+
+		function _getAppSupportFolderName() {
+			if (!_currentApp) {
+				_currentApp = Application.currentApplication();
+				_currentApp.includeStandardAdditions = true;
+			}
+			return _currentApp.pathTo('application support', { from: 'user domain' });
+		}
+
+		function _clipboardContainsType(type) {
+			return _getClipboardTypes().indexOf(type) &gt;= 0;
+		}
+
+		function _getClipboardStringForType(type, throwIfNotFound) {
+			if (_clipboardContainsType(type))
+				return ObjC.unwrap(
+					$.NSPasteboard.generalPasteboard
+					.stringForType(type));
+			if (throwIfNotFound)
+				throw Error("No clipboard data for specified type");
+			return "";
+		}
+
+		function _getClipboardTypes() {
+			var items = $.NSPasteboard.generalPasteboard.pasteboardItems;
+			if (items.count === 0)
+				return [];
+			return ObjC.deepUnwrap(items.js[0].types);
+		}
+
+		function _getErrorMessage(nsError, defaultErrorMessage) {
+			try {
+				return $(nsError.localizedDescription).js;
+			} catch (e) {
+				return defaultErrorMessage || "Unknown Error";
+			}
+		}
+
+		function _getKMClipboardStringTypeForObjectType(objectType) {
+			var result = _kmClipboardStringTypes[objectType];
+			if (!result)
+				throw Error("'" + objectType + "' is not a valid KM Object Type");
+			return result;
+		}
+
+		function _getKMPlistXmlObjectType(xml) {
+			if (xml.indexOf("&lt;key&gt;AddToMacroPalette&lt;/key&gt;") &gt; 0)
+				return _kmObjectType_group;
+			if (xml.indexOf("&lt;key&gt;Triggers&lt;/key&gt;") &gt; 0)
+				return _kmObjectType_macro;
+			return _kmObjectType_action;
+		}
+
+		function _reOrderJsonProperties(json) {
+
+			function moveActionPropertyToTop(jsonArray, propertyName) {
+
+				function findProperty(startingIndex) {
+					for (var i = startingIndex; i &lt; jsonArray.length; i++) {
+						var line = jsonArray[i];
+						var regex = new RegExp('^([\\t]+)"' + propertyName + '":');
+						var match = line.match(regex);
+						if (match) {
+							return {
+								index: i,
+								leadingTabs: match[1]
+							};
+						}
+					}
+					return null;
+				}
+
+				function findActionStartIndex(startingIndex, leadingTabs) {
+					var startingLineRegex = new RegExp("^(" + leadingTabs.substring(0, leadingTabs.length - 1) + "[^\\t])");
+					for (var i = startingIndex - 1; i &gt;= 0; i--) {
+						var line = jsonArray[i];
+						var match = line.match(startingLineRegex);
+						if (match) {
+							if (!match[1].endsWith("{"))
+								return -1;
+							return i + 1;
+						}
+					}
+					return -1;
+				}
+
+				function moveProperty(fromIndex, toIndex) {
+					var endsWithComma = jsonArray[fromIndex].endsWith(",");
+					if (!endsWithComma)
+						jsonArray[fromIndex] = jsonArray[fromIndex] + ",";
+					jsonArray.splice(toIndex, 0, jsonArray.splice(fromIndex, 1)[0]);
+
+					// If we moved the last property of the action, then the new last
+					// property line probably needs to have its trailing comma removed.
+					if (!endsWithComma) {
+						var line = jsonArray[fromIndex];
+						if (line.endsWith(","))
+							jsonArray[fromIndex] = line.substring(0, line.length - 1);
+					}
+				}
+
+				// moveActionPropertyToTop()
+				var i = 0;
+				while (i &lt; jsonArray.length) {
+					var propertyLineInfo = findProperty(i);
+					if (!propertyLineInfo)
+						return;
+					var actionStartIndex = findActionStartIndex(propertyLineInfo.index, propertyLineInfo.leadingTabs);
+					if (actionStartIndex &gt;= 0 &amp;&amp; actionStartIndex &lt; propertyLineInfo.index)
+						moveProperty(propertyLineInfo.index, actionStartIndex);
+
+					i = propertyLineInfo.index + 1;
+				}
+			} // moveActionPropertyToTop()
+
+			// _reOrderJsonProperties()
+			if (json.indexOf("\t") &lt; 0)
+				throw Error("ReOrderJsonProperties expects the JSON parameter to be stringified with tabs");
+			var jsonArray = json.split("\n");
+
+			// NOTE: These are backwards - the one we want top-most is last in the array.
+			["ActionName", "Title", "MacroActionType"].forEach(function(propertyName) {
+				moveActionPropertyToTop(jsonArray, propertyName);
+			});
+			return jsonArray.join("\n");
+		} // _reOrderJsonProperties()
+
+		function _serializeToXmlString(plist) {
+			var data = $.NSPropertyListSerialization.dataWithPropertyListFormatOptionsError(
+				$(plist), $.NSPropertyListXMLFormat_v1_0, 0, null);
+			var nsstring = $.NSString.alloc.initWithDataEncoding(data, $.NSUTF8StringEncoding);
+			var result = $(nsstring).js;
+			return result;
+		}
+
+		function _setClipboardStringForType(str, type) {
+			var clipboard = $.NSPasteboard.generalPasteboard;
+			/*jshint -W030 */
+			clipboard.clearContents;
+			/*jshint +W030 */
+			clipboard.setStringForType($(str), $(type));
+		}
+
+		function _tokenizeXmlDataNodes(xml) {
+			return xml.replace(/(&lt;data&gt;)([\W]*)([^&lt;]*)(&lt;\/data&gt;)/g,
+				"&lt;string&gt;$2" + _dataNodeToken + "$2$3" + _dataNodeToken + "$2&lt;/string&gt;");
+		}
+
+		return {
+			KMObjectType_action: _kmObjectType_action,
+			KMObjectType_group: _kmObjectType_group,
+			KMObjectType_macro: _kmObjectType_macro,
+
+			comparePlistToXmlString: function(plist, origXml, failOptions) {
+				var testXml = this.serializeToXmlString(plist);
+				if (testXml === origXml)
+					return;
+
+				var savedToFile = false;
+				var savedOrigFilePath = null;
+				var savedTestFilePath = null;
+				var defaultFailOptions = this.getComparePlistFailDefaultOptions();
+				if (!failOptions)
+					failOptions = defaultFailOptions;
+
+				if (failOptions &amp;&amp; failOptions.saveFiles) {
+
+					var saveFolderPath = failOptions.saveFolderPath || defaultFailOptions.saveFolderPath;
+					if (saveFolderPath.substring(saveFolderPath.length-1) !== "/")
+						saveFolderPath += "/";
+
+					savedOrigFilePath = saveFolderPath + (failOptions.saveOrigFileName || defaultFailOptions.saveOrigFileName);
+					savedTestFilePath = saveFolderPath + (failOptions.saveTestFileName || defaultFailOptions.saveTestFileName);
+					try {
+						this.writeTextFile(origXml, savedOrigFilePath);
+						this.writeTextFile(testXml, savedTestFilePath);
+						savedToFile = true;
+					} catch (e) {
+					}
+				}
+
+				var errorMessage = failOptions &amp;&amp; failOptions.errorMessage ? failOptions.errorMessage : defaultFailOptions.errorMessage;
+				if (savedToFile)
+					errorMessage = errorMessage +
+						"\nSaved original XML to: '" + savedOrigFilePath + "'" +
+						"\nSaved test XML to: '" + savedTestFilePath + "'";
+				throw Error(errorMessage);
+			},
+
+			convertJsonStringToXmlString: function(json) {
+				var plist = JSON.parse(json);
+				return this.serializeToXmlString(plist);
+			},
+
+			convertXmlStringToJsonString: function(xml) {
+				var plist = this.deserializeFromXmlString(xml);
+				return JSON.stringify(plist, null, "\t");
+			},
+
+			convertXmlStringToJsonStringAndValidate: function(xml, failOptions) {
+				var json = this.convertXmlStringToJsonString(xml);
+				var plist = JSON.parse(json);
+				this.comparePlistToXmlString(plist, xml, failOptions || this.getCompareJsonFailDefaultOptions());
+				return json;
+			},
+
+			createEmptyGroupAction: function(actionName) {
+				return _deserializeFromXmlString(
+					"&lt;plist version='1.0'&gt; \n" +
+					"&lt;dict&gt; \n" +
+					"	&lt;key&gt;" + (actionName || "") + "&lt;/key&gt; \n" +
+					"	&lt;string&gt;Installer&lt;/string&gt; \n" +
+					"	&lt;key&gt;Actions&lt;/key&gt; \n" +
+					"	&lt;array/&gt; \n" +
+					"	&lt;key&gt;MacroActionType&lt;/key&gt; \n" +
+					"	&lt;string&gt;Group&lt;/string&gt; \n" +
+					"	&lt;key&gt;TimeOutAbortsMacro&lt;/key&gt; \n" +
+					"	&lt;true/&gt; \n" +
+					"&lt;/dict&gt; \n" +
+					"&lt;/plist&gt;");
+			},
+
+			deserializeFromXmlFile: function(path) {
+				return this.deserializeFromXmlString(this.readTextFile(path));
+			},
+
+			deserializeFromXmlFileAndValidate: function(path, failOptions) {
+				return this.deserializeFromXmlStringAndValidate(this.readTextFile(path), failOptions);
+			},
+
+			deserializeFromXmlString: function(xml) {
+				var result = _tokenizeXmlDataNodes(xml);
+				return _deserializeFromXmlString(result);
+			},
+
+			deserializeFromXmlStringAndValidate: function(xml, failOptions) {
+				var result = this.deserializeFromXmlString(xml);
+				this.comparePlistToXmlString(result, xml, failOptions);
+				return result;
+			},
+
+			deserializeKMAllMacrosSourceFile: function() {
+				var xml = this.readKMAllMacrosSourceFileAsXml();
+				return this.deserializeFromXmlString(xml);
+			},
+
+			deserializeKMAllMacrosSourceFileAndValidate: function(failOptions) {
+				var xml = this.readKMAllMacrosSourceFileAsXml();
+				return this.deserializeFromXmlStringAndValidate(xml, failOptions);
+			},
+
+			getCompareJsonFailDefaultOptions: function() {
+				return {
+					errorMessage: "Plist-to-JSON Conversion Error: Converted JSON back to XML, does not match Original XML.",
+					saveFiles: true,
+					saveFolderPath: "/tmp/",
+					saveOrigFileName: "PlistUtils_CompareFailure_Original.plist",
+					saveTestFileName: "PlistUtils_CompareFailure_Test.plist"
+				};
+			},
+
+			getComparePlistFailDefaultOptions: function() {
+				return {
+					errorMessage: "Plist Conversion Error: Converted Plist does not match Original XML.",
+					saveFiles: true,
+					saveFolderPath: "/tmp/",
+					saveOrigFileName: "PlistUtils_CompareFailure_Original.plist",
+					saveTestFileName: "PlistUtils_CompareFailure_Test.plist"
+				};
+			},
+
+			getInitialCommentFromMacro: function(macro) {
+				var results = [];
+				if (!macro.Actions || macro.Actions.length === 0)
+					return null;
+
+				var action = macro.Actions[0];
+				if (action.MacroActionType !== "Comment")
+					return null;
+
+				return {
+					name: action.ActionName || action.Title || "",
+					title: action.Title || "",
+					text: action.Text || ""
+				};
+			},
+
+			getKMActionsXmlFromClipboard(throwIfNotFound) {
+				return _getClipboardStringForType(_kmActionsXmlClipboardStringType, throwIfNotFound);
+			},
+
+			getKMClipboardStringTypeForObjectType: function(objectType) {
+				var result = _kmClipboardStringTypes[objectType];
+				if (!result)
+					throw Error("'" + objectType + "' is not a valid KM Object Type");
+				return result;
+			},
+
+			getKMGroupsXmlFromClipboard(throwIfNotFound) {
+				return _getClipboardStringForType(_kmGroupsXmlClipboardStringType, throwIfNotFound);
+			},
+
+			getKMMacrosXmlFromClipboard(throwIfNotFound) {
+				return _getClipboardStringForType(_kmMacrosXmlClipboardStringType, throwIfNotFound);
+			},
+
+			getKMPlistXmlObjectType: function(xml) {
+				return _getKMPlistXmlObjectType(xml);
+			},
+
+			// File must contain one macro only, or exception is thrown.
+			getMacroFromKMMacrosFile: function(path) {
+				var plist = this.deserializeFromXmlFile(path);
+				if (!plist)
+					throw Error("Could not read file '" + path + "'");
+				if (plist.length === 0)
+					throw Error("No macros were found in '" + path + "'");
+				if (plist.length &gt; 1)
+					throw Error("Multiple macros were found in '" + path + "'");
+				var group = plist[0];
+
+				if (!group.Macros || group.Macros.count === 0)
+					throw Error("No macros were found in '" + path + "'");
+				if (group.Macros.length &gt; 1)
+					throw Error("Multiple macros were found in '" + path + "'");
+				return group.Macros[0];
+			},
+
+			readKMAllMacrosSourceFileAsXml: function() {
+				var path = _getAppSupportFolderName() + "/Keyboard Maestro/Keyboard Maestro Macros.plist";
+
+				var nsError = $();
+				var fileData = $.NSData.dataWithContentsOfFileOptionsError(
+					$(path).stringByStandardizingPath, 0, nsError);
+				if (!fileData)
+					throw Error(_getErrorMessage(nsError));
+
+				nsError = $();
+				var plistData = $.NSPropertyListSerialization.propertyListWithDataOptionsFormatError(
+					fileData, $.NSPropertyListImmutable, 0, nsError);
+				if (!plistData)
+					throw Error(_getErrorMessage(nsError));
+
+				nsError = $();
+				var xmlData = $.NSPropertyListSerialization.dataWithPropertyListFormatOptionsError(
+					plistData, $.NSPropertyListXMLFormat_v1_0, 0, nsError);
+				if (!xmlData)
+					throw Error(_getErrorMessage(nsError));
+
+				return $($.NSString.alloc.initWithDataEncoding(xmlData, $.NSUTF8StringEncoding)).js;
+			},
+
+			readTextFile: function(path) {
+				var error;
+				var str = ObjC.unwrap(
+					$.NSString.stringWithContentsOfFileEncodingError(
+						$(path).stringByStandardizingPath,
+						$.NSUTF8StringEncoding,
+						error
+					)
+				);
+				if (error)
+					throw Error('Could not read file "' + path + '"');
+				return str;
+			},
+
+			reOrderJsonProperties: function(json) {
+				return _reOrderJsonProperties(json);
+			},
+
+			serializeToXmlFile: function(obj, path) {
+				var str = serializeToXmlString(obj);
+				writeTextFile(str, path);
+			},
+
+			serializeToXmlString: function(obj) {
+				var str = _serializeToXmlString(obj);
+				str = _cleanupXmlAfterDeserialization(str);
+				return _deTokenizeXmlDataNodes(str);
+			},
+
+			setClipboardToKMPlistXml: function(xml) {
+				var objectType = _getKMPlistXmlObjectType(xml);
+				var clipboardStringType = _getKMClipboardStringTypeForObjectType(objectType);
+				_setClipboardStringForType(xml, clipboardStringType);
+				return objectType;
+			},
+
+			writeTextFile: function(text, path) {
+				var str = $.NSString.alloc.initWithUTF8String(text);
+				var result = str.writeToFileAtomicallyEncodingError(
+					$(path).stringByStandardizingPath,
+					true,
+					$.NSUTF8StringEncoding,
+					null);
+				if (!result)
+					throw Error("Could not write file '" + path + "'");
+			}
+		};
+	})();
+
+	function UITextFieldWrapper(app, appProc, textField) {
+		// ======= Private Members ======================================
+		var _app = app;
+		var _appProc = appProc;
+		var _textField = textField;
+		var _activationTimeout = 1000;
+
+		function _activate() {
+			if (_appProc.frontmost())
+				return;
+			_app.activate();
+			var startTime = Date.now();
+			while (!_appProc.frontmost()) {
+				if (Date.now() - startTime &gt; _activationTimeout)
+					throw Error("Timeout bringing app to the front");
+				delay(0.001);
+			}
+		}
+
+		// ======= Public Members ======================================
+		this.getValue = function() {
+			_activate();
+			return _textField.value();
+		};
+
+		this.getFocused = function() {
+			_activate();
+			return _textField.focused();
+		};
+
+		this.setFocus = function() {
+			_activate();
+			_textField.focused = true;
+		};
+	}
+
+	var KMEditor = (function() {
+		var _editorApp;
+		var _editorProc;
+		var _macroOrGroupNameTextField;
+
+		function _getEditorApp() {
+			if (!_editorApp)
+				_editorApp = Application("Keyboard Maestro");
+			if (!_editorApp.running())
+				_editorApp.activate();
+			return _editorApp;
+		}
+
+		function _getEditorProc() {
+			if (!_editorProc) {
+				_editorApp.activate();
+				_editorProc = Application("System Events").processes["Keyboard Maestro"];
+			}
+			return _editorProc;
+		}
+
+		return {
+			activate: function() {
+				_getEditorApp().activate();
+				var startTime = Date.now();
+				while (!_getEditorProc().frontmost()) {
+					if (Date.now() - startTime &gt; _activationTimeout)
+						throw Error("Timeout activating Keyboard Maestro");
+					delay(0.001);
+				}
+			},
+
+			deleteMacro: function(uuidOrUniqueName) {
+				_getEditorApp().deletemacro(uuidOrUniqueName);
+			},
+
+			deleteMacroGroup: function(uuidOrUniqueName) {
+				_getEditorApp().deletemacrogroup(uuidOrUniqueName);
+			},
+
+			editMacro: function(uuidOrUniqueName) {
+				_getEditorApp().editmacro(uuidOrUniqueName);
+			},
+
+			enableMacroOrGroup: function(uuidOrUniqueName, enable) {
+				_getEditorApp().setmacroenable(uuidOrUniqueName, { enable: enable });
+			},
+
+			getEditorApp: function() {
+				return _getEditorApp();
+			},
+
+			getSelectedMacrosOrGroups: function() {
+				return _getEditorApp().selectedmacros();
+			},
+
+			importMacros: function(pathOrPlist) {
+				_getEditorApp().importmacros(pathOrPlist);
+			},
+
+			reload: function() {
+				_getEditorApp().reload();
+			},
+
+			UI_getEditorProcess: function() {
+				return _getproc();
+			},
+
+			UI_getMacroOrGroupNameTextField: function() {
+				if (!_macroOrGroupNameTextField) {
+					var proc = _getEditorProc();
+					_macroOrGroupNameTextField = new UITextFieldWrapper(
+						_getEditorApp(), proc,
+						proc.windows[0].groups[0].splitterGroups[0].scrollAreas[2].textFields[0]);
+				}
+				return _macroOrGroupNameTextField;
+			},
+		};
+	})();
+
+	var KMEngine = (function() {
+		var _engineApp;
+
+		function _escapeXml(str) {
+		    return str.replace(/[&lt;&gt;&amp;'"]/g, function (c) {
+		        switch (c) {
+		            case '&lt;': return '&amp;lt;';
+		            case '&gt;': return '&amp;gt;';
+		            case '&amp;': return '&amp;amp;';
+		            case '\'': return '&amp;apos;';
+		            case '"': return '&amp;quot;';
+		        }
+		    });
+		}
+
+		function _replaceAll(str, find, replace) {
+			return str.replace(new RegExp(_escapeXml(find), 'g'), replace);
+		}
+
+		return {
+			deleteVariable: function(name) {
+				this.setVariable(name, "%Delete%");
+			},
+
+			doScript: function(uuidOrUniqueNameOrScript, parameter, timeout) {
+				if (parameter) {
+					if (timeout) {
+						this.getEngineApp().doScript(uuidOrUniqueNameOrScript, { withParameter: parameter }, { timeout: timeout });
+					} else {
+						this.getEngineApp().doScript(uuidOrUniqueNameOrScript, { withParameter: parameter });
+					}
+				} else {
+					if (timeout) {
+						this.getEngineApp().doScript(uuidOrUniqueNameOrScript, { timeout: timeout });
+					} else {
+						this.getEngineApp().doScript(uuidOrUniqueNameOrScript);
+					}
+				}
+			},
+
+			getEngineAppName: function() {
+				return "Keyboard Maestro Engine";
+			},
+
+			getEngineApp: function() {
+				if (!_engineApp)
+					_engineApp = Application(this.getEngineAppName());
+				return _engineApp;
+			},
+
+			getVariable: function(name, required) {
+				var result;
+				if (inDesignMode &amp;&amp; designModeParams)
+					result = designModeParams[name];
+				if (result === undefined)
+					result = this.getEngineApp().getvariable(name);
+				if (!result &amp;&amp; required)
+					throw Error("Variable '" + name + "' is empty");
+				return result;
+			},
+
+			setVariable: function(name, value) {
+				this.getEngineApp().setvariable(name, {
+					to: value
+				});
+			},
+		};
+	})();
+
+	// ================== Helper Functions =====================================
+	function compareForSort(a, b) {
+		return a &lt; b ? -1 : a &gt; b ? 1 : 0;
+	}
+
+	function checkForDuplicateNames(list, type) {
+		var fileNames = [];
+		var uidProp = type + "UID";
+		var fileNameProp = type + "Name";
+		var desc = type.substring(0, 1).toUpperCase() + type.substring(1);
+		list.forEach(function(item) {
+			var fileName = item[fileNameProp];
+			if (fileNames.indexOf(fileName) &gt;= 0) {
+				KMEditor.editMacro(item[uidProp]);
+				throw Error("You have more than one " + desc + " that will end up with the same file name. Please rename them so this doesn't happen.\n\n" +
+					"The editor is now focused on one of the " + desc + "s.");
+			}
+			fileNames.push(fileName);
+		});
+	}
+
+	// Macros are stored in the repository as a JSON file with an array of one
+	// item. This makes them easy to convert and paste into KM.
+	function readAndParseMacroJsonFile(path) {
+		return FileUtils.readAndParseJsonFile(path, true);
+		// var obj = FileUtils.readAndParseJsonFile(path, true);
+		// if (!Array.isArray(obj))
+		// 	throw Error("Expected Macro JSON file to contain array of objects: '" + path + "'");
+		// if (obj.length !== 1)
+		// 	throw Error("Expected Macro JSON file to contain array of 1 macros, found " + obj.length + "macros.\nFile: '" + path + "'");
+		// return obj[0];
+	}
+
+	// Does a normal JSON.stringify, then manipulates the JSON string to put
+	// certain Action properties at the top, to make it easier to read.
+	function jsonStringifyMacro(macro) {
+		return PlistUtils.reOrderJsonProperties(JSON.stringify(macro, null, "\t"));
+	}
+
+	// Determine the marco name that is usually displayed to the user. the
+	// macro's name property could be blank, and there's a series of fallbacks
+	// to come up with the name. If they don't work, we try to get the name
+	// from the KM Editor by focusing the the macro in the editor, and copying
+	// the name from the Editor Name text box.
+	function getMacroName(macro) {
+		if (macro.Name)
+			return macro.Name;
+		if (macro.Actions.length === 0)
+			return "Untitled Macro";
+
+		KMEditor.editMacro(macro.UID);
+		var macroName = KMEditor.UI_getMacroOrGroupNameTextField().getValue();
+		if (!macroName)
+			throw Error("Could not determine macro name for the macro currently focused in the editor");
+		return macroName;
+	}
+
+	// Make a file name without troublesome characters. Also, if it starts with
+	// a period, add a leading "_", so we don't conflict with hidden files/folders
+	// like Git's hidden .Git folder.
+	function makeRepositoryFileName(str) {
+		var result = PathNameUtils.makeValidFileName(str);
+		if (result.startsWith("."))
+			result = "_" + result;
+		return result;
+	}
+
+	// An object with various path names, based on the specified groupFileName.
+	function GroupPathNames(groupFileName, repositoryFolderPath) {
+		this.groupFileName = groupFileName;
+		this.groupFolderPath = repositoryFolderPath + groupFileName + "/";
+		this.groupJsonFilePath = this.groupFolderPath + groupFileName + ".json";
+		this.macrosFolderPath = this.groupFolderPath + "macros/";
+
+		this.setGroupStagingPaths = function(groupUID) {
+			this.groupFolderPath = repositoryFolderPath + groupFileName + "." + groupUID + "/";
+			this.groupJsonFilePath = this.groupFolderPath + groupFileName + ".json";
+			this.macrosFolderPath = this.groupFolderPath + "macros/";
+		};
+
+		this.makeMacroJsonFilePath = function(macroFileName) {
+			if (!macroFileName.toLowerCase().endsWith(".json"))
+				macroFileName += ".json";
+			return this.macrosFolderPath + macroFileName;
+		};
+
+		this.makeStagingMacroJsonFilePath = function(macroFileName, macroUID) {
+			if (!macroFileName.toLowerCase().endsWith(".json"))
+				macroFileName += ".json";
+			return this.macrosFolderPath + macroFileName + "." + macroUID;
+		};
+	}
+
+	// This Iterator class makes it easier to move through the items in two
+	// different arrays, and keep track of the current index and whether we're
+	// past the end of the array or not.
+	function ArrayIterator(array) {
+		var _array = array || [];
+		var _arrayIndex = 0;
+
+		this.current = function() {
+			return _arrayIndex &lt; _array.length ? _array[_arrayIndex] : null;
+		};
+
+		// Yes, we're dealing with arrays not files, so this should
+		// probably be "eoa" not "eof", but "eof" is more understandable.
+		this.eof = function() {
+			return _arrayIndex &gt;= _array.length;
+		};
+
+		this.moveNext = function() {
+			_arrayIndex++;
+		};
+	}
+
+	// This is used to store file and folder names that need to be renamed when
+	// a process has been completed.
+	function RenamePathsList() {
+		var _items = [];
+
+		this.add = function(fromPath, toPath) {
+			_items.push({
+				fromPath: fromPath,
+				toPath: toPath
+			});
+		};
+
+		this.doRenames = function(ignoreErrors) {
+			_items.forEach(function(item) {
+				try {
+					FileUtils.moveFileOrFolder(item.fromPath, item.toPath);
+				} catch (e) {
+					if (!ignoreErrors) {
+						throw e;
+					}
+				}
+			});
+		};
+	}
+
+	// =================== Main Logic ==========================================
+
+	// Returns an object with information about all of the KM Groups and Macros,
+	// from Keyboard Maestro's Macros Plist file.
+	//
+	// The Groups and Macros are sorted by UID, so we can compare to the existing
+	// repository items, and be able to do renames properly.
+	//
+	// The results include a field called "plistSortOrder". This allows us to know
+	// the exact order the groups and macros appeared in the KM plist file, so we
+	// can rebuild the plist xml string from the repository files, and compare
+	// it to the actual plist XML string, to make sure we didn't do something wrong.
+	function GetKMMacrosInfo(xml, repositoryFolderPath) {
+		var kmMacrosInfo = {};
+		var plist = PlistUtils.deserializeFromXmlStringAndValidate(xml);
+		var groupSortOrder = 0;
+		kmMacrosInfo.groupInfoList = plist.MacroGroups.map(function(group) {
+			var groupInfo = {
+				groupName: group.Name,
+				groupFileName: makeRepositoryFileName(group.Name),
+				groupUID: group.UID,
+				plistSortOrder: groupSortOrder++
+			};
+			if (group.Macros) {
+				var macroSortOrder = 0;
+				groupInfo.macroInfoList = group.Macros.map(function(macro) {
+					var macroName = getMacroName(macro);
+					return {
+						macroName: macroName,
+						macroFileName: makeRepositoryFileName(macroName),
+						macroUID: macro.UID,
+						plistSortOrder: macroSortOrder++,
+						modificationDate: macro.ModificationDate,
+						json: jsonStringifyMacro(macro)
+					};
+				});
+
+				groupInfo.macroInfoList.sort(function(a, b) {
+					return compareForSort(a.macroUID, b.macroUID);
+				});
+				checkForDuplicateNames(groupInfo.macroInfoList, "macro");
+
+				group.Macros = []; // don't store the actual groups in the JSON
+			}
+			groupInfo.json = JSON.stringify(group, null, "\t");
+
+			return groupInfo;
+		});
+
+		kmMacrosInfo.groupInfoList.sort(function(a, b) {
+			return compareForSort(a.groupUID, b.groupUID);
+		});
+		checkForDuplicateNames(kmMacrosInfo.groupInfoList, "group");
+
+		return kmMacrosInfo;
+	}
+
+	// Returns an object with info about all the Groups and Macros in the Repository.
+	// The Group and Macro items are sorted by UID, so we can compare them to the
+	// values we get from KM's All Macros file, and be able to do renames property.
+	function getRepositoryInfo(repositoryFolderPath) {
+		var repositoryInfo = {};
+		var groupFolderNames = FileUtils.getDirectoryContents(repositoryFolderPath)
+			.filter(function(folderName) {
+				return FileUtils.folderExists(repositoryFolderPath + folderName);
+			});
+		repositoryInfo.groupInfoList = groupFolderNames.map(function(groupFolderName) {
+			var paths = new GroupPathNames(groupFolderName, repositoryFolderPath);
+
+			var groupJson = FileUtils.readTextFile(paths.groupJsonFilePath, true);
+			var group;
+			try {
+				group = JSON.parse(groupJson);
+			} catch (e) {
+				throw Error("Error parsing JSON file '" + paths.groupJsonFilePath + "':\n" + e.message);
+			}
+
+			var groupInfo = {
+				groupFileName: groupFolderName,
+				groupUID: group.UID,
+				json: groupJson
+			};
+			if (FileUtils.folderExists(paths.macrosFolderPath)) {
+				var macroJsonFileNames = FileUtils.getDirectoryContents(paths.macrosFolderPath)
+					.filter(function(fileName) {
+						return fileName.toLowerCase().endsWith(".json");
+					});
+				groupInfo.macroInfoList = macroJsonFileNames.map(function(macroFileName) {
+					var macro = readAndParseMacroJsonFile(paths.makeMacroJsonFilePath(macroFileName));
+					return {
+						macroFileName: macroFileName,
+						macroUID: macro.UID,
+						modificationDate: macro.ModificationDate
+					};
+				});
+
+				groupInfo.macroInfoList.sort(function(a, b) {
+					return compareForSort(a.macroUID, b.macroUID);
+				});
+			}
+
+			return groupInfo;
+		});
+
+		repositoryInfo.groupInfoList.sort(function(a, b) {
+			return compareForSort(a.groupUID, b.groupUID);
+		});
+
+		return repositoryInfo;
+	}
+
+	// This updates the Groups, Macros and files in the Repository with changes
+	// from the KM All Macros info.
+	//
+	// Note that "updated" macros are identified by the whether the ModificationDate
+	// properties match or not.
+	//
+	// This does a basic match/marge based on Group and Macro UIDs, and handes
+	// new or deleted Groups and Macros, as well as renamed Groups and Macros.
+	function updateRepository(kmMacrosInfo, repositoryInfo, repositoryFolderPath) {
+		var _renameGroupStagingPathsList;
+
+		// Compares two "info" objects, which contain UID properties. Basically,
+		// this returns 0 if both "info" objects exist, and their UIDs match.
+		// Otherwise, if returns -1 if "info1" is the object we should process,
+		// or +1 if "info2" is the object we should process, taking into account
+		// UIDs and whether either "info" object is null or not.
+		function compareInfoUIDs(info1, info2, uidPropertyName) {
+			// This will never happen, unless we mess up the code that calls this function.
+			if (!info1 &amp;&amp; !info2)
+				throw Error("Logic Error: Both parameters to 'CompareInfoUIDs()' can't be null.");
+
+			if (!info2)
+				return -1;
+			if (!info1)
+				return 1;
+			return compareForSort(info1[uidPropertyName], info2[uidPropertyName]);
+		}
+
+		// The same Group UID exists omn both the Repository and the current KM Macros,
+		// so we update the group and its contents as needed, handling renames,
+		// new/deleted macros, etc.
+		function updateGroupInfo(groupInfo, repositoryGroupInfo, repositoryFolderPath) {
+			var paths = new GroupPathNames(groupInfo.groupFileName, repositoryFolderPath);
+
+			// If the group has been renamed, rename the folder, and delete the
+			// old "group.json" file -- we'll write the new file, below.
+			var deletedGroupJsonFile = false;
+			if (groupInfo.groupFileName !== repositoryGroupInfo.groupFileName) {
+				var renameToPath = paths.groupFolderPath;
+				paths.setGroupStagingPaths(groupInfo.groupUID);
+				_renameGroupStagingPathsList.add(paths.groupFolderPath,renameToPath);
+
+				var oldPaths = new GroupPathNames(repositoryGroupInfo.groupFileName, repositoryFolderPath);
+				FileUtils.trashFile(oldPaths.groupJsonFilePath, true);
+				deletedGroupJsonFile = true;
+				FileUtils.moveFileOrFolder(oldPaths.groupFolderPath, paths.groupFolderPath);
+			}
+
+			if (deletedGroupJsonFile || groupInfo.json !== repositoryGroupInfo.json)
+				FileUtils.writeTextFile(groupInfo.json, paths.groupJsonFilePath);
+
+			// This handles an outlier condition where the Macros folder on disk
+			// got removed, which can happen if it was empty and you used a VCS
+			// that doesn't store empty folders.
+			if (groupInfo.macroInfoList &amp;&amp; !repositoryGroupInfo.macroInfoList) {
+				if (!FileUtils.folderExists(paths.macrosFolderPath)) {
+					FileUtils.createFolder(paths.macrosFolderPath);
+					repositoryGroupInfo.macroInfoList = [];
+				}
+			}
+
+			// If there's no Macros array/folder, we're done. But make sure both
+			// groups don't have one.
+			if (!groupInfo.macroInfoList || !repositoryGroupInfo.macroInfoList) {
+				if (groupInfo.macroInfoList)
+					throw Error("Plist Group '" + groupInfo.groupName + "' has a Macros array, but the Repository doesn't have a Macros folder.");
+				if (repositoryGroupInfo.macroInfoList)
+					throw Error("Repository Group '" + repositoryGroupInfo.groupFileName + "' does not have a Macros folder, but the Plist Group has a Macros array.");
+				return;
+			}
+
+			// Walk through the current Macros in this group (if any), and compare
+			// them to the existing Macros in the repository (if any), and add,
+			// delete, update, and rename as necessary.
+			var macrosIterator = new ArrayIterator(groupInfo.macroInfoList);
+			var repositoryMacrosIterator = new ArrayIterator(repositoryGroupInfo.macroInfoList);
+			var renameMacroStagingPathsList = new RenamePathsList();
+			var errorOccurred = false;
+			try {
+				while (!macrosIterator.eof() || !repositoryMacrosIterator.eof()) {
+					var macroInfo = macrosIterator.current();
+					var repositoryMacroInfo = repositoryMacrosIterator.current();
+
+					// Add, Delete or Update as needed.
+					var jsonFilePath;
+					switch (compareInfoUIDs(macroInfo, repositoryMacroInfo, "macroUID")) {
+						case -1:
+							jsonFilePath = paths.makeStagingMacroJsonFilePath(macroInfo.macroFileName, macroInfo.macroUID);
+							renameMacroStagingPathsList.add(jsonFilePath, paths.makeMacroJsonFilePath(macroInfo.macroFileName));
+							FileUtils.writeTextFile(macroInfo.json, jsonFilePath);
+							macrosIterator.moveNext();
+							break;
+						case 1:
+							FileUtils.trashFile(paths.makeMacroJsonFilePath(repositoryMacroInfo.macroFileName));
+							repositoryMacrosIterator.moveNext();
+							break;
+						case 0:
+							var macroFilePath = paths.makeMacroJsonFilePath(macroInfo.macroFileName);
+							var repositoryMacroFilePath = paths.makeMacroJsonFilePath(repositoryMacroInfo.macroFileName);
+
+							// If the macro's name or ModificationDate has changed, delete
+							// the old macro file and write the new one.
+							if (macroFilePath !== repositoryMacroFilePath || macroInfo.modificationDate !== repositoryMacroInfo.modificationDate) {
+								FileUtils.trashFile(repositoryMacroFilePath);
+								jsonFilePath = paths.makeStagingMacroJsonFilePath(macroInfo.macroFileName, macroInfo.macroUID);
+								renameMacroStagingPathsList.add(jsonFilePath, paths.makeMacroJsonFilePath(macroInfo.macroFileName));
+								FileUtils.writeTextFile(macroInfo.json, jsonFilePath);
+							}
+							macrosIterator.moveNext();
+							repositoryMacrosIterator.moveNext();
+							break;
+						default:
+							throw Error("Unexpected result from 'compareInfoMacroUIDs()'.");
+					}
+				}
+			} catch (e) {
+				errorOccurred = true;
+			} finally {
+				renameMacroStagingPathsList.doRenames(errorOccurred);
+			}
+		}
+
+		// Writes out the Group and Macro info for a new Group that isn't in the Repository.
+		function writeInfoForNewGroup(groupInfo, repositoryFolderPath) {
+			var paths = new GroupPathNames(groupInfo.groupFileName, repositoryFolderPath);
+
+			var renameToPath = paths.groupFolderPath;
+			paths.setGroupStagingPaths(groupInfo.groupUID);
+			_renameGroupStagingPathsList.add(paths.groupFolderPath,renameToPath);
+
+			FileUtils.createFolder(paths.groupFolderPath);
+			FileUtils.writeTextFile(groupInfo.json, paths.groupJsonFilePath);
+			if (groupInfo.macroInfoList) {
+				FileUtils.createFolderIfNeeded(paths.macrosFolderPath);
+				groupInfo.macroInfoList.forEach(function(macroInfo) {
+					FileUtils.writeTextFile(macroInfo.json, paths.makeMacroJsonFilePath(macroInfo.macroFileName));
+				});
+			}
+		}
+
+		// updateRepository()
+		FileUtils.createFolderIfNeeded(repositoryFolderPath);
+
+		// Walk through the current Groups, and compare them to the existing Groups
+		// in the repository, and add, delete, update, and rename as necessary.
+		var groupsIterator = new ArrayIterator(kmMacrosInfo.groupInfoList);
+		var repositoryGroupsIterator = new ArrayIterator(repositoryInfo.groupInfoList);
+		_renameGroupStagingPathsList = new RenamePathsList();
+		var errorOccurred = false;
+		try {
+			while (!groupsIterator.eof() || !repositoryGroupsIterator.eof()) {
+				var groupInfo = groupsIterator.current();
+				var repositoryGroupInfo = repositoryGroupsIterator.current();
+
+				switch (compareInfoUIDs(groupInfo, repositoryGroupInfo, "groupUID")) {
+					case -1:
+						writeInfoForNewGroup(groupInfo, repositoryFolderPath);
+						groupsIterator.moveNext();
+						break;
+					case 1:
+						var repositoryPaths = new GroupPathNames(repositoryGroupInfo.groupFileName, repositoryFolderPath);
+						FileUtils.trashFolder(repositoryPaths.groupFolderPath);
+						repositoryGroupsIterator.moveNext();
+						break;
+					case 0:
+						updateGroupInfo(groupInfo, repositoryGroupInfo, repositoryFolderPath);
+						groupsIterator.moveNext();
+						repositoryGroupsIterator.moveNext();
+						break;
+					default:
+						throw Error("Unexpected result from 'compareInfoMacroUIDs()'.");
+				}
+			}
+		} catch (e) {
+			errorOccurred = true;
+			throw e;
+		} finally {
+			_renameGroupStagingPathsList.doRenames(errorOccurred);
+		}
+	} // updateRepository()
+
+	// Now we rebuild the plist XML string, sand compare it to the original.
+	// NOTE: The only reason we pass "kmMacrosInfo" into this function is because
+	// it contains the sort orders for the groups and macros, so we can reproduce
+	// the XML string in the correct order. We don't use it for anything else here.
+	function compareResults(kmMacrosInfo, repositoryFolderPath, origXml) {
+
+		function findGroupInfo(groupUID, groupName) {
+			var groupInfo = kmMacrosInfo.groupInfoList.find(function(info) {
+				return info.groupUID === groupUID;
+			});
+			if (groupInfo)
+				return groupInfo;
+			throw Error("Unable to find Group '" + groupName + "' (" + groupUID + ") in kmMacrosInfo");
+		}
+
+		function findMacroInfo(groupInfo, macroUID, macroName) {
+			var macroInfo = groupInfo.macroInfoList.find(function(info) {
+				return info.macroUID === macroUID;
+			});
+			if (macroInfo)
+				return macroInfo;
+			throw Error("Unable to find Macro '" + macroName + "' (" + macroUID + ") in kmMacrosInfo");
+		}
+
+		// Take all the files and folders in the Repository, and rebuild the KM All Macros
+		// XML file, so we can compare it to the existing values and make sure we've
+		// handled all the groups and macros.
+		function rebuildPlistXmlFromJsonFiles() {
+			var plist = {
+				MacroDefaultsVersion: 70
+			};
+			var groupFolderNames = FileUtils.getDirectoryContents(repositoryFolderPath)
+				.filter(function(folderName) {
+					return FileUtils.folderExists(repositoryFolderPath + folderName);
+				});
+			plist.MacroGroups = groupFolderNames.map(function(groupFolderName) {
+				var paths = new GroupPathNames(groupFolderName, repositoryFolderPath);
+				var group = FileUtils.readAndParseJsonFile(paths.groupJsonFilePath, true);
+				if (FileUtils.folderExists(paths.macrosFolderPath)) {
+					var macroJsonFileNames = FileUtils.getDirectoryContents(paths.macrosFolderPath)
+						.filter(function(fileName) {
+							return fileName.toLowerCase().endsWith(".json");
+						});
+					group.Macros = macroJsonFileNames.map(function(macroJsonFileName) {
+						return readAndParseMacroJsonFile(paths.makeMacroJsonFilePath(macroJsonFileName), true);
+					});
+
+					// Sort the macros into the original order.
+					var groupInfo = findGroupInfo(group.UID, group.Name);
+					group.Macros.sort(function(a, b) {
+						var sortOrderA = findMacroInfo(groupInfo, a.UID, a.Name).plistSortOrder;
+						var sortOrderB = findMacroInfo(groupInfo, b.UID, b.Name).plistSortOrder;
+						return compareForSort(sortOrderA, sortOrderB);
+					});
+				}
+
+				return group;
+			});
+
+			// Sort the groups into the original order.
+			plist.MacroGroups.sort(function(a, b) {
+				var sortOrderA = findGroupInfo(a.UID, a.Name).plistSortOrder;
+				var sortOrderB = findGroupInfo(b.UID, b.Name).plistSortOrder;
+				return compareForSort(sortOrderA, sortOrderB);
+			});
+
+			return PlistUtils.serializeToXmlString(plist);
+		}
+
+		// When we compare the results, we remove any "StyledText" properties.
+		// This is because for some bizarre reason, a few characters of the base64
+		// encode strings change kind-of randomly. It appears to have no effect
+		// on the actual StyledText itself.
+		//
+		// We can feel fairly comfortable notcomparing these values for a couple of reasons:
+		//
+		// 1) If the StyledText's value actually changed, the macro's modificationDate
+		//    date would have changed, and we would have written it out.
+		// 2) Actions that have StyledText also have the Plain Text version of the
+		//    text, and we *do* compare that.
+		function removeStyledText(str) {
+			return str.replace(/(&lt;key&gt;StyledText&lt;\/key&gt;\W*&lt;data&gt;)[^&lt;]*/g, "$1");
+		}
+
+		// compareResults()
+		var origFilePath = "/tmp/__kmOriginalXml.kmmacros";
+		var reloadedFilePath = "/tmp/__kmReloadedXml.kmmacros";
+		FileUtils.trashFile(origFilePath);
+		FileUtils.trashFile(reloadedFilePath);
+
+		origXml = removeStyledText(origXml.replace(/(\t&lt;key&gt;MacroPreferencesVersion&lt;\/key&gt;[\w\W]*)(?=&lt;\/dict&gt;)/g, ""));
+		var rebuiltXml = removeStyledText(rebuildPlistXmlFromJsonFiles());
+		if (rebuiltXml == origXml)
+			return;
+
+		var savedErrorMessage = "";
+		try {
+			FileUtils.writeTextFile(origXml, origFilePath);
+			FileUtils.writeTextFile(rebuiltXml, reloadedFilePath);
+		} catch (e) {
+			savedErrorMessage = e.message;
+		}
+
+		var errorMessage = "There was a mismatch between the original Plist XML and the XML built by reloading the saved JSON files.\n";
+		if (savedErrorMessage) {
+			errorMessage += "Tried to save the XML strings to /tmp/ so you could compare them, but could not save the files.\n" +
+				"Error message: " + savedErrorMessage;
+		} else {
+			errorMessage += "The XML strings were saved so you can compare them:\n" + origFilePath + "\n" + reloadedFilePath;
+		}
+		throw Error(errorMessage);
+	} // compareResults()
+
+	function execute() {
+		var repositoryFolderPath = PathNameUtils.addTrailingSlash(
+			PathNameUtils.expandLeadingPathTilde(
+				KMEngine.getVariable("macrep_repositoryFolderPath", true)));
+
+		// Since we may change what macro the Editor is currently editing, we save
+		// it here, so we can restore it if we finish with no errors.
+		var selectedMacroOrGroups = KMEditor.getSelectedMacrosOrGroups();
+		var selectedMacroOrGroup = selectedMacroOrGroups &amp;&amp; selectedMacroOrGroups.length &gt; 0 ? selectedMacroOrGroups[0] : null;
+
+		var xml = PlistUtils.readKMAllMacrosSourceFileAsXml();
+		var kmMacrosInfo = GetKMMacrosInfo(xml, repositoryFolderPath);
+		var repositoryInfo = getRepositoryInfo(repositoryFolderPath);
+		updateRepository(kmMacrosInfo, repositoryInfo, repositoryFolderPath);
+		compareResults(kmMacrosInfo, repositoryFolderPath, xml);
+
+		// Restore the editor to whichever Macro it was editing, if any.
+		if (selectedMacroOrGroup)
+			KMEditor.editMacro(selectedMacroOrGroup);
+
+		return "OK";
+	}
+
+	try {
+		if (inDesignMode) {
+	        return execute();
+	    } else {
+	        try {
+	            return execute();
+	        } catch (e) {
+	            return "Error: " + e.message;
+	        }
+	    }
+	} finally {
+		if (inDesignMode) {
+			Application("Atom").activate();
+		}
+	}
+})(false);</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+						<key>Variable</key>
+						<string>macrep_result</string>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>Abort if error</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Variable</string>
+									<key>Variable</key>
+									<string>macrep_result</string>
+									<key>VariableConditionType</key>
+									<string>Matches</string>
+									<key>VariableValue</key>
+									<string>^Error:</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>ActionColor</key>
+								<string>Purple</string>
+								<key>ActionName</key>
+								<string>Cancel the "Please Wait" dialog</string>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteJavaScriptForCustomPrompt</string>
+								<key>Path</key>
+								<string></string>
+								<key>Text</key>
+								<string>window.KeyboardMaestro.Cancel('Cancel')</string>
+								<key>TimeOutAbortsMacro</key>
+								<false/>
+								<key>TimeOutPeriod</key>
+								<real>1</real>
+								<key>UseText</key>
+								<true/>
+								<key>WindowID</key>
+								<string>MacroRepositoryPleaseWaitScreen</string>
+							</dict>
+							<dict>
+								<key>DeviceID</key>
+								<string>SOUNDEFFECTS</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PlaySound</string>
+								<key>Path</key>
+								<string>/System/Library/Sounds/Basso.aiff</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Volume</key>
+								<integer>100</integer>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>CaseSensitiveRegEx</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SearchReplaceVariable</string>
+								<key>Replace</key>
+								<string></string>
+								<key>Search</key>
+								<string>^Error: ?</string>
+								<key>Variable</key>
+								<string>macrep_result</string>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Prompt error with cancel: 'An error has occurred'</string>
+								<key>Buttons</key>
+								<array>
+									<dict>
+										<key>Button</key>
+										<string>OK</string>
+										<key>Cancel</key>
+										<true/>
+									</dict>
+								</array>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>PromptForUserInput</string>
+								<key>Prompt</key>
+								<string>Macro "%ExecutingThisMacro%" has encountered an error:
+
+%Variable%macrep_result%</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>Title</key>
+								<string>%ExecutingMacro%</string>
+								<key>Variables</key>
+								<array/>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Purple</string>
+						<key>ActionName</key>
+						<string>Have the "Please Wait" dialog indicate we're done</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteJavaScriptForCustomPrompt</string>
+								<key>Path</key>
+								<string></string>
+								<key>Text</key>
+								<string>showCompleted()</string>
+								<key>TimeOutAbortsMacro</key>
+								<false/>
+								<key>TimeOutPeriod</key>
+								<real>1</real>
+								<key>UseText</key>
+								<true/>
+								<key>WindowID</key>
+								<string>MacroRepositoryPleaseWaitScreen</string>
+							</dict>
+							<dict>
+								<key>ActionName</key>
+								<string>Focus the dialog (Thanks, Tom!)</string>
+								<key>DisplayKind</key>
+								<string>None</string>
+								<key>IncludeStdErr</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>ExecuteAppleScript</string>
+								<key>Path</key>
+								<string></string>
+								<key>Text</key>
+								<string>tell application "System Events"
+	tell application process "Keyboard Maestro Engine"
+		tell window "Macro Repository Updater"
+			perform action "AXRaise"
+		end tell
+	end tell
+end tell</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+								<key>TrimResults</key>
+								<true/>
+								<key>TrimResultsNew</key>
+								<true/>
+								<key>UseText</key>
+								<true/>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionColor</key>
+						<string>Yellow</string>
+						<key>ActionName</key>
+						<string>Cleanup Variables</string>
+						<key>Actions</key>
+						<array>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_PleaseWaitDialog</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_repositoryFolderPath</string>
+							</dict>
+							<dict>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>SetVariableToText</string>
+								<key>Text</key>
+								<string>%Delete%</string>
+								<key>Variable</key>
+								<string>macrep_result</string>
+							</dict>
+						</array>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Group</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>505944330.85614002</real>
+				<key>CustomIconData</key>
+				<data>
+				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
+				FgADAAAAAQBAAAABFwAEAAAAAQAAD7EBHAADAAAAAQAB
+				AAABPQADAAAAAQACAAABUgADAAAAAQABAAABUwADAAAA
+				BAAAEHyHcwAHAAAH2AAAEIQAAB7GAAgACAAIAAgAAQAB
+				AAEAAQAAB9hhcHBsAiAAAG1udHJSR0IgWFlaIAfZAAIA
+				GQALABoAC2Fjc3BBUFBMAAAAAGFwcGwAAAAAAAAAAAAA
+				AAAAAAAAAAD21gABAAAAANMtYXBwbAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAC2Rlc2MAAAEIAAAAb2RzY20AAAF4AAAFnGNwcnQA
+				AAcUAAAAOHd0cHQAAAdMAAAAFHJYWVoAAAdgAAAAFGdY
+				WVoAAAd0AAAAFGJYWVoAAAeIAAAAFHJUUkMAAAecAAAA
+				DmNoYWQAAAesAAAALGJUUkMAAAecAAAADmdUUkMAAAec
+				AAAADmRlc2MAAAAAAAAAFEdlbmVyaWMgUkdCIFByb2Zp
+				bGUAAAAAAAAAAAAAABRHZW5lcmljIFJHQiBQcm9maWxl
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAABtbHVjAAAAAAAAAB8AAAAM
+				c2tTSwAAACgAAAGEZGFESwAAAC4AAAGsY2FFUwAAACQA
+				AAHadmlWTgAAACQAAAH+cHRCUgAAACYAAAIidWtVQQAA
+				ACoAAAJIZnJGVQAAACgAAAJyaHVIVQAAACgAAAKaemhU
+				VwAAABYAAALCbmJOTwAAACYAAALYY3NDWgAAACIAAAL+
+				aGVJTAAAAB4AAAMgaXRJVAAAACgAAAM+cm9STwAAACQA
+				AANmZGVERQAAACwAAAOKa29LUgAAABYAAAO2c3ZTRQAA
+				ACYAAALYemhDTgAAABYAAAPMamFKUAAAABoAAAPiZWxH
+				UgAAACIAAAP8cHRQTwAAACYAAAQebmxOTAAAACgAAARE
+				ZXNFUwAAACYAAAQedGhUSAAAACQAAARsdHJUUgAAACIA
+				AASQZmlGSQAAACgAAASyaHJIUgAAACgAAATacGxQTAAA
+				ACwAAAUCcnVSVQAAACIAAAUuYXJFRwAAACYAAAVQZW5V
+				UwAAACYAAAV2AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBH
+				AEIAIABwAHIAbwBmAGkAbABHAGUAbgBlAHIAZQBsACAA
+				UgBHAEIALQBiAGUAcwBrAHIAaQB2AGUAbABzAGUAUABl
+				AHIAZgBpAGwAIABSAEcAQgAgAGcAZQBuAOgAcgBpAGMA
+				Qx6lAHUAIABoAOwAbgBoACAAUgBHAEIAIABDAGgAdQBu
+				AGcAUABlAHIAZgBpAGwAIABSAEcAQgAgAEcAZQBuAOkA
+				cgBpAGMAbwQXBDAEMwQwBDsETAQ9BDgEOQAgBD8EQAQ+
+				BEQEMAQ5BDsAIABSAEcAQgBQAHIAbwBmAGkAbAAgAGcA
+				6QBuAOkAcgBpAHEAdQBlACAAUgBWAEIAwQBsAHQAYQBs
+				AOEAbgBvAHMAIABSAEcAQgAgAHAAcgBvAGYAaQBskBp1
+				KAAgAFIARwBCACCCcl9pY8+P8ABHAGUAbgBlAHIAaQBz
+				AGsAIABSAEcAQgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMA
+				bgD9ACAAUgBHAEIAIABwAHIAbwBmAGkAbAXkBegF1QXk
+				BdkF3AAgAFIARwBCACAF2wXcBdwF2QBQAHIAbwBmAGkA
+				bABvACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAG8AUABy
+				AG8AZgBpAGwAIABSAEcAQgAgAGcAZQBuAGUAcgBpAGMA
+				QQBsAGwAZwBlAG0AZQBpAG4AZQBzACAAUgBHAEIALQBQ
+				AHIAbwBmAGkAbMd8vBgAIABSAEcAQgAg1QS4XNMMx3xm
+				bpAaACAAUgBHAEIAIGPPj/Blh072TgCCLAAgAFIARwBC
+				ACAw1zDtMNUwoTCkMOsDkwO1A70DuQO6A8wAIAPAA8ED
+				vwPGA68DuwAgAFIARwBCAFAAZQByAGYAaQBsACAAUgBH
+				AEIAIABnAGUAbgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUA
+				ZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAZQBsDkIOGw4j
+				DkQOHw4lDkwAIABSAEcAQgAgDhcOMQ5IDicORA4bAEcA
+				ZQBuAGUAbAAgAFIARwBCACAAUAByAG8AZgBpAGwAaQBZ
+				AGwAZQBpAG4AZQBuACAAUgBHAEIALQBwAHIAbwBmAGkA
+				aQBsAGkARwBlAG4AZQByAGkBDQBrAGkAIABSAEcAQgAg
+				AHAAcgBvAGYAaQBsAFUAbgBpAHcAZQByAHMAYQBsAG4A
+				eQAgAHAAcgBvAGYAaQBsACAAUgBHAEIEHgQxBEkEOAQ5
+				ACAEPwRABD4ERAQ4BDsETAAgAFIARwBCBkUGRAZBACAG
+				KgY5BjEGSgZBACAAUgBHAEIAIAYnBkQGOQYnBkUARwBl
+				AG4AZQByAGkAYwAgAFIARwBCACAAUAByAG8AZgBpAGwA
+				ZXRleHQAAAAAQ29weXJpZ2h0IDIwMDcgQXBwbGUgSW5j
+				LiwgYWxsIHJpZ2h0cyByZXNlcnZlZC4AWFlaIAAAAAAA
+				APNSAAEAAAABFs9YWVogAAAAAAAAdE0AAD3uAAAD0FhZ
+				WiAAAAAAAABadQAArHMAABc0WFlaIAAAAAAAACgaAAAV
+				nwAAuDZjdXJ2AAAAAAAAAAEBzQAAc2YzMgAAAAAAAQxC
+				AAAF3v//8yYAAAeSAAD9kf//+6L///2jAAAD3AAAwGyA
+				ACBQOCQWDQeEQmFQuGQ2HQ+IRGJROKRWLReMRmNRuFB8
+				ZDwfA8MhsNv9+wIAgKCSqEAGBvp8vh8NxiLhcPt8vd7x
+				yeRcVEMolEvJVVqsDAkBgN/v+URMBgWBMJOp9Pq0/GIx
+				T2tRMmHdIJAgGQ3m99vqNAGXU0ALFCnA4MxWJtNvx9XW
+				0Witxx/P19vuCEo6o1GkIzHI5XSL2kAUwASmB4x2OBuN
+				x/Pt+PyGYyBAOBye8wSnwJ6O51OpUngxmMlnZHpEXlw4
+				G56vjMSuH3iDYwBYwCAICY3Ov3NQKWACkwJ+AKXP2WP6
+				CYqtAwFwJiI1AIAdHBGpIRlQ3m2+X6MUvh8DGeXF4p/2
+				m9gDd0x/P/OUrnP8C5x/8q8gMDAYAG2UpEkUGY2kYSQV
+				CwOI2sqsyMqWgwAqYpiXQexp/r85STgQAR6gABQAp2Cw
+				Cv8A59v8bh5gUAB7gWA4AH8tMKuEzboIcAURgAaJQkMR
+				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
+				cHQAAAdMAAAAFHJYWVoAAAdgAAAAFGdYWVoAAAd0AAAA
+				FGJYWVoAAAeIAAAAFHJUUkMAAAecAAAADmNoYWQAAAes
+				AAAALGJUUkMAAAecAAAADmdUUkMAAAecAAAADmRlc2MA
+				AAAAAAAAFEdlbmVyaWMgUkdCIFByb2ZpbGUAAAAAAAAA
+				AAAAABRHZW5lcmljIFJHQiBQcm9maWxlAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAABtbHVjAAAAAAAAAB8AAAAMc2tTSwAAACgA
+				AAGEZGFESwAAAC4AAAGsY2FFUwAAACQAAAHadmlWTgAA
+				ACQAAAH+cHRCUgAAACYAAAIidWtVQQAAACoAAAJIZnJG
+				VQAAACgAAAJyaHVIVQAAACgAAAKaemhUVwAAABYAAALC
+				bmJOTwAAACYAAALYY3NDWgAAACIAAAL+aGVJTAAAAB4A
+				AAMgaXRJVAAAACgAAAM+cm9STwAAACQAAANmZGVERQAA
+				ACwAAAOKa29LUgAAABYAAAO2c3ZTRQAAACYAAALYemhD
+				TgAAABYAAAPMamFKUAAAABoAAAPiZWxHUgAAACIAAAP8
+				cHRQTwAAACYAAAQebmxOTAAAACgAAAREZXNFUwAAACYA
+				AAQedGhUSAAAACQAAARsdHJUUgAAACIAAASQZmlGSQAA
+				ACgAAASyaHJIUgAAACgAAATacGxQTAAAACwAAAUCcnVS
+				VQAAACIAAAUuYXJFRwAAACYAAAVQZW5VUwAAACYAAAV2
+				AFYBYQBlAG8AYgBlAGMAbgD9ACAAUgBHAEIAIABwAHIA
+				bwBmAGkAbABHAGUAbgBlAHIAZQBsACAAUgBHAEIALQBi
+				AGUAcwBrAHIAaQB2AGUAbABzAGUAUABlAHIAZgBpAGwA
+				IABSAEcAQgAgAGcAZQBuAOgAcgBpAGMAQx6lAHUAIABo
+				AOwAbgBoACAAUgBHAEIAIABDAGgAdQBuAGcAUABlAHIA
+				ZgBpAGwAIABSAEcAQgAgAEcAZQBuAOkAcgBpAGMAbwQX
+				BDAEMwQwBDsETAQ9BDgEOQAgBD8EQAQ+BEQEMAQ5BDsA
+				IABSAEcAQgBQAHIAbwBmAGkAbAAgAGcA6QBuAOkAcgBp
+				AHEAdQBlACAAUgBWAEIAwQBsAHQAYQBsAOEAbgBvAHMA
+				IABSAEcAQgAgAHAAcgBvAGYAaQBskBp1KAAgAFIARwBC
+				ACCCcl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABSAEcA
+				QgAtAHAAcgBvAGYAaQBsAE8AYgBlAGMAbgD9ACAAUgBH
+				AEIAIABwAHIAbwBmAGkAbAXkBegF1QXkBdkF3AAgAFIA
+				RwBCACAF2wXcBdwF2QBQAHIAbwBmAGkAbABvACAAUgBH
+				AEIAIABnAGUAbgBlAHIAaQBjAG8AUAByAG8AZgBpAGwA
+				IABSAEcAQgAgAGcAZQBuAGUAcgBpAGMAQQBsAGwAZwBl
+				AG0AZQBpAG4AZQBzACAAUgBHAEIALQBQAHIAbwBmAGkA
+				bMd8vBgAIABSAEcAQgAg1QS4XNMMx3xmbpAaACAAUgBH
+				AEIAIGPPj/Blh072TgCCLAAgAFIARwBCACAw1zDtMNUw
+				oTCkMOsDkwO1A70DuQO6A8wAIAPAA8EDvwPGA68DuwAg
+				AFIARwBCAFAAZQByAGYAaQBsACAAUgBHAEIAIABnAGUA
+				bgDpAHIAaQBjAG8AQQBsAGcAZQBtAGUAZQBuACAAUgBH
+				AEIALQBwAHIAbwBmAGkAZQBsDkIOGw4jDkQOHw4lDkwA
+				IABSAEcAQgAgDhcOMQ5IDicORA4bAEcAZQBuAGUAbAAg
+				AFIARwBCACAAUAByAG8AZgBpAGwAaQBZAGwAZQBpAG4A
+				ZQBuACAAUgBHAEIALQBwAHIAbwBmAGkAaQBsAGkARwBl
+				AG4AZQByAGkBDQBrAGkAIABSAEcAQgAgAHAAcgBvAGYA
+				aQBsAFUAbgBpAHcAZQByAHMAYQBsAG4AeQAgAHAAcgBv
+				AGYAaQBsACAAUgBHAEIEHgQxBEkEOAQ5ACAEPwRABD4E
+				RAQ4BDsETAAgAFIARwBCBkUGRAZBACAGKgY5BjEGSgZB
+				ACAAUgBHAEIAIAYnBkQGOQYnBkUARwBlAG4AZQByAGkA
+				YwAgAFIARwBCACAAUAByAG8AZgBpAGwAZXRleHQAAAAA
+				Q29weXJpZ2h0IDIwMDcgQXBwbGUgSW5jLiwgYWxsIHJp
+				Z2h0cyByZXNlcnZlZC4AWFlaIAAAAAAAAPNSAAEAAAAB
+				Fs9YWVogAAAAAAAAdE0AAD3uAAAD0FhZWiAAAAAAAABa
+				dQAArHMAABc0WFlaIAAAAAAAACgaAAAVnwAAuDZjdXJ2
+				AAAAAAAAAAEBzQAAc2YzMgAAAAAAAQxCAAAF3v//8yYA
+				AAeSAAD9kf//+6L///2jAAAD3AAAwGyAACBQOCQWDQeE
+				QmFQuBAcGhAIAGJAGCAF/xd7vN4PCGR2PAAcFs2G4jGo
+				9Hh+PuJwMCAaLr1MItFsRRI9Hx+cQUrIlTKYYFMsll+P
+				mDAEBQJ9Pd9vxzNFlMx+vx9SqjAF+gKjgCKR0BgMAP9l
+				KNJJIgH5PqQPkgwFt+vp8QKtxeKP+vgABy2tAB/AAFAF
+				9AAEACjvMA4F+VvBXCWAaBNtWp5RDk8pxRCUmmMu2233
+				UAAcAUQLAm6CAG4wTAq/h4CvEAP1/vUAJpugsAA0ChMA
+				PcAPwAOJ9YECgfAtlYJhOjg8JtQiYnGQvVK3g8B3s3ie
+				BBwFgTOgKKPd8W96vN6AAIgjeKxxusAM5gs4APsWkoAO
+				0ChUAS0CgDicbkcrmOc6AAAY94AECFrtNsgRmmcZ4AHe
+				eKOAnCQABkFwXAAUZQFAABOmKbgABONpFK+lK7AM4biu
+				O5LluaLzNK+fy9jYER9gAGAJPyZ5qGqABtR8AAKSCAAR
+				BCEIADuOw+AABYuD+AACg6FESRqAcTv1FL+xY50Xn2vY
+				ACaCbxicDajm8cZzL0f5+r4BIFABDRSveeiOAwMA/PWe
+				raK8ukqxQ/kVv/Fy3N2f6KBcA55AAMYOL/Ls1n6fa/nm
+				ey3kURxLAAGYkiYABvgqGIAHWAYJLzPkrP3FT/RbF66I
+				oBp/NgKgFnIAB2Hqv5uHqigWAkxhmnqwJsAADEngK/Lu
+				INPsruMHY/FEVAUCiLorragx/y8AB8Hm3YAsYALgr4fB
+				3AA34HoEAqvM4hEqoEaxVk6UYTCgNA2BGIYpie3a/oSr
+				CtRjdR/X6AV/pyArGG2XJTlWnOGYbh2H4ghaAgAPAQAA
+				AwAAAAEAEAAAAQEAAwAAAAEAEAAAAQIAAwAAAAQAACqa
+				AQMAAwAAAAEABQAAAQYAAwAAAAEAAgAAAREABAAAAAEA
+				ACdoARIAAwAAAAEAAQAAARUAAwAAAAEABAAAARYAAwAA
+				AAEAEAAAARcABAAAAAEAAAJ4ARwAAwAAAAEAAQAAAT0A
+				AwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAQAACqi
+				h3MABwAAB9gAACqqAAAAAAAIAAgACAAIAAEAAQABAAEA
+				AAfYYXBwbAIgAABtbnRyUkdCIFhZWiAH2QACABkACwAa
+				AAthY3NwQVBQTAAAAABhcHBsAAAAAAAAAAAAAAAAAAAA
+				AAAA9tYAAQAAAADTLWFwcGwAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtk
+				ZXNjAAABCAAAAG9kc2NtAAABeAAABZxjcHJ0AAAHFAAA
+				ADh3dHB0AAAHTAAAABRyWFlaAAAHYAAAABRnWFlaAAAH
+				dAAAABRiWFlaAAAHiAAAABRyVFJDAAAHnAAAAA5jaGFk
+				AAAHrAAAACxiVFJDAAAHnAAAAA5nVFJDAAAHnAAAAA5k
+				ZXNjAAAAAAAAABRHZW5lcmljIFJHQiBQcm9maWxlAAAA
+				AAAAAAAAAAAUR2VuZXJpYyBSR0IgUHJvZmlsZQAAAAAA
+				AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAbWx1YwAAAAAAAAAfAAAADHNrU0sA
+				AAAoAAABhGRhREsAAAAuAAABrGNhRVMAAAAkAAAB2nZp
+				Vk4AAAAkAAAB/nB0QlIAAAAmAAACInVrVUEAAAAqAAAC
+				SGZyRlUAAAAoAAACcmh1SFUAAAAoAAACmnpoVFcAAAAW
+				AAACwm5iTk8AAAAmAAAC2GNzQ1oAAAAiAAAC/mhlSUwA
+				AAAeAAADIGl0SVQAAAAoAAADPnJvUk8AAAAkAAADZmRl
+				REUAAAAsAAADimtvS1IAAAAWAAADtnN2U0UAAAAmAAAC
+				2HpoQ04AAAAWAAADzGphSlAAAAAaAAAD4mVsR1IAAAAi
+				AAAD/HB0UE8AAAAmAAAEHm5sTkwAAAAoAAAERGVzRVMA
+				AAAmAAAEHnRoVEgAAAAkAAAEbHRyVFIAAAAiAAAEkGZp
+				RkkAAAAoAAAEsmhySFIAAAAoAAAE2nBsUEwAAAAsAAAF
+				AnJ1UlUAAAAiAAAFLmFyRUcAAAAmAAAFUGVuVVMAAAAm
+				AAAFdgBWAWEAZQBvAGIAZQBjAG4A/QAgAFIARwBCACAA
+				cAByAG8AZgBpAGwARwBlAG4AZQByAGUAbAAgAFIARwBC
+				AC0AYgBlAHMAawByAGkAdgBlAGwAcwBlAFAAZQByAGYA
+				aQBsACAAUgBHAEIAIABnAGUAbgDoAHIAaQBjAEMepQB1
+				ACAAaADsAG4AaAAgAFIARwBCACAAQwBoAHUAbgBnAFAA
+				ZQByAGYAaQBsACAAUgBHAEIAIABHAGUAbgDpAHIAaQBj
+				AG8EFwQwBDMEMAQ7BEwEPQQ4BDkAIAQ/BEAEPgREBDAE
+				OQQ7ACAAUgBHAEIAUAByAG8AZgBpAGwAIABnAOkAbgDp
+				AHIAaQBxAHUAZQAgAFIAVgBCAMEAbAB0AGEAbADhAG4A
+				bwBzACAAUgBHAEIAIABwAHIAbwBmAGkAbJAadSgAIABS
+				AEcAQgAggnJfaWPPj/AARwBlAG4AZQByAGkAcwBrACAA
+				UgBHAEIALQBwAHIAbwBmAGkAbABPAGIAZQBjAG4A/QAg
+				AFIARwBCACAAcAByAG8AZgBpAGwF5AXoBdUF5AXZBdwA
+				IABSAEcAQgAgBdsF3AXcBdkAUAByAG8AZgBpAGwAbwAg
+				AFIARwBCACAAZwBlAG4AZQByAGkAYwBvAFAAcgBvAGYA
+				aQBsACAAUgBHAEIAIABnAGUAbgBlAHIAaQBjAEEAbABs
+				AGcAZQBtAGUAaQBuAGUAcwAgAFIARwBCAC0AUAByAG8A
+				ZgBpAGzHfLwYACAAUgBHAEIAINUEuFzTDMd8Zm6QGgAg
+				AFIARwBCACBjz4/wZYdO9k4AgiwAIABSAEcAQgAgMNcw
+				7TDVMKEwpDDrA5MDtQO9A7kDugPMACADwAPBA78DxgOv
+				A7sAIABSAEcAQgBQAGUAcgBmAGkAbAAgAFIARwBCACAA
+				ZwBlAG4A6QByAGkAYwBvAEEAbABnAGUAbQBlAGUAbgAg
+				AFIARwBCAC0AcAByAG8AZgBpAGUAbA5CDhsOIw5EDh8O
+				JQ5MACAAUgBHAEIAIA4XDjEOSA4nDkQOGwBHAGUAbgBl
+				AGwAIABSAEcAQgAgAFAAcgBvAGYAaQBsAGkAWQBsAGUA
+				aQBuAGUAbgAgAFIARwBCAC0AcAByAG8AZgBpAGkAbABp
+				AEcAZQBuAGUAcgBpAQ0AawBpACAAUgBHAEIAIABwAHIA
+				bwBmAGkAbABVAG4AaQB3AGUAcgBzAGEAbABuAHkAIABw
+				AHIAbwBmAGkAbAAgAFIARwBCBB4EMQRJBDgEOQAgBD8E
+				QAQ+BEQEOAQ7BEwAIABSAEcAQgZFBkQGQQAgBioGOQYx
+				BkoGQQAgAFIARwBCACAGJwZEBjkGJwZFAEcAZQBuAGUA
+				cgBpAGMAIABSAEcAQgAgAFAAcgBvAGYAaQBsAGV0ZXh0
+				AAAAAENvcHlyaWdodCAyMDA3IEFwcGxlIEluYy4sIGFs
+				bCByaWdodHMgcmVzZXJ2ZWQuAFhZWiAAAAAAAADzUgAB
+				AAAAARbPWFlaIAAAAAAAAHRNAAA97gAAA9BYWVogAAAA
+				AAAAWnUAAKxzAAAXNFhZWiAAAAAAAAAoGgAAFZ8AALg2
+				Y3VydgAAAAAAAAABAc0AAHNmMzIAAAAAAAEMQgAABd7/
+				//MmAAAHkgAA/ZH///ui///9owAAA9wAAMBs
+				</data>
+				<key>ModificationDate</key>
+				<real>506568146.87849599</real>
+				<key>Name</key>
+				<string>[KM] Macro Repository Updater</string>
+				<key>Triggers</key>
+				<array/>
+				<key>UID</key>
+				<string>9B8BAD3B-D93C-4EC7-8847-BB456A28FC12</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>KM</string>
+		<key>Targeting</key>
+		<dict>
+			<key>Targeting</key>
+			<string>Included</string>
+			<key>TargetingApps</key>
+			<array>
+				<dict>
+					<key>BundleIdentifier</key>
+					<string>com.stairways.keyboardmaestro.editor</string>
+					<key>Name</key>
+					<string>Keyboard Maestro</string>
+					<key>NewFile</key>
+					<string>/Applications/Keyboard Maestro.app</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ToggleMacroUID</key>
+		<string>CF50116E-47B9-4929-A637-1B4733232DD3</string>
+		<key>UID</key>
+		<string>C913CB41-43FF-4375-99C4-EE925739BE7D</string>
+	</dict>
+</array>
+</plist>
