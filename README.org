@@ -1,0 +1,46 @@
+#+title: My Keyboard Maestro Macro(s)
+
+我的 Keyboard Maestro Macro(s)
+
+
+** 1 System Enhancement
+
+
+** 2 Application
+
+
+** 3 Clipboard
+
+
+** 4 Finder
+
+
+** 5 Text
+
+** 6 Image
+
+** 7 Audio
+
+** 8 Video
+
+** 技巧
+
+*** 自动化 Automation
+
+*** 程序相关
+
+程序启动：AppleScript、shell 都可以启动 app。
+
+*** 文本替换 Text Expansion
+
+*** Insert by Pasting
+
+*** 修饰符号 prefix/suffix
+
+类似修饰键的作用。
+推荐使用 ~重复的字符~ 或者 <kbd>Space</kbd> 或者 <kbd>-</kbd> 或者 <kbd>=</kbd>。
+中英文输入法下, 只有数学符号 <kbd>-</kbd> 和<kbd>=</kbd> 是一样的(数字可能需要参与选择文本,不予考虑)。注意只可用作前缀，因为这两个键在中文输入法中是翻页键。
+
+** Misc
+
+
