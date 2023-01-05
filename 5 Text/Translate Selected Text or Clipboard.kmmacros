@@ -1154,8 +1154,6 @@ System Clipboard
 								<true/>
 							</dict>
 						</array>
-						<key>IsDisclosed</key>
-						<false/>
 						<key>MacroActionType</key>
 						<string>Group</string>
 						<key>TimeOutAbortsMacro</key>
@@ -1526,8 +1524,6 @@ Translation (System Clipboard)
 								<string>Match_Chinese</string>
 							</dict>
 						</array>
-						<key>IsDisclosed</key>
-						<false/>
 						<key>MacroActionType</key>
 						<string>Group</string>
 						<key>TimeOutAbortsMacro</key>
@@ -1539,7 +1535,7 @@ Translation (System Clipboard)
 				<key>CustomIconData</key>
 				<string>KMEC=Rounded=KMCOLOR:255,255,255,255=⒯=86=0=0=0=KMCOLOR:0,0,0,255</string>
 				<key>ModificationDate</key>
-				<real>694397467.73202205</real>
+				<real>694572130.42599595</real>
 				<key>Name</key>
 				<string>Translate Selected Text or Clipboard</string>
 				<key>Triggers</key>
