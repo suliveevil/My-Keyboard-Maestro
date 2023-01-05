@@ -17,6 +17,19 @@
 
 ** 5 Text
 
+*** Translate Selected Text or Clipboard
+
+功能：翻译选中的文本或剪贴板，如果文本中有中文字符，翻译为英语。
+
+依赖：两个快捷指令 =Translate File= 和 =Translate File 2 English=
+
+下载地址：
+
+[[https://github.com/suliveevil/My-Siri-Shortcuts/blob/master/Shortcuts/Translate%20File.shortcut][My-Siri-Shortcuts/Translate File.shortcut]]
+
+[[https://github.com/suliveevil/My-Siri-Shortcuts/blob/master/Shortcuts/Translate%20File%202%20English.shortcut][My-Siri-Shortcuts/Translate File 2 English.shortcut]]
+
+
 ** 6 Image
 
 ** 7 Audio
